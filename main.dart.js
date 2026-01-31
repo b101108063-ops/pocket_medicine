@@ -24,7 +24,7 @@ a[b]=s
 a[c]=function(){if(a[b]===s){var r=d()
 if(a[b]!==s){A.aTC(b)}a[b]=r}var q=a[b]
 a[c]=function(){return q}
-return q}}function makeConstList(a,b){if(b!=null)A.b(a,b)
+return q}}function makeConstList(a,b){if(b!=null)A.a(a,b)
 a.$flags=7
 return a}function convertToFastObject(a){function t(){}t.prototype=a
 new t()
@@ -78,10 +78,10 @@ return B.lS}return B.lS},
 zq(a,b){if(a<0||a>4294967295)throw A.j(A.cj(a,0,4294967295,"length",null))
 return J.l2(new Array(a),b)},
 ts(a,b){if(a<0)throw A.j(A.cW("Length must be a non-negative integer: "+a,null))
-return A.b(new Array(a),b.i("A<0>"))},
+return A.a(new Array(a),b.i("A<0>"))},
 a6u(a,b){if(a<0)throw A.j(A.cW("Length must be a non-negative integer: "+a,null))
-return A.b(new Array(a),b.i("A<0>"))},
-l2(a,b){var s=A.b(a,b.i("A<0>"))
+return A.a(new Array(a),b.i("A<0>"))},
+l2(a,b){var s=A.a(a,b.i("A<0>"))
 s.$flags=1
 return s},
 aKU(a,b){return J.auC(a,b)},
@@ -356,15 +356,15 @@ s=J.aS(q)
 r=p.$ti.y[1]
 return new A.p5(new A.x(r.a(s.h(q,0)),r.a(s.h(q,1)),r.a(s.h(q,2)),r.a(s.h(q,3))),new A.bY(J.ai(a.graphemeClusterTextRange.start),J.ai(a.graphemeClusterTextRange.end)),B.kq[J.ai(a.dir.value)])},
 aSG(a){var s,r="chromium/canvaskit.js"
-switch(a.a){case 0:s=A.b([],t.s)
+switch(a.a){case 0:s=A.a([],t.s)
 if(A.aE8())s.push(r)
 s.push("canvaskit.js")
 break
-case 1:s=A.b(["canvaskit.js"],t.s)
+case 1:s=A.a(["canvaskit.js"],t.s)
 break
-case 2:s=A.b([r],t.s)
+case 2:s=A.a([r],t.s)
 break
-case 3:s=A.b(["experimental_webparagraph/canvaskit.js"],t.s)
+case 3:s=A.a(["experimental_webparagraph/canvaskit.js"],t.s)
 break
 default:s=null}return s},
 aQ3(){var s=A.aSG(A.db().gmq())
@@ -440,7 +440,7 @@ if(s==null)return null
 return new A.rC(s)
 case 2:return B.Cz
 case 3:return B.CA}},
-aB7(a,b,c){var s=new v.G.window.flutterCanvasKit.Font(c),r=A.jK(A.b([0],t.t))
+aB7(a,b,c){var s=new v.G.window.flutterCanvasKit.Font(c),r=A.jK(A.a([0],t.t))
 s.getGlyphBounds(r,null,null)
 return new A.q_(b,a,c)},
 ZM(a,b,c,a0){var s=0,r=A.R(t.hP),q,p,o,n,m,l,k,j,i,h,g,f,e,d
@@ -477,9 +477,9 @@ l.toString
 k.toString
 i.uf(n,new A.x(0,0,0+g,0+f),new A.x(0,0,l,k),h)
 k=j.oc().Jd(l,k).b
-k===$&&A.a()
+k===$&&A.b()
 k=k.a
-k===$&&A.a()
+k===$&&A.b()
 e=k.a.encodeToBytes()
 if(e==null)e=null
 if(e==null)A.a5(A.kY("Failed to re-size image"))
@@ -493,7 +493,7 @@ p.a=n
 s=8
 break
 case 9:s=10
-return A.Y(A.atG(A.aSc(A.b([B.J.gcd(a)],t.gb))),$async$ZM)
+return A.Y(A.atG(A.aSc(A.a([B.J.gcd(a)],t.gb))),$async$ZM)
 case 10:p=a2
 case 8:case 4:q=new A.Jt(p,b,c,a0)
 s=1
@@ -521,7 +521,7 @@ return s},
 Jn(a,b){var s,r=new A.oy(a,b)
 r.OV()
 s=r.b
-s===$&&A.a();++s.b
+s===$&&A.b();++s.b
 if(b!=null)++b.a
 return r},
 a0G(a,b,c){var s=0,r=A.R(t.Lh),q,p
@@ -589,12 +589,12 @@ if(b!=null)s.slant=$.aHe()[b.a]
 return s},
 auX(a){var s,r,q
 t.m6.a(a)
-s=A.b([],t.n)
-r=A.b([],t.AT)
+s=A.a([],t.n)
+r=A.a([],t.AT)
 q=$.b5.ba().ParagraphBuilder.MakeFromFontCollection(a.a,t.Vr.a($.auV.ba().gwZ()).w)
 r.push(a.Zu())
 return new A.a0N(q,a,s,r)},
-awV(a,b){var s=A.b([],t.s)
+awV(a,b){var s=A.a([],t.s)
 if(a!=null)s.push(a)
 if(b!=null&&!B.b.e_(b,new A.asS(a)))B.b.P(s,b)
 B.b.P(s,$.a0().gwZ().gHq().y)
@@ -616,7 +616,7 @@ case 1:n=o.c
 q=q.dG(A.I8(l,new A.x(n.a,n.b,n.c,n.d)))
 break
 case 2:n=o.d.gez().a
-n===$&&A.a()
+n===$&&A.b()
 n=n.a.getBounds()
 q.dG(A.I8(l,new A.x(n[0],n[1],n[2],n[3])))
 break
@@ -632,7 +632,7 @@ r=s.a
 s=s.b
 n=a.b
 return A.I8(l,new A.x(r,s,r+n.a,s+n.b)).dG(q)},
-aSg(a2,a3){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b=A.o(t.S,t.YT),a=A.b([],t.EV),a0=t.RR,a1=new A.di(new A.MG(new A.MH()),A.b([],a0))
+aSg(a2,a3){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b=A.o(t.S,t.YT),a=A.a([],t.EV),a0=t.RR,a1=new A.di(new A.MG(new A.MH()),A.a([],a0))
 for(s=a2.length,r=t.hF,q=r.i("bp<an.E>"),p=r.i("an.E"),o=0;o<a2.length;a2.length===s||(0,A.B)(a2),++o){n=a2[o]
 if(n instanceof A.AG){m=n.a
 l=$.Ij()
@@ -642,7 +642,7 @@ l.toString
 j=A.aS3(l)
 b.p(0,m,j)
 if(a1.a.fK(j)){a.push(a1)
-a1=new A.di(new A.MG(new A.MH()),A.b([],a0))}}a.push(new A.kE(m))}else if(n instanceof A.AC){i=n.a
+a1=new A.di(new A.MG(new A.MH()),A.a([],a0))}}a.push(new A.kE(m))}else if(n instanceof A.AC){i=n.a
 if(i.w)continue
 l=i.r
 l.toString
@@ -686,7 +686,7 @@ l.toString
 h.pT(l)}}}if(a1.b.length!==0)a.push(a1)
 return new A.rR(a)},
 azc(a,b){var s=b.i("A<0>")
-return new A.Kj(a,A.b([],s),A.b([],s),b.i("Kj<0>"))},
+return new A.Kj(a,A.a([],s),A.a([],s),b.i("Kj<0>"))},
 db(){var s,r=$.aDv
 if(r==null){r=v.G.window.flutterConfiguration
 s=new A.a4c()
@@ -825,12 +825,12 @@ aQX(a){return B.c.bo(a.a,"Noto Sans TC")},
 aQT(a){return B.c.bo(a.a,"Noto Sans HK")},
 aQU(a){return B.c.bo(a.a,"Noto Sans JP")},
 aQV(a){return B.c.bo(a.a,"Noto Sans KR")},
-aKn(a,b){var s=t.S,r=v.G.window.navigator.language,q=A.d8(null,t.H),p=A.b(["Roboto"],t.s)
+aKn(a,b){var s=t.S,r=v.G.window.navigator.language,q=A.d8(null,t.H),p=A.a(["Roboto"],t.s)
 s=new A.a4x(a,A.aD(s),A.aD(s),b,r,B.b.a_j(b,new A.a4y()),q,p,A.aD(s))
 p=t.Te
 s.b=new A.SB(s,A.aD(p),A.o(t.N,p))
 return s},
-aPt(a,b,c){var s,r,q,p,o,n,m,l,k=A.b([],t.t),j=A.b([],c.i("A<0>"))
+aPt(a,b,c){var s,r,q,p,o,n,m,l,k=A.a([],t.t),j=A.a([],c.i("A<0>"))
 for(s=a.length,r=0,q=0,p=1,o=0;o<s;++o){n=a.charCodeAt(o)
 m=0
 if(65<=n&&n<91){l=b[q*26+(n-65)]
@@ -851,7 +851,7 @@ s=3
 return A.Y(A.wF(a.vL("FontManifest.json")),$async$ZH)
 case 3:l=k.a(c)
 if(!l.gHN()){$.e1().$1("Font manifest does not exist at `"+l.a+"` - ignoring.")
-q=new A.z1(A.b([],t.z8))
+q=new A.z1(A.a([],t.z8))
 s=1
 break}p=B.dm.a_S(B.ow,t.X)
 m.a=null
@@ -876,12 +876,12 @@ if(c==null){if(d==null||d===b)return null
 c=B.d.aC(a*d/b)}else if(d==null){if(s)return null
 d=B.d.aC(b*c/a)}return new A.jh(c,d)},
 aTn(a,b,c,d){var s,r,q,p,o,n,m,l,k=a.b
-k===$&&A.a()
+k===$&&A.b()
 k=k.a
-k===$&&A.a()
+k===$&&A.b()
 s=J.ai(k.a.width())
 k=a.b.a
-k===$&&A.a()
+k===$&&A.b()
 r=J.ai(k.a.height())
 q=A.aEG(s,r,d,c)
 if(q==null)return a
@@ -930,7 +930,7 @@ p=A.db().b
 o=new A.a_F(p==null?null:p.assetBase)
 A.aRn(o)
 s=3
-return A.Y(A.kU(A.b([new A.atW().$0(),A.Zy()],t.mo),t.H),$async$atU)
+return A.Y(A.kU(A.a([new A.atW().$0(),A.Zy()],t.mo),t.H),$async$atU)
 case 3:$.HX=B.nD
 case 1:return A.P(q,r)}})
 return A.Q($async$atU,r)},
@@ -1002,12 +1002,12 @@ aL_(a){var s
 if(a.length===0)return 98784247808
 s=B.NA.h(0,a)
 return s==null?B.c.gB(a)+98784247808:s},
-aAa(){var s=new A.O2(A.b([],t.k5),B.a_),r=new A.a7_(s)
+aAa(){var s=new A.O2(A.a([],t.k5),B.a_),r=new A.a7_(s)
 r.b=s
 return r},
-bK(a){return new A.pj(a,new A.a75(a),B.hQ,A.b([],t.H9))},
+bK(a){return new A.pj(a,new A.a75(a),B.hQ,A.a([],t.H9))},
 aAc(a,b){var s=a.c,r=a.a
-return new A.pj(r,new A.a74(new A.pj(r,a.b,s,A.i2(a.e,!0,t.Ud)),b),s,A.b([],t.H9))},
+return new A.pj(r,new A.a74(new A.pj(r,a.b,s,A.i2(a.e,!0,t.Ud)),b),s,A.a([],t.H9))},
 axa(a){var s
 if(a!=null){s=a.K_()
 if(A.aBv(s)||A.aw9(s))return A.aBu(a)}return A.aAz(a)},
@@ -1021,20 +1021,20 @@ aBv(a){return t.f.b(a)&&J.e(a.h(0,"origin"),!0)},
 aw9(a){return t.f.b(a)&&J.e(a.h(0,"flutter"),!0)},
 d(a,b){var s=$.aAF
 $.aAF=s+1
-return new A.lb(a,b,s,A.b([],t.XS))},
-aJZ(){var s,r,q,p=A.b([],t.s8),o=$.bP
+return new A.lb(a,b,s,A.a([],t.XS))},
+aJZ(){var s,r,q,p=A.a([],t.s8),o=$.bP
 o=(o==null?$.bP=A.dX():o).d.a.XJ()
 s=A.avi()
 r=A.aSv()
 if($.aum().b.matches)q=32
 else q=0
-s=new A.KA(new A.a_A(p),o,new A.N2(new A.yx(q),!1,!1,B.am,r,s,"/",null),A.b([$.dc()],t.LE),v.G.window.matchMedia("(prefers-color-scheme: dark)"),B.aD)
+s=new A.KA(new A.a_A(p),o,new A.N2(new A.yx(q),!1,!1,B.am,r,s,"/",null),A.a([$.dc()],t.LE),v.G.window.matchMedia("(prefers-color-scheme: dark)"),B.aD)
 s.a3v()
 return s},
 aK_(a){return new A.a3J($.aq,a)},
 avi(){var s,r,q,p,o=v.G,n=o.window,m=A.aJw(n.navigator)
 if(m==null||m.length===0)return B.oG
-s=A.b([],t.ss)
+s=A.a([],t.ss)
 for(n=m.length,r=0;r<m.length;m.length===n||(0,A.B)(m),++r){q=m[r]
 p=new o.Intl.Locale(q)
 s.push(new A.pr(p.language,p.script,p.region))}return s},
@@ -1142,7 +1142,7 @@ return s},
 aNk(){var s,r,q,p,o,n,m,l,k,j,i=$.OQ
 $.OQ=null
 if(i==null||i.length===0)return
-s=A.b([],t.Nt)
+s=A.a([],t.Nt)
 for(r=i.length,q=0;p=i.length,q<p;i.length===r||(0,A.B)(i),++q){p=i[q].a.c.style
 p.setProperty("display","inline","")}for(q=0;q<i.length;i.length===p||(0,A.B)(i),++q){o=i[q]
 r=o.a
@@ -1164,7 +1164,7 @@ if(!r)r=s!=null?b+"\n":b
 else r=""
 if(s!=null)r+=s
 return r.length!==0?r.charCodeAt(0)==0?r:r:null},
-aQ9(a,b){var s=t.Ri,r=new A.b2(new A.c2(A.b([a,b],t._m),s),new A.asU(),s.i("b2<z.E>")).bj(0," ")
+aQ9(a,b){var s=t.Ri,r=new A.b2(new A.c2(A.a([a,b],t._m),s),new A.asU(),s.i("b2<z.E>")).bj(0," ")
 return r.length!==0?r:null},
 aNb(a){var s=new A.OB(B.kb,a),r=A.qj(s.bP(),a)
 s.a!==$&&A.bu()
@@ -1229,12 +1229,12 @@ r=A.ayl(B.iY)
 p.append(s)
 p.append(r)
 q=B.lh.n(0,$.bc().gdm())?new A.a1O():new A.aao()
-return new A.a3O(new A.a_8(s,r),new A.a3T(),new A.afw(q),B.hr,A.b([],t.s2))},
+return new A.a3O(new A.a_8(s,r),new A.a3T(),new A.afw(q),B.hr,A.a([],t.s2))},
 aK0(a,b){var s=t.S,r=t.UF
-r=new A.a3P(a,b,A.o(s,r),A.o(t.N,s),A.o(s,r),A.b([],t.Qo),A.b([],t.qj))
+r=new A.a3P(a,b,A.o(s,r),A.o(t.N,s),A.o(s,r),A.a([],t.Qo),A.a([],t.qj))
 r.a3w(a,b)
 return r},
-aEv(a){var s,r,q,p,o,n,m,l,k=a.length,j=t.t,i=A.b([],j),h=A.b([0],j)
+aEv(a){var s,r,q,p,o,n,m,l,k=a.length,j=t.t,i=A.a([],j),h=A.a([0],j)
 for(s=0,r=0;r<k;++r){q=a[r]
 for(p=s,o=1;o<=p;){n=B.i.i9(o+p,2)
 if(a[h[n]]<q)o=n+1
@@ -1252,7 +1252,7 @@ aNd(a){var s,r=$.OH
 if(r!=null)s=r.a===a
 else s=!1
 if(s)return r
-return $.OH=new A.afG(a,A.b([],t.Up),$,$,$,null,null)},
+return $.OH=new A.afG(a,A.a([],t.Up),$,$,$,null,null)},
 awL(a,b,c){var s,r,q;--c
 for(s=a.$flags|0;b<c;){r=a[b]
 q=a[c]
@@ -1261,7 +1261,7 @@ a[c]=r
 a[b]=q;++b;--c}},
 aws(){var s=new Uint8Array(0),r=new DataView(new ArrayBuffer(8))
 return new A.aix(new A.D5(s,0),r,J.wP(B.au.gcd(r)))},
-aRR(a,b,c){var s,r,q,p,o,n,m,l,k=A.b([],t._f)
+aRR(a,b,c){var s,r,q,p,o,n,m,l,k=A.a([],t._f)
 c.adoptText(b)
 c.first()
 for(s=a.length,r=0;!J.e(c.next(),-1);r=q){q=J.ai(c.current())
@@ -1471,7 +1471,7 @@ l=A.aJX(l,t.nA.a(a.h(0,h)),t.kc.a(a.h(0,"fields")))
 k=A.j8(a.h(0,"enableDeltaModel"))
 j=A.j8(a.h(0,"enableInteractiveSelection"))
 return new A.a6p(g,r,q,o===!0,p===!0,n!==!1,k===!0,s,l,m,j!==!1)},
-aKw(a){return new A.L0(a,A.b([],t.Up),$,$,$,null,null)},
+aKw(a){return new A.L0(a,A.a([],t.Up),$,$,$,null,null)},
 aTl(){$.ra.am(0,new A.auf())},
 aRY(){for(var s=new A.bB($.ra,$.ra.r,$.ra.e,A.k($.ra).i("bB<2>"));s.A();)s.d.remove()
 $.ra.W(0)},
@@ -1497,9 +1497,9 @@ q.yl(r)
 q=q.a.b.wy()
 q.toString
 n.p(0,a,q)}}}return s},
-aEk(a,b){var s,r=new A.Km(A.aA0($.aGM().h(0,b).segment(a),v.G.Symbol.iterator,t.m),t.YH),q=A.b([],t.t)
+aEk(a,b){var s,r=new A.Km(A.aA0($.aGM().h(0,b).segment(a),v.G.Symbol.iterator,t.m),t.YH),q=A.a([],t.t)
 while(r.A()){s=r.b
-s===$&&A.a()
+s===$&&A.b()
 q.push(s.index)}q.push(a.length)
 return new Uint32Array(A.km(q))},
 aSC(a){var s,r,q,p,o=A.aRR(a,a,$.aHt()),n=o.length,m=new Uint32Array((n+1)*2)
@@ -1750,7 +1750,7 @@ t.v6.a(a)
 s=a.a
 r=new A.Cl(s)
 r.b=r.a=0
-return new A.aip(a,A.b([r],t.OI),A.b([s],t.IH),new A.cB(""))},
+return new A.aip(a,A.a([r],t.OI),A.a([s],t.IH),new A.cB(""))},
 aCd(a,b){var s,r,q,p,o
 if(a==null){s=b.a
 r=b.b
@@ -3618,7 +3618,7 @@ if(o<=500)return String.fromCharCode.apply(null,a)
 for(s="",r=0;r<o;r=q){q=r+500
 p=q<o?q:o
 s+=String.fromCharCode.apply(null,a.slice(r,p))}return s},
-aMp(a){var s,r,q,p=A.b([],t.t)
+aMp(a){var s,r,q,p=A.a([],t.t)
 for(s=a.length,r=0;r<a.length;a.length===s||(0,A.B)(a),++r){q=a[r]
 if(!A.lZ(q))throw A.j(A.wE(q))
 if(q<=65535)p.push(q)
@@ -3698,7 +3698,7 @@ B(a){throw A.j(A.bO(a))},
 lE(a){var s,r,q,p,o,n
 a=A.aud(a.replace(String({}),"$receiver$"))
 s=a.match(/\\\$[a-zA-Z]+\\\$/g)
-if(s==null)s=A.b([],t.s)
+if(s==null)s=A.a([],t.s)
 r=s.indexOf("\\$arguments\\$")
 q=s.indexOf("\\$argumentsExpr\\$")
 p=s.indexOf("\\$expr\\$")
@@ -4160,7 +4160,7 @@ _.b=b
 _.c=c
 _.d=null},
 aTC(a){throw A.dC(A.aA8(a),new Error())},
-a(){throw A.dC(A.a6X(""),new Error())},
+b(){throw A.dC(A.a6X(""),new Error())},
 bu(){throw A.dC(A.aL2(""),new Error())},
 aw(){throw A.dC(A.aA8(""),new Error())},
 c9(){var s=new A.R9("")
@@ -4305,7 +4305,7 @@ s.a=q
 s.b=o
 s.c=m
 return s},
-b(a,b){a[v.arrayRti]=b
+a(a,b){a[v.arrayRti]=b
 return a},
 ZE(a){var s=a.$S
 if(s!=null){if(typeof s=="number")return A.aSJ(s)
@@ -4481,7 +4481,7 @@ p+=A.hL(l[n],b)
 if(q>=0)p+=" "+r[q];++q}return p+"})"},
 aDG(a1,a2,a3){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a=", ",a0=null
 if(a3!=null){s=a3.length
-if(a2==null)a2=A.b([],t.s)
+if(a2==null)a2=A.a([],t.s)
 else a0=a2.length
 r=a2.length
 for(q=s;q>0;--q)a2.push("T"+(r+q))
@@ -5036,7 +5036,7 @@ try{for(n=J.bs(a),m=t.P;n.A();){r=n.gN()
 q=i.b
 r.fe(new A.a4Z(i,q,f,b,h,g),s,m);++i.b}n=i.b
 if(n===0){n=f
-n.rG(A.b([],b.i("A<0>")))
+n.rG(A.a([],b.i("A<0>")))
 return n}i.a=A.be(n,null,!1,b.i("0?"))}catch(l){p=A.au(l)
 o=A.aW(l)
 if(i.b===0||g){n=f
@@ -5937,14 +5937,14 @@ throw a},
 be(a,b,c,d){var s,r=c?J.ts(a,d):J.zq(a,d)
 if(a!==0&&b!=null)for(s=0;s<r.length;++s)r[s]=b
 return r},
-i2(a,b,c){var s,r=A.b([],c.i("A<0>"))
+i2(a,b,c){var s,r=A.a([],c.i("A<0>"))
 for(s=J.bs(a);s.A();)r.push(s.gN())
 if(b)return r
 r.$flags=1
 return r},
 a1(a,b){var s,r
-if(Array.isArray(a))return A.b(a.slice(0),b.i("A<0>"))
-s=A.b([],b.i("A<0>"))
+if(Array.isArray(a))return A.a(a.slice(0),b.i("A<0>"))
+s=A.a([],b.i("A<0>"))
 for(r=J.bs(a);r.A();)s.push(r.gN())
 return s},
 avI(a,b,c,d){var s,r=c?J.ts(a,d):J.zq(a,d)
@@ -6059,7 +6059,7 @@ azY(a,b,c){if(a<=0)return new A.fj(c.i("fj<0>"))
 return new A.Eu(a,b,c.i("Eu<0>"))},
 azZ(a,b,c){var s,r
 if(A.axn(a)){if(b==="("&&c===")")return"(...)"
-return b+"..."+c}s=A.b([],t.s)
+return b+"..."+c}s=A.a([],t.s)
 $.re.push(a)
 try{A.aR4(a,s)}finally{$.re.pop()}r=A.agv(b,s,", ")+c
 return r.charCodeAt(0)==0?r:r},
@@ -6703,7 +6703,7 @@ aDg(a){if(B.c.bo(a,"."))return!0
 return B.c.hM(a,"/.")!==-1},
 r3(a){var s,r,q,p,o,n
 if(!A.aDg(a))return a
-s=A.b([],t.s)
+s=A.a([],t.s)
 for(r=a.split("/"),q=r.length,p=!1,o=0;o<q;++o){n=r[o]
 if(n===".."){if(s.length!==0){s.pop()
 if(s.length===0)s.push("")}p=!0}else{p="."===n
@@ -6711,7 +6711,7 @@ if(!p)s.push(n)}}if(p)s.push("")
 return B.b.bj(s,"/")},
 awR(a,b){var s,r,q,p,o,n
 if(!A.aDg(a))return!b?A.aD9(a):a
-s=A.b([],t.s)
+s=A.a([],t.s)
 for(r=a.split("/"),q=r.length,p=!1,o=0;o<q;++o){n=r[o]
 if(".."===n){if(s.length!==0&&B.b.gac(s)!=="..")s.pop()
 else s.push("..")
@@ -6726,7 +6726,7 @@ if(r===58)return B.c.Y(a,0,s)+"%3A"+B.c.bv(a,s+1)
 if(r>127||(u.S.charCodeAt(r)&8)===0)break}return a},
 aPN(a,b){if(a.WO("package")&&a.c==null)return A.aE1(b,0,b.length)
 return-1},
-aPH(){return A.b([],t.s)},
+aPH(){return A.a([],t.s)},
 aDj(a){var s,r,q,p,o,n=A.o(t.N,t.yp),m=new A.asj(a,B.X,n)
 for(s=a.length,r=0,q=0,p=-1;r<s;){o=a.charCodeAt(r)
 if(o===61){if(p<0)p=r}else if(o===38){m.$3(q,p,r)
@@ -6747,7 +6747,7 @@ if(r<=127)if(r!==37)q=e&&r===43
 if(q){s=!1
 break}++o}if(s)if(B.X===d||B.bP===d||B.bt===d)return B.c.Y(a,b,c)
 else p=new A.jm(B.c.Y(a,b,c))
-else{p=A.b([],t.t)
+else{p=A.a([],t.t)
 for(q=a.length,o=b;o<c;++o){r=a.charCodeAt(o)
 if(r>127)throw A.j(A.cW("Illegal percent encoding in URI",null))
 if(r===37){if(o+3>q)throw A.j(A.cW("Truncated URI",null))
@@ -6761,7 +6761,7 @@ if(a.c!=null)throw A.j(A.fI(a,"uri","Data uri must not have authority"))
 if(a.r!=null)throw A.j(A.fI(a,"uri","Data uri must not have a fragment part"))
 if(a.f==null)return A.ai3(a.e,0,a)
 return A.ai3(a.gpO(),5,a)},
-ai3(a,b,c){var s,r,q,p,o,n,m,l,k="Invalid MIME type",j=A.b([b-1],t.t)
+ai3(a,b,c){var s,r,q,p,o,n,m,l,k="Invalid MIME type",j=A.a([b-1],t.t)
 for(s=a.length,r=b,q=-1,p=null;r<s;++r){p=a.charCodeAt(r)
 if(p===44||p===59)break
 if(p===47){if(q<0){q=r
@@ -7080,14 +7080,14 @@ s=10
 return A.Y(g.fi(),$async$ZJ)
 case 10:f=d
 i=f.geb().b
-i===$&&A.a()
+i===$&&A.b()
 i=i.a
-i===$&&A.a()
+i===$&&A.b()
 m=J.ai(i.a.width())
 i=f.geb().b
-i===$&&A.a()
+i===$&&A.b()
 i=i.a
-i===$&&A.a()
+i===$&&A.b()
 l=J.ai(i.a.height())
 k=b.$2(m,l)
 i=a.a
@@ -7122,9 +7122,9 @@ r=A.hc(a.c,b.c,c)
 return new A.nn(q,s,r)},
 aBs(a,b,c){var s,r,q,p=a==null
 if(p&&b==null)return null
-if(p)a=A.b([],t.kO)
-if(b==null)b=A.b([],t.kO)
-s=A.b([],t.kO)
+if(p)a=A.a([],t.kO)
+if(b==null)b=A.a([],t.kO)
+s=A.a([],t.kO)
 r=Math.min(a.length,b.length)
 for(q=0;q<r;++q){p=A.aNh(a[q],b[q],c)
 p.toString
@@ -7660,11 +7660,11 @@ _.$ti=c},
 je:function je(a,b){this.a=a
 this.b=b},
 bF:function bF(){},
-ce(a,b,c,d,e){var s=new A.rm(0,1,B.iT,b,c,B.aQ,B.V,new A.b0(A.b([],t.F),t.Q),new A.em(A.o(t.M,t.S),t.PD))
+ce(a,b,c,d,e){var s=new A.rm(0,1,B.iT,b,c,B.aQ,B.V,new A.b0(A.a([],t.F),t.Q),new A.em(A.o(t.M,t.S),t.PD))
 s.r=e.u_(s.gCE())
 s.E7(d==null?0:d)
 return s},
-auL(a,b,c){var s=new A.rm(-1/0,1/0,B.iU,null,null,B.aQ,B.V,new A.b0(A.b([],t.F),t.Q),new A.em(A.o(t.M,t.S),t.PD))
+auL(a,b,c){var s=new A.rm(-1/0,1/0,B.iU,null,null,B.aQ,B.V,new A.b0(A.a([],t.F),t.Q),new A.em(A.o(t.M,t.S),t.PD))
 s.r=c.u_(s.gCE())
 s.E7(b)
 return s},
@@ -7695,7 +7695,7 @@ _.a=e},
 QA:function QA(){},
 QB:function QB(){},
 QC:function QC(){},
-lo(a){var s=new A.ub(new A.b0(A.b([],t.F),t.Q),new A.em(A.o(t.M,t.S),t.PD),0)
+lo(a){var s=new A.ub(new A.b0(A.a([],t.F),t.Q),new A.em(A.o(t.M,t.S),t.PD),0)
 s.c=a
 if(a==null){s.a=B.V
 s.b=0}return s},
@@ -7703,7 +7703,7 @@ cG(a,b,c){var s=new A.y1(b,a,c)
 s.Sp(b.gaN())
 b.h_(s.gSo())
 return s},
-awm(a,b,c){var s,r,q=new A.qA(a,b,c,new A.b0(A.b([],t.F),t.Q),new A.em(A.o(t.M,t.S),t.PD))
+awm(a,b,c){var s,r,q=new A.qA(a,b,c,new A.b0(A.a([],t.F),t.Q),new A.em(A.o(t.M,t.S),t.PD))
 if(b!=null)if(a.gu()===b.gu()){q.a=b
 q.b=null
 s=b}else{if(a.gu()>b.gu())q.c=B.a0h
@@ -7715,7 +7715,7 @@ q.a.a0(s)
 r=q.b
 if(r!=null){r.bw()
 r.cH$.C(0,s)}return q},
-ayp(a,b,c){return new A.x5(a,b,new A.b0(A.b([],t.F),t.Q),new A.em(A.o(t.M,t.S),t.PD),0,c.i("x5<0>"))},
+ayp(a,b,c){return new A.x5(a,b,new A.b0(A.a([],t.F),t.Q),new A.em(A.o(t.M,t.S),t.PD),0,c.i("x5<0>"))},
 Qq:function Qq(){},
 Qr:function Qr(){},
 mc:function mc(){},
@@ -7811,7 +7811,7 @@ this.b=b
 this.$ti=c},
 hh:function hh(a){this.a=a},
 Hs:function Hs(){},
-aC7(a,b){var s=new A.D4(A.b([],b.i("A<h0<0>>")),A.b([],t.mz),b.i("D4<0>"))
+aC7(a,b){var s=new A.D4(A.a([],b.i("A<h0<0>>")),A.a([],t.mz),b.i("D4<0>"))
 s.a3L(a,b)
 return s},
 aC8(a,b,c){return new A.h0(a,b,c.i("h0<0>"))},
@@ -7955,7 +7955,7 @@ s=new A.j3(s)}return s}if(b==null){s=a.a
 if(s==null)s=a
 else{r=A.X(s).i("a_<1,l>")
 s=A.a1(new A.a_(s,new A.akW(c),r),r.i("an.E"))
-s=new A.j3(s)}return s}s=A.b([],t.t_)
+s=new A.j3(s)}return s}s=A.a([],t.t_)
 for(r=b.a,q=a.a,p=0;p<r.length;++p){o=q==null?null:q[p]
 o=A.w(o,r[p],c)
 o.toString
@@ -8287,13 +8287,13 @@ _.x=k
 _.y=l
 _.z=m},
 RO:function RO(){},
-bi(a){var s=A.b([a],t.jl)
+bi(a){var s=A.a([a],t.jl)
 return new A.tb(null,null,!1,s,null,B.b0)},
-ju(a){var s=A.b([a],t.jl)
+ju(a){var s=A.a([a],t.jl)
 return new A.KC(null,null,!1,s,null,B.He)},
-yA(a){var s=A.b([a],t.jl)
+yA(a){var s=A.a([a],t.jl)
 return new A.KB(null,null,!1,s,null,B.Hd)},
-hW(a){var s=A.b(a.split("\n"),t.s),r=A.b([A.ju(B.b.gab(s))],t.D),q=A.f4(s,1,null,t.N)
+hW(a){var s=A.a(a.split("\n"),t.s),r=A.a([A.ju(B.b.gab(s))],t.D),q=A.f4(s,1,null,t.N)
 B.b.P(r,new A.a_(q,new A.a4g(),q.$ti.i("a_<an.E,dt>")))
 return new A.oT(r)},
 mx(a){return new A.oT(a)},
@@ -8315,9 +8315,9 @@ h.d4(n,new A.a4i())
 B.b.de(g,r);--r}}m=A.be(q,null,!1,t.ob)
 for(l=0;!1;++l)$.aKh[l].at0(g,m)
 q=t.s
-k=A.b([],q)
+k=A.a([],q)
 for(r=0;r<g.length;++r){for(;;){if(!!1)break;++r}j=g[r]
-k.push(j.a)}q=A.b([],q)
+k.push(j.a)}q=A.a([],q)
 for(j=new A.fo(h,A.k(h).i("fo<1,2>")).ga5(0);j.A();){i=j.d
 if(i.b>0)q.push(i.a)}B.b.jm(q)
 if(s===1)k.push("(elided one frame from "+B.b.gbn(q)+")")
@@ -8330,14 +8330,14 @@ d_(a){var s=$.jw
 if(s!=null)s.$1(a)},
 aSk(a,b,c){var s,r
 A.axu().$1(a)
-s=A.b(B.c.kO((c==null?A.aBD():A.azs(c)).k(0)).split("\n"),t.s)
+s=A.a(B.c.kO((c==null?A.aBD():A.azs(c)).k(0)).split("\n"),t.s)
 r=s.length
 s=J.Iu(r!==0?new A.C4(s,new A.atF(),t.Ws):s,b)
 A.axu().$1(B.b.bj(A.azt(s),"\n"))},
 aJi(a,b,c){A.aJj(b,c)
 return new A.Kf()},
-aJj(a,b){if(a==null)return A.b([],t.D)
-return J.jd(A.azt(A.b(B.c.kO(A.m(A.azs(a))).split("\n"),t.s)),A.aRG(),t.EX).ep(0)},
+aJj(a,b){if(a==null)return A.a([],t.D)
+return J.jd(A.azt(A.a(B.c.kO(A.m(A.azs(a))).split("\n"),t.s)),A.aRG(),t.EX).ep(0)},
 aJk(a){return A.az5(a,!1)},
 aOM(a,b,c){return new A.SI()},
 nN:function nN(){},
@@ -8440,7 +8440,7 @@ this.$ti=b},
 awK:function awK(a){this.$ti=a},
 i0:function i0(){},
 zF:function zF(){},
-Am(a){return new A.b0(A.b([],a.i("A<0>")),a.i("b0<0>"))},
+Am(a){return new A.b0(A.a([],a.i("A<0>")),a.i("b0<0>"))},
 b0:function b0(a,b){var _=this
 _.a=a
 _.b=!1
@@ -8472,11 +8472,11 @@ _.e=c},
 AY:function AY(a){this.a=a
 this.b=0},
 aNr(a){var s=t.ZK
-s=A.a1(new A.c2(new A.e7(new A.b2(A.b(B.c.fN(a).split("\n"),t.s),new A.agj(),t.Hd),A.aTr(),t.C9),s),s.i("z.E"))
+s=A.a1(new A.c2(new A.e7(new A.b2(A.a(B.c.fN(a).split("\n"),t.s),new A.agj(),t.Hd),A.aTr(),t.C9),s),s.i("z.E"))
 return s},
 aNq(a){var s,r,q="<unknown>",p=$.aFQ().eE(a)
 if(p==null)return null
-s=A.b(p.b[1].split("."),t.s)
+s=A.a(p.b[1].split("."),t.s)
 r=s.length>1?B.b.gab(s):q
 return new A.iU(a,-1,q,q,q,-1,-1,r,s.length>1?A.f4(s,1,null,t.N).bj(0,"."):B.b.gbn(s))},
 aNs(a){var s,r,q,p,o,n,m,l,k,j,i=null,h="<unknown>"
@@ -9226,9 +9226,9 @@ a4H:function a4H(a){this.a=a},
 a4I:function a4I(a){this.a=a},
 ST:function ST(){},
 t2:function t2(a){this.a=a},
-a5y(){var s=A.b([],t.om),r=new A.aP(new Float64Array(16))
+a5y(){var s=A.a([],t.om),r=new A.aP(new Float64Array(16))
 r.dh()
-return new A.kV(s,A.b([r],t.Xr),A.b([],t.cR))},
+return new A.kV(s,A.a([r],t.Xr),A.a([],t.cR))},
 hl:function hl(a,b){this.a=a
 this.b=null
 this.$ti=b},
@@ -9292,11 +9292,11 @@ this.c=c},
 aJA(a){return new A.j1(a.gcp(),A.be(20,null,!1,t.av))},
 aJB(a){return a===1},
 aOp(a,b){var s=t.S
-return new A.hI(B.ab,B.dT,A.ZK(),B.cs,A.o(s,t.GY),A.o(s,t.v),B.h,A.b([],t.t),A.o(s,t.J),A.cN(s),a,b,A.ZL(),A.o(s,t.G))},
+return new A.hI(B.ab,B.dT,A.ZK(),B.cs,A.o(s,t.GY),A.o(s,t.v),B.h,A.a([],t.t),A.o(s,t.J),A.cN(s),a,b,A.ZL(),A.o(s,t.G))},
 avw(a,b){var s=t.S
-return new A.hm(B.ab,B.dT,A.ZK(),B.cs,A.o(s,t.GY),A.o(s,t.v),B.h,A.b([],t.t),A.o(s,t.J),A.cN(s),a,b,A.ZL(),A.o(s,t.G))},
+return new A.hm(B.ab,B.dT,A.ZK(),B.cs,A.o(s,t.GY),A.o(s,t.v),B.h,A.a([],t.t),A.o(s,t.J),A.cN(s),a,b,A.ZL(),A.o(s,t.G))},
 aAP(a,b){var s=t.S
-return new A.iO(B.ab,B.dT,A.ZK(),B.cs,A.o(s,t.GY),A.o(s,t.v),B.h,A.b([],t.t),A.o(s,t.J),A.cN(s),a,b,A.ZL(),A.o(s,t.G))},
+return new A.iO(B.ab,B.dT,A.ZK(),B.cs,A.o(s,t.GY),A.o(s,t.v),B.h,A.a([],t.t),A.o(s,t.J),A.cN(s),a,b,A.ZL(),A.o(s,t.G))},
 E7:function E7(a,b){this.a=a
 this.b=b},
 hi:function hi(){},
@@ -9738,7 +9738,7 @@ break
 default:s=null}return s}},
 aI8(a,b){var s,r,q,p,o,n,m=null
 switch(A.W(a).w.a){case 2:return new A.a_(b,new A.a_l(),A.X(b).i("a_<1,f>"))
-case 1:case 0:s=A.b([],t.p)
+case 1:case 0:s=A.a([],t.p)
 for(r=0;q=b.length,r<q;++r){p=b[r]
 o=A.aO0(r,q)
 q=A.aO1(o)
@@ -10424,151 +10424,151 @@ this.a=c},
 a19(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,c0,c1,c2,c3,c4,c5,c6,c7,c8,c9,d0){return new A.rN(b,a7,k,a8,l,a9,b0,m,n,b2,o,b3,p,b4,b5,q,r,c7,a1,c8,a2,c9,d0,a3,a4,c,h,d,i,b7,s,c6,c4,b8,c3,c2,b9,c0,c1,a0,a5,a6,b6,b1,f,j,e,c5,a,g)},
 aIN(d1,d2,d3,d4){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,c0,c1,c2,c3,c4,c5,c6,c7,c8,c9,d0=A.aIO(d1,d4,B.HF,0)
 if(d3==null){s=$.I9().bg(d0).d
-s===$&&A.a()
+s===$&&A.b()
 s=A.bg(s)}else s=d3
 if(d2==null){r=$.aFf().bg(d0).d
-r===$&&A.a()
+r===$&&A.b()
 r=A.bg(r)}else r=d2
 q=$.Ia().bg(d0).d
-q===$&&A.a()
+q===$&&A.b()
 q=A.bg(q)
 p=$.aFg().bg(d0).d
-p===$&&A.a()
+p===$&&A.b()
 p=A.bg(p)
 o=$.Ib().bg(d0).d
-o===$&&A.a()
+o===$&&A.b()
 o=A.bg(o)
 n=$.Ic().bg(d0).d
-n===$&&A.a()
+n===$&&A.b()
 n=A.bg(n)
 m=$.aFh().bg(d0).d
-m===$&&A.a()
+m===$&&A.b()
 m=A.bg(m)
 l=$.aFi().bg(d0).d
-l===$&&A.a()
+l===$&&A.b()
 l=A.bg(l)
 k=$.ZT().bg(d0).d
-k===$&&A.a()
+k===$&&A.b()
 k=A.bg(k)
 j=$.aFj().bg(d0).d
-j===$&&A.a()
+j===$&&A.b()
 j=A.bg(j)
 i=$.Id().bg(d0).d
-i===$&&A.a()
+i===$&&A.b()
 i=A.bg(i)
 h=$.aFk().bg(d0).d
-h===$&&A.a()
+h===$&&A.b()
 h=A.bg(h)
 g=$.Ie().bg(d0).d
-g===$&&A.a()
+g===$&&A.b()
 g=A.bg(g)
 f=$.If().bg(d0).d
-f===$&&A.a()
+f===$&&A.b()
 f=A.bg(f)
 e=$.aFl().bg(d0).d
-e===$&&A.a()
+e===$&&A.b()
 e=A.bg(e)
 d=$.aFm().bg(d0).d
-d===$&&A.a()
+d===$&&A.b()
 d=A.bg(d)
 c=$.ZU().bg(d0).d
-c===$&&A.a()
+c===$&&A.b()
 c=A.bg(c)
 b=$.aFp().bg(d0).d
-b===$&&A.a()
+b===$&&A.b()
 b=A.bg(b)
 a=$.Ig().bg(d0).d
-a===$&&A.a()
+a===$&&A.b()
 a=A.bg(a)
 a0=$.aFq().bg(d0).d
-a0===$&&A.a()
+a0===$&&A.b()
 a0=A.bg(a0)
 a1=$.Ih().bg(d0).d
-a1===$&&A.a()
+a1===$&&A.b()
 a1=A.bg(a1)
 a2=$.Ii().bg(d0).d
-a2===$&&A.a()
+a2===$&&A.b()
 a2=A.bg(a2)
 a3=$.aFr().bg(d0).d
-a3===$&&A.a()
+a3===$&&A.b()
 a3=A.bg(a3)
 a4=$.aFs().bg(d0).d
-a4===$&&A.a()
+a4===$&&A.b()
 a4=A.bg(a4)
 a5=$.ZR().bg(d0).d
-a5===$&&A.a()
+a5===$&&A.b()
 a5=A.bg(a5)
 a6=$.aFd().bg(d0).d
-a6===$&&A.a()
+a6===$&&A.b()
 a6=A.bg(a6)
 a7=$.ZS().bg(d0).d
-a7===$&&A.a()
+a7===$&&A.b()
 a7=A.bg(a7)
 a8=$.aFe().bg(d0).d
-a8===$&&A.a()
+a8===$&&A.b()
 a8=A.bg(a8)
 a9=$.aFt().bg(d0).d
-a9===$&&A.a()
+a9===$&&A.b()
 a9=A.bg(a9)
 b0=$.aFu().bg(d0).d
-b0===$&&A.a()
+b0===$&&A.b()
 b0=A.bg(b0)
 b1=$.aFx().bg(d0).d
-b1===$&&A.a()
+b1===$&&A.b()
 b1=A.bg(b1)
 b2=$.ei().bg(d0).d
-b2===$&&A.a()
+b2===$&&A.b()
 b2=A.bg(b2)
 b3=$.eh().bg(d0).d
-b3===$&&A.a()
+b3===$&&A.b()
 b3=A.bg(b3)
 b4=$.aFC().bg(d0).d
-b4===$&&A.a()
+b4===$&&A.b()
 b4=A.bg(b4)
 b5=$.aFB().bg(d0).d
-b5===$&&A.a()
+b5===$&&A.b()
 b5=A.bg(b5)
 b6=$.aFy().bg(d0).d
-b6===$&&A.a()
+b6===$&&A.b()
 b6=A.bg(b6)
 b7=$.aFz().bg(d0).d
-b7===$&&A.a()
+b7===$&&A.b()
 b7=A.bg(b7)
 b8=$.aFA().bg(d0).d
-b8===$&&A.a()
+b8===$&&A.b()
 b8=A.bg(b8)
 b9=$.aFn().bg(d0).d
-b9===$&&A.a()
+b9===$&&A.b()
 b9=A.bg(b9)
 c0=$.aFo().bg(d0).d
-c0===$&&A.a()
+c0===$&&A.b()
 c0=A.bg(c0)
 c1=$.aun().bg(d0).d
-c1===$&&A.a()
+c1===$&&A.b()
 c1=A.bg(c1)
 c2=$.aFa().bg(d0).d
-c2===$&&A.a()
+c2===$&&A.b()
 c2=A.bg(c2)
 c3=$.aFb().bg(d0).d
-c3===$&&A.a()
+c3===$&&A.b()
 c3=A.bg(c3)
 c4=$.aFw().bg(d0).d
-c4===$&&A.a()
+c4===$&&A.b()
 c4=A.bg(c4)
 c5=$.aFv().bg(d0).d
-c5===$&&A.a()
+c5===$&&A.b()
 c5=A.bg(c5)
 c6=$.I9().bg(d0).d
-c6===$&&A.a()
+c6===$&&A.b()
 c6=A.bg(c6)
 c7=$.axL().bg(d0).d
-c7===$&&A.a()
+c7===$&&A.b()
 c7=A.bg(c7)
 c8=$.aFc().bg(d0).d
-c8===$&&A.a()
+c8===$&&A.b()
 c8=A.bg(c8)
 c9=$.aFD().bg(d0).d
-c9===$&&A.a()
+c9===$&&A.b()
 c9=A.bg(c9)
 return A.a19(c7,d1,a5,a7,c3,c1,c8,a6,a8,c2,r,p,m,l,j,h,e,d,b9,c0,b,a0,a3,a4,a9,b0,s,q,o,n,c5,k,i,g,f,c4,b1,b3,b6,b7,b8,b5,b4,b2,c6,c9,c,a,a1,a2)},
 aIP(d5,d6,d7){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,c0,c1,c2,c3,c4,c5,c6,c7,c8,c9,d0,d1,d2,d3,d4
@@ -10786,9 +10786,9 @@ b4=d6.k4
 return A.a19(q,s,a7,f,o,d2,n,b1,b,d3,m,k,h,g,a,a1,a4,a5,b6,c7,b3,b8,a6,c,c9,d0,p,l,j,i,d1,d,a0,a2,a3,c8,b2,c1,c4,c5,c6,c3,c2,c0,r,A.w(a9,b4==null?b0:b4,d7),a8,b7,b9,e)},
 aIO(a,b,c,d){var s,r,q,p,o,n,m=a===B.al,l=A.fS(b.gu())
 switch(c.a){case 0:s=l.d
-s===$&&A.a()
+s===$&&A.b()
 r=l.a
-r===$&&A.a()
+r===$&&A.b()
 r=A.br(r,36)
 q=A.br(l.a,16)
 p=A.br(A.zW(l.a+60),24)
@@ -10798,11 +10798,11 @@ n=new A.Oi(A.fS(s),B.ZI,m,d,r,q,p,o,n,A.br(25,84))
 s=n
 break
 case 1:s=l.d
-s===$&&A.a()
+s===$&&A.b()
 r=l.a
-r===$&&A.a()
+r===$&&A.b()
 q=l.b
-q===$&&A.a()
+q===$&&A.b()
 q=A.br(r,q)
 r=l.a
 p=l.b
@@ -10814,11 +10814,11 @@ n=new A.Od(A.fS(s),B.dp,m,d,q,p,r,o,n,A.br(25,84))
 s=n
 break
 case 6:s=l.d
-s===$&&A.a()
+s===$&&A.b()
 r=l.a
-r===$&&A.a()
+r===$&&A.b()
 q=l.b
-q===$&&A.a()
+q===$&&A.b()
 q=A.br(r,q)
 r=l.a
 p=l.b
@@ -10830,9 +10830,9 @@ n=new A.Ob(A.fS(s),B.dn,m,d,q,p,r,o,n,A.br(25,84))
 s=n
 break
 case 2:s=l.d
-s===$&&A.a()
+s===$&&A.b()
 r=l.a
-r===$&&A.a()
+r===$&&A.b()
 r=A.br(r,0)
 q=A.br(l.a,0)
 p=A.br(l.a,0)
@@ -10842,9 +10842,9 @@ n=new A.Of(A.fS(s),B.an,m,d,r,q,p,o,n,A.br(25,84))
 s=n
 break
 case 3:s=l.d
-s===$&&A.a()
+s===$&&A.b()
 r=l.a
-r===$&&A.a()
+r===$&&A.b()
 r=A.br(r,12)
 q=A.br(l.a,8)
 p=A.br(l.a,16)
@@ -10854,9 +10854,9 @@ n=new A.Og(A.fS(s),B.ZH,m,d,r,q,p,o,n,A.br(25,84))
 s=n
 break
 case 4:s=l.d
-s===$&&A.a()
+s===$&&A.b()
 r=l.a
-r===$&&A.a()
+r===$&&A.b()
 r=A.br(r,200)
 q=A.br(A.a2u(l,$.aBk,$.aMU),24)
 p=A.br(A.a2u(l,$.aBk,$.aMV),32)
@@ -10866,9 +10866,9 @@ n=new A.Oj(A.fS(s),B.ZJ,m,d,r,q,p,o,n,A.br(25,84))
 s=n
 break
 case 5:s=l.d
-s===$&&A.a()
+s===$&&A.b()
 r=l.a
-r===$&&A.a()
+r===$&&A.b()
 r=A.br(A.zW(r+240),40)
 q=A.br(A.a2u(l,$.aBj,$.aMS),24)
 p=A.br(A.a2u(l,$.aBj,$.aMT),32)
@@ -10878,9 +10878,9 @@ n=new A.Oc(A.fS(s),B.ZK,m,d,r,q,p,o,n,A.br(25,84))
 s=n
 break
 case 7:s=l.d
-s===$&&A.a()
+s===$&&A.b()
 r=l.a
-r===$&&A.a()
+r===$&&A.b()
 r=A.br(r,48)
 q=A.br(l.a,16)
 p=A.br(A.zW(l.a+60),24)
@@ -10890,9 +10890,9 @@ n=new A.Oh(A.fS(s),B.ZL,m,d,r,q,p,o,n,A.br(25,84))
 s=n
 break
 case 8:s=l.d
-s===$&&A.a()
+s===$&&A.b()
 r=l.a
-r===$&&A.a()
+r===$&&A.b()
 r=A.br(A.zW(r-50),48)
 q=A.br(A.zW(l.a-50),36)
 p=A.br(l.a,36)
@@ -11576,7 +11576,7 @@ _.z=f
 _.b=g
 _.a=h},
 aNt(a,b){return a.r.a-16-a.e.c-a.a.a+b},
-aCl(a,b,c,d,e){return new A.Dr(c,d,a,b,new A.b0(A.b([],t.F),t.Q),new A.em(A.o(t.M,t.S),t.PD),0,e.i("Dr<0>"))},
+aCl(a,b,c,d,e){return new A.Dr(c,d,a,b,new A.b0(A.a([],t.F),t.Q),new A.em(A.o(t.M,t.S),t.PD),0,e.i("Dr<0>"))},
 a49:function a49(){},
 agk:function agk(){},
 a3Y:function a3Y(){},
@@ -12562,7 +12562,7 @@ _.d=d},
 Md:function Md(a,b){this.c=a
 this.a=b},
 mU(a,b,c,d,e,f,g,h,i,j,k,l,m,n){return new A.zS(e,n,!1,h,g,j,l,m,k,c,f,b,d,i)},
-aKP(a,b){var s,r,q,p,o,n,m,l,k,j,i=t.TT,h=A.b([a],i),g=A.b([b],i)
+aKP(a,b){var s,r,q,p,o,n,m,l,k,j,i=t.TT,h=A.a([a],i),g=A.a([b],i)
 for(s=b,r=a;r!==s;){q=r.c
 p=s.c
 if(q>=p){o=r.gb9()
@@ -12836,7 +12836,7 @@ aLQ(a,b,c){if(a===b)return a
 return new A.At(A.jk(a.a,b.a,c))},
 At:function At(a){this.a=a},
 Uc:function Uc(){},
-aa9(a,b,c){var s=null,r=A.b([],t.Zt),q=$.aq,p=A.lo(B.cx),o=A.b([],t.wi),n=$.ab(),m=$.aq,l=c.i("aB<0?>"),k=c.i("c_<0?>"),j=b==null?B.yV:b
+aa9(a,b,c){var s=null,r=A.a([],t.Zt),q=$.aq,p=A.lo(B.cx),o=A.a([],t.wi),n=$.ab(),m=$.aq,l=c.i("aB<0?>"),k=c.i("c_<0?>"),j=b==null?B.yV:b
 return new A.hr(a,!1,!0,!1,s,s,s,r,A.aD(t.f9),new A.bJ(s,c.i("bJ<nV<0>>")),new A.bJ(s,t.C),new A.MR(),s,0,new A.c_(new A.aB(q,c.i("aB<0?>")),c.i("c_<0?>")),p,o,s,j,new A.c8(s,n,t.Ll),new A.c_(new A.aB(m,l),k),new A.c_(new A.aB(m,l),k),c.i("hr<0>"))},
 aLj(a,b,c,d,e){var s,r
 A.W(a)
@@ -12880,14 +12880,14 @@ _.f=a2
 _.$ti=a3},
 Mk:function Mk(){},
 EV:function EV(){},
-aK8(a,b,c,d){var s=new A.ms(new A.hz(b,new A.b0(A.b([],t.F),t.Q),0),new A.a4_(),new A.a40(),d,null),r=A.Mq(a,B.a_A,t.X)
+aK8(a,b,c,d){var s=new A.ms(new A.hz(b,new A.b0(A.a([],t.F),t.Q),0),new A.a4_(),new A.a40(),d,null),r=A.Mq(a,B.a_A,t.X)
 r=r==null?null:r.gkA()
 if(r===!1)return s
 if(b.gaN().gjM())r=A.W(a).ax.k2
 else r=B.D
 return new A.ml(r,s,null)},
 aCj(a,b,c,d,e,f,g){var s=g==null?A.W(a).ax.k2:g
-return new A.ms(new A.hz(c,new A.b0(A.b([],t.F),t.Q),0),new A.aiz(e,!0,s),new A.aiA(e),d,null)},
+return new A.ms(new A.hz(c,new A.b0(A.a([],t.F),t.Q),0),new A.aiz(e,!0,s),new A.aiA(e),d,null)},
 aDz(a,b,c,d,e){var s,r,q,p,o,n,m,l,k,j
 if(c<=0||d<=0)return
 $.a0()
@@ -12895,12 +12895,12 @@ s=A.b_()
 s.Q=B.eN
 s.r=A.ayP(0,0,0,d).gu()
 r=b.b
-r===$&&A.a()
+r===$&&A.b()
 r=r.a
-r===$&&A.a()
+r===$&&A.b()
 q=J.ai(r.a.width())/e
 r=b.b.a
-r===$&&A.a()
+r===$&&A.b()
 p=J.ai(r.a.height())/e
 o=q*c
 n=p*c
@@ -12908,10 +12908,10 @@ m=(q-o)/2
 l=(p-n)/2
 r=a.gbW()
 k=b.b.a
-k===$&&A.a()
+k===$&&A.b()
 k=J.ai(k.a.width())
 j=b.b.a
-j===$&&A.a()
+j===$&&A.b()
 r.uf(b,new A.x(0,0,k,J.ai(j.a.height())),new A.x(m,l,m+o,l+n),s)},
 aE3(a,b,c){var s,r
 a.dh()
@@ -13183,7 +13183,7 @@ V6:function V6(){},
 dP(a,b,c){return new A.Bx(a,c,b,null)},
 adX(a){var s=a.lp(t.Np)
 if(s!=null)return s
-throw A.j(A.mx(A.b([A.ju("Scaffold.of() called with a context that does not contain a Scaffold."),A.bi("No Scaffold ancestor could be found starting from the context that was passed to Scaffold.of(). This usually happens when the context provided is from the same StatefulWidget as that whose build function actually creates the Scaffold widget being sought."),A.yA('There are several ways to avoid this problem. The simplest is to use a Builder to get a context that is "under" the Scaffold. For an example of this, please see the documentation for Scaffold.of():\n  https://api.flutter.dev/flutter/material/Scaffold/of.html'),A.yA("A more efficient solution is to split your build function into several widgets. This introduces a new context from which you can obtain the Scaffold. In this solution, you would have an outer widget that creates the Scaffold populated by instances of your new inner widgets, and then in these inner widgets you would use Scaffold.of().\nA less elegant but more expedient solution is assign a GlobalKey to the Scaffold, then use the key.currentState property to obtain the ScaffoldState rather than using the Scaffold.of() function."),a.alC("The context used was")],t.D)))},
+throw A.j(A.mx(A.a([A.ju("Scaffold.of() called with a context that does not contain a Scaffold."),A.bi("No Scaffold ancestor could be found starting from the context that was passed to Scaffold.of(). This usually happens when the context provided is from the same StatefulWidget as that whose build function actually creates the Scaffold widget being sought."),A.yA('There are several ways to avoid this problem. The simplest is to use a Builder to get a context that is "under" the Scaffold. For an example of this, please see the documentation for Scaffold.of():\n  https://api.flutter.dev/flutter/material/Scaffold/of.html'),A.yA("A more efficient solution is to split your build function into several widgets. This introduces a new context from which you can obtain the Scaffold. In this solution, you would have an outer widget that creates the Scaffold populated by instances of your new inner widgets, and then in these inner widgets you would use Scaffold.of().\nA less elegant but more expedient solution is assign a GlobalKey to the Scaffold, then use the key.currentState property to obtain the ScaffoldState rather than using the Scaffold.of() function."),a.alC("The context used was")],t.D)))},
 aMP(a,b){return A.on(b,new A.adW(b),null)},
 h8:function h8(a,b){this.a=a
 this.b=b},
@@ -13867,7 +13867,7 @@ q.aE()
 q.P(0,r)
 return q},
 aQH(a){var s,r,q=a.gdN().x
-q===$&&A.a()
+q===$&&A.b()
 s=a.e
 r=a.d
 if(a.f===0)return A.D(Math.abs(r-q),0,1)
@@ -14407,7 +14407,7 @@ _.eB$=a
 _.bL$=b
 _.c=_.a=null},
 aj2:function aj2(){},
-v1(d0,d1,d2){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,c0,c1,c2,c3,c4,c5,c6=null,c7=A.b([],t.FO),c8=A.b([],t.lY),c9=A.aF()
+v1(d0,d1,d2){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,c0,c1,c2,c3,c4,c5,c6=null,c7=A.a([],t.FO),c8=A.a([],t.lY),c9=A.aF()
 switch(c9.a){case 0:case 1:case 2:s=B.Oc
 break
 case 3:case 4:case 5:s=B.uW
@@ -14832,7 +14832,7 @@ Xz:function Xz(){},
 aCu(a,b,c,d){return new A.Sy(c,null,d,b,a,null)},
 aOc(a,b){return new A.CZ(b,a,null)},
 aOf(){var s,r,q
-if($.qz.length!==0){s=A.b($.qz.slice(0),A.X($.qz))
+if($.qz.length!==0){s=A.a($.qz.slice(0),A.X($.qz))
 for(r=s.length,q=0;q<s.length;s.length===r||(0,A.B)(s),++q)s[q].ti(B.B)
 return!0}return!1},
 aC3(a){var s
@@ -14965,7 +14965,7 @@ _.e=e},
 XX:function XX(){},
 aQF(){return new v.G.XMLHttpRequest()},
 aQG(){return v.G.document.createElement("img")},
-aCA(a,b,c){var s=new A.SU(a,A.b([],t.XZ),A.b([],t.SM),A.b([],t.qj))
+aCA(a,b,c){var s=new A.SU(a,A.a([],t.XZ),A.a([],t.SM),A.a([],t.qj))
 s.a3M(a,b,c)
 return s},
 tV:function tV(a,b,c,d){var _=this
@@ -15319,7 +15319,7 @@ if(s==null)s=a==null?null:a.dd(b,c)
 if(s==null)r=c<0.5?a:b
 else r=s
 return r},
-aCr(a,b,c){var s,r,q,p,o,n,m=a instanceof A.il?a.a:A.b([a],t.Fi),l=b instanceof A.il?b.a:A.b([b],t.Fi),k=A.b([],t.N_),j=Math.max(m.length,l.length)
+aCr(a,b,c){var s,r,q,p,o,n,m=a instanceof A.il?a.a:A.a([a],t.Fi),l=b instanceof A.il?b.a:A.a([b],t.Fi),k=A.a([],t.N_),j=Math.max(m.length,l.length)
 for(s=1-c,r=0;r<j;++r){q=r<m.length?m[r]:null
 p=r<l.length?l[r]:null
 o=q!=null
@@ -15418,7 +15418,7 @@ q=a.d
 if(q.j(0,B.m)&&a.b.j(0,B.m))return new A.ez(A.aJ(a.a,b.a,c),A.aJ(B.m,s,c),A.aJ(B.m,b.c,c),A.aJ(a.c,b.d,c))
 if(c<0.5){s=c*2
 return new A.cU(A.aJ(a.a,b.a,c),A.aJ(a.b,B.m,s),A.aJ(a.c,b.d,c),A.aJ(q,B.m,s))}q=(c-0.5)*2
-return new A.ez(A.aJ(a.a,b.a,c),A.aJ(B.m,s,q),A.aJ(B.m,b.c,q),A.aJ(a.c,b.d,c))}throw A.j(A.mx(A.b([A.ju("BoxBorder.lerp can only interpolate Border and BorderDirectional classes."),A.bi("BoxBorder.lerp() was called with two objects of type "+J.L(a).k(0)+" and "+J.L(b).k(0)+":\n  "+A.m(a)+"\n  "+A.m(b)+"\nHowever, only Border and BorderDirectional classes are supported by this method."),A.yA("For a more general interpolation method, consider using ShapeBorder.lerp instead.")],t.D)))},
+return new A.ez(A.aJ(a.a,b.a,c),A.aJ(B.m,s,q),A.aJ(B.m,b.c,q),A.aJ(a.c,b.d,c))}throw A.j(A.mx(A.a([A.ju("BoxBorder.lerp can only interpolate Border and BorderDirectional classes."),A.bi("BoxBorder.lerp() was called with two objects of type "+J.L(a).k(0)+" and "+J.L(b).k(0)+":\n  "+A.m(a)+"\n  "+A.m(b)+"\nHowever, only Border and BorderDirectional classes are supported by this method."),A.yA("For a more general interpolation method, consider using ShapeBorder.lerp instead.")],t.D)))},
 ayA(a,b,c,d){var s,r,q
 $.a0()
 s=A.b_()
@@ -15553,10 +15553,10 @@ o=a.e
 return new A.bn(p,o===B.O?b.e:o,s,r,q)},
 auS(a,b,c){var s,r,q,p,o,n
 if(a==null?b==null:a===b)return a
-if(a==null)a=A.b([],t.E)
-if(b==null)b=A.b([],t.E)
+if(a==null)a=A.a([],t.E)
+if(b==null)b=A.a([],t.E)
 s=Math.min(a.length,b.length)
-r=A.b([],t.E)
+r=A.a([],t.E)
 for(q=0;q<s;++q)r.push(A.aIn(a[q],b[q],c))
 for(p=1-c,q=s;q<a.length;++q){o=a[q]
 n=o.b
@@ -15635,12 +15635,12 @@ q=b4.b
 p=b4.d-q
 o=new A.y(r,p)
 n=b0.b
-n===$&&A.a()
+n===$&&A.b()
 n=n.a
-n===$&&A.a()
+n===$&&A.b()
 n=J.ai(n.a.width())
 m=b0.b.a
-m===$&&A.a()
+m===$&&A.b()
 m=J.ai(m.a.height())
 if(a8==null)a8=B.mq
 l=A.aE5(a8,new A.y(n,m).dU(0,b6),o)
@@ -15680,7 +15680,7 @@ if(!g||c===B.Jk){s=B.d.h7((a.a-l)/k)
 r=B.d.ld((a.c-m)/k)}else{s=0
 r=0}if(!g||c===B.Jl){q=B.d.h7((a.b-i)/h)
 p=B.d.ld((a.d-j)/h)}else{q=0
-p=0}m=A.b([],t.AO)
+p=0}m=A.a([],t.AO)
 for(o=s;o<=r;++o)for(l=o*k,n=q;n<=p;++n)m.push(b.cS(new A.i(l,n*h)))
 return m},
 tl:function tl(a,b){this.a=a
@@ -15791,7 +15791,7 @@ anK:function anK(a,b){this.a=a
 this.b=b},
 Uk:function Uk(a,b){this.a=a
 this.b=b},
-aCk(){return new A.Dm(A.b([],t.XZ),A.b([],t.SM),A.b([],t.qj))},
+aCk(){return new A.Dm(A.a([],t.XZ),A.a([],t.SM),A.a([],t.qj))},
 aw0(a,b,c){return c},
 aLM(a,b){return new A.tW("HTTP request failed, statusCode: "+a+", "+b.k(0))},
 pa:function pa(a,b,c,d,e,f){var _=this
@@ -15851,10 +15851,10 @@ _.b=b
 _.c=c
 _.d=d},
 a_E:function a_E(a){this.a=a},
-aLP(a,b){var s=new A.MJ(A.b([],t.XZ),A.b([],t.SM),A.b([],t.qj))
+aLP(a,b){var s=new A.MJ(A.a([],t.XZ),A.a([],t.SM),A.a([],t.qj))
 s.a3C(a,b)
 return s},
-Ms(a,b,c,d){var s=new A.A6(d,c,A.b([],t.XZ),A.b([],t.SM),A.b([],t.qj))
+Ms(a,b,c,d){var s=new A.A6(d,c,A.a([],t.XZ),A.a([],t.SM),A.a([],t.qj))
 s.a3B(null,a,b,c,d)
 return s},
 fU:function fU(a,b,c){this.a=a
@@ -15902,10 +15902,10 @@ Tc:function Tc(){},
 Tb:function Tb(){},
 azR(a,b,c,d,e){var s=b!=null
 return new A.l1(a,d,c,b,!1,s,e)},
-ax7(a){var s,r,q,p,o,n,m,l,k,j,i,h,g,f=null,e=A.b([],t.O_),d=t.oU,c=A.b([],d)
+ax7(a){var s,r,q,p,o,n,m,l,k,j,i,h,g,f=null,e=A.a([],t.O_),d=t.oU,c=A.a([],d)
 for(s=a.length,r="",q="",p=0;p<a.length;a.length===s||(0,A.B)(a),++p){o=a[p]
 if(o.f){e.push(new A.l1(r,q,f,f,!1,!1,c))
-c=A.b([],d)
+c=A.a([],d)
 e.push(o)
 r=""
 q=""}else{n=o.a
@@ -16247,7 +16247,7 @@ axo(a,b,c){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d=null
 if(c===0)return a
 if(c===1)return b
 if(a==null||a.length===0||b==null||b.length===0)return c<0.5?a:b
-s=A.b([],t.uf)
+s=A.a([],t.uf)
 r=a.length
 q=b.length
 r=r<q?r:q
@@ -17395,7 +17395,7 @@ s.toString
 a.qZ(t.gY.a(s))
 a.db=!1},
 aLU(a,b,c){var s=t.TT
-return new A.lg(a,c,b,A.b([],s),A.b([],s),A.b([],s),A.aD(t.I9),A.aD(t.sv))},
+return new A.lg(a,c,b,A.a([],s),A.a([],s),A.a([],s),A.aD(t.I9),A.aD(t.sv))},
 awI(a6,a7,a8,a9,b0){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5=null
 if(b0==null)s=a5
 else{r=new A.aP(new Float64Array(16))
@@ -17404,7 +17404,7 @@ s=r}if(s==null){s=new A.aP(new Float64Array(16))
 s.dh()}q=a6.b
 p=a7.b
 r=t.TT
-o=A.b([q],r)
+o=A.a([q],r)
 for(n=p,m=q,l=a5;m!==n;){k=m.c
 j=n.c
 if(k>=j){i=m.gb9()
@@ -17422,7 +17422,7 @@ else s.BV()
 if(B.b.gac(o)===p)for(g=o.length-1,e=a9,d=a8;g>0;g=f){f=g-1
 c=A.aCW(o[g],o[f],e,d)
 d=c.a
-e=c.b}else{b=A.b([q],r)
+e=c.b}else{b=A.a([q],r)
 a=q.gb9()
 for(;;){r=a==null
 i=!r
@@ -18990,15 +18990,15 @@ r=new A.ef(s)
 r.kU(b.a,b.b,0)
 a.d.ase(r)
 return new A.i(s[0],s[1])},
-aQ6(a,b){var s,r,q,p,o,n,m,l,k=A.b([],t.TV)
+aQ6(a,b){var s,r,q,p,o,n,m,l,k=A.a([],t.TV)
 for(s=a.length,r=0;r<a.length;a.length===s||(0,A.B)(a),++r){q=a[r]
 p=q.e
 k.push(new A.lJ(!0,A.r7(q,new A.i(p.a- -0.1,p.b- -0.1)).b,q))
 k.push(new A.lJ(!1,A.r7(q,new A.i(p.c+-0.1,p.d+-0.1)).b,q))}B.b.jm(k)
-o=A.b([],t.YK)
+o=A.a([],t.YK)
 for(s=k.length,p=t.QF,n=null,m=0,r=0;r<k.length;k.length===s||(0,A.B)(k),++r){l=k[r]
 if(l.a){++m
-if(n==null)n=new A.j6(l.b,b,A.b([],p))
+if(n==null)n=new A.j6(l.b,b,A.a([],p))
 n.c.push(l.c)}else --m
 if(m===0){n.toString
 o.push(n)
@@ -19324,7 +19324,7 @@ _.c=c
 _.d=d
 _.e=e},
 a_V:function a_V(){},
-aNf(a){var s,r,q,p,o,n=B.c.a8("-",80),m=A.b([],t.Y4)
+aNf(a){var s,r,q,p,o,n=B.c.a8("-",80),m=A.a([],t.Y4)
 for(n=a.split("\n"+n+"\n"),s=n.length,r=0;r<s;++r){q=n[r]
 p=B.c.hM(q,"\n\n")
 o=p>=0
@@ -19550,7 +19550,7 @@ adB:function adB(){},
 adC:function adC(){},
 adA:function adA(){},
 adD:function adD(){},
-aTX(a,b){var s,r,q,p,o=A.b([],t.bt),n=J.aS(a),m=0,l=0
+aTX(a,b){var s,r,q,p,o=A.a([],t.bt),n=J.aS(a),m=0,l=0
 for(;;){if(!(m<n.gD(a)&&l<b.length))break
 s=n.h(a,m)
 r=b[l]
@@ -19708,7 +19708,7 @@ n=A.hb(a.h(0,"composingBase"))
 if(n==null)n=-1
 s=A.hb(a.h(0,"composingExtent"))
 return new A.cb(o,p,new A.bY(n,s==null?-1:s))},
-aBR(a){var s=A.b([],t.u1),r=$.aBS
+aBR(a){var s=A.a([],t.u1),r=$.aBS
 $.aBS=r+1
 return new A.ah9(s,r,a)},
 aRy(a){var s
@@ -19725,12 +19725,12 @@ break $label0$0}if("TextInputAction.route"===a){s=B.TL
 break $label0$0}if("TextInputAction.emergencyCall"===a){s=B.TM
 break $label0$0}if("TextInputAction.done"===a){s=B.Ag
 break $label0$0}if("TextInputAction.newline"===a){s=B.Af
-break $label0$0}s=A.a5(A.mx(A.b([A.ju("Unknown text input action: "+a)],t.D)))}return s},
+break $label0$0}s=A.a5(A.mx(A.a([A.ju("Unknown text input action: "+a)],t.D)))}return s},
 aRx(a){var s
 $label0$0:{if("FloatingCursorDragState.start"===a){s=B.o8
 break $label0$0}if("FloatingCursorDragState.update"===a){s=B.hm
 break $label0$0}if("FloatingCursorDragState.end"===a){s=B.hn
-break $label0$0}s=A.a5(A.mx(A.b([A.ju("Unknown text cursor action: "+a)],t.D)))}return s},
+break $label0$0}s=A.a5(A.mx(A.a([A.ju("Unknown text cursor action: "+a)],t.D)))}return s},
 age:function age(a,b){this.a=a
 this.b=b},
 agf:function agf(a,b){this.a=a
@@ -19926,7 +19926,7 @@ s.a=null
 A.Ix(a,new A.a_k(s,b,a,c))
 return s.a},
 azw(a,b,c,d,e,f,g,h,i){return new A.oW(d,e,!1,a,h,i,g,f,c,null)},
-azf(a){return new A.yg(a,new A.b0(A.b([],t.e),t.d))},
+azf(a){return new A.yg(a,new A.b0(A.a([],t.e),t.d))},
 at6:function at6(a){this.a=a},
 aO:function aO(){},
 aZ:function aZ(){},
@@ -20285,7 +20285,7 @@ return new A.jX(new A.afE(e,s,s,g,b8,b4,a,s,k,s,s,s,s,i,j,s,s,s,s,b3,a1,n,q,s,a0
 aIg(a){return new A.J_(a,null)},
 aL1(a){var s,r,q,p,o,n,m,l,k,j
 if(a.length===0)return a
-s=A.b([],t.p)
+s=A.a([],t.p)
 for(r=A.aKM(a,0,t.l7),q=J.bs(r.a),p=r.b,r=new A.to(q,p,A.k(r).i("to<1>")),o=t.V1;r.A();){n=r.c
 n=n>=0?new A.a9(p+n,q.gN()):A.a5(A.bQ())
 m=n.a
@@ -20821,7 +20821,7 @@ A.aJL()
 if(t.qY.b(e4))q=B.Av
 else q=d4?B.Ys:B.Yt
 p=b8==null?A.aJN(d,c0):b8
-if(c0===1){o=A.b([$.aF0()],t.VS)
+if(c0===1){o=A.a([$.aF0()],t.VS)
 B.b.P(o,b5==null?B.CJ:b5)}else o=b5
 n=e7==null?!d4:e7
 m=A.aJO()
@@ -20835,7 +20835,7 @@ aJM(a){return!0},
 aJN(a,b){return b===1?B.Ah:B.lD},
 aJJ(){var s,r,q,p=null,o=$.ab(),n=t.C,m=new A.a1E()
 m.a=B.Pi
-s=A.b([],t.RW)
+s=A.a([],t.RW)
 r=A.aF()
 $label0$0:{if(B.aj===r||B.K===r){q=!0
 break $label0$0}if(B.bz===r||B.bq===r||B.aN===r||B.br===r){q=!1
@@ -20845,7 +20845,7 @@ s=r==null
 if(s){$.a3.toString
 $.aK()}if(q||s)return B.fs
 return a.akV(r)},
-o4(a,b,c,d,e,f,g){return new A.H5(a,e,f,d,b,c,new A.b0(A.b([],t.e),t.d),g.i("H5<0>"))},
+o4(a,b,c,d,e,f,g){return new A.H5(a,e,f,d,b,c,new A.b0(A.a([],t.e),t.d),g.i("H5<0>"))},
 Rj:function Rj(a,b,c,d){var _=this
 _.e=a
 _.f=b
@@ -21217,10 +21217,10 @@ for(s=a.length,r=!1,q=0;q<s;++q)switch(a[q].a){case 0:return B.eQ
 case 2:r=!0
 break
 case 1:break}return r?B.hv:B.eR},
-KQ(a,b,c,d,e,f,g){return new A.cL(g,a,c,!0,e,f,A.b([],t.bp),$.ab())},
+KQ(a,b,c,d,e,f,g){return new A.cL(g,a,c,!0,e,f,A.a([],t.bp),$.ab())},
 aKi(a){return a.gfw()},
 a4q(a,b,c){var s=t.bp
-return new A.kR(B.Yv,B.AA,A.b([],s),c,a,!0,!0,null,null,A.b([],s),$.ab())},
+return new A.kR(B.Yv,B.AA,A.a([],s),c,a,!0,!0,null,null,A.a([],s),$.ab())},
 qQ(){switch(A.aF().a){case 0:case 1:case 2:if($.a3.dx$.c.a!==0)return B.kl
 return B.kk
 case 3:case 4:case 5:return B.kl}},
@@ -21393,7 +21393,7 @@ a.hU()
 s=a.e
 s.toString
 A.aN_(s,1,c,B.aT,B.B)},
-azv(a){var s,r,q,p,o=A.b([],t.bp)
+azv(a){var s,r,q,p,o=A.a([],t.bp)
 for(s=a.as,r=s.length,q=0;q<s.length;s.length===r||(0,A.B)(s),++q){p=s[q]
 o.push(p)
 if(!(p instanceof A.kR))B.b.P(o,A.azv(p))}return o},
@@ -21405,19 +21405,19 @@ m=A.a4s(n)
 if(n===m){l=m.Q
 l.toString
 k=A.a4s(l)
-if(s.h(0,k)==null)s.p(0,k,A.aCz(k,j,A.b([],p)))
+if(s.h(0,k)==null)s.p(0,k,A.aCz(k,j,A.a([],p)))
 s.h(0,k).c.push(m)
 continue}if(n!==c)l=n.b&&B.b.e_(n.gcM(),A.eg())&&!n.gfl()
 else l=!0
-if(l){if(s.h(0,m)==null)s.p(0,m,A.aCz(m,j,A.b([],p)))
+if(l){if(s.h(0,m)==null)s.p(0,m,A.aCz(m,j,A.a([],p)))
 s.h(0,m).c.push(n)}}return s},
 avn(a,b){var s,r,q,p,o=A.a4s(a),n=A.aKk(a,o,b)
 for(s=new A.cz(n,n.r,n.e,A.k(n).i("cz<1>"));s.A();){r=s.d
 n.h(0,r).toString
 q=A.aMB(n.h(0,r).c)
-q=A.b(q.slice(0),A.X(q))
+q=A.a(q.slice(0),A.X(q))
 B.b.W(n.h(0,r).c)
-B.b.P(n.h(0,r).c,q)}p=A.b([],t.bp)
+B.b.P(n.h(0,r).c,q)}p=A.a([],t.bp)
 if(n.a!==0&&n.ap(o)){s=n.h(0,o)
 s.toString
 new A.a4v(n,p).$1(s)}B.b.kH(p,new A.a4u(b))
@@ -21448,7 +21448,7 @@ aP3(a,b){A.m3(a,new A.ap2(b),t.h7)},
 acu(){return new A.act(A.o(t.l5,t.UJ),A.aSA())},
 aMB(a){var s,r,q,p,o,n,m,l,k,j,i,h,g=null
 if(a.length<=1)return a
-s=A.b([],t.qi)
+s=A.a([],t.qi)
 for(r=a.length,q=t.V2,p=t.I,o=0;o<a.length;a.length===r||(0,A.B)(a),++o){n=a[o]
 m=n.gaU()
 l=n.e.y
@@ -21458,19 +21458,19 @@ l=l.a
 l=l==null?g:l.iz(0,k,k.gB(0))}if(l==null)l=g
 else{l=l.e
 l.toString}q.a(l)
-s.push(new A.dS(l==null?g:l.w,m,n))}j=A.b([],t.bp)
+s.push(new A.dS(l==null?g:l.w,m,n))}j=A.a([],t.bp)
 i=A.aB5(s)
 j.push(i.c)
 B.b.E(s,i)
 while(s.length!==0){h=A.aB5(s)
 j.push(h.c)
 B.b.E(s,h)}return j},
-aMA(a){var s,r,q,p,o,n=B.b.gab(a).a,m=t.qi,l=A.b([],m),k=A.b([],t.jE)
+aMA(a){var s,r,q,p,o,n=B.b.gab(a).a,m=t.qi,l=A.a([],m),k=A.a([],t.jE)
 for(s=a.length,r=0;r<a.length;a.length===s||(0,A.B)(a),++r){q=a[r]
 p=q.a
 if(p==n){l.push(q)
 continue}k.push(new A.kf(l))
-l=A.b([q],m)
+l=A.a([q],m)
 n=p}if(l.length!==0)k.push(new A.kf(l))
 for(m=k.length,r=0;r<k.length;k.length===m||(0,A.B)(k),++r){s=k[r].a
 if(s.length===1)continue
@@ -21598,9 +21598,9 @@ aCE(a){var s
 try{a.dY()}catch(s){A.avh(a)
 throw s}a.b5(A.aSE())},
 aJR(a,b){var s,r,q,p=a.d
-p===$&&A.a()
+p===$&&A.b()
 s=b.d
-s===$&&A.a()
+s===$&&A.b()
 r=p-s
 if(r!==0)return r
 q=b.as
@@ -22106,7 +22106,7 @@ d.a(s)
 return},
 bW(a,b,c){var s,r,q,p,o,n
 if(b==null)return a.ao(c)
-s=A.b([],t.Fa)
+s=A.a([],t.Fa)
 A.aKO(a,b,s,c)
 if(s.length===0)return null
 r=B.b.gac(s)
@@ -22142,7 +22142,7 @@ _.at=!1
 _.$ti=d},
 a6b(a,b){var s
 if(a.j(0,b))return new A.Je(B.LE)
-s=A.b([],t.fJ)
+s=A.a([],t.fJ)
 A.c9()
 a.n9(new A.a6c(b,A.aD(t.u),s))
 return new A.Je(s)},
@@ -22208,7 +22208,7 @@ YO:function YO(){},
 aR8(a,b){var s,r,q,p,o,n,m,l,k={},j=t.u,i=t.z,h=A.o(j,i)
 k.a=null
 s=A.aD(j)
-r=A.b([],t.a9)
+r=A.a([],t.a9)
 for(j=b.length,q=0;q<b.length;b.length===j||(0,A.B)(b),++q){p=b[q]
 o=A.k(p).i("fp.T")
 if(!s.n(0,A.bN(o))&&p.I6(a)){s.C(0,A.bN(o))
@@ -22219,7 +22219,7 @@ n.a=null
 l=m.bN(new A.atj(n),i)
 if(n.a!=null)h.p(0,A.bN(A.k(p).i("fp.T")),n.a)
 else{n=k.a
-if(n==null)n=k.a=A.b([],o)
+if(n==null)n=k.a=A.a([],o)
 n.push(new A.w4(p,l))}}j=k.a
 if(j==null)return new A.cC(h,t.re)
 return A.kU(new A.a_(j,new A.atk(),A.X(j).i("a_<1,as<@>>")),i).bN(new A.atl(k,h),t.e3)},
@@ -22285,9 +22285,9 @@ a7x(a,b){var s,r,q,p=a.kQ(b)
 if(p==null)return null
 s=a.kQ(t.bS)
 if(s!=null){r=s.d
-r===$&&A.a()
+r===$&&A.b()
 q=p.d
-q===$&&A.a()
+q===$&&A.b()
 q=r>q
 r=q}else r=!1
 if(r)return null
@@ -22482,7 +22482,7 @@ if(p){t.uK.a(r)
 q=r}else q=null
 p=q==null?a.lp(t.uK):q
 return p},
-aLL(a,b){var s,r,q,p,o,n,m=null,l=A.b([],t.ny)
+aLL(a,b){var s,r,q,p,o,n,m=null,l=A.a([],t.ny)
 if(B.c.bo(b,"/")&&b.length>1){b=B.c.bv(b,1)
 s=t.z
 l.push(a.xJ("/",!0,m,s))
@@ -22695,7 +22695,7 @@ aPb(a){return a.ah()},
 aLR(a,b,c){return new A.Au(b,new A.abh(c),a,B.Pp,null)},
 aPa(a,b){var s,r=A.aCR(a,!0,b)
 if(r!=null)return r
-s=A.b([A.ju("No Overlay widget found."),A.bi(A.t(a.gd6()).k(0)+" widgets require an Overlay widget ancestor.\nAn overlay lets widgets float on top of other widget children."),A.yA("To introduce an Overlay widget, you can either directly include one, or use a widget that contains an Overlay itself, such as a Navigator, WidgetApp, MaterialApp, or CupertinoApp.")],t.D)
+s=A.a([A.ju("No Overlay widget found."),A.bi(A.t(a.gd6()).k(0)+" widgets require an Overlay widget ancestor.\nAn overlay lets widgets float on top of other widget children."),A.yA("To introduce an Overlay widget, you can either directly include one, or use a widget that contains an Overlay itself, such as a Navigator, WidgetApp, MaterialApp, or CupertinoApp.")],t.D)
 B.b.P(s,a.alD(B.Z1))
 throw A.j(A.mx(s))},
 aCR(a,b,c){var s,r,q
@@ -23034,7 +23034,7 @@ u1:function u1(a,b,c){this.c=a
 this.d=b
 this.a=c},
 jM:function jM(){},
-aAL(a,b){return new A.MQ(a,b,0,null,null,A.b([],t.ZP),$.ab())},
+aAL(a,b){return new A.MQ(a,b,0,null,null,A.a([],t.ZP),$.ab())},
 MQ:function MQ(a,b,c,d,e,f,g){var _=this
 _.as=a
 _.ax=b
@@ -23412,7 +23412,7 @@ _.x=i},
 BB:function BB(a,b,c){this.f=a
 this.b=b
 this.a=c},
-BC(a,b,c){return new A.jV(a,b,c,A.b([],t.ZP),$.ab())},
+BC(a,b,c){return new A.jV(a,b,c,A.a([],t.ZP),$.ab())},
 jV:function jV(a,b,c,d,e){var _=this
 _.a=a
 _.c=b
@@ -23625,10 +23625,10 @@ aN0(a){var s,r,q=a.Bw(t.jF)
 for(s=q!=null;s;){r=q.r
 r=r.r.XX(r.fr.ghp()+r.as,r.jz(),a)
 return r}return!1},
-aN_(a,b,c,d,e){var s,r,q=null,p=t.mo,o=A.b([],p),n=A.hA(a,q)
+aN_(a,b,c,d,e){var s,r,q=null,p=t.mo,o=A.a([],p),n=A.hA(a,q)
 for(s=q;n!=null;a=r){r=a.gT()
 r.toString
-B.b.P(o,A.b([n.d.ui(r,b,c,d,e,s)],p))
+B.b.P(o,A.a([n.d.ui(r,b,c,d,e,s)],p))
 if(s==null)s=a.gT()
 r=n.c
 r.toString
@@ -23770,7 +23770,7 @@ _.F$=a
 _.af$=_.V$=0},
 Gd:function Gd(){},
 Ge:function Ge(){},
-aMX(){return new A.Bz(new A.b0(A.b([],t.e),t.d))},
+aMX(){return new A.Bz(new A.b0(A.a([],t.e),t.d))},
 aMY(a,b){var s
 a.a.toString
 switch(b.a){case 0:s=50
@@ -24277,7 +24277,7 @@ _.db=!1
 _.dx=$},
 P2:function P2(){},
 E2:function E2(){},
-aQb(a,b,c){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d=A.b([],t.bt)
+aQb(a,b,c){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d=A.a([],t.bt)
 for(s=J.aS(c),r=a.length,q=0,p=0,o=0;q<s.gD(c);){n=s.h(c,q)
 m=n.a
 l=m.a
@@ -24297,7 +24297,7 @@ aRS(a,b,c,d,e){var s=null,r=e.b,q=e.a,p=a.a
 if(q!==p)r=A.aQb(p,q,r)
 if(A.aF()===B.aj)return A.cq(A.aPU(r,a,c,d,b),s,s,s,c,s)
 return A.cq(A.aPV(r,a,c,d,a.b.c),s,s,s,c,s)},
-aPV(a,b,c,d,e){var s,r,q,p,o=null,n=A.b([],t.Ne),m=b.a,l=c.aA(d),k=0,j=m.length,i=J.aS(a),h=0
+aPV(a,b,c,d,e){var s,r,q,p,o=null,n=A.a([],t.Ne),m=b.a,l=c.aA(d),k=0,j=m.length,i=J.aS(a),h=0
 for(;;){if(!(k<j&&h<i.gD(a)))break
 s=i.h(a,h).a
 r=s.a
@@ -24310,7 +24310,7 @@ n.push(A.cq(o,o,o,o,s,B.c.Y(m,r,p)));++h
 k=p}}i=m.length
 if(k<i)n.push(A.cq(o,o,o,o,c,B.c.Y(m,k,i)))
 return n},
-aPU(a,b,c,a0,a1){var s,r,q,p=null,o=A.b([],t.Ne),n=b.a,m=b.c,l=c.aA(B.Am),k=c.aA(a0),j=0,i=m.a,h=n.length,g=J.aS(a),f=m.b,e=!a1,d=0
+aPU(a,b,c,a0,a1){var s,r,q,p=null,o=A.a([],t.Ne),n=b.a,m=b.c,l=c.aA(B.Am),k=c.aA(a0),j=0,i=m.a,h=n.length,g=J.aS(a),f=m.b,e=!a1,d=0
 for(;;){if(!(j<h&&d<g.gD(a)))break
 s=g.h(a,d).a
 r=s.a
@@ -24348,7 +24348,7 @@ n=m
 s=o
 r=a.gai()
 r=A.aBX(r,s,n,r.vP(a.a.c.a.b))
-q=A.b([],t.kv)
+q=A.a([],t.kv)
 if(a.gtT())q.push(B.CU)
 if(a.gu1())q.push(B.CV)
 if(a.goD())q.push(B.D2)
@@ -25012,7 +25012,7 @@ return s==null?null:s.f},
 aCe(a){var s=a.ao(t.Ln)
 s=s==null?null:s.f
 if(s==null){s=$.ls.fx$
-s===$&&A.a()}return s},
+s===$&&A.b()}return s},
 Dd:function Dd(a,b,c,d,e){var _=this
 _.c=a
 _.d=b
@@ -25149,7 +25149,7 @@ _.cx=$
 _.cy=!0
 _.db=!1
 _.dx=$},
-aCh(a,b){var s={},r=A.b([],t.p),q=A.b([14],t.n)
+aCh(a,b){var s={},r=A.a([],t.p),q=A.a([14],t.n)
 s.a=0
 new A.aiq(s,q,b,r).$1(a)
 return r},
@@ -25435,8 +25435,8 @@ _.e=null},
 a3n:function a3n(){},
 ck:function ck(a){this.a=a},
 nE:function nE(a){this.a=a},
-a_Y(a,b){var s=t.vA,r=A.b([],s)
-s=A.b([B.CI,B.CT,B.Dy,B.CR,B.CB,B.Cy,B.CS,B.DJ,B.Dl,B.Dc,B.Dp],s)
+a_Y(a,b){var s=t.vA,r=A.a([],s)
+s=A.a([B.CI,B.CT,B.Dy,B.CR,B.CB,B.Cy,B.CS,B.DJ,B.Dl,B.Dc,B.Dp],s)
 B.b.P(r,b.x)
 B.b.P(r,s)
 return new A.a_X(a,b,r,s)},
@@ -25613,7 +25613,7 @@ return a},
 aKq(a,b,c){var s,r,q,p,o,n,m,l,k,j=A.aKp(b),i=a.a.b,h=i.b,g=new A.b3(h,A.k(h).i("b3<1>")).zI(0,new A.a4F(j),new A.a4G()),f=h.h(0,g)
 if(j==null||f==null)return null
 s=t.c
-r=A.b([],s)
+r=A.a([],s)
 if(a.b.b===33)r.push(new A.ck("!"));++f
 h.p(0,g,f)
 q=i.c
@@ -25624,12 +25624,12 @@ if(c===!0){r.push(new A.ck("["))
 B.b.P(r,o)
 r.push(new A.ck("]"))}n=A.kl(2,g,B.X,!1)
 m=f>1?"-"+f:""
-i=A.b([new A.ck(""+(p+1))],s)
+i=A.a([new A.ck(""+(p+1))],s)
 l=t.N
 k=A.o(l,l)
 k.p(0,"href","#fn-"+n)
 k.p(0,"id","fnref-"+n+m)
-s=A.b([new A.bh("a",i,k)],s)
+s=A.a([new A.bh("a",i,k)],s)
 l=A.o(l,l)
 l.p(0,"class","footnote-ref")
 r.push(new A.bh("sup",s,l))
@@ -25738,7 +25738,7 @@ _.r=g
 _.w=h
 _.x=i},
 a2u(a,b,c){var s,r,q,p,o,n=a.a
-n===$&&A.a()
+n===$&&A.b()
 for(s=0;s<=7;s=q){r=b[s]
 q=s+1
 p=b[q]
@@ -25746,12 +25746,12 @@ if(r<n&&n<p){o=B.d.bs(n+c[s],360)
 return o<0?o+360:o}}return n},
 dI:function dI(){},
 aLi(a,b,c,d){var s,r,q,p,o,n,m,l,k,j,i=A.fS(A.p6(a,b,c)),h=i.b
-h===$&&A.a()
+h===$&&A.b()
 if(h<b){s=t.n
 r=h
 q=c
 for(;;){h=i.b
-h===$&&A.a()
+h===$&&A.b()
 if(!(h<b))break
 q+=d?-1:1
 p=A.p6(a,b,q)
@@ -25761,11 +25761,11 @@ h=$.Il()
 n=p>>>16&255
 m=p>>>8&255
 l=p&255
-k=A.jI(A.b([A.cF(n),A.cF(m),A.cF(l)],s),$.iB)
+k=A.jI(A.a([A.cF(n),A.cF(m),A.cF(l)],s),$.iB)
 j=A.a0n(k[0],k[1],k[2],h)
 o.a=j.a
 h=o.b=j.b
-o.c=116*A.mk(A.jI(A.b([A.cF(n),A.cF(m),A.cF(l)],s),$.iB)[1]/100)-16
+o.c=116*A.mk(A.jI(A.a([A.cF(n),A.cF(m),A.cF(l)],s),$.iB)[1]/100)-16
 if(r>h)break
 n=Math.abs(h-b)
 if(n<0.4)break
@@ -25964,7 +25964,7 @@ Math.sqrt(e*g/(h+4))
 Math.log(1+0.0228*(d*a4.ax))
 Math.cos(i)
 Math.sin(i)
-return new A.a0m(j,d,A.b([0,0,0],t.n))},
+return new A.a0m(j,d,A.a([0,0,0],t.n))},
 a0m:function a0m(a,b,c){this.a=a
 this.b=b
 this.y=c},
@@ -26021,19 +26021,19 @@ _.at=h
 _.ax=i
 _.ay=j},
 aC2(a){var s,r=t.S,q=a.a
-q===$&&A.a()
+q===$&&A.b()
 s=a.b
-s===$&&A.a()
+s===$&&A.b()
 return new A.qy(q,s,A.o(r,r))},
 br(a,b){var s=t.S
 A.aOb(a,b)
 return new A.qy(a,b,A.o(s,s))},
 aOb(a,b){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e=A.fS(A.p6(a,b,50)),d=e.b
-d===$&&A.a()
+d===$&&A.b()
 s=Math.abs(d-b)
 for(d=t.n,r=1;r<50;++r){q=B.d.aC(b)
 p=e.b
-p===$&&A.a()
+p===$&&A.b()
 if(q===B.d.aC(p))return e
 o=A.p6(a,b,50+r)
 n=new A.fR()
@@ -26042,12 +26042,12 @@ q=$.Il()
 p=o>>>16&255
 m=o>>>8&255
 l=o&255
-k=A.jI(A.b([A.cF(p),A.cF(m),A.cF(l)],d),$.iB)
+k=A.jI(A.a([A.cF(p),A.cF(m),A.cF(l)],d),$.iB)
 j=A.a0n(k[0],k[1],k[2],q)
 n.a=j.a
 i=j.b
 n.b=i
-n.c=116*A.mk(A.jI(A.b([A.cF(p),A.cF(m),A.cF(l)],d),$.iB)[1]/100)-16
+n.c=116*A.mk(A.jI(A.a([A.cF(p),A.cF(m),A.cF(l)],d),$.iB)[1]/100)-16
 h=Math.abs(i-b)
 if(h<s){s=h
 e=n}o=A.p6(a,b,50-r)
@@ -26056,12 +26056,12 @@ g.d=o
 p=o>>>16&255
 m=o>>>8&255
 l=o&255
-k=A.jI(A.b([A.cF(p),A.cF(m),A.cF(l)],d),$.iB)
+k=A.jI(A.a([A.cF(p),A.cF(m),A.cF(l)],d),$.iB)
 j=A.a0n(k[0],k[1],k[2],q)
 g.a=j.a
 q=j.b
 g.b=q
-g.c=116*A.mk(A.jI(A.b([A.cF(p),A.cF(m),A.cF(l)],d),$.iB)[1]/100)-16
+g.c=116*A.mk(A.jI(A.a([A.cF(p),A.cF(m),A.cF(l)],d),$.iB)[1]/100)-16
 f=Math.abs(q-b)
 if(f<s){s=f
 e=g}}return e},
@@ -26168,7 +26168,7 @@ _.x=h
 _.y=i
 _.z=j},
 aBJ(a){var s=t.DU
-return new A.agZ(a,A.b([],s),A.b([],s),A.o(t.bq,t.i))},
+return new A.agZ(a,A.a([],s),A.a([],s),A.o(t.bq,t.i))},
 aBK(a,b,c){if(a<c)return a<=b&&b<=c
 return a<=b||b<=c},
 agZ:function agZ(a,b,c,d){var _=this
@@ -26201,8 +26201,8 @@ aLT(a,b){var s,r,q,p,o,n=b.Zp(a)
 b.qw(a)
 if(n!=null)a=B.c.bv(a,n.length)
 s=t.s
-r=A.b([],s)
-q=A.b([],s)
+r=A.a([],s)
+q=A.a([],s)
 s=a.length
 if(s!==0&&b.Ac(a.charCodeAt(0))){q.push(a[0])
 p=1}else{q.push("")
@@ -26484,16 +26484,16 @@ this.b=b},
 asO:function asO(){},
 aT6(){var s,r,q,p,o,n,m,l,k,j,i,h=null
 if($.a3==null){s=t.GA
-r=A.b([],s)
-s=A.b([],s)
+r=A.a([],s)
+s=A.a([],s)
 q=$.aq
-p=A.b([],t.hh)
+p=A.a([],t.hh)
 o=$.ab()
-n=A.b([],t.Jh)
+n=A.a([],t.Jh)
 m=A.be(7,h,!1,t.tC)
 l=t.S
 k=t.j1
-l=new A.Qg(h,h,!1,h,$,r,s,!0,new A.c_(new A.aB(q,t.W),t.gR),!1,h,!1,$,$,h,$,$,$,A.o(t.K,t.Ju),!1,0,!1,$,new A.b0(p,t.Xx),0,h,$,$,new A.WZ(A.aD(t.M)),$,$,$,new A.c8(h,o,t.Yv),$,h,h,n,h,A.aRQ(),new A.L5(A.aRP(),m,t.G7),!1,0,A.o(l,t.h1),A.cN(l),A.b([],k),A.b([],k),h,!1,B.dh,!0,!1,h,B.B,B.B,h,0,h,!1,h,h,0,A.mQ(h,t.qL),new A.abZ(A.o(l,t.rr),A.o(t.Ld,t.iD)),new A.a51(A.o(l,t.cK)),new A.ac1(),A.o(l,t.Fn),$,!1,B.HE)
+l=new A.Qg(h,h,!1,h,$,r,s,!0,new A.c_(new A.aB(q,t.W),t.gR),!1,h,!1,$,$,h,$,$,$,A.o(t.K,t.Ju),!1,0,!1,$,new A.b0(p,t.Xx),0,h,$,$,new A.WZ(A.aD(t.M)),$,$,$,new A.c8(h,o,t.Yv),$,h,h,n,h,A.aRQ(),new A.L5(A.aRP(),m,t.G7),!1,0,A.o(l,t.h1),A.cN(l),A.a([],k),A.a([],k),h,!1,B.dh,!0,!1,h,B.B,B.B,h,0,h,!1,h,h,0,A.mQ(h,t.qL),new A.abZ(A.o(l,t.rr),A.o(t.Ld,t.iD)),new A.a51(A.o(l,t.cK)),new A.ac1(),A.o(l,t.Fn),$,!1,B.HE)
 l.ha()
 l.a2S()}s=$.a3
 s.toString
@@ -26697,7 +26697,7 @@ B.b.bJ(h,s,s+(g-n),e,n)},
 hM(a){if(a==null)return"null"
 return B.d.a1(a,1)},
 aS0(a,b,c,d,e){return A.atA(a,b,c,d,e)},
-aEh(a,b){var s=t.s,r=A.b(a.split("\n"),s)
+aEh(a,b){var s=t.s,r=A.a(a.split("\n"),s)
 $.ZY().P(0,r)
 if(!$.awW)A.aDx()},
 aDx(){var s,r=$.awW=!1,q=$.axU()
@@ -26884,7 +26884,7 @@ break $async$outer}case 1:return A.P(q,r)}})
 return A.Q($async$a41,r)},
 avj(a){a.gT().re(B.Nr)
 switch(A.aF().a){case 0:case 1:return A.a5n()
-case 2:return A.kU(A.b([A.Cp(B.A2),A.a5l()],t.mo),t.H)
+case 2:return A.kU(A.a([A.Cp(B.A2),A.a5l()],t.mo),t.H)
 case 3:case 4:case 5:return A.d8(null,t.H)}},
 oD(a,b){a=A.aae(0,100,a)
 b=A.aae(0,100,b)
@@ -26910,14 +26910,14 @@ p=A.ayR(r)-0.4
 if(p<0||p>100)return-1
 return p},
 avd(a){var s,r,q,p,o,n=a.a
-n===$&&A.a()
+n===$&&A.b()
 s=B.d.aC(n)
 r=s>=90&&s<=111
 s=a.b
-s===$&&A.a()
+s===$&&A.b()
 q=B.d.aC(s)
 p=a.c
-p===$&&A.a()
+p===$&&A.b()
 o=B.d.aC(p)<65
 if(r&&q>16&&o)return A.fS(A.p6(n,s,70))
 return a},
@@ -26931,17 +26931,17 @@ aKC(a,b){var s,r,q,p,o,n=$.z7[0],m=$.z7[1],l=$.z7[2],k=B.i.bs(b,4)<=1?0:100,j=B.
 if(b<4){s=(a-k*m-j*l)/n
 r=0<=s&&s<=100
 q=t.n
-if(r)return A.b([s,k,j],q)
-else return A.b([-1,-1,-1],q)}else if(b<8){p=(a-j*n-k*l)/m
+if(r)return A.a([s,k,j],q)
+else return A.a([-1,-1,-1],q)}else if(b<8){p=(a-j*n-k*l)/m
 r=0<=p&&p<=100
 q=t.n
-if(r)return A.b([j,p,k],q)
-else return A.b([-1,-1,-1],q)}else{o=(a-k*n-j*m)/l
+if(r)return A.a([j,p,k],q)
+else return A.a([-1,-1,-1],q)}else{o=(a-k*n-j*m)/l
 r=0<=o&&o<=100
 q=t.n
-if(r)return A.b([k,j,o],q)
-else return A.b([-1,-1,-1],q)}},
-aKy(a,b){var s,r,q,p,o,n,m,l,k=A.b([-1,-1,-1],t.n)
+if(r)return A.a([k,j,o],q)
+else return A.a([-1,-1,-1],q)}},
+aKy(a,b){var s,r,q,p,o,n,m,l,k=A.a([-1,-1,-1],t.n)
 for(s=k,r=0,q=0,p=!1,o=!0,n=0;n<12;++n){m=A.aKC(a,n)
 if(m[0]<0)continue
 l=A.avu(m)
@@ -26952,7 +26952,7 @@ k=s
 p=!0
 continue}if(o||B.d.bs(l-r+25.132741228718345,6.283185307179586)<B.d.bs(q-r+25.132741228718345,6.283185307179586)){if(B.d.bs(b-r+25.132741228718345,6.283185307179586)<B.d.bs(l-r+25.132741228718345,6.283185307179586)){q=l
 s=m}else{r=l
-k=m}o=!1}}return A.b([k,s],t.zg)},
+k=m}o=!1}}return A.a([k,s],t.zg)},
 aKx(a0,a1){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d=A.aKy(a0,a1),c=d[0],b=A.avu(c),a=d[1]
 for(s=t.n,r=0;r<3;++r){q=c[r]
 p=a[r]
@@ -26968,12 +26968,12 @@ p=a[0]
 i=c[1]
 h=a[1]
 g=c[2]
-f=A.b([q+(p-q)*j,i+(h-i)*j,g+(a[2]-g)*j],s)
+f=A.a([q+(p-q)*j,i+(h-i)*j,g+(a[2]-g)*j],s)
 e=A.avu(f)
 if(B.d.bs(a1-b+25.132741228718345,6.283185307179586)<B.d.bs(e-b+25.132741228718345,6.283185307179586)){n=l
 a=f}else{o=l
 b=e
-c=f}}}}return A.b([(c[0]+a[0])/2,(c[1]+a[1])/2,(c[2]+a[2])/2],s)},
+c=f}}}}return A.a([(c[0]+a[0])/2,(c[1]+a[1])/2,(c[2]+a[2])/2],s)},
 avv(a){var s=Math.abs(a),r=Math.max(0,27.13*s/(400-s))
 return A.pA(a)*Math.pow(r,2.380952380952381)},
 aKA(a7,a8,a9){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1=Math.sqrt(a9)*11,a2=$.aG5(),a3=1/Math.pow(1.64-Math.pow(0.29,a2.f),0.73),a4=Math.cos(a7+2),a5=Math.sin(a7),a6=Math.cos(a7)
@@ -26984,7 +26984,7 @@ j=23*(k+0.305)*l/(a4+11*l*a6+108*l*a5)
 i=j*a6
 h=j*a5
 g=460*k
-f=A.jI(A.b([A.avv((g+451*i+288*h)/1403),A.avv((g-891*i-261*h)/1403),A.avv((g-220*i-6300*h)/1403)],p),$.aKB)
+f=A.jI(A.a([A.avv((g+451*i+288*h)/1403),A.avv((g-891*i-261*h)/1403),A.avv((g-220*i-6300*h)/1403)],p),$.aKB)
 g=f[0]
 if(g<0||f[1]<0||f[2]<0)return 0
 e=$.z7[0]
@@ -27005,7 +27005,7 @@ if(p!==0)return p
 return A.aIR(A.aKx(q,r))},
 ayQ(a,b,c){return((a&255)<<16|(b&255)<<8|c&255|4278190080)>>>0},
 aIR(a){return A.ayQ(A.rP(a[0]),A.rP(a[1]),A.rP(a[2]))},
-ayS(a){return A.jI(A.b([A.cF(B.i.fo(a,16)&255),A.cF(B.i.fo(a,8)&255),A.cF(a&255)],t.n),$.iB)},
+ayS(a){return A.jI(A.a([A.cF(B.i.fo(a,16)&255),A.cF(B.i.fo(a,8)&255),A.cF(a&255)],t.n),$.iB)},
 oA(a){return 100*A.aIQ((a+16)/116)},
 ayR(a){return A.mk(a/100)*116-16},
 cF(a){var s=a/255
@@ -27037,7 +27037,7 @@ r=s[0]
 q=s[1]
 s=s[2]
 p=b[2]
-return A.b([o*m+l*k+j*n,o*r+l*q+j*s,o*p[0]+l*p[1]+j*p[2]],t.n)},
+return A.a([o*m+l*k+j*n,o*r+l*q+j*s,o*p[0]+l*p[1]+j*p[2]],t.n)},
 aSj(){var s,r,q,p,o=null
 try{o=A.ai4()}catch(s){if(t.VI.b(A.au(s))){r=$.asX
 if(r!=null)return r
@@ -27048,7 +27048,7 @@ if($.axP()===$.auq())r=$.asX=o.U(".").k(0)
 else{q=o.Jc()
 p=q.length-1
 r=$.asX=p===0?q:B.c.Y(q,0,p)}return r},
-aT1(a,b){var s=$.aHw(),r=A.b([a,b,null,null,null,null,null,null,null,null,null,null,null,null,null,null],t._m)
+aT1(a,b){var s=$.aHw(),r=A.a([a,b,null,null,null,null,null,null,null,null,null,null,null,null,null,null],t._m)
 A.aRD("join",r)
 return s.ap4(new A.c2(r,t.Ri))},
 aEr(a){var s
@@ -27160,15 +27160,15 @@ $1(a){return $.aK().gd5().UW(a)},
 $S:83}
 A.a_A.prototype={
 ak3(){var s,r,q,p,o=this.a
-this.a=A.b([],t.s8)
+this.a=A.a([],t.s8)
 for(s=o.length,r=0;r<o.length;o.length===s||(0,A.B)(o),++r){q=o[r]
 p=q.d
 if(p!=null){p=p.a
-p===$&&A.a()
+p===$&&A.b()
 p.l()}q.d=null}}}
 A.Jl.prototype={
 Gi(a,b){var s=a.gez().a
-s===$&&A.a()
+s===$&&A.b()
 s=s.a
 s.toString
 this.a.clipPath(s,$.rf(),b)},
@@ -27180,14 +27180,14 @@ ue(a,b,c){var s=c.eg()
 this.a.drawDRRect(A.m5(a),A.m5(b),s)
 s.delete()},
 uf(a,b,c,d){var s,r,q,p=d.Q,o=d.YC(B.ip),n=this.a,m=a.b
-if(p===B.kh){m===$&&A.a()
+if(p===B.kh){m===$&&A.b()
 m=m.a
-m===$&&A.a()
+m===$&&A.b()
 m=m.a
 m.toString
-A.fC(n,"drawImageRectCubic",[m,A.cS(b),A.cS(c),0.3333333333333333,0.3333333333333333,o])}else{m===$&&A.a()
+A.fC(n,"drawImageRectCubic",[m,A.cS(b),A.cS(c),0.3333333333333333,0.3333333333333333,o])}else{m===$&&A.b()
 m=m.a
-m===$&&A.a()
+m===$&&A.b()
 m=m.a
 m.toString
 s=A.cS(b)
@@ -27205,12 +27205,12 @@ this.a.drawPaint(s)
 s.delete()},
 V3(a,b){var s
 if(a instanceof A.Jq){s=a.a
-s===$&&A.a()
+s===$&&A.b()
 s=s.a
 s.toString
 this.a.drawParagraph(s,b.a,b.b)}else if(!(a instanceof A.Q7))throw A.j(A.eu("Unknown paragraph type."))},
 iV(a,b){var s=b.eg(),r=t.gN.a(a).gez().a
-r===$&&A.a()
+r===$&&A.b()
 r=r.a
 r.toString
 this.a.drawPath(r,s)
@@ -27226,7 +27226,7 @@ q=k.b
 p=this.a
 p.translate(r,q)
 o=t.gN.a(s).gez().a
-o===$&&A.a()
+o===$&&A.b()
 o=o.a
 o.toString
 p.drawPath(o,n)
@@ -27243,7 +27243,7 @@ q=b.dT(B.d.aC(b.geU()*0.25))
 m={ambient:A.wH(r),spot:A.wH(q)}
 p=$.b5.ba().computeTonalColors(m)
 o=o.a
-o===$&&A.a()
+o===$&&A.b()
 o=o.a
 o.toString
 m=new Float32Array(3)
@@ -27328,11 +27328,11 @@ gB(a){return A.eo(A.t(this))},
 k(a){return"ColorFilter.srgbToLinearGamma()"}}
 A.rB.prototype={
 rV(){var s,r=$.b5.ba().ColorFilter,q=this.a.b
-q===$&&A.a()
+q===$&&A.b()
 q=q.a
 q.toString
 s=this.b.b
-s===$&&A.a()
+s===$&&A.b()
 s=s.a
 s.toString
 return r.MakeCompose(q,s)},
@@ -27343,7 +27343,7 @@ gB(a){return A.K(this.a,this.b,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B
 k(a){return"ColorFilter.compose("+this.a.k(0)+", "+this.b.k(0)+")"}}
 A.OR.prototype={
 gHq(){var s=this.b
-return s===$?this.b=A.aKn(new A.ag2(this),A.b([A.d("Noto Color Emoji 0","notocoloremoji/v32/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabsE4tq3luCC7p-aXxcn.0.woff2"),A.d("Noto Color Emoji 1","notocoloremoji/v32/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabsE4tq3luCC7p-aXxcn.1.woff2"),A.d("Noto Color Emoji 2","notocoloremoji/v32/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabsE4tq3luCC7p-aXxcn.2.woff2"),A.d("Noto Color Emoji 3","notocoloremoji/v32/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabsE4tq3luCC7p-aXxcn.3.woff2"),A.d("Noto Color Emoji 4","notocoloremoji/v32/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabsE4tq3luCC7p-aXxcn.4.woff2"),A.d("Noto Color Emoji 5","notocoloremoji/v32/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabsE4tq3luCC7p-aXxcn.5.woff2"),A.d("Noto Color Emoji 6","notocoloremoji/v32/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabsE4tq3luCC7p-aXxcn.6.woff2"),A.d("Noto Color Emoji 7","notocoloremoji/v32/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabsE4tq3luCC7p-aXxcn.7.woff2"),A.d("Noto Color Emoji 8","notocoloremoji/v32/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabsE4tq3luCC7p-aXxcn.8.woff2"),A.d("Noto Color Emoji 9","notocoloremoji/v32/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabsE4tq3luCC7p-aXxcn.9.woff2"),A.d("Noto Color Emoji 10","notocoloremoji/v32/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabsE4tq3luCC7p-aXxcn.10.woff2"),A.d("Noto Color Emoji 11","notocoloremoji/v32/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabsE4tq3luCC7p-aXxcn.11.woff2"),A.d("Noto Sans Symbols 2 0","notosanssymbols2/v24/I_uyMoGduATTei9eI8daxVHDyfisHr71-jrBWXPM4Q.woff2"),A.d("Noto Sans Symbols 2 1","notosanssymbols2/v24/I_uyMoGduATTei9eI8daxVHDyfisHr71-ujgfE71.woff2"),A.d("Noto Sans Symbols 2 2","notosanssymbols2/v24/I_uyMoGduATTei9eI8daxVHDyfisHr71-gTBWXPM4Q.woff2"),A.d("Noto Sans Symbols 2 3","notosanssymbols2/v24/I_uyMoGduATTei9eI8daxVHDyfisHr71-vrgfE71.woff2"),A.d("Noto Sans Symbols 2 4","notosanssymbols2/v24/I_uyMoGduATTei9eI8daxVHDyfisHr71-prgfE71.woff2"),A.d("Noto Sans Symbols 2 5","notosanssymbols2/v24/I_uyMoGduATTei9eI8daxVHDyfisHr71-pTgfA.woff2"),A.d("Noto Sans Cuneiform 0","notosanscuneiform/v17/bMrrmTWK7YY-MF22aHGGd7H8PhJtvBDWse5DlCQu.woff2"),A.d("Noto Sans Cuneiform 1","notosanscuneiform/v17/bMrrmTWK7YY-MF22aHGGd7H8PhJtvBDWsbZDlCQu.woff2"),A.d("Noto Sans Cuneiform 2","notosanscuneiform/v17/bMrrmTWK7YY-MF22aHGGd7H8PhJtvBDWsbhDlA.woff2"),A.d("Noto Sans Duployan 0","notosansduployan/v18/gokzH7nwAEdtF9N8-mdTDx_X9JM5wsvbi-kD5F8a.woff2"),A.d("Noto Sans Duployan 1","notosansduployan/v18/gokzH7nwAEdtF9N8-mdTDx_X9JM5wsvbH8gm2WY.woff2"),A.d("Noto Sans Duployan 2","notosansduployan/v18/gokzH7nwAEdtF9N8-mdTDx_X9JM5wsvbEcgm.woff2"),A.d("Noto Sans Egyptian Hieroglyphs 0","notosansegyptianhieroglyphs/v29/vEF42-tODB8RrNDvZSUmRhcQHzx1s7y_F9-j3qSzEcbEYintdVi99Rg.woff2"),A.d("Noto Sans Egyptian Hieroglyphs 1","notosansegyptianhieroglyphs/v29/vEF42-tODB8RrNDvZSUmRhcQHzx1s7y_F9-j3qSzEcbEYintQFi99Rg.woff2"),A.d("Noto Sans Egyptian Hieroglyphs 2","notosansegyptianhieroglyphs/v29/vEF42-tODB8RrNDvZSUmRhcQHzx1s7y_F9-j3qSzEcbEYintTli9.woff2"),A.d("Noto Sans HK 0","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.0.woff2"),A.d("Noto Sans HK 1","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.1.woff2"),A.d("Noto Sans HK 2","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.2.woff2"),A.d("Noto Sans HK 3","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.3.woff2"),A.d("Noto Sans HK 4","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.4.woff2"),A.d("Noto Sans HK 5","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.5.woff2"),A.d("Noto Sans HK 6","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.6.woff2"),A.d("Noto Sans HK 7","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.7.woff2"),A.d("Noto Sans HK 8","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.8.woff2"),A.d("Noto Sans HK 9","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.9.woff2"),A.d("Noto Sans HK 10","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.10.woff2"),A.d("Noto Sans HK 11","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.15.woff2"),A.d("Noto Sans HK 12","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.16.woff2"),A.d("Noto Sans HK 13","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.17.woff2"),A.d("Noto Sans HK 14","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.25.woff2"),A.d("Noto Sans HK 15","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.26.woff2"),A.d("Noto Sans HK 16","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.27.woff2"),A.d("Noto Sans HK 17","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.28.woff2"),A.d("Noto Sans HK 18","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.29.woff2"),A.d("Noto Sans HK 19","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.30.woff2"),A.d("Noto Sans HK 20","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.31.woff2"),A.d("Noto Sans HK 21","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.32.woff2"),A.d("Noto Sans HK 22","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.33.woff2"),A.d("Noto Sans HK 23","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.34.woff2"),A.d("Noto Sans HK 24","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.35.woff2"),A.d("Noto Sans HK 25","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.36.woff2"),A.d("Noto Sans HK 26","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.37.woff2"),A.d("Noto Sans HK 27","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.38.woff2"),A.d("Noto Sans HK 28","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.39.woff2"),A.d("Noto Sans HK 29","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.40.woff2"),A.d("Noto Sans HK 30","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.41.woff2"),A.d("Noto Sans HK 31","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.42.woff2"),A.d("Noto Sans HK 32","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.43.woff2"),A.d("Noto Sans HK 33","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.44.woff2"),A.d("Noto Sans HK 34","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.45.woff2"),A.d("Noto Sans HK 35","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.46.woff2"),A.d("Noto Sans HK 36","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.47.woff2"),A.d("Noto Sans HK 37","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.48.woff2"),A.d("Noto Sans HK 38","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.49.woff2"),A.d("Noto Sans HK 39","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.50.woff2"),A.d("Noto Sans HK 40","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.51.woff2"),A.d("Noto Sans HK 41","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.52.woff2"),A.d("Noto Sans HK 42","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.53.woff2"),A.d("Noto Sans HK 43","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.54.woff2"),A.d("Noto Sans HK 44","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.55.woff2"),A.d("Noto Sans HK 45","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.56.woff2"),A.d("Noto Sans HK 46","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.57.woff2"),A.d("Noto Sans HK 47","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.58.woff2"),A.d("Noto Sans HK 48","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.59.woff2"),A.d("Noto Sans HK 49","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.60.woff2"),A.d("Noto Sans HK 50","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.61.woff2"),A.d("Noto Sans HK 51","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.62.woff2"),A.d("Noto Sans HK 52","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.63.woff2"),A.d("Noto Sans HK 53","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.64.woff2"),A.d("Noto Sans HK 54","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.65.woff2"),A.d("Noto Sans HK 55","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.66.woff2"),A.d("Noto Sans HK 56","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.67.woff2"),A.d("Noto Sans HK 57","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.68.woff2"),A.d("Noto Sans HK 58","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.69.woff2"),A.d("Noto Sans HK 59","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.70.woff2"),A.d("Noto Sans HK 60","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.71.woff2"),A.d("Noto Sans HK 61","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.72.woff2"),A.d("Noto Sans HK 62","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.73.woff2"),A.d("Noto Sans HK 63","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.74.woff2"),A.d("Noto Sans HK 64","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.75.woff2"),A.d("Noto Sans HK 65","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.76.woff2"),A.d("Noto Sans HK 66","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.77.woff2"),A.d("Noto Sans HK 67","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.78.woff2"),A.d("Noto Sans HK 68","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.79.woff2"),A.d("Noto Sans HK 69","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.80.woff2"),A.d("Noto Sans HK 70","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.81.woff2"),A.d("Noto Sans HK 71","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.82.woff2"),A.d("Noto Sans HK 72","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.83.woff2"),A.d("Noto Sans HK 73","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.84.woff2"),A.d("Noto Sans HK 74","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.85.woff2"),A.d("Noto Sans HK 75","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.86.woff2"),A.d("Noto Sans HK 76","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.87.woff2"),A.d("Noto Sans HK 77","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.88.woff2"),A.d("Noto Sans HK 78","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.89.woff2"),A.d("Noto Sans HK 79","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.90.woff2"),A.d("Noto Sans HK 80","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.91.woff2"),A.d("Noto Sans HK 81","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.92.woff2"),A.d("Noto Sans HK 82","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.93.woff2"),A.d("Noto Sans HK 83","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.98.woff2"),A.d("Noto Sans HK 84","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.99.woff2"),A.d("Noto Sans HK 85","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.100.woff2"),A.d("Noto Sans HK 86","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.101.woff2"),A.d("Noto Sans HK 87","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.102.woff2"),A.d("Noto Sans HK 88","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.103.woff2"),A.d("Noto Sans HK 89","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.104.woff2"),A.d("Noto Sans HK 90","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.105.woff2"),A.d("Noto Sans HK 91","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.106.woff2"),A.d("Noto Sans HK 92","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.107.woff2"),A.d("Noto Sans HK 93","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.108.woff2"),A.d("Noto Sans HK 94","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.109.woff2"),A.d("Noto Sans HK 95","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.110.woff2"),A.d("Noto Sans HK 96","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.111.woff2"),A.d("Noto Sans HK 97","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.112.woff2"),A.d("Noto Sans HK 98","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.113.woff2"),A.d("Noto Sans HK 99","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.114.woff2"),A.d("Noto Sans HK 100","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.115.woff2"),A.d("Noto Sans HK 101","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.116.woff2"),A.d("Noto Sans HK 102","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.117.woff2"),A.d("Noto Sans HK 103","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.118.woff2"),A.d("Noto Sans HK 104","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.119.woff2"),A.d("Noto Sans HK 105","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB-yoaZiLjN.woff2"),A.d("Noto Sans HK 106","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB-yo2ZiLjN.woff2"),A.d("Noto Sans HK 107","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB-yoyZiLjN.woff2"),A.d("Noto Sans HK 108","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB-yoKZiA.woff2"),A.d("Noto Sans JP 0","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.0.woff2"),A.d("Noto Sans JP 1","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.1.woff2"),A.d("Noto Sans JP 2","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.2.woff2"),A.d("Noto Sans JP 3","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.3.woff2"),A.d("Noto Sans JP 4","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.4.woff2"),A.d("Noto Sans JP 5","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.5.woff2"),A.d("Noto Sans JP 6","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.6.woff2"),A.d("Noto Sans JP 7","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.7.woff2"),A.d("Noto Sans JP 8","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.8.woff2"),A.d("Noto Sans JP 9","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.9.woff2"),A.d("Noto Sans JP 10","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.10.woff2"),A.d("Noto Sans JP 11","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.11.woff2"),A.d("Noto Sans JP 12","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.12.woff2"),A.d("Noto Sans JP 13","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.13.woff2"),A.d("Noto Sans JP 14","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.14.woff2"),A.d("Noto Sans JP 15","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.15.woff2"),A.d("Noto Sans JP 16","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.16.woff2"),A.d("Noto Sans JP 17","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.17.woff2"),A.d("Noto Sans JP 18","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.18.woff2"),A.d("Noto Sans JP 19","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.19.woff2"),A.d("Noto Sans JP 20","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.20.woff2"),A.d("Noto Sans JP 21","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.21.woff2"),A.d("Noto Sans JP 22","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.22.woff2"),A.d("Noto Sans JP 23","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.23.woff2"),A.d("Noto Sans JP 24","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.24.woff2"),A.d("Noto Sans JP 25","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.25.woff2"),A.d("Noto Sans JP 26","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.26.woff2"),A.d("Noto Sans JP 27","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.27.woff2"),A.d("Noto Sans JP 28","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.28.woff2"),A.d("Noto Sans JP 29","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.29.woff2"),A.d("Noto Sans JP 30","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.30.woff2"),A.d("Noto Sans JP 31","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.31.woff2"),A.d("Noto Sans JP 32","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.32.woff2"),A.d("Noto Sans JP 33","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.33.woff2"),A.d("Noto Sans JP 34","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.34.woff2"),A.d("Noto Sans JP 35","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.35.woff2"),A.d("Noto Sans JP 36","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.36.woff2"),A.d("Noto Sans JP 37","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.37.woff2"),A.d("Noto Sans JP 38","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.38.woff2"),A.d("Noto Sans JP 39","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.39.woff2"),A.d("Noto Sans JP 40","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.40.woff2"),A.d("Noto Sans JP 41","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.41.woff2"),A.d("Noto Sans JP 42","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.42.woff2"),A.d("Noto Sans JP 43","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.43.woff2"),A.d("Noto Sans JP 44","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.44.woff2"),A.d("Noto Sans JP 45","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.45.woff2"),A.d("Noto Sans JP 46","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.46.woff2"),A.d("Noto Sans JP 47","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.47.woff2"),A.d("Noto Sans JP 48","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.48.woff2"),A.d("Noto Sans JP 49","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.49.woff2"),A.d("Noto Sans JP 50","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.50.woff2"),A.d("Noto Sans JP 51","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.51.woff2"),A.d("Noto Sans JP 52","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.52.woff2"),A.d("Noto Sans JP 53","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.53.woff2"),A.d("Noto Sans JP 54","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.54.woff2"),A.d("Noto Sans JP 55","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.55.woff2"),A.d("Noto Sans JP 56","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.56.woff2"),A.d("Noto Sans JP 57","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.57.woff2"),A.d("Noto Sans JP 58","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.58.woff2"),A.d("Noto Sans JP 59","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.59.woff2"),A.d("Noto Sans JP 60","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.60.woff2"),A.d("Noto Sans JP 61","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.61.woff2"),A.d("Noto Sans JP 62","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.62.woff2"),A.d("Noto Sans JP 63","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.63.woff2"),A.d("Noto Sans JP 64","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.64.woff2"),A.d("Noto Sans JP 65","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.65.woff2"),A.d("Noto Sans JP 66","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.66.woff2"),A.d("Noto Sans JP 67","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.67.woff2"),A.d("Noto Sans JP 68","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.68.woff2"),A.d("Noto Sans JP 69","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.69.woff2"),A.d("Noto Sans JP 70","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.70.woff2"),A.d("Noto Sans JP 71","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.71.woff2"),A.d("Noto Sans JP 72","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.72.woff2"),A.d("Noto Sans JP 73","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.73.woff2"),A.d("Noto Sans JP 74","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.74.woff2"),A.d("Noto Sans JP 75","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.75.woff2"),A.d("Noto Sans JP 76","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.76.woff2"),A.d("Noto Sans JP 77","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.77.woff2"),A.d("Noto Sans JP 78","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.78.woff2"),A.d("Noto Sans JP 79","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.79.woff2"),A.d("Noto Sans JP 80","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.80.woff2"),A.d("Noto Sans JP 81","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.81.woff2"),A.d("Noto Sans JP 82","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.82.woff2"),A.d("Noto Sans JP 83","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.83.woff2"),A.d("Noto Sans JP 84","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.84.woff2"),A.d("Noto Sans JP 85","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.85.woff2"),A.d("Noto Sans JP 86","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.86.woff2"),A.d("Noto Sans JP 87","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.87.woff2"),A.d("Noto Sans JP 88","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.88.woff2"),A.d("Noto Sans JP 89","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.89.woff2"),A.d("Noto Sans JP 90","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.90.woff2"),A.d("Noto Sans JP 91","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.91.woff2"),A.d("Noto Sans JP 92","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.92.woff2"),A.d("Noto Sans JP 93","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.93.woff2"),A.d("Noto Sans JP 94","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.94.woff2"),A.d("Noto Sans JP 95","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.95.woff2"),A.d("Noto Sans JP 96","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.96.woff2"),A.d("Noto Sans JP 97","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.97.woff2"),A.d("Noto Sans JP 98","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.98.woff2"),A.d("Noto Sans JP 99","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.99.woff2"),A.d("Noto Sans JP 100","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.100.woff2"),A.d("Noto Sans JP 101","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.101.woff2"),A.d("Noto Sans JP 102","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.102.woff2"),A.d("Noto Sans JP 103","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.103.woff2"),A.d("Noto Sans JP 104","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.104.woff2"),A.d("Noto Sans JP 105","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.105.woff2"),A.d("Noto Sans JP 106","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.106.woff2"),A.d("Noto Sans JP 107","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.107.woff2"),A.d("Noto Sans JP 108","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.108.woff2"),A.d("Noto Sans JP 109","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.109.woff2"),A.d("Noto Sans JP 110","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.110.woff2"),A.d("Noto Sans JP 111","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.111.woff2"),A.d("Noto Sans JP 112","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.112.woff2"),A.d("Noto Sans JP 113","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.113.woff2"),A.d("Noto Sans JP 114","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.114.woff2"),A.d("Noto Sans JP 115","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.115.woff2"),A.d("Noto Sans JP 116","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.116.woff2"),A.d("Noto Sans JP 117","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.117.woff2"),A.d("Noto Sans JP 118","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.118.woff2"),A.d("Noto Sans JP 119","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.119.woff2"),A.d("Noto Sans JP 120","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj35jS04w-.woff2"),A.d("Noto Sans JP 121","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj35PS04w-.woff2"),A.d("Noto Sans JP 122","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj35LS04w-.woff2"),A.d("Noto Sans JP 123","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj35zS0w.woff2"),A.d("Noto Sans KR 0","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.0.woff2"),A.d("Noto Sans KR 1","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.1.woff2"),A.d("Noto Sans KR 2","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.2.woff2"),A.d("Noto Sans KR 3","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.3.woff2"),A.d("Noto Sans KR 4","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.4.woff2"),A.d("Noto Sans KR 5","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.5.woff2"),A.d("Noto Sans KR 6","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.6.woff2"),A.d("Noto Sans KR 7","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.7.woff2"),A.d("Noto Sans KR 8","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.8.woff2"),A.d("Noto Sans KR 9","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.9.woff2"),A.d("Noto Sans KR 10","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.10.woff2"),A.d("Noto Sans KR 11","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.11.woff2"),A.d("Noto Sans KR 12","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.12.woff2"),A.d("Noto Sans KR 13","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.13.woff2"),A.d("Noto Sans KR 14","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.14.woff2"),A.d("Noto Sans KR 15","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.15.woff2"),A.d("Noto Sans KR 16","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.16.woff2"),A.d("Noto Sans KR 17","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.17.woff2"),A.d("Noto Sans KR 18","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.18.woff2"),A.d("Noto Sans KR 19","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.19.woff2"),A.d("Noto Sans KR 20","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.20.woff2"),A.d("Noto Sans KR 21","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.21.woff2"),A.d("Noto Sans KR 22","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.22.woff2"),A.d("Noto Sans KR 23","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.23.woff2"),A.d("Noto Sans KR 24","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.24.woff2"),A.d("Noto Sans KR 25","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.25.woff2"),A.d("Noto Sans KR 26","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.26.woff2"),A.d("Noto Sans KR 27","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.27.woff2"),A.d("Noto Sans KR 28","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.28.woff2"),A.d("Noto Sans KR 29","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.29.woff2"),A.d("Noto Sans KR 30","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.30.woff2"),A.d("Noto Sans KR 31","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.31.woff2"),A.d("Noto Sans KR 32","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.32.woff2"),A.d("Noto Sans KR 33","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.33.woff2"),A.d("Noto Sans KR 34","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.34.woff2"),A.d("Noto Sans KR 35","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.35.woff2"),A.d("Noto Sans KR 36","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.36.woff2"),A.d("Noto Sans KR 37","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.37.woff2"),A.d("Noto Sans KR 38","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.38.woff2"),A.d("Noto Sans KR 39","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.39.woff2"),A.d("Noto Sans KR 40","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.40.woff2"),A.d("Noto Sans KR 41","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.41.woff2"),A.d("Noto Sans KR 42","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.42.woff2"),A.d("Noto Sans KR 43","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.43.woff2"),A.d("Noto Sans KR 44","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.44.woff2"),A.d("Noto Sans KR 45","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.45.woff2"),A.d("Noto Sans KR 46","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.46.woff2"),A.d("Noto Sans KR 47","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.47.woff2"),A.d("Noto Sans KR 48","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.48.woff2"),A.d("Noto Sans KR 49","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.49.woff2"),A.d("Noto Sans KR 50","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.50.woff2"),A.d("Noto Sans KR 51","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.51.woff2"),A.d("Noto Sans KR 52","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.52.woff2"),A.d("Noto Sans KR 53","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.53.woff2"),A.d("Noto Sans KR 54","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.54.woff2"),A.d("Noto Sans KR 55","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.55.woff2"),A.d("Noto Sans KR 56","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.56.woff2"),A.d("Noto Sans KR 57","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.57.woff2"),A.d("Noto Sans KR 58","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.58.woff2"),A.d("Noto Sans KR 59","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.59.woff2"),A.d("Noto Sans KR 60","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.60.woff2"),A.d("Noto Sans KR 61","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.61.woff2"),A.d("Noto Sans KR 62","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.62.woff2"),A.d("Noto Sans KR 63","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.63.woff2"),A.d("Noto Sans KR 64","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.64.woff2"),A.d("Noto Sans KR 65","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.65.woff2"),A.d("Noto Sans KR 66","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.66.woff2"),A.d("Noto Sans KR 67","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.67.woff2"),A.d("Noto Sans KR 68","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.68.woff2"),A.d("Noto Sans KR 69","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.69.woff2"),A.d("Noto Sans KR 70","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.70.woff2"),A.d("Noto Sans KR 71","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.71.woff2"),A.d("Noto Sans KR 72","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.72.woff2"),A.d("Noto Sans KR 73","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.73.woff2"),A.d("Noto Sans KR 74","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.74.woff2"),A.d("Noto Sans KR 75","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.75.woff2"),A.d("Noto Sans KR 76","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.76.woff2"),A.d("Noto Sans KR 77","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.77.woff2"),A.d("Noto Sans KR 78","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.78.woff2"),A.d("Noto Sans KR 79","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.79.woff2"),A.d("Noto Sans KR 80","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.80.woff2"),A.d("Noto Sans KR 81","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.81.woff2"),A.d("Noto Sans KR 82","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.82.woff2"),A.d("Noto Sans KR 83","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.83.woff2"),A.d("Noto Sans KR 84","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.84.woff2"),A.d("Noto Sans KR 85","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.85.woff2"),A.d("Noto Sans KR 86","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.86.woff2"),A.d("Noto Sans KR 87","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.87.woff2"),A.d("Noto Sans KR 88","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.88.woff2"),A.d("Noto Sans KR 89","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.89.woff2"),A.d("Noto Sans KR 90","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.90.woff2"),A.d("Noto Sans KR 91","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.91.woff2"),A.d("Noto Sans KR 92","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.92.woff2"),A.d("Noto Sans KR 93","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.93.woff2"),A.d("Noto Sans KR 94","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.94.woff2"),A.d("Noto Sans KR 95","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.95.woff2"),A.d("Noto Sans KR 96","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.96.woff2"),A.d("Noto Sans KR 97","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.97.woff2"),A.d("Noto Sans KR 98","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.98.woff2"),A.d("Noto Sans KR 99","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.99.woff2"),A.d("Noto Sans KR 100","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.100.woff2"),A.d("Noto Sans KR 101","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.101.woff2"),A.d("Noto Sans KR 102","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.102.woff2"),A.d("Noto Sans KR 103","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.103.woff2"),A.d("Noto Sans KR 104","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.104.woff2"),A.d("Noto Sans KR 105","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.105.woff2"),A.d("Noto Sans KR 106","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.106.woff2"),A.d("Noto Sans KR 107","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.107.woff2"),A.d("Noto Sans KR 108","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.108.woff2"),A.d("Noto Sans KR 109","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.109.woff2"),A.d("Noto Sans KR 110","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.110.woff2"),A.d("Noto Sans KR 111","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.111.woff2"),A.d("Noto Sans KR 112","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.112.woff2"),A.d("Noto Sans KR 113","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.113.woff2"),A.d("Noto Sans KR 114","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.114.woff2"),A.d("Noto Sans KR 115","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.115.woff2"),A.d("Noto Sans KR 116","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.116.woff2"),A.d("Noto Sans KR 117","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.117.woff2"),A.d("Noto Sans KR 118","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.118.woff2"),A.d("Noto Sans KR 119","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.119.woff2"),A.d("Noto Sans KR 120","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoySLfg8U4h.woff2"),A.d("Noto Sans KR 121","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoySLzg8U4h.woff2"),A.d("Noto Sans KR 122","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoySL3g8U4h.woff2"),A.d("Noto Sans KR 123","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoySLPg8Q.woff2"),A.d("Noto Sans SC 0","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.4.woff2"),A.d("Noto Sans SC 1","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.5.woff2"),A.d("Noto Sans SC 2","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.6.woff2"),A.d("Noto Sans SC 3","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.21.woff2"),A.d("Noto Sans SC 4","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.22.woff2"),A.d("Noto Sans SC 5","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.23.woff2"),A.d("Noto Sans SC 6","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.24.woff2"),A.d("Noto Sans SC 7","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.25.woff2"),A.d("Noto Sans SC 8","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.26.woff2"),A.d("Noto Sans SC 9","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.27.woff2"),A.d("Noto Sans SC 10","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.28.woff2"),A.d("Noto Sans SC 11","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.29.woff2"),A.d("Noto Sans SC 12","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.30.woff2"),A.d("Noto Sans SC 13","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.31.woff2"),A.d("Noto Sans SC 14","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.32.woff2"),A.d("Noto Sans SC 15","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.33.woff2"),A.d("Noto Sans SC 16","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.34.woff2"),A.d("Noto Sans SC 17","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.35.woff2"),A.d("Noto Sans SC 18","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.36.woff2"),A.d("Noto Sans SC 19","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.37.woff2"),A.d("Noto Sans SC 20","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.38.woff2"),A.d("Noto Sans SC 21","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.39.woff2"),A.d("Noto Sans SC 22","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.40.woff2"),A.d("Noto Sans SC 23","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.41.woff2"),A.d("Noto Sans SC 24","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.42.woff2"),A.d("Noto Sans SC 25","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.43.woff2"),A.d("Noto Sans SC 26","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.44.woff2"),A.d("Noto Sans SC 27","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.45.woff2"),A.d("Noto Sans SC 28","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.46.woff2"),A.d("Noto Sans SC 29","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.47.woff2"),A.d("Noto Sans SC 30","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.48.woff2"),A.d("Noto Sans SC 31","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.49.woff2"),A.d("Noto Sans SC 32","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.50.woff2"),A.d("Noto Sans SC 33","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.51.woff2"),A.d("Noto Sans SC 34","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.52.woff2"),A.d("Noto Sans SC 35","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.53.woff2"),A.d("Noto Sans SC 36","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.54.woff2"),A.d("Noto Sans SC 37","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.55.woff2"),A.d("Noto Sans SC 38","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.56.woff2"),A.d("Noto Sans SC 39","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.57.woff2"),A.d("Noto Sans SC 40","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.58.woff2"),A.d("Noto Sans SC 41","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.59.woff2"),A.d("Noto Sans SC 42","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.60.woff2"),A.d("Noto Sans SC 43","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.61.woff2"),A.d("Noto Sans SC 44","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.62.woff2"),A.d("Noto Sans SC 45","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.63.woff2"),A.d("Noto Sans SC 46","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.64.woff2"),A.d("Noto Sans SC 47","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.65.woff2"),A.d("Noto Sans SC 48","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.66.woff2"),A.d("Noto Sans SC 49","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.67.woff2"),A.d("Noto Sans SC 50","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.68.woff2"),A.d("Noto Sans SC 51","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.69.woff2"),A.d("Noto Sans SC 52","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.70.woff2"),A.d("Noto Sans SC 53","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.71.woff2"),A.d("Noto Sans SC 54","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.72.woff2"),A.d("Noto Sans SC 55","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.73.woff2"),A.d("Noto Sans SC 56","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.74.woff2"),A.d("Noto Sans SC 57","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.75.woff2"),A.d("Noto Sans SC 58","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.76.woff2"),A.d("Noto Sans SC 59","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.77.woff2"),A.d("Noto Sans SC 60","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.78.woff2"),A.d("Noto Sans SC 61","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.79.woff2"),A.d("Noto Sans SC 62","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.80.woff2"),A.d("Noto Sans SC 63","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.81.woff2"),A.d("Noto Sans SC 64","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.82.woff2"),A.d("Noto Sans SC 65","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.83.woff2"),A.d("Noto Sans SC 66","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.84.woff2"),A.d("Noto Sans SC 67","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.85.woff2"),A.d("Noto Sans SC 68","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.86.woff2"),A.d("Noto Sans SC 69","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.87.woff2"),A.d("Noto Sans SC 70","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.88.woff2"),A.d("Noto Sans SC 71","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.89.woff2"),A.d("Noto Sans SC 72","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.90.woff2"),A.d("Noto Sans SC 73","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.91.woff2"),A.d("Noto Sans SC 74","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.97.woff2"),A.d("Noto Sans SC 75","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.98.woff2"),A.d("Noto Sans SC 76","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.99.woff2"),A.d("Noto Sans SC 77","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.100.woff2"),A.d("Noto Sans SC 78","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.101.woff2"),A.d("Noto Sans SC 79","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.102.woff2"),A.d("Noto Sans SC 80","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.103.woff2"),A.d("Noto Sans SC 81","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.104.woff2"),A.d("Noto Sans SC 82","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.105.woff2"),A.d("Noto Sans SC 83","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.106.woff2"),A.d("Noto Sans SC 84","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.107.woff2"),A.d("Noto Sans SC 85","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.108.woff2"),A.d("Noto Sans SC 86","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.109.woff2"),A.d("Noto Sans SC 87","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.110.woff2"),A.d("Noto Sans SC 88","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.111.woff2"),A.d("Noto Sans SC 89","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.112.woff2"),A.d("Noto Sans SC 90","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.113.woff2"),A.d("Noto Sans SC 91","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.114.woff2"),A.d("Noto Sans SC 92","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.115.woff2"),A.d("Noto Sans SC 93","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.116.woff2"),A.d("Noto Sans SC 94","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.117.woff2"),A.d("Noto Sans SC 95","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.118.woff2"),A.d("Noto Sans SC 96","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.119.woff2"),A.d("Noto Sans SC 97","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FrY9HbczS.woff2"),A.d("Noto Sans SC 98","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FrYRHbczS.woff2"),A.d("Noto Sans SC 99","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FrYVHbczS.woff2"),A.d("Noto Sans SC 100","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FrYtHbQ.woff2"),A.d("Noto Sans TC 0","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.0.woff2"),A.d("Noto Sans TC 1","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.6.woff2"),A.d("Noto Sans TC 2","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.7.woff2"),A.d("Noto Sans TC 3","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.8.woff2"),A.d("Noto Sans TC 4","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.19.woff2"),A.d("Noto Sans TC 5","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.20.woff2"),A.d("Noto Sans TC 6","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.21.woff2"),A.d("Noto Sans TC 7","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.22.woff2"),A.d("Noto Sans TC 8","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.23.woff2"),A.d("Noto Sans TC 9","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.24.woff2"),A.d("Noto Sans TC 10","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.25.woff2"),A.d("Noto Sans TC 11","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.26.woff2"),A.d("Noto Sans TC 12","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.27.woff2"),A.d("Noto Sans TC 13","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.28.woff2"),A.d("Noto Sans TC 14","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.29.woff2"),A.d("Noto Sans TC 15","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.30.woff2"),A.d("Noto Sans TC 16","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.31.woff2"),A.d("Noto Sans TC 17","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.32.woff2"),A.d("Noto Sans TC 18","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.33.woff2"),A.d("Noto Sans TC 19","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.34.woff2"),A.d("Noto Sans TC 20","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.35.woff2"),A.d("Noto Sans TC 21","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.36.woff2"),A.d("Noto Sans TC 22","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.37.woff2"),A.d("Noto Sans TC 23","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.38.woff2"),A.d("Noto Sans TC 24","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.39.woff2"),A.d("Noto Sans TC 25","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.40.woff2"),A.d("Noto Sans TC 26","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.41.woff2"),A.d("Noto Sans TC 27","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.42.woff2"),A.d("Noto Sans TC 28","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.43.woff2"),A.d("Noto Sans TC 29","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.44.woff2"),A.d("Noto Sans TC 30","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.45.woff2"),A.d("Noto Sans TC 31","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.46.woff2"),A.d("Noto Sans TC 32","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.47.woff2"),A.d("Noto Sans TC 33","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.48.woff2"),A.d("Noto Sans TC 34","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.49.woff2"),A.d("Noto Sans TC 35","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.50.woff2"),A.d("Noto Sans TC 36","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.51.woff2"),A.d("Noto Sans TC 37","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.52.woff2"),A.d("Noto Sans TC 38","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.53.woff2"),A.d("Noto Sans TC 39","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.54.woff2"),A.d("Noto Sans TC 40","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.55.woff2"),A.d("Noto Sans TC 41","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.56.woff2"),A.d("Noto Sans TC 42","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.57.woff2"),A.d("Noto Sans TC 43","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.58.woff2"),A.d("Noto Sans TC 44","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.59.woff2"),A.d("Noto Sans TC 45","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.60.woff2"),A.d("Noto Sans TC 46","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.61.woff2"),A.d("Noto Sans TC 47","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.62.woff2"),A.d("Noto Sans TC 48","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.63.woff2"),A.d("Noto Sans TC 49","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.64.woff2"),A.d("Noto Sans TC 50","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.65.woff2"),A.d("Noto Sans TC 51","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.66.woff2"),A.d("Noto Sans TC 52","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.67.woff2"),A.d("Noto Sans TC 53","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.68.woff2"),A.d("Noto Sans TC 54","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.69.woff2"),A.d("Noto Sans TC 55","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.70.woff2"),A.d("Noto Sans TC 56","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.71.woff2"),A.d("Noto Sans TC 57","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.72.woff2"),A.d("Noto Sans TC 58","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.73.woff2"),A.d("Noto Sans TC 59","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.74.woff2"),A.d("Noto Sans TC 60","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.75.woff2"),A.d("Noto Sans TC 61","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.76.woff2"),A.d("Noto Sans TC 62","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.77.woff2"),A.d("Noto Sans TC 63","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.78.woff2"),A.d("Noto Sans TC 64","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.79.woff2"),A.d("Noto Sans TC 65","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.80.woff2"),A.d("Noto Sans TC 66","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.81.woff2"),A.d("Noto Sans TC 67","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.82.woff2"),A.d("Noto Sans TC 68","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.83.woff2"),A.d("Noto Sans TC 69","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.84.woff2"),A.d("Noto Sans TC 70","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.85.woff2"),A.d("Noto Sans TC 71","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.86.woff2"),A.d("Noto Sans TC 72","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.87.woff2"),A.d("Noto Sans TC 73","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.88.woff2"),A.d("Noto Sans TC 74","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.89.woff2"),A.d("Noto Sans TC 75","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.90.woff2"),A.d("Noto Sans TC 76","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.91.woff2"),A.d("Noto Sans TC 77","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.92.woff2"),A.d("Noto Sans TC 78","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.97.woff2"),A.d("Noto Sans TC 79","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.98.woff2"),A.d("Noto Sans TC 80","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.99.woff2"),A.d("Noto Sans TC 81","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.100.woff2"),A.d("Noto Sans TC 82","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.101.woff2"),A.d("Noto Sans TC 83","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.102.woff2"),A.d("Noto Sans TC 84","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.103.woff2"),A.d("Noto Sans TC 85","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.104.woff2"),A.d("Noto Sans TC 86","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.105.woff2"),A.d("Noto Sans TC 87","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.106.woff2"),A.d("Noto Sans TC 88","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.107.woff2"),A.d("Noto Sans TC 89","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.108.woff2"),A.d("Noto Sans TC 90","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.109.woff2"),A.d("Noto Sans TC 91","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.110.woff2"),A.d("Noto Sans TC 92","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.111.woff2"),A.d("Noto Sans TC 93","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.112.woff2"),A.d("Noto Sans TC 94","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.113.woff2"),A.d("Noto Sans TC 95","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.114.woff2"),A.d("Noto Sans TC 96","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.115.woff2"),A.d("Noto Sans TC 97","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.116.woff2"),A.d("Noto Sans TC 98","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.117.woff2"),A.d("Noto Sans TC 99","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.118.woff2"),A.d("Noto Sans TC 100","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.119.woff2"),A.d("Noto Sans TC 101","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76CyzClEt1a3.woff2"),A.d("Noto Sans TC 102","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76CyzCJEt1a3.woff2"),A.d("Noto Sans TC 103","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76CyzCNEt1a3.woff2"),A.d("Noto Sans TC 104","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76CyzC1Etw.woff2"),A.d("Noto Music","notomusic/v20/pe0rMIiSN5pO63htf1sxItKQB9Zra1U.woff2"),A.d("Noto Sans","notosans/v37/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyD9A99Y41P6zHtY.woff2"),A.d("Noto Sans Adlam","notosansadlam/v22/neIczCCpqp0s5pPusPamd81eMfjPonvqdbYxxpgufnv0TGzBZLwhuvk.woff2"),A.d("Noto Sans Anatolian Hieroglyphs","notosansanatolianhieroglyphs/v16/ijw9s4roRME5LLRxjsRb8A0gKPSWq4BbDmHHu6j2pEtUJzZWXyPIymc5QYo.woff2"),A.d("Noto Sans Arabic","notosansarabic/v28/nwpxtLGrOAZMl5nJ_wfgRg3DrWFZWsnVBJ_sS6tlqHHFlhQ5l3sQWIHPqzCfyGyvvnCBFQLaig.woff2"),A.d("Noto Sans Armenian","notosansarmenian/v43/ZgN0jOZKPa7CHqq0h37c7ReDUubm2SEdFXp7ig73qtTY5idb74R9UdM3y2nZLorxb60nYy6zF3Eg.woff2"),A.d("Noto Sans Avestan","notosansavestan/v21/bWti7ejKfBziStx7lIzKOLQZKhIJkyu4SASLji8U.woff2"),A.d("Noto Sans Balinese","notosansbalinese/v24/NaPwcYvSBuhTirw6IaFn6UrRDaqje-lpbbRtYf-Fwu2Ov7fdhEtVd222PPY.woff2"),A.d("Noto Sans Bamum","notosansbamum/v27/uk-0EGK3o6EruUbnwovcbBTkkklK_Ya_PBHfNGTPEddO-_0LykxEkxA.woff2"),A.d("Noto Sans Bassa Vah","notosansbassavah/v17/PN_bRee-r3f7LnqsD5sax12gjZn7mBpL5YwUpA2MBdcFn4MaAc6s34gH-GD7.woff2"),A.d("Noto Sans Batak","notosansbatak/v20/gok2H6TwAEdtF9N8-mdTCQvT-Zdgpo_PHuk74A.woff2"),A.d("Noto Sans Bengali","notosansbengali/v26/Cn-SJsCGWQxOjaGwMQ6fIiMywrNJIky6nvd8BjzVMvJx2mcSPVFpVEqE-6KmsolLudWk8izI0lc.woff2"),A.d("Noto Sans Bhaiksuki","notosansbhaiksuki/v17/UcC63EosKniBH4iELXATsSBWdvUHXxhj8rfUdU4wh9U.woff2"),A.d("Noto Sans Brahmi","notosansbrahmi/v19/vEFK2-VODB8RrNDvZSUmQQIIByV18te1W77HtMo.woff2"),A.d("Noto Sans Buginese","notosansbuginese/v18/esDM30ldNv-KYGGJpKGk18phe_7Da6_gsPuEXLmNtw.woff2"),A.d("Noto Sans Buhid","notosansbuhid/v22/Dxxy8jiXMW75w3OmoDXVWJD7YwzAfqtgnaFoGA.woff2"),A.d("Noto Sans Canadian Aboriginal","notosanscanadianaboriginal/v26/4C_TLjTuEqPj-8J01CwaGkiZ9os0iGVkezM1mUT-j_Lmlzda6uH_nnX1bzigWLn_zQsg0q0uhQ.woff2"),A.d("Noto Sans Carian","notosanscarian/v16/LDIpaoiONgYwA9Yc6f0gUILeMIOgs78b9yGLmfI.woff2"),A.d("Noto Sans Caucasian Albanian","notosanscaucasianalbanian/v18/nKKA-HM_FYFRJvXzVXaANsU0VzsAc46QGOkWytlTs-TXrYXmoVmRSZo.woff2"),A.d("Noto Sans Chakma","notosanschakma/v17/Y4GQYbJ8VTEp4t3MKJSMjg5OIzhi4J3TQhYBeYo.woff2"),A.d("Noto Sans Cham","notosanscham/v31/pe06MIySN5pO62Z5YkFyQb_bbuRhe6D4yip43qfcERwcurGykboaLg.woff2"),A.d("Noto Sans Cherokee","notosanscherokee/v20/KFOPCm6Yu8uF-29fiz9vQF9YWK6Z8O10cHNA0cSkZCHYWi5PDky5rAffjl0.woff2"),A.d("Noto Sans Coptic","notosanscoptic/v21/iJWfBWmUZi_OHPqn4wq6kgqumOEd786_VG0xR4Y.woff2"),A.d("Noto Sans Cypriot","notosanscypriot/v19/8AtzGta9PYqQDjyp79a6f8Cj-3a3cxIpK5MPpahF.woff2"),A.d("Noto Sans Deseret","notosansdeseret/v17/MwQsbgPp1eKH6QsAVuFb9AZM6MMr2Vq4ZnJSZtQG.woff2"),A.d("Noto Sans Devanagari","notosansdevanagari/v26/TuGoUUFzXI5FBtUq5a8bjKYTZjtRU6Sgv3NaV_SNmI0b8QQCQmHn6B2OHjbL_08AlXQly-UzoFoW4Ow.woff2"),A.d("Noto Sans Elbasan","notosanselbasan/v16/-F6rfiZqLzI2JPCgQBnw400qp1trvHdgre4dFcFh.woff2"),A.d("Noto Sans Elymaic","notosanselymaic/v17/UqyKK9YTJW5liNMhTMqe9vUFP65ZD4AmWOT0zi2V.woff2"),A.d("Noto Sans Ethiopic","notosansethiopic/v47/7cHPv50vjIepfJVOZZgcpQ5B9FBTH9KGNfhSTgtoow1KVnIvyBoMSzUMacb-T35OK6DmwmfeaY9u.woff2"),A.d("Noto Sans Georgian","notosansgeorgian/v44/PlIaFke5O6RzLfvNNVSitxkr76PRHBC4Ytyq-Gof7PUs4S7zWn-8YDB09HFNdpvnzFj7f5WK0OQV.woff2"),A.d("Noto Sans Glagolitic","notosansglagolitic/v18/1q2ZY4-BBFBst88SU_tOj4J-4yuNF_HI4ERP4Amu7nM1.woff2"),A.d("Noto Sans Gothic","notosansgothic/v16/TuGKUUVzXI5FBtUq5a8bj6wRbzxTFMD40kFQRx0.woff2"),A.d("Noto Sans Grantha","notosansgrantha/v19/3y976akwcCjmsU8NDyrKo3IQfQ4o-r8ZFeulHc6N.woff2"),A.d("Noto Sans Gujarati","notosansgujarati/v25/wlpWgx_HC1ti5ViekvcxnhMlCVo3f5pv17ivlzsUB14gg1TMR2Gw4VceEl7MA_ypFwPJ_OdiEH0s.woff2"),A.d("Noto Sans Gunjala Gondi","notosansgunjalagondi/v19/bWtX7e7KfBziStx7lIzKPrcSMwcEnCv6DW7n5g0ef3PLtymzNxYL4YDE5Z4vCTxEJQ.woff2"),A.d("Noto Sans Gurmukhi","notosansgurmukhi/v26/w8g9H3EvQP81sInb43inmyN9zZ7hb7ATbSWo4q8dJ74a3cVrYFQ_bogT0-gPeG1Oenb0Z_trdp7h.woff2"),A.d("Noto Sans Hanunoo","notosanshanunoo/v21/f0Xs0fCv8dxkDWlZSoXOj6CphMloFsEpEpgL_ix2.woff2"),A.d("Noto Sans Hatran","notosanshatran/v16/A2BBn4Ne0RgnVF3Lnko-0sOBIfL_mMo3r1nwzDs.woff2"),A.d("Noto Sans Hebrew","notosanshebrew/v46/or3HQ7v33eiDljA1IufXTtVf7V6RvEEdhQlk0LlGxCyaeNKYZC0sqk3xXGiXd4qtpyJltutR2g.woff2"),A.d("Noto Sans Imperial Aramaic","notosansimperialaramaic/v17/a8IMNpjwKmHXpgXbMIsbTc_kvks91LlLetBr5itQrtdjl3YfPNno.woff2"),A.d("Noto Sans Indic Siyaq Numbers","notosansindicsiyaqnumbers/v16/6xK5dTJFKcWIu4bpRBjRZRpsIYHabOeZ8UZLubTzpXNHKx2TPOpVd5Iu.woff2"),A.d("Noto Sans Inscriptional Pahlavi","notosansinscriptionalpahlavi/v17/ll8UK3GaVDuxR-TEqFPIbsR79Xxz9WEKbwsjpz7VklYlC7FCVt-VOAYK0QA.woff2"),A.d("Noto Sans Inscriptional Parthian","notosansinscriptionalparthian/v17/k3k7o-IMPvpLmixcA63oYi-yStDkgXuXncL7dzfW3P4TAJ2yklBM2jNkLlLr.woff2"),A.d("Noto Sans Javanese","notosansjavanese/v23/2V01KJkDAIA6Hp4zoSScDjV0Y-eoHAHT-Z3MngEefiidxJnkFFxiZYWj4O8.woff2"),A.d("Noto Sans Kaithi","notosanskaithi/v22/buEtppS9f8_vkXadMBJJu0tWjLwjQigKdoZIKlo.woff2"),A.d("Noto Sans Kannada","notosanskannada/v27/8vIs7xs32H97qzQKnzfeXycxXZyUmySvZWItmf1fe6TVmgop9ndpS-BqHEyGrDvNzScMLsPKrkY.woff2"),A.d("Noto Sans Kayah Li","notosanskayahli/v21/B50nF61OpWTRcGrhOVJJwOMXdca6Yecki3E06x2jVTX3WCc3CZT4EXLuKVM.woff2"),A.d("Noto Sans Kharoshthi","notosanskharoshthi/v16/Fh4qPiLjKS30-P4-pGMMXCCfvkc5Vd7KE5z9rFyx5mR1.woff2"),A.d("Noto Sans Khmer","notosanskhmer/v24/ijw3s5roRME5LLRxjsRb-gssOenAyendxrgV2c-Zw-9vbVUti_Z_dWgtWYuNAJz9kAbrddiA.woff2"),A.d("Noto Sans Khojki","notosanskhojki/v19/-nFnOHM29Oofr2wohFbTuPPKVWpmK_J709jy92k.woff2"),A.d("Noto Sans Khudawadi","notosanskhudawadi/v22/fdNi9t6ZsWBZ2k5ltHN73zZ5hc8HANlHIjFnVVXz9MY.woff2"),A.d("Noto Sans Lao","notosanslao/v30/bx6lNx2Ol_ixgdYWLm9BwxM3NW6BOkuf763Clj73CiQ_J1Djx9pidOt4ccbdepMK3riB2w.woff2"),A.d("Noto Sans Lepcha","notosanslepcha/v19/0QI7MWlB_JWgA166SKhu05TekNS32AdstqBXgd4.woff2"),A.d("Noto Sans Limbu","notosanslimbu/v24/3JnlSDv90Gmq2mrzckOBBRRoNJVj1cF3OHRDnA.woff2"),A.d("Noto Sans Linear A","notosanslineara/v18/oPWS_l16kP4jCuhpgEGmwJOiA18FZj22y2HQAGQicw.woff2"),A.d("Noto Sans Linear B","notosanslinearb/v17/HhyJU4wt9vSgfHoORYOiXOckKNB737IV2RkFTq4EPw.woff2"),A.d("Noto Sans Lisu","notosanslisu/v25/uk-3EGO3o6EruUbnwovcYhz6kh57_nqbcTdjJnHP2Vwt3tIlxkVdig.woff2"),A.d("Noto Sans Lycian","notosanslycian/v15/QldVNSNMqAsHtsJ7UmqxBQA9r8wA5_zaCJwn00E.woff2"),A.d("Noto Sans Lydian","notosanslydian/v18/c4m71mVzGN7s8FmIukZJ1v4ZlcPReUbXMoIjEQI.woff2"),A.d("Noto Sans Mahajani","notosansmahajani/v19/-F6sfiVqLzI2JPCgQBnw60Agp0JrvD5FgsARHNh4zg.woff2"),A.d("Noto Sans Malayalam","notosansmalayalam/v26/sJoi3K5XjsSdcnzn071rL37lpAOsUThnDZIfPdbeSNzVakglNM-Qw8EaeB8Nss-_RuD9AVzEr6HxEA.woff2"),A.d("Noto Sans Mandaic","notosansmandaic/v17/cIfnMbdWt1w_HgCcilqhKQBo_OsMI5_F_gMk0izH.woff2"),A.d("Noto Sans Manichaean","notosansmanichaean/v18/taiVGntiC4--qtsfi4Jp9-_GkPZZCcrfekqHNTtFCtdX.woff2"),A.d("Noto Sans Marchen","notosansmarchen/v20/aFTO7OZ_Y282EP-WyG6QTOX_C8WZMHhKk652ZaHk.woff2"),A.d("Noto Sans Masaram Gondi","notosansmasaramgondi/v17/6xK_dThFKcWIu4bpRBjRYRV7KZCbUq6n_1kPnuGb7RI9WSWX.woff2"),A.d("Noto Sans Math","notosansmath/v15/7Aump_cpkSecTWaHRlH2hyV5UHkD-V048PW0.woff2"),A.d("Noto Sans Mayan Numerals","notosansmayannumerals/v16/PlIuFk25O6RzLfvNNVSivR09_KqYMwvvDKYjfIiE7soo6eepYQ.woff2"),A.d("Noto Sans Medefaidrin","notosansmedefaidrin/v23/WwkzxOq6Dk-wranENynkfeVsNbRZtbOIdLb1exeM4ZeuabBfmErWlTj18e5A3rw.woff2"),A.d("Noto Sans Meetei Mayek","notosansmeeteimayek/v15/HTxAL3QyKieByqY9eZPFweO0be7M21uSphSdhqILnmrRfJ8t_1TJ_vTT5PgeFYVa.woff2"),A.d("Noto Sans Meroitic","notosansmeroitic/v18/IFS5HfRJndhE3P4b5jnZ3ITPvC6i00UDhThTiKY9KQ.woff2"),A.d("Noto Sans Miao","notosansmiao/v17/Dxxz8jmXMW75w3OmoDXVV4zyZUjlUYVslLhx.woff2"),A.d("Noto Sans Modi","notosansmodi/v23/pe03MIySN5pO62Z5YkFyT7jeav5vWVAgVol-.woff2"),A.d("Noto Sans Mongolian","notosansmongolian/v22/VdGCAYADGIwE0EopZx8xQfHlgEAMsrToxL4g6-av1x0.woff2"),A.d("Noto Sans Mro","notosansmro/v18/qWcsB6--pZv9TqnUQMhe9b39WDnRtjkho4M.woff2"),A.d("Noto Sans Multani","notosansmultani/v20/9Bty3ClF38_RfOpe1gCaZ8p30BOFO1AxpfCs5Kos.woff2"),A.d("Noto Sans Myanmar","notosansmyanmar/v20/AlZq_y1ZtY3ymOryg38hOCSdOnFq0Enz3OU4o1AC.woff2"),A.d("Noto Sans NKo","notosansnko/v6/esDX31ZdNv-KYGGJpKGk2_RpMpWMHMLBrdA.woff2"),A.d("Noto Sans Nabataean","notosansnabataean/v16/IFS4HfVJndhE3P4b5jnZ34DfsjO330dNoBd9hK8kMK4.woff2"),A.d("Noto Sans New Tai Lue","notosansnewtailue/v22/H4cKBW-Pl9DZ0Xe_nHUapt7PovLXAhAnY7wqaLy-OJgU3p_pdeXAYUPghFPKzeY.woff2"),A.d("Noto Sans Newa","notosansnewa/v16/7r3fqXp6utEsO9pI4f8ok8sWg8n6qN4R5lNU.woff2"),A.d("Noto Sans Nushu","notosansnushu/v19/rnCw-xRQ3B7652emAbAe_Ai1IYaFXVAMArZKqQ.woff2"),A.d("Noto Sans Ogham","notosansogham/v17/kmKlZqk1GBDGN0mY6k5lmEmww4hrsplaQxcoCA.woff2"),A.d("Noto Sans Ol Chiki","notosansolchiki/v29/N0b92TJNOPt-eHmFZCdQbrL32r-4CvhzDzRwlxOQYuVALWk267c6gVrz5gQ.woff2"),A.d("Noto Sans Old Hungarian","notosansoldhungarian/v18/E213_cD6hP3GwCJPEUssHEM0KqLaHJXg2PiIgRfmbg5nCYXt.woff2"),A.d("Noto Sans Old Italic","notosansolditalic/v17/TuGOUUFzXI5FBtUq5a8bh68BJxxEVam7tWlUdRhtCC4d.woff2"),A.d("Noto Sans Old North Arabian","notosansoldnortharabian/v16/esDF30BdNv-KYGGJpKGk2tNiMt7Jar6olZDyNdr81zBQnEo_xw4ABw.woff2"),A.d("Noto Sans Old Permic","notosansoldpermic/v17/snf1s1q1-dF8pli1TesqcbUY4Mr-ElrwKLdSgv_dKYB5.woff2"),A.d("Noto Sans Old Persian","notosansoldpersian/v16/wEOjEAbNnc5caQTFG18FHrZr9Bp6-8CmIJ_trelQfx9CjA.woff2"),A.d("Noto Sans Old Sogdian","notosansoldsogdian/v17/3JnjSCH90Gmq2mrzckOBBhFhdrMst48aURt7mOIqM-9uyg.woff2"),A.d("Noto Sans Old South Arabian","notosansoldsoutharabian/v16/3qT5oiOhnSyU8TNFIdhZTice3hB_HWKsEnF--0XCHiKx0etDT9HwTA.woff2"),A.d("Noto Sans Old Turkic","notosansoldturkic/v18/yMJNMJVya43H0SUF_WmcGEQVqoEMKDKbsE2UjEw-Vyws.woff2"),A.d("Noto Sans Oriya","notosansoriya/v31/AYCppXfzfccDCstK_hrjDyADv5e9748vhj3CJBLHIARtgD6TJQS0dJT5Ivj0f6_Z6LhHBRe-.woff2"),A.d("Noto Sans Osage","notosansosage/v18/oPWX_kB6kP4jCuhpgEGmw4mtAVtXQ1aSxkrMCQ.woff2"),A.d("Noto Sans Osmanya","notosansosmanya/v18/8vIS7xs32H97qzQKnzfeWzUyUpOJmz6hR47NCV5Z.woff2"),A.d("Noto Sans Pahawh Hmong","notosanspahawhhmong/v18/bWtp7e_KfBziStx7lIzKKaMUOBEA3UPQDW7krzI_c48aMpM.woff2"),A.d("Noto Sans Palmyrene","notosanspalmyrene/v16/ZgNPjOdKPa7CHqq0h37c_ASCWvH93SFCPne5ZpdNtcA.woff2"),A.d("Noto Sans Pau Cin Hau","notosanspaucinhau/v20/x3d-cl3IZKmUqiMg_9wBLLtzl22EayN7ehIdiUWqKMxsKw.woff2"),A.d("Noto Sans Phags Pa","notosansphagspa/v15/pxiZyoo6v8ZYyWh5WuPeJzMkd4SrGChkr0SsrvNXiA.woff2"),A.d("Noto Sans Phoenician","notosansphoenician/v17/jizFRF9Ksm4Bt9PvcTaEkIHiTVtxmFtS5X7Mot-p5561.woff2"),A.d("Noto Sans Psalter Pahlavi","notosanspsalterpahlavi/v17/rP2Vp3K65FkAtHfwd-eISGznYihzggmsicPfud3w1GjKsUQBct4.woff2"),A.d("Noto Sans Rejang","notosansrejang/v21/Ktk2AKuMeZjqPnXgyqrib7DIogqwN4a3WYZB_sU.woff2"),A.d("Noto Sans Runic","notosansrunic/v17/H4c_BXWPl9DZ0Xe_nHUaus7W68WWbhpvHtgIYg.woff2"),A.d("Noto Sans Saurashtra","notosanssaurashtra/v23/ea8GacQ0Wfz_XKWXe6OtoA8w8zvmYwTef9nYjhPTSIx9.woff2"),A.d("Noto Sans Sharada","notosanssharada/v16/gok0H7rwAEdtF9N8-mdTGALG6p0kwoXOPOwr4H8a.woff2"),A.d("Noto Sans Shavian","notosansshavian/v17/CHy5V_HZE0jxJBQlqAeCKjJvQBNF4EFVSplv2Cwg.woff2"),A.d("Noto Sans Siddham","notosanssiddham/v20/OZpZg-FwqiNLe9PELUikxTWDoCCeGqnYk3Ic92ZH.woff2"),A.d("Noto Sans Sinhala","notosanssinhala/v32/yMJ2MJBya43H0SUF_WmcBEEf4rQVO2P524V5N_MxQzQtb-tf5dJbC30Fu9zUwg2a5l0LpJwbQRM.woff2"),A.d("Noto Sans Sogdian","notosanssogdian/v16/taiQGn5iC4--qtsfi4Jp6eHPnfxQBo-7Pm6KHidM.woff2"),A.d("Noto Sans Sora Sompeng","notosanssorasompeng/v24/PlIRFkO5O6RzLfvNNVSioxM2_OTrEhPyDLolKvCsHzCxWuGkYHR818DsZXJQd4Mu.woff2"),A.d("Noto Sans Soyombo","notosanssoyombo/v17/RWmSoL-Y6-8q5LTtXs6MF6q7xsxgY0FuIFOcK25W.woff2"),A.d("Noto Sans Sundanese","notosanssundanese/v26/FwZw7_84xUkosG2xJo2gm7nFwSLQkdymq2mkz3Gz1_b6ctxpNNHHizv7fQES.woff2"),A.d("Noto Sans Syloti Nagri","notosanssylotinagri/v23/uU9eCAQZ75uhfF9UoWDRiY3q7Sf_VFV3m4dGFVLxN87gsj0.woff2"),A.d("Noto Sans Symbols","notosanssymbols/v43/rP2up3q65FkAtHfwd-eIS2brbDN6gxP34F9jRRCe4W3gfQ8gb_VFRkzrbQ.woff2"),A.d("Noto Sans Syriac","notosanssyriac/v16/Ktk7AKuMeZjqPnXgyqribqzQqgW0LYiVqV7dXcP0C-VD9MaMyZfUL_FC.woff2"),A.d("Noto Sans Tagalog","notosanstagalog/v22/J7aFnoNzCnFcV9ZI-sUYuvote1R0wwEFA8jHexnL.woff2"),A.d("Noto Sans Tagbanwa","notosanstagbanwa/v18/Y4GWYbB8VTEp4t3MKJSMmQdIKjRtt_nZQzQEaYpGoQ.woff2"),A.d("Noto Sans Tai Le","notosanstaile/v17/vEFK2-VODB8RrNDvZSUmVxEATwR58te1W77HtMo.woff2"),A.d("Noto Sans Tai Tham","notosanstaitham/v20/kJEbBv0U4hgtwxDUw2x9q7tbjLIfbPGHBoaVSAZ3MdLJBCUbPg-uyaRGKMw.woff2"),A.d("Noto Sans Tai Viet","notosanstaiviet/v19/8QIUdj3HhN_lv4jf9vsE-9GMOLsaSPZr7o4fWsRO9w.woff2"),A.d("Noto Sans Takri","notosanstakri/v24/TuGJUVpzXI5FBtUq5a8bnKIOdTwQMe_W3khJXg.woff2"),A.d("Noto Sans Tamil","notosanstamil/v27/ieVc2YdFI3GCY6SyQy1KfStzYKZgzN1z4LKDbeZce-0429tBManUktuex7vGo70UqKDt_EvT.woff2"),A.d("Noto Sans Tamil Supplement","notosanstamilsupplement/v21/DdTz78kEtnooLS5rXF1DaruiCd_bFp_Ph4sGcn7ax_vpAeMkeq1x.woff2"),A.d("Noto Sans Telugu","notosanstelugu/v26/0FlxVOGZlE2Rrtr-HmgkMWJNjJ5_RyT8o8c7fHkeg-esVC5dzHkHIJQqrEntezbqREbf-3v37w.woff2"),A.d("Noto Sans Thaana","notosansthaana/v24/C8c14dM-vnz-s-3jaEsxlxHkBH-WZOETXfoQrfQ9Y4XrbhLknu4-tbNu.woff2"),A.d("Noto Sans Thai","notosansthai/v25/iJWnBXeUZi_OHPqn4wq6hQ2_hbJ1xyN9wd43SofNWcd1MKVQt_So_9CdU5RtpzR-QRvzzXg.woff2"),A.d("Noto Sans Tifinagh","notosanstifinagh/v20/I_uzMoCduATTei9eI8dawkHIwvmhCvbn77nEcXfs4Q.woff2"),A.d("Noto Sans Tirhuta","notosanstirhuta/v16/t5t6IQYRNJ6TWjahPR6X-M-apUyby7uDUBsTrn5P.woff2"),A.d("Noto Sans Ugaritic","notosansugaritic/v16/3qTwoiqhnSyU8TNFIdhZVCwbjCpkAXXkNxoIkiazfg.woff2"),A.d("Noto Sans Vai","notosansvai/v17/NaPecZTSBuhTirw6IaFn_UrURMHsDIRSfr0.woff2"),A.d("Noto Sans Wancho","notosanswancho/v17/zrf-0GXXyfn6Fs0lH9P4cUubP0GBqAbopiRfKp8.woff2"),A.d("Noto Sans Warang Citi","notosanswarangciti/v17/EYqtmb9SzL1YtsZSScyKDXIeOv3w-zgsNvKRoOVCCXzdgA.woff2"),A.d("Noto Sans Yi","notosansyi/v19/sJoD3LFXjsSdcnzn071rO3apwFDJNVgSNg.woff2"),A.d("Noto Sans Zanabazar Square","notosanszanabazarsquare/v19/Cn-jJsuGWQxOjaGwMQ6fOicyxLBEMRfDtkzl4uagQtJ0OCEgN0Gc.woff2"),A.d("Noto Serif Tibetan","notoseriftibetan/v22/gokGH7nwAEdtF9N45n0Vaz7O-pk0wsvxHeDXMfqguoCmIrYcPSvrdSy_32c.woff2")],t.Qg)):s},
+return s===$?this.b=A.aKn(new A.ag2(this),A.a([A.d("Noto Color Emoji 0","notocoloremoji/v32/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabsE4tq3luCC7p-aXxcn.0.woff2"),A.d("Noto Color Emoji 1","notocoloremoji/v32/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabsE4tq3luCC7p-aXxcn.1.woff2"),A.d("Noto Color Emoji 2","notocoloremoji/v32/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabsE4tq3luCC7p-aXxcn.2.woff2"),A.d("Noto Color Emoji 3","notocoloremoji/v32/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabsE4tq3luCC7p-aXxcn.3.woff2"),A.d("Noto Color Emoji 4","notocoloremoji/v32/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabsE4tq3luCC7p-aXxcn.4.woff2"),A.d("Noto Color Emoji 5","notocoloremoji/v32/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabsE4tq3luCC7p-aXxcn.5.woff2"),A.d("Noto Color Emoji 6","notocoloremoji/v32/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabsE4tq3luCC7p-aXxcn.6.woff2"),A.d("Noto Color Emoji 7","notocoloremoji/v32/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabsE4tq3luCC7p-aXxcn.7.woff2"),A.d("Noto Color Emoji 8","notocoloremoji/v32/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabsE4tq3luCC7p-aXxcn.8.woff2"),A.d("Noto Color Emoji 9","notocoloremoji/v32/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabsE4tq3luCC7p-aXxcn.9.woff2"),A.d("Noto Color Emoji 10","notocoloremoji/v32/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabsE4tq3luCC7p-aXxcn.10.woff2"),A.d("Noto Color Emoji 11","notocoloremoji/v32/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabsE4tq3luCC7p-aXxcn.11.woff2"),A.d("Noto Sans Symbols 2 0","notosanssymbols2/v24/I_uyMoGduATTei9eI8daxVHDyfisHr71-jrBWXPM4Q.woff2"),A.d("Noto Sans Symbols 2 1","notosanssymbols2/v24/I_uyMoGduATTei9eI8daxVHDyfisHr71-ujgfE71.woff2"),A.d("Noto Sans Symbols 2 2","notosanssymbols2/v24/I_uyMoGduATTei9eI8daxVHDyfisHr71-gTBWXPM4Q.woff2"),A.d("Noto Sans Symbols 2 3","notosanssymbols2/v24/I_uyMoGduATTei9eI8daxVHDyfisHr71-vrgfE71.woff2"),A.d("Noto Sans Symbols 2 4","notosanssymbols2/v24/I_uyMoGduATTei9eI8daxVHDyfisHr71-prgfE71.woff2"),A.d("Noto Sans Symbols 2 5","notosanssymbols2/v24/I_uyMoGduATTei9eI8daxVHDyfisHr71-pTgfA.woff2"),A.d("Noto Sans Cuneiform 0","notosanscuneiform/v17/bMrrmTWK7YY-MF22aHGGd7H8PhJtvBDWse5DlCQu.woff2"),A.d("Noto Sans Cuneiform 1","notosanscuneiform/v17/bMrrmTWK7YY-MF22aHGGd7H8PhJtvBDWsbZDlCQu.woff2"),A.d("Noto Sans Cuneiform 2","notosanscuneiform/v17/bMrrmTWK7YY-MF22aHGGd7H8PhJtvBDWsbhDlA.woff2"),A.d("Noto Sans Duployan 0","notosansduployan/v18/gokzH7nwAEdtF9N8-mdTDx_X9JM5wsvbi-kD5F8a.woff2"),A.d("Noto Sans Duployan 1","notosansduployan/v18/gokzH7nwAEdtF9N8-mdTDx_X9JM5wsvbH8gm2WY.woff2"),A.d("Noto Sans Duployan 2","notosansduployan/v18/gokzH7nwAEdtF9N8-mdTDx_X9JM5wsvbEcgm.woff2"),A.d("Noto Sans Egyptian Hieroglyphs 0","notosansegyptianhieroglyphs/v29/vEF42-tODB8RrNDvZSUmRhcQHzx1s7y_F9-j3qSzEcbEYintdVi99Rg.woff2"),A.d("Noto Sans Egyptian Hieroglyphs 1","notosansegyptianhieroglyphs/v29/vEF42-tODB8RrNDvZSUmRhcQHzx1s7y_F9-j3qSzEcbEYintQFi99Rg.woff2"),A.d("Noto Sans Egyptian Hieroglyphs 2","notosansegyptianhieroglyphs/v29/vEF42-tODB8RrNDvZSUmRhcQHzx1s7y_F9-j3qSzEcbEYintTli9.woff2"),A.d("Noto Sans HK 0","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.0.woff2"),A.d("Noto Sans HK 1","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.1.woff2"),A.d("Noto Sans HK 2","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.2.woff2"),A.d("Noto Sans HK 3","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.3.woff2"),A.d("Noto Sans HK 4","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.4.woff2"),A.d("Noto Sans HK 5","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.5.woff2"),A.d("Noto Sans HK 6","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.6.woff2"),A.d("Noto Sans HK 7","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.7.woff2"),A.d("Noto Sans HK 8","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.8.woff2"),A.d("Noto Sans HK 9","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.9.woff2"),A.d("Noto Sans HK 10","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.10.woff2"),A.d("Noto Sans HK 11","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.15.woff2"),A.d("Noto Sans HK 12","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.16.woff2"),A.d("Noto Sans HK 13","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.17.woff2"),A.d("Noto Sans HK 14","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.25.woff2"),A.d("Noto Sans HK 15","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.26.woff2"),A.d("Noto Sans HK 16","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.27.woff2"),A.d("Noto Sans HK 17","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.28.woff2"),A.d("Noto Sans HK 18","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.29.woff2"),A.d("Noto Sans HK 19","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.30.woff2"),A.d("Noto Sans HK 20","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.31.woff2"),A.d("Noto Sans HK 21","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.32.woff2"),A.d("Noto Sans HK 22","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.33.woff2"),A.d("Noto Sans HK 23","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.34.woff2"),A.d("Noto Sans HK 24","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.35.woff2"),A.d("Noto Sans HK 25","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.36.woff2"),A.d("Noto Sans HK 26","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.37.woff2"),A.d("Noto Sans HK 27","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.38.woff2"),A.d("Noto Sans HK 28","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.39.woff2"),A.d("Noto Sans HK 29","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.40.woff2"),A.d("Noto Sans HK 30","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.41.woff2"),A.d("Noto Sans HK 31","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.42.woff2"),A.d("Noto Sans HK 32","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.43.woff2"),A.d("Noto Sans HK 33","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.44.woff2"),A.d("Noto Sans HK 34","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.45.woff2"),A.d("Noto Sans HK 35","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.46.woff2"),A.d("Noto Sans HK 36","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.47.woff2"),A.d("Noto Sans HK 37","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.48.woff2"),A.d("Noto Sans HK 38","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.49.woff2"),A.d("Noto Sans HK 39","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.50.woff2"),A.d("Noto Sans HK 40","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.51.woff2"),A.d("Noto Sans HK 41","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.52.woff2"),A.d("Noto Sans HK 42","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.53.woff2"),A.d("Noto Sans HK 43","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.54.woff2"),A.d("Noto Sans HK 44","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.55.woff2"),A.d("Noto Sans HK 45","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.56.woff2"),A.d("Noto Sans HK 46","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.57.woff2"),A.d("Noto Sans HK 47","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.58.woff2"),A.d("Noto Sans HK 48","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.59.woff2"),A.d("Noto Sans HK 49","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.60.woff2"),A.d("Noto Sans HK 50","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.61.woff2"),A.d("Noto Sans HK 51","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.62.woff2"),A.d("Noto Sans HK 52","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.63.woff2"),A.d("Noto Sans HK 53","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.64.woff2"),A.d("Noto Sans HK 54","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.65.woff2"),A.d("Noto Sans HK 55","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.66.woff2"),A.d("Noto Sans HK 56","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.67.woff2"),A.d("Noto Sans HK 57","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.68.woff2"),A.d("Noto Sans HK 58","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.69.woff2"),A.d("Noto Sans HK 59","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.70.woff2"),A.d("Noto Sans HK 60","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.71.woff2"),A.d("Noto Sans HK 61","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.72.woff2"),A.d("Noto Sans HK 62","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.73.woff2"),A.d("Noto Sans HK 63","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.74.woff2"),A.d("Noto Sans HK 64","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.75.woff2"),A.d("Noto Sans HK 65","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.76.woff2"),A.d("Noto Sans HK 66","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.77.woff2"),A.d("Noto Sans HK 67","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.78.woff2"),A.d("Noto Sans HK 68","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.79.woff2"),A.d("Noto Sans HK 69","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.80.woff2"),A.d("Noto Sans HK 70","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.81.woff2"),A.d("Noto Sans HK 71","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.82.woff2"),A.d("Noto Sans HK 72","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.83.woff2"),A.d("Noto Sans HK 73","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.84.woff2"),A.d("Noto Sans HK 74","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.85.woff2"),A.d("Noto Sans HK 75","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.86.woff2"),A.d("Noto Sans HK 76","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.87.woff2"),A.d("Noto Sans HK 77","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.88.woff2"),A.d("Noto Sans HK 78","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.89.woff2"),A.d("Noto Sans HK 79","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.90.woff2"),A.d("Noto Sans HK 80","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.91.woff2"),A.d("Noto Sans HK 81","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.92.woff2"),A.d("Noto Sans HK 82","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.93.woff2"),A.d("Noto Sans HK 83","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.98.woff2"),A.d("Noto Sans HK 84","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.99.woff2"),A.d("Noto Sans HK 85","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.100.woff2"),A.d("Noto Sans HK 86","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.101.woff2"),A.d("Noto Sans HK 87","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.102.woff2"),A.d("Noto Sans HK 88","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.103.woff2"),A.d("Noto Sans HK 89","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.104.woff2"),A.d("Noto Sans HK 90","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.105.woff2"),A.d("Noto Sans HK 91","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.106.woff2"),A.d("Noto Sans HK 92","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.107.woff2"),A.d("Noto Sans HK 93","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.108.woff2"),A.d("Noto Sans HK 94","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.109.woff2"),A.d("Noto Sans HK 95","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.110.woff2"),A.d("Noto Sans HK 96","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.111.woff2"),A.d("Noto Sans HK 97","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.112.woff2"),A.d("Noto Sans HK 98","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.113.woff2"),A.d("Noto Sans HK 99","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.114.woff2"),A.d("Noto Sans HK 100","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.115.woff2"),A.d("Noto Sans HK 101","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.116.woff2"),A.d("Noto Sans HK 102","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.117.woff2"),A.d("Noto Sans HK 103","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.118.woff2"),A.d("Noto Sans HK 104","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB--oD7kYrUzT7-NvA3pTohjc3XVtNXX8A7gG1LO2KAPAw.119.woff2"),A.d("Noto Sans HK 105","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB-yoaZiLjN.woff2"),A.d("Noto Sans HK 106","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB-yo2ZiLjN.woff2"),A.d("Noto Sans HK 107","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB-yoyZiLjN.woff2"),A.d("Noto Sans HK 108","notosanshk/v32/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB-yoKZiA.woff2"),A.d("Noto Sans JP 0","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.0.woff2"),A.d("Noto Sans JP 1","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.1.woff2"),A.d("Noto Sans JP 2","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.2.woff2"),A.d("Noto Sans JP 3","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.3.woff2"),A.d("Noto Sans JP 4","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.4.woff2"),A.d("Noto Sans JP 5","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.5.woff2"),A.d("Noto Sans JP 6","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.6.woff2"),A.d("Noto Sans JP 7","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.7.woff2"),A.d("Noto Sans JP 8","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.8.woff2"),A.d("Noto Sans JP 9","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.9.woff2"),A.d("Noto Sans JP 10","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.10.woff2"),A.d("Noto Sans JP 11","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.11.woff2"),A.d("Noto Sans JP 12","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.12.woff2"),A.d("Noto Sans JP 13","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.13.woff2"),A.d("Noto Sans JP 14","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.14.woff2"),A.d("Noto Sans JP 15","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.15.woff2"),A.d("Noto Sans JP 16","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.16.woff2"),A.d("Noto Sans JP 17","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.17.woff2"),A.d("Noto Sans JP 18","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.18.woff2"),A.d("Noto Sans JP 19","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.19.woff2"),A.d("Noto Sans JP 20","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.20.woff2"),A.d("Noto Sans JP 21","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.21.woff2"),A.d("Noto Sans JP 22","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.22.woff2"),A.d("Noto Sans JP 23","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.23.woff2"),A.d("Noto Sans JP 24","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.24.woff2"),A.d("Noto Sans JP 25","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.25.woff2"),A.d("Noto Sans JP 26","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.26.woff2"),A.d("Noto Sans JP 27","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.27.woff2"),A.d("Noto Sans JP 28","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.28.woff2"),A.d("Noto Sans JP 29","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.29.woff2"),A.d("Noto Sans JP 30","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.30.woff2"),A.d("Noto Sans JP 31","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.31.woff2"),A.d("Noto Sans JP 32","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.32.woff2"),A.d("Noto Sans JP 33","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.33.woff2"),A.d("Noto Sans JP 34","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.34.woff2"),A.d("Noto Sans JP 35","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.35.woff2"),A.d("Noto Sans JP 36","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.36.woff2"),A.d("Noto Sans JP 37","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.37.woff2"),A.d("Noto Sans JP 38","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.38.woff2"),A.d("Noto Sans JP 39","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.39.woff2"),A.d("Noto Sans JP 40","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.40.woff2"),A.d("Noto Sans JP 41","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.41.woff2"),A.d("Noto Sans JP 42","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.42.woff2"),A.d("Noto Sans JP 43","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.43.woff2"),A.d("Noto Sans JP 44","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.44.woff2"),A.d("Noto Sans JP 45","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.45.woff2"),A.d("Noto Sans JP 46","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.46.woff2"),A.d("Noto Sans JP 47","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.47.woff2"),A.d("Noto Sans JP 48","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.48.woff2"),A.d("Noto Sans JP 49","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.49.woff2"),A.d("Noto Sans JP 50","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.50.woff2"),A.d("Noto Sans JP 51","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.51.woff2"),A.d("Noto Sans JP 52","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.52.woff2"),A.d("Noto Sans JP 53","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.53.woff2"),A.d("Noto Sans JP 54","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.54.woff2"),A.d("Noto Sans JP 55","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.55.woff2"),A.d("Noto Sans JP 56","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.56.woff2"),A.d("Noto Sans JP 57","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.57.woff2"),A.d("Noto Sans JP 58","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.58.woff2"),A.d("Noto Sans JP 59","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.59.woff2"),A.d("Noto Sans JP 60","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.60.woff2"),A.d("Noto Sans JP 61","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.61.woff2"),A.d("Noto Sans JP 62","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.62.woff2"),A.d("Noto Sans JP 63","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.63.woff2"),A.d("Noto Sans JP 64","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.64.woff2"),A.d("Noto Sans JP 65","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.65.woff2"),A.d("Noto Sans JP 66","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.66.woff2"),A.d("Noto Sans JP 67","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.67.woff2"),A.d("Noto Sans JP 68","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.68.woff2"),A.d("Noto Sans JP 69","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.69.woff2"),A.d("Noto Sans JP 70","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.70.woff2"),A.d("Noto Sans JP 71","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.71.woff2"),A.d("Noto Sans JP 72","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.72.woff2"),A.d("Noto Sans JP 73","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.73.woff2"),A.d("Noto Sans JP 74","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.74.woff2"),A.d("Noto Sans JP 75","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.75.woff2"),A.d("Noto Sans JP 76","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.76.woff2"),A.d("Noto Sans JP 77","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.77.woff2"),A.d("Noto Sans JP 78","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.78.woff2"),A.d("Noto Sans JP 79","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.79.woff2"),A.d("Noto Sans JP 80","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.80.woff2"),A.d("Noto Sans JP 81","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.81.woff2"),A.d("Noto Sans JP 82","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.82.woff2"),A.d("Noto Sans JP 83","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.83.woff2"),A.d("Noto Sans JP 84","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.84.woff2"),A.d("Noto Sans JP 85","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.85.woff2"),A.d("Noto Sans JP 86","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.86.woff2"),A.d("Noto Sans JP 87","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.87.woff2"),A.d("Noto Sans JP 88","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.88.woff2"),A.d("Noto Sans JP 89","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.89.woff2"),A.d("Noto Sans JP 90","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.90.woff2"),A.d("Noto Sans JP 91","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.91.woff2"),A.d("Noto Sans JP 92","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.92.woff2"),A.d("Noto Sans JP 93","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.93.woff2"),A.d("Noto Sans JP 94","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.94.woff2"),A.d("Noto Sans JP 95","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.95.woff2"),A.d("Noto Sans JP 96","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.96.woff2"),A.d("Noto Sans JP 97","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.97.woff2"),A.d("Noto Sans JP 98","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.98.woff2"),A.d("Noto Sans JP 99","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.99.woff2"),A.d("Noto Sans JP 100","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.100.woff2"),A.d("Noto Sans JP 101","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.101.woff2"),A.d("Noto Sans JP 102","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.102.woff2"),A.d("Noto Sans JP 103","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.103.woff2"),A.d("Noto Sans JP 104","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.104.woff2"),A.d("Noto Sans JP 105","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.105.woff2"),A.d("Noto Sans JP 106","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.106.woff2"),A.d("Noto Sans JP 107","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.107.woff2"),A.d("Noto Sans JP 108","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.108.woff2"),A.d("Noto Sans JP 109","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.109.woff2"),A.d("Noto Sans JP 110","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.110.woff2"),A.d("Noto Sans JP 111","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.111.woff2"),A.d("Noto Sans JP 112","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.112.woff2"),A.d("Noto Sans JP 113","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.113.woff2"),A.d("Noto Sans JP 114","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.114.woff2"),A.d("Noto Sans JP 115","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.115.woff2"),A.d("Noto Sans JP 116","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.116.woff2"),A.d("Noto Sans JP 117","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.117.woff2"),A.d("Noto Sans JP 118","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.118.woff2"),A.d("Noto Sans JP 119","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj756wwr4v0qHnANADNsISRDl2PRkiiWsg.119.woff2"),A.d("Noto Sans JP 120","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj35jS04w-.woff2"),A.d("Noto Sans JP 121","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj35PS04w-.woff2"),A.d("Noto Sans JP 122","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj35LS04w-.woff2"),A.d("Noto Sans JP 123","notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj35zS0w.woff2"),A.d("Noto Sans KR 0","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.0.woff2"),A.d("Noto Sans KR 1","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.1.woff2"),A.d("Noto Sans KR 2","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.2.woff2"),A.d("Noto Sans KR 3","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.3.woff2"),A.d("Noto Sans KR 4","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.4.woff2"),A.d("Noto Sans KR 5","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.5.woff2"),A.d("Noto Sans KR 6","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.6.woff2"),A.d("Noto Sans KR 7","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.7.woff2"),A.d("Noto Sans KR 8","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.8.woff2"),A.d("Noto Sans KR 9","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.9.woff2"),A.d("Noto Sans KR 10","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.10.woff2"),A.d("Noto Sans KR 11","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.11.woff2"),A.d("Noto Sans KR 12","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.12.woff2"),A.d("Noto Sans KR 13","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.13.woff2"),A.d("Noto Sans KR 14","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.14.woff2"),A.d("Noto Sans KR 15","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.15.woff2"),A.d("Noto Sans KR 16","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.16.woff2"),A.d("Noto Sans KR 17","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.17.woff2"),A.d("Noto Sans KR 18","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.18.woff2"),A.d("Noto Sans KR 19","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.19.woff2"),A.d("Noto Sans KR 20","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.20.woff2"),A.d("Noto Sans KR 21","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.21.woff2"),A.d("Noto Sans KR 22","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.22.woff2"),A.d("Noto Sans KR 23","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.23.woff2"),A.d("Noto Sans KR 24","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.24.woff2"),A.d("Noto Sans KR 25","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.25.woff2"),A.d("Noto Sans KR 26","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.26.woff2"),A.d("Noto Sans KR 27","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.27.woff2"),A.d("Noto Sans KR 28","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.28.woff2"),A.d("Noto Sans KR 29","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.29.woff2"),A.d("Noto Sans KR 30","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.30.woff2"),A.d("Noto Sans KR 31","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.31.woff2"),A.d("Noto Sans KR 32","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.32.woff2"),A.d("Noto Sans KR 33","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.33.woff2"),A.d("Noto Sans KR 34","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.34.woff2"),A.d("Noto Sans KR 35","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.35.woff2"),A.d("Noto Sans KR 36","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.36.woff2"),A.d("Noto Sans KR 37","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.37.woff2"),A.d("Noto Sans KR 38","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.38.woff2"),A.d("Noto Sans KR 39","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.39.woff2"),A.d("Noto Sans KR 40","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.40.woff2"),A.d("Noto Sans KR 41","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.41.woff2"),A.d("Noto Sans KR 42","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.42.woff2"),A.d("Noto Sans KR 43","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.43.woff2"),A.d("Noto Sans KR 44","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.44.woff2"),A.d("Noto Sans KR 45","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.45.woff2"),A.d("Noto Sans KR 46","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.46.woff2"),A.d("Noto Sans KR 47","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.47.woff2"),A.d("Noto Sans KR 48","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.48.woff2"),A.d("Noto Sans KR 49","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.49.woff2"),A.d("Noto Sans KR 50","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.50.woff2"),A.d("Noto Sans KR 51","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.51.woff2"),A.d("Noto Sans KR 52","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.52.woff2"),A.d("Noto Sans KR 53","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.53.woff2"),A.d("Noto Sans KR 54","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.54.woff2"),A.d("Noto Sans KR 55","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.55.woff2"),A.d("Noto Sans KR 56","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.56.woff2"),A.d("Noto Sans KR 57","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.57.woff2"),A.d("Noto Sans KR 58","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.58.woff2"),A.d("Noto Sans KR 59","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.59.woff2"),A.d("Noto Sans KR 60","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.60.woff2"),A.d("Noto Sans KR 61","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.61.woff2"),A.d("Noto Sans KR 62","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.62.woff2"),A.d("Noto Sans KR 63","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.63.woff2"),A.d("Noto Sans KR 64","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.64.woff2"),A.d("Noto Sans KR 65","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.65.woff2"),A.d("Noto Sans KR 66","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.66.woff2"),A.d("Noto Sans KR 67","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.67.woff2"),A.d("Noto Sans KR 68","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.68.woff2"),A.d("Noto Sans KR 69","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.69.woff2"),A.d("Noto Sans KR 70","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.70.woff2"),A.d("Noto Sans KR 71","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.71.woff2"),A.d("Noto Sans KR 72","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.72.woff2"),A.d("Noto Sans KR 73","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.73.woff2"),A.d("Noto Sans KR 74","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.74.woff2"),A.d("Noto Sans KR 75","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.75.woff2"),A.d("Noto Sans KR 76","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.76.woff2"),A.d("Noto Sans KR 77","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.77.woff2"),A.d("Noto Sans KR 78","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.78.woff2"),A.d("Noto Sans KR 79","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.79.woff2"),A.d("Noto Sans KR 80","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.80.woff2"),A.d("Noto Sans KR 81","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.81.woff2"),A.d("Noto Sans KR 82","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.82.woff2"),A.d("Noto Sans KR 83","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.83.woff2"),A.d("Noto Sans KR 84","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.84.woff2"),A.d("Noto Sans KR 85","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.85.woff2"),A.d("Noto Sans KR 86","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.86.woff2"),A.d("Noto Sans KR 87","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.87.woff2"),A.d("Noto Sans KR 88","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.88.woff2"),A.d("Noto Sans KR 89","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.89.woff2"),A.d("Noto Sans KR 90","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.90.woff2"),A.d("Noto Sans KR 91","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.91.woff2"),A.d("Noto Sans KR 92","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.92.woff2"),A.d("Noto Sans KR 93","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.93.woff2"),A.d("Noto Sans KR 94","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.94.woff2"),A.d("Noto Sans KR 95","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.95.woff2"),A.d("Noto Sans KR 96","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.96.woff2"),A.d("Noto Sans KR 97","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.97.woff2"),A.d("Noto Sans KR 98","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.98.woff2"),A.d("Noto Sans KR 99","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.99.woff2"),A.d("Noto Sans KR 100","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.100.woff2"),A.d("Noto Sans KR 101","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.101.woff2"),A.d("Noto Sans KR 102","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.102.woff2"),A.d("Noto Sans KR 103","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.103.woff2"),A.d("Noto Sans KR 104","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.104.woff2"),A.d("Noto Sans KR 105","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.105.woff2"),A.d("Noto Sans KR 106","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.106.woff2"),A.d("Noto Sans KR 107","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.107.woff2"),A.d("Noto Sans KR 108","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.108.woff2"),A.d("Noto Sans KR 109","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.109.woff2"),A.d("Noto Sans KR 110","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.110.woff2"),A.d("Noto Sans KR 111","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.111.woff2"),A.d("Noto Sans KR 112","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.112.woff2"),A.d("Noto Sans KR 113","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.113.woff2"),A.d("Noto Sans KR 114","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.114.woff2"),A.d("Noto Sans KR 115","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.115.woff2"),A.d("Noto Sans KR 116","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.116.woff2"),A.d("Noto Sans KR 117","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.117.woff2"),A.d("Noto Sans KR 118","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.118.woff2"),A.d("Noto Sans KR 119","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.119.woff2"),A.d("Noto Sans KR 120","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoySLfg8U4h.woff2"),A.d("Noto Sans KR 121","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoySLzg8U4h.woff2"),A.d("Noto Sans KR 122","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoySL3g8U4h.woff2"),A.d("Noto Sans KR 123","notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoySLPg8Q.woff2"),A.d("Noto Sans SC 0","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.4.woff2"),A.d("Noto Sans SC 1","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.5.woff2"),A.d("Noto Sans SC 2","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.6.woff2"),A.d("Noto Sans SC 3","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.21.woff2"),A.d("Noto Sans SC 4","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.22.woff2"),A.d("Noto Sans SC 5","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.23.woff2"),A.d("Noto Sans SC 6","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.24.woff2"),A.d("Noto Sans SC 7","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.25.woff2"),A.d("Noto Sans SC 8","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.26.woff2"),A.d("Noto Sans SC 9","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.27.woff2"),A.d("Noto Sans SC 10","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.28.woff2"),A.d("Noto Sans SC 11","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.29.woff2"),A.d("Noto Sans SC 12","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.30.woff2"),A.d("Noto Sans SC 13","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.31.woff2"),A.d("Noto Sans SC 14","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.32.woff2"),A.d("Noto Sans SC 15","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.33.woff2"),A.d("Noto Sans SC 16","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.34.woff2"),A.d("Noto Sans SC 17","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.35.woff2"),A.d("Noto Sans SC 18","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.36.woff2"),A.d("Noto Sans SC 19","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.37.woff2"),A.d("Noto Sans SC 20","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.38.woff2"),A.d("Noto Sans SC 21","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.39.woff2"),A.d("Noto Sans SC 22","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.40.woff2"),A.d("Noto Sans SC 23","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.41.woff2"),A.d("Noto Sans SC 24","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.42.woff2"),A.d("Noto Sans SC 25","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.43.woff2"),A.d("Noto Sans SC 26","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.44.woff2"),A.d("Noto Sans SC 27","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.45.woff2"),A.d("Noto Sans SC 28","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.46.woff2"),A.d("Noto Sans SC 29","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.47.woff2"),A.d("Noto Sans SC 30","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.48.woff2"),A.d("Noto Sans SC 31","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.49.woff2"),A.d("Noto Sans SC 32","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.50.woff2"),A.d("Noto Sans SC 33","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.51.woff2"),A.d("Noto Sans SC 34","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.52.woff2"),A.d("Noto Sans SC 35","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.53.woff2"),A.d("Noto Sans SC 36","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.54.woff2"),A.d("Noto Sans SC 37","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.55.woff2"),A.d("Noto Sans SC 38","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.56.woff2"),A.d("Noto Sans SC 39","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.57.woff2"),A.d("Noto Sans SC 40","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.58.woff2"),A.d("Noto Sans SC 41","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.59.woff2"),A.d("Noto Sans SC 42","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.60.woff2"),A.d("Noto Sans SC 43","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.61.woff2"),A.d("Noto Sans SC 44","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.62.woff2"),A.d("Noto Sans SC 45","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.63.woff2"),A.d("Noto Sans SC 46","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.64.woff2"),A.d("Noto Sans SC 47","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.65.woff2"),A.d("Noto Sans SC 48","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.66.woff2"),A.d("Noto Sans SC 49","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.67.woff2"),A.d("Noto Sans SC 50","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.68.woff2"),A.d("Noto Sans SC 51","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.69.woff2"),A.d("Noto Sans SC 52","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.70.woff2"),A.d("Noto Sans SC 53","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.71.woff2"),A.d("Noto Sans SC 54","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.72.woff2"),A.d("Noto Sans SC 55","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.73.woff2"),A.d("Noto Sans SC 56","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.74.woff2"),A.d("Noto Sans SC 57","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.75.woff2"),A.d("Noto Sans SC 58","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.76.woff2"),A.d("Noto Sans SC 59","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.77.woff2"),A.d("Noto Sans SC 60","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.78.woff2"),A.d("Noto Sans SC 61","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.79.woff2"),A.d("Noto Sans SC 62","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.80.woff2"),A.d("Noto Sans SC 63","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.81.woff2"),A.d("Noto Sans SC 64","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.82.woff2"),A.d("Noto Sans SC 65","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.83.woff2"),A.d("Noto Sans SC 66","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.84.woff2"),A.d("Noto Sans SC 67","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.85.woff2"),A.d("Noto Sans SC 68","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.86.woff2"),A.d("Noto Sans SC 69","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.87.woff2"),A.d("Noto Sans SC 70","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.88.woff2"),A.d("Noto Sans SC 71","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.89.woff2"),A.d("Noto Sans SC 72","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.90.woff2"),A.d("Noto Sans SC 73","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.91.woff2"),A.d("Noto Sans SC 74","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.97.woff2"),A.d("Noto Sans SC 75","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.98.woff2"),A.d("Noto Sans SC 76","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.99.woff2"),A.d("Noto Sans SC 77","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.100.woff2"),A.d("Noto Sans SC 78","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.101.woff2"),A.d("Noto Sans SC 79","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.102.woff2"),A.d("Noto Sans SC 80","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.103.woff2"),A.d("Noto Sans SC 81","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.104.woff2"),A.d("Noto Sans SC 82","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.105.woff2"),A.d("Noto Sans SC 83","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.106.woff2"),A.d("Noto Sans SC 84","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.107.woff2"),A.d("Noto Sans SC 85","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.108.woff2"),A.d("Noto Sans SC 86","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.109.woff2"),A.d("Noto Sans SC 87","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.110.woff2"),A.d("Noto Sans SC 88","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.111.woff2"),A.d("Noto Sans SC 89","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.112.woff2"),A.d("Noto Sans SC 90","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.113.woff2"),A.d("Noto Sans SC 91","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.114.woff2"),A.d("Noto Sans SC 92","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.115.woff2"),A.d("Noto Sans SC 93","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.116.woff2"),A.d("Noto Sans SC 94","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.117.woff2"),A.d("Noto Sans SC 95","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.118.woff2"),A.d("Noto Sans SC 96","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.119.woff2"),A.d("Noto Sans SC 97","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FrY9HbczS.woff2"),A.d("Noto Sans SC 98","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FrYRHbczS.woff2"),A.d("Noto Sans SC 99","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FrYVHbczS.woff2"),A.d("Noto Sans SC 100","notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FrYtHbQ.woff2"),A.d("Noto Sans TC 0","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.0.woff2"),A.d("Noto Sans TC 1","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.6.woff2"),A.d("Noto Sans TC 2","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.7.woff2"),A.d("Noto Sans TC 3","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.8.woff2"),A.d("Noto Sans TC 4","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.19.woff2"),A.d("Noto Sans TC 5","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.20.woff2"),A.d("Noto Sans TC 6","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.21.woff2"),A.d("Noto Sans TC 7","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.22.woff2"),A.d("Noto Sans TC 8","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.23.woff2"),A.d("Noto Sans TC 9","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.24.woff2"),A.d("Noto Sans TC 10","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.25.woff2"),A.d("Noto Sans TC 11","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.26.woff2"),A.d("Noto Sans TC 12","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.27.woff2"),A.d("Noto Sans TC 13","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.28.woff2"),A.d("Noto Sans TC 14","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.29.woff2"),A.d("Noto Sans TC 15","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.30.woff2"),A.d("Noto Sans TC 16","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.31.woff2"),A.d("Noto Sans TC 17","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.32.woff2"),A.d("Noto Sans TC 18","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.33.woff2"),A.d("Noto Sans TC 19","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.34.woff2"),A.d("Noto Sans TC 20","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.35.woff2"),A.d("Noto Sans TC 21","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.36.woff2"),A.d("Noto Sans TC 22","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.37.woff2"),A.d("Noto Sans TC 23","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.38.woff2"),A.d("Noto Sans TC 24","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.39.woff2"),A.d("Noto Sans TC 25","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.40.woff2"),A.d("Noto Sans TC 26","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.41.woff2"),A.d("Noto Sans TC 27","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.42.woff2"),A.d("Noto Sans TC 28","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.43.woff2"),A.d("Noto Sans TC 29","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.44.woff2"),A.d("Noto Sans TC 30","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.45.woff2"),A.d("Noto Sans TC 31","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.46.woff2"),A.d("Noto Sans TC 32","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.47.woff2"),A.d("Noto Sans TC 33","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.48.woff2"),A.d("Noto Sans TC 34","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.49.woff2"),A.d("Noto Sans TC 35","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.50.woff2"),A.d("Noto Sans TC 36","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.51.woff2"),A.d("Noto Sans TC 37","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.52.woff2"),A.d("Noto Sans TC 38","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.53.woff2"),A.d("Noto Sans TC 39","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.54.woff2"),A.d("Noto Sans TC 40","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.55.woff2"),A.d("Noto Sans TC 41","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.56.woff2"),A.d("Noto Sans TC 42","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.57.woff2"),A.d("Noto Sans TC 43","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.58.woff2"),A.d("Noto Sans TC 44","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.59.woff2"),A.d("Noto Sans TC 45","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.60.woff2"),A.d("Noto Sans TC 46","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.61.woff2"),A.d("Noto Sans TC 47","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.62.woff2"),A.d("Noto Sans TC 48","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.63.woff2"),A.d("Noto Sans TC 49","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.64.woff2"),A.d("Noto Sans TC 50","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.65.woff2"),A.d("Noto Sans TC 51","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.66.woff2"),A.d("Noto Sans TC 52","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.67.woff2"),A.d("Noto Sans TC 53","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.68.woff2"),A.d("Noto Sans TC 54","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.69.woff2"),A.d("Noto Sans TC 55","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.70.woff2"),A.d("Noto Sans TC 56","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.71.woff2"),A.d("Noto Sans TC 57","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.72.woff2"),A.d("Noto Sans TC 58","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.73.woff2"),A.d("Noto Sans TC 59","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.74.woff2"),A.d("Noto Sans TC 60","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.75.woff2"),A.d("Noto Sans TC 61","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.76.woff2"),A.d("Noto Sans TC 62","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.77.woff2"),A.d("Noto Sans TC 63","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.78.woff2"),A.d("Noto Sans TC 64","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.79.woff2"),A.d("Noto Sans TC 65","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.80.woff2"),A.d("Noto Sans TC 66","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.81.woff2"),A.d("Noto Sans TC 67","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.82.woff2"),A.d("Noto Sans TC 68","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.83.woff2"),A.d("Noto Sans TC 69","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.84.woff2"),A.d("Noto Sans TC 70","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.85.woff2"),A.d("Noto Sans TC 71","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.86.woff2"),A.d("Noto Sans TC 72","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.87.woff2"),A.d("Noto Sans TC 73","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.88.woff2"),A.d("Noto Sans TC 74","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.89.woff2"),A.d("Noto Sans TC 75","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.90.woff2"),A.d("Noto Sans TC 76","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.91.woff2"),A.d("Noto Sans TC 77","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.92.woff2"),A.d("Noto Sans TC 78","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.97.woff2"),A.d("Noto Sans TC 79","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.98.woff2"),A.d("Noto Sans TC 80","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.99.woff2"),A.d("Noto Sans TC 81","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.100.woff2"),A.d("Noto Sans TC 82","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.101.woff2"),A.d("Noto Sans TC 83","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.102.woff2"),A.d("Noto Sans TC 84","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.103.woff2"),A.d("Noto Sans TC 85","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.104.woff2"),A.d("Noto Sans TC 86","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.105.woff2"),A.d("Noto Sans TC 87","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.106.woff2"),A.d("Noto Sans TC 88","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.107.woff2"),A.d("Noto Sans TC 89","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.108.woff2"),A.d("Noto Sans TC 90","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.109.woff2"),A.d("Noto Sans TC 91","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.110.woff2"),A.d("Noto Sans TC 92","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.111.woff2"),A.d("Noto Sans TC 93","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.112.woff2"),A.d("Noto Sans TC 94","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.113.woff2"),A.d("Noto Sans TC 95","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.114.woff2"),A.d("Noto Sans TC 96","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.115.woff2"),A.d("Noto Sans TC 97","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.116.woff2"),A.d("Noto Sans TC 98","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.117.woff2"),A.d("Noto Sans TC 99","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.118.woff2"),A.d("Noto Sans TC 100","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_C8mrWSt1KeqzFVoizG-KdWhyhvKuGOf8EUcrq3YKp7nxxk.119.woff2"),A.d("Noto Sans TC 101","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76CyzClEt1a3.woff2"),A.d("Noto Sans TC 102","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76CyzCJEt1a3.woff2"),A.d("Noto Sans TC 103","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76CyzCNEt1a3.woff2"),A.d("Noto Sans TC 104","notosanstc/v36/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76CyzC1Etw.woff2"),A.d("Noto Music","notomusic/v20/pe0rMIiSN5pO63htf1sxItKQB9Zra1U.woff2"),A.d("Noto Sans","notosans/v37/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyD9A99Y41P6zHtY.woff2"),A.d("Noto Sans Adlam","notosansadlam/v22/neIczCCpqp0s5pPusPamd81eMfjPonvqdbYxxpgufnv0TGzBZLwhuvk.woff2"),A.d("Noto Sans Anatolian Hieroglyphs","notosansanatolianhieroglyphs/v16/ijw9s4roRME5LLRxjsRb8A0gKPSWq4BbDmHHu6j2pEtUJzZWXyPIymc5QYo.woff2"),A.d("Noto Sans Arabic","notosansarabic/v28/nwpxtLGrOAZMl5nJ_wfgRg3DrWFZWsnVBJ_sS6tlqHHFlhQ5l3sQWIHPqzCfyGyvvnCBFQLaig.woff2"),A.d("Noto Sans Armenian","notosansarmenian/v43/ZgN0jOZKPa7CHqq0h37c7ReDUubm2SEdFXp7ig73qtTY5idb74R9UdM3y2nZLorxb60nYy6zF3Eg.woff2"),A.d("Noto Sans Avestan","notosansavestan/v21/bWti7ejKfBziStx7lIzKOLQZKhIJkyu4SASLji8U.woff2"),A.d("Noto Sans Balinese","notosansbalinese/v24/NaPwcYvSBuhTirw6IaFn6UrRDaqje-lpbbRtYf-Fwu2Ov7fdhEtVd222PPY.woff2"),A.d("Noto Sans Bamum","notosansbamum/v27/uk-0EGK3o6EruUbnwovcbBTkkklK_Ya_PBHfNGTPEddO-_0LykxEkxA.woff2"),A.d("Noto Sans Bassa Vah","notosansbassavah/v17/PN_bRee-r3f7LnqsD5sax12gjZn7mBpL5YwUpA2MBdcFn4MaAc6s34gH-GD7.woff2"),A.d("Noto Sans Batak","notosansbatak/v20/gok2H6TwAEdtF9N8-mdTCQvT-Zdgpo_PHuk74A.woff2"),A.d("Noto Sans Bengali","notosansbengali/v26/Cn-SJsCGWQxOjaGwMQ6fIiMywrNJIky6nvd8BjzVMvJx2mcSPVFpVEqE-6KmsolLudWk8izI0lc.woff2"),A.d("Noto Sans Bhaiksuki","notosansbhaiksuki/v17/UcC63EosKniBH4iELXATsSBWdvUHXxhj8rfUdU4wh9U.woff2"),A.d("Noto Sans Brahmi","notosansbrahmi/v19/vEFK2-VODB8RrNDvZSUmQQIIByV18te1W77HtMo.woff2"),A.d("Noto Sans Buginese","notosansbuginese/v18/esDM30ldNv-KYGGJpKGk18phe_7Da6_gsPuEXLmNtw.woff2"),A.d("Noto Sans Buhid","notosansbuhid/v22/Dxxy8jiXMW75w3OmoDXVWJD7YwzAfqtgnaFoGA.woff2"),A.d("Noto Sans Canadian Aboriginal","notosanscanadianaboriginal/v26/4C_TLjTuEqPj-8J01CwaGkiZ9os0iGVkezM1mUT-j_Lmlzda6uH_nnX1bzigWLn_zQsg0q0uhQ.woff2"),A.d("Noto Sans Carian","notosanscarian/v16/LDIpaoiONgYwA9Yc6f0gUILeMIOgs78b9yGLmfI.woff2"),A.d("Noto Sans Caucasian Albanian","notosanscaucasianalbanian/v18/nKKA-HM_FYFRJvXzVXaANsU0VzsAc46QGOkWytlTs-TXrYXmoVmRSZo.woff2"),A.d("Noto Sans Chakma","notosanschakma/v17/Y4GQYbJ8VTEp4t3MKJSMjg5OIzhi4J3TQhYBeYo.woff2"),A.d("Noto Sans Cham","notosanscham/v31/pe06MIySN5pO62Z5YkFyQb_bbuRhe6D4yip43qfcERwcurGykboaLg.woff2"),A.d("Noto Sans Cherokee","notosanscherokee/v20/KFOPCm6Yu8uF-29fiz9vQF9YWK6Z8O10cHNA0cSkZCHYWi5PDky5rAffjl0.woff2"),A.d("Noto Sans Coptic","notosanscoptic/v21/iJWfBWmUZi_OHPqn4wq6kgqumOEd786_VG0xR4Y.woff2"),A.d("Noto Sans Cypriot","notosanscypriot/v19/8AtzGta9PYqQDjyp79a6f8Cj-3a3cxIpK5MPpahF.woff2"),A.d("Noto Sans Deseret","notosansdeseret/v17/MwQsbgPp1eKH6QsAVuFb9AZM6MMr2Vq4ZnJSZtQG.woff2"),A.d("Noto Sans Devanagari","notosansdevanagari/v26/TuGoUUFzXI5FBtUq5a8bjKYTZjtRU6Sgv3NaV_SNmI0b8QQCQmHn6B2OHjbL_08AlXQly-UzoFoW4Ow.woff2"),A.d("Noto Sans Elbasan","notosanselbasan/v16/-F6rfiZqLzI2JPCgQBnw400qp1trvHdgre4dFcFh.woff2"),A.d("Noto Sans Elymaic","notosanselymaic/v17/UqyKK9YTJW5liNMhTMqe9vUFP65ZD4AmWOT0zi2V.woff2"),A.d("Noto Sans Ethiopic","notosansethiopic/v47/7cHPv50vjIepfJVOZZgcpQ5B9FBTH9KGNfhSTgtoow1KVnIvyBoMSzUMacb-T35OK6DmwmfeaY9u.woff2"),A.d("Noto Sans Georgian","notosansgeorgian/v44/PlIaFke5O6RzLfvNNVSitxkr76PRHBC4Ytyq-Gof7PUs4S7zWn-8YDB09HFNdpvnzFj7f5WK0OQV.woff2"),A.d("Noto Sans Glagolitic","notosansglagolitic/v18/1q2ZY4-BBFBst88SU_tOj4J-4yuNF_HI4ERP4Amu7nM1.woff2"),A.d("Noto Sans Gothic","notosansgothic/v16/TuGKUUVzXI5FBtUq5a8bj6wRbzxTFMD40kFQRx0.woff2"),A.d("Noto Sans Grantha","notosansgrantha/v19/3y976akwcCjmsU8NDyrKo3IQfQ4o-r8ZFeulHc6N.woff2"),A.d("Noto Sans Gujarati","notosansgujarati/v25/wlpWgx_HC1ti5ViekvcxnhMlCVo3f5pv17ivlzsUB14gg1TMR2Gw4VceEl7MA_ypFwPJ_OdiEH0s.woff2"),A.d("Noto Sans Gunjala Gondi","notosansgunjalagondi/v19/bWtX7e7KfBziStx7lIzKPrcSMwcEnCv6DW7n5g0ef3PLtymzNxYL4YDE5Z4vCTxEJQ.woff2"),A.d("Noto Sans Gurmukhi","notosansgurmukhi/v26/w8g9H3EvQP81sInb43inmyN9zZ7hb7ATbSWo4q8dJ74a3cVrYFQ_bogT0-gPeG1Oenb0Z_trdp7h.woff2"),A.d("Noto Sans Hanunoo","notosanshanunoo/v21/f0Xs0fCv8dxkDWlZSoXOj6CphMloFsEpEpgL_ix2.woff2"),A.d("Noto Sans Hatran","notosanshatran/v16/A2BBn4Ne0RgnVF3Lnko-0sOBIfL_mMo3r1nwzDs.woff2"),A.d("Noto Sans Hebrew","notosanshebrew/v46/or3HQ7v33eiDljA1IufXTtVf7V6RvEEdhQlk0LlGxCyaeNKYZC0sqk3xXGiXd4qtpyJltutR2g.woff2"),A.d("Noto Sans Imperial Aramaic","notosansimperialaramaic/v17/a8IMNpjwKmHXpgXbMIsbTc_kvks91LlLetBr5itQrtdjl3YfPNno.woff2"),A.d("Noto Sans Indic Siyaq Numbers","notosansindicsiyaqnumbers/v16/6xK5dTJFKcWIu4bpRBjRZRpsIYHabOeZ8UZLubTzpXNHKx2TPOpVd5Iu.woff2"),A.d("Noto Sans Inscriptional Pahlavi","notosansinscriptionalpahlavi/v17/ll8UK3GaVDuxR-TEqFPIbsR79Xxz9WEKbwsjpz7VklYlC7FCVt-VOAYK0QA.woff2"),A.d("Noto Sans Inscriptional Parthian","notosansinscriptionalparthian/v17/k3k7o-IMPvpLmixcA63oYi-yStDkgXuXncL7dzfW3P4TAJ2yklBM2jNkLlLr.woff2"),A.d("Noto Sans Javanese","notosansjavanese/v23/2V01KJkDAIA6Hp4zoSScDjV0Y-eoHAHT-Z3MngEefiidxJnkFFxiZYWj4O8.woff2"),A.d("Noto Sans Kaithi","notosanskaithi/v22/buEtppS9f8_vkXadMBJJu0tWjLwjQigKdoZIKlo.woff2"),A.d("Noto Sans Kannada","notosanskannada/v27/8vIs7xs32H97qzQKnzfeXycxXZyUmySvZWItmf1fe6TVmgop9ndpS-BqHEyGrDvNzScMLsPKrkY.woff2"),A.d("Noto Sans Kayah Li","notosanskayahli/v21/B50nF61OpWTRcGrhOVJJwOMXdca6Yecki3E06x2jVTX3WCc3CZT4EXLuKVM.woff2"),A.d("Noto Sans Kharoshthi","notosanskharoshthi/v16/Fh4qPiLjKS30-P4-pGMMXCCfvkc5Vd7KE5z9rFyx5mR1.woff2"),A.d("Noto Sans Khmer","notosanskhmer/v24/ijw3s5roRME5LLRxjsRb-gssOenAyendxrgV2c-Zw-9vbVUti_Z_dWgtWYuNAJz9kAbrddiA.woff2"),A.d("Noto Sans Khojki","notosanskhojki/v19/-nFnOHM29Oofr2wohFbTuPPKVWpmK_J709jy92k.woff2"),A.d("Noto Sans Khudawadi","notosanskhudawadi/v22/fdNi9t6ZsWBZ2k5ltHN73zZ5hc8HANlHIjFnVVXz9MY.woff2"),A.d("Noto Sans Lao","notosanslao/v30/bx6lNx2Ol_ixgdYWLm9BwxM3NW6BOkuf763Clj73CiQ_J1Djx9pidOt4ccbdepMK3riB2w.woff2"),A.d("Noto Sans Lepcha","notosanslepcha/v19/0QI7MWlB_JWgA166SKhu05TekNS32AdstqBXgd4.woff2"),A.d("Noto Sans Limbu","notosanslimbu/v24/3JnlSDv90Gmq2mrzckOBBRRoNJVj1cF3OHRDnA.woff2"),A.d("Noto Sans Linear A","notosanslineara/v18/oPWS_l16kP4jCuhpgEGmwJOiA18FZj22y2HQAGQicw.woff2"),A.d("Noto Sans Linear B","notosanslinearb/v17/HhyJU4wt9vSgfHoORYOiXOckKNB737IV2RkFTq4EPw.woff2"),A.d("Noto Sans Lisu","notosanslisu/v25/uk-3EGO3o6EruUbnwovcYhz6kh57_nqbcTdjJnHP2Vwt3tIlxkVdig.woff2"),A.d("Noto Sans Lycian","notosanslycian/v15/QldVNSNMqAsHtsJ7UmqxBQA9r8wA5_zaCJwn00E.woff2"),A.d("Noto Sans Lydian","notosanslydian/v18/c4m71mVzGN7s8FmIukZJ1v4ZlcPReUbXMoIjEQI.woff2"),A.d("Noto Sans Mahajani","notosansmahajani/v19/-F6sfiVqLzI2JPCgQBnw60Agp0JrvD5FgsARHNh4zg.woff2"),A.d("Noto Sans Malayalam","notosansmalayalam/v26/sJoi3K5XjsSdcnzn071rL37lpAOsUThnDZIfPdbeSNzVakglNM-Qw8EaeB8Nss-_RuD9AVzEr6HxEA.woff2"),A.d("Noto Sans Mandaic","notosansmandaic/v17/cIfnMbdWt1w_HgCcilqhKQBo_OsMI5_F_gMk0izH.woff2"),A.d("Noto Sans Manichaean","notosansmanichaean/v18/taiVGntiC4--qtsfi4Jp9-_GkPZZCcrfekqHNTtFCtdX.woff2"),A.d("Noto Sans Marchen","notosansmarchen/v20/aFTO7OZ_Y282EP-WyG6QTOX_C8WZMHhKk652ZaHk.woff2"),A.d("Noto Sans Masaram Gondi","notosansmasaramgondi/v17/6xK_dThFKcWIu4bpRBjRYRV7KZCbUq6n_1kPnuGb7RI9WSWX.woff2"),A.d("Noto Sans Math","notosansmath/v15/7Aump_cpkSecTWaHRlH2hyV5UHkD-V048PW0.woff2"),A.d("Noto Sans Mayan Numerals","notosansmayannumerals/v16/PlIuFk25O6RzLfvNNVSivR09_KqYMwvvDKYjfIiE7soo6eepYQ.woff2"),A.d("Noto Sans Medefaidrin","notosansmedefaidrin/v23/WwkzxOq6Dk-wranENynkfeVsNbRZtbOIdLb1exeM4ZeuabBfmErWlTj18e5A3rw.woff2"),A.d("Noto Sans Meetei Mayek","notosansmeeteimayek/v15/HTxAL3QyKieByqY9eZPFweO0be7M21uSphSdhqILnmrRfJ8t_1TJ_vTT5PgeFYVa.woff2"),A.d("Noto Sans Meroitic","notosansmeroitic/v18/IFS5HfRJndhE3P4b5jnZ3ITPvC6i00UDhThTiKY9KQ.woff2"),A.d("Noto Sans Miao","notosansmiao/v17/Dxxz8jmXMW75w3OmoDXVV4zyZUjlUYVslLhx.woff2"),A.d("Noto Sans Modi","notosansmodi/v23/pe03MIySN5pO62Z5YkFyT7jeav5vWVAgVol-.woff2"),A.d("Noto Sans Mongolian","notosansmongolian/v22/VdGCAYADGIwE0EopZx8xQfHlgEAMsrToxL4g6-av1x0.woff2"),A.d("Noto Sans Mro","notosansmro/v18/qWcsB6--pZv9TqnUQMhe9b39WDnRtjkho4M.woff2"),A.d("Noto Sans Multani","notosansmultani/v20/9Bty3ClF38_RfOpe1gCaZ8p30BOFO1AxpfCs5Kos.woff2"),A.d("Noto Sans Myanmar","notosansmyanmar/v20/AlZq_y1ZtY3ymOryg38hOCSdOnFq0Enz3OU4o1AC.woff2"),A.d("Noto Sans NKo","notosansnko/v6/esDX31ZdNv-KYGGJpKGk2_RpMpWMHMLBrdA.woff2"),A.d("Noto Sans Nabataean","notosansnabataean/v16/IFS4HfVJndhE3P4b5jnZ34DfsjO330dNoBd9hK8kMK4.woff2"),A.d("Noto Sans New Tai Lue","notosansnewtailue/v22/H4cKBW-Pl9DZ0Xe_nHUapt7PovLXAhAnY7wqaLy-OJgU3p_pdeXAYUPghFPKzeY.woff2"),A.d("Noto Sans Newa","notosansnewa/v16/7r3fqXp6utEsO9pI4f8ok8sWg8n6qN4R5lNU.woff2"),A.d("Noto Sans Nushu","notosansnushu/v19/rnCw-xRQ3B7652emAbAe_Ai1IYaFXVAMArZKqQ.woff2"),A.d("Noto Sans Ogham","notosansogham/v17/kmKlZqk1GBDGN0mY6k5lmEmww4hrsplaQxcoCA.woff2"),A.d("Noto Sans Ol Chiki","notosansolchiki/v29/N0b92TJNOPt-eHmFZCdQbrL32r-4CvhzDzRwlxOQYuVALWk267c6gVrz5gQ.woff2"),A.d("Noto Sans Old Hungarian","notosansoldhungarian/v18/E213_cD6hP3GwCJPEUssHEM0KqLaHJXg2PiIgRfmbg5nCYXt.woff2"),A.d("Noto Sans Old Italic","notosansolditalic/v17/TuGOUUFzXI5FBtUq5a8bh68BJxxEVam7tWlUdRhtCC4d.woff2"),A.d("Noto Sans Old North Arabian","notosansoldnortharabian/v16/esDF30BdNv-KYGGJpKGk2tNiMt7Jar6olZDyNdr81zBQnEo_xw4ABw.woff2"),A.d("Noto Sans Old Permic","notosansoldpermic/v17/snf1s1q1-dF8pli1TesqcbUY4Mr-ElrwKLdSgv_dKYB5.woff2"),A.d("Noto Sans Old Persian","notosansoldpersian/v16/wEOjEAbNnc5caQTFG18FHrZr9Bp6-8CmIJ_trelQfx9CjA.woff2"),A.d("Noto Sans Old Sogdian","notosansoldsogdian/v17/3JnjSCH90Gmq2mrzckOBBhFhdrMst48aURt7mOIqM-9uyg.woff2"),A.d("Noto Sans Old South Arabian","notosansoldsoutharabian/v16/3qT5oiOhnSyU8TNFIdhZTice3hB_HWKsEnF--0XCHiKx0etDT9HwTA.woff2"),A.d("Noto Sans Old Turkic","notosansoldturkic/v18/yMJNMJVya43H0SUF_WmcGEQVqoEMKDKbsE2UjEw-Vyws.woff2"),A.d("Noto Sans Oriya","notosansoriya/v31/AYCppXfzfccDCstK_hrjDyADv5e9748vhj3CJBLHIARtgD6TJQS0dJT5Ivj0f6_Z6LhHBRe-.woff2"),A.d("Noto Sans Osage","notosansosage/v18/oPWX_kB6kP4jCuhpgEGmw4mtAVtXQ1aSxkrMCQ.woff2"),A.d("Noto Sans Osmanya","notosansosmanya/v18/8vIS7xs32H97qzQKnzfeWzUyUpOJmz6hR47NCV5Z.woff2"),A.d("Noto Sans Pahawh Hmong","notosanspahawhhmong/v18/bWtp7e_KfBziStx7lIzKKaMUOBEA3UPQDW7krzI_c48aMpM.woff2"),A.d("Noto Sans Palmyrene","notosanspalmyrene/v16/ZgNPjOdKPa7CHqq0h37c_ASCWvH93SFCPne5ZpdNtcA.woff2"),A.d("Noto Sans Pau Cin Hau","notosanspaucinhau/v20/x3d-cl3IZKmUqiMg_9wBLLtzl22EayN7ehIdiUWqKMxsKw.woff2"),A.d("Noto Sans Phags Pa","notosansphagspa/v15/pxiZyoo6v8ZYyWh5WuPeJzMkd4SrGChkr0SsrvNXiA.woff2"),A.d("Noto Sans Phoenician","notosansphoenician/v17/jizFRF9Ksm4Bt9PvcTaEkIHiTVtxmFtS5X7Mot-p5561.woff2"),A.d("Noto Sans Psalter Pahlavi","notosanspsalterpahlavi/v17/rP2Vp3K65FkAtHfwd-eISGznYihzggmsicPfud3w1GjKsUQBct4.woff2"),A.d("Noto Sans Rejang","notosansrejang/v21/Ktk2AKuMeZjqPnXgyqrib7DIogqwN4a3WYZB_sU.woff2"),A.d("Noto Sans Runic","notosansrunic/v17/H4c_BXWPl9DZ0Xe_nHUaus7W68WWbhpvHtgIYg.woff2"),A.d("Noto Sans Saurashtra","notosanssaurashtra/v23/ea8GacQ0Wfz_XKWXe6OtoA8w8zvmYwTef9nYjhPTSIx9.woff2"),A.d("Noto Sans Sharada","notosanssharada/v16/gok0H7rwAEdtF9N8-mdTGALG6p0kwoXOPOwr4H8a.woff2"),A.d("Noto Sans Shavian","notosansshavian/v17/CHy5V_HZE0jxJBQlqAeCKjJvQBNF4EFVSplv2Cwg.woff2"),A.d("Noto Sans Siddham","notosanssiddham/v20/OZpZg-FwqiNLe9PELUikxTWDoCCeGqnYk3Ic92ZH.woff2"),A.d("Noto Sans Sinhala","notosanssinhala/v32/yMJ2MJBya43H0SUF_WmcBEEf4rQVO2P524V5N_MxQzQtb-tf5dJbC30Fu9zUwg2a5l0LpJwbQRM.woff2"),A.d("Noto Sans Sogdian","notosanssogdian/v16/taiQGn5iC4--qtsfi4Jp6eHPnfxQBo-7Pm6KHidM.woff2"),A.d("Noto Sans Sora Sompeng","notosanssorasompeng/v24/PlIRFkO5O6RzLfvNNVSioxM2_OTrEhPyDLolKvCsHzCxWuGkYHR818DsZXJQd4Mu.woff2"),A.d("Noto Sans Soyombo","notosanssoyombo/v17/RWmSoL-Y6-8q5LTtXs6MF6q7xsxgY0FuIFOcK25W.woff2"),A.d("Noto Sans Sundanese","notosanssundanese/v26/FwZw7_84xUkosG2xJo2gm7nFwSLQkdymq2mkz3Gz1_b6ctxpNNHHizv7fQES.woff2"),A.d("Noto Sans Syloti Nagri","notosanssylotinagri/v23/uU9eCAQZ75uhfF9UoWDRiY3q7Sf_VFV3m4dGFVLxN87gsj0.woff2"),A.d("Noto Sans Symbols","notosanssymbols/v43/rP2up3q65FkAtHfwd-eIS2brbDN6gxP34F9jRRCe4W3gfQ8gb_VFRkzrbQ.woff2"),A.d("Noto Sans Syriac","notosanssyriac/v16/Ktk7AKuMeZjqPnXgyqribqzQqgW0LYiVqV7dXcP0C-VD9MaMyZfUL_FC.woff2"),A.d("Noto Sans Tagalog","notosanstagalog/v22/J7aFnoNzCnFcV9ZI-sUYuvote1R0wwEFA8jHexnL.woff2"),A.d("Noto Sans Tagbanwa","notosanstagbanwa/v18/Y4GWYbB8VTEp4t3MKJSMmQdIKjRtt_nZQzQEaYpGoQ.woff2"),A.d("Noto Sans Tai Le","notosanstaile/v17/vEFK2-VODB8RrNDvZSUmVxEATwR58te1W77HtMo.woff2"),A.d("Noto Sans Tai Tham","notosanstaitham/v20/kJEbBv0U4hgtwxDUw2x9q7tbjLIfbPGHBoaVSAZ3MdLJBCUbPg-uyaRGKMw.woff2"),A.d("Noto Sans Tai Viet","notosanstaiviet/v19/8QIUdj3HhN_lv4jf9vsE-9GMOLsaSPZr7o4fWsRO9w.woff2"),A.d("Noto Sans Takri","notosanstakri/v24/TuGJUVpzXI5FBtUq5a8bnKIOdTwQMe_W3khJXg.woff2"),A.d("Noto Sans Tamil","notosanstamil/v27/ieVc2YdFI3GCY6SyQy1KfStzYKZgzN1z4LKDbeZce-0429tBManUktuex7vGo70UqKDt_EvT.woff2"),A.d("Noto Sans Tamil Supplement","notosanstamilsupplement/v21/DdTz78kEtnooLS5rXF1DaruiCd_bFp_Ph4sGcn7ax_vpAeMkeq1x.woff2"),A.d("Noto Sans Telugu","notosanstelugu/v26/0FlxVOGZlE2Rrtr-HmgkMWJNjJ5_RyT8o8c7fHkeg-esVC5dzHkHIJQqrEntezbqREbf-3v37w.woff2"),A.d("Noto Sans Thaana","notosansthaana/v24/C8c14dM-vnz-s-3jaEsxlxHkBH-WZOETXfoQrfQ9Y4XrbhLknu4-tbNu.woff2"),A.d("Noto Sans Thai","notosansthai/v25/iJWnBXeUZi_OHPqn4wq6hQ2_hbJ1xyN9wd43SofNWcd1MKVQt_So_9CdU5RtpzR-QRvzzXg.woff2"),A.d("Noto Sans Tifinagh","notosanstifinagh/v20/I_uzMoCduATTei9eI8dawkHIwvmhCvbn77nEcXfs4Q.woff2"),A.d("Noto Sans Tirhuta","notosanstirhuta/v16/t5t6IQYRNJ6TWjahPR6X-M-apUyby7uDUBsTrn5P.woff2"),A.d("Noto Sans Ugaritic","notosansugaritic/v16/3qTwoiqhnSyU8TNFIdhZVCwbjCpkAXXkNxoIkiazfg.woff2"),A.d("Noto Sans Vai","notosansvai/v17/NaPecZTSBuhTirw6IaFn_UrURMHsDIRSfr0.woff2"),A.d("Noto Sans Wancho","notosanswancho/v17/zrf-0GXXyfn6Fs0lH9P4cUubP0GBqAbopiRfKp8.woff2"),A.d("Noto Sans Warang Citi","notosanswarangciti/v17/EYqtmb9SzL1YtsZSScyKDXIeOv3w-zgsNvKRoOVCCXzdgA.woff2"),A.d("Noto Sans Yi","notosansyi/v19/sJoD3LFXjsSdcnzn071rO3apwFDJNVgSNg.woff2"),A.d("Noto Sans Zanabazar Square","notosanszanabazarsquare/v19/Cn-jJsuGWQxOjaGwMQ6fOicyxLBEMRfDtkzl4uagQtJ0OCEgN0Gc.woff2"),A.d("Noto Serif Tibetan","notoseriftibetan/v22/gokGH7nwAEdtF9N45n0Vaz7O-pk0wsvxHeDXMfqguoCmIrYcPSvrdSy_32c.woff2")],t.Qg)):s},
 af2(){var s,r,q,p,o,n,m=this,l=m.r
 if(l!=null){l.delete()
 m.r=null
@@ -27366,7 +27366,7 @@ J.ff(l.bI(n,new A.ag4()),new q.window.flutterCanvasKit.Font(o.c))}},
 lv(a){return this.apd(a)},
 apd(a9){var s=0,r=A.R(t.S7),q,p=this,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8
 var $async$lv=A.S(function(b0,b1){if(b0===1)return A.O(b1,r)
-for(;;)switch(s){case 0:a7=A.b([],t.wQ)
+for(;;)switch(s){case 0:a7=A.a([],t.wQ)
 for(o=a9.a,n=o.length,m=!1,l=0;l<o.length;o.length===n||(0,A.B)(o),++l){k=o[l]
 j=k.a
 if(j==="Roboto")m=!0
@@ -27375,7 +27375,7 @@ e=$.HW
 d=f.a
 a7.push(p.pp(d,e.vL(d),j))}}if(!m)a7.push(p.pp("Roboto",$.aH9(),"Roboto"))
 c=A.o(t.N,t.FK)
-b=A.b([],t.Co)
+b=A.a([],t.Co)
 a8=J
 s=3
 return A.Y(A.kU(a7,t.ia),$async$lv)
@@ -27392,7 +27392,7 @@ break
 case 5:o=$.a0().hb()
 s=6
 return A.Y(o,$async$lv)
-case 6:a=A.b([],t.s)
+case 6:a=A.a([],t.s)
 for(o=b.length,n=t.hA,j=$.b5.a,i=p.d,h=v.G,e=t.t,l=0;l<b.length;b.length===o||(0,A.B)(b),++l){d=b[l]
 a0=d.a
 a1=null
@@ -27405,7 +27405,7 @@ d=d.Typeface.MakeFreeTypeFaceFromData(n.a(B.J.gcd(a3)))
 a4=a1.c
 if(d!=null){a.push(a0)
 a5=new h.window.flutterCanvasKit.Font(d)
-a6=A.jK(A.b([0],e))
+a6=A.jK(A.a([0],e))
 a5.getGlyphBounds(a6,null,null)
 i.push(new A.q_(a4,a3,d))}else{d=$.e1()
 a6=a1.b
@@ -27460,10 +27460,10 @@ case 2:return A.O(o.at(-1),r)}})
 return A.Q($async$pp,r)},
 W(a){}}
 A.ag3.prototype={
-$0(){return A.b([],t.O)},
+$0(){return A.a([],t.O)},
 $S:199}
 A.ag4.prototype={
-$0(){return A.b([],t.O)},
+$0(){return A.a([],t.O)},
 $S:199}
 A.ag5.prototype={
 $3(a,b,c){var s=J.wP(a),r=$.b5.ba().Typeface.MakeFreeTypeFaceFromData(t.hA.a(B.J.gcd(s)))
@@ -27476,13 +27476,13 @@ A.q_.prototype={}
 A.Da.prototype={}
 A.oY.prototype={}
 A.ag2.prototype={
-Zg(a,b){var s,r,q,p,o,n,m,l,k,j,i=A.b([],t.O)
+Zg(a,b){var s,r,q,p,o,n,m,l,k,j,i=A.a([],t.O)
 for(s=b.length,r=this.a.f,q=0;q<b.length;b.length===s||(0,A.B)(b),++q){p=r.h(0,b[q])
 if(p!=null)B.b.P(i,p)}s=a.length
 o=A.be(s,!1,!1,t.y)
 n=A.k0(a,0,null)
 for(r=i.length,q=0;q<i.length;i.length===r||(0,A.B)(i),++q){m=i[q].getGlyphIDs(n)
-for(l=m.length,k=0;k<l;++k)o[k]=B.eP.vV(o[k],m[k]!==0)}j=A.b([],t.t)
+for(l=m.length,k=0;k<l;++k)o[k]=B.eP.vV(o[k],m[k]!==0)}j=A.a([],t.t)
 for(k=0;k<s;++k)if(!o[k])j.push(a[k])
 return j},
 Ah(a,b){return this.apg(a,b)},
@@ -27503,12 +27503,12 @@ A.Jt.prototype={
 Zz(a,b,c,d){if(a.c==null)return A.aTn(a,b,c,d)
 else return this.afH(a,b,c,d)},
 afH(a,b,c,d){var s,r,q,p,o,n,m,l,k=a.b
-k===$&&A.a()
+k===$&&A.b()
 k=k.a
-k===$&&A.a()
+k===$&&A.b()
 s=J.ai(k.a.width())
 k=a.b.a
-k===$&&A.a()
+k===$&&A.b()
 r=J.ai(k.a.height())
 q=A.aEG(s,r,d,c)
 if(q==null)return a
@@ -27533,34 +27533,34 @@ A.xF.prototype={}
 A.oy.prototype={
 OV(){},
 l(){var s,r=this.b
-r===$&&A.a()
+r===$&&A.b()
 if(--r.b===0){r=r.a
-r===$&&A.a()
+r===$&&A.b()
 r.l()}r=this.c
 s=r==null
 if(!s)--r.a
 if(!s)if(r.a===0)r.Dj()},
 aoN(a){var s,r=a.b
-r===$&&A.a()
+r===$&&A.b()
 r=r.a
-r===$&&A.a()
+r===$&&A.b()
 r=r.a
 r.toString
 s=this.b
-s===$&&A.a()
+s===$&&A.b()
 s=s.a
-s===$&&A.a()
+s===$&&A.b()
 s=s.a
 s.toString
 s=r.isAliasOf(s)
 return s},
 k(a){var s,r=this.b
-r===$&&A.a()
+r===$&&A.b()
 r=r.a
-r===$&&A.a()
+r===$&&A.b()
 r=J.ai(r.a.width())
 s=this.b.a
-s===$&&A.a()
+s===$&&A.b()
 return"["+r+"\xd7"+J.ai(s.a.height())+"]"},
 $iazM:1}
 A.a61.prototype={}
@@ -27638,12 +27638,12 @@ s.delete()},
 $S:2}
 A.Jk.prototype={
 l(){var s=this.a
-s===$&&A.a()
+s===$&&A.b()
 s.l()},
 goj(){return this.d},
 gqN(){return this.e},
 fi(){var s,r,q=this.a
-q===$&&A.a()
+q===$&&A.b()
 s=q.a
 q=A.dW(0,J.ai(s.currentFrameDuration()))
 r=A.xE(s.makeImageAtCurrentFrame(),null)
@@ -27672,7 +27672,7 @@ mZ(a,b,c){return this.ara(a,b,c)},
 ara(a,b,c){var s=0,r=A.R(t.H),q=this,p,o,n,m,l,k,j,i,h,g
 var $async$mZ=A.S(function(d,e){if(d===1)return A.O(e,r)
 for(;;)switch(s){case 0:if(a.length!==b.length)throw A.j(A.cW(u.q,null))
-p=A.b([],t.mo)
+p=A.a([],t.mo)
 for(o=t.W,n=t.Oz,m=0;m<a.length;++m){l=a[m]
 k=b[m]
 n.a(l)
@@ -27687,7 +27687,7 @@ g.setProperty("transform","translate(0px, "+A.m(j.b/h-i/h)+"px)","")
 j=l.a.a.getCanvas()
 j.clear(A.ax1($.auv(),B.D))
 k=k.a
-k===$&&A.a()
+k===$&&A.b()
 k=k.a
 k.toString
 j.drawPicture(k)
@@ -27741,7 +27741,7 @@ mZ(a,b,c){return this.arb(a,b,c)},
 arb(a,b,c){var s=0,r=A.R(t.H),q=this,p,o,n
 var $async$mZ=A.S(function(d,e){if(d===1)return A.O(e,r)
 for(;;)switch(s){case 0:if(a.length!==b.length)throw A.j(A.cW(u.q,null))
-p=A.b([],t.mo)
+p=A.a([],t.mo)
 for(o=0;o<a.length;++o)p.push(q.AW(a[o],b[o]))
 n=c==null
 if(!n)c.IZ()
@@ -27776,7 +27776,7 @@ l.setColorInt(m.r)
 l.setStrokeMiter(4)
 r=m.at
 if(r!=null){s=r.b
-s===$&&A.a()
+s===$&&A.b()
 s=s.a
 s.toString
 l.setColorFilter(s)}q=m.y
@@ -27819,7 +27819,7 @@ szC(a){var s
 if(this.b===a)return
 this.b=a
 s=this.a
-s===$&&A.a()
+s===$&&A.b()
 s=s.a
 s.toString
 s.setFillType($.a__()[a.a])},
@@ -27827,11 +27827,11 @@ Tl(a,b,c){var s,r,q=A.l7()
 q.nm(b.a,b.b,0)
 s=A.axA(q.a)
 q=this.a
-q===$&&A.a()
+q===$&&A.b()
 q=q.a
 q.toString
 r=a.a
-r===$&&A.a()
+r===$&&A.b()
 r=r.a
 r.toString
 A.fC(q,"addPath",[r,s[0],s[1],s[2],s[3],s[4],s[5],s[6],s[7],s[8],!1])},
@@ -27843,12 +27843,12 @@ s.setFillType($.a__()[0])
 return A.auY(s,B.hQ)}}
 A.Js.prototype={
 l(){var s=this.a
-s===$&&A.a()
+s===$&&A.b()
 s.l()},
 Jd(a,b){var s,r,q,p,o=$.auV.ba().r.tZ(new A.jh(a,b)).a,n=o.getCanvas()
 n.clear(A.ax1($.auv(),B.D))
 s=this.a
-s===$&&A.a()
+s===$&&A.b()
 s=s.a
 s.toString
 n.drawPicture(s)
@@ -27884,7 +27884,7 @@ gwZ(){var s,r,q,p=this.f
 if(p===$){if(A.db().gmq()===B.cy)s=new A.aim()
 else{r=t.N
 q=t.Pc
-s=new A.OR(A.aD(r),A.b([],t.LX),A.b([],q),A.b([],q),A.o(r,t.Lc))}this.f!==$&&A.aw()
+s=new A.OR(A.aD(r),A.a([],t.LX),A.a([],q),A.a([],q),A.o(r,t.Lc))}this.f!==$&&A.aw()
 p=this.f=s}return p},
 hb(){var s=0,r=A.R(t.H),q,p=this,o
 var $async$hb=A.S(function(a,b){if(a===1)return A.O(b,r)
@@ -27946,7 +27946,7 @@ s.ny(r,A.fC(p,"MakeLinearGradient",[o,n,m,l,k,j==null?null:j]),q,t.m)
 r.a!==$&&A.bu()
 r.a=s},
 Zs(a){var s=this.a
-s===$&&A.a()
+s===$&&A.b()
 s=s.a
 s.toString
 return s}}
@@ -27964,7 +27964,7 @@ var $async$AX=A.S(function(d,e){if(d===1)return A.O(e,r)
 for(;;)switch(s){case 0:k=q.a.a.getCanvas()
 k.clear(A.ax1($.auv(),B.D))
 p=c.a
-p===$&&A.a()
+p===$&&A.b()
 p=p.a
 p.toString
 k.drawPicture(p)
@@ -28199,7 +28199,7 @@ d.fr=p
 q=p}A.aBy(b4,q)
 if(a2!=null||a3!=null)b4.fontStyle=A.axy(a2,a3)
 if(b0!=null){d=A.wH(A.bg(b0.r))
-b4.foregroundColor=d}if(b1!=null){o=A.b([],t.O)
+b4.foregroundColor=d}if(b1!=null){o=A.a([],t.O)
 for(d=b1.length,n=0;n<b1.length;b1.length===d||(0,A.B)(b1),++n){m=b1[n]
 l={}
 s=A.wH(m.a)
@@ -28210,12 +28210,12 @@ k[0]=s.a
 k[1]=s.b
 l.offset=k
 l.blurRadius=m.c
-o.push(l)}b4.shadows=o}if(b2!=null){j=A.b([],t.O)
+o.push(l)}b4.shadows=o}if(b2!=null){j=A.a([],t.O)
 for(d=b2.length,n=0;n<b2.length;b2.length===d||(0,A.B)(b2),++n){i=b2[n]
 h={}
 h.name=i.a
 h.value=i.b
-j.push(h)}b4.fontFeatures=j}if(b3!=null){g=A.b([],t.O)
+j.push(h)}b4.fontFeatures=j}if(b3!=null){g=A.a([],t.O)
 for(d=b3.length,n=0;n<b3.length;b3.length===d||(0,A.B)(b3),++n){f=b3[n]
 e={}
 e.axis=f.a
@@ -28239,12 +28239,12 @@ gox(){return this.x},
 gIq(){return this.y},
 giy(){return this.z},
 JJ(){var s=this.Q
-s===$&&A.a()
+s===$&&A.b()
 return s},
 vM(a,b,c,d){var s,r,q,p
 if(a<0||b<0)return B.LB
 s=this.a
-s===$&&A.a()
+s===$&&A.b()
 s=s.a
 s.toString
 r=$.aHi()[c.a]
@@ -28253,22 +28253,22 @@ p=$.aHj()
 s=s.getRectsForRange(a,b,r,p[q<2?q:0])
 return this.Kz(B.b.dP(s,t.m))},
 Bs(a,b,c){return this.vM(a,b,c,B.cR)},
-Kz(a){var s,r,q,p,o,n,m,l=A.b([],t.Lx)
+Kz(a){var s,r,q,p,o,n,m,l=A.a([],t.Lx)
 for(s=a.a,r=J.aS(s),q=a.$ti.y[1],p=0;p<r.gD(s);++p){o=q.a(r.h(s,p))
 n=o.rect
 m=J.ai(o.dir.value)
 l.push(new A.f7(n[0],n[1],n[2],n[3],B.kq[m]))}return l},
 dg(a){var s,r,q=this.a
-q===$&&A.a()
+q===$&&A.b()
 s=q.a.getGlyphPositionAtCoordinate(a.a,a.b)
 r=B.L6[J.ai(s.affinity.value)]
 return new A.af(J.ai(s.pos),r)},
 JM(a){var s=this.a
-s===$&&A.a()
+s===$&&A.b()
 s=s.a.getClosestGlyphInfoAtCoordinate(a.a,a.b)
 return s==null?null:A.aBw(s)},
 Bv(a){var s=this.a
-s===$&&A.a()
+s===$&&A.b()
 s=s.a.getGlyphInfoAt(a)
 return s==null?null:A.aBw(s)},
 fQ(a){var s,r,q
@@ -28277,14 +28277,14 @@ break
 case 1:s=a.a
 break
 default:s=null}r=this.a
-r===$&&A.a()
+r===$&&A.b()
 q=r.a.getWordBoundary(s)
 return new A.bY(J.ai(q.start),J.ai(q.end))},
 f0(a){var s,r,q,p,o=this,n=a.a
 if(o.b===n)return
 o.b=n
 try{q=o.a
-q===$&&A.a()
+q===$&&A.b()
 q=q.a
 q.toString
 s=q
@@ -28302,7 +28302,7 @@ o.Q=o.Kz(B.b.dP(n,t.m))}catch(p){r=A.au(p)
 $.e1().$1('CanvasKit threw an exception while laying out the paragraph. The font was "'+A.m(o.c.r)+'". Exception:\n'+A.m(r))
 throw p}},
 BA(a){var s,r,q,p,o=this.a
-o===$&&A.a()
+o===$&&A.b()
 o=o.a.getLineMetrics()
 s=B.b.dP(o,t.m)
 r=a.a
@@ -28310,21 +28310,21 @@ for(o=s.$ti,q=new A.bp(s,s.gD(0),o.i("bp<aL.E>")),o=o.i("aL.E");q.A();){p=q.d
 if(p==null)p=o.a(p)
 if(r>=p.startIndex&&r<=p.endIndex)return new A.bY(J.ai(p.startIndex),J.ai(p.endIndex))}return B.aG},
 q0(){var s,r,q,p,o=this.a
-o===$&&A.a()
+o===$&&A.b()
 o=o.a.getLineMetrics()
 s=B.b.dP(o,t.m)
-r=A.b([],t.ER)
+r=A.a([],t.ER)
 for(o=s.$ti,q=new A.bp(s,s.gD(0),o.i("bp<aL.E>")),o=o.i("aL.E");q.A();){p=q.d
 r.push(new A.xG(p==null?o.a(p):p))}return r},
 BB(a){var s,r=this.a
-r===$&&A.a()
+r===$&&A.b()
 s=r.a.getLineMetricsAt(a)
 return s==null?null:new A.xG(s)},
 gIv(){var s=this.a
-s===$&&A.a()
+s===$&&A.b()
 return J.ai(s.a.getNumberOfLines())},
 l(){var s=this.a
-s===$&&A.a()
+s===$&&A.b()
 s.l()}}
 A.xG.prototype={
 gTI(){return this.a.ascent},
@@ -28344,7 +28344,7 @@ this.d.push(1)
 s=e==null?b:e
 A.fC(this.a,"addPlaceholder",[a,b,$.aHh()[c.a],$.ay0()[0],s])},
 Tm(a,b,c){return this.yn(a,b,c,null,null)},
-tx(a){var s=A.b([],t.s),r=B.b.gac(this.e),q=r.y
+tx(a){var s=A.a([],t.s),r=B.b.gac(this.e),q=r.y
 if(q!=null)s.push(q)
 q=r.Q
 if(q!=null)B.b.P(s,q)
@@ -28546,12 +28546,12 @@ B.b.W(s)}}
 A.acc.prototype={}
 A.vi.prototype={
 gYQ(){var s,r,q,p,o,n=this,m=n.e
-if(m===$){s=A.b([],t.y8)
+if(m===$){s=A.a([],t.y8)
 r=t.S
 q=t.t
-p=A.b([],q)
-q=A.b([],q)
-o=A.b([],t.EV)
+p=A.a([],q)
+q=A.a([],q)
+o=A.a([],t.EV)
 n.e!==$&&A.aw()
 m=n.e=new A.N3(n.f,n,new A.yt(A.o(t.sT,t.Cc),s),A.o(r,t.GB),A.o(r,t.JH),A.aD(r),p,q,new A.rR(o))}return m},
 zi(a,b){return this.alW(a,b)},
@@ -28763,7 +28763,7 @@ ga5(a){return new A.qK(this.a,this.$ti.i("qK<1>"))},
 gD(a){return J.ai(this.a.length)}}
 A.Km.prototype={
 gN(){var s=this.b
-s===$&&A.a()
+s===$&&A.b()
 return s},
 A(){var s=this.a.next()
 if(s.done)return!1
@@ -28795,7 +28795,7 @@ if(s.a===0)return
 r=A.a1(s,A.k(s).c)
 s.W(0)
 this.amC(r)},
-amC(a){var s,r,q,p,o,n,m,l,k,j,i,h,g,f=this,e=A.b([],t.t),d=A.b([],t.XS),c=t.Qg,b=A.b([],c)
+amC(a){var s,r,q,p,o,n,m,l,k,j,i,h,g,f=this,e=A.a([],t.t),d=A.a([],t.XS),c=t.Qg,b=A.a([],c)
 for(s=a.length,r=t.Ie,q=0;q<a.length;a.length===s||(0,A.B)(a),++q){p=a[q]
 o=f.at
 if(o===$){o=f.as
@@ -28811,7 +28811,7 @@ else{if(m.b===0)d.push(m);++m.b}}for(s=d.length,q=0;q<d.length;d.length===s||(0,
 for(l=m.a,k=l.length,j=0;j<l.length;l.length===k||(0,A.B)(l),++j){i=l[j]
 if(i.d===0)b.push(i)
 i.d=i.d+m.b
-i.e.push(m)}}h=A.b([],c)
+i.e.push(m)}}h=A.a([],c)
 while(b.length!==0){g=f.ag7(b)
 h.push(g)
 c=A.a1(g.e,r)
@@ -28822,7 +28822,7 @@ for(l=m.a,k=l.length,j=0;j<l.length;l.length===k||(0,A.B)(l),++j){i=l[j]
 i.d=i.d-m.b
 B.b.E(i.e,m)}m.b=0}b.$flags&1&&A.al(b,16)
 B.b.Ql(b,new A.a4A(),!0)}c=f.b
-c===$&&A.a()
+c===$&&A.b()
 B.b.am(h,c.gmk(c))
 if(e.length!==0)if(c.c.a===0){$.e1().$1("Could not find a set of Noto fonts to display all missing characters. Please add a font asset for the missing characters. See: https://flutter.dev/docs/cookbook/design/fonts")
 f.c.P(0,e)}},
@@ -28834,7 +28834,7 @@ break $label0$0}if("ja"===j){s=A.yN(a,A.aQl())
 break $label0$0}if("ko"===j){s=A.yN(a,A.aQm())
 break $label0$0}s=null
 break $label0$0}if(s!=null)return s
-r=A.b([],t.Qg)
+r=A.a([],t.Qg)
 for(q=a.length,p=s,o=-1,n=0;n<a.length;a.length===q||(0,A.B)(a),++n){m=a[n]
 s=m.d
 if(s>o){B.b.W(r)
@@ -28846,10 +28846,10 @@ if(B.b.n(r,l))p=l
 else{k=A.yN(r,A.aDB())
 if(k!=null)p=k}}p.toString
 return p},
-a6d(a){var s,r,q,p=A.b([],t.XS)
+a6d(a){var s,r,q,p=A.a([],t.XS)
 for(s=a.split(","),r=s.length,q=0;q<r;++q)p.push(new A.yJ(this.a6e(s[q])))
 return p},
-a6e(a){var s,r,q,p,o,n,m,l=A.b([],t.Qg)
+a6e(a){var s,r,q,p,o,n,m,l=A.a([],t.Qg)
 for(s=a.length,r=this.e,q=-1,p=0,o=0;o<s;++o){n=a.charCodeAt(o)
 if(97<=n&&n<123){m=q+(p*26+(n-97))+1
 l.push(r[m])
@@ -28866,7 +28866,7 @@ for(;;)switch(s){case 0:p=q.a
 p.a73()
 p.Q=!1
 p=p.b
-p===$&&A.a()
+p===$&&A.b()
 s=2
 return A.Y(p.asw(),$async$$0)
 case 2:return A.P(null,r)}})
@@ -28896,7 +28896,7 @@ if(r===0)A.ch(B.B,q.ga_r())},
 p8(){var s=0,r=A.R(t.H),q=this,p,o,n,m,l,k,j,i
 var $async$p8=A.S(function(a,b){if(a===1)return A.O(b,r)
 for(;;)switch(s){case 0:j=A.o(t.N,t.uz)
-i=A.b([],t.s)
+i=A.a([],t.s)
 for(p=q.c,o=new A.bB(p,p.r,p.e,A.k(p).i("bB<2>")),n=t.H;o.A();){m=o.d
 j.p(0,m.b,A.avs(new A.alU(q,m,i),n))}s=2
 return A.Y(A.kU(new A.ba(j,j.$ti.i("ba<2>")),n),$async$p8)
@@ -29102,10 +29102,10 @@ $ia4L:1,
 geb(){return this.a}}
 A.J8.prototype={
 goj(){var s=this.d
-s===$&&A.a()
+s===$&&A.b()
 return s},
 gqN(){var s=this.e
-s===$&&A.a()
+s===$&&A.b()
 return s},
 l(){this.f=!0
 var s=this.w
@@ -29158,7 +29158,7 @@ return A.Y(A.fe(o.decode({frameIndex:p.r}),t.m),$async$fi)
 case 3:n=b.image
 m=p.r
 l=p.d
-l===$&&A.a()
+l===$&&A.b()
 p.r=B.i.bs(m+1,l)
 l=n.duration
 m=l==null?null:J.ai(l)
@@ -29213,7 +29213,7 @@ q=o.b+=4
 if(r!=="VP8X")return!1
 p=o.a.getUint8(q);++o.b
 return(p&2)!==0},
-EE(){var s=this,r=s.a,q=A.b([r.getUint8(s.b),r.getUint8(s.b+1),r.getUint8(s.b+2),r.getUint8(s.b+3)],t.t)
+EE(){var s=this,r=s.a,q=A.a([r.getUint8(s.b),r.getUint8(s.b+1),r.getUint8(s.b+2),r.getUint8(s.b+3)],t.t)
 s.b+=4
 return A.k0(q,0,null)}}
 A.amG.prototype={
@@ -29262,7 +29262,7 @@ for(s=p.a;;){r=s.getUint8(p.b)
 q=++p.b
 if(r===0)return
 p.b=q+r}},
-Q3(){var s=this,r=s.a,q=A.b([r.getUint8(s.b),r.getUint8(s.b+1),r.getUint8(s.b+2)],t.t)
+Q3(){var s=this,r=s.a,q=A.a([r.getUint8(s.b),r.getUint8(s.b+1),r.getUint8(s.b+2)],t.t)
 s.b+=3
 return A.k0(q,0,null)},
 Q4(){var s=this.a.getUint8(this.b);++this.b
@@ -29565,15 +29565,15 @@ eT(a){return this.e8(a,t.z)}}
 A.a6Z.prototype={}
 A.a7_.prototype={
 eH(){var s=this.b
-s===$&&A.a()
+s===$&&A.b()
 if(s===this.a)return
 s=s.a
 s.toString
 this.b=s},
-vl(a,b){return this.lB(new A.D0(new A.fX(A.I7(a)),A.b([],t.k5),B.a_))},
+vl(a,b){return this.lB(new A.D0(new A.fX(A.I7(a)),A.a([],t.k5),B.a_))},
 ar7(a){return this.vl(a,null)},
 ar5(a){var s=this.b
-s===$&&A.a()
+s===$&&A.b()
 a.a=s
 s.c.push(a)
 return this.b=a},
@@ -29585,8 +29585,8 @@ A.aEL("apply_frame",new A.a4R(this,a))
 return!0}}
 A.a4Q.prototype={
 $0(){var s,r,q,p=this,o=p.a.a,n=p.b.a
-new A.Nc(new A.pG(A.b([],t.YE)),o).na(n)
-s=A.b([],t.HU)
+new A.Nc(new A.pG(A.a([],t.YE)),o).na(n)
+s=A.a([],t.HU)
 $.a0()
 r=new A.kD()
 q=new A.aah(s,r,o)
@@ -29599,10 +29599,10 @@ o=p.d
 if(o!=null)o.XZ()},
 $S:0}
 A.a4R.prototype={
-$0(){var s,r=new A.A8(A.b([],t.k_)),q=this.a.a,p=q.c.e
+$0(){var s,r=new A.A8(A.a([],t.k_)),q=this.a.a,p=q.c.e
 p.toString
 B.b.am(p,r.gaiP())
-p=A.b([],t.Ay)
+p=A.a([],t.Ay)
 s=this.b.a
 if(!s.b.ga9(0))new A.MU(r,q,p,A.o(t.uy,t.gm),null).na(s)},
 $S:0}
@@ -29620,7 +29620,7 @@ case 1:p=p.c
 o=new A.x(p.a,p.b,p.c,p.d)
 break
 case 2:p=p.d.gez().a
-p===$&&A.a()
+p===$&&A.b()
 p=p.a.getBounds()
 o=new A.x(p[0],p[1],p[2],p[3])
 break
@@ -29637,7 +29637,7 @@ Jv(a){var s,r,q=null,p=a.f,o=this.a.a
 o.push(new A.i8(B.v1,q,q,p,q,q))
 s=this.mX(a)
 p=p.gez().a
-p===$&&A.a()
+p===$&&A.b()
 r=A.atO(p.a.getBounds())
 if(s.fK(r))a.b=s.dG(r)
 o.pop()},
@@ -29676,7 +29676,7 @@ r.pop()
 r.pop()
 a.b=a.b.kN(o,p)},
 JC(a){var s=a.c.a
-s===$&&A.a()
+s===$&&A.b()
 a.b=A.atO(s.a.cullRect()).cS(a.d)
 a.w=!1},
 JD(a){var s=a.d,r=s.a,q=s.b,p=a.e,o=a.f
@@ -29694,7 +29694,7 @@ if(p.gAo())p.eT(this)}},
 na(a){if(!a.b.ga9(0))this.mQ(a)},
 Ju(a){this.mQ(a)},
 Jv(a){var s,r,q=this.c
-q===$&&A.a()
+q===$&&A.b()
 J.ai(q.a.save())
 s=a.r
 q.Gi(a.f,s!==B.Y)
@@ -29705,7 +29705,7 @@ q.hs(r,A.b_())}this.mQ(a)
 if(s)q.a.restore()
 q.a.restore()},
 Jx(a){var s,r,q=this.c
-q===$&&A.a()
+q===$&&A.b()
 J.ai(q.a.save())
 s=a.f
 r=a.r
@@ -29716,7 +29716,7 @@ q.hs(s,A.b_())}this.mQ(a)
 if(r)q.a.restore()
 q.a.restore()},
 Jw(a){var s,r,q=this.c
-q===$&&A.a()
+q===$&&A.b()
 J.ai(q.a.save())
 s=a.r
 q.a.clipRRect(A.m5(a.f),$.rf(),s!==B.Y)
@@ -29731,7 +29731,7 @@ $.a0()
 s=A.b_()
 s.r=A.ah(a.f,0,0,0).gu()
 r=this.c
-r===$&&A.a()
+r===$&&A.b()
 J.ai(r.a.save())
 q=a.r
 r.a.translate(q.a,q.b)
@@ -29740,7 +29740,7 @@ this.mQ(a)
 r.a.restore()
 r.a.restore()},
 r1(a){var s=this.c
-s===$&&A.a()
+s===$&&A.b()
 J.ai(s.a.save())
 s.aj(new Float64Array(A.km(a.f.a)))
 this.mQ(a)
@@ -29750,7 +29750,7 @@ Jz(a){var s,r,q,p=a.f,o=p.a
 p=p.b
 s=a.b.cS(new A.i(-o,-p))
 r=this.c
-r===$&&A.a()
+r===$&&A.b()
 J.ai(r.a.save())
 r.a.translate(o,p)
 r.a.clipRect(A.cS(s),$.m6()[1],!1)
@@ -29766,7 +29766,7 @@ o.pop()
 r.a.restore()
 r.a.restore()},
 JC(a){var s,r,q,p,o,n,m,l=this.c
-l===$&&A.a()
+l===$&&A.b()
 J.ai(l.a.save())
 s=a.d
 l.a.translate(s.a,s.b)
@@ -29790,7 +29790,7 @@ r[1]=s[1]
 r[0]=s[0]
 q=new Float32Array(A.km(r))
 s=a.c.a
-s===$&&A.a()
+s===$&&A.b()
 p=A.I8(new A.fX(q),A.atO(s.a.cullRect()))
 for(o=this.a,n=A.X(o).i("bR<1>"),o=new A.bR(o,n),o=new A.bp(o,o.gD(0),n.i("bp<an.E>")),n=n.i("an.E");o.A();){m=o.d
 p=(m==null?n.a(m):m).zE(p)}a.r=p
@@ -29895,14 +29895,14 @@ s=a.d
 n.aV().a.translate(s.a,s.b)
 s=n.aV().a
 r=a.c.a
-r===$&&A.a()
+r===$&&A.b()
 r=r.a
 r.toString
 s.drawPicture(r)
 n.aV().a.restore()},
 JD(a){}}
 A.abr.prototype={
-$0(){return A.b([],t.RR)},
+$0(){return A.a([],t.RR)},
 $S:564}
 A.A8.prototype={
 aiQ(a){this.a.push(a)},
@@ -29932,7 +29932,7 @@ p.a.concat(A.axz(A.I7(o)))}},
 ajU(a,b){var s,r,q,p
 for(s=this.a,r=0;r<s.length;++r){q=s[r]
 p=a.gez().a
-p===$&&A.a()
+p===$&&A.b()
 p=p.a
 p.toString
 q.a.clipPath(p,$.rf(),b)}},
@@ -29942,59 +29942,59 @@ ajW(a,b){var s,r
 for(s=this.a,r=0;r<s.length;++r)s[r].a.clipRRect(A.m5(a),$.rf(),b)}}
 A.eK.prototype={
 ey(a){var s=a.a
-s===$&&A.a()
+s===$&&A.b()
 s.a.moveTo(this.a,this.b)},
 $idf:1}
 A.cg.prototype={
 ey(a){var s=a.a
-s===$&&A.a()
+s===$&&A.b()
 s.a.lineTo(this.a,this.b)},
 $idf:1}
 A.JP.prototype={
 ey(a){var s=this,r=a.a
-r===$&&A.a()
+r===$&&A.b()
 r=r.a
 r.toString
 A.fC(r,"cubicTo",[s.a,s.b,s.c,s.d,s.e,s.f])},
 $idf:1}
 A.IG.prototype={
 ey(a){var s=a.a
-s===$&&A.a()
+s===$&&A.b()
 s=s.a
 s.toString
 s.arcToOval(A.cS(this.a),this.b*57.29577951308232,this.c*57.29577951308232,!1)},
 $idf:1}
 A.IH.prototype={
 ey(a){var s=this.a,r=this.b,q=a.a
-q===$&&A.a()
+q===$&&A.b()
 q=q.a
 q.toString
 A.fC(q,"arcToRotated",[r.a,r.b,this.c,!0,!1,s.a,s.b])},
 $idf:1}
 A.fg.prototype={
 ey(a){var s=a.a
-s===$&&A.a()
+s===$&&A.b()
 s=s.a
 s.toString
 s.addRect(A.cS(this.a))},
 $idf:1}
 A.kv.prototype={
 ey(a){var s=a.a
-s===$&&A.a()
+s===$&&A.b()
 s=s.a
 s.toString
 s.addOval(A.cS(this.a),!1,1)},
 $idf:1}
 A.m9.prototype={
 ey(a){var s=a.a
-s===$&&A.a()
+s===$&&A.b()
 s=s.a
 s.toString
 s.addArc(A.cS(this.a),this.b*57.29577951308232,this.c*57.29577951308232)},
 $idf:1}
 A.dE.prototype={
 ey(a){var s=a.a
-s===$&&A.a()
+s===$&&A.b()
 s=s.a
 s.toString
 s.addRRect(A.m5(this.a),!1)},
@@ -30010,7 +30010,7 @@ ey(a){a.Tl(this.a.gez(),this.b,this.c)},
 $idf:1}
 A.rM.prototype={
 ey(a){var s=a.a
-s===$&&A.a()
+s===$&&A.b()
 s.a.close()},
 $idf:1}
 A.pj.prototype={
@@ -30035,7 +30035,7 @@ B.b.W(r.e)
 r.c=B.hQ
 s=r.d
 if(s!=null){s=s.a
-s===$&&A.a()
+s===$&&A.b()
 s.l()}r.d=null
 r.b=r.a.galm()},
 $iayO:1,
@@ -30045,7 +30045,7 @@ $0(){return A.aIE()},
 $S:208}
 A.a74.prototype={
 $0(){var s,r=this.a.gez(),q=this.b,p=r.a
-p===$&&A.a()
+p===$&&A.b()
 s=p.a.copy()
 A.fC(s,"transform",[1,0,q.a,0,1,q.b,0,0,1])
 r=r.b
@@ -30065,7 +30065,7 @@ $1(a){a.preventDefault()},
 $S:2}
 A.a08.prototype={
 gahG(){var s=this.a
-s===$&&A.a()
+s===$&&A.b()
 return s},
 l(){var s=this
 if(s.c||s.gn8()==null)return
@@ -30100,15 +30100,15 @@ E2(a){return t.f.b(a)&&a.h(0,"serialCount")!=null},
 Kq(a,b,c){var s,r,q=this.d
 if(q!=null){s=t.z
 r=this.e
-if(b){r===$&&A.a()
-q.oJ(A.c(["serialCount",r,"state",c],s,s),"flutter",a)}else{r===$&&A.a();++r
+if(b){r===$&&A.b()
+q.oJ(A.c(["serialCount",r,"state",c],s,s),"flutter",a)}else{r===$&&A.b();++r
 this.e=r
 q.XT(A.c(["serialCount",r,"state",c],s,s),"flutter",a)}}},
 IF(a){var s,r,q,p,o=this
 if(!o.E2(a)){s=o.d
 s.toString
 r=o.e
-r===$&&A.a()
+r===$&&A.b()
 q=t.z
 s.oJ(A.c(["serialCount",r+1,"state",a],q,q),"flutter",o.gmt())}o.e=o.gDe()
 s=$.aK()
@@ -30280,7 +30280,7 @@ s=s.e
 if(s!=null)s.b0()
 p.c.remove()
 s=p.a
-s===$&&A.a()
+s===$&&A.b()
 s.b0()
 s=p.gd5()
 r=s.b
@@ -30294,8 +30294,8 @@ if(r===$){s=t.S
 r=this.w=new A.KP(this,A.o(s,t.lz),A.o(s,t.m),A.P9(!0,s),A.P9(!0,s))}return r},
 gLZ(){var s,r,q,p=this,o=p.x
 if(o===$){s=p.gd5()
-r=A.b([],t.Gl)
-q=A.b([],t.LY)
+r=A.a([],t.Gl)
+q=A.a([],t.LY)
 p.x!==$&&A.aw()
 o=p.x=new A.R2(s,r,B.cu,q)}return o},
 HZ(){var s=this.y
@@ -30316,9 +30316,9 @@ agd(a1,a2,a3){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a=this,a0=null
 switch(a1){case"flutter/skia":s=B.ba.iR(a2)
 switch(s.a){case"Skia.setResourceCacheMaxBytes":r=A.dY(s.b)
 q=$.a0().a
-q===$&&A.a()
+q===$&&A.b()
 q.Kp(r)
-a.f5(a3,B.a6.bZ([A.b([!0],t.HZ)]))
+a.f5(a3,B.a6.bZ([A.a([!0],t.HZ)]))
 break}return
 case"flutter/assets":a2.toString
 a.rU(B.X.h4(J.wP(B.au.gcd(a2))),a3)
@@ -30463,7 +30463,7 @@ a41(){var s,r,q=v.G,p=new q.MutationObserver(A.at3(new A.a3C(this)))
 this.ok=p
 q=q.document.documentElement
 q.toString
-s=A.b(["style"],t.s)
+s=A.a(["style"],t.s)
 r=A.o(t.N,t.z)
 r.p(0,"attributes",!0)
 r.p(0,"attributeFilter",s)
@@ -30828,13 +30828,13 @@ n=h.d
 if(n!=null)o.ey(n)
 o=q.style
 n=h.gez().a
-n===$&&A.a()
+n===$&&A.b()
 n=n.a.toSVGString()
 o.setProperty("clip-path",'path("'+n+'")',"")}}else{o=o.d
 if(o!=null){h=o.gez()
 o=q.style
 n=h.a
-n===$&&A.a()
+n===$&&A.b()
 n=n.a.toSVGString()
 o.setProperty("clip-path",'path("'+n+'")',"")}}}o=q.style
 o.setProperty("transform-origin","0 0 0","")
@@ -30859,8 +30859,8 @@ afg(a){A.V(a.style,"transform-origin","0 0 0")
 A.V(a.style,"position","absolute")},
 aqD(){var s,r,q,p,o,n,m,l,k,j,i,h,g=this,f=g.acE(A.aSg(g.c.b,g.d))
 g.c.c=f
-s=A.b([],t.xj)
-r=A.b([],t.k_)
+s=A.a([],t.xj)
+r=A.a([],t.k_)
 q=A.o(t.sT,t.E9)
 p=t.SF
 p=A.a1(new A.c2(f.a,p),p.i("z.E"))
@@ -30871,7 +30871,7 @@ $.a0()
 l=new A.kD()
 s.push(l)
 k=g.z
-k===$&&A.a()
+k===$&&A.b()
 if(l.a!=null)A.a5(A.cW(u.r,null))
 j=l.FY(new A.x(0,0,k.a,k.b))
 r.push(j)
@@ -30909,9 +30909,9 @@ s=3
 return A.Y(p.b.mZ(i,h,a),$async$wf)
 case 3:for(c=h.length,g=0;g<h.length;h.length===c||(0,A.B)(h),++g){f=h[g]
 o=f.a
-o===$&&A.a()
+o===$&&A.b()
 o.l()}for(c=p.c.a,c=new A.bB(c,c.r,c.e,A.k(c).i("bB<2>"));c.A();){o=c.d
-if(o.a!=null)o.oc()}p.c=new A.yt(A.o(t.sT,t.Cc),A.b([],t.y8))
+if(o.a!=null)o.oc()}p.c=new A.yt(A.o(t.sT,t.Cc),A.a([],t.y8))
 c=p.r
 o=p.w
 if(A.m2(c,o)){B.b.W(c)
@@ -30928,12 +30928,12 @@ UY(a){var s=this.e.E(0,a)
 if(s!=null)s.a.remove()
 this.d.E(0,a)
 this.f.E(0,a)},
-acE(a){var s,r,q,p,o,n,m,l=A.b([],t.EV),k=a.a,j=t.SF
+acE(a){var s,r,q,p,o,n,m,l=A.a([],t.EV),k=a.a,j=t.SF
 j=A.a1(new A.c2(k,j),j.i("z.E"))
 s=j.length
 if(s<=A.db().gG9())return a
 r=s-A.db().gG9()
-q=A.b([],t.RR)
+q=A.a([],t.RR)
 p=A.i2(k,!0,t.id)
 for(o=k.length-1,n=!1;o>=0;--o){m=p[o]
 if(m instanceof A.di){if(!n){n=!0
@@ -30973,7 +30973,7 @@ DD(a){var s
 $label0$0:{if(a instanceof A.di){s=a.c.gmI()
 break $label0$0}if(a instanceof A.kE){s=this.e.h(0,a.a).a
 break $label0$0}s=null}return s},
-a81(a,b){var s,r,q=A.b([],t.t),p=a.a,o=b.a,n=Math.min(p.length,o.length),m=A.aD(t.S),l=0
+a81(a,b){var s,r,q=A.a([],t.t),p=a.a,o=b.a,n=Math.min(p.length,o.length),m=A.aD(t.S),l=0
 for(;;){if(!(l<n&&p[l].oe(o[l])))break
 q.push(l)
 if(p[l] instanceof A.di)m.C(0,l);++l}while(l<o.length){r=0
@@ -30985,7 +30985,7 @@ break}++r}if(!s)q.push(-1);++l}return q},
 l(){var s,r,q,p=this,o=p.e,n=A.k(o).i("b3<1>")
 n=A.a1(new A.b3(o,n),n.i("z.E"))
 B.b.am(n,p.gUX())
-p.c=new A.yt(A.o(t.sT,t.Cc),A.b([],t.y8))
+p.c=new A.yt(A.o(t.sT,t.Cc),A.a([],t.y8))
 p.d.W(0)
 o.W(0)
 p.f.W(0)
@@ -30999,7 +30999,7 @@ for(;s<o.length;o.length===n||(0,A.B)(o),++s){r=o[s]
 q=r.c
 if(q!=null)q.l()
 q=r.c
-if(q!=null)q.gmI().remove()}p.x=new A.rR(A.b([],t.EV))
+if(q!=null)q.gmI().remove()}p.x=new A.rR(A.a([],t.EV))
 o=p.y
 if(o!=null)o.l()
 o=p.y
@@ -31097,12 +31097,12 @@ A.adR.prototype={
 $1(a){},
 $S:2}
 A.abU.prototype={
-a60(){if("PointerEvent" in v.G.window){var s=new A.aoG(A.o(t.S,t.ZW),this,A.b([],t.H8))
+a60(){if("PointerEvent" in v.G.window){var s=new A.aoG(A.o(t.S,t.ZW),this,A.a([],t.H8))
 s.a_0()
 return s}throw A.j(A.bf("This browser does not support pointer events which are necessary to handle interactions with Flutter Web apps."))}}
 A.Jw.prototype={
 aqa(a,b){var s,r,q,p=this,o="pointerup",n=$.aK()
-if(!n.d.c){s=A.b(b.slice(0),A.X(b))
+if(!n.d.c){s=A.a(b.slice(0),A.X(b))
 A.m1(n.cy,n.db,new A.n3(s))
 return}if(p.c){n=p.a.a
 s=n[0]
@@ -31116,10 +31116,10 @@ n.toString
 s=A.ch(B.B,p.ga6B())
 r=a.timeStamp
 r.toString
-p.a=new A.Fy([A.b([new A.Fw(b,a,A.vp(r))],t.lN),!1,n,s])}else{s=A.b(b.slice(0),A.X(b))
+p.a=new A.Fy([A.a([new A.Fw(b,a,A.vp(r))],t.lN),!1,n,s])}else{s=A.a(b.slice(0),A.X(b))
 A.m1(n.cy,n.db,new A.n3(s))}}else{if(J.e(a.type,o)){s=a.timeStamp
 s.toString
-p.b=A.vp(s)}s=A.b(b.slice(0),A.X(b))
+p.b=A.vp(s)}s=A.a(b.slice(0),A.X(b))
 A.m1(n.cy,n.db,new A.n3(s))}},
 apT(a,b,c,d){var s,r=this
 if(!r.c){if(d&&r.agr(a))r.R_(a,b,c)
@@ -31151,10 +31151,10 @@ return A.vp(s).a-r.a>=5e4},
 Dy(){var s,r,q,p,o,n=this,m=n.a.a
 m[3].b0()
 s=t.D9
-r=A.b([],s)
+r=A.a([],s)
 for(m=m[0],q=m.length,p=0;p<m.length;m.length===q||(0,A.B)(m),++p){o=m[p]
 if(J.e(o.b.type,"pointerup"))n.b=o.c
-B.b.P(r,o.a)}m=A.b(r.slice(0),s)
+B.b.P(r,o.a)}m=A.a(r.slice(0),s)
 s=$.aK()
 A.m1(s.cy,s.db,new A.n3(m))
 n.a=null
@@ -31227,7 +31227,7 @@ m=o.d
 k=m==null
 q*=k?o.gcc():m
 p*=k?o.gcc():m}break
-default:break}j=A.b([],t.D9)
+default:break}j=A.a([],t.D9)
 o=b.a
 m=o.b
 i=A.aEb(a0,m,a)
@@ -31340,7 +31340,7 @@ a7a(a){var s,r
 if("getCoalescedEvents" in a){s=a.getCoalescedEvents()
 s=B.b.dP(s,t.m)
 r=new A.eB(s.a,s.$ti.i("eB<1,aA>"))
-if(!r.ga9(r))return r}return A.b([a],t.O)},
+if(!r.ga9(r))return r}return A.a([a],t.O)},
 PU(a){var s
 $label0$0:{if("mouse"===a){s=B.bx
 break $label0$0}if("pen"===a){s=B.aW
@@ -31387,7 +31387,7 @@ m=$.axZ()
 s.xY(r,q,m,o?B.bU:B.bw,n)}}this.c.$1(a)},
 $S:2}
 A.aoK.prototype={
-$1(a){var s,r,q=this.a,p=q.pu(a),o=A.b([],t.D9),n=q.Dn(p),m=a.buttons
+$1(a){var s,r,q=this.a,p=q.pu(a),o=A.a([],t.D9),n=q.Dn(p),m=a.buttons
 m.toString
 s=n.K5(J.ai(m))
 if(s!=null)q.rH(o,s,a)
@@ -31403,7 +31403,7 @@ A.aoJ.prototype={
 $0(){$.aK().gye().U1(this.a.a.b.a,B.lU)},
 $S:0}
 A.aoL.prototype={
-$1(a){var s,r,q,p,o=this.a,n=o.pu(a),m=o.Dn(n),l=A.b([],t.D9)
+$1(a){var s,r,q,p,o=this.a,n=o.pu(a),m=o.Dn(n),l=A.a([],t.D9)
 for(s=J.bs(o.a7a(a));s.A();){r=s.gN()
 q=r.buttons
 q.toString
@@ -31414,7 +31414,7 @@ q.toString
 o.D8(l,m.K6(J.ai(q)),r,a.target,n)}o.pj(a,l)},
 $S:37}
 A.aoM.prototype={
-$1(a){var s,r=this.a,q=r.Dn(r.pu(a)),p=A.b([],t.D9),o=a.buttons
+$1(a){var s,r=this.a,q=r.Dn(r.pu(a)),p=A.a([],t.D9),o=a.buttons
 o.toString
 s=q.Zx(J.ai(o))
 if(s!=null){r.rH(p,s,a)
@@ -31422,7 +31422,7 @@ r.pj(a,p)}},
 $S:37}
 A.aoN.prototype={
 $1(a){var s,r,q,p=this.a,o=p.pu(a),n=p.f
-if(n.ap(o)){s=A.b([],t.D9)
+if(n.ap(o)){s=A.a([],t.D9)
 n=n.h(0,o)
 n.toString
 r=a.buttons
@@ -31433,7 +31433,7 @@ p.pj(a,s)}}},
 $S:37}
 A.aoO.prototype={
 $1(a){var s,r=this.a,q=r.pu(a),p=r.f
-if(p.ap(q)){s=A.b([],t.D9)
+if(p.ap(q)){s=A.a([],t.D9)
 p.h(0,q).a=0
 r.Qj(a)
 r.rH(s,new A.kh(B.yO,0),a)
@@ -31569,13 +31569,13 @@ for(s=l.b,s=new A.bB(s,s.r,s.e,A.k(s).i("bB<2>")),r=n.d;s.A();){q=s.d.a
 p=m.gd5().b.h(0,q)
 q=p.a
 o=n.a
-o===$&&A.a()
+o===$&&A.b()
 r.p(0,q,o.GE(p))}m=l.d
 n.b=new A.dn(m,A.k(m).i("dn<1>")).mO(n.gadF())
 m=l.e
 n.c=new A.dn(m,A.k(m).i("dn<1>")).mO(n.gadH())},
 adG(a){var s=$.aK().gd5().b.h(0,a),r=s.a,q=this.a
-q===$&&A.a()
+q===$&&A.b()
 this.d.p(0,r,q.GE(s))},
 adI(a){var s,r=this.d
 if(!r.ap(a))return
@@ -31647,14 +31647,14 @@ n=c.e
 n.toString
 m=c.f
 m.toString
-m=A.b([q,p,o,n,m,m,0,0,0,0,c.a],t.t)
+m=A.a([q,p,o,n,m,m,0,0,0,0,c.a],t.t)
 $.avr.push(new A.mB(m))
 l=A.tg()
 if(l-$.aF2()>1e5){$.aKs=l
 q=$.aK()
 p=$.avr
 A.m1(q.fr,q.fx,p)
-$.avr=A.b([],t.no)}}return A.P(null,r)}})
+$.avr=A.a([],t.no)}}return A.P(null,r)}})
 return A.Q($async$xD,r)}}
 A.xa.prototype={
 J(){return"Assertiveness."+this.b}}
@@ -31695,42 +31695,42 @@ d3(){var s,r,q,p=this,o="true"
 p.hx()
 s=p.c
 if((s.R8&1)!==0){switch(p.w.a){case 0:r=p.a
-r===$&&A.a()
+r===$&&A.b()
 q=A.a6("checkbox")
 q.toString
 r.setAttribute("role",q)
 break
 case 1:r=p.a
-r===$&&A.a()
+r===$&&A.b()
 q=A.a6("radio")
 q.toString
 r.setAttribute("role",q)
 break
 case 2:r=p.a
-r===$&&A.a()
+r===$&&A.b()
 q=A.a6("switch")
 q.toString
 r.setAttribute("role",q)
 break}r=s.zl()
 q=p.a
-if(r===B.eK){q===$&&A.a()
+if(r===B.eK){q===$&&A.b()
 r=A.a6(o)
 r.toString
 q.setAttribute("aria-disabled",r)
 r=A.a6(o)
 r.toString
-q.setAttribute("disabled",r)}else{q===$&&A.a()
+q.setAttribute("disabled",r)}else{q===$&&A.b()
 q.removeAttribute("aria-disabled")
 q.removeAttribute("disabled")}s=s.a
 s=s.a===B.dy||s.d===B.as?o:"false"
 r=p.a
-r===$&&A.a()
+r===$&&A.b()
 s=A.a6(s)
 s.toString
 r.setAttribute("aria-checked",s)}},
 l(){this.rp()
 var s=this.a
-s===$&&A.a()
+s===$&&A.b()
 s.removeAttribute("aria-disabled")
 s.removeAttribute("disabled")},
 aO(){var s=this.e
@@ -31741,67 +31741,67 @@ A.Os.prototype={
 d3(){var s,r,q=this.a
 if((q.R8&1)!==0){s=q.a.b
 if(s!==B.F){q=q.p1
-q===$&&A.a()
+q===$&&A.b()
 r=s===B.as
 q=B.RT.n(0,q)
 s=this.b.a
-if(q){s===$&&A.a()
+if(q){s===$&&A.b()
 q=A.a6(r)
 q.toString
 s.setAttribute("aria-selected",q)
-s.removeAttribute("aria-current")}else{s===$&&A.a()
+s.removeAttribute("aria-current")}else{s===$&&A.b()
 s.removeAttribute("aria-selected")
 q=A.a6(r)
 q.toString
 s.setAttribute("aria-current",q)}}else{q=this.b.a
-q===$&&A.a()
+q===$&&A.b()
 q.removeAttribute("aria-selected")
 q.removeAttribute("aria-current")}}}}
 A.xz.prototype={
 d3(){var s,r=this,q=r.a
 if((q.R8&1)!==0)if(q.gI0()){q=q.a.a
 if(q===B.dy){q=r.b.a
-q===$&&A.a()
+q===$&&A.b()
 s=A.a6("true")
 s.toString
 q.setAttribute("aria-checked",s)}else{s=r.b.a
-if(q===B.eq){s===$&&A.a()
+if(q===B.eq){s===$&&A.b()
 q=A.a6("mixed")
 q.toString
-s.setAttribute("aria-checked",q)}else{s===$&&A.a()
+s.setAttribute("aria-checked",q)}else{s===$&&A.b()
 q=A.a6("false")
 q.toString
 s.setAttribute("aria-checked",q)}}}else{q=r.b.a
-q===$&&A.a()
+q===$&&A.b()
 q.removeAttribute("aria-checked")}}}
 A.rv.prototype={
 d3(){var s,r=this.a
 if((r.R8&1)!==0){r=r.zl()
 s=this.b.a
-if(r===B.eK){s===$&&A.a()
+if(r===B.eK){s===$&&A.b()
 r=A.a6("true")
 r.toString
-s.setAttribute("aria-disabled",r)}else{s===$&&A.a()
+s.setAttribute("aria-disabled",r)}else{s===$&&A.b()
 s.removeAttribute("aria-disabled")}}}}
 A.KF.prototype={
 d3(){var s,r=this.a
 if((r.R8&1)!==0){r=r.a.e
 s=this.b.a
-if(r!==B.F){s===$&&A.a()
+if(r!==B.F){s===$&&A.b()
 r=A.a6(r===B.as)
 r.toString
-s.setAttribute("aria-expanded",r)}else{s===$&&A.a()
+s.setAttribute("aria-expanded",r)}else{s===$&&A.b()
 s.removeAttribute("aria-expanded")}}}}
 A.oV.prototype={
 aO(){this.d.c=B.iR
 var s=this.b.a
-s===$&&A.a()
+s===$&&A.b()
 s.focus($.e_())
 return!0},
 d3(){var s,r,q=this,p=q.a
 if(p.a.r!==B.F){s=q.d
 if(s.b==null){r=q.b.a
-r===$&&A.a()
+r===$&&A.b()
 s.X9(p.k4,r)}p=p.a
 if(p.r===B.as){p=p.c
 p=p===B.F||p===B.as}else p=!1
@@ -31898,21 +31898,21 @@ A.V(r,"height",A.m(s.d-s.b)+"px")}A.V(p.w.style,"font-size","6px")
 s=p.w
 s.toString
 r=p.a
-r===$&&A.a()
+r===$&&A.b()
 r.append(s)}s=p.w
 s.toString
 r=A.a6("img")
 r.toString
 s.setAttribute("role",r)
 p.R3(p.w)}else if(s.gI7()){s=p.a
-s===$&&A.a()
+s===$&&A.b()
 r=A.a6("img")
 r.toString
 s.setAttribute("role",r)
 p.R3(s)
 p.CX()}else{p.CX()
 s=p.a
-s===$&&A.a()
+s===$&&A.b()
 s.removeAttribute("aria-label")}},
 R3(a){var s=this.c.z
 if(s!=null&&s.length!==0){a.toString
@@ -31925,7 +31925,7 @@ this.w=null}},
 l(){this.rp()
 this.CX()
 var s=this.a
-s===$&&A.a()
+s===$&&A.b()
 s.removeAttribute("aria-label")}}
 A.aeM.prototype={
 a3H(a){var s,r,q=this,p=q.c
@@ -31934,7 +31934,7 @@ q.cL(new A.q8(p,q))
 q.FH(B.a2)
 p=q.w
 s=q.a
-s===$&&A.a()
+s===$&&A.b()
 s.append(p)
 p.type="range"
 s=A.a6("slider")
@@ -31998,7 +31998,7 @@ q.x.C4()
 s=$.bP
 if(s==null)s=$.bP=A.dX()
 r=q.z
-r===$&&A.a()
+r===$&&A.b()
 B.b.E(s.w,r)
 q.Nc()
 q.w.remove()}}
@@ -32031,7 +32031,7 @@ A.V(q,"white-space","nowrap")
 A.V(q,"transform-origin","0 0 0")
 A.V(q,"pointer-events","none")
 q=a.c.ry.a
-q===$&&A.a()
+q===$&&A.b()
 q.appendChild(s)
 s=r
 break
@@ -32041,15 +32041,15 @@ aO(){this.gzJ().tabIndex=-1
 this.gzJ().focus($.e_())}}
 A.a_B.prototype={
 c8(a){var s,r=this.b.a
-r===$&&A.a()
+r===$&&A.b()
 s=A.a6(a)
 s.toString
 r.setAttribute("aria-label",s)},
 yK(){var s=this.b.a
-s===$&&A.a()
+s===$&&A.b()
 s.removeAttribute("aria-label")},
 gzJ(){var s=this.b.a
-s===$&&A.a()
+s===$&&A.b()
 return s}}
 A.a2g.prototype={
 c8(a){var s,r=this.c
@@ -32057,12 +32057,12 @@ if(r!=null)A.azh(r)
 s=v.G.document.createTextNode(a)
 this.c=s
 r=this.b.c.ry.a
-r===$&&A.a()
+r===$&&A.b()
 r.appendChild(s)},
 yK(){var s=this.c
 if(s!=null)A.azh(s)},
 gzJ(){var s=this.b.a
-s===$&&A.a()
+s===$&&A.b()
 return s}}
 A.C3.prototype={
 c8(a){var s,r=this,q=r.b.c.y,p=q==null?null:new A.y(q.c-q.a,q.d-q.b)
@@ -32073,7 +32073,7 @@ if(!q||s)r.aih(p)
 r.d=a
 r.e=p},
 aih(a){if(a==null){A.V(this.c.style,"transform","")
-return}if($.OQ==null){$.OQ=A.b([],t.L7)
+return}if($.OQ==null){$.OQ=A.a([],t.L7)
 this.b.c.ok.x.push(A.aQj())}$.OQ.push(new A.Vi(this,a))},
 yK(){this.c.remove()},
 gzJ(){return this.c}}
@@ -32094,7 +32094,7 @@ if(l!=null&&B.c.fN(l).length!==0){r=$.aA7
 if(r==null){if($.bc().gdz()!==B.cv){r=$.bc().gmh()
 r=B.c.n(r,"Edg/")||A.aT_()||A.aSZ()}else r=!0
 r=$.aA7=r}if(r){m=o.b.a
-m===$&&A.a()
+m===$&&A.b()
 l=A.a6(l)
 l.toString
 m.setAttribute("aria-description",l)
@@ -32112,7 +32112,7 @@ r.textContent=l
 m=o.e
 l=m==null?n:m.isConnected
 if(!(l==null?!1:l)){l=o.b.a
-l===$&&A.a()
+l===$&&A.b()
 p=l.parentElement
 if(p!=null&&p.tagName.toLowerCase()!=="flt-semantics-host"){m.toString
 p.append(m)}else{l=v.G.document.body
@@ -32122,7 +32122,7 @@ l.append(m)}}m=o.e
 m=m==null?n:m.id
 m.toString
 l=o.b.a
-l===$&&A.a()
+l===$&&A.b()
 m=A.a6(m)
 m.toString
 l.setAttribute("aria-describedby",m)
@@ -32132,7 +32132,7 @@ r=p==null
 if(r||p.a!==q){if(!r)p.yK()
 p=s.f=q.ali(s.b)}return p},
 Mx(){var s=this.b.a
-s===$&&A.a()
+s===$&&A.b()
 s.removeAttribute("aria-description")
 s.removeAttribute("aria-describedby")
 s=this.e
@@ -32179,10 +32179,10 @@ s=this.c
 if((s.R8&67108864)!==0){s=s.k2
 r=s!=null&&s.length!==0
 q=this.a
-if(r){q===$&&A.a()
+if(r){q===$&&A.b()
 s=A.a6(s)
 s.toString
-q.setAttribute("href",s)}else{q===$&&A.a()
+q.setAttribute("href",s)}else{q===$&&A.b()
 q.removeAttribute("href")}}},
 aO(){var s=this.e
 if(s==null)s=null
@@ -32210,13 +32210,13 @@ r.Tt(s,B.iX)}}}}
 A.Oz.prototype={
 d3(){this.hx()
 this.c.ok.x.push(this.gFm())},
-Fn(){var s,r,q=this.c,p=q.ok.e,o=t.t,n=A.b([],o),m=q.k4,l=A.b([],o)
+Fn(){var s,r,q=this.c,p=q.ok.e,o=t.t,n=A.a([],o),m=q.k4,l=A.a([],o)
 q=p.h(0,m)
 if((q==null?null:q.dy)!=null){q=p.h(0,m).dy
 q.toString
 B.b.P(l,q)}while(l.length!==0){s=B.b.de(l,0)
 if(p.h(0,s)!=null){q=p.h(0,s).p1
-q===$&&A.a()
+q===$&&A.b()
 q=q===B.lf||q===B.zf||q===B.zg}else q=!1
 if(q)n.push(s)
 else{q=p.h(0,s)
@@ -32224,7 +32224,7 @@ if((q==null?null:q.dy)!=null){q=p.h(0,s).dy
 q.toString
 B.b.P(l,q)}}}r=new A.a_(n,new A.aeX(),t.gn).bj(0," ")
 q=this.a
-q===$&&A.a()
+q===$&&A.b()
 o=A.a6(r)
 o.toString
 q.setAttribute("aria-owns",o)},
@@ -32238,13 +32238,13 @@ $S:70}
 A.OA.prototype={
 d3(){this.hx()
 this.c.ok.x.push(this.gFm())},
-Fn(){var s,r,q=this.c,p=q.ok.e,o=t.t,n=A.b([],o),m=q.k4,l=A.b([],o)
+Fn(){var s,r,q=this.c,p=q.ok.e,o=t.t,n=A.a([],o),m=q.k4,l=A.a([],o)
 q=p.h(0,m)
 if((q==null?null:q.dy)!=null){q=p.h(0,m).dy
 q.toString
 B.b.P(l,q)}while(l.length!==0){s=B.b.de(l,0)
 if(p.h(0,s)!=null){q=p.h(0,s).p1
-q===$&&A.a()
+q===$&&A.b()
 q=q===B.lf||q===B.zf||q===B.zg}else q=!1
 if(q)n.push(s)
 else{q=p.h(0,s)
@@ -32252,7 +32252,7 @@ if((q==null?null:q.dy)!=null){q=p.h(0,s).dy
 q.toString
 B.b.P(l,q)}}}r=new A.a_(n,new A.aeT(),t.gn).bj(0," ")
 q=this.a
-q===$&&A.a()
+q===$&&A.b()
 o=A.a6(r)
 o.toString
 q.setAttribute("aria-owns",o)},
@@ -32268,10 +32268,10 @@ d3(){var s,r
 this.hx()
 s=this.c.a
 r=this.a
-if(s.e!==B.F){r===$&&A.a()
+if(s.e!==B.F){r===$&&A.b()
 s=A.a6("menu")
 s.toString
-r.setAttribute("aria-haspopup",s)}else{r===$&&A.a()
+r.setAttribute("aria-haspopup",s)}else{r===$&&A.b()
 r.removeAttribute("aria-haspopup")}},
 aO(){var s=this.e
 if(s==null)s=null
@@ -32294,21 +32294,21 @@ q.hx()
 s=q.c
 r=s.go
 if(r!==-1){if((s.R8&8388608)!==0){s=q.a
-s===$&&A.a()
+s===$&&A.b()
 r=A.a6("flt-pv-"+r)
 r.toString
 s.setAttribute("aria-owns",r)}}else{s=q.a
-s===$&&A.a()
+s===$&&A.b()
 s.removeAttribute("aria-owns")}},
 aO(){return!1}}
 A.O0.prototype={
 d3(){var s,r=this.a
 if((r.R8&1)!==0){r=r.a.f
 s=this.b.a
-if(r!==B.F){s===$&&A.a()
+if(r!==B.F){s===$&&A.b()
 r=A.a6(r===B.as)
 r.toString
-s.setAttribute("aria-required",r)}else{s===$&&A.a()
+s.setAttribute("aria-required",r)}else{s===$&&A.b()
 s.removeAttribute("aria-required")}}}}
 A.nk.prototype={
 Ct(a,b){var s=this,r=s.c,q=r.ok,p=new A.oV(new A.ol(q,B.ds),r,s)
@@ -32323,17 +32323,17 @@ s=this.c
 if(s.a.at){r=s.z
 s=r==null?"":r
 q=this.a
-q===$&&A.a()
+q===$&&A.b()
 s=A.a6(s)
 s.toString
 q.setAttribute("aria-label",s)}},
 UJ(a){var s,r
 if(this.c.a.at)return
 s=a.a.ry.a
-s===$&&A.a()
+s===$&&A.b()
 s=s.id
 r=this.a
-r===$&&A.a()
+r===$&&A.b()
 s=A.a6(s)
 s.toString
 r.setAttribute("aria-describedby",s)},
@@ -32384,16 +32384,16 @@ q.toString
 q=(q&32)!==0||(q&16)!==0
 p=n.a
 if(q){r[0]=0
-p===$&&A.a()
-r[1]=p.scrollTop}else{p===$&&A.a()
+p===$&&A.b()
+r[1]=p.scrollTop}else{p===$&&A.b()
 r[0]=p.scrollLeft
 r[1]=0}o=B.c7.bZ(r)
 $.aK().qu(s.ok.a,s.k4,B.zc,o)}},
 aG(){var s=this.c,r=s.ry.a
-r===$&&A.a()
+r===$&&A.b()
 A.V(r.style,"overflow","")
 s=s.ry.a
-s===$&&A.a()
+s===$&&A.b()
 A.V(s.style,"scrollbar-width","none")
 s=this.x
 r=s.style
@@ -32401,14 +32401,14 @@ A.V(r,"position","absolute")
 A.V(r,"transform-origin","0 0 0")
 A.V(r,"pointer-events","none")
 r=this.a
-r===$&&A.a()
+r===$&&A.b()
 r.append(s)},
 d3(){var s,r,q,p=this
 p.hx()
 p.c.ok.x.push(new A.af6(p))
 p.Sn()
 if(p.y==null){s=p.a
-s===$&&A.a()
+s===$&&A.b()
 A.V(s.style,"touch-action","none")
 r=new A.af7(p)
 p.w=r
@@ -32420,8 +32420,8 @@ gwS(){var s,r=this.c.b
 r.toString
 r=(r&32)!==0||(r&16)!==0
 s=this.a
-if(r){s===$&&A.a()
-return J.ai(s.scrollTop)}else{s===$&&A.a()
+if(r){s===$&&A.b()
+return J.ai(s.scrollTop)}else{s===$&&A.b()
 return J.ai(s.scrollLeft)}},
 SL(){var s,r,q,p,o,n,m=this,l="width",k="height",j=m.c,i=j.y
 if(i==null){$.e1().$1("Warning! the rect attribute of semanticsObject is null")
@@ -32438,7 +32438,7 @@ if(!p||(q&16)!==0){q=m.x.style
 A.V(q,l,"1px")
 A.V(q,k,B.d.a1(n,1)+"px")
 q=m.a
-q===$&&A.a()
+q===$&&A.b()
 j.to=q.scrollTop
 j.x1=0}else{q=(q&4)!==0||(q&8)!==0
 p=m.x
@@ -32447,13 +32447,13 @@ A.V(q,l,B.d.a1(n,1)+"px")
 A.V(q,k,"1px")
 j.to=0
 q=m.a
-q===$&&A.a()
+q===$&&A.b()
 j.x1=q.scrollLeft}else{q=p.style
 A.V(q,"transform","translate(0px,0px)")
 A.V(q,l,"0px")
 A.V(q,k,"0px")
 q=m.a
-q===$&&A.a()
+q===$&&A.b()
 q.scrollLeft=0
 q.scrollTop=0
 j.x1=j.to=0}}},
@@ -32461,22 +32461,22 @@ Sn(){var s,r=this,q="overflow",p=$.bP
 switch((p==null?$.bP=A.dX():p).f.a){case 1:p=r.c.b
 p.toString
 if((p&32)!==0||(p&16)!==0){p=r.a
-p===$&&A.a()
+p===$&&A.b()
 p.style.removeProperty("overflow")
 A.V(p.style,"overflow-y","scroll")}else{p=(p&4)!==0||(p&8)!==0
 s=r.a
-if(p){s===$&&A.a()
+if(p){s===$&&A.b()
 s.style.removeProperty("overflow")
-A.V(s.style,"overflow-x","scroll")}else{s===$&&A.a()
+A.V(s.style,"overflow-x","scroll")}else{s===$&&A.b()
 A.V(s.style,q,"hidden")}}break
 case 0:p=r.a
-p===$&&A.a()
+p===$&&A.b()
 A.V(p.style,q,"hidden")
 break}},
 l(){var s,r,q,p=this
 p.rp()
 s=p.a
-s===$&&A.a()
+s===$&&A.b()
 r=s.style
 r.removeProperty("overflowY")
 r.removeProperty("overflowX")
@@ -32496,7 +32496,7 @@ $0(){var s,r=this.a,q=r.c,p=q.b
 p.toString
 if((p&32)!==0||(p&16)!==0||(p&4)!==0||(p&8)!==0){s=q.r
 if(s!==r.gwS()){p=r.a
-p===$&&A.a()
+p===$&&A.b()
 s.toString
 p.scrollTop=s
 r.z=r.gwS()}}r.SL()
@@ -32513,7 +32513,7 @@ if(!((r&32)!==0||(r&16)!==0||(r&4)!==0||(r&8)!==0))return
 s.aeW()},
 $S:2}
 A.yx.prototype={
-k(a){var s=A.b([],t.s),r=this.a
+k(a){var s=A.a([],t.s),r=this.a
 if((r&1)!==0)s.push("accessibleNavigation")
 if((r&2)!==0)s.push("invertColors")
 if((r&4)!==0)s.push("disableAnimations")
@@ -32562,14 +32562,14 @@ return!0},
 bP(){return A.bH(v.G.document,"flt-semantics")},
 aG(){},
 aru(a,b){var s=this.a
-s===$&&A.a()
+s===$&&A.b()
 s.removeEventListener(a,b)},
 FH(a){var s=this,r=new A.LU(a,s.c,s)
 s.f=r
 s.cL(r)},
 FK(){var s=this.c
 if(s.a.b!==B.F&&!s.gI0())this.cL(new A.Os(s,this))},
-cL(a){var s=this.d;(s==null?this.d=A.b([],t.JO):s).push(a)},
+cL(a){var s=this.d;(s==null?this.d=A.a([],t.JO):s).push(a)},
 d3(){var s,r,q,p,o,n=this,m=n.c
 if((m.R8&134217728)!==0)n.Jq()
 s=n.d
@@ -32577,16 +32577,16 @@ if(s!=null)for(r=s.length,q=0;q<s.length;s.length===r||(0,A.B)(s),++q)s[q].d3()
 if((m.R8&33554432)!==0){r=m.k1
 p=r!=null&&r.length!==0
 o=n.a
-if(p){o===$&&A.a()
+if(p){o===$&&A.b()
 r=A.a6(r)
 r.toString
-o.setAttribute("flt-semantics-identifier",r)}else{o===$&&A.a()
+o.setAttribute("flt-semantics-identifier",r)}else{o===$&&A.b()
 o.removeAttribute("flt-semantics-identifier")}}if((m.R8&134217728)!==0)n.ahN()
 if((m.R8&268435456)!==0)m.ok.x.push(n.gahY())},
 ahN(){var s=this.c,r=s.p3
 if(r!=null&&r.length!==0)s.ok.x.push(new A.af1(this))
 s=this.a
-s===$&&A.a()
+s===$&&A.b()
 s.removeAttribute("aria-controls")},
 ahZ(){var s,r=this.c,q=r.p4,p=q==null?null:q.Q2("_")
 if(p==null)p=""
@@ -32594,26 +32594,26 @@ q=r.p4
 r=r.RG
 s=J.e(q,r==null?null:r.p4)
 if(p.length===0||s){r=this.a
-r===$&&A.a()
+r===$&&A.b()
 r.removeAttribute("lang")
 return}r=this.a
-r===$&&A.a()
+r===$&&A.b()
 q=A.a6(p)
 q.toString
 r.setAttribute("lang",q)},
 Jq(){var s=this.c,r=s.ry.a
-r===$&&A.a()
+r===$&&A.b()
 A.aw6(r,s.k3)},
 l(){var s=this.a
-s===$&&A.a()
+s===$&&A.b()
 s.removeAttribute("role")}}
 A.af1.prototype={
-$0(){var s,r,q,p,o,n,m=A.b([],t.s)
+$0(){var s,r,q,p,o,n,m=A.a([],t.s)
 for(s=this.a,r=s.c,q=r.p3,p=q.length,r=r.ok.f,o=0;o<q.length;q.length===p||(0,A.B)(q),++o){n=r.h(0,q[o])
 if(n==null)continue
 m.push("flt-semantic-node-"+A.m(n))}if(m.length!==0){r=B.b.bj(m," ")
 s=s.a
-s===$&&A.a()
+s===$&&A.b()
 r=A.a6(r)
 r.toString
 s.setAttribute("aria-controls",r)
@@ -32627,12 +32627,12 @@ r=r!=null&&!B.bL.ga9(r)
 q=s.f
 if(r){q.d=B.a2
 r=s.a
-r===$&&A.a()
+r===$&&A.b()
 q=A.a6("group")
 q.toString
 r.setAttribute("role",q)}else{q.d=B.eS
 r=s.a
-r===$&&A.a()
+r===$&&A.b()
 r.removeAttribute("role")}s.hx()},
 aO(){var s,r,q=this.c
 if(q.a.r!==B.F){s=this.e
@@ -32666,31 +32666,31 @@ if(p!=null)a1.w.push(p)}a0.rx=null
 return}r=a0.dy
 r.toString
 o=a1.length
-n=A.b([],t.Qo)
+n=A.a([],t.Qo)
 for(m=a0.ok,l=m.e,q=0;q<o;++q){k=l.h(0,r[q])
 k.toString
 n.push(k)}if(o>1)for(q=0;q<o;++q){r=l.h(0,a1[q]).ry.a
-r===$&&A.a()
+r===$&&A.b()
 r=r.style
 r.setProperty("z-index",""+(o-q),"")}a1=a0.rx
 if(a1==null||a1.length===0){for(a1=n.length,j=0;j<n.length;n.length===a1||(0,A.B)(n),++j){i=n[j]
 r=a0.ry.a
-r===$&&A.a()
+r===$&&A.b()
 l=i.ry.a
-l===$&&A.a()
+l===$&&A.b()
 r.append(l)
 i.RG=a0
 m.r.p(0,i.k4,a0)}a0.rx=n
 return}h=a1.length
 r=t.t
-g=A.b([],r)
+g=A.a([],r)
 f=Math.min(h,o)
 e=0
 for(;;){if(!(e<f&&a1[e]===n[e]))break
 g.push(e);++e}if(h===n.length&&e===o)return
 while(e<o){for(d=0;d<h;++d)if(a1[d]===n[e]){g.push(d)
 break}++e}c=A.aEv(g)
-b=A.b([],r)
+b=A.a([],r)
 for(r=c.length,q=0;q<r;++q)b.push(a1[g[c[q]]].k4)
 for(q=0;q<h;++q)if(!B.b.n(g,q)){p=l.h(0,a1[q].k4)
 if(p!=null)m.w.push(p)}for(q=o-1,a=null;q>=0;--q,a=a1){i=n[q]
@@ -32698,20 +32698,20 @@ a1=i.k4
 if(!B.b.n(b,a1)){r=a0.ry
 l=i.ry
 if(a==null){r=r.a
-r===$&&A.a()
+r===$&&A.b()
 l=l.a
-l===$&&A.a()
+l===$&&A.b()
 r.append(l)}else{r=r.a
-r===$&&A.a()
+r===$&&A.b()
 l=l.a
-l===$&&A.a()
+l===$&&A.b()
 r.insertBefore(l,a)}i.RG=a0
 m.r.p(0,a1,a0)}a1=i.ry.a
-a1===$&&A.a()}a0.rx=n},
+a1===$&&A.b()}a0.rx=n},
 a7U(){var s,r,q=this
 if(q.go!==-1)return B.kc
 s=q.p1
-s===$&&A.a()
+s===$&&A.b()
 switch(s.a){case 1:return B.jL
 case 3:return B.jN
 case 2:return B.jM
@@ -32768,7 +32768,7 @@ break
 case 1:s=new A.af5(A.bH(v.G.document,"flt-semantics-scroll-overflow"),B.jI,p)
 s.cF(B.jI,p,B.a2)
 r=s.a
-r===$&&A.a()
+r===$&&A.b()
 q=A.a6("group")
 q.toString
 r.setAttribute("role",q)
@@ -32779,7 +32779,7 @@ case 2:s=new A.aeC(B.hd,p)
 s.cF(B.hd,p,B.hy)
 s.cL(A.uS(p,s))
 r=s.a
-r===$&&A.a()
+r===$&&A.b()
 q=A.a6("button")
 q.toString
 r.setAttribute("role",q)
@@ -32787,7 +32787,7 @@ break
 case 4:s=new A.af_(B.k9,p)
 s.cF(B.k9,p,B.a2)
 r=s.a
-r===$&&A.a()
+r===$&&A.b()
 q=A.a6("radiogroup")
 q.toString
 r.setAttribute("role",q)
@@ -32820,7 +32820,7 @@ break
 case 23:s=new A.aeQ(B.jW,p)
 s.cF(B.jW,p,B.a2)
 r=s.a
-r===$&&A.a()
+r===$&&A.b()
 q=A.a6("list")
 q.toString
 r.setAttribute("role",q)
@@ -32828,7 +32828,7 @@ break
 case 24:s=new A.aeR(B.jX,p)
 s.cF(B.jX,p,B.a2)
 r=s.a
-r===$&&A.a()
+r===$&&A.b()
 q=A.a6("listitem")
 q.toString
 r.setAttribute("role",q)
@@ -32851,7 +32851,7 @@ break
 case 12:s=new A.afa(B.jL,p)
 s.cF(B.jL,p,B.a2)
 r=s.a
-r===$&&A.a()
+r===$&&A.b()
 q=A.a6("tab")
 q.toString
 r.setAttribute("role",q)
@@ -32860,7 +32860,7 @@ break
 case 13:s=new A.afb(B.jM,p)
 s.cF(B.jM,p,B.a2)
 r=s.a
-r===$&&A.a()
+r===$&&A.b()
 q=A.a6("tablist")
 q.toString
 r.setAttribute("role",q)
@@ -32868,7 +32868,7 @@ break
 case 14:s=new A.afc(B.jN,p)
 s.cF(B.jN,p,B.a2)
 r=s.a
-r===$&&A.a()
+r===$&&A.b()
 q=A.a6("tabpanel")
 q.toString
 r.setAttribute("role",q)
@@ -32880,7 +32880,7 @@ break
 case 17:s=new A.afd(B.jQ,p)
 s.cF(B.jQ,p,B.a2)
 r=s.a
-r===$&&A.a()
+r===$&&A.b()
 q=A.a6("table")
 q.toString
 r.setAttribute("role",q)
@@ -32888,7 +32888,7 @@ break
 case 18:s=new A.aeD(B.jR,p)
 s.cF(B.jR,p,B.eS)
 r=s.a
-r===$&&A.a()
+r===$&&A.b()
 q=A.a6("cell")
 q.toString
 r.setAttribute("role",q)
@@ -32896,7 +32896,7 @@ break
 case 19:s=new A.af4(B.jS,p)
 s.cF(B.jS,p,B.a2)
 r=s.a
-r===$&&A.a()
+r===$&&A.b()
 q=A.a6("row")
 q.toString
 r.setAttribute("role",q)
@@ -32904,7 +32904,7 @@ break
 case 20:s=new A.aeF(B.jT,p)
 s.cF(B.jT,p,B.a2)
 r=s.a
-r===$&&A.a()
+r===$&&A.b()
 q=A.a6("columnheader")
 q.toString
 r.setAttribute("role",q)
@@ -32912,7 +32912,7 @@ break
 case 26:s=new A.Oz(B.jZ,p)
 s.cF(B.jZ,p,B.a2)
 r=s.a
-r===$&&A.a()
+r===$&&A.b()
 q=A.a6("menu")
 q.toString
 r.setAttribute("role",q)
@@ -32920,7 +32920,7 @@ break
 case 27:s=new A.OA(B.k_,p)
 s.cF(B.k_,p,B.a2)
 r=s.a
-r===$&&A.a()
+r===$&&A.b()
 q=A.a6("menubar")
 q.toString
 r.setAttribute("role",q)
@@ -32928,7 +32928,7 @@ break
 case 28:s=new A.aeU(B.k0,p)
 s.cF(B.k0,p,B.a2)
 r=s.a
-r===$&&A.a()
+r===$&&A.b()
 q=A.a6("menuitem")
 q.toString
 r.setAttribute("role",q)
@@ -32938,7 +32938,7 @@ break
 case 29:s=new A.aeV(B.k1,p)
 s.cF(B.k1,p,B.a2)
 r=s.a
-r===$&&A.a()
+r===$&&A.b()
 q=A.a6("menuitemcheckbox")
 q.toString
 r.setAttribute("role",q)
@@ -32948,7 +32948,7 @@ break
 case 30:s=new A.aeW(B.k2,p)
 s.cF(B.k2,p,B.a2)
 r=s.a
-r===$&&A.a()
+r===$&&A.b()
 q=A.a6("menuitemradio")
 q.toString
 r.setAttribute("role",q)
@@ -32958,7 +32958,7 @@ break
 case 22:s=new A.aeB(B.jV,p)
 s.cF(B.jV,p,B.a2)
 r=s.a
-r===$&&A.a()
+r===$&&A.b()
 q=A.a6("alert")
 q.toString
 r.setAttribute("role",q)
@@ -32966,7 +32966,7 @@ break
 case 21:s=new A.af9(B.jU,p)
 s.cF(B.jU,p,B.a2)
 r=s.a
-r===$&&A.a()
+r===$&&A.b()
 q=A.a6("status")
 q.toString
 r.setAttribute("role",q)
@@ -32980,7 +32980,7 @@ break
 case 31:s=new A.aeG(B.k3,p)
 s.cF(B.k3,p,B.a2)
 r=s.a
-r===$&&A.a()
+r===$&&A.b()
 q=A.a6("complementary")
 q.toString
 r.setAttribute("role",q)
@@ -32988,7 +32988,7 @@ break
 case 32:s=new A.aeH(B.k4,p)
 s.cF(B.k4,p,B.a2)
 r=s.a
-r===$&&A.a()
+r===$&&A.b()
 q=A.a6("contentinfo")
 q.toString
 r.setAttribute("role",q)
@@ -32996,7 +32996,7 @@ break
 case 33:s=new A.aeS(B.k5,p)
 s.cF(B.k5,p,B.a2)
 r=s.a
-r===$&&A.a()
+r===$&&A.b()
 q=A.a6("main")
 q.toString
 r.setAttribute("role",q)
@@ -33004,7 +33004,7 @@ break
 case 34:s=new A.aeY(B.k6,p)
 s.cF(B.k6,p,B.a2)
 r=s.a
-r===$&&A.a()
+r===$&&A.b()
 q=A.a6("navigation")
 q.toString
 r.setAttribute("role",q)
@@ -33012,7 +33012,7 @@ break
 case 35:s=new A.af0(B.k7,p)
 s.cF(B.k7,p,B.a2)
 r=s.a
-r===$&&A.a()
+r===$&&A.b()
 q=A.a6("region")
 q.toString
 r.setAttribute("role",q)
@@ -33024,22 +33024,22 @@ default:s=null}return s},
 ai2(){var s,r,q,p,o,n,m,l=this,k=l.ry,j=l.a7U(),i=l.ry
 if(i==null)s=null
 else{i=i.a
-i===$&&A.a()
+i===$&&A.b()
 s=i}if(k!=null)if(k.b===j){k.d3()
 return}else{k.l()
 k=l.ry=null}if(k==null){k=l.ry=l.a68(j)
 k.aG()
 k.d3()}i=l.ry.a
-i===$&&A.a()
+i===$&&A.b()
 if(s!==i){i=l.rx
 if(i!=null)for(r=i.length,q=0;q<i.length;i.length===r||(0,A.B)(i),++q){p=i[q]
 o=l.ry.a
-o===$&&A.a()
+o===$&&A.b()
 n=p.ry.a
-n===$&&A.a()
+n===$&&A.b()
 o.append(n)}m=s==null?null:s.parentElement
 if(m!=null){i=l.ry.a
-i===$&&A.a()
+i===$&&A.b()
 m.insertBefore(i,s)
 s.remove()}}},
 gI0(){var s=this.a
@@ -33054,7 +33054,7 @@ if(n.xr!==s||n.x2!==r){n.xr=s
 n.x2=r
 a.C(0,n)}}},
 B_(){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5=this,a6=a5.ry.a
-a6===$&&A.a()
+a6===$&&A.b()
 a6=a6.style
 s=a5.y
 A.V(a6,"width",A.m(s.c-s.a)+"px")
@@ -33066,7 +33066,7 @@ q=a5.dx
 a6=q==null
 p=a6||A.aEN(q)===B.Aw
 if(r&&p&&a5.x2===0&&a5.xr===0){a6=a5.ry.a
-a6===$&&A.a()
+a6===$&&A.b()
 A.aBq(a6)
 return}o=A.kb("effectiveTransform")
 s=a5.y
@@ -33103,11 +33103,11 @@ a6=o.aV().a
 l=a6[0]===1&&a6[1]===0&&a6[2]===0&&a6[3]===0&&a6[4]===0&&a6[5]===1&&a6[6]===0&&a6[7]===0&&a6[8]===0&&a6[9]===0&&a6[10]===1&&a6[11]===0&&a6[12]===0&&a6[13]===0&&a6[14]===0&&a6[15]===1}else{if(!p)o.b=new A.fX(q)
 l=p}a6=a5.ry
 if(!l){a6=a6.a
-a6===$&&A.a()
+a6===$&&A.b()
 a6=a6.style
 A.V(a6,"transform-origin","0 0 0")
 A.V(a6,"transform",A.atN(o.aV().a))}else{a6=a6.a
-a6===$&&A.a()
+a6===$&&A.b()
 A.aBq(a6)}},
 YK(){var s,r,q,p=A.aD(t.UF)
 this.XY(p)
@@ -33177,17 +33177,17 @@ if(n==null)n=o.a(n)
 q.E(0,n.k4)
 m=$.aK().gd5()
 l=n.ry.a
-l===$&&A.a()
+l===$&&A.b()
 m.Fd(l,!0)
 n.RG=null
 l=n.ry
 if(l!=null)l.l()
-n.ry=null}k.w=A.b([],t.Qo)
+n.ry=null}k.w=A.a([],t.Qo)
 k.r=A.o(t.S,j)
 try{j=k.x
 r=j.length
 if(r!==0){for(p=0;p<j.length;j.length===r||(0,A.B)(j),++p){s=j[p]
-s.$0()}k.x=A.b([],t.qj)}}finally{}k.y=!1},
+s.$0()}k.x=A.a([],t.qj)}}finally{}k.y=!1},
 asn(a){var s,r,q,p,o,n,m,l,k,j,i=this,h=$.bP;(h==null?$.bP=A.dX():h).alL()
 h=$.bP
 if(!(h==null?$.bP=A.dX():h).b)return
@@ -33272,10 +33272,10 @@ m.R8=(m.R8|268435456)>>>0}m.ai2()
 o=m.ry.gpR()
 l=m.ry
 if(o){o=l.a
-o===$&&A.a()
+o===$&&A.b()
 o=o.style
 o.setProperty("pointer-events","all","")}else{o=l.a
-o===$&&A.a()
+o===$&&A.b()
 o=o.style
 o.setProperty("pointer-events","none","")}}j=A.aD(t.UF)
 for(p=0;p<s.length;s.length===o||(0,A.B)(s),++p){m=q.h(0,s[p].a)
@@ -33285,7 +33285,7 @@ if((h&512)!==0||(h&65536)!==0||(h&64)!==0||(h&524288)!==0){j.C(0,m)
 m.XY(j)}m.R8=0}for(h=A.ci(j,j.r,j.$ti.c),r=h.$ti.c;h.A();){o=h.d;(o==null?r.a(o):o).B_()}h=q.h(0,0)
 h.toString
 if(i.c==null){h=h.ry.a
-h===$&&A.a()
+h===$&&A.b()
 i.c=h
 i.b.append(h)}i.Ny()},
 iw(){var s,r,q=this,p=q.e,o=A.k(p).i("b3<1>"),n=A.a1(new A.b3(p,o),o.i("z.E")),m=n.length
@@ -33451,16 +33451,16 @@ d3(){var s,r
 this.hx()
 s=this.c.zl()
 r=this.a
-if(s===B.eK){r===$&&A.a()
+if(s===B.eK){r===$&&A.b()
 s=A.a6("true")
 s.toString
-r.setAttribute("aria-disabled",s)}else{r===$&&A.a()
+r.setAttribute("aria-disabled",s)}else{r===$&&A.b()
 r.removeAttribute("aria-disabled")}}}
 A.Pr.prototype={
 a3K(a,b){var s,r=A.aR(new A.agY(this))
 this.d=r
 s=this.b.a
-s===$&&A.a()
+s===$&&A.b()
 s.addEventListener("click",r)},
 gpR(){return!0},
 d3(){var s,r=this,q=r.e,p=r.a
@@ -33469,10 +33469,10 @@ p.toString
 p=(p&1)!==0}else p=!1
 r.e=p
 if(q!==p){s=r.b.a
-if(p){s===$&&A.a()
+if(p){s===$&&A.b()
 p=A.a6("")
 p.toString
-s.setAttribute("flt-tappable",p)}else{s===$&&A.a()
+s.setAttribute("flt-tappable",p)}else{s===$&&A.b()
 s.removeAttribute("flt-tappable")}}}}
 A.agY.prototype={
 $1(a){var s=this.a,r=s.a
@@ -33487,7 +33487,7 @@ if(p===a)return
 else if(p!=null)q.iU()
 q.CW=a
 p=a.w
-p===$&&A.a()
+p===$&&A.b()
 q.c=p
 q.Rz()
 p=q.cx
@@ -33510,7 +33510,7 @@ q.toString
 s.K4(q)
 p.cy=p.CW=p.c=null},
 tv(){var s,r,q=this,p=q.d
-p===$&&A.a()
+p===$&&A.b()
 p=p.x
 if(p!=null)B.b.P(q.z,p.tw())
 p=q.z
@@ -33526,7 +33526,7 @@ q.AT()},
 qt(a,b,c){this.b=!0
 this.d=a
 this.FQ(a)},
-jS(){this.d===$&&A.a()
+jS(){this.d===$&&A.b()
 var s=this.c
 s.toString
 s.focus($.e_())},
@@ -33540,10 +33540,10 @@ this.a_V(s)}}
 A.afe.prototype={
 gpR(){return!0},
 Jq(){var s=this.w
-s===$&&A.a()
+s===$&&A.b()
 A.aw6(s,this.c.k3)},
 aO(){var s=this.w
-s===$&&A.a()
+s===$&&A.b()
 s.focus($.e_())
 return!0},
 abN(){var s,r,q,p,o=this,n=o.c
@@ -33572,7 +33572,7 @@ A.V(q,"width",A.m(p.c-p.a)+"px")
 n=n.y
 A.V(q,"height",A.m(n.d-n.b)+"px")
 n=o.a
-n===$&&A.a()
+n===$&&A.b()
 n.append(r)
 r.addEventListener("focus",A.aR(new A.aff(o)))
 r.addEventListener("click",A.aR(new A.afg(o)))
@@ -33581,7 +33581,7 @@ d3(){var s,r,q,p,o=this
 o.hx()
 o.Su()
 s=o.w
-s===$&&A.a()
+s===$&&A.b()
 r=s.style
 q=o.c
 p=q.y
@@ -33600,19 +33600,19 @@ r.toString
 s.setAttribute("aria-required",r)}else s.removeAttribute("aria-required")
 o.ahW()},
 Su(){var s=this.w
-s===$&&A.a()
+s===$&&A.b()
 s.disabled=this.c.a.c!==B.as},
 ahW(){var s,r=this.c,q=r.a
 if(q.cx)return
 s=this.w
-s===$&&A.a()
+s===$&&A.b()
 if(q.Q)s.type="password"
 else{s.removeAttribute("inputmode")
 s.removeAttribute("autocapitalize")
 s.autocomplete="off"
 s.type="text"
 r=r.p2
-r===$&&A.a()
+r===$&&A.b()
 switch(r.a){case 4:s.type="search"
 break
 case 2:s.type="url"
@@ -33636,7 +33636,7 @@ $.aK().qu(s.ok.a,s.k4,B.i5,null)},
 $S:2}
 A.afg.prototype={
 $1(a){var s=this.a.w
-s===$&&A.a()
+s===$&&A.b()
 s.focus($.e_())},
 $S:2}
 A.afh.prototype={
@@ -33645,7 +33645,7 @@ if(s!=null)if(s.CW===this.a)s.iU()},
 $S:2}
 A.afi.prototype={
 $0(){var s=this.a.w
-s===$&&A.a()
+s===$&&A.b()
 s.focus($.e_())},
 $S:0}
 A.wv.prototype={
@@ -34073,7 +34073,7 @@ if(r){r=A.a6(s)
 r.toString
 a.setAttribute("autocapitalize",r)}}}}
 A.a3v.prototype={
-tw(){var s=this.b,r=A.b([],t.Up)
+tw(){var s=this.b,r=A.a([],t.Up)
 new A.b3(s,A.k(s).i("b3<1>")).am(0,new A.a3w(this,r))
 return r}}
 A.a3w.prototype={
@@ -34144,7 +34144,7 @@ jS(){var s,r=this,q=r.w
 if(q!=null){s=r.c
 s.toString
 q.eW(s)}q=r.d
-q===$&&A.a()
+q===$&&A.b()
 if(q.x!=null){r.vg()
 q=r.e
 if(q!=null)q.eW(r.c)
@@ -34159,7 +34159,7 @@ jS(){var s,r=this,q=r.w
 if(q!=null){s=r.c
 s.toString
 q.eW(s)}q=r.d
-q===$&&A.a()
+q===$&&A.b()
 if(q.x!=null){r.vg()
 q=r.c
 q.toString
@@ -34204,7 +34204,7 @@ n=q.r
 if(n!=null){r=q.c
 r.toString
 n.eW(r)}n=q.d
-n===$&&A.a()
+n===$&&A.b()
 if(n.x==null){n=q.c
 n.toString
 A.at8(n,a.a)
@@ -34248,7 +34248,7 @@ r.toString
 s.setAttribute("autocorrect",r)},
 uP(){this.jS()},
 tv(){var s,r,q=this,p=q.d
-p===$&&A.a()
+p===$&&A.b()
 p=p.x
 if(p!=null)B.b.P(q.z,p.tw())
 p=q.z
@@ -34297,14 +34297,14 @@ s.removeEventListener("compositionstart",p.gMJ())
 s.removeEventListener("compositionupdate",p.gMK())
 s.removeEventListener("compositionend",p.gMI())
 if(p.Q){s=p.d
-s===$&&A.a()
+s===$&&A.b()
 s=s.x
 s=(s==null?null:s.a)!=null}else s=!1
 if(s){s=p.c
 s.toString
 A.ZC(s,!0,!1,!0)
 s=p.d
-s===$&&A.a()
+s===$&&A.b()
 s=s.x
 if(s!=null){q=s.e
 s=s.a
@@ -34326,7 +34326,7 @@ jS(){var s=this.c
 s.toString
 s.focus($.e_())},
 vg(){var s,r,q=this.d
-q===$&&A.a()
+q===$&&A.b()
 q=q.x
 q.toString
 s=this.c
@@ -34340,7 +34340,7 @@ VM(a){var s,r,q=this,p=q.c
 p.toString
 s=q.alG(q.a3q(A.azm(p)))
 p=q.d
-p===$&&A.a()
+p===$&&A.b()
 if(p.r){q.gjD().r=s.d
 q.gjD().w=s.e
 r=A.aNP(s,q.e,q.gjD())}else r=null
@@ -34348,7 +34348,7 @@ if(!s.j(0,q.e)){q.e=s
 q.f=r
 q.x.$2(s,r)}q.f=null},
 a3q(a){var s,r=this.d
-r===$&&A.a()
+r===$&&A.b()
 if(r.z)return a
 r=a.c
 if(a.b===r)return a
@@ -34381,13 +34381,13 @@ if(r==s.uB(q)){s=this.c
 s.toString
 s.focus($.e_())}}},
 amX(a){var s=this.d
-s===$&&A.a()
+s===$&&A.b()
 if(!s.z)a.preventDefault()},
 apz(a){var s,r=A.eY(a,"KeyboardEvent")
 if(r)if(J.e(a.keyCode,13)){r=this.y
 r.toString
 s=this.d
-s===$&&A.a()
+s===$&&A.b()
 r.$1(s.c)
 r=this.d
 if(r.b instanceof A.A7&&r.c==="TextInputAction.newline")return
@@ -34425,7 +34425,7 @@ s=r.c
 s.toString
 a.b.Ue(s)
 s=r.d
-s===$&&A.a()
+s===$&&A.b()
 if(s.x!=null)r.vg()
 s=r.c
 s.toString
@@ -34433,7 +34433,7 @@ a.y.Kg(s)},
 uP(){A.V(this.c.style,"transform","translate(-9999px, -9999px)")
 this.p3=!1},
 tv(){var s,r,q=this,p=q.d
-p===$&&A.a()
+p===$&&A.b()
 p=p.x
 if(p!=null)B.b.P(q.z,p.tw())
 p=q.z
@@ -34505,7 +34505,7 @@ s=r.c
 s.toString
 a.b.Ue(s)
 s=r.d
-s===$&&A.a()
+s===$&&A.b()
 if(s.x!=null)r.vg()
 else{s=r.c
 s.toString
@@ -34513,7 +34513,7 @@ A.at8(s,a.a)}s=r.c
 s.toString
 a.y.Kg(s)},
 tv(){var s,r,q=this,p=q.d
-p===$&&A.a()
+p===$&&A.b()
 p=p.x
 if(p!=null)B.b.P(q.z,p.tw())
 p=q.z
@@ -34553,10 +34553,10 @@ A.a44.prototype={
 qt(a,b,c){var s
 this.Cc(a,b,c)
 s=this.d
-s===$&&A.a()
+s===$&&A.b()
 if(s.x!=null)this.vg()},
 tv(){var s,r,q=this,p=q.d
-p===$&&A.a()
+p===$&&A.b()
 p=p.x
 if(p!=null)B.b.P(q.z,p.tw())
 p=q.z
@@ -34695,10 +34695,10 @@ return s===$?this.a=new A.ah3(this):s},
 giC(){var s,r,q,p=this,o=null,n=p.f
 if(n===$){s=$.bP
 if((s==null?$.bP=A.dX():s).b){s=A.aNd(p)
-r=s}else{if($.bc().gdm()===B.b1)q=new A.a5L(p,A.b([],t.Up),$,$,$,o,o)
-else if($.bc().gdm()===B.f9)q=new A.a_o(p,A.b([],t.Up),$,$,$,o,o)
-else if($.bc().gdz()===B.bn)q=new A.up(p,A.b([],t.Up),$,$,$,o,o)
-else q=$.bc().gdz()===B.cS?new A.a44(p,A.b([],t.Up),$,$,$,o,o):A.aKw(p)
+r=s}else{if($.bc().gdm()===B.b1)q=new A.a5L(p,A.a([],t.Up),$,$,$,o,o)
+else if($.bc().gdm()===B.f9)q=new A.a_o(p,A.a([],t.Up),$,$,$,o,o)
+else if($.bc().gdz()===B.bn)q=new A.up(p,A.a([],t.Up),$,$,$,o,o)
+else q=$.bc().gdz()===B.cS?new A.a44(p,A.a([],t.Up),$,$,$,o,o):A.aKw(p)
 r=q}p.f!==$&&A.aw()
 n=p.f=r}return n},
 agL(){var s,r,q=this
@@ -34719,7 +34719,7 @@ if(p.d.r){p.gtI()
 p=p.b
 s=t.N
 r=t.z
-$.aK().j3(q,B.ba.jE(new A.i5(u.s,[p,A.c(["deltas",A.b([A.c(["oldText",b.a,"deltaText",b.b,"deltaStart",b.c,"deltaEnd",b.d,"selectionBase",b.e,"selectionExtent",b.f,"composingBase",b.r,"composingExtent",b.w],s,r)],t.H7)],s,r)])),A.Zz())}else{p.gtI()
+$.aK().j3(q,B.ba.jE(new A.i5(u.s,[p,A.c(["deltas",A.a([A.c(["oldText",b.a,"deltaText",b.b,"deltaStart",b.c,"deltaEnd",b.d,"selectionBase",b.e,"selectionExtent",b.f,"composingBase",b.r,"composingExtent",b.w],s,r)],t.H7)],s,r)])),A.Zz())}else{p.gtI()
 p=p.b
 $.aK().j3(q,B.ba.jE(new A.i5("TextInputClient.updateEditingState",[p,a.Yy()])),A.Zz())}},
 $S:326}
@@ -34878,10 +34878,10 @@ r.observe(s.b)},
 aW(){var s,r=this
 r.KO()
 s=r.c
-s===$&&A.a()
+s===$&&A.b()
 s.disconnect()
 s=r.d
-s===$&&A.a()
+s===$&&A.b()
 if(s!=null)s.b0()
 r.e.aW()},
 gXp(){var s=this.e
@@ -34907,7 +34907,7 @@ A.KX.prototype={
 adK(a){this.c.C(0,null)},
 aW(){this.KO()
 var s=this.b
-s===$&&A.a()
+s===$&&A.b()
 s.b.removeEventListener(s.a,s.c)
 this.c.aW()},
 gXp(){var s=this.c
@@ -34943,7 +34943,7 @@ A.Kk.prototype={
 Rv(){var s,r=this,q=v.G.window,p=r.b
 r.d=q.matchMedia("(resolution: "+A.m(p)+"dppx)")
 q=r.d
-q===$&&A.a()
+q===$&&A.b()
 p=A.aR(r.gacZ())
 s=A.a6(A.c(["once",!0,"passive",!0],t.N,t.K))
 s.toString
@@ -34965,7 +34965,7 @@ if(r.parentElement===s)return
 s.append(r)}}
 A.a1t.prototype={
 gBE(){var s=this.b
-s===$&&A.a()
+s===$&&A.b()
 return s},
 TJ(a){A.V(a.style,"width","100%")
 A.V(a.style,"height","100%")
@@ -35039,7 +35039,7 @@ A.at7.prototype={
 $0(){return null},
 $S:340}
 A.oz.prototype={
-k(a){var s=this,r=A.b([],t.s)
+k(a){var s=this,r=A.a([],t.s)
 if((s.a&1)!==0)r.push("whitespace")
 if((s.a&2)!==0)r.push("grapheme")
 if((s.a&4)!==0)r.push("softBreak")
@@ -35053,9 +35053,9 @@ A.aim.prototype={
 lv(a){return this.ape(a)},
 ape(a0){var s=0,r=A.R(t.S7),q,p=this,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a
 var $async$lv=A.S(function(a1,a2){if(a1===1)return A.O(a2,r)
-for(;;)switch(s){case 0:b=A.b([],t.Rh)
+for(;;)switch(s){case 0:b=A.a([],t.Rh)
 for(o=a0.a,n=o.length,m=0;m<o.length;o.length===n||(0,A.B)(o),++m){l=o[m]
-for(k=l.b,j=k.length,i=0;i<k.length;k.length===j||(0,A.B)(k),++i)b.push(new A.ain(p,k[i],l).$0())}h=A.b([],t.s)
+for(k=l.b,j=k.length,i=0;i<k.length;k.length===j||(0,A.B)(k),++i)b.push(new A.ain(p,k[i],l).$0())}h=A.a([],t.s)
 g=A.o(t.N,t.FK)
 a=J
 s=3
@@ -35082,8 +35082,8 @@ W(a){v.G.document.fonts.clear()},
 t3(a,b,c){return this.ace(a,b,c)},
 ace(a1,a2,a3){var s=0,r=A.R(t.U5),q,p=2,o=[],n=this,m,l,k,j,i,h,g,f,e,d,c,b,a,a0
 var $async$t3=A.S(function(a5,a6){if(a5===1){o.push(a6)
-s=p}for(;;)switch(s){case 0:e=A.b([],t.O)
-d=A.b([],t.Pt)
+s=p}for(;;)switch(s){case 0:e=A.a([],t.O)
+d=A.a([],t.Pt)
 p=4
 j=$.aG7()
 s=j.b.test(a1)||$.aG6().a_v(a1)!==a1?7:8
@@ -35243,10 +35243,10 @@ l=new A.eQ()
 l.a=n
 l.b=m
 k.push(new A.xh(o.level,l))}},
-FI(a,a0,a1,a2,a3,a4){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c=this,b=A.b([],t.tM)
+FI(a,a0,a1,a2,a3,a4){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c=this,b=A.a([],t.tM)
 $.a0()
 s=new A.PD(a,B.a_,b)
-r=A.b([],t.t)
+r=A.a([],t.t)
 for(q=c.d,p=q.length,o=0,n=0;n<q.length;q.length===p||(0,A.B)(q),++n){m=q[n]
 l=m.b
 k=l.a
@@ -35337,19 +35337,19 @@ gox(){return 0},
 gIq(){return 0},
 giy(){return 0},
 JJ(){return this.ga4u()},
-ga4u(){$===$&&A.a()
+ga4u(){$===$&&A.b()
 return $},
-vM(a,b,c,d){return A.b([],t.Lx)},
+vM(a,b,c,d){return A.a([],t.Lx)},
 Bs(a,b,c){return this.vM(a,b,c,B.cR)},
 dg(a){return B.U0},
 JM(a){return null},
 Bv(a){return null},
 fQ(a){return B.Ai},
 f0(a){var s,r,q,p,o,n,m=this,l=m.at
-if(l===$){s=A.b([],t.rg)
-r=A.b([],t.RN)
-q=A.b([],t.tM)
-p=A.b([],t.zs)
+if(l===$){s=A.a([],t.rg)
+r=A.a([],t.RN)
+q=A.a([],t.tM)
+p=A.a([],t.zs)
 o=t.S
 m.at!==$&&A.aw()
 l=m.at=new A.ahr(m,s,r,q,p,A.o(o,o))}s=a.a
@@ -35362,7 +35362,7 @@ n.KD(0,0)
 n.ajr(s)
 l.amR(s)},
 BA(a){return B.Ai},
-q0(){return A.b([],t.ER)},
+q0(){return A.a([],t.ER)},
 BB(a){return null},
 gIv(){return 0},
 l(){}}
@@ -35414,7 +35414,7 @@ o=n.b
 l=s.b[o].a
 q=(l&8)!==0
 if(q){l=f.e
-l===$&&A.a()
+l===$&&A.b()
 k=l.b
 if(k<p){f.f=f.f+(f.r+f.w)
 l.a=l.b=p
@@ -35434,11 +35434,11 @@ j=new A.eQ()
 j.b=j.a=p
 f.e=j
 f.d=f.w=f.r=f.f=0}else if((l&4)!==0&&p!==f.c){l=f.e
-l===$&&A.a()
+l===$&&A.b()
 if(l.a!==f.c){if(l.b!==p){f.f=f.f+f.w
 l.a=p}l.b=p
 f.w=0}}if((s.b[o].a&1)!==0){o=f.e
-o===$&&A.a()
+o===$&&A.b()
 if(o.b<p){f.f=f.f+(f.r+f.w)
 f.w=0
 o=new A.eQ()
@@ -35450,7 +35450,7 @@ continue}o=f.f
 l=f.r
 k=f.w
 if(o+l+k+m>a){j=f.e
-j===$&&A.a()
+j===$&&A.b()
 i=j.a
 h=f.c
 if(i!==h)k=i
@@ -35484,7 +35484,7 @@ f.e=h
 f.d=f.r=f.f=0
 o=l}else o=k
 f.w=o+m}r=f.e
-r===$&&A.a()
+r===$&&A.b()
 if(r.b<o){r=f.f+f.r
 f.f=r
 l=new A.eQ()
@@ -35541,13 +35541,13 @@ l(){var s,r,q=this
 if(q.f)return
 q.f=!0
 s=q.d
-s===$&&A.a()
+s===$&&A.b()
 s.b0()
 q.ch.aW()
 s=q.z
-s===$&&A.a()
+s===$&&A.b()
 r=s.f
-r===$&&A.a()
+r===$&&A.b()
 r.l()
 s=s.a
 if(s!=null){r=s.a
@@ -35873,8 +35873,8 @@ ct(a,b){return a[b]},
 cs(a,b,c){if(b<0||b>a.length)throw A.j(A.cj(b,0,a.length,"start",null))
 if(c==null)c=a.length
 else if(c<b||c>a.length)throw A.j(A.cj(c,b,a.length,"end",null))
-if(b===c)return A.b([],A.X(a))
-return A.b(a.slice(b,c),A.X(a))},
+if(b===c)return A.a([],A.X(a))
+return A.a(a.slice(b,c),A.X(a))},
 hv(a,b){return this.cs(a,b,null)},
 vR(a,b,c){A.cI(b,c,a.length,null,null)
 return A.f4(a,b,c,A.X(a).c)},
@@ -35952,7 +35952,7 @@ ga9(a){return a.length===0},
 gbA(a){return a.length!==0},
 k(a){return A.mJ(a,"[","]")},
 e6(a,b){var s=A.X(a)
-return b?A.b(a.slice(0),s):J.l2(a.slice(0),s.c)},
+return b?A.a(a.slice(0),s):J.l2(a.slice(0),s.c)},
 ep(a){return this.e6(a,!0)},
 ga5(a){return new J.cJ(a,a.length,A.X(a).i("cJ<1>"))},
 gB(a){return A.eo(a)},
@@ -37652,7 +37652,7 @@ A.a4Z.prototype={
 $1(a){var s,r,q,p,o,n,m=this,l=m.a,k=--l.b,j=l.a
 if(j!=null){J.wO(j,m.b,a)
 if(J.e(k,0)){l=m.d
-s=A.b([],l.i("A<0>"))
+s=A.a([],l.i("A<0>"))
 for(q=j,p=q.length,o=0;o<q.length;q.length===p||(0,A.B)(q),++o){r=q[o]
 n=r
 if(n==null)n=l.a(n)
@@ -38644,7 +38644,7 @@ n.p(0,o.a,o.b)}return n},
 Ti(a){var s,r
 for(s=a.ga5(a);s.A();){r=s.gN()
 this.p(0,r.a,r.b)}},
-kH(a,b){var s,r,q,p,o=this,n=A.k(o),m=A.b([],n.i("A<bo.K>"))
+kH(a,b){var s,r,q,p,o=this,n=A.k(o),m=A.a([],n.i("A<bo.K>"))
 for(s=o.gbX(),s=s.ga5(s),n=n.i("bo.V");s.A();){r=s.gN()
 q=o.h(0,r)
 if(b.$2(r,q==null?n.a(q):q))m.push(r)}for(n=m.length,p=0;p<m.length;m.length===n||(0,A.B)(m),++p)o.E(0,m[p])},
@@ -39014,7 +39014,7 @@ if(o===0)return p.d.d=q}p.Cx(new A.fA(q,a,p.$ti.i("fA<1,2>")),o)
 return q},
 ga9(a){return this.d==null},
 gbA(a){return this.d!=null},
-am(a,b){var s,r=this.$ti,q=new A.r0(this,A.b([],r.i("A<fA<1,2>>")),this.c,r.i("r0<1,2>"))
+am(a,b){var s,r=this.$ti,q=new A.r0(this,A.a([],r.i("A<fA<1,2>>")),this.c,r.i("r0<1,2>"))
 while(q.e=null,q.Cs()){s=q.gN()
 b.$2(s.a,s.b)}},
 gD(a){return this.a},
@@ -39083,7 +39083,7 @@ A.lT.prototype={
 gD(a){return this.a.a},
 ga9(a){return this.a.a===0},
 ga5(a){var s=this.a,r=this.$ti
-return new A.lU(s,A.b([],r.i("A<2>")),s.c,r.i("lU<1,2>"))},
+return new A.lU(s,A.a([],r.i("A<2>")),s.c,r.i("lU<1,2>"))},
 n(a,b){return this.a.kd(b)!=null},
 hn(a){var s=this.a,r=A.agg(s.e,null,this.$ti.c),q=s.d
 if(q!=null){r.d=r.Db(q)
@@ -39092,12 +39092,12 @@ A.r1.prototype={
 gD(a){return this.a.a},
 ga9(a){return this.a.a===0},
 ga5(a){var s=this.a,r=this.$ti
-return new A.Gx(s,A.b([],r.i("A<fA<1,2>>")),s.c,r.i("Gx<1,2>"))}}
+return new A.Gx(s,A.a([],r.i("A<fA<1,2>>")),s.c,r.i("Gx<1,2>"))}}
 A.Gs.prototype={
 gD(a){return this.a.a},
 ga9(a){return this.a.a===0},
 ga5(a){var s=this.a,r=this.$ti
-return new A.r0(s,A.b([],r.i("A<fA<1,2>>")),s.c,r.i("r0<1,2>"))}}
+return new A.r0(s,A.a([],r.i("A<fA<1,2>>")),s.c,r.i("r0<1,2>"))}}
 A.lU.prototype={
 DH(a){return a.a}}
 A.Gx.prototype={
@@ -39116,7 +39116,7 @@ Pt(a){return A.agg(new A.agh(this,a),this.f,a)},
 pB(){return this.Pt(t.z)},
 dP(a,b){return A.afM(this,this.gacR(),this.$ti.c,b)},
 ga5(a){var s=this.$ti
-return new A.lU(this,A.b([],s.i("A<fB<1>>")),this.c,s.i("lU<1,fB<1>>"))},
+return new A.lU(this,A.a([],s.i("A<fB<1>>")),this.c,s.i("lU<1,fB<1>>"))},
 gD(a){return this.a},
 ga9(a){return this.d==null},
 gbA(a){return this.d!=null},
@@ -39144,7 +39144,7 @@ for(s=J.bs(b.gfX()),r=A.k(b).y[1];s.A();)this.fV(r.a(s.gN()))},
 kw(a){return this.Nw(0,a,!0)},
 fz(a){return this.Nw(0,a,!1)},
 Nw(a,b,c){var s,r,q,p,o,n,m,l=this
-for(s=l.$ti,r=s.i("fB<1>"),q=new A.lU(l,A.b([],s.i("A<fB<1>>")),l.c,s.i("lU<1,fB<1>>")),p=null,o=0;q.A();){n=q.gN()
+for(s=l.$ti,r=s.i("fB<1>"),q=new A.lU(l,A.a([],s.i("A<fB<1>>")),l.c,s.i("lU<1,fB<1>>")),p=null,o=0;q.A();){n=q.gN()
 if(b.n(0,n)===c){m=new A.fB(n,r)
 m.b=p;++o
 p=m}}s=A.agg(l.e,l.f,s.c)
@@ -39225,7 +39225,7 @@ if(typeof p=="undefined"){p=A.asW(o.a[q])
 o.b[q]=p}b.$2(q,p)
 if(s!==o.c)throw A.j(A.bO(o))}},
 pl(){var s=this.c
-if(s==null)s=this.c=A.b(Object.keys(this.a),t.s)
+if(s==null)s=this.c=A.a(Object.keys(this.a),t.s)
 return s},
 SZ(){var s,r,q,p,o,n=this
 if(n.b==null)return n.c
@@ -39728,7 +39728,7 @@ b=s+1}}if(b<c)p.LM(a,b,c,d)
 if(d){p.a.aW()
 p.a=null}}}
 A.a77.prototype={
-dq(a){var s,r,q,p,o=A.b([],t.s),n=a.length
+dq(a){var s,r,q,p,o=A.a([],t.s),n=a.length
 for(s=0,r=0,q=0;q<n;++q,r=p){p=a.charCodeAt(q)
 if(p!==13){if(p!==10)continue
 if(r===13){s=q+1
@@ -40428,7 +40428,7 @@ n=o.w=s.charCodeAt(0)==0?s:s}return n},
 gvf(){var s,r,q=this,p=q.x
 if(p===$){s=q.e
 if(s.length!==0&&s.charCodeAt(0)===47)s=B.c.bv(s,1)
-r=s.length===0?B.dM:A.tE(new A.a_(A.b(s.split("/"),t.s),A.aS7(),t.Gf),t.N)
+r=s.length===0?B.dM:A.tE(new A.a_(A.a(s.split("/"),t.s),A.aS7(),t.Gf),t.N)
 q.x!==$&&A.aw()
 p=q.x=r}return p},
 gB(a){var s,r=this,q=r.y
@@ -40641,7 +40641,7 @@ return s<r.length?B.c.bv(r,s+1):""},
 gvf(){var s,r,q=this.e,p=this.f,o=this.a
 if(B.c.d7(o,"/",q))++q
 if(q===p)return B.dM
-s=A.b([],t.s)
+s=A.a([],t.s)
 for(r=q;r<p;++r)if(o.charCodeAt(r)===47){s.push(B.c.Y(o,q,r))
 q=r+1}s.push(B.c.Y(o,q,p))
 return A.tE(s,t.N)},
@@ -40857,7 +40857,7 @@ B.X.h4(B.J.cs(j,p,r))
 r=j[r]
 if(r!==1&&r!==2)throw A.j(A.eU("Invalid arguments for 'overflow' method sent to dev.flutter/channel-buffers (second argument must be a boolean)"))
 break
-default:throw A.j(A.eU("Unrecognized method '"+q+"' sent to dev.flutter/channel-buffers"))}}else{m=A.b(B.X.h4(j).split("\r"),t.s)
+default:throw A.j(A.eU("Unrecognized method '"+q+"' sent to dev.flutter/channel-buffers"))}}else{m=A.a(B.X.h4(j).split("\r"),t.s)
 if(m.length===3&&m[0]==="resize")this.Yg(m[1],A.fD(m[2],null))
 else throw A.j(A.eU("Unrecognized message "+A.m(m)+" sent to dev.flutter/channel-buffers."))}},
 Yg(a,b){var s=this.a,r=s.h(0,a)
@@ -41457,7 +41457,7 @@ return b instanceof A.uU&&b.a===this.a},
 gB(a){return B.i.gB(this.a)},
 k(a){var s,r=this.a
 if(r===0)return"TextDecoration.none"
-s=A.b([],t.s)
+s=A.a([],t.s)
 if((r&1)!==0)s.push("underline")
 if((r&2)!==0)s.push("overline")
 if((r&4)!==0)s.push("lineThrough")
@@ -41910,7 +41910,7 @@ A.ID.prototype={
 J(){return"AnimationBehavior."+this.b}}
 A.rm.prototype={
 gu(){var s=this.x
-s===$&&A.a()
+s===$&&A.b()
 return s},
 su(a){var s=this
 s.fU()
@@ -41933,7 +41933,7 @@ default:r=null}s.Q=r}},
 gjM(){var s=this.r
 return s!=null&&s.a!=null},
 gaN(){var s=this.Q
-s===$&&A.a()
+s===$&&A.b()
 return s},
 jG(a){var s=this
 s.z=B.aQ
@@ -41948,30 +41948,30 @@ dJ(){return this.J4(null)},
 jp(a,b,c){var s,r,q,p,o,n,m,l,k,j=this,i=j.d
 $label0$0:{s=B.iT===i
 if(s){r=$.uy.ur$
-r===$&&A.a()
+r===$&&A.b()
 q=(r.a&4)!==0
 r=q}else r=!1
 if(r){r=0.05
 break $label0$0}if(s||B.iU===i){r=1
 break $label0$0}r=null}if(c==null){p=j.b-j.a
 if(isFinite(p)){o=j.x
-o===$&&A.a()
+o===$&&A.b()
 n=Math.abs(a-o)/p}else n=1
 if(j.z===B.ix&&j.f!=null){o=j.f
 o.toString
 m=o}else{o=j.e
 o.toString
 m=o}l=new A.aX(B.d.aC(m.a*n))}else{o=j.x
-o===$&&A.a()
+o===$&&A.b()
 l=a===o?B.B:c}j.fU()
 o=l.a
 if(o===0){r=j.x
-r===$&&A.a()
+r===$&&A.b()
 if(r!==a){j.x=A.D(a,j.a,j.b)
 j.ad()}j.Q=j.z===B.aQ?B.ae:B.V
 j.wB()
 return A.awk()}k=j.x
-k===$&&A.a()
+k===$&&A.b()
 return j.F1(new A.ans(o*r/1e6,k,a,b,B.cq))},
 LW(a){return this.jp(a,B.a3,null)},
 amH(a){var s,r,q,p,o,n,m=this,l=$.aGP(),k=a<0
@@ -41980,13 +41980,13 @@ s=k?m.a-0.01:m.b+0.01
 r=m.d
 $label0$0:{q=B.iT===r
 if(q){k=$.uy.ur$
-k===$&&A.a()
+k===$&&A.b()
 p=(k.a&4)!==0
 k=p}else k=!1
 if(k){k=200
 break $label0$0}if(q||B.iU===r){k=1
 break $label0$0}k=null}o=m.x
-o===$&&A.a()
+o===$&&A.b()
 n=new A.Cd(s,A.wl(l,o-s,a*k),B.cq)
 n.a=B.Yq
 m.fU()
@@ -42013,7 +42013,7 @@ s.cO$.W(0)
 s.cH$.a.W(0)
 s.C7()},
 wB(){var s=this,r=s.Q
-r===$&&A.a()
+r===$&&A.b()
 if(s.as!==r){s.as=r
 s.v8(r)}},
 a4g(a){var s,r=this
@@ -42028,7 +42028,7 @@ if(q)s="; DISPOSED"
 else s=r.b?"; silenced":""
 r=this.C6()
 q=this.x
-q===$&&A.a()
+q===$&&A.b()
 return r+" "+B.d.a1(q,3)+p+s}}
 A.ans.prototype={
 eL(a){var s,r=this,q=A.D(a/r.b,0,1)
@@ -42365,7 +42365,7 @@ this.R9()},
 R9(){var s=this.a.Q
 this.d.b=s},
 l(){var s=this.e
-s===$&&A.a()
+s===$&&A.b()
 s.l()
 this.a2V()},
 ab5(a){var s=this
@@ -42398,7 +42398,7 @@ if(s!=null){s.$0()
 this.c.gT().re(B.lA)}},
 OF(){return this.OG(null)},
 rA(){var s,r,q,p=this.e
-p===$&&A.a()
+p===$&&A.b()
 s=p.r
 if(s!=null&&s.a!=null)return
 r=this.w
@@ -42438,7 +42438,7 @@ a0=A.aD(t.EK)
 if(a1)a0.C(0,B.t)
 if(b.x)a0.C(0,B.L)
 o=b.r
-o===$&&A.a()
+o===$&&A.b()
 if(o)a0.C(0,B.w)
 b.a.toString
 i=A.cw(a,a0,t.WV)
@@ -42449,7 +42449,7 @@ a0=A.Bu(o==null?$.aHB().h(0,B.nz):o,a0)
 if(p!=null&&a1){a1=b.a.f
 if(a1 instanceof A.cm)a1=a1.ci(a3)}else a1=p
 h=b.y
-if(h===$){g=A.c([B.ir,new A.cE(b.gab1(),new A.b0(A.b([],t.e),t.d),t.wY)],t.u,t.od)
+if(h===$){g=A.c([B.ir,new A.cE(b.gab1(),new A.b0(A.a([],t.e),t.d),t.wY)],t.u,t.od)
 b.y!==$&&A.aw()
 b.y=g
 h=g}b.a.toString
@@ -42463,7 +42463,7 @@ if(d==null)d=44
 e=e?a:s.b
 if(e==null)e=44
 c=b.f
-c===$&&A.a()
+c===$&&A.b()
 return A.l9(A.azw(h,!1,new A.iP(A.bM(!0,new A.fK(new A.ac(d,1/0,e,1/0),new A.dK(c,!1,A.t_(new A.bq(f.d,new A.hO(f.ax,1,1,A.iD(A.tk(f.c,k,a),a,a,B.c3,!0,l,a,a,B.az),a),a),new A.hB(a1,a,a,a,a0),B.cW),a),a),!1,a,a,!1,a,!1,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a),o,B.at,!1,a),a2,a,B.bD,a,b.gado(),a),i,a,a,a,a)}}
 A.akK.prototype={
 $1(a){var s=a.n(0,B.t)
@@ -42641,7 +42641,7 @@ if(J.L(b)!==A.t(s))return!1
 return b instanceof A.cm&&b.a.v()===s.a.v()&&b.d.j(0,s.d)&&b.e.j(0,s.e)&&b.f.j(0,s.f)&&b.r.j(0,s.r)&&b.w.j(0,s.w)&&b.x.j(0,s.x)&&b.y.j(0,s.y)&&b.z.j(0,s.z)},
 gB(a){var s=this
 return A.K(s.a.v(),s.d,s.e,s.f,s.w,s.x,s.r,s.z,s.y,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
-k(a){var s=this,r=new A.a1j(s),q=A.b([r.$2("color",s.d)],t.s)
+k(a){var s=this,r=new A.a1j(s),q=A.a([r.$2("color",s.d)],t.s)
 if(s.gt_())q.push(r.$2("darkColor",s.e))
 if(s.grX())q.push(r.$2("highContrastColor",s.f))
 if(s.gt_()&&s.grX())q.push(r.$2("darkHighContrastColor",s.r))
@@ -42685,7 +42685,7 @@ yC(a,b,c,d){return B.aw},
 r5(a,b){return B.h}}
 A.Yr.prototype={}
 A.JQ.prototype={
-K(a){var s=null,r=A.bW(a,B.bB,t.w).w.r.b+8,q=this.c.a4(0,new A.i(8,r)),p=A.eR(this.d,B.E,B.z,B.bI),o=A.b([2.574,-1.43,-0.144,0,0,-0.426,1.57,-0.144,0,0,-0.426,-1.43,2.856,0,0,0,0,0,1,0],t.n)
+K(a){var s=null,r=A.bW(a,B.bB,t.w).w.r.b+8,q=this.c.a4(0,new A.i(8,r)),p=A.eR(this.d,B.E,B.z,B.bI),o=A.a([2.574,-1.43,-0.144,0,0,-0.426,1.57,-0.144,0,0,-0.426,-1.43,2.856,0,0,0,0,0,1,0],t.n)
 $.a0()
 o=A.aEe(new A.yy(s,s,o,B.E8))
 o.toString
@@ -42745,10 +42745,10 @@ q.r=new A.am(s,new A.ao(0,1,r),r.i("am<aj.T>"))},
 l(){var s,r=this
 r.a.d.a=null
 s=r.f
-s===$&&A.a()
+s===$&&A.b()
 s.l()
 s=r.w
-s===$&&A.a()
+s===$&&A.b()
 s.l()
 r.a.w.I(r.gEg())
 r.a2W()},
@@ -42763,7 +42763,7 @@ m.toString
 if(n<-48){o=m.d
 if(o.gKw())o.uH(!1)
 return}if(!m.d.gKw()){m=r.f
-m===$&&A.a()
+m===$&&A.b()
 m.c7()}r.a.toString
 s=Math.max(p,p-n/10)
 o=o.a-40
@@ -42778,7 +42778,7 @@ K(a){var s,r,q,p=this,o=A.rY(a)
 p.a.toString
 s=p.d
 r=p.r
-r===$&&A.a()
+r===$&&A.b()
 q=p.e
 return A.aym(new A.JS(new A.aC(o.gee(),2,B.q,-1),r,new A.i(0,q),null),B.dC,B.HC,s.a,s.b)}}
 A.al0.prototype={
@@ -42861,11 +42861,11 @@ p=s==null?q.a.d:s
 s=$.aGe()
 q.f=new A.am(r.a(p),s,A.k(s).i("am<aj.T>"))},
 K(a){var s,r,q=this,p=a.ao(t.I).w,o=q.e
-o===$&&A.a()
+o===$&&A.b()
 s=q.d
-s===$&&A.a()
+s===$&&A.b()
 r=q.f
-r===$&&A.a()
+r===$&&A.b()
 return A.uD(A.uD(new A.K0(r,q.a.c,r,null),s,p,!0),o,p,!1)}}
 A.vv.prototype={
 ae(){return new A.vw(this.$ti.i("vw<1>"))},
@@ -42881,7 +42881,7 @@ s.cx=r.gafu()
 s.cy=r.ga8W()
 r.e=s},
 l(){var s=this,r=s.e
-r===$&&A.a()
+r===$&&A.b()
 r.p2.W(0)
 r.lX()
 if(s.d!=null)$.a3.RG$.push(new A.akI(s))
@@ -42894,7 +42894,7 @@ s.toString
 s=this.N_(s/this.c.gt().a)
 q=q.a
 r=q.x
-r===$&&A.a()
+r===$&&A.b()
 q.su(r-s)},
 afv(a){var s=this,r=s.d
 r.toString
@@ -42905,7 +42905,7 @@ if(s!=null)s.V0(0)
 this.d=null},
 afB(a){var s
 if(this.a.am2()){s=this.e
-s===$&&A.a()
+s===$&&A.b()
 s.yo(a)}},
 N_(a){var s
 switch(this.c.ao(t.I).w.a){case 0:s=-a
@@ -42918,7 +42918,7 @@ switch(a.ao(t.I).w.a){case 0:s=A.bW(a,B.bB,t.w).w.r.c
 break
 case 1:s=A.bW(a,B.bB,t.w).w.r.a
 break
-default:s=r}return A.uI(B.dt,A.b([this.a.c,new A.N9(0,0,0,Math.max(s,20),A.zJ(B.cB,r,r,this.gafA(),r,r,r),r)],t.p),B.Y,B.T7,r)}}
+default:s=r}return A.uI(B.dt,A.a([this.a.c,new A.N9(0,0,0,Math.max(s,20),A.zJ(B.cB,r,r,this.gafA(),r,r,r),r)],t.p),B.Y,B.T7,r)}}
 A.akI.prototype={
 $1(a){var s=this.a,r=s.d,q=r==null,p=q?null:r.b.c!=null
 if(p===!0)if(!q)r.b.o8()
@@ -42929,7 +42929,7 @@ V0(a){var s,r,q,p,o=this,n=o.d.$0()
 if(!n)s=o.c.$0()
 else if(Math.abs(a)>=1)s=a<=0
 else{r=o.a.x
-r===$&&A.a()
+r===$&&A.b()
 s=r>0.5}if(s){r=o.a
 r.z=B.aQ
 r.jp(1,B.io,B.nG)}else{if(n)o.b.eH()
@@ -43017,7 +43017,7 @@ s=r.fr=A.ce(null,B.bb,null,null,r)
 s.bw()
 s.cH$.C(0,new A.akY(r))},
 vE(){var s,r,q,p=this,o=p.CW
-o===$&&A.a()
+o===$&&A.b()
 s=p.c
 s.toString
 s=B.GW.ci(s)
@@ -43027,9 +43027,9 @@ s=p.a
 r=s.w
 r.toString
 q=p.fr
-q===$&&A.a()
+q===$&&A.b()
 q=q.x
-q===$&&A.a()
+q===$&&A.b()
 o.sJ9(r+q*(s.fy-r))
 o.sIi(p.a.dx)
 o.sGF(3)
@@ -43037,7 +43037,7 @@ r=p.a
 s=r.r
 r=r.go
 q=p.fr.x
-q===$&&A.a()
+q===$&&A.b()
 q=A.AU(s,r,q)
 q.toString
 o.svn(q)
@@ -43059,12 +43059,12 @@ default:r=null}this.fx=r},
 HG(){if(this.ay==null)return
 this.a0D()
 var s=this.fr
-s===$&&A.a()
+s===$&&A.b()
 s.c7().bN(new A.akX(),t.H)},
 zX(a,b){var s,r,q,p,o,n=this,m=n.ay
 if(m==null)return
 s=n.fr
-s===$&&A.a()
+s===$&&A.b()
 s.dJ()
 n.Lb(a,b)
 switch(m.a){case 0:s=new A.a9(a.a,b.a.a)
@@ -43084,7 +43084,7 @@ s=this.c
 s.toString
 if(r.iA(s)!==B.K)this.a0E(a)},
 l(){var s=this.fr
-s===$&&A.a()
+s===$&&A.b()
 s.l()
 this.La()}}
 A.akY.prototype={
@@ -43190,7 +43190,7 @@ p=l.ag
 if(p!=null){o=A.aB3(r.a,r.b,r.c,r.d+7,B.df).cS(b.Z(0,s.a).Z(0,B.h))
 a.gbW().dr(o,new A.bn(0,B.O,p,B.h,15).ff())}p=l.bG
 n=l.cx
-n===$&&A.a()
+n===$&&A.b()
 s=b.Z(0,s.a)
 m=k.gt()
 p.saz(a.ar3(n,s,new A.x(0,0,0+m.a,0+m.b),q,new A.ape(k),p.a))},
@@ -43219,9 +43219,9 @@ Ox(){var s=this,r=$.a3.a6$.x.h(0,s.r)
 r=r==null?null:r.gT()
 t.Qv.a(r)
 if(r instanceof A.qY){r=r.L
-r===$&&A.a()}else r=!1
+r===$&&A.b()}else r=!1
 if(r){r=s.d
-r===$&&A.a()
+r===$&&A.b()
 r.dJ()
 r=s.d
 r.bw()
@@ -43233,9 +43233,9 @@ Oz(){var s=this,r=$.a3.a6$.x.h(0,s.r)
 r=r==null?null:r.gT()
 t.Qv.a(r)
 if(r instanceof A.qY){r=r.O
-r===$&&A.a()}else r=!1
+r===$&&A.b()}else r=!1
 if(r){r=s.d
-r===$&&A.a()
+r===$&&A.b()
 r.dJ()
 r=s.d
 r.bw()
@@ -43247,7 +43247,7 @@ agQ(a){var s,r=this
 if(a!==B.V)return
 r.a7(new A.al4(r))
 s=r.d
-s===$&&A.a()
+s===$&&A.b()
 s.c7()
 r.d.cR(r.gxU())},
 aG(){this.aP()
@@ -43257,11 +43257,11 @@ r.aY(a)
 if(r.a.e!==a.e){r.f=0
 r.e=null
 s=r.d
-s===$&&A.a()
+s===$&&A.b()
 s.c7()
 r.d.cR(r.gxU())}},
 l(){var s=this.d
-s===$&&A.a()
+s===$&&A.b()
 s.l()
 this.a2X()},
 K(a){var s,r,q,p=this,o=null,n=B.h9.ci(a),m=A.hg(A.az_(A.jB(A.iC(o,o,o,new A.Tv(n,!0,o),B.zL),!0,o),p.gaai()),1,1),l=A.hg(A.az_(A.jB(A.iC(o,o,o,new A.VZ(n,!1,o),B.zL),!0,o),p.ga9T()),1,1),k=p.a.e,j=A.X(k).i("a_<1,kC>"),i=A.a1(new A.a_(k,new A.al5(),j),j.i("an.E"))
@@ -43269,7 +43269,7 @@ k=p.a
 j=k.c
 s=k.d
 r=p.d
-r===$&&A.a()
+r===$&&A.b()
 q=p.f
 return k.as9(a,j,s,new A.dK(r,!1,A.ayn(A.p1(o,new A.E_(m,i,B.GX.ci(a),1/A.bW(a,B.ct,t.w).w.b,l,q,p.r),B.ab,!1,o,o,o,o,p.gadb(),o,o,o,o,o,o,o,o,o,o,o,o,o),B.ep,B.jx),o))}}
 A.al4.prototype={
@@ -43337,7 +43337,7 @@ s.jC(a)},
 b5(a){var s,r,q,p,o=this.p2
 new A.ba(o,A.k(o).i("ba<2>")).am(0,a)
 o=this.p1
-o===$&&A.a()
+o===$&&A.b()
 s=o.length
 r=this.p3
 q=0
@@ -43368,7 +43368,7 @@ t.bY.a(s)
 p.xt(s.c,B.lW)
 p.xt(s.r,B.lX)
 r=p.p1
-r===$&&A.a()
+r===$&&A.b()
 q=p.p3
 p.p1=p.Bm(r,s.d,q)
 q.W(0)}}
@@ -43599,7 +43599,7 @@ o.dh()
 o.Yo(1.5707963267948966)
 for(n=0;n<4;++n){m=l.eg()
 q=p.gez().a
-q===$&&A.a()
+q===$&&A.b()
 q=q.a
 q.toString
 s.drawPath(q,m)
@@ -43845,7 +43845,7 @@ sl3(a){return this.V$=a},
 smb(a){return this.af$=a}}
 A.a0t.prototype={
 $0(){var s=null,r=this.a
-return A.b([A.jr("The "+A.t(r).k(0)+" sending notification was",r,!0,B.bE,s,s,s,B.b0,!1,!0,!0,B.ce,s,t.vg)],t.D)},
+return A.a([A.jr("The "+A.t(r).k(0)+" sending notification was",r,!0,B.bE,s,s,s,B.b0,!1,!0,!0,B.ce,s,t.vg)],t.D)},
 $S:20}
 A.qV.prototype={
 a0(a){var s,r,q
@@ -43923,7 +43923,7 @@ return new J.cJ(s,s.length,A.X(s).i("cJ<1>"))},
 ga9(a){return this.a.length===0},
 gbA(a){return this.a.length!==0},
 e6(a,b){var s=this.a,r=A.X(s)
-return b?A.b(s.slice(0),r):J.l2(s.slice(0),r.c)},
+return b?A.a(s.slice(0),r):J.l2(s.slice(0),r.c)},
 ep(a){return this.e6(0,!0)}}
 A.em.prototype={
 C(a,b){var s=this.a,r=s.h(0,b)
@@ -44198,7 +44198,7 @@ this.a.E(0,a)
 for(s=b.a,r=s.length,q=0;q<s.length;s.length===r||(0,A.B)(s),++q){p=s[q]
 if(p!==c)p.f4(a)}c.fY(a)}}
 A.a53.prototype={
-$0(){return new A.vI(A.b([],t.iQ))},
+$0(){return new A.vI(A.a([],t.iQ))},
 $S:352}
 A.a52.prototype={
 $0(){return this.a.afk(this.b,this.c)},
@@ -44258,11 +44258,11 @@ if(r===$){$.Ik()
 r=s.aD$=new A.apW(A.o(t.S,t.GG),B.B,new A.Ch(),s.gaa7(),s.gaao(),B.Hw)}return r}}
 A.a56.prototype={
 $0(){var s=null
-return A.b([A.jr("Event",this.a,!0,B.bE,s,s,s,B.b0,!1,!0,!0,B.ce,s,t.qL)],t.D)},
+return A.a([A.jr("Event",this.a,!0,B.bE,s,s,s,B.b0,!1,!0,!0,B.ce,s,t.qL)],t.D)},
 $S:20}
 A.a57.prototype={
 $0(){var s=null
-return A.b([A.jr("Event",this.a,!0,B.bE,s,s,s,B.b0,!1,!0,!0,B.ce,s,t.qL),A.jr("Target",this.b.a,!0,B.bE,s,s,s,B.b0,!1,!0,!0,B.ce,s,t.zE)],t.D)},
+return A.a([A.jr("Event",this.a,!0,B.bE,s,s,s,B.b0,!1,!0,!0,B.ce,s,t.qL),A.jr("Target",this.b.a,!0,B.bE,s,s,s,B.b0,!1,!0,!0,B.ce,s,t.zE)],t.D)},
 $S:20}
 A.yU.prototype={}
 A.abW.prototype={
@@ -44614,23 +44614,23 @@ A.a4J.prototype={
 $0(){var s=this.a,r=s.at
 r.toString
 s=s.db
-s===$&&A.a()
+s===$&&A.b()
 return r.$1(new A.p_(s.b,s.a,this.b))},
 $S:0}
 A.a4H.prototype={
 $0(){var s,r=this.a,q=r.at
 q.toString
 s=r.dx
-s===$&&A.a()
+s===$&&A.b()
 r=r.db
-r===$&&A.a()
+r===$&&A.b()
 return q.$1(new A.p_(r.b,r.a,s))},
 $S:0}
 A.a4I.prototype={
 $0(){var s=this.a,r=s.ch
 r.toString
 s=s.db
-s===$&&A.a()
+s===$&&A.b()
 return r.$1(new A.p_(s.b,s.a,0))},
 $S:0}
 A.ST.prototype={}
@@ -44782,7 +44782,7 @@ k(a){var s,r=this.a,q=A.cD(r).i("a_<aL.E,r>")
 r=A.a1(new A.a_(r,new A.ac3(),q),q.i("an.E"))
 s=A.mJ(r,"[","]")
 r=this.b
-r===$&&A.a()
+r===$&&A.b()
 return"PolynomialFit("+s+", confidence: "+B.d.a1(r,3)+")"}}
 A.ac3.prototype={
 $1(a){return B.d.as6(a,3)},
@@ -44933,7 +44933,7 @@ h.k1=new A.e9(n,o)
 m=h.afl(a.gbc(),p)
 $label1$1:{l=h.fy
 if(B.cs===l||B.AR===l){s=h.id
-s===$&&A.a()
+s===$&&A.b()
 h.id=s.Z(0,new A.e9(p,q))
 h.k2=a.gjZ()
 h.k4=a.gbS()
@@ -44942,7 +44942,7 @@ if(a.gbS()==null)j=null
 else{s=a.gbS()
 s.toString
 j=A.pD(s)}s=h.ok
-s===$&&A.a()
+s===$&&A.b()
 r=A.u6(j,null,k,n).gd9()
 i=h.rT(k)
 h.ok=s+r*J.fF(i==null?1:i)
@@ -44978,17 +44978,17 @@ r.p3.E(0,a)
 if(r.rx===a)r.rx=s.length!==0?B.b.gab(s):null},
 acF(){var s,r=this
 if(r.ay!=null){s=r.go
-s===$&&A.a()
+s===$&&A.b()
 r.cC("onDown",new A.a2i(r,new A.kK(s.b,s.a)))}},
 Mk(a){var s,r,q,p,o,n,m,l,k=this
 if(k.fy===B.fC)return
 k.fy=B.fC
 s=k.id
-s===$&&A.a()
+s===$&&A.b()
 r=k.k2
 q=k.k4
 switch(k.at.a){case 1:p=k.go
-p===$&&A.a()
+p===$&&A.b()
 k.go=p.Z(0,s)
 o=B.h
 break
@@ -44999,13 +44999,13 @@ k.k4=k.k2=null
 k.a5j(r,a)
 if(!J.e(o,B.h)&&k.CW!=null){n=q!=null?A.pD(q):null
 s=k.go
-s===$&&A.a()
+s===$&&A.b()
 m=A.u6(n,null,o,s.a.Z(0,o))
 l=k.go.Z(0,new A.e9(o,m))
 k.Mt(o,l.b,l.a,a,k.rT(o),r)}k.U(B.bT)},
 a5j(a,b){var s,r,q=this
 if(q.ch!=null){s=q.go
-s===$&&A.a()
+s===$&&A.b()
 r=q.e.h(0,b)
 r.toString
 q.cC("onStart",new A.a2n(q,new A.hj(s.b,s.a,a,r)))}},
@@ -45022,7 +45022,7 @@ if(r==null){q=new A.a2j()
 p=null}else{o=m.a=n.Go(r,s.a)
 q=o!=null?new A.a2k(m,r):new A.a2l(r)
 p=o}if(p==null){p=n.k1
-p===$&&A.a()
+p===$&&A.b()
 m.a=new A.fP(p.b,p.a,B.cK,0)}n.aoD("onEnd",new A.a2m(m,n),q)},
 l(){this.p2.W(0)
 this.lX()}}
@@ -45062,10 +45062,10 @@ q=o.dy
 if(q==null)q=8000
 p=A.D(r,-q,q)
 r=o.k1
-r===$&&A.a()
+r===$&&A.b()
 return new A.fP(r.b,r.a,new A.hH(new A.i(0,p)),p)},
 HP(a,b){var s=this.ok
-s===$&&A.a()
+s===$&&A.b()
 return Math.abs(s)>A.od(a,this.b)},
 rR(a){return new A.i(0,a.b)},
 rT(a){return a.b},
@@ -45081,10 +45081,10 @@ q=o.dy
 if(q==null)q=8000
 p=A.D(r,-q,q)
 r=o.k1
-r===$&&A.a()
+r===$&&A.b()
 return new A.fP(r.b,r.a,new A.hH(new A.i(p,0)),p)},
 HP(a,b){var s=this.ok
-s===$&&A.a()
+s===$&&A.b()
 return Math.abs(s)>A.od(a,this.b)},
 rR(a){return new A.i(a.a,0)},
 rT(a){return a.a},
@@ -45099,10 +45099,10 @@ r=p.dy
 if(r==null)r=8000
 q=new A.hH(s).ajS(n,r)
 r=p.k1
-r===$&&A.a()
+r===$&&A.b()
 return new A.fP(r.b,r.a,q,null)},
 HP(a,b){var s=this.ok
-s===$&&A.a()
+s===$&&A.b()
 return Math.abs(s)>A.ax8(a,this.b)},
 rR(a){return a},
 rT(a){return null}}
@@ -45539,7 +45539,7 @@ if(a.gbc()!==m.go)return
 m.a2E(a)
 if(t.n2.b(a)){s=A.od(a.gcp(),m.b)
 if(!m.fr){r=m.k4
-r===$&&A.a()
+r===$&&A.b()
 r=a.gbr().a4(0,r.b).gd9()>s}else r=!0
 m.fr=r
 r=m.k2
@@ -45549,12 +45549,12 @@ else{r=a.gbS()
 r.toString
 q=A.pD(r)}p=m.RD(a.gow())
 r=m.p1
-r===$&&A.a()
+r===$&&A.b()
 o=A.u6(q,null,p,a.gcZ()).gd9()
 n=m.RE(p)
 m.p1=r+o*J.fF(n==null?1:n)
 r=m.p2
-r===$&&A.a()
+r===$&&A.b()
 m.p2=r+A.u6(q,null,a.gow(),a.gcZ()).gd9()*B.i.gC1(1)
 if(!m.OO(a.gcp()))r=m.fy&&Math.abs(m.p2)>A.ax8(a.gcp(),m.b)
 else r=!0
@@ -45579,13 +45579,13 @@ this.a1S()},
 wv(a){var s,r,q,p,o,n,m=this
 if(!m.fy)return
 if(m.at===B.ab){s=m.k4
-s===$&&A.a()
+s===$&&A.b()
 r=a.go3()
 m.ok=m.k4=s.Z(0,new A.e9(a.gow(),r))}m.a59(a)
 q=a.gow()
 if(!q.j(0,B.h)){m.ok=new A.e9(a.gcZ(),a.gbr())
 s=m.k4
-s===$&&A.a()
+s===$&&A.b()
 p=s.a.Z(0,q)
 if(a.gbS()==null)o=null
 else{s=a.gbS()
@@ -45613,7 +45613,7 @@ if(!o.R8.E(0,a.gbc()))o.B7(a.gbc(),B.aq)},
 a59(a){var s,r,q,p=this
 if(p.cy!=null){s=a.gjZ()
 r=p.k4
-r===$&&A.a()
+r===$&&A.b()
 q=p.e.h(0,a.gbc())
 q.toString
 p.cC("onDragStart",new A.a_O(p,new A.Cy(r.b,r.a,s,q,p.kt$)))}p.k3=null},
@@ -45626,14 +45626,14 @@ r=a.gow()
 q=m.e.h(0,a.gbc())
 q.toString
 p=m.k4
-p===$&&A.a()
+p===$&&A.b()
 o=k.a4(0,p.b)
 p=s.a4(0,p.a)
 n=m.kt$
 if(m.db!=null)m.cC("onDragUpdate",new A.a_P(m,new A.CA(k,s,l,r,q,o,p,n)))},
 a5a(a){return this.Mm(a,null)},
 Ml(){var s,r=this,q=r.ok
-q===$&&A.a()
+q===$&&A.b()
 s=r.p4
 if(s!=null){s.b0()
 r.a91()}s=r.kt$
@@ -45683,13 +45683,13 @@ $0(){return this.a.dx.$1(this.b)},
 $S:0}
 A.k5.prototype={
 OO(a){var s=this.p1
-s===$&&A.a()
+s===$&&A.b()
 return Math.abs(s)>A.od(a,this.b)},
 RD(a){return new A.i(a.a,0)},
 RE(a){return a.a}}
 A.k6.prototype={
 OO(a){var s=this.p1
-s===$&&A.a()
+s===$&&A.b()
 return Math.abs(s)>A.ax8(a,this.b)},
 RD(a){return a},
 RE(a){return null}}
@@ -45748,7 +45748,7 @@ s.b.push(c)
 if(s.f==null)s.f=$.el.b8$.pS(0,b,s)
 return new A.Rh(s,c)}}
 A.a55.prototype={
-$0(){return new A.qH(this.a,A.b([],t.iQ),this.b)},
+$0(){return new A.qH(this.a,A.a([],t.iQ),this.b)},
 $S:381}
 A.hH.prototype={
 a4(a,b){return new A.hH(this.a.a4(0,b.a))},
@@ -45782,10 +45782,10 @@ r.c[s]=new A.Fj(a,b)},
 vT(){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a
 if(this.gnM().gH9()>40)return B.lT
 s=t.n
-r=A.b([],s)
-q=A.b([],s)
-p=A.b([],s)
-o=A.b([],s)
+r=A.a([],s)
+q=A.a([],s)
+p=A.a([],s)
+o=A.a([],s)
 n=this.d
 s=this.c
 m=s[n]
@@ -45814,9 +45814,9 @@ c=A.qS(new A.ai9(o,q,p))
 if(d.dM()!=null&&c.dM()!=null){s=d.dM().a[1]
 g=c.dM().a[1]
 b=d.dM().b
-b===$&&A.a()
+b===$&&A.b()
 a=c.dM().b
-a===$&&A.a()
+a===$&&A.b()
 return new A.nF(new A.i(s*1000,g*1000),b*a,new A.aX(l-k.a.a),m.b.a4(0,k.b))}}return new A.nF(B.h,1,new A.aX(l-k.a.a),m.b.a4(0,k.b))}}
 A.ai8.prototype={
 $0(){return new A.M2(this.a,this.b,this.c).KC(2)},
@@ -46004,10 +46004,10 @@ A.ET.prototype={
 aG(){this.aP()
 this.d=A.aLe()},
 l(){var s=this.d
-s===$&&A.a()
+s===$&&A.b()
 s.l()
 this.aI()},
-gacg(){var s=A.b([],t.a9)
+gacg(){var s=A.a([],t.a9)
 this.a.toString
 s.push(B.DQ)
 s.push(B.DN)
@@ -46049,7 +46049,7 @@ return new A.Dh(p,p,p,new A.anQ(),p,p,p,p,p,n,B.NX,p,p,p,B.Lw,q.gacn(),o,p,B.Vn,
 K(a){var s,r=null,q=A.my(!1,!1,this.a4Z(a),r,r,r,r,!0,r,r,r,new A.anR(),r,r)
 this.a.toString
 s=this.d
-s===$&&A.a()
+s===$&&A.b()
 return A.aBm(B.Dd,new A.p7(s,q,r))}}
 A.anQ.prototype={
 $1$2(a,b,c){return A.aa9(b,a,c)},
@@ -46196,7 +46196,7 @@ q=b9.z
 if(q==null)q=16
 a1.toString
 b2=A.av_(new A.hS(new A.as2(m),A.Ly(A.iD(new A.Mz(a3,a6,a9,s,q,b6),b6,b6,B.c3,!0,a1,b6,b6,B.az),c),b6),B.Y)
-if(r.x!=null){s=A.b([new A.te(1,B.o7,new A.fK(new A.ac(0,1/0,0,m),b2,b6),b6)],t.p)
+if(r.x!=null){s=A.a([new A.te(1,B.o7,new A.fK(new A.ac(0,1/0,0,m),b2,b6),b6)],t.p)
 r=b5.a.x
 r.toString
 s.push(r)
@@ -46392,13 +46392,13 @@ gajh(){var s,r=this
 if(r.a==null)return null
 if(r.e)r.kY()
 s=r.f
-s===$&&A.a()
+s===$&&A.b()
 return s},
 gam5(){var s,r=this
 if(r.b==null)return null
 if(r.e)r.kY()
 s=r.r
-s===$&&A.a()
+s===$&&A.b()
 return s},
 sFX(a){if(!J.e(a,this.a)){this.a=a
 this.e=!0}},
@@ -46411,10 +46411,10 @@ s.toString
 return s}if(a===1){s=q.b
 s.toString
 return s}s=q.f
-s===$&&A.a()
+s===$&&A.b()
 s=s.eo(a)
 r=q.r
-r===$&&A.a()
+r===$&&A.b()
 return A.pZ(s,r.eo(a))},
 k(a){var s=this
 return"MaterialRectArcTween("+A.m(s.a)+" \u2192 "+A.m(s.b)+"; beginArc="+A.m(s.gajh())+", endArc="+A.m(s.gam5())+")"}}
@@ -47450,7 +47450,7 @@ q=r.p3
 s=s.c
 s=q!=s.p3||r.h6!==s.h6||s.fI.length!==r.fI.length}else s=!0
 if(s){s=p.d
-s===$&&A.a()
+s===$&&A.b()
 s.l()
 p.R5()}},
 R5(){var s,r,q,p=this.a,o=p.c,n=0.5/(o.fI.length+1.5)
@@ -47475,7 +47475,7 @@ s=this.c
 s.toString
 A.tU(s).XF(new A.im(r.f.r,this.$ti.i("im<1>")))},
 l(){var s=this.d
-s===$&&A.a()
+s===$&&A.b()
 s.l()
 this.aI()},
 K(a){var s,r,q=this,p=null,o=q.a,n=o.c,m=o.w,l=n.fI[m],k=o.e
@@ -47488,7 +47488,7 @@ if(r===B.kk)o=A.azQ(l,s?A.W(a).CW:p,p)
 else o=l
 l=A.LJ(s,p,!0,o,p,!0,p,p,p,p,p,q.ga6J(),p,p,q.ga9W(),p,p,p,p)
 o=q.d
-o===$&&A.a()
+o===$&&A.b()
 l=A.afU(new A.dK(o,!1,l,p),p,B.Ny)
 return A.bM(p,l,!1,p,p,!1,p,!1,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,B.lf,p,p,p,p,p,p,p)}}
 A.vC.prototype={
@@ -47507,28 +47507,28 @@ s=A.cG(B.Jv,s,B.At)
 r.e!==$&&A.bu()
 r.e=s},
 l(){var s=this.d
-s===$&&A.a()
+s===$&&A.b()
 s.l()
 s=this.e
-s===$&&A.a()
+s===$&&A.b()
 s.l()
 this.aI()},
 K(a){var s,r,q,p,o,n,m,l,k,j,i,h=this,g=null
 A.f0(a,B.bk,t.c4).toString
 s=h.a.c
-r=A.b([],t.p)
+r=A.a([],t.p)
 for(q=s.fI,p=h.$ti.i("vD<1>"),o=0;o<q.length;++o){n=h.a
 m=n.c
 l=n.d
 k=n.e
 j=n.f
 r.push(new A.vD(m,n.y,l,k,j,o,!0,g,p))}q=h.d
-q===$&&A.a()
+q===$&&A.b()
 p=h.a
 n=p.r
 m=s.un
 l=h.e
-l===$&&A.a()
+l===$&&A.b()
 p=p.x
 k=B.Nw.h(0,m)
 h.a.toString
@@ -47593,10 +47593,10 @@ this.d=A.BC(s.c.BC(s.r,s.d.d,s.w).d,null,null)},
 K(a){var s,r=this,q=A.cZ(a),p=r.a,o=p.c,n=p.f,m=p.r,l=p.d,k=p.Q
 p=p.at
 s=r.d
-s===$&&A.a()
+s===$&&A.b()
 return A.aAw(new A.dG(new A.alx(r,q,new A.vC(o,n,m,l,k,!0,p,s,null,r.$ti.i("vC<1>"))),null),a,!0,!0,!0,!0)},
 l(){var s=this.d
-s===$&&A.a()
+s===$&&A.b()
 s.l()
 this.aI()}}
 A.alx.prototype={
@@ -47634,7 +47634,7 @@ s.toString
 if(q.r==null)q.r=A.KQ(!0,A.t(s).k(0),!0,!0,null,null,!1)
 s=t.e
 r=t.d
-q.w=A.c([B.ir,new A.cE(new A.alu(q),new A.b0(A.b([],s),r),t.wY),B.AB,new A.cE(new A.alv(q),new A.b0(A.b([],s),r),t.nz)],t.u,t.od)
+q.w=A.c([B.ir,new A.cE(new A.alu(q),new A.b0(A.a([],s),r),t.wY),B.AB,new A.cE(new A.alv(q),new A.b0(A.a([],s),r),t.nz)],t.u,t.od)
 q.gbU().a0(q.gNm())},
 l(){var s,r=this
 $.a3.hS(r)
@@ -47669,7 +47669,7 @@ a1=a.c
 a1.toString
 A.ayH(a1)
 a1=a.$ti
-r=A.b([],a1.i("A<vV<1>>"))
+r=A.a([],a1.i("A<vV<1>>"))
 for(q=a1.i("vV<1>"),p=0;o=a.a.c,p<o.length;++p){o=o[p]
 r.push(new A.vV(new A.alr(a,p),o,o,a0,q))}q=a.c
 q.toString
@@ -47698,12 +47698,12 @@ A.f0(k,B.bk,t.c4).toString
 k=a.a.fr
 j=r.length
 j=A.be(j,48,!1,t.i)
-i=A.b([],t.Zt)
+i=A.a([],t.Zt)
 h=$.aq
 g=a1.i("aB<im<1>?>")
 f=a1.i("c_<im<1>?>")
 e=A.lo(B.cx)
-d=A.b([],t.wi)
+d=A.a([],t.wi)
 c=$.ab()
 b=$.aq
 a.e=new A.Ea(r,B.eJ,q,o,8,l,m,48,a0,k,a0,!0,a0,j,!0,"Dismiss",a0,a0,a0,i,A.aD(t.f9),new A.bJ(a0,a1.i("bJ<nV<im<1>>>")),new A.bJ(a0,t.C),new A.MR(),a0,0,new A.c_(new A.aB(h,g),f),e,d,a0,B.yV,new A.c8(a0,c,t.Ll),new A.c_(new A.aB(b,g),f),new A.c_(new A.aB(b,g),f),a1.i("Ea<1>"))
@@ -47759,7 +47759,7 @@ h.toString
 h=h.bE(A.W(a).ay)}j.a.toString
 p=B.S.U(a.ao(t.I).w)
 n=t.p
-m=A.b([],n)
+m=A.a([],n)
 j.a.toString
 m.push(A.bT(q))
 j.a.toString
@@ -47767,7 +47767,7 @@ m.push(o)
 g=A.iD(A.ft(new A.bq(p,A.d4(m,B.E,B.kJ,B.bI,i),i),i,i),i,i,B.c3,!0,h,i,i,B.az)
 if(a.ao(t.U2)==null){j.a.toString
 h=A.eD(i,i,B.x,i,i,B.BP,i,1,i,i,i,i,i)
-g=A.uI(B.dt,A.b([g,A.avX(8,h,i,i,0,0,i,i)],n),B.Y,B.cI,i)}h=A.aD(t.EK)
+g=A.uI(B.dt,A.a([g,A.avX(8,h,i,i,0,0,i,i)],n),B.Y,B.cI,i)}h=A.aD(t.EK)
 if(!j.gpq())h.C(0,B.t)
 l=A.cw(B.Ba,h,t.Pb)
 j.a.toString
@@ -47781,7 +47781,7 @@ g=A.LJ(!1,i,p,g,i,!1,m.CW,n,i,i,l,i,i,i,h,i,i,i,i)
 k=j.d!=null
 h=j.z
 p=j.w
-p===$&&A.a()
+p===$&&A.b()
 return A.bM(!k,A.om(p,g),!1,i,i,!1,h,!1,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i)}}
 A.alu.prototype={
 $1(a){return this.a.Dk()},
@@ -47918,7 +47918,7 @@ q.at=r
 if(s.Q)r.tj(!0)
 q.at.a0(q.gPA())},
 l(){var s=this,r=s.at
-r===$&&A.a()
+r===$&&A.b()
 r.I(s.gPA())
 s.a.toString
 r=s.at
@@ -47935,7 +47935,7 @@ p=q.c
 p.toString
 A.f0(p,B.bk,t.c4).toString
 p=q.at
-p===$&&A.a()
+p===$&&A.b()
 s=p.a?"Expanded":"Collapsed"
 if(A.aF()===B.K){p=q.ax
 if(p!=null)p.b0()
@@ -47964,7 +47964,7 @@ m.y=new A.am(b,new A.dh(j,i,k),k.i("am<aj.T>"))
 s=A.W(a)
 A.f0(a,B.bk,t.c4).toString
 k=m.at
-k===$&&A.a()
+k===$&&A.b()
 k=k.a
 r=k?"Collapse":"Expand for more details"
 q=l
@@ -47973,7 +47973,7 @@ break
 case 0:case 1:case 3:case 5:break}k=m.z
 k=k.b.aj(k.a.gu())
 if(k==null){k=m.as
-k===$&&A.a()
+k===$&&A.b()
 k=k.f}j=m.y
 j=j.b.aj(j.a.gu())
 i=m.a
@@ -47981,14 +47981,14 @@ i.toString
 p=m.at
 p=p.a?p.gak1():p.gamk(p)
 o=m.as
-o===$&&A.a()
+o===$&&A.b()
 n=m.a4Y(a,b)
 m.a.toString
 return A.bM(l,A.aL9(A.M8(!1,o.c,l,!0,!0,l,l,!1,l,i.c,l,l,p,!1,l,l,l,l,l,l,i.d,n,l),k,l,j),!1,l,l,!1,l,!1,l,l,l,q,l,l,l,l,l,l,l,l,l,l,l,l,l,l,l,l,l,r,l,l,l,l,l,l,l,l)},
 a4A(a,b){var s,r,q=null,p=this.a
 p.toString
 s=this.as
-s===$&&A.a()
+s===$&&A.b()
 r=s.d
 if(r==null)r=B.a8
 s=s.e
@@ -48003,7 +48003,7 @@ s=A.k(l).i("dh<aj.T>")
 p.x=new A.am(d,new A.dh(m,l,s),s.i("am<aj.T>"))
 n=n.aj(d.gu())
 if(n==null){n=p.as
-n===$&&A.a()
+n===$&&A.b()
 n=n.a
 r=n}else r=n
 if(r==null)r=B.D
@@ -48011,9 +48011,9 @@ n=p.x
 q=n.b.aj(n.a.gu())
 if(q==null)q=B.mo
 p.a.toString
-p.as===$&&A.a()
+p.as===$&&A.b()
 n=q.giT()
-m=A.eR(A.b([b,c],t.p),B.E,B.z,B.bI)
+m=A.eR(A.a([b,c],t.p),B.E,B.z,B.bI)
 p.a.toString
 n=A.mU(!1,B.a0,!0,o,new A.bq(n,m,o),B.c9,r,0,o,o,q,o,o,B.dN)
 return n},
@@ -48048,19 +48048,19 @@ q.ahJ()
 q.ahS()
 q.cV()},
 ahI(){this.a.toString
-this.as===$&&A.a()
+this.as===$&&A.b()
 this.CW=B.a0},
 SU(a){var s,r=this.d,q=this.a
 q.toString
 s=this.as
-s===$&&A.a()
+s===$&&A.b()
 s=s.z
 r.a=s==null?B.mo:s
 r.b=q.dx},
 ahR(a){var s,r=this,q=r.e
 r.a.toString
 s=r.as
-s===$&&A.a()
+s===$&&A.b()
 s=s.x
 q.a=s==null?a.gtM():s
 r.a.toString
@@ -48069,7 +48069,7 @@ q.b=s==null?a.gvu():s},
 ahV(a){var s,r=this,q=r.f
 r.a.toString
 s=r.as
-s===$&&A.a()
+s===$&&A.b()
 s=s.r
 q.a=s==null?a.gtL():s
 r.a.toString
@@ -48078,22 +48078,22 @@ q.b=s==null?a.gc4():s},
 ahJ(){var s,r=this.r
 this.a.toString
 s=this.as
-s===$&&A.a()
+s===$&&A.b()
 r.a=s.b
 r.b=s.a},
 ahS(){var s=this
 s.a.toString
-s.as===$&&A.a()
+s.as===$&&A.b()
 s.ay=B.cc
 s.ch=null},
 K(a){var s,r,q,p=this,o=p.at
-o===$&&A.a()
+o===$&&A.b()
 s=p.ay
-s===$&&A.a()
+s===$&&A.b()
 r=p.CW
-r===$&&A.a()
+r===$&&A.b()
 q=p.ch
-q===$&&A.a()
+q===$&&A.b()
 p.a.toString
 return new A.yF(o,p.ga4H(),p.ga4z(),r,s,q,!1,p.ga4D(),null)}}
 A.alR.prototype={
@@ -48171,7 +48171,7 @@ Zh(a,b,c){if(c<0.5)return a
 else return b}}
 A.Dr.prototype={
 gu(){var s=this,r=s.w.x
-r===$&&A.a()
+r===$&&A.b()
 return r<s.x?s.a.gu():s.b.gu()}}
 A.Yu.prototype={}
 A.Yv.prototype={}
@@ -48581,11 +48581,11 @@ q.restore()}else p.e.fL(a,s,r)}}
 A.mI.prototype={
 a8p(a){var s
 if(a===B.V&&!this.CW){s=this.ch
-s===$&&A.a()
+s===$&&A.b()
 s.l()
 this.lW()}},
 l(){var s=this.ch
-s===$&&A.a()
+s===$&&A.b()
 s.l()
 this.lW()},
 PI(a,b,c){var s,r,q=this,p=a.a
@@ -48605,7 +48605,7 @@ $.a0()
 s=A.b_()
 r=n.e
 q=n.ay
-q===$&&A.a()
+q===$&&A.b()
 s.r=r.dT(q.b.aj(q.a.gu())).gu()
 p=A.zY(b)
 r=n.at
@@ -48662,46 +48662,46 @@ d.FG(h)
 return h}}
 A.zl.prototype={
 yO(){var s=this.ch
-s===$&&A.a()
+s===$&&A.b()
 s.e=B.Hz
 s.c7()
 s=this.cx
-s===$&&A.a()
+s===$&&A.b()
 s.c7()
 s=this.db
-s===$&&A.a()
+s===$&&A.b()
 s.z=B.aQ
 s.jp(1,B.a3,B.nH)},
 b0(){var s,r=this,q=r.cx
-q===$&&A.a()
+q===$&&A.b()
 q.fU()
 q=r.cx.x
-q===$&&A.a()
+q===$&&A.b()
 s=1-q
 q=r.db
-q===$&&A.a()
+q===$&&A.b()
 q.su(s)
 if(s<1){q=r.db
 q.z=B.aQ
 q.jp(1,B.a3,B.jB)}},
 abQ(a){if(a===B.ae)this.l()},
 l(){var s=this,r=s.ch
-r===$&&A.a()
+r===$&&A.b()
 r.l()
 r=s.cx
-r===$&&A.a()
+r===$&&A.b()
 r.l()
 r=s.db
-r===$&&A.a()
+r===$&&A.b()
 r.l()
 s.lW()},
 IJ(a,b){var s,r,q,p,o,n=this,m=n.cx
-m===$&&A.a()
+m===$&&A.b()
 m=m.r
 if(m!=null&&m.a!=null){m=n.CW
-m===$&&A.a()
+m===$&&A.b()
 s=m.b.aj(m.a.gu())}else{m=n.cy
-m===$&&A.a()
+m===$&&A.b()
 s=m.b.aj(m.a.gu())}$.a0()
 r=A.b_()
 r.r=n.e.dT(s).gu()
@@ -48709,13 +48709,13 @@ m=n.at
 q=m==null?null:m.$0()
 p=q!=null?q.gaM():n.b.gt().mr(B.h)
 o=n.ch
-o===$&&A.a()
+o===$&&A.b()
 o=o.x
-o===$&&A.a()
+o===$&&A.b()
 o=A.Ao(n.z,p,B.aT.aj(o))
 o.toString
 p=n.ay
-p===$&&A.a()
+p===$&&A.b()
 p=p.b.aj(p.a.gu())
 n.aqG(n.Q,a,o,m,n.f,r,p,n.ax,b)}}
 A.pd.prototype={
@@ -48744,7 +48744,7 @@ Zo(a){return null},
 K(a){var s=this,r=a.ao(t.sZ),q=r==null?null:r.f
 return new A.EG(s.c,s.d,s.e,s.f,s.r,s.w,s.x,s.y,s.z,s.as,s.Q,s.at,s.ax,s.ay,s.ch,s.CW,s.cx,s.cy,s.db,s.dx,s.dy,s.fr,s.fx,s.fy,s.go,s.id,s.k1,!1,s.k3,s.k4,s.ok,s.p1,q,s.gZn(),s.p2,s.p3,null)}}
 A.EG.prototype={
-ae(){return new A.EF(A.o(t.R9,t.Pr),new A.b0(A.b([],t.IR),t.yw),null)}}
+ae(){return new A.EF(A.o(t.R9,t.Pr),new A.b0(A.a([],t.IR),t.yw),null)}}
 A.nO.prototype={
 J(){return"_HighlightType."+this.b}}
 A.EF.prototype={
@@ -48799,12 +48799,12 @@ s.G$=0}o.x=null}o.uN()}s=o.a
 if(s.cy!=a.cy||s.cx!==a.cx||!J.e(s.db,a.db)){s=o.r
 r=s.h(0,B.eg)
 if(r!=null){q=r.ch
-q===$&&A.a()
+q===$&&A.b()
 q.l()
 r.lW()
 o.Jm(B.eg,!1,o.f)}p=s.h(0,B.AW)
 if(p!=null){s=p.ch
-s===$&&A.a()
+s===$&&A.b()
 s.l()
 p.lW()}}if(!J.e(o.a.dx,a.dx))o.ahU()
 s=o.a
@@ -48817,7 +48817,7 @@ s.toString
 if(!(o.i6(s)||o.i8(s))){o.gcj().d4(B.L,!1)
 r=o.r.h(0,B.eg)
 if(r!=null){s=r.ch
-s===$&&A.a()
+s===$&&A.b()
 s.l()
 r.lW()}}o.Jm(B.eg,!1,o.f)}o.Jl()},
 l(){var s,r=this
@@ -48892,10 +48892,10 @@ q.FG(s)
 f.p(0,a,s)
 h.oP()}else{e.CW=!0
 f=e.ch
-f===$&&A.a()
+f===$&&A.b()
 f.c7()}else{e.CW=!1
 f=e.ch
-f===$&&A.a()
+f===$&&A.b()
 f.dJ()}switch(d){case 0:h.a.toString
 break
 case 1:if(b){f=h.a.ay
@@ -49011,7 +49011,7 @@ if(m!=null){n.d=null
 for(s=A.k(m),m=new A.h3(m,m.pk(),s.i("h3<1>")),s=s.c;m.A();){r=m.d;(r==null?s.a(r):r).l()}n.e=null}for(m=n.r,s=new A.cz(m,m.r,m.e,A.k(m).i("cz<1>"));s.A();){r=s.d
 q=m.h(0,r)
 if(q!=null){p=q.ch
-p===$&&A.a()
+p===$&&A.b()
 p.r.l()
 p.r=null
 o=p.cO$
@@ -49067,7 +49067,7 @@ k=a0.w
 if(k===$){q=a0.gaiE()
 p=t.e
 o=t.d
-j=A.c([B.ir,new A.cE(q,new A.b0(A.b([],p),o),t.wY),B.AB,new A.cE(q,new A.b0(A.b([],p),o),t.nz)],t.u,t.od)
+j=A.c([B.ir,new A.cE(q,new A.b0(A.a([],p),o),t.wY),B.AB,new A.cE(q,new A.b0(A.a([],p),o),t.nz)],t.u,t.od)
 a0.w!==$&&A.aw()
 a0.w=j
 k=j}q=a0.a.ok
@@ -49313,16 +49313,16 @@ r.w=A.cG(B.a3,r.e,q)
 s=r.a.r
 r.x=new A.fi(A.ah(0,s.v()>>>16&255,s.v()>>>8&255,s.v()&255),r.a.r)},
 l(){var s=this,r=s.d
-r===$&&A.a()
+r===$&&A.b()
 r.l()
 r=s.e
-r===$&&A.a()
+r===$&&A.b()
 r.l()
 r=s.f
-r===$&&A.a()
+r===$&&A.b()
 r.l()
 r=s.w
-r===$&&A.a()
+r===$&&A.b()
 r.l()
 s.a2T()},
 aL(a){var s,r,q=this
@@ -49330,32 +49330,32 @@ q.aY(a)
 s=a.c
 if(!q.a.c.j(0,s)){q.r=new A.EK(s,q.a.c)
 s=q.d
-s===$&&A.a()
+s===$&&A.b()
 s.su(0)
 s.c7()}if(!q.a.r.j(0,a.r)){s=q.a.r
 q.x=new A.fi(A.ah(0,s.v()>>>16&255,s.v()>>>8&255,s.v()&255),q.a.r)}s=q.a.w
 if(s!==a.w){r=q.e
-if(s){r===$&&A.a()
-r.c7()}else{r===$&&A.a()
+if(s){r===$&&A.b()
+r.c7()}else{r===$&&A.b()
 r.dJ()}}},
 K(a){var s,r,q,p,o,n,m,l,k=this,j=k.f
-j===$&&A.a()
+j===$&&A.b()
 s=k.a.d
 r=k.e
-r===$&&A.a()
-r=A.b([j,s,r],t.Eo)
+r===$&&A.b()
+r=A.a([j,s,r],t.Eo)
 s=k.f
 j=k.r
-j===$&&A.a()
+j===$&&A.b()
 q=k.a
 p=q.e
 q=q.d
 o=a.ao(t.I).w
 n=k.a.f
 m=k.x
-m===$&&A.a()
+m===$&&A.b()
 l=k.w
-l===$&&A.a()
+l===$&&A.b()
 return A.iC(null,new A.Th(s,j,p,q,o,n,m,l,new A.qV(r)),null,null,B.A)}}
 A.Ey.prototype={
 ae(){return new A.Ez(null,null)}}
@@ -49374,7 +49374,7 @@ s=r.d
 s.bw()
 s.cH$.C(0,r.gE3())},
 l(){var s=this.d
-s===$&&A.a()
+s===$&&A.b()
 s.l()
 this.a31()},
 E4(){this.a7(new A.amM())},
@@ -49384,12 +49384,12 @@ s=q.a.x!=null
 r=s!==(a.x!=null)
 if(r)if(s){q.f=q.rC()
 s=q.d
-s===$&&A.a()
+s===$&&A.b()
 s.c7()}else{s=q.d
-s===$&&A.a()
+s===$&&A.b()
 s.dJ()}},
 wz(){var s,r,q,p,o=null,n=t.Y,m=this.d
-m===$&&A.a()
+m===$&&A.b()
 s=this.a
 r=s.e
 r.toString
@@ -49401,7 +49401,7 @@ rC(){var s={},r=this.a,q=r.x
 s.a=r.w
 return new A.dG(new A.amL(s,this,q),null)},
 K(a){var s,r,q=this,p=null,o=q.d
-o===$&&A.a()
+o===$&&A.b()
 if(o.gaN()===B.V){q.f=null
 if(q.gxe())return q.e=q.wz()
 else{q.e=null
@@ -49413,7 +49413,7 @@ if(s==null&&q.gl2())return q.rC()
 r=q.f
 if(r==null&&q.gxe())return q.wz()
 if(q.gl2()){r=t.Y
-return A.uI(B.dt,A.b([new A.dK(new A.am(o,new A.ao(1,0,r),r.i("am<aj.T>")),!1,s,p),q.rC()],t.p),B.Y,B.cI,p)}if(q.gxe())return A.uI(B.dt,A.b([q.wz(),new A.dK(o,!1,r,p)],t.p),B.Y,B.cI,p)
+return A.uI(B.dt,A.a([new A.dK(new A.am(o,new A.ao(1,0,r),r.i("am<aj.T>")),!1,s,p),q.rC()],t.p),B.Y,B.cI,p)}if(q.gxe())return A.uI(B.dt,A.a([q.wz(),new A.dK(o,!1,r,p)],t.p),B.Y,B.cI,p)
 return B.aw}}
 A.amM.prototype={
 $0(){},
@@ -49423,7 +49423,7 @@ $1(a){var s,r,q,p,o,n,m=null,l=A.co(a,B.a_w)
 l=l==null?m:l.ch
 s=this.b
 r=s.d
-r===$&&A.a()
+r===$&&A.b()
 q=new A.ao(B.P7,B.h,t.Ni).aj(r.gu())
 p=this.a.a
 if(p==null){p=this.c
@@ -49456,7 +49456,7 @@ gB(a){var s=this
 return A.K(s.a,s.c,s.d,s.e,s.f,s.r,!1,s.x,s.y,s.z,s.Q,!0,s.at,s.ax,s.ay,s.ch,s.CW,s.cx,s.cy,A.K(s.db,s.dx,s.dy,s.fr,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a))}}
 A.apf.prototype={}
 A.FB.prototype={
-gig(){var s=this.da$,r=s.h(0,B.bM),q=A.b([],t.Ik),p=s.h(0,B.aH)
+gig(){var s=this.da$,r=s.h(0,B.bM),q=A.a([],t.Ik),p=s.h(0,B.aH)
 if(p!=null)q.push(p)
 p=s.h(0,B.aX)
 if(p!=null)q.push(p)
@@ -49696,15 +49696,15 @@ i=A.wc(a2.h(0,B.b6),a4)
 h=A.ip(a2.h(0,B.b6),i)
 g=A.wc(a2.h(0,B.b7),a4)
 f=Math.max(a4-h-A.ip(a2.h(0,B.b7),g)-r-p,0)
-o=A.b([a2.h(0,B.aX)],t.iG)
+o=A.a([a2.h(0,B.aX)],t.iG)
 if(a1.q.y)o.push(a2.h(0,B.b5))
 e=t.n
-d=B.b.B1(A.b([a1.ac3(f,o),i,g],e),B.mu)
+d=B.b.B1(A.a([a1.ac3(f,o),i,g],e),B.mu)
 o=a1.q
 a2=a2.h(0,B.ad)==null?0:a1.q.c
 c=a1.q
 b=c.z
-a=B.b.B1(A.b([a3,o.a.b+a2+d+c.a.d+new A.i(b.a,b.b).a8(0,4).b,s,q],e),B.mu)
+a=B.b.B1(A.a([a3,o.a.b+a2+d+c.a.d+new A.i(b.a,b.b).a8(0,4).b,s,q],e),B.mu)
 a2=a1.q.x
 a2.toString
 a0=a2?0:48
@@ -49913,7 +49913,7 @@ g.du(r,o+n,0,1)
 g.ni(s,s,s,1)
 f.V=g
 s=f.cx
-s===$&&A.a()
+s===$&&A.b()
 n=f.ch
 n.saz(a.vm(s,b,g,f.gadW(),t.zV.a(n.a)))}else f.ch.saz(null)
 e.$1(d.h(0,B.aH))
@@ -49941,7 +49941,7 @@ for(s=this.gig(),r=s.length,q=t.q,p=0;p<s.length;s.length===r||(0,A.B)(s),++p){o
 n=o.b
 n.toString
 if(a.ic(new A.api(o),q.a(n).a,b))return!0}return!1},
-a5l(a){var s,r,q,p=A.b([],t.q1),o=A.b([],t.X_),n=t.g3,m=A.o(n,t.fd),l=A.c5([B.RE,B.zk,B.zj,B.RC],n)
+a5l(a){var s,r,q,p=A.a([],t.q1),o=A.a([],t.X_),n=t.g3,m=A.o(n,t.fd),l=A.c5([B.RE,B.zk,B.zj,B.RC],n)
 for(n=a.length,s=0;s<a.length;a.length===n||(0,A.B)(a),++s){r=a[s]
 q=A.aKT(l,new A.apg(r))
 if(q!=null)J.ff(m.bI(q,new A.aph()),r)
@@ -49976,7 +49976,7 @@ A.apg.prototype={
 $1(a){return this.a.arZ(a)},
 $S:218}
 A.aph.prototype={
-$0(){return A.b([],t.q1)},
+$0(){return A.a([],t.q1)},
 $S:219}
 A.RY.prototype={
 gKB(){return B.KT},
@@ -50045,16 +50045,16 @@ if(s.y)s=s.r
 else s=!0
 r=s||q.gan().dy===B.dK}else r=!1
 s=q.d
-s===$&&A.a()
+s===$&&A.b()
 s.su(r?1:0)},
 l(){var s=this,r=s.d
-r===$&&A.a()
+r===$&&A.b()
 r.l()
 r=s.e
-r===$&&A.a()
+r===$&&A.b()
 r.l()
 r=s.f
-r===$&&A.a()
+r===$&&A.b()
 r.l()
 r=s.r
 r.F$=$.ab()
@@ -50087,13 +50087,13 @@ if(r.y)r=r.r
 else r=!0
 r=r||n.gan().dy===B.dK}else r=!1
 p=n.d
-if(r){p===$&&A.a()
-p.c7()}else{p===$&&A.a()
+if(r){p===$&&A.b()
+p.c7()}else{p===$&&A.b()
 p.dJ()}}o=n.gan().cy
 r=n.d
-r===$&&A.a()
+r===$&&A.b()
 if(r.gaN()===B.ae&&o!=null&&o!==s.cy){s=n.f
-s===$&&A.a()
+s===$&&A.b()
 s.su(0)
 s.c7()}},
 a7V(a,b){var s,r=this
@@ -50184,14 +50184,14 @@ else d4.gan()
 a=d4.a7O(d6,r)
 l=d4.r
 e=d4.e
-e===$&&A.a()
+e===$&&A.b()
 d=d4.a7V(d6,r)
 a0=d4.a8_(d6)
 a1=d4.a.w
 if(a1)d4.gan()
 a2=d4.gan().d
 if((a2==null?d4.gan().c:a2)!=null){a2=d4.f
-a2===$&&A.a()
+a2===$&&A.b()
 a3=d4.gON()||d4.gan().dy!==B.kj?1:0
 a4=d4.a
 if(a4.y)a4=a4.r
@@ -50362,7 +50362,7 @@ if(b instanceof A.zm)if(J.e(b.b,r.b))if(b.d==r.d)if(J.e(b.e,r.e))if(J.e(b.f,r.f)
 return s},
 gB(a){var s=this
 return A.bx([s.a,s.b,s.c,s.d,s.f,s.e,s.r,s.w,s.x,s.y,s.z,s.Q,s.as,s.at,s.ax,s.ay,!0,!0,s.cx,s.cy,s.db,s.dx,s.dy,s.fr,s.fx,s.fy,s.go,s.x1,s.x2,s.xr,s.y1,s.id,s.ok,s.k2,s.k3,s.k4,s.k1,s.p1,s.R8,s.p2,s.p3,s.p4,s.RG,s.ry,s.rx,s.to,s.y2,s.aB,s.aS,s.q,s.L,s.O,!0,s.R,s.G,s.F,s.V])},
-k(a){var s=this,r=A.b([],t.s),q=s.b
+k(a){var s=this,r=A.a([],t.s),q=s.b
 if(q!=null)r.push("iconColor: "+q.k(0))
 q=s.d
 if(q!=null)r.push('labelText: "'+q+'"')
@@ -50727,7 +50727,7 @@ b.sapE(s.ch)
 b.sapF(s.ax)
 b.sas1(s.CW)}}
 A.FK.prototype={
-gig(){var s=this.da$,r=s.h(0,B.bA),q=A.b([],t.Ik),p=s.h(0,B.cN)
+gig(){var s=this.da$,r=s.h(0,B.bA),q=A.a([],t.Ik),p=s.h(0,B.cN)
 if(p!=null)q.push(p)
 if(r!=null)q.push(r)
 p=s.h(0,B.cO)
@@ -51066,7 +51066,7 @@ if(s===!0)r.au()
 return!1},
 $S:226}
 A.FF.prototype={
-FG(a){var s=this.bG;(s==null?this.bG=A.b([],t.VB):s).push(a)
+FG(a){var s=this.bG;(s==null?this.bG=A.a([],t.VB):s).push(a)
 this.au()},
 io(a){return this.ag},
 aH(a,b){var s,r,q,p,o,n,m=this.bG
@@ -51283,9 +51283,9 @@ o.tc()
 s=o.a
 r=s.f
 q=o.ln$
-q===$&&A.a()
+q===$&&A.b()
 p=o.mE$
-p===$&&A.a()
+p===$&&A.b()
 o.d=A.aDp(s.c,s.r,q,r,p)
 o.aP()},
 aL(a){var s,r,q,p=this,o=p.a
@@ -51294,24 +51294,24 @@ o.I(p.gqF())
 o.cR(p.gqE())
 p.tc()
 o=p.d
-o===$&&A.a()
+o===$&&A.b()
 o.l()
 o=p.a
 s=o.f
 r=p.ln$
-r===$&&A.a()
+r===$&&A.b()
 q=p.mE$
-q===$&&A.a()
+q===$&&A.b()
 p.d=A.aDp(o.c,o.r,r,s,q)}p.aY(a)},
 l(){var s,r=this
 r.a.c.I(r.gqF())
 r.a.c.cR(r.gqE())
 s=r.d
-s===$&&A.a()
+s===$&&A.b()
 s.l()
 r.a3o()},
 K(a){var s=this.d
-s===$&&A.a()
+s===$&&A.b()
 return A.aBC(!0,this.a.d,this.oi$,B.zV,s)}}
 A.o8.prototype={
 ae(){return new A.Ym(new A.C9($.ab()),$,$)}}
@@ -51331,9 +51331,9 @@ o.tc()
 s=o.a
 r=s.e
 q=o.ln$
-q===$&&A.a()
+q===$&&A.b()
 p=o.mE$
-p===$&&A.a()
+p===$&&A.b()
 o.d=A.aDq(s.c,q,r,p)
 o.aP()},
 aL(a){var s,r,q,p=this,o=p.a
@@ -51342,24 +51342,24 @@ o.I(p.gqF())
 o.cR(p.gqE())
 p.tc()
 o=p.d
-o===$&&A.a()
+o===$&&A.b()
 o.l()
 o=p.a
 s=o.e
 r=p.ln$
-r===$&&A.a()
+r===$&&A.b()
 q=p.mE$
-q===$&&A.a()
+q===$&&A.b()
 p.d=A.aDq(o.c,r,s,q)}p.aY(a)},
 l(){var s,r=this
 r.a.c.I(r.gqF())
 r.a.c.cR(r.gqE())
 s=r.d
-s===$&&A.a()
+s===$&&A.b()
 s.l()
 r.a3p()},
 K(a){var s=this.d
-s===$&&A.a()
+s===$&&A.b()
 return A.aBC(!0,this.a.f,this.oi$,B.zV,s)}}
 A.SA.prototype={
 K(a){var s=this
@@ -51424,9 +51424,9 @@ break $label0$0}o=null}r=o}o=q.a
 return r.G2(o.d,a,o.e,o.f,o.r,q.$ti.c)}}
 A.wx.prototype={
 apS(){var s,r=this,q=r.mE$
-q===$&&A.a()
+q===$&&A.b()
 if(J.e(q.b.aj(q.a.gu()),1)){q=r.ln$
-q===$&&A.a()
+q===$&&A.b()
 q=q.gu()===0||r.ln$.gu()===1}else q=!1
 s=r.oi$
 if(q)s.snR(!1)
@@ -51617,7 +51617,7 @@ r=p.z
 r.toString
 s=new A.am(r,new A.ao(0,n,s),s.i("am<aj.T>"))
 n=s
-break $label1$1}n=new A.hz(n.d,new A.b0(A.b([],t.F),t.Q),0)
+break $label1$1}n=new A.hz(n.d,new A.b0(A.a([],t.F),t.Q),0)
 break $label1$1}p.w.sb9(n)
 $label2$2:{if(B.dr===p.a.f){n=o
 break $label2$2}n=B.cx
@@ -51639,7 +51639,7 @@ if(r!=null)r.l()
 r=s.Q
 if(r!=null)r.l()
 s.z=A.cG(B.or,s.a.d,null)
-s.Q=A.cG(B.or,new A.hz(s.a.d,new A.b0(A.b([],t.F),t.Q),0),null)},
+s.Q=A.cG(B.or,new A.hz(s.a.d,new A.b0(A.a([],t.F),t.Q),0),null)},
 aG(){this.aP()},
 aL(a){var s,r=this
 r.aY(a)
@@ -51664,10 +51664,10 @@ $2(a,b){var s,r,q,p=null,o=this.a,n=o.w
 o.x=n.gu()
 s=o.f.aj(n.gu())
 $label0$0:{if(B.dr===o.a.f){r=o.as
-r===$&&A.a()
+r===$&&A.b()
 r=r.b.aj(r.a.gu())
 break $label0$0}r=o.as
-r===$&&A.a()
+r===$&&A.b()
 r=o.at=new A.i(r.b.aj(r.a.gu()).a,o.x8(A.bW(a,B.B_,t.w).w.a.b))
 break $label0$0}q=o.e.aj(o.r.gu())
 r=A.aC5(A.abf(A.ayK(A.eA(o.d.aj(n.gu())),b,B.c9),q),r)
@@ -51806,7 +51806,7 @@ q.d=s
 q.Sc()
 q.a.f.SX(0)},
 l(){var s=this,r=s.d
-r===$&&A.a()
+r===$&&A.b()
 r.l()
 r=s.e
 if(r!=null)r.l()
@@ -51815,27 +51815,27 @@ if(r!=null)r.l()
 r=s.r
 if(r!=null)r.l()
 r=s.x
-r===$&&A.a()
+r===$&&A.b()
 r.l()
 r=s.Q
-r===$&&A.a()
+r===$&&A.b()
 r.l()
 s.a3_()},
 aL(a){var s,r=this
 r.aY(a)
 s=r.a
 if(a.e!==s.e||a.d!==s.d){s=r.x
-s===$&&A.a()
+s===$&&A.b()
 s.l()
 s=r.Q
-s===$&&A.a()
+s===$&&A.b()
 s.l()
 r.Sc()}r.a.toString
 return},
 Sc(){var s,r,q,p,o,n,m,l,k,j,i,h,g,f=this,e=null,d=f.e
 if(d!=null)d.l()
 d=f.d
-d===$&&A.a()
+d===$&&A.b()
 f.e=A.cG(B.cc,d,e)
 d=f.f
 if(d!=null)d.l()
@@ -51856,12 +51856,12 @@ n=t.HY.i("am<aj.T>")
 m=t.F
 l=t.Q
 k=t.i
-j=A.aCl(new A.hz(new A.am(r,new A.hh(new A.jv(B.os)),n),new A.b0(A.b([],m),l),0),new A.am(r,new A.hh(B.os),n),r,0.5,k)
+j=A.aCl(new A.hz(new A.am(r,new A.hh(new A.jv(B.os)),n),new A.b0(A.a([],m),l),0),new A.am(r,new A.hh(B.os),n),r,0.5,k)
 r=f.a.d
 i=$.aGm()
 o.a(r)
 h=$.aGn()
-g=A.aCl(new A.am(r,i,i.$ti.i("am<aj.T>")),new A.hz(new A.am(r,h,A.k(h).i("am<aj.T>")),new A.b0(A.b([],m),l),0),r,0.5,k)
+g=A.aCl(new A.am(r,i,i.$ti.i("am<aj.T>")),new A.hz(new A.am(r,h,A.k(h).i("am<aj.T>")),new A.b0(A.a([],m),l),0),r,0.5,k)
 f.a.toString
 r=f.e
 r.toString
@@ -51880,26 +51880,26 @@ d=f.w
 d.bw()
 d.cH$.C(0,n)},
 aah(a){this.a7(new A.am5(this,a))},
-K(a){var s,r,q=this,p=A.b([],t.p),o=q.d
-o===$&&A.a()
+K(a){var s,r,q=this,p=A.a([],t.p),o=q.d
+o===$&&A.b()
 if(o.gaN()!==B.V){o=q.w
 s=q.as
-o===$&&A.a()
+o===$&&A.b()
 r=q.x
-r===$&&A.a()
+r===$&&A.b()
 p.push(A.aBi(A.aw2(s,r),o))}o=q.a
 s=q.y
 o=o.c
-s===$&&A.a()
+s===$&&A.b()
 r=q.Q
-r===$&&A.a()
+r===$&&A.b()
 p.push(A.aBi(A.aw2(o,r),s))
 return A.uI(B.Bk,p,B.Y,B.cI,null)},
 adl(){var s,r=this.w
-r===$&&A.a()
+r===$&&A.b()
 r=r.gu()
 s=this.y
-s===$&&A.a()
+s===$&&A.b()
 s=Math.max(r,s.gu())
 this.a.f.SX(s)}}
 A.am5.prototype={
@@ -51907,7 +51907,7 @@ $0(){this.a.a.toString},
 $S:0}
 A.Bx.prototype={
 ae(){var s=null,r=t.jk,q=t.C,p=$.ab()
-return new A.uq(new A.bJ(s,r),new A.bJ(s,r),new A.bJ(s,q),new A.Bm(!1,p),new A.Bm(!1,p),A.b([],t.Z4),new A.bJ(s,q),s,A.o(t.yb,t.M),s,!0,s,s,s)},
+return new A.uq(new A.bJ(s,r),new A.bJ(s,r),new A.bJ(s,q),new A.Bm(!1,p),new A.Bm(!1,p),A.a([],t.Z4),new A.bJ(s,q),s,A.o(t.yb,t.M),s,!0,s,s,s)},
 ajq(a,b){return A.aTm().$2(a,b)}}
 A.adW.prototype={
 $2(a,b){var s=null
@@ -51956,21 +51956,21 @@ if(r==null||!n.n(0,r)){if(!o.r.ga9(0))q.aii()
 if(!o.e.ga9(0))q.ai_()}}q.acr()
 q.a2u()},
 l(){var s=this,r=s.dx
-r===$&&A.a()
+r===$&&A.b()
 r.F$=$.ab()
 r.G$=0
 r=s.ch
-r===$&&A.a()
+r===$&&A.b()
 r.l()
 r=s.db
-r===$&&A.a()
+r===$&&A.b()
 r.l()
 r=s.y
 if(r!=null)r.d.E(0,s)
 s.w.l()
 s.x.l()
 r=s.dy
-r===$&&A.a()
+r===$&&A.b()
 r.l()
 s.a2w()},
 Cw(a,b,c,d,e,f,g,h,i){var s,r=this.c
@@ -51984,13 +51984,13 @@ rw(a,b,c,d,e,f,g){return this.Cw(a,b,c,!1,!1,d,e,f,g)},
 LJ(a,b,c,d,e,f,g,h){return this.Cw(a,b,c,d,!1,e,f,g,h)},
 M9(a,b){this.a.toString},
 M8(a,b){this.a.toString},
-K(a){var s,r,q,p,o,n,m,l=this,k=null,j={},i=A.W(a),h=a.ao(t.I).w,g=A.b([],t.s9),f=l.a.r
+K(a){var s,r,q,p,o,n,m,l=this,k=null,j={},i=A.W(a),h=a.ao(t.I).w,g=A.a([],t.s9),f=l.a.r
 l.gpG()
 l.a42(g,new A.QX(new A.mN(f,l.f),!1,!1,k),B.iG,!0,!1,!1,!1,!0)
 if(l.fr){f=l.a
 f.toString
 s=l.dy
-s===$&&A.a()
+s===$&&A.b()
 l.rw(g,f.ajq(a,s),B.iJ,!0,!0,!0,!0)}l.a.toString
 f=A.bW(a,B.bB,t.w).w
 f=l.r=A.aIc(a,l.a.f.fy)+f.r.b
@@ -52027,13 +52027,13 @@ l.a.toString
 l.gpG()
 l.LJ(g,f,B.iL,!1,!0,!1,!1,!0)}l.a.toString
 f=l.ch
-f===$&&A.a()
+f===$&&A.b()
 s=l.CW
-s===$&&A.a()
+s===$&&A.b()
 p=l.dx
-p===$&&A.a()
+p===$&&A.b()
 o=l.db
-o===$&&A.a()
+o===$&&A.b()
 l.rw(g,new A.Em(k,f,s,p,o,k),B.iM,!0,!0,!0,!0)
 switch(i.w.a){case 2:case 4:l.rw(g,A.p1(B.at,k,B.ab,!0,k,k,k,k,k,k,k,k,k,k,k,k,k,k,l.gaaX(),k,k,k),B.iI,!0,!1,!1,!0)
 break
@@ -52061,18 +52061,18 @@ A.adT.prototype={
 $0(){this.a.Q=this.b},
 $S:0}
 A.adV.prototype={
-$2(a,b){var s,r,q,p,o,n,m,l=this,k=A.c([B.lM,new A.S8(a,new A.b0(A.b([],t.e),t.d))],t.u,t.od),j=l.b
+$2(a,b){var s,r,q,p,o,n,m,l=this,k=A.c([B.lM,new A.S8(a,new A.b0(A.a([],t.e),t.d))],t.u,t.od),j=l.b
 j.a.toString
 s=j.cy
 s.toString
 r=j.ch
-r===$&&A.a()
+r===$&&A.b()
 r=r.x
-r===$&&A.a()
+r===$&&A.b()
 q=j.CW
-q===$&&A.a()
+q===$&&A.b()
 p=j.dx
-p===$&&A.a()
+p===$&&A.b()
 j=j.cx
 j.toString
 o=l.a
@@ -52148,15 +52148,15 @@ return new A.TN(new A.bJ(s,t.C),new A.bJ(s,t.LZ),s,s)}}
 A.TN.prototype={
 gp5(){var s=this.a.e
 if(s==null){s=this.id
-s===$&&A.a()
+s===$&&A.b()
 s=s.a
 s=s==null?null:s.U(this.gtm())}return s===!0},
 goa(){this.a.toString
 var s=this.id
-s===$&&A.a()
+s===$&&A.b()
 s=s.d
 if(s==null){s=this.k1
-s===$&&A.a()
+s===$&&A.b()
 s=!s}return s},
 gy5(){return new A.b8(new A.ao_(this),t.Dm)},
 gtm(){var s=A.aD(t.EK)
@@ -52164,7 +52164,7 @@ if(this.fx)s.C(0,B.AI)
 if(this.fy)s.C(0,B.v)
 return s},
 gahf(){var s,r,q,p,o=this,n=o.go
-n===$&&A.a()
+n===$&&A.b()
 s=n.k3
 r=A.c9()
 q=A.c9()
@@ -52172,7 +52172,7 @@ p=A.c9()
 switch(n.a.a){case 1:r.b=A.ah(153,s.v()>>>16&255,s.v()>>>8&255,s.v()&255)
 q.b=A.ah(B.d.aC(127.5),s.v()>>>16&255,s.v()>>>8&255,s.v()&255)
 n=o.k1
-n===$&&A.a()
+n===$&&A.b()
 if(n){n=o.c
 n.toString
 n=A.W(n).cx
@@ -52182,7 +52182,7 @@ break
 case 0:r.b=A.ah(191,s.v()>>>16&255,s.v()>>>8&255,s.v()&255)
 q.b=A.ah(166,s.v()>>>16&255,s.v()>>>8&255,s.v()&255)
 n=o.k1
-n===$&&A.a()
+n===$&&A.b()
 if(n){n=o.c
 n.toString
 n=A.W(n).cx
@@ -52190,10 +52190,10 @@ n=A.ah(255,n.v()>>>16&255,n.v()>>>8&255,n.v()&255)}else n=A.ah(B.d.aC(76.5),s.v(
 p.b=n
 break}return new A.b8(new A.anX(o,r,q,p),t.mN)},
 gahu(){var s=this.go
-s===$&&A.a()
+s===$&&A.b()
 return new A.b8(new A.anZ(this,s.a,s.k3),t.mN)},
 gaht(){var s=this.go
-s===$&&A.a()
+s===$&&A.b()
 return new A.b8(new A.anY(this,s.a,s.k3),t.mN)},
 gahc(){return new A.b8(new A.anW(this),t.N5)},
 aG(){var s,r=this
@@ -52214,7 +52214,7 @@ break
 case 2:case 3:case 1:case 4:case 5:r.k1=!1
 break}r.a0A()},
 vE(){var s,r=this,q=r.CW
-q===$&&A.a()
+q===$&&A.b()
 q.sd8(r.gahf().a.$1(r.gtm()))
 q.skM(r.gahu().a.$1(r.gtm()))
 q.sYF(r.gaht().a.$1(r.gtm()))
@@ -52222,15 +52222,15 @@ q.sbk(r.c.ao(t.I).w)
 q.sJ9(r.gahc().a.$1(r.gtm()))
 s=r.a.r
 if(s==null){s=r.id
-s===$&&A.a()
+s===$&&A.b()
 s=s.e}if(s==null){s=r.k1
-s===$&&A.a()
+s===$&&A.b()
 s=s?null:B.df}q.svn(s)
 s=r.id
-s===$&&A.a()
+s===$&&A.b()
 s=s.x
 if(s==null){s=r.k1
-s===$&&A.a()
+s===$&&A.b()
 s=s?0:2}q.sGF(s)
 s=r.id.y
 q.sIi(s==null?0:s)
@@ -52249,25 +52249,25 @@ Hw(a){var s,r=this
 r.a0B(a)
 if(r.WJ(a.gbr(),a.gcp(),!0)){r.a7(new A.ao1(r))
 s=r.fr
-s===$&&A.a()
+s===$&&A.b()
 s.c7()}else if(r.fy){r.a7(new A.ao2(r))
 s=r.fr
-s===$&&A.a()
+s===$&&A.b()
 s.dJ()}},
 Hx(a){var s,r=this
 r.a0C(a)
 r.a7(new A.ao0(r))
 s=r.fr
-s===$&&A.a()
+s===$&&A.b()
 s.dJ()},
 l(){var s=this.fr
-s===$&&A.a()
+s===$&&A.b()
 s.l()
 this.La()}}
 A.ao_.prototype={
 $1(a){var s=this.a,r=s.a.Q
 s=s.id
-s===$&&A.a()
+s===$&&A.b()
 s=s.c
 s=s==null?null:s.U(a)
 return s===!0},
@@ -52275,16 +52275,16 @@ $S:241}
 A.anX.prototype={
 $1(a){var s,r,q,p=this,o=null
 if(a.n(0,B.AI)){s=p.a.id
-s===$&&A.a()
+s===$&&A.b()
 s=s.f
 s=s==null?o:s.U(a)
 return s==null?p.b.aV():s}s=p.a
 if(s.gy5().a.$1(a)){s=s.id
-s===$&&A.a()
+s===$&&A.b()
 s=s.f
 s=s==null?o:s.U(a)
 return s==null?p.c.aV():s}r=s.id
-r===$&&A.a()
+r===$&&A.b()
 r=r.f
 r=r==null?o:r.U(a)
 if(r==null)r=p.d.aV()
@@ -52292,9 +52292,9 @@ q=s.id.f
 q=q==null?o:q.U(a)
 if(q==null)q=p.c.aV()
 s=s.fr
-s===$&&A.a()
+s===$&&A.b()
 s=s.x
-s===$&&A.a()
+s===$&&A.b()
 s=A.w(r,q,s)
 s.toString
 return s},
@@ -52302,7 +52302,7 @@ $S:7}
 A.anZ.prototype={
 $1(a){var s=this,r=s.a
 if(r.gp5()&&r.gy5().a.$1(a)){r=r.id
-r===$&&A.a()
+r===$&&A.b()
 r=r.r
 r=r==null?null:r.U(a)
 if(r==null)switch(s.b.a){case 1:r=s.c
@@ -52316,7 +52316,7 @@ $S:7}
 A.anY.prototype={
 $1(a){var s=this,r=s.a
 if(r.gp5()&&r.gy5().a.$1(a)){r=r.id
-r===$&&A.a()
+r===$&&A.b()
 r=r.w
 r=r==null?null:r.U(a)
 if(r==null)switch(s.b.a){case 1:r=s.c
@@ -52332,16 +52332,16 @@ $1(a){var s,r
 if(a.n(0,B.v)&&this.a.gy5().a.$1(a)){s=this.a
 r=s.a.w
 if(r==null){s=s.id
-s===$&&A.a()
+s===$&&A.b()
 s=s.b
 s=s==null?null:s.U(a)}else s=r
 return s==null?12:s}s=this.a
 r=s.a.w
 if(r==null){r=s.id
-r===$&&A.a()
+r===$&&A.b()
 r=r.b
 r=r==null?null:r.U(a)}if(r==null){s=s.k1
-s===$&&A.a()
+s===$&&A.b()
 r=8/(s?2:1)
 s=r}else s=r
 return s},
@@ -52456,7 +52456,7 @@ A.EX.prototype={
 aL(a){var s,r=this
 r.aY(a)
 if(a.c!==r.a.c){s=r.lm$
-s===$&&A.a()
+s===$&&A.b()
 if(s.gu()===0||r.lm$.gu()===1)switch(r.a.k2.a){case 1:s=r.c
 s.toString
 switch(A.W(s).w.a){case 0:case 1:case 3:case 5:r.YL()
@@ -52472,7 +52472,7 @@ YL(){var s=this.c
 s.toString
 A.W(s)
 s=this.lm$
-s===$&&A.a()
+s===$&&A.b()
 s.b=B.nw
 s.c=new A.jv(B.nw)},
 gtt(){return new A.b8(new A.ao8(this),t.b)},
@@ -52503,34 +52503,34 @@ return r.gqY()-q-q}},
 agZ(a){var s
 this.a.toString
 s=this.oh$
-s===$&&A.a()
+s===$&&A.b()
 s.c7()},
 ah0(a){var s,r,q,p,o=this
 o.a.toString
 s=o.lm$
-s===$&&A.a()
+s===$&&A.b()
 s.b=B.a3
 s=s.c=null
 r=a.e
 r.toString
 q=r/o.gS2()
 r=o.qp$
-r===$&&A.a()
+r===$&&A.b()
 p=r.x
-p===$&&A.a()
+p===$&&A.b()
 switch(o.c.ao(t.I).w.a){case 0:s=-q
 break
 case 1:s=q
 break}r.su(p+s)},
 agX(a){var s,r,q=this,p=q.lm$
-p===$&&A.a()
+p===$&&A.b()
 p=p.gu()
 s=q.a
 r=s.c
 if(p>=0.5!==r){s.d.$1(!r)
 q.a7(new A.ao7(q))}else q.FO()
 p=q.oh$
-p===$&&A.a()
+p===$&&A.b()
 p.dJ()},
 agV(a){var s=this.a.d
 a.toString
@@ -52563,7 +52563,7 @@ o=new A.aqO(c8,A.W(c8).ax)
 m=new A.WR(c8,c6,c6,c6,c6,c6,c6,c6,c6,c6,c6)
 c7.b=m
 n=c5.oh$
-n===$&&A.a()
+n===$&&A.b()
 n.e=B.a0
 n=m
 break}j=l
@@ -52572,7 +52572,7 @@ n=j
 break
 default:l=n
 n=r}i=c5.qp$
-i===$&&A.a()
+i===$&&A.b()
 i.e=A.dW(0,o.gYD())
 h=c5.gnq()
 h.C(0,B.U)
@@ -52686,16 +52686,16 @@ b=n.fy
 n=n.id
 a1=c5.d
 a3=c5.lm$
-a3===$&&A.a()
+a3===$&&A.b()
 a1.sbr(a3)
 a3=c5.Hj$
-a3===$&&A.a()
+a3===$&&A.b()
 a1.sarf(a3)
 a3=c5.Hm$
-a3===$&&A.a()
+a3===$&&A.b()
 a1.sarh(a3)
 a3=c5.Hk$
-a3===$&&A.a()
+a3===$&&A.b()
 a1.sari(a3)
 a1.saob(b7)
 a1.sarg(b5)
@@ -52742,7 +52742,7 @@ a1.saqW(c5.qp$)
 a1.saoO(c5.f)
 q=A.iC(c6,c6,c6,a1,n)
 c1=c5.Ho$
-if(c1===$){c2=A.c([B.ir,new A.cE(c5.gRY(),new A.b0(A.b([],t.e),t.d),t.wY)],t.u,t.od)
+if(c1===$){c2=A.c([B.ir,new A.cE(c5.gRY(),new A.b0(A.a([],t.e),t.d),t.wY)],t.u,t.od)
 c5.Ho$!==$&&A.aw()
 c5.Ho$=c2
 c1=c2}c5.a.toString
@@ -52910,7 +52910,7 @@ q=b4.bb
 if(r){q.toString
 p=q*2
 o=b4.bq
-o===$&&A.a()
+o===$&&A.b()
 n=new A.y(p+o,p)}else{if(q==null){p=b4.k4
 p.toString}else p=q
 p*=2
@@ -52918,14 +52918,14 @@ n=new A.y(p,p)}p=b4.b8
 if(r){p.toString
 p*=2
 o=b4.bq
-o===$&&A.a()
+o===$&&A.b()
 m=new A.y(p+o,p)}else{if(p==null){p=b4.k3
 p.toString}p*=2
 m=new A.y(p,p)}p=new A.ar_(b4,n,m)
 if(r)if(b4.b.gaN()===B.ae){q.toString
 r=q*2
 q=b4.bq
-q===$&&A.a()
+q===$&&A.b()
 l=new A.y(r+q,r)}else{r=b4.a
 r=r.gaN()===B.V||r.a.gaN()===B.bC
 q=b4.a
@@ -52956,7 +52956,7 @@ g.toString
 g=A.w(p,g,j)
 g.toString
 f=g}else{p=b4.dx.Q
-p===$&&A.a()
+p===$&&A.b()
 if(p===B.bC){p=b4.k2
 p.toString
 g=b4.e
@@ -52996,7 +52996,7 @@ a3=q/2
 a4=b4.O
 a4.toString
 a5=b4.bq
-a5===$&&A.a()
+a5===$&&A.b()
 a6=a0+a2+a5/2-r/2+s*(a4-a5)
 a7=A.jQ(new A.x(a0,a1,a0+p,a1+o),new A.ap(a2,a2))
 b6.dr(a7,a)
@@ -53087,8 +53087,8 @@ r.a1H()}}
 A.ar_.prototype={
 $1(a){var s,r=this.b,q=this.a,p=this.c,o=t.q6,n=t.qU,m=t.kS,l=t.Bx,k=q.p2,j=n.i("dh<aj.T>")
 if(a){k.toString
-s=A.b([new A.h0(new A.dh(new A.hh(B.ny),new A.ao(r,k,n),j),11,m),new A.h0(new A.dh(new A.hh(B.nv),new A.ao(k,p,n),j),72,m),new A.h0(new A.rU(p,p,l),17,m)],o)}else{k.toString
-s=A.b([new A.h0(new A.rU(r,r,l),17,m),new A.h0(new A.dh(new A.hh(new A.jv(B.nv)),new A.ao(r,k,n),j),72,m),new A.h0(new A.dh(new A.hh(new A.jv(B.ny)),new A.ao(k,p,n),j),11,m)],o)}r=A.aC7(s,t.FW)
+s=A.a([new A.h0(new A.dh(new A.hh(B.ny),new A.ao(r,k,n),j),11,m),new A.h0(new A.dh(new A.hh(B.nv),new A.ao(k,p,n),j),72,m),new A.h0(new A.rU(p,p,l),17,m)],o)}else{k.toString
+s=A.a([new A.h0(new A.rU(r,r,l),17,m),new A.h0(new A.dh(new A.hh(new A.jv(B.nv)),new A.ao(r,k,n),j),72,m),new A.h0(new A.dh(new A.hh(new A.jv(B.ny)),new A.ao(k,p,n),j),11,m)],o)}r=A.aC7(s,t.FW)
 q=q.dx
 q.toString
 return new A.am(q,r,r.$ti.i("am<aj.T>"))},
@@ -53277,28 +53277,28 @@ s=A.ce(q,B.jA,q,r.uy$||r.ux$?1:0,r)
 r.Hn$=s
 r.Hm$=A.cG(B.aJ,s,q)},
 l(){var s=this,r=s.qp$
-r===$&&A.a()
+r===$&&A.b()
 r.l()
 r=s.lm$
-r===$&&A.a()
+r===$&&A.b()
 r.l()
 r=s.oh$
-r===$&&A.a()
+r===$&&A.b()
 r.l()
 r=s.Hj$
-r===$&&A.a()
+r===$&&A.b()
 r.l()
 r=s.Hl$
-r===$&&A.a()
+r===$&&A.b()
 r.l()
 r=s.Hk$
-r===$&&A.a()
+r===$&&A.b()
 r.l()
 r=s.Hn$
-r===$&&A.a()
+r===$&&A.b()
 r.l()
 r=s.Hm$
-r===$&&A.a()
+r===$&&A.b()
 r.l()
 s.a35()}}
 A.Z4.prototype={}
@@ -53392,7 +53392,7 @@ r.a.su(a);--r.f
 r.ad()}},
 Mf(a){return this.Mg(a,null,null)},
 shg(a){var s,r=this.a,q=r.x
-q===$&&A.a()
+q===$&&A.b()
 s=this.d
 if(a===q-s)return
 r.su(a+s)},
@@ -53417,17 +53417,17 @@ r.aP()
 s=r.a.c
 r.d=new A.uQ(A.auL(null,0,r),B.bS,s,0,0,$.ab())},
 l(){var s=this.d
-s===$&&A.a()
+s===$&&A.b()
 s.l()
 this.a2Y()},
 K(a){var s=this.d
-s===$&&A.a()
+s===$&&A.b()
 return new A.GJ(s,A.ahH(a),this.a.f,null)},
 aL(a){var s,r,q,p,o,n=this
 n.aY(a)
 s=n.a.c
 if(a.c!==s){r=n.d
-r===$&&A.a()
+r===$&&A.b()
 q=r.e
 p=r.d
 if(p>=s){o=Math.max(0,s-1)
@@ -53491,7 +53491,7 @@ a4L(){var s=null,r=A.by(this.c,s,B.TZ,s,!1,s,s,s)
 return r},
 K(a){var s
 A.W(a)
-s=A.eR(A.b([new A.bq(B.HM,this.e,null),this.a4L()],t.p),B.E,B.uI,B.M)
+s=A.eR(A.a([new A.bq(B.HM,this.e,null),this.a4L()],t.p),B.E,B.uI,B.M)
 return A.ft(A.hg(s,null,1),72,null)},
 gmW(){return B.SX}}
 A.X4.prototype={
@@ -53548,7 +53548,7 @@ A.X3.prototype={
 be(){var s,r,q,p,o=this
 o.a0J()
 s=o.aa$
-r=A.b([],t.n)
+r=A.a([],t.n)
 for(q=t.US;s!=null;){p=s.b
 p.toString
 q.a(p)
@@ -53596,7 +53596,7 @@ aH(a,b){var s,r,q,p,o,n,m,l,k,j,i=this,h=null,g=i.CW=!1
 if(i.ch==null)i.ch=i.c.o1(i.gdH())
 s=i.b
 r=s.gdN().x
-r===$&&A.a()
+r===$&&A.b()
 switch(i.Q.a){case 0:q=s.d>r
 s=q?B.d.h7(r):B.d.ld(r)
 p=B.i.el(s,0,i.at.length-2)
@@ -53689,7 +53689,7 @@ return s},
 cR(a){if(this.a.gdN()!=null)this.KJ(a)},
 I(a){if(this.a.gdN()!=null)this.KI(a)},
 gu(){var s=this.a,r=s.gdN().x
-r===$&&A.a()
+r===$&&A.b()
 return A.D(Math.abs(A.D(r,0,s.c-1)-this.b),0,1)}}
 A.Cs.prototype={
 gmW(){var s,r,q
@@ -53781,9 +53781,9 @@ p.toString
 o=i.a82(r)
 i.a.toString
 n=i.x
-n===$&&A.a()
+n===$&&A.b()
 m=i.y
-m===$&&A.a()
+m===$&&A.b()
 l=s.d
 if(l==null)l=i.giH().go9()
 i.a.toString
@@ -53812,17 +53812,17 @@ s=!s}else s=r}else s=r
 if(s)n.OX()
 n.a.toString
 s=n.x
-s===$&&A.a()
+s===$&&A.b()
 r=s.length
 if(2>r){q=2-r
 p=J.a6u(q,t.yi)
 for(r=t.C,o=0;o<q;++o)p[o]=new A.bJ(null,r)
 B.b.P(s,p)
 s=n.y
-s===$&&A.a()
+s===$&&A.b()
 B.b.P(s,A.be(q,B.S,!1,t.A0))}else if(2<r){B.b.jT(s,2,r)
 s=n.y
-s===$&&A.a()
+s===$&&A.b()
 n.a.toString
 B.b.jT(s,2,n.x.length)}},
 l(){var s,r=this
@@ -53866,14 +53866,14 @@ p.toString
 if(p>0){k=p-1
 p=a3.e
 p.toString
-n=A.b([],t.F)
+n=A.a([],t.F)
 q[k]=a3.rD(q[k],!1,new A.hz(new A.vA(p,k),new A.b0(n,t.Q),0),a3.giH())}p=a3.r
 p.toString
 a3.a.toString
 if(p<1){k=p+1
 p=a3.e
 p.toString
-n=A.b([],t.F)
+n=A.a([],t.F)
 q[k]=a3.rD(q[k],!1,new A.hz(new A.vA(p,k),new A.b0(n,t.Q),0),a3.giH())}}}p=a3.a
 p.toString
 for(n=r===B.A5,m=t.p,j=s.ch,i=s.z,h=t.b,g=t.WV,f=t.EK,e=j==null,d=i==null,c=0;c<2;++c){p=A.aD(f)
@@ -53890,7 +53890,7 @@ b=a3.giH().ge7()
 a3.a.toString
 a1=e?a3.giH().ch:j
 a3.a.toString
-b=A.LJ(!1,a1,!0,new A.bq(new A.av(0,0,0,2),new A.uH(B.dt,a4,B.cI,B.Y,A.b([q[c],A.bM(a4,a4,!1,a4,a4,!1,a4,!1,a4,a4,a4,a4,a4,a4,a4,a4,a4,a4,a4,a4,a4,a4,a4,a4,a4,a4,a4,a4,a4,a4,B.ze,a4,c===a3.r,a4,a4,a4,a4,a4)],m),a4),a4),a4,!0,a4,a4,a4,a4,a,new A.ar6(a3,c),new A.ar7(a3,c),a4,new A.ar8(a3,c),p,a4,b,a4)
+b=A.LJ(!1,a1,!0,new A.bq(new A.av(0,0,0,2),new A.uH(B.dt,a4,B.cI,B.Y,A.a([q[c],A.bM(a4,a4,!1,a4,a4,!1,a4,!1,a4,a4,a4,a4,a4,a4,a4,a4,a4,a4,a4,a4,a4,a4,a4,a4,a4,a4,a4,a4,a4,a4,B.ze,a4,c===a3.r,a4,a4,a4,a4,a4)],m),a4),a4),a4,!0,a4,a4,a4,a4,a,new A.ar6(a3,c),new A.ar7(a3,c),a4,new A.ar8(a3,c),p,a4,b,a4)
 q[c]=b
 b=new A.A1(b,a4)
 q[c]=b
@@ -53918,10 +53918,10 @@ if(s==null)s=B.eJ
 r=p.c[a]
 if(r.gmW().b===46&&p.garX())s=s.C(0,B.HQ)
 p=q.y
-p===$&&A.a()
+p===$&&A.b()
 p[a]=s
 p=q.x
-p===$&&A.a()
+p===$&&A.b()
 p=p[a]
 return A.hg(new A.bq(s,new A.mN(q.a.c[a],p),null),1,null)},
 $S:246}
@@ -54077,7 +54077,7 @@ p.a.toString
 s=p.e
 r=B.vf.iP(B.mO)
 q=p.f
-q===$&&A.a()
+q===$&&A.b()
 return new A.d1(p.gah2(),new A.Az(s,new A.u0(r),A.aBA(q,!0,!0,!0),B.ab,B.Y,null),null,t.WA)}}
 A.ara.prototype={
 $1(a){var s=null
@@ -54088,7 +54088,7 @@ $0(){this.a.xZ()},
 $S:0}
 A.arc.prototype={
 $0(){var s,r,q=this.a,p=q.f
-p===$&&A.a()
+p===$&&A.b()
 p=A.a1(p,t.l7)
 p.$flags=1
 q=q.f=p
@@ -54219,7 +54219,7 @@ s.toString
 A.W(s)
 return B.Oe},
 gVE(){var s=this.x
-s===$&&A.a()
+s===$&&A.b()
 return s},
 ght(){var s=this.a.aS
 if(s)this.gjt()
@@ -54327,7 +54327,7 @@ s.G$=0}r.a3n()},
 Qn(){var s=this.y.gM()
 if(s!=null)s.B6()},
 agt(a){var s=this,r=s.w
-r===$&&A.a()
+r===$&&A.b()
 if(!r.b||!r.c)return!1
 if(a===B.ag)return!1
 s.a.toString
@@ -54396,7 +54396,7 @@ a8.a.toString
 r=b1.ax
 m=a8.gl0()
 l=a8.gdn()
-q=A.b([],t.VS)
+q=A.a([],t.VS)
 a8.a.toString
 switch(A.aF().a){case 2:case 4:k=A.aIX(a9)
 break
@@ -54482,7 +54482,7 @@ a2=a2.k4
 a5=$.aFT()
 r=A.PV(p,A.aJH(a9,g,a8,B.dM,!1,B.eE,B.Y,a9,A.aTz(),m,c,a9,h,i,f,2,B.ab,!0,a3,!0,!1,l,!0,B.fy,a9,q,a8.y,r.a,a.w,a5,1,a9,B.bD,!1,"\u2022",a9,a2,a9,a8.gaaw(),a8.gaaC(),a9,a9,a9,j,!1,!0,"editable",!0,a9,a9,B.I1,a9,a9,a1,a4,a9,a9,a9,a0,a.db,a.dx,k,a9,n,!0,B.ay,B.TD,a9,a9,a9,a9,B.az,a9,a9))
 a8.a.toString
-a6=A.on(new A.qV(A.b([l,m],t.Eo)),new A.arF(a8,l,m),new A.ia(r,a9))
+a6=A.on(new A.qV(A.a([l,m],t.Eo)),new A.arF(a8,l,m),new A.ia(r,a9))
 a8.a.toString
 a7=A.cw(B.a0i,a8.gfp().a,t.Pb)
 b0.c=null
@@ -54490,7 +54490,7 @@ if(a8.ga6Y()!==B.Od)a8.a.toString
 a8.a.toString
 a8.gjt()
 r=a8.w
-r===$&&A.a()
+r===$&&A.b()
 return A.l9(A.Pz(A.jB(A.on(m,new A.arG(b0,a8),r.ajt(B.cB,a6)),!1,a9),a9,B.fy,a9,a9),a7,a9,new A.arH(a8),new A.arI(a8),a9)},
 ga2(){return this.y}}
 A.art.prototype={
@@ -54665,7 +54665,7 @@ n=t.A9
 n=q?new A.dB(B.zX,n):new A.dB(B.Tb,n)
 m=A.jA(q?B.og:B.IL,j,j,j)
 l=q?"Back":"More"
-n=A.b([new A.Xp(m,new A.arZ(k),l,n)],t.p)
+n=A.a([new A.Xp(m,new A.arZ(k),l,n)],t.p)
 B.b.P(n,k.a.c)
 return new A.Xr(q,s,A.ayn(p.as8(a,new A.Xn(o,q,s,n,j)),B.a3,B.Ht),r)}}
 A.arZ.prototype={
@@ -54759,7 +54759,7 @@ return b>s===r.O},
 aeH(){var s,r,q,p,o,n,m,l,k,j=this,i="RenderBox was not laid out: ",h={},g=j.aa$
 g.toString
 s=j.a_
-r=A.b([],t.Ik)
+r=A.a([],t.Ik)
 h.a=h.b=0
 h.c=-1
 j.b5(new A.apK(h,j,g,r))
@@ -55293,10 +55293,10 @@ A.CZ.prototype={
 ae(){return new A.nz(new A.abi(),A.aD(t.S),B.V,null,null)}}
 A.nz.prototype={
 gagx(){this.a.toString
-this.f===$&&A.a()
+this.f===$&&A.b()
 return B.Hv},
 ga7_(){this.a.toString
-this.f===$&&A.a()
+this.f===$&&A.b()
 return!0},
 gFb(){var s=this.a.c
 return s==null?null.YB():s},
@@ -55345,7 +55345,7 @@ if(r===!0)if(a.a>0)s.r=A.ch(a,s.gm4().gYm())
 else s.gm4().dJ()},
 ahs(a){var s,r=this
 r.a.toString
-r.f===$&&A.a()
+r.f===$&&A.b()
 switch(1){case 1:s=r.y
 if(s==null)s=r.y=A.a7q(r,B.RK)
 s.p1=r.gab9()
@@ -55365,7 +55365,7 @@ OJ(){this.a.toString
 this.ti(B.B)
 this.Q.W(0)},
 a9w(){var s,r=this,q=r.e
-q===$&&A.a()
+q===$&&A.b()
 if(!q)return
 s=r.gm4().gaN()===B.V
 if(s)r.ga7_()
@@ -55381,12 +55381,12 @@ s=A.X($.qz).i("b2<1>")
 r=A.a1(new A.b2($.qz,new A.ahO(),s),s.i("z.E"))
 for(s=r.length,q=0;p=r.length,q<p;r.length===s||(0,A.B)(r),++q)r[q].ti(B.B)
 if(p===0){o.a.toString
-o.f===$&&A.a()}o.QI(B.B)},
+o.f===$&&A.b()}o.QI(B.B)},
 ahq(a){var s=this,r=s.Q
 if(r.a===0)return
 r.E(0,a.gjB())
 if(r.a===0){s.a.toString
-s.f===$&&A.a()
+s.f===$&&A.b()
 s.ti(B.bb)}},
 aG(){this.aP()
 $.el.bb$.b.p(0,this.gOs(),null)},
@@ -55444,7 +55444,7 @@ g=a6.b
 h=g
 f=i
 a6=a4.f
-a6===$&&A.a()
+a6===$&&A.b()
 a4.a.toString
 k=a6.a
 e=new A.ac(0,1/0,k==null?a4.a7Q():k,1/0)
@@ -55489,15 +55489,15 @@ q.a2H()},
 K(a){var s,r,q=this,p=null
 if(q.gFb().length===0){s=q.a.Q
 return s}q.a.toString
-q.f===$&&A.a()
+q.f===$&&A.b()
 s=q.gFb()
 r=A.bM(p,q.a.Q,!1,p,p,!1,p,!1,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,s)
-q.e===$&&A.a()
+q.e===$&&A.b()
 r=A.aCu(A.zJ(B.at,r,p,q.gahr(),p,p,p),B.bD,q.gS_(),q.gS0())
 return A.aLR(r,q.d,q.ga4W())}}
 A.ahP.prototype={
 $0(){var s=this.a,r=s.e
-r===$&&A.a()
+r===$&&A.b()
 if(!r)return
 s.gm4().c7()
 r=s.r
@@ -55695,7 +55695,7 @@ gX4(){var s=this,r=s.at
 return r===$?s.at=new A.fV(new A.aml(s),new A.amm(s),new A.amn(s)):r},
 Iy(){var s,r=this
 if(r.z){s=r.Q
-s===$&&A.a()
+s===$&&A.b()
 s.I(r.gX4())}r.as=!0
 r.a07()}}
 A.amj.prototype={
@@ -55912,7 +55912,7 @@ iK(a,b,c){return null},
 C(a,b){return this.iK(0,b,!1)},
 Z(a,b){var s=this.C(0,b)
 if(s==null)s=b.iK(0,this,!0)
-return s==null?new A.il(A.b([b,this],t.N_)):s},
+return s==null?new A.il(A.a([b,this],t.N_)):s},
 dc(a,b){if(a==null)return this.aT(b)
 return null},
 dd(a,b){if(a==null)return this.aT(1-b)
@@ -55936,7 +55936,7 @@ q=r.iK(0,b,c)
 if(q==null)q=b.iK(0,r,!c)
 if(q!=null){p=A.a1(s,t.RY)
 p[c?p.length-1:0]=q
-return new A.il(p)}}s=A.b([],t.N_)
+return new A.il(p)}}s=A.a([],t.N_)
 if(c)B.b.P(s,this.a)
 if(p)B.b.P(s,b.a)
 else s.push(b)
@@ -56059,7 +56059,7 @@ gB(a){var s=this
 return A.K(s.a,s.b,s.c,s.d,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
 k(a){var s,r,q=this
 if(q.gWT())return"Border.all("+q.a.k(0)+")"
-s=A.b([],t.s)
+s=A.a([],t.s)
 r=q.a
 if(!r.j(0,B.m))s.push("top: "+r.k(0))
 r=q.b
@@ -56143,7 +56143,7 @@ if(J.L(b)!==A.t(s))return!1
 return b instanceof A.ez&&b.a.j(0,s.a)&&b.b.j(0,s.b)&&b.c.j(0,s.c)&&b.d.j(0,s.d)},
 gB(a){var s=this
 return A.K(s.a,s.b,s.c,s.d,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
-k(a){var s=this,r=A.b([],t.s),q=s.a
+k(a){var s=this,r=A.a([],t.s),q=s.a
 if(!q.j(0,B.m))r.push("top: "+q.k(0))
 q=s.b
 if(!q.j(0,B.m))r.push("start: "+q.k(0))
@@ -56518,7 +56518,7 @@ this.f=0},
 amg(a){var s,r,q,p=this,o=p.c.E(0,a)
 if(o!=null){s=o.a
 r=o.d
-r===$&&A.a()
+r===$&&A.b()
 if(s.w)A.a5(A.aN(u.V))
 B.b.E(s.x,r)
 o.Lr()}q=p.a.E(0,a)
@@ -56622,7 +56622,7 @@ this.b.$0()
 s=this.a
 r=s.a
 q=s.d
-q===$&&A.a()
+q===$&&A.b()
 if(r.w)A.a5(A.aN(u.V))
 B.b.E(r.x,q)
 s.Lr()},
@@ -56675,10 +56675,10 @@ s.$2(q,p)
 return}r.bN(new A.a5W(n,this,b,s),t.H).nV(s)},
 vq(a,b,c,d){var s,r
 if(b.a!=null){s=$.jN.qh$
-s===$&&A.a()
+s===$&&A.b()
 s.XU(c,new A.a5Y(b),d)
 return}s=$.jN.qh$
-s===$&&A.a()
+s===$&&A.b()
 r=s.XU(c,new A.a5Z(this,c),d)
 if(r!=null)b.Ki(r)},
 qz(a,b){return A.aCk()},
@@ -56695,7 +56695,7 @@ for(;;)switch(s){case 0:p=A.kd(null,t.P)
 s=2
 return A.Y(p,$async$$3)
 case 2:p=q.b
-if(p.a==null)p.Ki(new A.Sw(A.b([],t.XZ),A.b([],t.SM),A.b([],t.qj)))
+if(p.a==null)p.Ki(new A.Sw(A.a([],t.XZ),A.a([],t.SM),A.a([],t.qj)))
 p=p.a
 p.toString
 p.oK(A.bi("while resolving an image"),b,null,!0,c)
@@ -56754,7 +56754,7 @@ break
 case 4:p=3
 k=o.pop()
 if(A.au(k) instanceof A.oT){m=$.jN.qh$
-m===$&&A.a()
+m===$&&A.b()
 m.amg(a)
 throw k}else throw k
 s=6
@@ -56850,15 +56850,15 @@ $2(a,b){this.a.b.q_(a,b)},
 $S:36}
 A.fU.prototype={
 Gj(){var s=this.a,r=s.b
-r===$&&A.a()
+r===$&&A.b()
 return new A.fU(A.Jn(r,s.c),this.b,this.c)},
 gKy(){var s=this.a,r=s.b
-r===$&&A.a()
+r===$&&A.b()
 r=r.a
-r===$&&A.a()
+r===$&&A.b()
 r=J.ai(r.a.height())
 s=s.b.a
-s===$&&A.a()
+s===$&&A.b()
 return r*J.ai(s.a.width())*4},
 l(){this.a.l()},
 k(a){var s=this.c
@@ -56889,7 +56889,7 @@ B.b.am(s,a.gym())
 r.a.f=!1}},
 a0(a){var s=this.a
 if(s!=null)return s.a0(a)
-s=this.b;(s==null?this.b=A.b([],t.XZ):s).push(a)},
+s=this.b;(s==null?this.b=A.a([],t.XZ):s).push(a)},
 I(a){var s,r=this.a
 if(r!=null)return r.I(a)
 for(s=0;r=this.b,s<r.length;++s)if(r[s].j(0,a)){r=this.b
@@ -56922,7 +56922,7 @@ I(a){var s,r,q,p,o,n=this
 if(n.w)A.a5(A.aN(u.V))
 for(s=n.a,r=0;r<s.length;++r)if(s[r].j(0,a)){B.b.de(s,r)
 break}if(s.length===0){s=n.x
-q=A.b(s.slice(0),A.X(s))
+q=A.a(s.slice(0),A.X(s))
 for(p=q.length,o=0;o<q.length;q.length===p||(0,A.B)(q),++o)q[o].$0()
 B.b.W(s)
 n.t7()}},
@@ -56994,11 +56994,11 @@ p.cx=!1
 if(p.a.length===0)return
 s=p.ay
 if(s!=null){r=p.ax
-r===$&&A.a()
+r===$&&A.b()
 r=a.a-r.a>=s.a}else r=!0
 if(r){s=p.at.geb()
 r=s.b
-r===$&&A.a()
+r===$&&A.b()
 p.No(new A.fU(A.Jn(r,s.c),p.Q,p.e))
 p.ax=a
 p.ay=p.at.gug()
@@ -57011,7 +57011,7 @@ if(p.z.gqN()===-1||q<=p.z.gqN()){p.po()
 return}p.z.l()
 p.z=null
 return}r=p.ax
-r===$&&A.a()
+r===$&&A.b()
 p.CW=A.ch(new A.aX(B.i.aC(s.a-(a.a-r.a))),new A.aaG(p))},
 po(){var s=0,r=A.R(t.H),q,p=2,o=[],n=this,m,l,k,j,i,h
 var $async$po=A.S(function(a,b){if(a===1){o.push(b)
@@ -57041,7 +57041,7 @@ if(i==null){s=1
 break}if(i.goj()===1){if(n.a.length===0){s=1
 break}i=n.at.geb()
 j=i.b
-j===$&&A.a()
+j===$&&A.b()
 n.No(new A.fU(A.Jn(j,i.c),n.Q,n.e))
 n.at.geb().l()
 n.at=null
@@ -57323,7 +57323,7 @@ gB(a){var s=this,r=s.d
 r=r==null?null:A.bx(r)
 return A.K(s.a,s.b,s.c,s.e,r,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
 HS(a,b,c){var s=this.e.eq(new A.x(0,0,0+a.a,0+a.b),c).gez().a
-s===$&&A.a()
+s===$&&A.b()
 return s.a.contains(b.a,b.b)},
 o1(a){return new A.Go(this,a)}}
 A.Go.prototype={
@@ -57355,10 +57355,10 @@ for(;;){q=m.w
 q.toString
 if(!(r<q))break
 q=m.x
-q===$&&A.a()
+q===$&&A.b()
 q=q[r]
 p=m.z
-p===$&&A.a()
+p===$&&A.b()
 s.hR(a,q,p[r],c);++r}}else{s=a.a
 q=t.gN
 r=0
@@ -57366,13 +57366,13 @@ for(;;){p=m.w
 p.toString
 if(!(r<p))break
 p=m.y
-p===$&&A.a()
+p===$&&A.b()
 p=p[r]
 o=m.z
-o===$&&A.a()
+o===$&&A.b()
 n=o[r].eg()
 p=q.a(p).gez().a
-p===$&&A.a()
+p===$&&A.b()
 p=p.a
 p.toString
 s.drawPath(p,n)
@@ -57401,7 +57401,7 @@ if(q.gfM()){s=r.a4b(n)
 p=r.r
 p.toString
 q.hR(a,s,p,m)}else{q=r.e
-q===$&&A.a()
+q===$&&A.b()
 p=r.r
 p.toString
 a.iV(q,p)}}r.adV(a,c)
@@ -57757,7 +57757,7 @@ sqS(a){return},
 gWl(){var s,r,q,p=this.b
 if(p==null)return null
 s=p.git()
-if(!isFinite(s.a)||!isFinite(s.b))return A.b([],t.Lx)
+if(!isFinite(s.a)||!isFinite(s.b))return A.a([],t.Lx)
 r=p.e
 if(r==null)r=p.e=p.a.c.JJ()
 if(s.j(0,B.h))return r
@@ -57888,7 +57888,7 @@ l=r.b
 m=l
 k=m?n:-n-1
 if(k===b.r){a=d.cx
-a===$&&A.a()
+a===$&&A.b()
 return a}j=a.c.Bv(n)
 if(j==null){r=d.cl().BB(0).a.baseline
 i=a.d
@@ -57912,7 +57912,7 @@ r=e.b
 b.r=k
 return d.cx=new A.EO(new A.i(a,r),e.e,e.d-r)},
 nd(a,b,c){var s,r,q=this.b,p=q.git()
-if(!isFinite(p.a)||!isFinite(p.b))return A.b([],t.Lx)
+if(!isFinite(p.a)||!isFinite(p.b))return A.a([],t.Lx)
 s=q.a.c.vM(a.a,a.b,b,c)
 if(p.j(0,B.h))r=s
 else{r=A.X(s).i("a_<1,f7>")
@@ -58022,7 +58022,7 @@ if(q!=null)a.a+=q
 q=this.c
 if(q!=null)for(s=q.length,r=0;r<q.length;q.length===s||(0,A.B)(q),++r)q[r].tR(a,!0,c)},
 Ud(a,b,c){var s,r,q,p,o=this,n=o.b
-if(n!=null){s=A.b([],t.oU)
+if(n!=null){s=A.a([],t.oU)
 a.push(A.azR(n,o.d,null,o.w,s))}r=o.c
 if(r!=null)for(n=r.length,q=0;q<r.length;r.length===n||(0,A.B)(r),++q){p=r[q]
 if(p instanceof A.h_)p.Ud(a,b,!1)
@@ -58293,22 +58293,22 @@ s.ce!==$&&A.bu()
 s.ce=r
 s.ams=f},
 sug(a){var s=this.bz
-s===$&&A.a()
+s===$&&A.b()
 if(a.j(0,s.e))return
 s.e=a},
 sarN(a){var s=this.bz
-s===$&&A.a()
+s===$&&A.b()
 if(a==s.f)return
 s.f=a},
 salu(a){var s=this.ce
-s===$&&A.a()
+s===$&&A.b()
 if(a===s.b)return
 s.b=a},
 sasv(a){var s,r,q
 if(a===this.lj)return
 this.lj=a
 s=this.bz
-s===$&&A.a()
+s===$&&A.b()
 r=s.r
 r.toString
 s=s.r=a.u_(s.gCE())
@@ -58326,20 +58326,20 @@ r.Ls(a)
 switch(r.fa.a){case 0:case 1:break
 case 2:case 3:r.X()
 break}s=r.bz
-s===$&&A.a()
+s===$&&A.b()
 s.bw()
 s=s.cO$
 s.b=!0
 s.a.push(r.gLY())},
 ah(){var s=this.bz
-s===$&&A.a()
+s===$&&A.b()
 s.fU()
 s.cR(this.gLY())
 this.Lt()},
 be(){var s,r,q,p=this,o=p.bz
-o===$&&A.a()
+o===$&&A.b()
 s=o.x
-s===$&&A.a()
+s===$&&A.b()
 p.em=s
 p.dE=!1
 r=t.k.a(A.q.prototype.ga3.call(p))
@@ -58363,7 +58363,7 @@ s.b=p.m$.gt()
 p.em=0
 o.jG(0)
 p.fa=B.QS}else{q=o.x
-q===$&&A.a()
+q===$&&A.b()
 if(q===o.b)s.a=s.b=p.m$.gt()
 else{s=o.r
 if(!(s!=null&&s.a!=null))o.c7()}}break
@@ -58380,7 +58380,7 @@ p.em=0
 o.jG(0)}else{o.fU()
 p.fa=B.l5}break}o=p.bR
 s=p.ce
-s===$&&A.a()
+s===$&&A.b()
 s=o.aj(s.gu())
 s.toString
 p.fy=p.He=r.b_(s)
@@ -58393,43 +58393,43 @@ if(s)return new A.y(A.D(0,a.a,a.b),A.D(0,a.c,a.d))
 r=p.ar(B.R,a,p.gcb())
 switch(q.fa.a){case 0:return a.b_(r)
 case 1:if(!J.e(q.bR.b,r)){p=q.He
-p===$&&A.a()
+p===$&&A.b()
 return a.b_(p)}else{p=q.bz
-p===$&&A.a()
+p===$&&A.b()
 s=p.x
-s===$&&A.a()
+s===$&&A.b()
 if(s===p.b)return a.b_(r)}break
 case 3:case 2:if(!J.e(q.bR.b,r))return a.b_(r)
 break}p=q.ce
-p===$&&A.a()
+p===$&&A.b()
 p=q.bR.aj(p.gu())
 p.toString
 return a.b_(p)},
 a4f(a){},
 aH(a,b){var s,r,q,p=this
 if(p.m$!=null){s=p.dE
-s===$&&A.a()
+s===$&&A.b()
 s=s&&p.fF!==B.x}else s=!1
 r=p.Vh
 if(s){s=p.gt()
 q=p.cx
-q===$&&A.a()
+q===$&&A.b()
 r.saz(a.kD(q,b,new A.x(0,0,0+s.a,0+s.b),A.nc.prototype.ged.call(p),p.fF,r.a))}else{r.saz(null)
 p.Lm(a,b)}},
 l(){var s,r=this
 r.Vh.saz(null)
 s=r.bz
-s===$&&A.a()
+s===$&&A.b()
 s.l()
 s=r.ce
-s===$&&A.a()
+s===$&&A.b()
 s.l()
 r.eO()}}
 A.acz.prototype={
 $0(){var s=this.a,r=s.bz
-r===$&&A.a()
+r===$&&A.b()
 r=r.x
-r===$&&A.a()
+r===$&&A.b()
 if(r!==s.em)s.X()},
 $S:0}
 A.Bl.prototype={
@@ -58466,7 +58466,7 @@ afL(){$.bt.RG$.push(new A.adv(this))},
 Tr(){--this.id$
 if(!this.k1$)this.Ka()},
 H6(){var s=this,r=s.fx$
-r===$&&A.a()
+r===$&&A.b()
 r.VA()
 s.fx$.Vy()
 s.fx$.VB()
@@ -58893,7 +58893,7 @@ s=o.dR
 r=s!=null&&!s.ga9(s)
 s=o.f_
 q=s!=null&&!s.ga9(s)
-s=A.b([],t.QF)
+s=A.a([],t.QF)
 if(r){p=o.dR
 p.toString
 B.b.P(s,p)}B.b.P(s,c)
@@ -58995,11 +58995,11 @@ gi3(){var s=this.R
 if(s===$){$.a0()
 s=this.R=new A.DF(A.b_(),B.h,$.ab())}return s},
 ga5_(){var s=this,r=s.V
-if(r==null){r=A.b([],t.xT)
+if(r==null){r=A.a([],t.xT)
 if(s.a6)r.push(s.gi3())
 r=s.V=new A.vt(r,$.ab())}return r},
 ga50(){var s=this,r=s.af
-if(r==null){r=A.b([s.F,s.G],t.xT)
+if(r==null){r=A.a([s.F,s.G],t.xT)
 if(!s.a6)r.push(s.gi3())
 r=s.af=new A.vt(r,$.ab())}return r},
 sqS(a){return},
@@ -59024,7 +59024,7 @@ r=new A.x(0,0,0+s.a,0+s.b)
 s=m.aD
 q=m.m
 p=m.fI
-p===$&&A.a()
+p===$&&A.b()
 o=s.kR(new A.af(q.a,q.e),p)
 m.bq.su(r.c5(0.5).n(0,o.Z(0,a)))
 p=m.m
@@ -59157,12 +59157,12 @@ d.hw(a)
 s=d.aD
 r=s.e
 r.toString
-q=A.b([],t.O_)
+q=A.a([],t.O_)
 r.yM(q)
 d.fH=q
 if(B.b.eV(q,new A.acF())&&A.aF()!==B.aN){a.e=a.a=!0
 return}if(d.cP==null){p=new A.cB("")
-o=A.b([],t.oU)
+o=A.a([],t.oU)
 for(r=d.fH,n=r.length,m=0,l=0,k="";l<r.length;r.length===n||(0,A.B)(r),++l){j=r[l]
 i=j.b
 if(i==null)i=j.a
@@ -59196,7 +59196,7 @@ if(s.JW(r.d)!=null){a.sAz(d.ga9L())
 a.sAy(d.ga9J())}if(s.JV(d.m.d)!=null){a.sAB(d.ga9P())
 a.sAA(d.ga9N())}}},
 aaO(a){this.b8.fO(new A.cb(a,A.lB(B.j,a.length),B.aG),B.ag)},
-nT(c1,c2,c3){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6=this,b7=null,b8=A.b([],t.QF),b9=b6.aD,c0=b9.w
+nT(c1,c2,c3){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6=this,b7=null,b8=A.a([],t.QF),b9=b6.aD,c0=b9.w
 c0.toString
 s=b6.aa$
 r=A.o(t.D2,t.bu)
@@ -59331,11 +59331,11 @@ r.S.a0(r.gdH())
 r.gi3().sBX(r.cf.a)
 r.cf.a0(r.gxQ())},
 ah(){var s=this,r=s.Vo
-r===$&&A.a()
+r===$&&A.b()
 r.mf()
 r.lX()
 r=s.Vp
-r===$&&A.a()
+r===$&&A.b()
 r.mf()
 r.lX()
 s.S.I(s.gdH())
@@ -59376,14 +59376,14 @@ default:s=null}return s},
 vP(a){var s,r,q,p,o,n,m,l,k,j=this
 j.js()
 s=j.geQ()
-if(a.a===a.b)r=A.b([],t.Lx)
+if(a.a===a.b)r=A.a([],t.Lx)
 else{q=j.G
 r=j.aD.nd(a,q.y,q.z)}if(r.length===0){q=j.aD
 p=a.gdk()
 o=j.fI
-o===$&&A.a()
+o===$&&A.b()
 n=q.kR(p,o)
-return A.b([new A.qu(new A.i(0,q.cl().gb4()).Z(0,n).Z(0,s),null)],t.fm)}else{q=B.b.gab(r)
+return A.a([new A.qu(new A.i(0,q.cl().gb4()).Z(0,n).Z(0,s),null)],t.fm)}else{q=B.b.gab(r)
 q=q.e===B.ac?q.a:q.c
 p=j.aD
 o=p.b
@@ -59396,7 +59396,7 @@ p=p.b
 o=p.c
 p.a.c.gb4()
 k=new A.i(A.D(q,0,o),B.b.gac(r).d).Z(0,s)
-return A.b([new A.qu(l,B.b.gab(r).e),new A.qu(k,B.b.gac(r).e)],t.fm)}},
+return A.a([new A.qu(l,B.b.gab(r).e),new A.qu(k,B.b.gac(r).e)],t.fm)}},
 r8(a){var s,r=this
 if(!a.gbH()||a.a===a.b)return null
 r.js()
@@ -59409,7 +59409,7 @@ return s.aD.dg(s.dV(a).a4(0,s.geQ()))},
 jj(a){var s,r,q,p,o,n,m,l,k,j,i,h=this
 h.js()
 s=h.fI
-s===$&&A.a()
+s===$&&A.b()
 r=h.aD
 q=s.cS(r.kR(a,s).Z(0,h.gi3().as))
 p=q.a
@@ -59626,7 +59626,7 @@ p.toString
 s=p}else s=B.nN
 p=q.gi3()
 r=q.fI
-r===$&&A.a()
+r===$&&A.b()
 p.sVw(s.A7(r).cS(b))}else q.gi3().sVw(null)
 q.gi3().w=q.bQ==null},
 BR(a,b,c){return this.Kl(a,b,c,null)},
@@ -59650,7 +59650,7 @@ m.js()
 s=(m.eC>0||!m.geQ().j(0,B.h))&&m.cQ!==B.x
 r=m.bz
 if(s){s=m.cx
-s===$&&A.a()
+s===$&&A.b()
 q=m.gt()
 r.saz(a.kD(s,b,new A.x(0,0,0+q.a,0+q.b),m.gadT(),m.cQ,r.a))}else{r.saz(null)
 m.PH(a,b)}p=m.m
@@ -59787,7 +59787,7 @@ if(r)q=l.z
 else q=l.w?l.at:null
 if(r)p=k.gdk()
 else{o=c.iZ
-o===$&&A.a()
+o===$&&A.b()
 p=o}if(q!=null)l.aqH(a,c,q,p)
 o=l.z
 n=o==null?null:A.ah(191,o.v()>>>16&255,o.v()>>>8&255,o.v()&255)
@@ -59871,7 +59871,7 @@ l=A.b_()
 l.r=$.aFI().gu()
 p.fA(new A.x(n,m,n+o.a,m+o.b),l)
 p=j.L
-p===$&&A.a()
+p===$&&A.b()
 if(p!=null){s=j.gt().a
 r=0
 q=0
@@ -60170,7 +60170,7 @@ if(!(p.V>1e-10)){p.u4(a,b)
 return}if(p.gt().ga9(0))return
 s=p.aq
 r=p.cx
-r===$&&A.a()
+r===$&&A.b()
 q=p.gt()
 s.saz(a.kD(r,b,new A.x(0,0,0+q.a,0+q.b),p.gUG(),p.af,s.a))},
 l(){this.aq.saz(null)
@@ -60240,25 +60240,25 @@ if(!s&&n!=null&&a.aoN(n)){a.l()
 return}n=p.O
 if(n==null)n=o
 else{n=n.b
-n===$&&A.a()
+n===$&&A.b()
 n=n.a
-n===$&&A.a()
+n===$&&A.b()
 n=J.ai(n.a.width())}if(s)r=o
 else{r=a.b
-r===$&&A.a()
+r===$&&A.b()
 r=r.a
-r===$&&A.a()
+r===$&&A.b()
 r=J.ai(r.a.width())}if(n==r){n=p.O
 if(n==null)n=o
 else{n=n.b
-n===$&&A.a()
+n===$&&A.b()
 n=n.a
-n===$&&A.a()
+n===$&&A.b()
 n=J.ai(n.a.height())}if(s)s=o
 else{s=a.b
-s===$&&A.a()
+s===$&&A.b()
 s=s.a
-s===$&&A.a()
+s===$&&A.b()
 s=J.ai(s.a.height())}q=n!=s}else q=!0
 n=p.O
 if(n!=null)n.l()
@@ -60304,15 +60304,15 @@ a=A.fh(q.G,p).lh(a)
 p=q.O
 if(p==null)return new A.y(A.D(0,a.a,a.b),A.D(0,a.c,a.d))
 p=p.b
-p===$&&A.a()
+p===$&&A.b()
 p=p.a
-p===$&&A.a()
+p===$&&A.b()
 p=J.ai(p.a.width())
 s=q.F
 r=q.O.b
-r===$&&A.a()
+r===$&&A.b()
 r=r.a
-r===$&&A.a()
+r===$&&A.b()
 return a.Uf(new A.y(p/s,J.ai(r.a.height())/q.F))},
 b7(a){if(this.R==null&&this.G==null)return 0
 return this.pw(A.eN(a,1/0)).a},
@@ -60394,14 +60394,14 @@ q.Q=q.as=null
 p.Pe(q)
 q.e.saz(null)}},
 hJ(a,b,c){return!1},
-Vr(a,b){var s=A.b([],b.i("A<x7<0>>"))
+Vr(a,b){var s=A.a([],b.i("A<x7<0>>"))
 this.hJ(new A.IE(s,b.i("IE<0>")),a,!0,b)
 return s.length===0?null:B.b.gab(s).a},
 a48(a){var s,r,q=this
 if(!q.w&&q.x!=null){s=q.x
 s.toString
 r=a.b
-r===$&&A.a()
+r===$&&A.b()
 s.a=r
 r.c.push(s)
 return}q.hC(a)
@@ -60435,7 +60435,7 @@ this.KX()},
 hC(a){var s,r=this.ay
 r.toString
 s=a.b
-s===$&&A.a()
+s===$&&A.b()
 r=new A.lf(r,B.h,B.a_)
 r.a=s
 s.c.push(r)},
@@ -60443,7 +60443,7 @@ hJ(a,b,c){return!1}}
 A.N5.prototype={
 wp(){return!1},
 hC(a){var s=this.ax,r=s.a,q=s.b,p=a.b
-p===$&&A.a()
+p===$&&A.b()
 q=new A.N6(this.ay,new A.i(r,q),s.c-r,s.d-q,B.a_)
 q.a=p
 p.c.push(q)}}
@@ -60531,7 +60531,7 @@ hC(a){var s,r=this,q=r.k3
 t.Ff.a(r.x)
 s=A.l7()
 s.nm(q.a,q.b,0)
-r.sfD(a.lB(new A.An(s,A.b([],t.k5),B.a_)))
+r.sfD(a.lB(new A.An(s,A.a([],t.k5),B.a_)))
 r.iL(a)
 a.eH()},
 as4(a,b){var s,r,q,p,o,n,m,l,k,j
@@ -60550,10 +60550,10 @@ o=s.a
 m=new A.kD()
 l=A.a0H(m,new A.x(0,0,p,n))
 o=o.a
-new A.Nc(new A.pG(A.b([],t.YE)),null).na(o)
-k=A.b([],t.k_)
+new A.Nc(new A.pG(A.a([],t.YE)),null).na(o)
+k=A.a([],t.k_)
 k.push(l)
-j=A.b([],t.Ay)
+j=A.a([],t.Ay)
 if(!o.b.ga9(0))new A.MU(new A.A8(k),null,j,A.o(t.uy,t.gm),l).na(o)
 p=m.oc().Jd(p,n)
 return p}finally{}}}
@@ -60564,7 +60564,7 @@ hC(a){var s,r=this,q=r.k3
 q.toString
 s=r.k4
 t.e4.a(r.x)
-r.sfD(a.lB(new A.JA(q,s,A.b([],t.k5),B.a_)))
+r.sfD(a.lB(new A.JA(q,s,A.a([],t.k5),B.a_)))
 r.iL(a)
 a.eH()}}
 A.xL.prototype={
@@ -60574,25 +60574,25 @@ hC(a){var s,r=this,q=r.k3
 q.toString
 s=r.k4
 t.cW.a(r.x)
-r.sfD(a.lB(new A.Jz(q,s,A.b([],t.k5),B.a_)))
+r.sfD(a.lB(new A.Jz(q,s,A.a([],t.k5),B.a_)))
 r.iL(a)
 a.eH()}}
 A.rH.prototype={
 hJ(a,b,c,d){var s=this.k3.gez().a
-s===$&&A.a()
+s===$&&A.b()
 if(!s.a.contains(b.a,b.b))return!1
 return this.nr(a,b,!0,d)},
 hC(a){var s,r=this,q=r.k3
 q.toString
 s=r.k4
 t.Aw.a(r.x)
-r.sfD(a.lB(new A.Jx(q,s,A.b([],t.k5),B.a_)))
+r.sfD(a.lB(new A.Jx(q,s,A.a([],t.k5),B.a_)))
 r.iL(a)
 a.eH()}}
 A.zd.prototype={
 hC(a){var s=this,r=s.aB,q=s.k3
 t.C6.a(s.x)
-s.sfD(a.lB(new A.LB(q,r,A.b([],t.k5),B.a_)))
+s.sfD(a.lB(new A.LB(q,r,A.a([],t.k5),B.a_)))
 s.iL(a)
 a.eH()}}
 A.qB.prototype={
@@ -60636,10 +60636,10 @@ r=t.k5
 q=o.k3
 p=o.x
 if(s<255){t.Zr.a(p)
-o.sfD(a.lB(new A.ML(s,q,A.b([],r),B.a_)))}else{t.Ff.a(p)
+o.sfD(a.lB(new A.ML(s,q,A.a([],r),B.a_)))}else{t.Ff.a(p)
 s=A.l7()
 s.nm(q.a,q.b,0)
-o.sfD(a.lB(new A.An(s,A.b([],r),B.a_)))}o.iL(a)
+o.sfD(a.lB(new A.An(s,A.a([],r),B.a_)))}o.iL(a)
 a.eH()}}
 A.xd.prototype={
 szD(a){if(!a.j(0,this.k3)){this.k3=a
@@ -60648,7 +60648,7 @@ hC(a){var s,r=this,q=r.k3
 q.toString
 s=r.k4
 t.tX.a(r.x)
-r.sfD(a.lB(new A.IT(q,s,A.b([],t.k5),B.a_)))
+r.sfD(a.lB(new A.IT(q,s,A.a([],t.k5),B.a_)))
 r.iL(a)
 a.eH()}}
 A.zC.prototype={
@@ -60705,8 +60705,8 @@ m.p3=null
 s=m.k3.a
 if(s==null)return
 r=t.KV
-q=A.b([s],r)
-p=A.b([m],r)
+q=A.a([s],r)
+p=A.a([m],r)
 A.a4w(s,m,q,p)
 o=A.azx(q)
 s.pV(null,o)
@@ -60830,7 +60830,7 @@ A.pN.prototype={
 d0(a,b){var s,r=this
 if(a.gen()){r.p9()
 if(!a.cy){s=a.ay
-s===$&&A.a()
+s===$&&A.b()
 s=!s}else s=!0
 if(s)A.aAO(a,!0)
 else if(a.db)A.aLS(a)
@@ -60840,7 +60840,7 @@ t.gY.a(s)
 s.shg(b)
 s.fd(0)
 r.a.yw(s)}else{s=a.ay
-s===$&&A.a()
+s===$&&A.b()
 if(s){a.ch.saz(null)
 a.EA(r,b)}else a.EA(r,b)}},
 gbW(){if(this.e==null)this.F0()
@@ -60945,7 +60945,7 @@ this.e=a
 if(a!=null)a.al(this)},
 VA(){var s,r,q,p,o,n,m,l,k,j,i,h=this
 try{for(o=t.TT;n=h.r,n.length!==0;){s=n
-h.r=A.b([],o)
+h.r=A.a([],o)
 J.ayj(s,new A.abC())
 for(r=0;r<J.bE(s);++r){if(h.f){h.f=!1
 n=h.r
@@ -60969,7 +60969,7 @@ if(q.CW&&q.y===this)q.Sm()}B.b.W(o)
 for(o=this.CW,o=A.ci(o,o.r,A.k(o).c),s=o.$ti.c;o.A();){p=o.d;(p==null?s.a(p):p).Vy()}},
 VB(){var s,r,q,p,o,n,m,l,k,j=this
 try{s=j.Q
-j.Q=A.b([],t.TT)
+j.Q=A.a([],t.TT)
 for(p=s,J.ayj(p,new A.abD()),o=p.length,n=t.gY,m=0;m<p.length;p.length===o||(0,A.B)(p),++m){r=p[m]
 if((r.cy||r.db)&&r.y===j)if(r.ch.a.y!=null)if(r.cy)A.aAO(r,!1)
 else{l=r
@@ -61132,19 +61132,19 @@ s=p.CW=!0
 r=p.gb9()
 if(r!=null){if(r.CW)return
 q=p.ay
-q===$&&A.a()
+q===$&&A.b()
 if((q?!p.gen():s)&&!r.gen()){r.ky()
 return}}s=p.y
 if(s!=null)s.z.push(p)},
 Sm(){var s,r,q=this
 if(!q.CW)return
 s=q.cx
-s===$&&A.a()
+s===$&&A.b()
 q.cx=!1
 q.b5(new A.acU(q))
 if(q.gen()||q.gjw())q.cx=!0
 if(!q.gen()){r=q.ay
-r===$&&A.a()}else r=!1
+r===$&&A.b()}else r=!1
 if(r){q.db=q.cy=!1
 s=q.y
 if(s!=null)B.b.kH(s.Q,new A.acV(q))
@@ -61155,7 +61155,7 @@ au(){var s,r=this
 if(r.cy)return
 r.cy=!0
 if(r.gen()){s=r.ay
-s===$&&A.a()}else s=!1
+s===$&&A.b()}else s=!1
 if(s){s=r.y
 if(s!=null){s.Q.push(r)
 r.y.qP()}}else if(r.gb9()!=null)r.gb9().au()
@@ -61165,7 +61165,7 @@ Xa(){var s,r=this
 if(r.db||r.cy)return
 r.db=!0
 if(r.gen()){s=r.ay
-s===$&&A.a()}else s=!1
+s===$&&A.b()}else s=!1
 if(s){s=r.y
 if(s!=null){s.Q.push(r)
 r.y.qP()}}else r.au()},
@@ -61192,13 +61192,13 @@ for(s=t.TT,q=d,p=c,o=p;q!==r;){n=q.c
 m=r.c
 if(n>=m){l=q.gb9()
 if(l==null)l=A.a5(A.hW(A.m(a0)+" and "+d.k(0)+b))
-if(o==null){o=A.b([d],s)
+if(o==null){o=A.a([d],s)
 k=o}else k=o
 k.push(l)
 q=l}if(n<=m){j=r.gb9()
 if(j==null)j=A.a5(A.hW(A.m(a0)+" and "+d.k(0)+b))
 if(p==null){a0.toString
-p=A.b([a0],s)
+p=A.a([a0],s)
 k=p}else k=p
 k.push(j)
 r=j}}if(o!=null){i=new A.aP(new Float64Array(16))
@@ -61240,10 +61240,10 @@ aX(){var s=this.y
 if(s==null||s.at==null)return
 this.gew().apt()},
 gew(){var s,r,q,p,o=this,n=o.dx
-if(n===$){s=A.b([],t.QF)
-r=A.b([],t.bd)
-q=A.b([],t.z_)
-p=A.b([],t.fQ)
+if(n===$){s=A.a([],t.QF)
+r=A.a([],t.bd)
+q=A.a([],t.z_)
+p=A.a([],t.fQ)
 o.dx!==$&&A.aw()
 n=o.dx=new A.fz(o,s,r,q,p,A.o(t.bu,t.Ho),new A.aqw(o))}return n},
 eI(a){this.b5(a)},
@@ -61259,7 +61259,7 @@ p0(a,b,c){return this.es(a,null,b,c)},
 lT(a,b){return this.es(B.aT,a,B.B,b)},
 $iad:1}
 A.acT.prototype={
-$0(){var s=A.b([],t.D),r=this.a
+$0(){var s=A.a([],t.D),r=this.a
 s.push(A.ava("The following RenderObject was being processed when the exception was fired",B.Hf,r))
 s.push(A.ava("RenderObject",B.Hg,r))
 return s},
@@ -61271,7 +61271,7 @@ A.acU.prototype={
 $1(a){var s
 a.Sm()
 s=a.cx
-s===$&&A.a()
+s===$&&A.b()
 if(s)this.a.cx=!0},
 $S:10}
 A.acV.prototype={
@@ -61372,28 +61372,28 @@ if(s.y!=null)s.wr()},
 $S:6}
 A.OC.prototype={
 sXP(a){var s=this,r=s.c_$
-r===$&&A.a()
+r===$&&A.b()
 if(r===a)return
 s.c_$=a
 s.Sd(a)
 s.aX()},
 sakg(a){var s=this.zn$
-s===$&&A.a()
+s===$&&A.b()
 if(s===a)return
 this.zn$=a
 this.aX()},
 samp(a){var s=this.zo$
-s===$&&A.a()
+s===$&&A.b()
 if(s===a)return
 this.zo$=a
 this.aX()},
 sami(a){var s=this.zp$
-s===$&&A.a()
+s===$&&A.b()
 if(s===a)return
 this.zp$=a
 this.aX()},
 sajm(a){var s=this.zq$
-s===$&&A.a()
+s===$&&A.b()
 if(!s)return
 this.zq$=!1
 this.aX()},
@@ -61406,7 +61406,7 @@ r=r==null?null:new A.cT(r,B.aE)
 s.Vi$=r
 s.Vj$=null
 s.Vk$=null
-s.c_$===$&&A.a()
+s.c_$===$&&A.b()
 s.qf$=null
 r=a.p4
 r=a.p3
@@ -61416,39 +61416,39 @@ sbk(a){if(this.zs$==a)return
 this.zs$=a
 this.aX()},
 aeG(){var s=this.c_$
-s===$&&A.a()
+s===$&&A.b()
 s=s.xr
 if(s!=null)s.$0()},
 aet(){var s=this.c_$
-s===$&&A.a()
+s===$&&A.b()
 s=s.y1
 if(s!=null)s.$0()},
 aep(){var s=this.c_$
-s===$&&A.a()
+s===$&&A.b()
 s=s.ak
 if(s!=null)s.$0()},
 aeh(){var s=this.c_$
-s===$&&A.a()
+s===$&&A.b()
 s=s.a_
 if(s!=null)s.$0()},
 aej(){var s=this.c_$
-s===$&&A.a()
+s===$&&A.b()
 s=s.R
 if(s!=null)s.$0()},
 aev(){var s=this.c_$
-s===$&&A.a()
+s===$&&A.b()
 s=s.G
 if(s!=null)s.$0()},
 ael(){var s=this.c_$
-s===$&&A.a()
+s===$&&A.b()
 s=s.bb
 if(s!=null)s.$0()},
 aen(){var s=this.c_$
-s===$&&A.a()
+s===$&&A.b()
 s=s.b8
 if(s!=null)s.$0()},
 aer(){var s=this.c_$
-s===$&&A.a()
+s===$&&A.b()
 s=s.bq
 if(s!=null)s.$0()}}
 A.Gl.prototype={
@@ -61588,7 +61588,7 @@ h=q==null?f:q.d
 if(h!=null)e.vD(new A.apC(h))
 if(p!==e.ge9().d)e.vD(new A.apD(p))
 if(!J.e(o,e.ge9().c))e.vD(new A.apE(o))}},
-O_(){var s=A.b([],t.z_)
+O_(){var s=A.a([],t.z_)
 this.b.eI(new A.apu(s))
 return s},
 a8j(){var s,r,q=this
@@ -61600,7 +61600,7 @@ if((s==null?null:s.d)!=null)if(r==null)r=s.d
 else{s=s.d
 s.toString
 r.P(0,s)}return r},
-a5x(a1){var s,r,q,p,o,n,m,l,k,j,i=this,h=A.b([],t.bd),g=A.b([],t.fQ),f=A.b([],t.q1),e=i.ax.ge9().p2,d=e!=null,c=t.vC,b=A.o(t.VP,c),a=d&&a1.c,a0=a?new A.Gl(a1.a,a1.b,!1,a1.d,a1.e):a1
+a5x(a1){var s,r,q,p,o,n,m,l,k,j,i=this,h=A.a([],t.bd),g=A.a([],t.fQ),f=A.a([],t.q1),e=i.ax.ge9().p2,d=e!=null,c=t.vC,b=A.o(t.VP,c),a=d&&a1.c,a0=a?new A.Gl(a1.a,a1.b,!1,a1.d,a1.e):a1
 for(s=i.O_(),r=s.length,q=0;q<s.length;s.length===r||(0,A.B)(s),++q){p=s[q]
 p.Nb(a0)
 for(o=p.x,n=o.length,m=0;m<o.length;o.length===n||(0,A.B)(o),++m){l=o[m]
@@ -61696,7 +61696,7 @@ n.toString
 m.P(0,n)}else{n=p.dy
 n=n==null?k:n.ga9(n)
 if(n===!0)p.dy=null}}}},
-Mb(a,b){var s,r,q,p,o,n=this,m=A.b([],t.QF)
+Mb(a,b){var s,r,q,p,o,n=this,m=A.a([],t.QF)
 for(s=n.y,r=s.length,q=0;q<s.length;s.length===r||(0,A.B)(s),++q){p=s[q]
 o=p.r
 if(o!=null&&b.n(0,o.b)){p.cq()
@@ -61718,14 +61718,14 @@ r.al(q)
 return r}return A.ql(null,q.gp_())},
 acx(a6){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4=this,a5=null
 for(s=a4.z,r=s.length,q=t.QF,p=t.z_,o=a4.Q,n=a4.w,m=t.wW,l=t.Hx,k=l.i("eG<z.E,da>"),j=k.i("z.E"),i=a4.b,h=0;h<s.length;s.length===r||(0,A.B)(s),++h){g=s[h]
-f=A.b([],p)
+f=A.a([],p)
 for(e=J.cd(g),d=e.ga5(g),c=a5,b=c;d.A();){a=d.gN()
 if(a instanceof A.fz){if(a.gnn()){f.push(a)
 continue}B.b.P(f,a.y)}if(a.giQ()!=null){if(c==null)c=a.glx().r
 if(b==null)b=A.f3()
 a=a.giQ()
 a.toString
-b.mi(a)}}a0=A.b([],q)
+b.mi(a)}}a0=A.a([],q)
 for(d=f.length,a1=0;a1<f.length;f.length===d||(0,A.B)(f),++a1){a2=f[a1]
 a2.CK(a6)
 B.b.P(a0,a2.w)}if(b!=null){if(c==null||a6.n(0,c.b))c=A.ql(a5,i.gp_())
@@ -61871,7 +61871,7 @@ A.apx.prototype={
 $1(a){return a},
 $S:310}
 A.apy.prototype={
-$1(a){return a.gnn()?A.b([a],t.z_):a.y},
+$1(a){return a.gnn()?A.a([a],t.z_):a.y},
 $S:311}
 A.apv.prototype={
 $1(a){return a.glx().as.d},
@@ -61898,7 +61898,7 @@ r=r==null?"not laid out":"offset: "+r.k(0)
 return"widget: "+s+", "+r}}
 A.NG.prototype={
 eh(a){if(!(a.b instanceof A.ih))a.b=new A.ih(null,null)},
-j5(a,b,c){var s,r=new A.ac(0,a,0,1/0),q=A.b([],t.tZ),p=this.aa$,o=A.k(this).i("a7.1")
+j5(a,b,c){var s,r=new A.ac(0,a,0,1/0),q=A.a([],t.tZ),p=this.aa$,o=A.k(this).i("a7.1")
 while(p!=null){q.push(A.aMG(p,r,b,c))
 s=p.b
 s.toString
@@ -61996,7 +61996,7 @@ if(r==null||this.R==null)return
 s=this.R
 s.toString
 B.b.am(s,r.gqL(r))},
-a8g(){var s,r,q,p,o=this.q.e.n4(!1),n=A.b([],t.lb)
+a8g(){var s,r,q,p,o=this.q.e.n4(!1),n=A.a([],t.lb)
 for(s=o.length,r=0;r<s;){q=B.c.lr(o,$.aFL(),r)
 if(r!==q){if(q===-1)q=s
 p=new A.ki(new A.bY(r,q),this,o,$.ab())
@@ -62150,8 +62150,8 @@ k=g
 j=f.b
 k=j
 i=l
-h.aq=A.azF(new A.i(i,0),new A.i(k,0),A.b([B.k,B.mZ],t.t_))}else{k=h.gt().b
-h.aq=A.azF(new A.i(0,k-m.b.a.c.gb4()/2),new A.i(0,k),A.b([B.k,B.mZ],t.t_))}m.l()
+h.aq=A.azF(new A.i(i,0),new A.i(k,0),A.a([B.k,B.mZ],t.t_))}else{k=h.gt().b
+h.aq=A.azF(new A.i(0,k-m.b.a.c.gb4()/2),new A.i(0,k),A.a([B.k,B.mZ],t.t_))}m.l()
 break}else{h.aQ=!1
 h.aq=null}},
 cG(a,b){this.UF(a,b)},
@@ -62190,7 +62190,7 @@ b.hw(a)
 s=b.q
 r=s.e
 r.toString
-q=A.b([],t.O_)
+q=A.a([],t.O_)
 r.yM(q)
 b.bb=q
 r=q.length
@@ -62203,19 +62203,19 @@ break}o=o||m.e;++n}if(p)a.a=a.e=!0
 else if(o)a.p2=b.ga5m()
 else{r=b.O
 if(r==null){l=new A.cB("")
-k=A.b([],t.oU)
+k=A.a([],t.oU)
 for(r=b.bb,j=r.length,i=0,n=0,h="";n<r.length;r.length===j||(0,A.B)(r),++n){m=r[n]
 g=m.b
 if(g==null)g=m.a
 for(h=m.r,f=h.length,e=0;e<h.length;h.length===f||(0,A.B)(h),++e){d=h[e]
 c=d.a
 k.push(d.Gs(new A.bY(i+c.a,i+c.b)))}h=l.a+=g
-i+=g.length}r=b.O=A.b([new A.cT(h.charCodeAt(0)==0?h:h,k)],t.NS)}a.y2=r[0]
+i+=g.length}r=b.O=A.a([new A.cT(h.charCodeAt(0)==0?h:h,k)],t.NS)}a.y2=r[0]
 a.r=!0
 s=s.w
 s.toString
 a.R=s}},
-a5n(a){var s,r,q,p,o,n,m,l,k,j=this,i=A.b([],t.q1),h=A.b([],t.X_),g=j.a_
+a5n(a){var s,r,q,p,o,n,m,l,k,j=this,i=A.a([],t.q1),h=A.a([],t.X_),g=j.a_
 if(g==null){g=j.bb
 g.toString
 g=j.a_=A.ax7(g)}for(s=g.length,r=0,q=0,p=0,o=null,n=0;n<g.length;g.length===s||(0,A.B)(g),++n){m=g[n]
@@ -62227,7 +62227,7 @@ if(!k)break
 i.push(a[q]);++q}++r}else o=m}if(o!=null)i.push(j.N4(o,p))
 return new A.rA(i,h)},
 N4(a,b){var s,r,q,p=this.O
-if(p==null)p=this.O=A.b([],t.NS)
+if(p==null)p=this.O=A.a([],t.NS)
 s=p.length
 r=A.c9()
 if(b<s)r.b=p[b]
@@ -62242,7 +62242,7 @@ s.r=!0
 s.y2=r.aV()
 s.r=!0
 return s},
-nT(c1,c2,c3){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6=this,b7=null,b8=A.b([],t.QF),b9=b6.q,c0=b9.w
+nT(c1,c2,c3){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6=this,b7=null,b8=A.a([],t.QF),b9=b6.q,c0=b9.w
 c0.toString
 s=b6.aa$
 r=A.o(t.D2,t.bu)
@@ -62333,7 +62333,7 @@ $1(a){return a.y=a.z=null},
 $S:134}
 A.ad2.prototype={
 $1(a){var s=a.x
-s===$&&A.a()
+s===$&&A.b()
 return s.c!==B.cH},
 $S:315}
 A.ad_.prototype={
@@ -62351,10 +62351,10 @@ s.lT(s,s.b8.h(0,this.b).e)},
 $S:0}
 A.ki.prototype={
 gu(){var s=this.x
-s===$&&A.a()
+s===$&&A.b()
 return s},
 ae3(){var s=this,r=s.O9(),q=s.x
-q===$&&A.a()
+q===$&&A.b()
 if(q.j(0,r))return
 s.x=r
 s.ad()},
@@ -62371,7 +62371,7 @@ m=n.w
 m.toString
 l=s>r!==(B.b4===m)
 k=A.c7(B.j,s,r,!1)
-j=A.b([],t.AO)
+j=A.a([],t.AO)
 for(a0=a0.lK(k),m=a0.length,i=0;i<a0.length;a0.length===m||(0,A.B)(a0),++i){h=a0[i]
 j.push(new A.x(h.a,h.b,h.c,h.d))}$label0$0:{if(p){a0=B.Qr
 break $label0$0}a0=l
@@ -62974,10 +62974,10 @@ r=l.a
 q=r.a
 p=s.JK(A.c7(B.j,q,r.b,!1),B.mr)
 r=t.AO
-if(p.length!==0){l.y=A.b([],r)
+if(p.length!==0){l.y=A.a([],r)
 for(s=p.length,o=0;o<p.length;p.length===s||(0,A.B)(p),++o){n=p[o]
 l.y.push(new A.x(n.a,n.b,n.c,n.d))}}else{m=s.rS(new A.af(q,B.j))
-l.y=A.b([A.pZ(m,new A.i(m.a+0,m.b+-s.q.cl().gb4()))],r)}}s=l.y
+l.y=A.a([A.pZ(m,new A.i(m.a+0,m.b+-s.q.cl().gb4()))],r)}}s=l.y
 s.toString
 return s},
 gi7(){var s,r,q,p,o,n,m=this,l=m.z
@@ -63053,12 +63053,12 @@ s=A.k(q).i("iH<1,cp>")
 r.CW=A.dM(new A.iH(q,new A.aoC(r),s),s.i("z.E"))
 r.at=a},
 gaa5(){var s=this.at
-s===$&&A.a()
+s===$&&A.b()
 return s},
 fZ(a){var s,r,q
 this.rm(a)
 s=this.CW
-s===$&&A.a()
+s===$&&A.b()
 s=A.ci(s,s.r,A.k(s).c)
 r=s.$ti.c
 while(s.A()){q=s.d
@@ -63069,12 +63069,12 @@ else q.om(a)}},
 q9(a){},
 h8(a){var s,r=this
 if(!r.ay.n(0,a.gbc())){s=r.ax
-if(!s.ap(a.gbc()))s.p(0,a.gbc(),A.b([],t.Y2))
+if(!s.ap(a.gbc()))s.p(0,a.gbc(),A.a([],t.Y2))
 s.h(0,a.gbc()).push(a)}else r.aa6(a)
 r.we(a)},
 fY(a){var s,r=this.ax.E(0,a)
 if(r!=null){s=this.at
-s===$&&A.a()
+s===$&&A.b()
 J.wQ(r,s)}this.ay.C(0,a)},
 f4(a){this.L8(a)
 this.ay.E(0,a)
@@ -63373,7 +63373,7 @@ aH(a,b){var s,r,q=this,p=q.m$
 if(p!=null){s=q.ch
 if(q.ag!==B.x){q.ke()
 p=q.cx
-p===$&&A.a()
+p===$&&A.b()
 r=q.S
 r.toString
 s.saz(a.kD(p,b,r,A.ep.prototype.ged.call(q),q.ag,t.VX.a(s.a)))}else{a.d0(p,b)
@@ -63394,7 +63394,7 @@ aH(a,b){var s,r,q=this,p=q.m$
 if(p!=null){s=q.ch
 if(q.ag!==B.x){q.ke()
 p=q.cx
-p===$&&A.a()
+p===$&&A.b()
 r=q.S
 s.saz(a.XR(p,b,new A.x(r.a,r.b,r.c,r.d),r,A.ep.prototype.ged.call(q),q.ag,t.eG.a(s.a)))}else{a.d0(p,b)
 s.saz(null)}}else q.ch.saz(null)}}
@@ -63405,13 +63405,13 @@ return s},
 c1(a,b){var s,r=this
 if(r.m!=null){r.ke()
 s=r.S.gez().a
-s===$&&A.a()
+s===$&&A.b()
 if(!s.a.contains(b.a,b.b))return!1}return r.kW(a,b)},
 aH(a,b){var s,r,q,p=this,o=p.m$
 if(o!=null){s=p.ch
 if(p.ag!==B.x){p.ke()
 o=p.cx
-o===$&&A.a()
+o===$&&A.b()
 r=p.gt()
 q=p.S
 q.toString
@@ -63462,7 +63462,7 @@ o=j.ag===B.ca
 if(!o){p=A.b_()
 p.r=j.em.gu()
 q.dr(s,p)}p=j.cx
-p===$&&A.a()
+p===$&&A.b()
 n=j.gt()
 m=j.S
 m.toString
@@ -63484,7 +63484,7 @@ return s},
 c1(a,b){var s,r=this
 if(r.m!=null){r.ke()
 s=r.S.gez().a
-s===$&&A.a()
+s===$&&A.b()
 if(!s.a.contains(b.a,b.b))return!1}return r.kW(a,b)},
 aH(a,b){var s,r,q,p,o,n,m,l,k=this
 if(k.m$==null){k.ch.saz(null)
@@ -63500,7 +63500,7 @@ if(!p){$.a0()
 s=A.b_()
 s.r=k.em.gu()
 q.iV(r,s)}s=k.cx
-s===$&&A.a()
+s===$&&A.b()
 o=k.gt()
 n=k.S
 n.toString
@@ -63599,7 +63599,7 @@ if(j.bu==null){r=A.zY(s)
 if(r==null){q=s.GQ()
 if(q===0||!isFinite(q)){j.ch.saz(null)
 return}p=j.cx
-p===$&&A.a()
+p===$&&A.b()
 o=A.ep.prototype.ged.call(j)
 n=j.ch
 m=n.a
@@ -63906,23 +63906,23 @@ s=s==null?null:s.ji(a)
 return s==null?this.wi(a):s}}
 A.VE.prototype={
 eI(a){var s=this.zp$
-s===$&&A.a()
+s===$&&A.b()
 if(s)return
 this.nv(a)},
 dB(a){var s,r,q=this
 q.hw(a)
 s=q.zn$
-s===$&&A.a()
+s===$&&A.b()
 a.a=s
 s=q.zo$
-s===$&&A.a()
+s===$&&A.b()
 a.e=s
 s=q.zq$
-s===$&&A.a()
+s===$&&A.b()
 a.d=s
 a.b=q.zr$
 s=q.c_$
-s===$&&A.a()
+s===$&&A.b()
 s=s.a
 if(s!=null)a.sWC(s)
 s=q.c_$
@@ -64256,7 +64256,7 @@ if(!(b instanceof A.lw))return!1
 return b.a===s.a&&b.b===s.b&&b.c===s.c&&b.d===s.d&&b.e===s.e&&b.f===s.f&&b.r===s.r&&b.w===s.w&&b.x===s.x&&b.y===s.y&&b.Q===s.Q&&b.z===s.z},
 gB(a){var s=this
 return A.K(s.a,s.b,s.c,s.d,s.e,s.f,s.r,s.w,s.x,s.y,s.Q,s.z,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
-k(a){var s=this,r=A.b([s.a.k(0),s.b.k(0),s.c.k(0),"scrollOffset: "+B.d.a1(s.d,1),"precedingScrollExtent: "+B.d.a1(s.e,1),"remainingPaintExtent: "+B.d.a1(s.r,1)],t.s),q=s.f
+k(a){var s=this,r=A.a([s.a.k(0),s.b.k(0),s.c.k(0),"scrollOffset: "+B.d.a1(s.d,1),"precedingScrollExtent: "+B.d.a1(s.e,1),"remainingPaintExtent: "+B.d.a1(s.r,1)],t.s),q=s.f
 if(q!==0)r.push("overlap: "+B.d.a1(q,1))
 r.push("crossAxisExtent: "+B.d.a1(s.w,1))
 r.push("crossAxisDirection: "+s.x.k(0))
@@ -65025,7 +65025,7 @@ j=a.b-h-i
 break $label1$1}j=g.y
 break $label1$1}q=q==null?f:Math.max(0,q)
 return A.fh(j==null?f:Math.max(0,j),q)},
-k(a){var s=this,r=A.b([],t.s),q=s.e
+k(a){var s=this,r=A.a([],t.s),q=s.e
 if(q!=null)r.push("top="+A.hM(q))
 q=s.f
 if(q!=null)r.push("right="+A.hM(q))
@@ -65124,7 +65124,7 @@ cg(a,b){return this.z6(a,b)},
 AL(a,b){this.u4(a,b)},
 aH(a,b){var s,r=this,q=r.G!==B.x&&r.q,p=r.F
 if(q){q=r.cx
-q===$&&A.a()
+q===$&&A.b()
 s=r.gt()
 p.saz(a.kD(q,b,new A.x(0,0,0+s.a,0+s.b),r.gXy(),r.G,p.a))}else{p.saz(null)
 r.AL(a,b)}},
@@ -65246,10 +65246,10 @@ eh(a){if(!(a.b instanceof A.k3))a.b=new A.k3(B.h)},
 dB(a){this.hw(a)
 a.y1=B.RA
 a.e=a.a=a.r=!0},
-nT(c2,c3,c4){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6=this,b7=null,b8=t.QF,b9=A.b([],b8),c0=b6.O,c1=J.a6u(c0,t.bG)
+nT(c2,c3,c4){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6=this,b7=null,b8=t.QF,b9=A.a([],b8),c0=b6.O,c1=J.a6u(c0,t.bG)
 for(s=t.Vv,r=0;r<c0;++r){q=b6.L
-p=A.b(new Array(q),s)
-for(o=0;o<q;++o)p[o]=A.b([],b8)
+p=A.a(new Array(q),s)
+for(o=0;o<q;++o)p[o]=A.a([],b8)
 c1[r]=p}n=new A.adm()
 m=new A.adl(b6)
 l=new A.adk(b6)
@@ -65270,7 +65270,7 @@ a3=a2-a
 if(a3===0)continue
 a4=b.h(0,f)
 if(a4==null){a4=A.ql(b7,new A.adj(b6,new A.x(0,a,a0,a2)))
-b.p(0,f,a4)}a5=A.b([],b8)
+b.p(0,f,a4)}a5=A.a([],b8)
 for(a2=a3+1e-10,a3=0+a3,e=0;e<b6.L;++e){a6=c1[f][e]
 a7=a6.length
 if(a7===0)continue
@@ -65544,7 +65544,7 @@ case 4:case 5:e.f0(A.fh(i,s[p]))
 c.a=new A.i(q[p],m)
 break}}}}o.push(m)
 r=a2.c3
-r===$&&A.a()
+r===$&&A.b()
 a2.fy=a4.b_(new A.y(r,m))},
 cg(a,b){var s,r,q,p
 for(s=this.q.length-1,r=t.q;s>=0;--s){q=this.q[s]
@@ -65556,7 +65556,7 @@ if(e.O*e.L===0){s=e.F
 if(s!=null){r=b.a
 q=b.b
 p=e.c3
-p===$&&A.a()
+p===$&&A.b()
 s.Xu(a.gbW(),new A.x(r,q,r+p,q+0),B.kt,B.kt)}return}if(e.V!=null){o=a.gbW()
 for(s=e.aD,r=b.a,q=b.b,p=e.gdH(),n=0;n<e.O;++n){m=e.V
 if(m.length<=n)break
@@ -65574,7 +65574,7 @@ if(h!=null){p=h.b
 p.toString
 p=s.a(p).a
 a.d0(h,new A.i(p.a+r,p.b+q))}}if(e.F!=null){s=e.c3
-s===$&&A.a()
+s===$&&A.b()
 p=e.aD
 m=B.b.gac(p)
 l=p.length
@@ -65924,7 +65924,7 @@ if(p.aa$==null)return
 s=p.gW8()&&p.V!==B.x
 r=p.af
 if(s){s=p.cx
-s===$&&A.a()
+s===$&&A.b()
 q=p.gt()
 r.saz(a.kD(s,b,new A.x(0,0,0+q.a,0+q.b),p.gaiq(),p.V,r.a))}else{r.saz(null)
 p.T5(a,b)}},
@@ -66036,12 +66036,12 @@ break
 case 1:s=this.gMv()
 break
 default:s=null}return s},
-gMv(){var s,r,q=A.b([],t.Ry),p=this.cA$
+gMv(){var s,r,q=A.a([],t.Ry),p=this.cA$
 for(s=A.k(this).i("a7.1");p!=null;){q.push(p)
 r=p.b
 r.toString
 p=s.a(r).cn$}return q},
-gMu(){var s,r,q=A.b([],t.Ry),p=this.aa$
+gMu(){var s,r,q=A.a([],t.Ry),p=this.aa$
 for(s=A.k(this).i("a7.1");p!=null;){q.push(p)
 r=p.b
 r.toString
@@ -66099,11 +66099,11 @@ l=h.CH(o,q,s+0)
 if(l!==0)h.O.GB(l)
 else{s=h.O
 k=h.fH
-k===$&&A.a()
+k===$&&A.b()
 j=h.eC
 k=Math.min(0,k+o*j)
 i=h.lo
-i===$&&A.a()
+i===$&&A.b()
 if(s.ml(k,Math.max(0,i-o*(1-j))))break}++m}while(m<n)},
 CH(a,b,c){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e=this
 e.lo=e.fH=0
@@ -66139,11 +66139,11 @@ return e.Id(e.gyI(),A.D(s,-f,0),q,b,B.ht,j,a,o,k,p,h)},
 gW8(){return this.jF},
 YN(a,b){var s,r=this
 switch(a.a){case 0:s=r.lo
-s===$&&A.a()
+s===$&&A.b()
 r.lo=s+b.a
 break
 case 1:s=r.fH
-s===$&&A.a()
+s===$&&A.b()
 r.fH=s-b.a
 break}if(b.x)r.jF=!0},
 Ji(a,b,c){var s=a.b
@@ -66225,17 +66225,17 @@ h=j.at
 h.toString
 j.at=h+i
 j.ch=!0}else{switch(A.aV(d.q).a){case 1:j=d.cQ
-j===$&&A.a()
+j===$&&A.b()
 j=A.D(j,m,l)
 break
 case 0:j=d.cQ
-j===$&&A.a()
+j===$&&A.b()
 j=A.D(j,s,n)
 break
 default:j=c}g=d.O.mm(j)
 h=d.O
 f=d.eC
-f===$&&A.a()
+f===$&&A.b()
 e=h.ml(0,Math.max(0,f-j))
 if(g&&e){k=j
 break}k=j}}switch(A.aV(d.q).a){case 1:s=new A.y(A.D(q,s,n),A.D(k,m,l))
@@ -66259,11 +66259,11 @@ s.toString
 return n.Id(n.gyI(),-s,r,b,B.ht,o,a,p,a+2*s,a+p,q)},
 gW8(){return this.fH},
 YN(a,b){var s=this,r=s.eC
-r===$&&A.a()
+r===$&&A.b()
 s.eC=r+b.a
 if(b.x)s.fH=!0
 r=s.cQ
-r===$&&A.a()
+r===$&&A.b()
 s.cQ=r+b.e},
 Ji(a,b,c){var s=a.b
 s.toString
@@ -66316,7 +66316,7 @@ A.fa.prototype={
 v6(a,b,c){var s=c.a===0
 if(s){this.e3(a)
 return A.d8(null,t.H)}else return this.iM(a,b,c)},
-k(a){var s=this,r=A.b([],t.s)
+k(a){var s=this,r=A.a([],t.s)
 s.a1u(r)
 r.push(A.t(s.w).k(0))
 r.push(s.r.k(0))
@@ -66531,7 +66531,7 @@ o=r
 n=c.gM1().a
 m=n
 l=c.O
-k=A.b([],t.M6)
+k=A.a([],t.M6)
 j=c.aa$
 s=A.k(c).i("a7.1")
 i=b
@@ -66587,7 +66587,7 @@ a=n.$1(a);--a0}k+=h+p}},
 cg(a,b){return this.z6(a,b)},
 aH(a,b){var s,r=this,q=r.aQ&&r.af!==B.x,p=r.aq
 if(q){q=r.cx
-q===$&&A.a()
+q===$&&A.b()
 s=r.gt()
 p.saz(a.kD(q,b,new A.x(0,0,0+s.a,0+s.b),r.gUG(),r.af,p.a))}else{p.saz(null)
 r.u4(a,b)}},
@@ -66770,7 +66770,7 @@ p=A.bi("during a scheduler callback")
 A.d_(new A.bI(s,r,"scheduler library",p,null,!1))}},
 P2(a,b){return this.P3(a,b,null)}}
 A.ae0.prototype={
-$0(){return A.b([A.aJi("\nThis exception was thrown in the context of a scheduler callback. When the scheduler callback was _registered_ (as opposed to when the exception was thrown), this was the stack",this.a,null)],t.D)},
+$0(){return A.a([A.aJi("\nThis exception was thrown in the context of a scheduler callback. When the scheduler callback was _registered_ (as opposed to when the exception was thrown), this was the stack",this.a,null)],t.D)},
 $S:20}
 A.adZ.prototype={
 $1(a){var s=this.a
@@ -67183,8 +67183,8 @@ j=i.ok
 i=i.ay}r=this.Q
 if(!s){r.toString
 r=A.aQ6(r,j)}s=t.NM
-q=A.b([],s)
-p=A.b([],s)
+q=A.a([],s)
+p=A.a([],s)
 for(o=null,n=0;n<r.length;++n){m=r[n]
 l=m.p1
 o=n>0?r[n-1].p1:null
@@ -67260,15 +67260,15 @@ bp(a,b){return B.d.bp(this.b,b.b)},
 $icY:1}
 A.j6.prototype={
 bp(a,b){return B.d.bp(this.a,b.a)},
-a_p(){var s,r,q,p,o,n,m,l,k,j=A.b([],t.TV)
+a_p(){var s,r,q,p,o,n,m,l,k,j=A.a([],t.TV)
 for(s=this.c,r=s.length,q=0;q<s.length;s.length===r||(0,A.B)(s),++q){p=s[q]
 o=p.e
 j.push(new A.lJ(!0,A.r7(p,new A.i(o.a- -0.1,o.b- -0.1)).a,p))
 j.push(new A.lJ(!1,A.r7(p,new A.i(o.c+-0.1,o.d+-0.1)).a,p))}B.b.jm(j)
-n=A.b([],t.YK)
+n=A.a([],t.YK)
 for(s=j.length,r=this.b,o=t.QF,m=null,l=0,q=0;q<j.length;j.length===s||(0,A.B)(j),++q){k=j[q]
 if(k.a){++l
-if(m==null)m=new A.j6(k.b,r,A.b([],o))
+if(m==null)m=new A.j6(k.b,r,A.a([],o))
 m.c.push(k.c)}else --l
 if(l===0){m.toString
 n.push(m)
@@ -67298,8 +67298,8 @@ b=Math.atan2(c.b-j,c.a-k)
 a=p&&-0.7853981633974483<b&&b<2.356194490192345
 if(o)a0=b<-2.356194490192345||b>2.356194490192345
 else a0=!1
-if(a||a0)q.p(0,l.b,f.b)}}a1=A.b([],t.t)
-a2=A.b(a3.slice(0),A.X(a3))
+if(a||a0)q.p(0,l.b,f.b)}}a1=A.a([],t.t)
+a2=A.a(a3.slice(0),A.X(a3))
 B.b.fT(a2,new A.aqy())
 new A.a_(a2,new A.aqz(),A.X(a2).i("a_<1,n>")).am(0,new A.aqB(A.aD(s),q,a1))
 a3=t.qn
@@ -67355,7 +67355,7 @@ s.cU()},
 ZO(){var s,r,q,p,o,n,m,l,k,j,i,h,g=this,f=g.b
 if(f.a===0)return
 s=A.aD(t.S)
-r=A.b([],t.QF)
+r=A.a([],t.QF)
 for(q=g.d,p=A.k(f).i("b2<1>"),o=p.i("z.E");f.a!==0;){n=A.a1(new A.b2(f,new A.afB(g),p),o)
 f.W(0)
 q.W(0)
@@ -67368,7 +67368,7 @@ else i=!1
 if(i){j.fn()
 k.cx=!1}}}}B.b.fT(r,new A.afD())
 $.uy.toString
-q=A.b([],t.o4)
+q=A.a([],t.o4)
 h=new A.afH(q)
 for(p=r.length,l=0;l<r.length;r.length===p||(0,A.B)(r),++l){k=r[l]
 if(k.cx&&k.ax!=null)k.a49(h,s)}f.W(0)
@@ -67666,7 +67666,7 @@ Bc(a){var s=A.c(["type",this.a,"data",this.oR()],t.N,t.z)
 if(a!=null)s.p(0,"nodeId",a)
 return s},
 Yz(){return this.Bc(null)},
-k(a){var s,r,q=A.b([],t.s),p=this.oR(),o=p.gbX(),n=A.a1(o,A.k(o).i("z.E"))
+k(a){var s,r,q=A.a([],t.s),p=this.oR(),o=p.gbX(),n=A.a1(o,A.k(o).i("z.E"))
 B.b.jm(n)
 for(o=n.length,s=0;s<n.length;n.length===o||(0,A.B)(n),++s){r=n[s]
 q.push(r+": "+A.m(p.h(0,r)))}return"SemanticsEvent("+B.b.bj(q,", ")+")"}}
@@ -67731,7 +67731,7 @@ this.a.b.q_(a,b)},
 $S:36}
 A.abG.prototype={
 lu(a){var s,r=B.cV.dq(A.Y8(null,A.kl(4,a,B.X,!1),null).e),q=$.dx.cf$
-q===$&&A.a()
+q===$&&A.b()
 s=q.BP("flutter/assets",A.auT(r)).bN(new A.abH(a),t.V4)
 return s},
 Ag(a){return this.apf(a)},
@@ -67747,7 +67747,7 @@ break
 case 1:return A.P(q,r)}})
 return A.Q($async$Ag,r)}}
 A.abH.prototype={
-$1(a){if(a==null)throw A.j(A.mx(A.b([A.aQr(this.a),A.bi("The asset does not exist or has empty data.")],t.D)))
+$1(a){if(a==null)throw A.j(A.mx(A.a([A.aQr(this.a),A.bi("The asset does not exist or has empty data.")],t.D)))
 return a},
 $S:347}
 A.a_H.prototype={
@@ -67799,20 +67799,20 @@ if(J.L(b)!==A.t(s))return!1
 return b instanceof A.rp&&b.a===s.a&&b.b===s.b&&A.cx(b.c,s.c)&&b.d.j(0,s.d)&&b.e==s.e},
 gB(a){var s=this
 return A.K(s.a,s.b,A.bx(s.c),s.d,s.e,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
-k(a){var s=this,r=A.b(["enabled: "+s.a,"uniqueIdentifier: "+s.b,"autofillHints: "+A.m(s.c),"currentEditingValue: "+s.d.k(0)],t.s),q=s.e
+k(a){var s=this,r=A.a(["enabled: "+s.a,"uniqueIdentifier: "+s.b,"autofillHints: "+A.m(s.c),"currentEditingValue: "+s.d.k(0)],t.s),q=s.e
 if(q!=null)r.push("hintText: "+q)
 return"AutofillConfiguration("+B.b.bj(r,", ")+")"}}
 A.a_V.prototype={}
 A.BV.prototype={
-abJ(){var s,r,q=this,p=t.v3,o=new A.a5o(A.o(p,t.g),A.aD(t.SQ),A.b([],t.sA))
+abJ(){var s,r,q=this,p=t.v3,o=new A.a5o(A.o(p,t.g),A.aD(t.SQ),A.a([],t.sA))
 q.e0$!==$&&A.bu()
 q.e0$=o
 s=$.axO()
-r=A.b([],t.K0)
+r=A.a([],t.K0)
 q.cI$!==$&&A.bu()
 q.cI$=new A.LS(o,s,r,A.aD(p))
 p=q.e0$
-p===$&&A.a()
+p===$&&A.b()
 p.wq().bN(new A.afL(q),t.P)},
 uE(){var s=$.a_6()
 s.a.W(0)
@@ -67848,7 +67848,7 @@ case 1:return A.P(q,r)}})
 return A.Q($async$DR,r)},
 a7F(a,b){var s,r,q,p
 if(a===b)return B.LA
-s=A.b([],t.QP)
+s=A.a([],t.QP)
 if(a==null)s.push(b)
 else{r=B.b.hM(B.eT,a)
 q=B.b.hM(B.eT,b)
@@ -67910,7 +67910,7 @@ case 2:return A.P(null,r)}})
 return A.Q($async$A8,r)}}
 A.afL.prototype={
 $1(a){var s=$.aK(),r=this.a.cI$
-r===$&&A.a()
+r===$&&A.b()
 s.dx=r.gan3()
 s.dy=$.aq
 B.Bq.w7(r.gano())},
@@ -68024,7 +68024,7 @@ switch((q==null?r.d=B.JI:q).a){case 0:return!1
 case 1:if(a.d===0&&a.e===0)return!1
 s=A.aKY(a)
 if(a.r&&r.e.length===0){r.b.VR(s)
-r.Ne(A.b([s],t.K0),null)}else r.e.push(s)
+r.Ne(A.a([s],t.K0),null)}else r.e.push(s)
 return!1}},
 Ne(a,b){var s,r,q,p,o,n=this.a
 if(n!=null){s=new A.zz(a,b)
@@ -68058,7 +68058,7 @@ a5V(a0){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e=this,d=null,c=a0.c,b=c.gjR(),a=c.gIh()
 c=e.b.a
 s=A.k(c).i("b3<1>")
 r=A.dM(new A.b3(c,s),s.i("z.E"))
-q=A.b([],t.K0)
+q=A.a([],t.K0)
 p=c.h(0,b)
 o=$.dx.y2$
 n=a0.a
@@ -68376,7 +68376,7 @@ gB(a){return B.c.gB(this.a)}}
 A.TW.prototype={}
 A.mf.prototype={
 gtE(){var s=$.dx.cf$
-s===$&&A.a()
+s===$&&A.b()
 return s},
 lP(a){return this.ZM(a,this.$ti.i("1?"))},
 ZM(a,b){var s=0,r=A.R(b),q,p=this,o,n,m
@@ -68408,7 +68408,7 @@ return A.Q($async$$1,r)},
 $S:149}
 A.tP.prototype={
 gtE(){var s=$.dx.cf$
-s===$&&A.a()
+s===$&&A.b()
 return s},
 m8(a,b,c,d){return this.abT(a,b,c,d,d.i("0?"))},
 abT(a,b,c,d,e){var s=0,r=A.R(e),q,p=this,o,n,m,l,k
@@ -68514,12 +68514,12 @@ var $async$AV=A.S(function(a,b){if(a===1){o.push(b)
 s=p}for(;;)switch(s){case 0:g=null
 p=4
 l=n.a
-l===$&&A.a()
+l===$&&A.b()
 e=t.J1
 s=7
 return A.Y(l.iq("ProcessText.queryTextActions",t.z),$async$AV)
 case 7:m=e.a(b)
-if(m==null){l=A.b([],t.RW)
+if(m==null){l=A.a([],t.RW)
 q=l
 s=1
 break}g=m
@@ -68528,7 +68528,7 @@ s=6
 break
 case 4:p=3
 f=o.pop()
-l=A.b([],t.RW)
+l=A.a([],t.RW)
 q=l
 s=1
 break
@@ -68536,7 +68536,7 @@ s=6
 break
 case 3:s=2
 break
-case 6:l=A.b([],t.RW)
+case 6:l=A.a([],t.RW)
 for(j=g.gbX(),j=j.ga5(j);j.A();){i=j.gN()
 i.toString
 A.bA(i)
@@ -68552,7 +68552,7 @@ AU(a,b,c){return this.ar_(a,b,c)},
 ar_(a,b,c){var s=0,r=A.R(t.ob),q,p=this,o,n
 var $async$AU=A.S(function(d,e){if(d===1)return A.O(e,r)
 for(;;)switch(s){case 0:o=p.a
-o===$&&A.a()
+o===$&&A.b()
 n=A
 s=3
 return A.Y(o.co("ProcessText.processTextAction",[a,b,c],t.z),$async$AU)
@@ -68820,7 +68820,7 @@ $0(){var s=t.X
 return A.o(s,s)},
 $S:152}
 A.adA.prototype={
-$0(){return A.b([],t.QT)},
+$0(){return A.a([],t.QT)},
 $S:362}
 A.adD.prototype={
 $1(a){return a},
@@ -69058,7 +69058,7 @@ if(b instanceof A.PB)if(b.a==r.a)if(b.b.j(0,r.b))if(b.c===r.c)if(b.e===r.e)if(b.
 return s},
 gB(a){var s=this
 return A.K(s.a,s.b,s.c,!1,s.e,s.r,s.w,!0,s.y,s.z,s.Q,s.at,s.as,s.f,!0,A.bx(s.ay),!1,s.ch,B.a,B.a)},
-k(a){var s=this,r=A.b([],t.s),q=s.a
+k(a){var s=this,r=A.a([],t.s),q=s.a
 if(q!=null)r.push("viewId: "+A.m(q))
 r.push("inputType: "+s.b.k(0))
 r.push("readOnly: "+s.c)
@@ -69141,7 +69141,7 @@ CG(a,b){this.d=a
 this.e=b
 this.agg(a.r,b)},
 ga56(){var s=this.c
-s===$&&A.a()
+s===$&&A.b()
 return s},
 xl(a){return this.ack(a)},
 ack(a){var s=0,r=A.R(t.z),q,p=2,o=[],n=this,m,l,k,j,i
@@ -69202,7 +69202,7 @@ s=1
 break $async$outer}n=p.d
 if(n==null){s=1
 break}if(d==="TextInputClient.requestExistingInputState"){m=p.e
-m===$&&A.a()
+m===$&&A.b()
 p.CG(n,m)
 p.xN(p.d.r.a.c.a)
 s=1
@@ -69221,7 +69221,7 @@ $.c3().ahP(h,$.aur())
 break
 case u.s:l=t.a
 g=l.a(m.h(o,1))
-m=A.b([],t.sD)
+m=A.a([],t.sD)
 for(n=J.bs(n.a(g.h(0,"deltas")));n.A();)m.push(A.aNQ(l.a(n.gN())))
 t.Je.a(p.d.r).ath(m)
 break
@@ -69268,57 +69268,57 @@ for(s=this.b,s=A.ci(s,s.r,A.k(s).c),r=t.jl,q=t.H,p=s.$ti.c;s.A();){o=s.d
 if(o==null)o=p.a(o)
 n=$.c3()
 m=n.c
-m===$&&A.a()
-m.co("TextInput.setClient",A.b([n.d.f,o.MT(b)],r),q)}},
+m===$&&A.b()
+m.co("TextInput.setClient",A.a([n.d.f,o.MT(b)],r),q)}},
 My(){var s,r,q,p,o=this
 o.d.toString
 for(s=o.b,s=A.ci(s,s.r,A.k(s).c),r=t.H,q=s.$ti.c;s.A();){p=s.d
 if(p==null)q.a(p)
 p=$.c3().c
-p===$&&A.a()
+p===$&&A.b()
 p.iq("TextInput.clearClient",r)}o.d=null
 o.afJ()},
 Fg(a){var s,r,q,p,o
 for(s=this.b,s=A.ci(s,s.r,A.k(s).c),r=t.H,q=s.$ti.c;s.A();){p=s.d
 if(p==null)p=q.a(p)
 o=$.c3().c
-o===$&&A.a()
+o===$&&A.b()
 o.co("TextInput.updateConfig",p.MT(a),r)}},
 xN(a){var s,r,q,p
 for(s=this.b,s=A.ci(s,s.r,A.k(s).c),r=t.H,q=s.$ti.c;s.A();){p=s.d
 if(p==null)q.a(p)
 p=$.c3().c
-p===$&&A.a()
+p===$&&A.b()
 p.co("TextInput.setEditingState",a.Je(),r)}},
 EW(){var s,r,q,p
 for(s=this.b,s=A.ci(s,s.r,A.k(s).c),r=t.H,q=s.$ti.c;s.A();){p=s.d
 if(p==null)q.a(p)
 p=$.c3().c
-p===$&&A.a()
+p===$&&A.b()
 p.iq("TextInput.show",r)}},
 abC(){var s,r,q,p
 for(s=this.b,s=A.ci(s,s.r,A.k(s).c),r=t.H,q=s.$ti.c;s.A();){p=s.d
 if(p==null)q.a(p)
 p=$.c3().c
-p===$&&A.a()
+p===$&&A.b()
 p.iq("TextInput.hide",r)}},
 agj(a,b){var s,r,q,p,o,n,m,l,k
 for(s=this.b,s=A.ci(s,s.r,A.k(s).c),r=a.a,q=a.b,p=b.a,o=t.N,n=t.z,m=t.H,l=s.$ti.c;s.A();){k=s.d
 if(k==null)l.a(k)
 k=$.c3().c
-k===$&&A.a()
+k===$&&A.b()
 k.co("TextInput.setEditableSizeAndTransform",A.c(["width",r,"height",q,"transform",p],o,n),m)}},
 agh(a){var s,r,q,p,o,n,m,l,k,j
 for(s=this.b,s=A.ci(s,s.r,A.k(s).c),r=a.a,q=a.c-r,p=a.b,o=a.d-p,n=t.N,m=t.z,l=t.H,k=s.$ti.c;s.A();){j=s.d
 if(j==null)k.a(j)
 j=$.c3().c
-j===$&&A.a()
+j===$&&A.b()
 j.co("TextInput.setMarkedTextRect",A.c(["width",q,"height",o,"x",r,"y",p],n,m),l)}},
 agf(a){var s,r,q,p,o,n,m,l,k,j
 for(s=this.b,s=A.ci(s,s.r,A.k(s).c),r=a.a,q=a.c-r,p=a.b,o=a.d-p,n=t.N,m=t.z,l=t.H,k=s.$ti.c;s.A();){j=s.d
 if(j==null)k.a(j)
 j=$.c3().c
-j===$&&A.a()
+j===$&&A.b()
 j.co("TextInput.setCaretRect",A.c(["width",q,"height",o,"x",r,"y",p],n,m),l)}},
 agn(a){var s,r,q
 for(s=this.b,s=A.ci(s,s.r,A.k(s).c),r=s.$ti.c;s.A();){q=s.d;(q==null?r.a(q):q).a__(a)}},
@@ -69326,23 +69326,23 @@ EU(a,b,c,d,e){var s,r,q,p,o,n,m,l,k
 for(s=this.b,s=A.ci(s,s.r,A.k(s).c),r=d.a,q=e.a,p=t.N,o=t.z,n=t.H,m=c==null,l=s.$ti.c;s.A();){k=s.d
 if(k==null)l.a(k)
 k=$.c3().c
-k===$&&A.a()
+k===$&&A.b()
 k.co("TextInput.setStyle",A.c(["fontFamily",a,"fontSize",b,"fontWeightIndex",m?null:c.a,"textAlignIndex",r,"textDirectionIndex",q],p,o),n)}},
 aff(){var s,r,q,p
 for(s=this.b,s=A.ci(s,s.r,A.k(s).c),r=t.H,q=s.$ti.c;s.A();){p=s.d
 if(p==null)q.a(p)
 p=$.c3().c
-p===$&&A.a()
+p===$&&A.b()
 p.iq("TextInput.requestAutofill",r)}},
 ahP(a,b){var s,r,q,p
 if(this.d==null)return
 for(s=$.c3().b,s=A.ci(s,s.r,A.k(s).c),r=s.$ti.c,q=t.H;s.A();){p=s.d
 if((p==null?r.a(p):p)!==b){p=$.c3().c
-p===$&&A.a()
+p===$&&A.b()
 p.co("TextInput.setEditingState",a.Je(),q)}}$.c3().d.r.asl(a)}}
 A.ahp.prototype={
 $0(){var s=null
-return A.b([A.jr("call",this.a,!0,B.bE,s,s,s,B.b0,!1,!0,!0,B.ce,s,t.Px)],t.D)},
+return A.a([A.jr("call",this.a,!0,B.bE,s,s,s,B.b0,!1,!0,!0,B.ce,s,t.Px)],t.D)},
 $S:20}
 A.ahm.prototype={
 $1(a){return a},
@@ -69376,13 +69376,13 @@ if($.c3().a!==$.aur()){s=B.TU.lF()
 s.p(0,"isMultiline",a.b.j(0,B.lD))
 r.p(0,"inputType",s)}return r},
 a__(a){var s,r=$.c3().c
-r===$&&A.a()
+r===$&&A.b()
 s=A.X(a).i("a_<1,M<d7>>")
 s=A.a1(new A.a_(a,new A.aoA(),s),s.i("an.E"))
 r.co("TextInput.setSelectionRects",s,t.H)}}
 A.aoA.prototype={
 $1(a){var s=a.b,r=s.a,q=s.b
-return A.b([r,q,s.c-r,s.d-q,a.a,a.c.a],t.a0)},
+return A.a([r,q,s.c-r,s.d-q,a.a,a.c.a],t.a0)},
 $S:366}
 A.agG.prototype={
 anz(){var s,r=this
@@ -69460,7 +69460,7 @@ A.PQ.prototype={
 J(){return"UndoDirection."+this.b}}
 A.PR.prototype={
 gahB(){var s=this.a
-s===$&&A.a()
+s===$&&A.b()
 return s},
 DZ(a){return this.abq(a)},
 abq(a){var s=0,r=A.R(t.z),q,p=this,o,n
@@ -69476,7 +69476,7 @@ return A.Q($async$DZ,r)},
 ahl(a){var s
 $label0$0:{if("undo"===a){s=B.ZD
 break $label0$0}if("redo"===a){s=B.ZE
-break $label0$0}s=A.a5(A.mx(A.b([A.ju("Unknown undo direction: "+a)],t.D)))}return s}}
+break $label0$0}s=A.a5(A.mx(A.a([A.ju("Unknown undo direction: "+a)],t.D)))}return s}}
 A.ai1.prototype={}
 A.a5C.prototype={
 $2(a,b){return new A.u5(b,B.RO,this.a.f,null)},
@@ -69624,7 +69624,7 @@ aH(a,b){var s,r,q=this
 if(q.m$==null)return
 if(q.ag){s=q.gt()
 r=q.cx
-r===$&&A.a()
+r===$&&A.b()
 a.ar4(r,b,new A.x(0,0,0+s.a,0+s.b),A.nc.prototype.ged.call(q))}else q.Lm(a,b)}}
 A.aiu.prototype={}
 A.Yk.prototype={}
@@ -69652,11 +69652,11 @@ s.b=!0
 s.a.push(a)
 return null},
 B4(a){return this.a.E(0,a)},
-di(a){return new A.Fb(this,a,!1,!1,!1,!1,new A.b0(A.b([],t.e),t.d),A.k(this).i("Fb<aZ.T>"))}}
+di(a){return new A.Fb(this,a,!1,!1,!1,!1,new A.b0(A.a([],t.e),t.d),A.k(this).i("Fb<aZ.T>"))}}
 A.ct.prototype={
 ls(a,b){return this.a_A(a)},
 kx(a){return this.ls(a,null)},
-di(a){return new A.Fc(this,a,!1,!1,!1,!1,new A.b0(A.b([],t.e),t.d),A.k(this).i("Fc<ct.T>"))}}
+di(a){return new A.Fc(this,a,!1,!1,!1,!1,new A.b0(A.a([],t.e),t.d),A.k(this).i("Fc<ct.T>"))}}
 A.cE.prototype={
 dt(a){return this.c.$1(a)}}
 A.a_e.prototype={
@@ -69847,9 +69847,9 @@ this.f=q
 return!0}}return!1},
 kx(a){return this.ls(a,null)},
 cY(a,b){var s,r=this.e
-r===$&&A.a()
+r===$&&A.b()
 s=this.f
-s===$&&A.a()
+s===$&&A.b()
 r.rW(s,b)},
 dt(a){return this.cY(a,null)}}
 A.w2.prototype={
@@ -69887,7 +69887,7 @@ gv_(){return this.f}}
 A.Fc.prototype={
 P4(a,b,c){var s
 c.toString
-a.f9(new A.DQ(c,this.e,new A.b0(A.b([],t.e),t.d),this.$ti.i("DQ<1>")))
+a.f9(new A.DQ(c,this.e,new A.b0(A.a([],t.e),t.d),this.$ti.i("DQ<1>")))
 s=a.rW(b,c)
 a.f9(null)
 return s},
@@ -70085,7 +70085,7 @@ l.c=new A.PN(s.cx,s.dx.bf(1),l.b,m)
 s=n.a.p4
 r=A.aOv()
 q=A.l5($.aG8(),t.u,t.od)
-q.p(0,B.lO,new A.Bz(new A.b0(A.b([],t.e),t.d)).di(a))
+q.p(0,B.lO,new A.Bz(new A.b0(A.a([],t.e),t.d)).di(a))
 p=A.acu()
 return new A.Bs(new A.BX(new A.d1(n.ga6g(),A.afU(new A.K7(A.om(q,A.avm(new A.Pq(new A.BY(new A.mR(new A.asw(l,n),m,n.gxk(),m),m),m),p)),m),"<Default WidgetsApp Shortcuts>",r),m,t.w3),m),s,m)}}
 A.asu.prototype={
@@ -70100,10 +70100,10 @@ A.asw.prototype={
 $2(a,b){var s,r,q=this.b.gxk(),p=q.f
 p.toString
 s=t.IO
-r=A.b([],s)
+r=A.a([],s)
 B.b.P(r,q.a)
 r.push(B.DU)
-q=A.b(r.slice(0),s)
+q=A.a(r.slice(0),s)
 s=this.a
 r=s.c
 s=r==null?s.b:r
@@ -70160,13 +70160,13 @@ SF(a){var s,r
 this.c.toString
 s=this.f
 r=this.e
-r===$&&A.a()
+r===$&&A.b()
 a.M0(t.Fw.a(A.aKX(r,s)))},
 a61(a){var s=A.c9(),r=new A.ajf(this,a,s)
 s.sdF(r)
 return r},
 K(a){var s=this.f,r=this.e
-r===$&&A.a()
+r===$&&A.b()
 return new A.zw(s,r,null)}}
 A.ajb.prototype={
 $1(a){var s,r=this.a
@@ -70575,7 +70575,7 @@ A.Nk.prototype={
 aF(a){var s,r=this,q=r.d
 if(q==null)q=null
 else{s=q.b
-s===$&&A.a()
+s===$&&A.b()
 q=A.Jn(s,q.c)}q=new A.B8(q,r.e,r.f,r.r,r.w,r.x,r.y,r.z,r.Q,r.as,r.at,r.ax,r.ay,r.CW,!1,null,!1,new A.az(),A.a8(t.T))
 q.aE()
 q.ahM()
@@ -70583,7 +70583,7 @@ return q},
 aJ(a,b){var s,r=this,q=r.d
 if(q==null)q=null
 else{s=q.b
-s===$&&A.a()
+s===$&&A.b()
 q=A.Jn(s,q.c)}b.seb(q)
 b.a_=r.e
 b.siy(r.f)
@@ -70924,7 +70924,7 @@ d2(){return this.c}}
 A.adI.prototype={
 $0(){var s=this.a.a=new A.Br(this.b,B.a5)
 s.f=this.c
-s.r=new A.J9(null,A.b([],t.lX))},
+s.r=new A.J9(null,A.a([],t.lX))},
 $S:0}
 A.adJ.prototype={
 $0(){var s=this.a.a
@@ -70983,7 +70983,7 @@ B.kZ.nl(s.gacB())
 r.e1$=s
 r.abJ()
 s=$.aAd
-if(s==null)s=$.aAd=A.b([],t.iL)
+if(s==null)s=$.aAd=A.a([],t.iL)
 s.push(r.ga43())
 B.Bs.w7(new A.asA(r))
 B.du.w7(new A.asB(r))
@@ -71003,7 +71003,7 @@ var s=t.K
 this.qh$=new A.a5R(A.o(s,t.Sc),A.o(s,t.B6),A.o(s,t.pt))},
 uE(){this.a1z()
 var s=this.qh$
-s===$&&A.a()
+s===$&&A.b()
 s.W(0)},
 mH(a){return this.anB(a)},
 anB(a){var s=0,r=A.R(t.H),q,p=this
@@ -71036,7 +71036,7 @@ ha(){var s,r,q,p,o=this
 o.a2Q()
 $.ls=o
 s=t.TT
-o.fx$=new A.RZ(null,A.aRN(),null,A.b([],s),A.b([],s),A.b([],s),A.aD(t.I9),A.aD(t.sv))
+o.fx$=new A.RZ(null,A.aRN(),null,A.a([],s),A.a([],s),A.a([],s),A.aD(t.I9),A.aD(t.sv))
 s=$.aK()
 s.y=o.gana()
 r=s.z=$.aq
@@ -71048,7 +71048,7 @@ o.R8$.push(o.ga9Y())
 o.aok()
 o.RG$.push(o.gabw())
 r=o.fx$
-r===$&&A.a()
+r===$&&A.b()
 q=o.db$
 if(q===$){p=new A.Dw(o,$.ab())
 o.gnJ().a0(p.gcu())
@@ -71071,14 +71071,14 @@ p=t.S
 o=t.GF
 o=new A.T_(new A.em(A.o(q,p),o),new A.em(A.o(q,p),o),new A.em(A.o(t.Su,p),t.op))
 q=A.a4q(!0,"Root Focus Scope",!1)
-n=new A.yV(o,q,A.aD(t.mx),A.b([],t.SW),$.ab())
+n=new A.yV(o,q,A.aD(t.mx),A.a([],t.SW),$.ab())
 n.gafo()
 m=new A.QK(n.ga4i())
 n.e=m
 $.a3.bi$.push(m)
 q.w=n
 q=$.dx.cI$
-q===$&&A.a()
+q===$&&A.b()
 q.a=o.gVS()
 $.el.bb$.b.p(0,o.gVT(),null)
 q=$.uy.Hf$
@@ -71278,7 +71278,7 @@ s.b=!0
 s.a.push(r.gCD())
 r.Nn()},
 LX(a){var s,r=this,q=r.d
-q===$&&A.a()
+q===$&&A.b()
 s=r.a51(a,q)
 r.d=s
 if(q!==s)r.Nn()},
@@ -71299,12 +71299,12 @@ case 2:return b}break
 case 2:switch(b.a){case 0:case 3:case 2:return a
 case 1:return b}break}},
 Nn(){var s=this,r=s.d
-r===$&&A.a()
+r===$&&A.b()
 switch(r.a){case 0:case 1:s.e.sb9(s.a.c)
 s.f.sb9(B.cx)
 break
 case 2:case 3:s.e.sb9(B.fM)
-s.f.sb9(new A.hz(s.a.c,new A.b0(A.b([],t.F),t.Q),0))
+s.f.sb9(new A.hz(s.a.c,new A.b0(A.a([],t.F),t.Q),0))
 break}},
 l(){this.a.c.cR(this.gCD())
 this.aI()},
@@ -71335,7 +71335,7 @@ r=o.c
 o=o.a
 q=r.a
 r=r.b
-return A.cq(A.b([A.cq(p,p,p,p,p,B.c.Y(o,0,q)),A.cq(p,p,p,p,s,B.c.Y(o,q,r)),A.cq(p,p,p,p,p,B.c.bv(o,r))],t.Ne),p,p,p,b,p)},
+return A.cq(A.a([A.cq(p,p,p,p,p,B.c.Y(o,0,q)),A.cq(p,p,p,p,s,B.c.Y(o,q,r)),A.cq(p,p,p,p,p,B.c.bv(o,r))],t.Ne),p,p,p,b,p)},
 srd(a){var s,r=this.a,q=r.a.length,p=a.b
 if(q<p||q<a.a)throw A.j(A.hW("invalid text selection: "+a.k(0)))
 s=r.c
@@ -71373,7 +71373,7 @@ if(r==null){s=A.BC(0,null,null)
 this.ch=s}else s=r
 return s},
 gRl(){var s=this.dy
-s===$&&A.a()
+s===$&&A.b()
 if(s.e){s=this.fx
 s=s!=null&&J.oi(s.b)}else s=!1
 return s},
@@ -71542,7 +71542,7 @@ else if(a<=n)q=o-1
 else p=o+1}return null},
 ajA(){var s,r=this,q=null,p=r.a.z
 if(p===B.Av)return q
-s=A.b([],t.ZD)
+s=A.a([],t.ZD)
 if(p.b&&r.gu1())s.push(new A.dd(new A.a2W(r),B.h3,q))
 if(p.a&&r.gtT())s.push(new A.dd(new A.a2X(r),B.h4,q))
 if(p.c&&r.goD())s.push(new A.dd(new A.a2Y(r),B.h5,q))
@@ -71580,10 +71580,10 @@ n=g.gKc()?new A.a34(g):f
 m=g.ga_2()?new A.a35(g):f
 l=g.gIf()?new A.a36(g):f
 k=t.ZD
-j=A.b([],k)
+j=A.a([],k)
 i=q!=null
 if(!i||e!==B.j5){h=A.aF()===B.aj
-e=A.b([],k)
+e=A.a([],k)
 if(r!=null)e.push(new A.dd(r,B.h3,f))
 if(s!=null)e.push(new A.dd(s,B.h4,f))
 if(i)e.push(new A.dd(q,B.h5,f))
@@ -71596,7 +71596,7 @@ if(s&&!h)e.push(new A.dd(m,B.h7,f))
 B.b.P(j,e)}if(l!=null)j.push(new A.dd(l,B.jn,f))
 e=j}B.b.P(e,g.gah7())
 return e},
-gah7(){var s,r,q,p,o=A.b([],t.ZD),n=this.a.c.a.b
+gah7(){var s,r,q,p,o=A.a([],t.ZD),n=this.a.c.a.b
 if(!n.gbH()||n.a===n.b)return o
 for(s=this.go,r=s.length,q=0;q<s.length;s.length===r||(0,A.B)(s),++q){p=s[q]
 o.push(new A.dd(new A.a2M(this,n,p),B.jo,p.b))}return o},
@@ -71671,7 +71671,7 @@ if(q.p2==a.p2)if(J.e(q.x1,a.x1)){r=m.a
 r=r.bd!==a.bd||r.hH!==a.hH}}}else r=!1
 if(r){s=m.Q
 r=s.e
-r===$&&A.a()
+r===$&&A.b()
 p=r.gqV()
 o=s.z
 s.l()
@@ -71740,7 +71740,7 @@ r=s.r
 r.F$=$.ab()
 r.G$=0
 r=s.k2
-r===$&&A.a()
+r===$&&A.b()
 r.b.hS(r)
 $.a3.a6$.d.I(s.gy7())
 s.Dh()
@@ -71833,7 +71833,7 @@ n=n.m
 if(n.a===n.b){n=o.p2
 n.toString
 o.wT(A.ny(n),B.fh)}o.p4=o.p3=o.p2=o.p1=null}else{m=m.x
-m===$&&A.a()
+m===$&&A.b()
 r=o.p4
 p=A.N(r.a,s.a,m)
 p.toString
@@ -71906,7 +71906,7 @@ m.SV()
 m.QE()
 m.z.toString
 s=m.fr
-s===$&&A.a()
+s===$&&A.b()
 p=m.gtp()
 o=m.a.db
 n=$.c3()
@@ -71945,7 +71945,7 @@ p=q
 n.z=p
 r.EW()
 s=n.fr
-s===$&&A.a()
+s===$&&A.b()
 o=n.gtp()
 r.EU(s.d,s.r,s.w,n.a.db,o)
 r.xN(n.a.c.a)
@@ -72036,7 +72036,7 @@ o.sW2(p.a.Q)
 o=p.Q
 o.nP()
 o=o.e
-o===$&&A.a()
+o===$&&A.b()
 o.Ku()
 try{p.a.to.$2(a,b)}catch(q){s=A.au(q)
 r=A.aW(q)
@@ -72051,7 +72051,7 @@ if(q==null)return
 s=A.lH(q)
 s.toString
 q=r.xr
-q===$&&A.a()
+q===$&&A.b()
 if(q!==s.ay.d){$.bt.RG$.push(new A.a38(r))
 if(r.xr<s.ay.d)r.xK(!1)}r.xr=s.ay.d},
 xz(a){return this.aeE(a)},
@@ -72064,7 +72064,7 @@ i.toString
 h=A.zL(i)
 m=h
 i=n.dy
-i===$&&A.a()
+i===$&&A.b()
 i=i.a
 i.toString
 g=m
@@ -72104,7 +72104,7 @@ if(m!==l||j)try{l=f.a.y2
 i=l==null?null:B.b.zK(l,a,new A.a2A(f))
 a=i==null?a:i
 l=f.dy
-l===$&&A.a()
+l===$&&A.b()
 if(l.e&&a.a.length!==0&&f.a.c.a.a!==a.a)f.xz(a.a)}catch(h){s=A.au(h)
 r=A.aW(h)
 l=A.bi("while applying input formatters")
@@ -72130,13 +72130,13 @@ case 3:case 5:case 1:case 0:if(c===B.ai)if(a.c!==b.c)this.iO(b.gmo())
 else if(a.d!==b.d)this.iO(b.gdk())
 break}},
 acY(){var s,r=this,q=r.a.go.geU(),p=r.gka().x
-p===$&&A.a()
+p===$&&A.b()
 s=Math.min(q/255,p)
 p=r.gai()
 q=r.a.go.bf(s)
 p.gi3().sGa(q)
 if(r.a.as){q=r.gka().x
-q===$&&A.a()
+q===$&&A.b()
 q=q>0}else q=!1
 r.r.su(q)},
 gxP(){var s,r,q=this
@@ -72163,7 +72163,7 @@ q=q==null?null:q.b!=null
 if(q!==!0&&r.k4)r.d=A.aC0(B.eH,new A.a2F(r))
 q=r.gka()
 s=r.gka().x
-s===$&&A.a()
+s===$&&A.b()
 q.su(s===0?1:0)}},
 xV(a){var s=this,r=s.gka()
 r.su(s.gai().f_?1:0)
@@ -72256,7 +72256,7 @@ else{p=b.aB
 p=p==null?a:p.ak8(k)
 j=p==null?B.bi:p}if(j.a<3)return
 b.aB=k
-i=A.b([],t.u1)
+i=A.a([],t.u1)
 h=r.n4(!1)
 g=new A.Cj(h,0,0)
 for(f=0;g.CB(1,g.c);f=e){r=g.d
@@ -72304,29 +72304,29 @@ jJ(a){var s,r,q
 this.Dh()
 if(a){s=this.Q
 if(s!=null){s=s.e
-s===$&&A.a()
+s===$&&A.b()
 s.jI()}}else{s=this.Q
 r=s==null
 if(r)q=null
 else{q=s.e
-q===$&&A.a()
+q===$&&A.b()
 q=q.gqV()}if(q===!0)if(!r){s=s.e
-s===$&&A.a()
+s===$&&A.b()
 s.fJ()}}},
 fJ(){return this.jJ(!0)},
 Be(a){var s=this,r=s.Q,q=(r==null?s.Q=s.wL():r).e
-q===$&&A.a()
+q===$&&A.b()
 if(q.gqV())s.jJ(a)
 else s.hZ()},
 YE(){return this.Be(!0)},
 Kv(){var s=this.dy
-s===$&&A.a()
+s===$&&A.b()
 if(s.e)$.ZO()
 return!1},
 rg(a){var s,r,q,p,o=this.Q
 if(o==null)return
 s=o.e
-s===$&&A.a()
+s===$&&A.b()
 r=s.c.b
 q=o.b
 if(r!=null){p=q.fj(a)
@@ -72337,7 +72337,7 @@ s.rg(o.k8(p,a,q))}},
 uI(){var s=this.Q
 if(s==null)return
 s=s.e
-s===$&&A.a()
+s===$&&A.b()
 s.uI()},
 aoq(a){var s=this
 s.gxX()
@@ -72495,13 +72495,13 @@ ai5(a){var s=a.b
 this.iO(s.gdk())
 this.fO(a.a.ih(s),a.c)},
 gT3(){var s,r=this,q=r.F
-if(q===$){s=A.b([],t.e)
+if(q===$){s=A.a([],t.e)
 r.F!==$&&A.aw()
 q=r.F=new A.H6(r,new A.b0(s,t.d),t.Wp)}return q},
 abE(a){var s=this.Q
 if(s==null)s=null
 else{s=s.e
-s===$&&A.a()
+s===$&&A.b()
 s=s.gqV()}if(s===!0){this.jJ(!1)
 return null}s=this.c
 s.toString
@@ -72530,35 +72530,35 @@ break $label1$1}if(B.TX.j(0,o)){c1.a=B.Rw
 break $label1$1}c1.a=B.zd}n=b9.ghA()
 m=b9.V
 if(m===$){l=t.e
-k=A.b([],l)
+k=A.a([],l)
 j=t.d
 m=b9.R
-if(m===$){i=A.b([],l)
+if(m===$){i=A.a([],l)
 b9.R!==$&&A.aw()
 m=b9.R=new A.cE(b9.gafc(),new A.b0(i,j),t.Tx)}h=b9.G
-if(h===$){i=A.b([],l)
+if(h===$){i=A.a([],l)
 b9.G!==$&&A.aw()
-h=b9.G=new A.cE(b9.gai4(),new A.b0(i,j),t.ZQ)}i=A.b([],l)
-g=A.b([],l)
+h=b9.G=new A.cE(b9.gai4(),new A.b0(i,j),t.ZQ)}i=A.a([],l)
+g=A.a([],l)
 f=b9.ga57()
 e=b9.gacG()
-d=A.b([],l)
+d=A.a([],l)
 c=b9.c
 c.toString
 c=new A.lL(b9,f,e,new A.b0(d,j),t.dA).di(c)
 d=b9.gacS()
-b=A.b([],l)
+b=A.a([],l)
 a=b9.c
 a.toString
 a=new A.lL(b9,d,e,new A.b0(b,j),t.Uz).di(a)
 b=b9.gac5()
 a0=b9.gacI()
-a1=A.b([],l)
+a1=A.a([],l)
 a2=b9.c
 a2.toString
 a1=new A.lL(b9,b,a0,new A.b0(a1,j),t.Fb).di(a2)
 a2=A.o4(b9,f,e,!1,!1,!1,t._w).di(a2)
-f=A.b([],l)
+f=A.a([],l)
 a3=b9.c
 a3.toString
 f=new A.cE(b9.ga7c(),new A.b0(f,j),t.vr).di(a3)
@@ -72575,39 +72575,39 @@ a5=A.o4(b9,a5,e,!1,!0,!1,t.b6).di(a8)
 b0=b9.ga6D()
 b1=A.o4(b9,b0,e,!1,!0,!1,t.HH).di(a8)
 a8=A.o4(b9,d,e,!1,!0,!1,t.eI).di(a8)
-e=A.b([],l)
+e=A.a([],l)
 d=b9.c
 d.toString
 d=new A.Hf(b9,b9.gafU(),new A.b0(e,j),t.nH).di(d)
-e=A.b([],l)
+e=A.a([],l)
 b=A.o4(b9,b,a0,!1,!0,!0,t.oB)
 b2=b9.c
 b2.toString
 b=b.di(b2)
 b2=A.o4(b9,b0,a0,!0,!0,!0,t.bh).di(b2)
-a0=A.b([],l)
+a0=A.a([],l)
 b0=b9.c
 b0.toString
 b0=new A.Wd(b9,new A.b0(a0,j)).di(b0)
-a0=A.b([],l)
+a0=A.a([],l)
 b3=b9.c
 b3.toString
 b3=new A.Rz(b9,new A.b0(a0,j)).di(b3)
-a0=A.b([],l)
+a0=A.a([],l)
 b4=b9.c
 b4.toString
 b4=new A.Uj(b9,new A.b0(a0,j)).di(b4)
 b5=b9.a_
-if(b5===$){a0=A.b([],l)
+if(b5===$){a0=A.a([],l)
 b9.a_!==$&&A.aw()
 b5=b9.a_=new A.cE(b9.gahw(),new A.b0(a0,j),t.j5)}a0=b9.c
 a0.toString
 a0=b5.di(a0)
-b6=A.b([],l)
+b6=A.a([],l)
 b7=b9.c
 b7.toString
 b7=new A.Sq(new A.b0(b6,j)).di(b7)
-l=A.b([],l)
+l=A.a([],l)
 b6=b9.c
 b6.toString
 b8=A.c([B.YB,new A.yg(!1,new A.b0(k,j)),B.Z7,m,B.Zm,h,B.AC,new A.ye(!0,new A.b0(i,j)),B.lM,new A.cE(b9.gabD(),new A.b0(g,j),t.OY),B.YI,c,B.Zs,a,B.YJ,a1,B.YU,a2,B.YN,f,B.Zt,a4,B.ZA,a6,B.Zz,a3,B.Zf,a9,B.Zg,a7,B.Z5,a5,B.Zu,b1,B.Zy,a8,B.Zw,d,B.lO,new A.cE(b9.ga6V(),new A.b0(e,j),t.fn),B.Yz,b,B.YA,b2,B.Z9,b0,B.YG,b3,B.Z2,b4,B.Ze,a0,B.YM,b7,B.Yy,new A.Sr(new A.b0(l,j)).di(b6)],t.u,t.od)
@@ -72617,23 +72617,23 @@ m=b8}return new A.Rj(b9.ga5B(),n,A.om(m,new A.dG(new A.a2V(c1,b9,r,s),c0)),c0)},
 TT(){var s,r,q,p,o,n,m,l=this,k=null,j=l.a
 j.toString
 s=l.q
-if(s>=0&&s<=j.c.a.a.length){r=A.b([],t.s6)
+if(s>=0&&s<=j.c.a.a.length){r=A.a([],t.s6)
 j=l.a
 q=j.c.a.a.length-l.q
 if(j.k2!==1){r.push(B.a0a)
 r.push(new A.lS(new A.y(l.gai().gt().a,0),B.aw,B.e0,k,k))}else r.push(B.a09)
 j=l.fr
-j===$&&A.a()
-s=A.b([A.cq(k,k,k,k,k,B.c.Y(l.a.c.a.a,0,q))],t.VO)
+j===$&&A.b()
+s=A.a([A.cq(k,k,k,k,k,B.c.Y(l.a.c.a.a,0,q))],t.VO)
 B.b.P(s,r)
 s.push(A.cq(k,k,k,k,k,B.c.bv(l.a.c.a.a,q)))
 return A.cq(s,k,k,k,j,k)}p=!j.x&&j.d.gbx()
 if(l.gRl()){j=l.a.c.a
 o=!j.gWB()||!p
 s=l.fr
-s===$&&A.a()
+s===$&&A.b()
 n=l.dy
-n===$&&A.a()
+n===$&&A.b()
 n=n.c
 n.toString
 m=l.fx
@@ -72642,7 +72642,7 @@ return A.aRS(j,o,s,n,m)}j=l.a.c
 s=l.c
 s.toString
 n=l.fr
-n===$&&A.a()
+n===$&&A.b()
 return j.ajv(s,n,p)}}
 A.a2C.prototype={
 $0(){},
@@ -72717,7 +72717,7 @@ if(r.b)r.a.Q.hZ()
 if(r.c){s=r.a.Q
 s.nP()
 s=s.e
-s===$&&A.a()
+s===$&&A.b()
 s.Ku()}},
 $S:6}
 A.a3a.prototype={
@@ -72754,7 +72754,7 @@ A.a38.prototype={
 $1(a){var s=this.a.Q
 if(s!=null){s.nP()
 s=s.e
-s===$&&A.a()
+s===$&&A.b()
 s.cq()}},
 $S:6}
 A.a2A.prototype={
@@ -72860,7 +72860,7 @@ p=b6.a
 o=p.c.a
 p=p.go.geU()
 n=b6.gka().x
-n===$&&A.a()
+n===$&&A.b()
 m=Math.min(p/255,n)
 n=b6.a.go.bf(m)
 p=b6.a
@@ -72875,8 +72875,8 @@ i=i.gjo()
 f=b6.Q
 if(f==null)f=b5
 else{f=f.e
-f===$&&A.a()
-f=$.kH===f.p3}if(f===!0){b6.dy===$&&A.a()
+f===$&&A.b()
+f=$.kH===f.p3}if(f===!0){b6.dy===$&&A.b()
 f=b6.a
 e=f.p1
 d=e
@@ -73041,7 +73041,7 @@ if(r)a.eH()}}
 A.lL.prototype={
 OQ(a){var s,r=this.e,q=r.Q
 if(q!=null){q=q.e
-q===$&&A.a()
+q===$&&A.b()
 q=!q.gqV()}else q=!0
 if(q)return
 s=a.a
@@ -73229,10 +73229,10 @@ p.aY(a)
 s=p.a
 r=s.r
 if(r!==a.r){q=p.e
-q===$&&A.a()
+q===$&&A.b()
 q.b=r}r=s.f
 if(r.a!==a.f.a){q=p.d
-q===$&&A.a()
+q===$&&A.b()
 q.e=r}r=a.c
 if(s.c!==r){s=p.gF9()
 r.I(s)
@@ -73241,27 +73241,27 @@ if(r.a!==p.a.c.a)p.RX()}},
 l(){var s,r=this
 r.a.c.I(r.gF9())
 s=r.d
-s===$&&A.a()
+s===$&&A.b()
 s.l()
 s=r.e
-s===$&&A.a()
+s===$&&A.b()
 s.l()
 r.a2Z()},
 RX(){this.a7(new A.alO(this))},
 K(a){var s,r,q,p=this,o=p.a
 if(!o.c.a){s=p.d
-s===$&&A.a()
+s===$&&A.b()
 r=s.gaN()===B.V}else r=!1
 s=p.d
-s===$&&A.a()
+s===$&&A.b()
 q=new A.Ap(r,new A.v3(!r,o.ajo(a,s),null),null)
 s=p.d
 o=r?null:q
 return A.on(s,new A.alP(p),o)}}
 A.alO.prototype={
 $0(){var s=this.a,r=s.a.c.a,q=s.d
-if(r){q===$&&A.a()
-q.c7()}else{q===$&&A.a()
+if(r){q===$&&A.b()
+q.c7()}else{q===$&&A.b()
 q.dJ().bN(new A.alN(s),t.H)}r=s.c
 r.toString
 r=A.Ay(r)
@@ -73281,10 +73281,10 @@ A.alP.prototype={
 $2(a,b){var s,r,q,p=this.a,o=p.a
 o.toString
 s=p.d
-s===$&&A.a()
+s===$&&A.b()
 r=o.anU(a,s)
 s=p.e
-s===$&&A.a()
+s===$&&A.b()
 q=A.av_(new A.hO(B.a8,null,s.gu(),b,null),B.Y)
 return p.a.amo(a,r,q,p.d)},
 $S:87}
@@ -73342,7 +73342,7 @@ if(s!=null){s.t5()
 s.d.C(0,r)}},
 so4(a){},
 gu6(){var s,r,q,p,o=this.y
-if(o==null){s=A.b([],t.bp)
+if(o==null){s=A.a([],t.bp)
 for(o=this.as,r=o.length,q=0;q<o.length;o.length===r||(0,A.B)(o),++q){p=o[q]
 B.b.P(s,p.gu6())
 s.push(p)}this.y=s
@@ -73351,7 +73351,7 @@ goO(){if(!this.gfw())return B.mA
 var s=this.gu6()
 return new A.b2(s,new A.a4p(),A.X(s).i("b2<1>"))},
 gcM(){var s,r,q=this.x
-if(q==null){s=A.b([],t.bp)
+if(q==null){s=A.a([],t.bp)
 r=this.Q
 while(r!=null){s.push(r)
 r=r.Q}this.x=s
@@ -73521,10 +73521,10 @@ l(){var s,r=this,q=r.e
 if(q!=null)$.a3.hS(q)
 q=r.a
 s=$.dx.cI$
-s===$&&A.a()
+s===$&&A.b()
 if(J.e(s.a,q.gVS())){$.el.bb$.b.E(0,q.gVT())
 s=$.dx.cI$
-s===$&&A.a()
+s===$&&A.b()
 s.a=null
 $.uy.Hf$.E(0,q.gVV())}q.f=new A.em(A.o(t.Su,t.S),t.op)
 r.b.l()
@@ -73586,7 +73586,7 @@ if(g.a!==!1){g.a=!1
 g.Jn()}if($.a3.a6$.d.c==null)return!1
 s=g.d
 r=!1
-if(s.a.a!==0){q=A.b([],t.Li)
+if(s.a.a!==0){q=A.a([],t.Li)
 for(s=s.ep(0),p=s.length,o=a.a,n=0;n<s.length;s.length===p||(0,A.B)(s),++n){m=s[n]
 for(l=o.length,k=0;k<o.length;o.length===l||(0,A.B)(o),++k)q.push(m.$1(o[k]))}switch(A.ax6(q).a){case 1:break
 case 0:r=!0
@@ -73594,19 +73594,19 @@ break
 case 2:break}}if(r)return!0
 s=$.a3.a6$.d.c
 s.toString
-s=A.b([s],t.bp)
+s=A.a([s],t.bp)
 B.b.P(s,$.a3.a6$.d.c.gcM())
 q=s.length
 p=t.Li
 o=a.a
 n=0
 $label0$2:for(;r=!1,n<s.length;s.length===q||(0,A.B)(s),++n){j=s[n]
-l=A.b([],p)
+l=A.a([],p)
 if(j.r!=null)for(i=o.length,k=0;k<o.length;o.length===i||(0,A.B)(o),++k){h=o[k]
 l.push(j.r.$2(j,h))}switch(A.ax6(l).a){case 1:continue $label0$2
 case 0:r=!0
 break
-case 2:break}break $label0$2}if(!r&&g.e.a.a!==0){s=A.b([],p)
+case 2:break}break $label0$2}if(!r&&g.e.a.a!==0){s=A.a([],p)
 for(q=g.e.ep(0),p=q.length,n=0;n<q.length;q.length===p||(0,A.B)(q),++n){m=q[n]
 for(l=o.length,k=0;k<o.length;o.length===l||(0,A.B)(o),++k)s.push(m.$1(o[k]))}switch(A.ax6(s).a){case 1:break
 case 0:r=!0
@@ -73729,16 +73729,16 @@ s.gbU()
 q=s.a.r
 if(q!=null)q.$1(s.gbU().gbx())
 q=s.e
-q===$&&A.a()
+q===$&&A.b()
 if(q!==r)s.a7(new A.am6(s,r))
 q=s.f
-q===$&&A.a()
+q===$&&A.b()
 if(q!==p)s.a7(new A.am7(s,p))
 q=s.r
-q===$&&A.a()
+q===$&&A.b()
 if(q!==o)s.a7(new A.am8(s,o))
 q=s.w
-q===$&&A.a()
+q===$&&A.b()
 if(!q)s.a7(new A.am9(s,!0))},
 K(a){var s,r,q,p=this,o=null,n=p.y
 n.toString
@@ -73746,12 +73746,12 @@ n.J2(p.a.c)
 n=p.a
 s=n.d
 if(n.at){if(A.aF()!==B.K){n=p.f
-n===$&&A.a()}else n=!1
+n===$&&A.b()}else n=!1
 n=n?p.gbU().gqO():o
 r=p.f
-r===$&&A.a()
+r===$&&A.b()
 if(r){q=p.e
-q===$&&A.a()}else q=o
+q===$&&A.b()}else q=o
 s=A.bM(o,p.a.d,!1,o,o,!1,o,!1,r,q,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,n,o,o,o,o,o,o,o,o,o,o,o,o)}return A.aCx(s,p.gbU())}}
 A.am6.prototype={
 $0(){this.a.e=this.b},
@@ -73990,7 +73990,7 @@ if(r!=null){q=n.ql$
 p=q.h(0,m)
 o=new A.vx(b,l)
 if(p!=null)p.a.push(o)
-else q.p(0,m,new A.S7(A.b([o],t.Kj)))
+else q.p(0,m,new A.S7(A.a([o],t.Kj)))
 return n.EM(a,r,m,b)}return n.ad0(a,l,b)}}
 A.ap6.prototype={
 $1(a){return a.b===this.a},
@@ -74114,7 +74114,7 @@ break
 default:s=null}return s},
 $S:166}
 A.ap4.prototype={
-$1(a){var s,r,q=A.b([],t.vl),p=t.I,o=a.kQ(p)
+$1(a){var s,r,q=A.a([],t.vl),p=t.I,o=a.kQ(p)
 while(o!=null){s=o.e
 s.toString
 q.push(p.a(s))
@@ -74164,7 +74164,7 @@ A.Ep.prototype={}
 A.SR.prototype={
 gbU(){var s,r,q,p=this,o=p.d
 if(o===$){s=p.a.c
-r=A.b([],t.bp)
+r=A.a([],t.bp)
 q=$.ab()
 p.d!==$&&A.aw()
 o=p.d=new A.Ep(s,!1,!0,!0,!0,null,null,r,q)}return o},
@@ -74307,7 +74307,7 @@ B.b.fT(r,A.axf())
 s=this.d=!1
 for(;;){if(!(a>0?r[a-1].as:s))break;--a}return a}}
 A.a0d.prototype={
-$0(){var s=null,r=A.b([],t.D)
+$0(){var s=null,r=A.a([],t.D)
 J.ff(r,A.jr("The element being rebuilt at the time was",this.a,!0,B.bE,s,s,s,B.b0,!1,!0,!0,B.ce,s,t.h))
 return r},
 $S:20}
@@ -74354,7 +74354,7 @@ gqM(){var s={}
 s.a=null
 this.b5(new A.a3m(s))
 return s.a},
-alD(a){var s=null,r=A.b([],t.D),q=A.b([],t.lX)
+alD(a){var s=null,r=A.a([],t.D),q=A.a([],t.lX)
 this.n9(new A.a3k(q))
 r.push(A.jr("The specific widget that could not find a "+a.k(0)+" ancestor was",this,!0,B.bE,s,s,s,B.b0,!1,!0,!0,B.ce,s,t.h))
 if(q.length!==0)r.push(A.aJS("The ancestors of this widget were",q))
@@ -74423,7 +74423,7 @@ p.w=B.fD
 s=a==null
 if(s)r=null
 else{r=a.d
-r===$&&A.a()}p.d=1+(r==null?0:r)
+r===$&&A.b()}p.d=1+(r==null?0:r)
 if(!s){p.f=a.f
 p.r=a.glb()}q=p.gd6().a
 if(q instanceof A.fQ)p.f.x.p(0,q,p)
@@ -74433,7 +74433,7 @@ c8(a){this.e=a},
 YO(a,b){new A.a3q(b).$1(a)},
 vF(a){this.c=a},
 Sr(a){var s=a+1,r=this.d
-r===$&&A.a()
+r===$&&A.b()
 if(r<s){this.d=s
 this.b5(new A.a3h(s))}},
 Se(){var s=this,r=s.glb(),q=s.a
@@ -74463,7 +74463,7 @@ try{if(r!=null){n=r
 n.a=k
 n.f=k.f
 m=k.d
-m===$&&A.a()
+m===$&&A.b()
 n.Sr(m)
 n.Se()
 n.bO()
@@ -74626,11 +74626,11 @@ if(s!=null)a.$1(s)},
 hK(a){this.ay=null
 this.iD(a)}}
 A.a1b.prototype={
-$0(){var s=A.b([],t.D)
+$0(){var s=A.a([],t.D)
 return s},
 $S:20}
 A.a1c.prototype={
-$0(){var s=A.b([],t.D)
+$0(){var s=A.a([],t.D)
 return s},
 $S:20}
 A.P7.prototype={
@@ -74717,7 +74717,7 @@ gqM(){return null},
 a7j(){var s=this.a
 for(;;){if(!(s!=null&&!(s instanceof A.aE)))break
 s=s.a}return t.p2.a(s)},
-a7i(){var s=this.a,r=A.b([],t.OM)
+a7i(){var s=this.a,r=A.a([],t.OM)
 for(;;){if(!(s!=null&&!(s instanceof A.aE)))break
 if(s instanceof A.n1)r.push(s)
 s=s.a}return r},
@@ -74787,7 +74787,7 @@ t.GM.a(s).saR(null)}}
 A.ht.prototype={
 gT(){return t.pU.a(A.aE.prototype.gT.call(this))},
 gig(){var s=this.p1
-s===$&&A.a()
+s===$&&A.b()
 return new A.b2(s,new A.aaE(this),A.X(s).i("b2<1>"))},
 ip(a,b){var s=this.gT(),r=b.a
 s.HV(0,a,r==null?null:r.gT())},
@@ -74795,7 +74795,7 @@ ir(a,b,c){var s=this.gT(),r=c.a
 s.v5(a,r==null?null:r.gT())},
 jd(a,b){this.gT().E(0,a)},
 b5(a){var s,r,q,p,o=this.p1
-o===$&&A.a()
+o===$&&A.b()
 s=o.length
 r=this.p2
 q=0
@@ -74815,7 +74815,7 @@ c8(a){var s,r,q,p=this
 p.kX(a)
 s=t.Lb.a(p.gd6())
 r=p.p1
-r===$&&A.a()
+r===$&&A.b()
 q=p.p2
 p.p1=p.Bm(r,s.c,q)
 q.W(0)}}
@@ -75112,7 +75112,7 @@ $0(){var s,r=this.a
 r.x=!1
 this.b.cy.I(this)
 s=r.e
-s===$&&A.a()
+s===$&&A.b()
 r.asN(s.gaN())},
 $S:0}
 A.L6.prototype={
@@ -75165,7 +75165,7 @@ s=s.a.get(this)
 r=s==null
 if(r)q=d
 else{p=s.d
-p===$&&A.a()
+p===$&&A.b()
 q=p.gM()}if(r||q==null)return
 if(!(s.c.gT() instanceof A.u))return
 o=$.a3.a6$.x.h(0,a.ry)
@@ -75180,7 +75180,7 @@ l(){for(var s=this.b,s=new A.bB(s,s.r,s.e,A.k(s).i("bB<2>"));s.A();)s.d.l()}}
 A.a5v.prototype={
 $1(a){var s=a.f,r=!1
 if(s.y)if(s.a===B.km){s=a.e
-s===$&&A.a()
+s===$&&A.b()
 s=s.gaN()===B.V}else s=r
 else s=r
 return s},
@@ -75207,7 +75207,7 @@ l=j.x
 if(l==null){f=g.f
 f.toString
 l=f}if(m!==1)l=l.bf(l.gd_()*m)
-f=A.b([],t.uf)
+f=A.a([],t.uf)
 if(r!=null)f.push(new A.jy("FILL",r))
 if(q!=null)f.push(new A.jy("wght",q))
 if(p!=null)f.push(new A.jy("GRAD",p))
@@ -75266,7 +75266,7 @@ r.agR()
 s=r.at
 if(s!=null)s.l()
 s=r.z
-s===$&&A.a()
+s===$&&A.b()
 s.a=null
 r.EJ(null)
 r.aI()},
@@ -75289,10 +75289,10 @@ s.toString
 s=A.co(s,B.a_v)
 s=s==null?null:s.Q
 if(s==null){s=$.uy.ur$
-s===$&&A.a()
+s===$&&A.b()
 s=(s.a&2)!==0}this.w=s},
 Qs(){var s,r,q,p,o=this,n=o.z
-n===$&&A.a()
+n===$&&A.b()
 s=o.a
 r=s.c
 q=o.c
@@ -75368,7 +75368,7 @@ n=n==null?k:n.gnh()
 if(n==null)n=1
 l.a.toString
 m=l.w
-m===$&&A.a()
+m===$&&A.b()
 s.b=new A.Nk(j,q,o,p,n,k,k,B.eN,k,k,B.a8,B.eO,k,!1,m,!1,k)}l.a.toString
 s.b=A.bM(k,s.aV(),!1,k,k,!1,k,!1,k,k,k,k,k,!0,k,"",k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k)
 l.a.toString
@@ -75662,7 +75662,7 @@ H_(){var s=this.gej(),r=this.z
 r.toString
 this.Q=new A.am(t.A.a(s),r,A.k(r).i("am<aj.T>"))},
 K(a){var s=this.Q
-s===$&&A.a()
+s===$&&A.b()
 return new A.dK(s,!1,this.a.r,null)}}
 A.aiR.prototype={
 $1(a){return new A.ao(A.cc(a),null,t.Y)},
@@ -75792,7 +75792,7 @@ gyG(){return this.d}}
 A.vP.prototype={
 gT(){return this.$ti.i("dO<1,q>").a(A.aE.prototype.gT.call(this))},
 glb(){var s,r=this,q=r.p2
-if(q===$){s=A.b([],t.lX)
+if(q===$){s=A.a([],t.lX)
 r.p2!==$&&A.aw()
 q=r.p2=new A.J9(r.gafN(),s)}return q},
 afO(){var s,r,q,p=this
@@ -75857,11 +75857,11 @@ o.R8=!1
 o.p4=k.b}},
 $S:0}
 A.anF.prototype={
-$0(){var s=A.b([],t.D)
+$0(){var s=A.a([],t.D)
 return s},
 $S:20}
 A.anG.prototype={
-$0(){var s=A.b([],t.D)
+$0(){var s=A.a([],t.D)
 return s},
 $S:20}
 A.dO.prototype={
@@ -75945,8 +75945,8 @@ aG(){this.aP()
 this.lu(this.a.c)},
 a4h(a){var s,r,q,p,o,n=this.a.d,m=a.d
 if(n.length!==m.length)return!0
-s=A.b(n.slice(0),A.X(n))
-r=A.b(m.slice(0),A.X(m))
+s=A.a(n.slice(0),A.X(n))
+r=A.a(m.slice(0),A.X(m))
 for(q=0;q<s.length;++q){p=s[q]
 o=r[q]
 n=A.t(p)===A.t(o)
@@ -76070,7 +76070,7 @@ s=s==null?null:A.bx(s)
 return A.K(this.a,this.c,s,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)}}
 A.Nn.prototype={
 K(a){var s=this,r=null,q=s.d,p=q.c,o=q.a,n=s.w
-return A.uI(B.a8,A.b([A.aIF(A.abf(new A.TH(s.f,s.r,A.OP(s.c,n),r),o),p),A.jB(A.abf(A.a0V(A.t_(A.OP(r,n),new A.hB(r,r,r,q.b,p),B.cW),s.e,new A.U4(p)),o),!0,r)],t.p),B.x,B.cI,r)}}
+return A.uI(B.a8,A.a([A.aIF(A.abf(new A.TH(s.f,s.r,A.OP(s.c,n),r),o),p),A.jB(A.abf(A.a0V(A.t_(A.OP(r,n),new A.hB(r,r,r,q.b,p),B.cW),s.e,new A.U4(p)),o),!0,r)],t.p),B.x,B.cI,r)}}
 A.U4.prototype={
 Bt(a){var s=A.bK($.a0().w)
 s.szC(B.Ps)
@@ -76149,7 +76149,7 @@ return s},
 gB(a){var s=this
 return A.K(s.a,s.b,s.gd1().gjX(),s.e,s.r,s.w,s.f,!1,s.as,s.at,s.ax,s.Q,s.z,s.ay,s.CW,s.cx,A.bx(s.cy),!1,B.a,B.a)},
 k(a){var s=this
-return"MediaQueryData("+B.b.bj(A.b(["size: "+s.a.k(0),"devicePixelRatio: "+B.d.a1(s.b,1),"textScaler: "+s.gd1().k(0),"platformBrightness: "+s.e.k(0),"padding: "+s.r.k(0),"viewPadding: "+s.w.k(0),"viewInsets: "+s.f.k(0),"systemGestureInsets: "+s.x.k(0),"alwaysUse24HourFormat: false","accessibleNavigation: "+s.z,"highContrast: "+s.as,"onOffSwitchLabels: "+s.at,"disableAnimations: "+s.ax,"invertColors: "+s.Q,"boldText: "+s.ay,"navigationMode: "+s.CW.b,"gestureSettings: "+s.cx.k(0),"displayFeatures: "+A.m(s.cy),"supportsShowingSystemContextMenu: false"],t.s),", ")+")"}}
+return"MediaQueryData("+B.b.bj(A.a(["size: "+s.a.k(0),"devicePixelRatio: "+B.d.a1(s.b,1),"textScaler: "+s.gd1().k(0),"platformBrightness: "+s.e.k(0),"padding: "+s.r.k(0),"viewPadding: "+s.w.k(0),"viewInsets: "+s.f.k(0),"systemGestureInsets: "+s.x.k(0),"alwaysUse24HourFormat: false","accessibleNavigation: "+s.z,"highContrast: "+s.as,"onOffSwitchLabels: "+s.at,"disableAnimations: "+s.ax,"invertColors: "+s.Q,"boldText: "+s.ay,"navigationMode: "+s.CW.b,"gestureSettings: "+s.cx.k(0),"displayFeatures: "+A.m(s.cy),"supportsShowingSystemContextMenu: false"],t.s),", ")+")"}}
 A.mV.prototype={
 c9(a){return!this.w.j(0,a.w)},
 Jo(a,b){return b.eV(0,new A.aai(this,a))}}
@@ -76335,7 +76335,7 @@ Wk(a){a.q=this.a}}
 A.TU.prototype={
 K(a){return new A.iP(this.c,A.c([B.Zp,new A.QE(this.d)],t.u,t.xR),B.at,!1,null)}}
 A.Mz.prototype={
-K(a){var s=this,r=a.ao(t.I).w,q=A.b([],t.p),p=s.c
+K(a){var s=this,r=a.ao(t.I).w,q=A.a([],t.p),p=s.c
 if(p!=null)q.push(A.a73(p,B.iO))
 p=s.d
 if(p!=null)q.push(A.a73(p,B.iP))
@@ -76455,7 +76455,7 @@ A.adM.prototype={}
 A.PP.prototype={}
 A.K8.prototype={}
 A.Aj.prototype={
-ae(){var s=null,r=A.b([],t.uD),q=$.ab(),p=t.p6
+ae(){var s=null,r=A.a([],t.uD),q=$.ab(),p=t.p6
 return new A.iM(new A.T0(r,q),A.aD(t.Ez),new A.T1(q),A.mQ(s,p),A.mQ(s,p),A.KQ(!0,"Navigator",!0,!0,s,s,!1),new A.Bn(0,q,t.dZ),new A.c8(!1,q,t.uh),A.aD(t.S),s,A.o(t.yb,t.M),s,!0,s,s,s)},
 aq6(a,b){return this.at.$2(a,b)}}
 A.ab0.prototype={
@@ -76481,7 +76481,7 @@ p.d=B.B4
 r.YT(new A.aq7(p,b))}else{if(c instanceof A.dk){s=n.CW
 s.toString
 q=c.CW.x
-q===$&&A.a()
+q===$&&A.b()
 s.su(q)}n.a1g(c)
 p.d=B.fF}if(a)n.o6(null)
 s=o===B.a07||o===B.B3
@@ -76655,7 +76655,7 @@ for(r=n.e.a,q=A.X(r),r=new J.cJ(r,r.length,q.i("cJ<1>")),q=q.c;r.A();){p=r.d
 p=(p==null?q.a(p):p).a
 if(p.b===n){p.Lo()
 o=p.x1
-o===$&&A.a()
+o===$&&A.b()
 o=o.r.gM()
 if(o!=null)o.Eh()
 p=p.rx
@@ -76677,7 +76677,7 @@ r.toString
 s.p(0,r,null)}q.Q=a
 q.Fi()}},
 Fi(){var s=this,r=s.Q,q=s.a
-if(r!=null)s.as=B.b.Z(q.y,A.b([r],t.tc))
+if(r!=null)s.as=B.b.Z(q.y,A.a([r],t.tc))
 else s.as=q.y},
 aL(a){var s,r,q,p,o,n,m=this
 m.a25(a)
@@ -76693,24 +76693,24 @@ for(s=m.e.a,p=A.X(s),s=new J.cJ(s,s.length,p.i("cJ<1>")),p=p.c;s.A();){o=s.d
 o=(o==null?p.a(o):o).a
 if(o.b===m){o.Lo()
 n=o.x1
-n===$&&A.a()
+n===$&&A.b()
 n=n.r.gM()
 if(n!=null)n.Eh()
 o=o.rx
 if(o.gM()!=null)o.gM().NH()}}},
 dY(){var s,r,q,p,o=this.as
-o===$&&A.a()
+o===$&&A.b()
 s=o.length
 r=0
 for(;r<o.length;o.length===s||(0,A.B)(o),++r){q=o[r]
 p=$.jb()
-p.a.set(q,null)}this.as=A.b([],t.tc)
+p.a.set(q,null)}this.as=A.a([],t.tc)
 this.pe()},
 bO(){var s,r,q,p,o,n=this
 n.a22()
 n.Fi()
 s=n.as
-s===$&&A.a()
+s===$&&A.b()
 r=s.length
 q=0
 for(;q<s.length;s.length===r||(0,A.B)(s),++q){p=s[q]
@@ -76732,7 +76732,7 @@ s.I(q.gOt())
 s.F$=r
 s.G$=0
 q.a26()},
-gLV(){var s,r,q,p=A.b([],t.wi)
+gLV(){var s,r,q,p=A.a([],t.wi)
 for(s=this.e.a,r=A.X(s),s=new J.cJ(s,s.length,r.i("cJ<1>")),r=r.c;s.A();){q=s.d
 B.b.P(p,(q==null?r.a(q):q).a.r)}return p},
 wY(b4){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2=this,b3=null
@@ -76742,7 +76742,7 @@ r=s.gD(0)-1
 q=s.a
 p=q[r]
 o=r>0?q[r-1]:b3
-n=A.b([],t.uD)
+n=A.a([],t.uD)
 $label0$1:for(m=b2.x,l=t.F,k=t.Q,j=t.M,i=t.S,h=t.PD,g=b2.w,f=b3,e=f,d=!1,c=!1;r>=0;){b=!0
 a=!0
 switch(p.d.a){case 1:a0=b2.m5(r-1,A.ja())
@@ -76755,12 +76755,12 @@ case 2:if(d||e==null){a1=p.a
 a1.b=b2
 a1.Lq()
 a2=A.et.prototype.gdN.call(a1)
-a3=new A.ub(new A.b0(A.b([],l),k),new A.em(A.o(j,i),h),0)
+a3=new A.ub(new A.b0(A.a([],l),k),new A.em(A.o(j,i),h),0)
 a3.c=a2
 if(a2==null){a3.a=B.V
 a3.b=0}a1.p3=a3
 a2=A.et.prototype.gBL.call(a1)
-a3=new A.ub(new A.b0(A.b([],l),k),new A.em(A.o(j,i),h),0)
+a3=new A.ub(new A.b0(A.a([],l),k),new A.em(A.o(j,i),h),0)
 a3.c=a2
 a1.p4=a3
 a2=a1.rx
@@ -76838,7 +76838,7 @@ b2.a7w()
 a8=b2.px(A.ja())
 q=a8==null
 if(!q&&b2.ax!==a8){m=b2.as
-m===$&&A.a()
+m===$&&A.b()
 l=m.length
 k=a8.a
 a9=0
@@ -76850,13 +76850,13 @@ b1=q?b3:a8.a.c.a
 if(b1!=null&&b1!==b2.ay){A.aNE(!1,b3,A.iZ(b1,0,b3))
 b2.ay=b1}for(q=n.length,a9=0;a9<n.length;n.length===q||(0,A.B)(n),++a9)A.aAD(n[a9],!0)
 if(b4){q=b2.d
-q===$&&A.a()
+q===$&&A.b()
 q=q.gM()
 if(q!=null)q.arm(b2.gLV())}if(b2.bF$!=null)b2.r.c8(s)
 b2.CW=!1},
 Dz(){return this.wY(!0)},
 a7u(){var s,r=this,q=r.as
-q===$&&A.a()
+q===$&&A.b()
 if(q.length===0){r.x.W(0)
 r.w.W(0)
 return}for(q=r.w;!q.ga9(0);){s=q.iv(0)
@@ -76955,21 +76955,21 @@ q=s.a[r].a
 s=q.ll$
 p=!(s!=null&&s.length!==0)&&r>0?m.O7(r-1,A.I3()).a:null
 s=m.as
-s===$&&A.a()
+s===$&&A.b()
 o=s.length
 n=0
 for(;n<s.length;s.length===o||(0,A.B)(s),++n)s[n].Pp(q,!0,p)}},
 o8(){var s,r,q,p=this
 p.sT0(p.cx-1)
 if(p.cx===0){s=p.as
-s===$&&A.a()
+s===$&&A.b()
 r=s.length
 q=0
 for(;q<s.length;s.length===r||(0,A.B)(s),++q)s[q].o8()}},
 acP(a){this.db.C(0,a.gbc())},
 aad(a){this.db.E(0,a.gbc())},
 CQ(){if($.bt.to$===B.dh){var s=this.d
-s===$&&A.a()
+s===$&&A.b()
 s=$.a3.a6$.x.h(0,s)
 this.a7(new A.aaW(s==null?null:s.qq(t.CZ)))}s=this.db
 s=A.a1(s,A.k(s).c)
@@ -76983,7 +76983,7 @@ for(s=this.e.a,r=A.X(s),s=new J.cJ(s,s.length,r.i("cJ<1>")),r=r.c,q=null;s.A();)
 o=p==null?r.a(p):p
 if(a.$1(o))q=o}return q},
 K(a){var s,r,q=this,p=null,o=q.gaac(),n=A.mA(a),m=q.bF$,l=q.d
-l===$&&A.a()
+l===$&&A.b()
 s=q.a.ay
 if(l.gM()==null){r=q.gLV()
 r=J.l2(r.slice(0),A.X(r).c)}else r=B.Ly
@@ -77020,9 +77020,9 @@ A.FZ.prototype={
 J(){return"_RouteRestorationType."+this.b}}
 A.VT.prototype={
 gWM(){return!0},
-yN(){return A.b([this.a.a],t.jl)}}
+yN(){return A.a([this.a.a],t.jl)}}
 A.U0.prototype={
-yN(){var s=this,r=s.a2r(),q=A.b([s.c,s.d],t.jl),p=s.e
+yN(){var s=this,r=s.a2r(),q=A.a([s.c,s.d],t.jl),p=s.e
 if(p!=null)q.push(p)
 B.b.P(r,q)
 return r},
@@ -77041,7 +77041,7 @@ A.T1.prototype={
 c8(a0){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c=this,b=null,a=c.y==null
 if(a)c.y=A.o(t.N,t.UX)
 s=t.jl
-r=A.b([],s)
+r=A.a([],s)
 q=c.y.h(0,b)
 if(q==null)q=B.hz
 p=A.o(t.ob,t.UX)
@@ -77058,7 +77058,7 @@ n.E(0,g)}j=h.gef()!=null
 i=h.a
 f=j?h.gef():b
 i.d.su(f)
-if(j){r=A.b([],s)
+if(j){r=A.a([],s)
 i=c.y
 i.toString
 q=i.h(0,h.gef())
@@ -77088,7 +77088,7 @@ d.E(0,s)}},
 W(a){if(this.y==null)return
 this.y=null
 this.ad()},
-Yj(a,b){var s,r,q,p,o=A.b([],t.uD)
+Yj(a,b){var s,r,q,p,o=A.a([],t.uD)
 if(this.y!=null)s=a!=null&&a.gef()==null
 else s=!0
 if(s)return o
@@ -77142,7 +77142,7 @@ r.bF$=null
 r.a23()}}
 A.Yw.prototype={}
 A.MD.prototype={
-k(a){var s=A.b([],t.s)
+k(a){var s=A.a([],t.s)
 this.dQ(s)
 return"Notification("+B.b.bj(s,", ")+")"},
 dQ(a){}}
@@ -77248,14 +77248,14 @@ if(s!=null){s.F$=$.ab()
 s.G$=0}q.e=null}r.e=null
 r.aI()},
 K(a){var s=this.a,r=s.e,q=this.d
-q===$&&A.a()
+q===$&&A.b()
 return new A.v3(r,new A.r_(q,this,new A.dG(s.c.a,null),null),null)},
 Eh(){this.a7(new A.aot())}}
 A.aot.prototype={
 $0(){},
 $S:0}
 A.tY.prototype={
-ae(){return new A.Av(A.b([],t.wi),null,null)}}
+ae(){return new A.Av(A.a([],t.wi),null,null)}}
 A.Av.prototype={
 aG(){this.aP()
 this.Wo(0,this.a.c)},
@@ -77277,7 +77277,7 @@ for(s=a.length,q=0;q<s;++q){p=a[q]
 if(p.f==null)p.f=o}o.a7(new A.abn(o,a,r,null,null))},
 Pj(){if(this.c!=null)this.a7(new A.abk())},
 N8(){this.a7(new A.abj())},
-K(a){var s,r,q,p,o,n=this,m=A.b([],t.zj)
+K(a){var s,r,q,p,o,n=this,m=A.a([],t.zj)
 for(s=n.d,r=A.X(s).i("bR<1>"),s=new A.bR(s,r),s=new A.bp(s,s.gD(0),r.i("bp<an.E>")),r=r.i("an.E"),q=!0,p=0;s.A();){o=s.d
 if(o==null)o=r.a(o)
 if(q){++p
@@ -77522,10 +77522,10 @@ s.a(r)
 q=r.at
 q=q==null?null:q.d
 if(q===!0&&!r.got())return o
-o=r.cn$}throw A.j(A.mx(A.b([A.ju("Overlay was given infinite constraints and cannot be sized by a suitable child."),A.bi("The constraints given to the overlay ("+p.ga3().k(0)+") would result in an illegal infinite size ("+p.ga3().gaji().k(0)+"). To avoid that, the Overlay tried to size itself to one of its children, but no suitable non-positioned child that belongs to an OverlayEntry with canSizeOverlay set to true could be found."),A.yA("Try wrapping the Overlay in a SizedBox to give it a finite size or use an OverlayEntry with canSizeOverlay set to true.")],t.D)))},
+o=r.cn$}throw A.j(A.mx(A.a([A.ju("Overlay was given infinite constraints and cannot be sized by a suitable child."),A.bi("The constraints given to the overlay ("+p.ga3().k(0)+") would result in an illegal infinite size ("+p.ga3().gaji().k(0)+"). To avoid that, the Overlay tried to size itself to one of its children, but no suitable non-positioned child that belongs to an OverlayEntry with canSizeOverlay set to true could be found."),A.yA("Try wrapping the Overlay in a SizedBox to give it a finite size or use an OverlayEntry with canSizeOverlay set to true.")],t.D)))},
 aH(a,b){var s,r,q=this,p=q.F
 if(q.a_!==B.x){s=q.cx
-s===$&&A.a()
+s===$&&A.b()
 r=q.gt()
 p.saz(a.kD(s,b,new A.x(0,0,0+r.a,0+r.b),A.nZ.prototype.ged.call(q),q.a_,p.a))}else{p.saz(null)
 q.a2m(a,b)}},
@@ -77877,7 +77877,7 @@ s=A.aCB(A.aV(r.e),s,q)
 q.e=s
 r=q.d
 r.toString
-q.f=new A.qV(A.b([r,s],t.Eo))},
+q.f=new A.qV(A.a([r,s],t.Eo))},
 aL(a){var s,r=this
 r.aY(a)
 if(!a.f.j(0,r.a.f)||A.aV(a.e)!==A.aV(r.a.e)){s=r.d
@@ -77929,17 +77929,17 @@ l=A.D(Math.abs(q),100,1e4)
 s=n.r
 if(n.a===B.iA)r=0.3
 else{r=n.w
-r===$&&A.a()
+r===$&&A.b()
 r=r.b.aj(r.a.gu())}s.a=r
 r.toString
 s.b=A.D(l*0.00006,r,0.5)
 r=n.x
 s=n.y
-s===$&&A.a()
+s===$&&A.b()
 r.a=s.b.aj(s.a.gu())
 r.b=Math.min(0.025+75e-8*l*l,1)
 r=n.b
-r===$&&A.a()
+r===$&&A.b()
 r.e=A.dW(0,B.d.aC(0.15+l*0.02))
 r.jG(0)
 n.at=0.5
@@ -77977,13 +77977,13 @@ sTK(a){if(this.ch===a)return
 this.ch=a
 this.ad()},
 l(){var s=this,r=s.b
-r===$&&A.a()
+r===$&&A.b()
 r.l()
 r=s.f
-r===$&&A.a()
+r===$&&A.b()
 r.l()
 r=s.z
-r===$&&A.a()
+r===$&&A.b()
 r.w.ds$.E(0,r)
 r.Lp()
 r=s.c
@@ -77994,7 +77994,7 @@ if(o!=null)o.b0()
 p.ax=p.ax+a/200
 o=p.r
 s=p.w
-s===$&&A.a()
+s===$&&A.b()
 r=s.b
 s=s.a
 o.a=r.aj(s.gu())
@@ -78002,7 +78002,7 @@ o.b=Math.min(r.aj(s.gu())+a/b*0.8,0.5)
 q=Math.min(b,d*0.20096189432249995)
 s=p.x
 r=p.y
-r===$&&A.a()
+r===$&&A.b()
 o=r.b
 r=r.a
 s.a=o.aj(r.gu())
@@ -78010,12 +78010,12 @@ s.b=Math.max(1-1/(0.7*Math.sqrt(p.ax*q)),A.j9(o.aj(r.gu())))
 r=c/d
 p.as=r
 if(r!==p.at){o=p.z
-o===$&&A.a()
+o===$&&A.b()
 if(!o.gap1())o.p7()}else{o=p.z
-o===$&&A.a()
+o===$&&A.b()
 o.fU()
 p.Q=null}o=p.b
-o===$&&A.a()
+o===$&&A.b()
 o.e=B.cf
 if(p.a!==B.iB){o.jG(0)
 p.a=B.iB}else{o=o.r
@@ -78035,16 +78035,16 @@ if(q!=null)q.b0()
 r.c=null
 q=r.r
 s=r.w
-s===$&&A.a()
+s===$&&A.b()
 q.a=s.b.aj(s.a.gu())
 q.b=0
 q=r.x
 s=r.y
-s===$&&A.a()
+s===$&&A.b()
 q.a=s.b.aj(s.a.gu())
 q.b=0
 q=r.b
-q===$&&A.a()
+q===$&&A.b()
 q.e=a
 q.jG(0)
 r.a=B.AV},
@@ -78053,11 +78053,11 @@ if(q!=null){q=q.a
 s=r.as
 r.at=s-(s-r.at)*Math.pow(2,-(a.a-q)/$.aGk().a)
 r.ad()}if(A.I4(r.as,r.at,0.001)){q=r.z
-q===$&&A.a()
+q===$&&A.b()
 q.fU()
 r.Q=null}else r.Q=a},
 aH(a,b){var s,r,q,p,o,n,m,l,k=this,j=k.w
-j===$&&A.a()
+j===$&&A.b()
 if(J.e(j.b.aj(j.a.gu()),0))return
 s=b.a
 r=b.b
@@ -78065,7 +78065,7 @@ q=s>r?r/s:1
 p=s*3/2
 o=Math.min(r,s*0.20096189432249995)
 r=k.y
-r===$&&A.a()
+r===$&&A.b()
 r=r.b.aj(r.a.gu())
 n=k.at
 $.a0()
@@ -78159,11 +78159,11 @@ r=m.r
 p=A.D(Math.abs(q),1,1e4)
 q=s.d
 o=s.b
-o===$&&A.a()
+o===$&&A.b()
 q.a=o.b.aj(o.a.gu())
 q.b=Math.min(0.016+1.01/p,1)
 q=s.a
-q===$&&A.a()
+q===$&&A.b()
 q.e=A.dW(0,B.d.aC(Math.max(p*0.02,50)))
 q.jG(0)
 s.e=B.a0b
@@ -78179,7 +78179,7 @@ this.a3k()},
 K(a){return new A.d1(this.gDT(),A.on(this.gpN(),new A.aqK(this),null),null,t.WA)}}
 A.aqK.prototype={
 $2(a,b){var s,r,q,p,o=this.a,n=o.gpN(),m=n.b
-m===$&&A.a()
+m===$&&A.b()
 s=m.b.aj(m.a.gu())
 switch(A.aV(o.a.c).a){case 0:r=A.bW(a,B.AX,t.w).w.a.a
 break
@@ -78208,12 +78208,12 @@ q.r=p
 q.f=a
 s=q.d
 r=q.b
-r===$&&A.a()
+r===$&&A.b()
 s.a=r.b.aj(r.a.gu())
 r=q.f
 s.b=0.016*r+0.016*(1-Math.exp(-r*8.237217661997105))
 r=q.a
-r===$&&A.a()
+r===$&&A.b()
 r.e=B.jz
 if(q.e!==B.ma){r.jG(0)
 q.e=B.ma}else{s=r.r
@@ -78230,19 +78230,19 @@ nG(a){var s,r=this,q=r.e
 if(q===B.mb||q===B.m9)return
 q=r.d
 s=r.b
-s===$&&A.a()
+s===$&&A.b()
 q.a=s.b.aj(s.a.gu())
 q.b=0
 q=r.a
-q===$&&A.a()
+q===$&&A.b()
 q.e=a
 q.jG(0)
 r.e=B.mb},
 l(){var s=this.a
-s===$&&A.a()
+s===$&&A.b()
 s.l()
 s=this.c
-s===$&&A.a()
+s===$&&A.b()
 s.l()
 this.cU()},
 k(a){return"_StretchController()"}}
@@ -78278,7 +78278,7 @@ return b instanceof A.GA&&A.cx(b.a,this.a)},
 gB(a){return A.bx(this.a)},
 k(a){return"StorageEntryIdentifier("+B.b.bj(this.a,":")+")"}}
 A.MR.prototype={
-LU(a){var s=A.b([],t.g8)
+LU(a){var s=A.a([],t.g8)
 if(A.aAM(a,s))a.n9(new A.abp(s))
 return s},
 JG(a,b){var s,r=this
@@ -78373,7 +78373,7 @@ s.toString
 s=r.vQ(q,s)
 q=s}r.w.r.su(q)
 q=$.dx.e1$
-q===$&&A.a()
+q===$&&A.b()
 q.Vz()},
 Yk(a,b){if(b)this.aQ=a
 else this.e3(this.oU(a))},
@@ -78410,7 +78410,7 @@ p=m.w
 o=p.a.c
 n=m.bd
 p=p.f
-p===$&&A.a()
+p===$&&A.b()
 return new A.abo(n,k,s,r,q,o,p)}}
 A.Er.prototype={
 ki(a){return new A.Er(!1,this.iP(a))},
@@ -78465,16 +78465,16 @@ aG(){var s,r=this
 r.aP()
 r.OW()
 s=r.e
-s===$&&A.a()
+s===$&&A.b()
 r.d=s.as},
 l(){if(this.a.r==null){var s=this.e
-s===$&&A.a()
+s===$&&A.b()
 s.l()}this.aI()},
 OW(){var s=this.a.r
 this.e=s==null?A.aAL(0,1):s},
 aL(a){var s=this,r=a.r
 if(r!=s.a.r){if(r==null){r=s.e
-r===$&&A.a()
+r===$&&A.b()
 r.l()}s.OW()}s.aY(a)},
 a7R(a){var s
 this.a.toString
@@ -78486,7 +78486,7 @@ m=new A.u0(B.vf.iP(m))
 m=new A.Er(!1,p).iP(m)
 n=n.Q
 s=q.e
-s===$&&A.a()
+s===$&&A.b()
 r=A.jU(a).Up(!1)
 return new A.d1(new A.aox(q),A.aek(o,B.Y,s,n,!1,B.at,p,new A.Er(!1,m),p,r,p,new A.aoy(q,o)),p,t.WA)}}
 A.aox.prototype={
@@ -78496,8 +78496,8 @@ $S:32}
 A.aoy.prototype={
 $2(a,b){var s=this.a,r=s.a,q=r.as
 s=s.e
-s===$&&A.a()
-return A.aCf(0,this.b,0,B.DV,null,q,b,B.ly,A.b([new A.OW(s.ax,!0,r.z,null)],t.p))},
+s===$&&A.b()
+return A.aCf(0,this.b,0,B.DV,null,q,b,B.ly,A.a([new A.OW(s.ax,!0,r.z,null)],t.p))},
 $S:463}
 A.Ax.prototype={
 gkA(){return!0},
@@ -78628,17 +78628,17 @@ return!1},
 Ec(){var s,r=this
 if(r.gPb()&&!r.w){r.w=!0;++$.ls.id$
 s=$.dx.e1$
-s===$&&A.a()
+s===$&&A.b()
 s.garP().bN(new A.apY(r),t.P)}},
 afa(){var s,r=this
 r.e=!1
 r.f=null
 s=$.dx.e1$
-s===$&&A.a()
+s===$&&A.b()
 s.I(r.gEK())
 r.Ec()},
 l(){if(this.e){var s=$.dx.e1$
-s===$&&A.a()
+s===$&&A.b()
 s.I(this.gEK())}this.aI()},
 K(a){var s,r,q=this,p=q.d
 p.toString
@@ -78652,7 +78652,7 @@ A.apY.prototype={
 $1(a){var s,r=this.a
 r.w=!1
 if(r.c!=null){s=$.dx.e1$
-s===$&&A.a()
+s===$&&A.b()
 s.a0(r.gEK())
 r.a7(new A.apX(r,a))}$.ls.Tr()},
 $S:465}
@@ -78984,7 +78984,7 @@ r.x1=q
 r.gv0()
 s=A.tZ(r.ga4O(),r.gkA(),!0)
 r.xr=s
-B.b.P(r.r,A.b([q,s],t.wi))
+B.b.P(r.r,A.a([q,s],t.wi))
 r.a1i()},
 lg(a){var s=this
 s.a1d(a)
@@ -79051,7 +79051,7 @@ q=a.ch
 q.toString
 p=r.gu()
 o=q.x
-o===$&&A.a()
+o===$&&A.b()
 if(p!==o){p=q.r
 p=!(p!=null&&p.a!=null)}else p=!0
 o=a.at.a
@@ -79173,7 +79173,7 @@ ae(){return new A.nV(A.a4q(!0,B.Zq.k(0)+" Focus Scope",!1),A.BC(0,null,null),thi
 A.nV.prototype={
 aG(){var s,r,q=this
 q.aP()
-s=A.b([],t.Eo)
+s=A.a([],t.Eo)
 r=q.a.c.p3
 if(r!=null)s.push(r)
 r=q.a.c.p4
@@ -79219,8 +79219,8 @@ b.toString
 return new A.ne(b,s,null)},
 $S:469}
 A.aoi.prototype={
-$1(a){var s,r=A.c([B.lM,new A.S9(a,new A.b0(A.b([],t.e),t.d))],t.u,t.od),q=this.a,p=q.e
-p===$&&A.a()
+$1(a){var s,r=A.c([B.lM,new A.S9(a,new A.b0(A.a([],t.e),t.d))],t.u,t.od),q=this.a,p=q.e
+p===$&&A.b()
 s=q.d
 if(s==null)s=q.d=new A.ia(new A.dG(new A.aof(q),null),q.a.c.ry)
 return A.om(r,A.aAU(A.aCy(new A.ia(new A.mR(new A.aog(q),s,p,null),null),q.f,!0),q.r))},
@@ -79336,9 +79336,9 @@ nW(){var s,r=this
 r.a19()
 if($.bt.to$!==B.e3){r.a7(new A.aat())
 s=r.x1
-s===$&&A.a()
+s===$&&A.b()
 s.cq()}s=r.xr
-s===$&&A.a()
+s===$&&A.b()
 r.gv0()
 s.sv0(!0)},
 gVI(){return!1},
@@ -79481,67 +79481,67 @@ this.wl()},
 k(a){return"<optimized out>#"+A.b9(this)+"("+A.m(this.c)+")"}}
 A.IU.prototype={
 Yf(){var s=this.a,r=this.c
-r===$&&A.a()
+r===$&&A.b()
 s.hX(r.ghp())},
 tC(){var s=this.a,r=this.c
-r===$&&A.a()
+r===$&&A.b()
 s.hX(r.ghp())},
 F7(){var s=this.c
-s===$&&A.a()
+s===$&&A.b()
 s=s.x
-s===$&&A.a()
+s===$&&A.b()
 if(!(Math.abs(this.a.Cr(s))<1e-10)){s=this.a
 s.iN(new A.mC(s))}},
 ES(){if(!this.b)this.a.hX(0)},
 zf(a,b,c){var s=this.c
-s===$&&A.a()
+s===$&&A.b()
 b.dC(new A.jL(null,c,s.ghp(),a,b,0))},
 gjO(){return!0},
 ghp(){var s=this.c
-s===$&&A.a()
+s===$&&A.b()
 return s.ghp()},
 l(){var s=this.c
-s===$&&A.a()
+s===$&&A.b()
 s.l()
 this.wl()},
 k(a){var s=A.b9(this),r=this.c
-r===$&&A.a()
+r===$&&A.b()
 return"<optimized out>#"+s+"("+r.k(0)+")"},
 gkV(){return this.d}}
 A.Kr.prototype={
 F7(){var s=this.d
-s===$&&A.a()
+s===$&&A.b()
 s=s.x
-s===$&&A.a()
+s===$&&A.b()
 if(!(Math.abs(this.a.Cr(s))<1e-10)){s=this.a
 s.iN(new A.mC(s))}},
 ES(){var s,r
 if(!this.b){s=this.a
 r=this.d
-r===$&&A.a()
+r===$&&A.b()
 s.hX(r.ghp())}},
 zf(a,b,c){var s=this.d
-s===$&&A.a()
+s===$&&A.b()
 b.dC(new A.jL(null,c,s.ghp(),a,b,0))},
 gkV(){return!0},
 gjO(){return!0},
 ghp(){var s=this.d
-s===$&&A.a()
+s===$&&A.b()
 return s.ghp()},
 l(){var s=this.c
-s===$&&A.a()
+s===$&&A.b()
 s.hD()
 s=this.d
-s===$&&A.a()
+s===$&&A.b()
 s.l()
 this.wl()},
 k(a){var s=A.b9(this),r=this.d
-r===$&&A.a()
+r===$&&A.b()
 return"<optimized out>#"+s+"("+r.k(0)+")"}}
 A.BA.prototype={
 vq(a,b,c,d){var s,r=this
 if(b.a==null){s=$.jN.qh$
-s===$&&A.a()
+s===$&&A.b()
 s=s.a.h(0,c)!=null||s.b.h(0,c)!=null}else s=!0
 if(s){r.b.vq(a,b,c,d)
 return}s=r.a
@@ -79636,7 +79636,7 @@ A.jV.prototype={
 iM(a,b,c){return this.aj4(a,b,c)},
 aj4(a,b,c){var s=0,r=A.R(t.H),q=this,p,o,n
 var $async$iM=A.S(function(d,e){if(d===1)return A.O(e,r)
-for(;;)switch(s){case 0:n=A.b([],t.mo)
+for(;;)switch(s){case 0:n=A.a([],t.mo)
 for(p=q.f,o=0;o<p.length;++o)n.push(p[o].iM(a,b,c))
 s=2
 return A.Y(A.kU(n,t.H),$async$iM)
@@ -79652,7 +79652,7 @@ l(){var s,r,q,p
 for(s=this.f,r=s.length,q=this.gcu(),p=0;p<s.length;s.length===r||(0,A.B)(s),++p)s[p].I(q)
 this.cU()},
 Uz(a,b,c){return A.aMZ(b,null,this.a,!0,c,a)},
-k(a){var s,r=A.b([],t.s),q=this.a
+k(a){var s,r=A.a([],t.s),q=this.a
 if(q!==0)r.push("initialScrollOffset: "+B.d.a1(q,1)+", ")
 q=this.f
 s=q.length
@@ -79663,7 +79663,7 @@ r.push("one client, offset "+B.d.a1(q,1))}else r.push(""+s+" clients")
 return"<optimized out>#"+A.b9(this)+"("+B.b.bj(r,", ")+")"}}
 A.ag6.prototype={
 guk(){return null},
-k(a){var s=A.b([],t.s)
+k(a){var s=A.a([],t.s)
 this.dQ(s)
 return"<optimized out>#"+A.b9(this)+"("+B.b.bj(s,", ")+")"},
 dQ(a){var s,r,q
@@ -79873,7 +79873,7 @@ l(){this.d=null
 this.aI()}}
 A.aee.prototype={
 $0(){var s=null,r=this.a
-return A.b([A.jr("The "+A.t(r).k(0)+" sending notification was",r,!0,B.bE,s,s,s,B.b0,!1,!0,!0,B.ce,s,t.FS)],t.D)},
+return A.a([A.jr("The "+A.t(r).k(0)+" sending notification was",r,!0,B.bE,s,s,s,B.b0,!1,!0,!0,B.ce,s,t.FS)],t.D)},
 $S:20}
 A.aef.prototype={
 $1(a){this.a.Pv(a.TG())
@@ -79923,7 +79923,7 @@ return s==null?$.aFM():s},
 vy(a){var s=this.a
 s=s==null?null:s.vy(a)
 if(s==null){s=a.w.f
-s===$&&A.a()
+s===$&&A.b()
 s=new A.CW(1/s,1/(0.05*s))}return s},
 gIp(){var s=this.a
 s=s==null?null:s.gIp()
@@ -80139,7 +80139,7 @@ if(A.t(a)!==A.t(s))s.fr.Yf()
 s.w.BS(s.fr.gkV())
 s.dy.su(s.fr.gjO())},
 gmw(){var s=this.w.f
-s===$&&A.a()
+s===$&&A.b()
 return s},
 ZY(a){var s,r,q,p=this,o=p.at
 o.toString
@@ -80195,7 +80195,7 @@ K7(){var s=this.at
 s.toString
 this.w.r.su(s)
 s=$.dx.e1$
-s===$&&A.a()
+s===$&&A.b()
 s.Vz()},
 mm(a){if(this.ax!==a){this.ax=a
 this.ch=!0}return!0},
@@ -80481,14 +80481,14 @@ this.ok=null
 this.a1v()}}
 A.a01.prototype={
 EX(a){var s,r=this,q=r.r
-q===$&&A.a()
+q===$&&A.b()
 if(a>q){if(!isFinite(q))q=0
 r.w=q
 q=r.f
-q===$&&A.a()
+q===$&&A.b()
 s=q}else{r.w=0
 q=r.e
-q===$&&A.a()
+q===$&&A.b()
 s=q}s.a=r.a
 return s},
 eL(a){return this.EX(a).eL(a-this.w)},
@@ -80497,16 +80497,16 @@ mM(a){return this.EX(a).mM(a-this.w)},
 k(a){return"BouncingScrollSimulation(leadingExtent: "+A.m(this.b)+", trailingExtent: "+A.m(this.c)+")"}}
 A.a0P.prototype={
 eL(a){var s,r=this.e
-r===$&&A.a()
+r===$&&A.b()
 s=A.D(a/r,0,1)
 r=this.f
-r===$&&A.a()
+r===$&&A.b()
 return this.b+r*(1-Math.pow(1-s,$.auk()))},
 fB(a){var s=this.e
-s===$&&A.a()
+s===$&&A.b()
 return this.c*Math.pow(1-A.D(a/s,0,1),$.auk()-1)},
 mM(a){var s=this.e
-s===$&&A.a()
+s===$&&A.b()
 return a>=s}}
 A.Oq.prototype={
 J(){return"ScrollViewKeyboardDismissBehavior."+this.b}}
@@ -80514,7 +80514,7 @@ A.Op.prototype={
 ajw(a,b,c,d){var s=this
 if(s.x)return new A.OJ(c,b,B.ly,s.CW,d,null)
 return A.aCf(0,c,s.Q,B.mM,null,s.CW,b,B.ly,d)},
-K(a){var s,r,q,p,o=this,n=null,m=o.ajs(a),l=A.b([new A.P0(o.db,m,n)],t.p),k=o.c,j=A.aEm(a,k,!1),i=o.f
+K(a){var s,r,q,p,o=this,n=null,m=o.ajs(a),l=A.a([new A.P0(o.db,m,n)],t.p),k=o.c,j=A.aEm(a,k,!1),i=o.f
 if(i==null)i=A.aAW(a,k)
 s=i?A.AM(a):o.e
 r=A.aek(j,o.CW,s,o.ax,!1,o.cx,n,o.r,o.ch,n,o.as,new A.aei(o,j,l))
@@ -80728,12 +80728,12 @@ r=r.Q
 r.toString
 return Math.min(s,r)},
 PT(a){var s,r,q,p=$.dx.e0$
-p===$&&A.a()
+p===$&&A.b()
 p=p.a
 s=A.k(p).i("ba<2>")
 r=A.dM(new A.ba(p,s),s.i("z.E"))
 p=this.w
-p===$&&A.a()
+p===$&&A.b()
 p=p.gvh()
 q=r.eV(0,p.gle(p))&&a.gcp()===B.bx
 p=this.a
@@ -80783,7 +80783,7 @@ n=new A.d1(k.gaaq(),new A.W7(i,s,r.y,q,n,k.z),j,t.ji)
 i=r}s=k.grL()
 m=new A.Or(i.c,s,i.at)
 i=k.w
-i===$&&A.a()
+i===$&&A.b()
 n=i.yF(a,i.yD(a,n,m),m)
 l=A.BL(a)
 if(l!=null){i=k.d
@@ -80791,7 +80791,7 @@ i.toString
 n=new A.Gc(k,i,n,l,j)}return n}}
 A.aem.prototype={
 $0(){var s=this.a.w
-s===$&&A.a()
+s===$&&A.b()
 return A.aOp(null,s.gmz())},
 $S:484}
 A.aen.prototype={
@@ -80808,7 +80808,7 @@ a.dx=r?null:s.gAk()
 s=q.e
 a.dy=s==null?null:s.gv2()
 s=q.w
-s===$&&A.a()
+s===$&&A.b()
 r=q.c
 r.toString
 a.fx=s.Bq(r)
@@ -80822,7 +80822,7 @@ a.c=q.w.gmz()},
 $S:485}
 A.aeo.prototype={
 $0(){var s=this.a.w
-s===$&&A.a()
+s===$&&A.b()
 return A.avw(null,s.gmz())},
 $S:169}
 A.aep.prototype={
@@ -80839,7 +80839,7 @@ a.dx=r?null:s.gAk()
 s=q.e
 a.dy=s==null?null:s.gv2()
 s=q.w
-s===$&&A.a()
+s===$&&A.b()
 r=q.c
 r.toString
 a.fx=s.Bq(r)
@@ -80861,21 +80861,21 @@ r=s.c
 s=s.d
 q=t.x9
 p=t.i
-q=new A.Gb(r,new A.a2v(r,30),s,A.o(q,p),A.o(q,p),A.b([],t.D1),A.aD(q),B.z8,$.ab())
+q=new A.Gb(r,new A.a2v(r,30),s,A.o(q,p),A.o(q,p),A.a([],t.D1),A.aD(q),B.z8,$.ab())
 s.a0(q.gQD())
 this.d=q},
 aL(a){var s,r
 this.aY(a)
 s=this.a.d
 if(a.d!==s){r=this.d
-r===$&&A.a()
+r===$&&A.b()
 r.sbr(s)}},
 l(){var s=this.d
-s===$&&A.a()
+s===$&&A.b()
 s.l()
 this.aI()},
 K(a){var s=this.a,r=s.f,q=this.d
-q===$&&A.a()
+q===$&&A.b()
 return new A.qf(r,s.e,q,null)}}
 A.Gb.prototype={
 sbr(a){var s,r=this.id
@@ -81146,8 +81146,8 @@ s.saU(a.e)
 s=l.a6
 s.toString
 r=t.QF
-q=A.b([s],r)
-p=A.b([],r)
+q=A.a([s],r)
+p=A.a([],r)
 for(s=c.length,o=null,n=0;n<c.length;c.length===s||(0,A.B)(c),++n){m=c[n]
 r=m.dy
 if(r!=null&&r.n(0,B.RD))q.push(m)
@@ -81195,7 +81195,7 @@ if(s!=null)s.l()
 r.bF$=null
 r.a2z()}}
 A.Or.prototype={
-k(a){var s,r=this,q=A.b([],t.s)
+k(a){var s,r=this,q=A.a([],t.s)
 q.push("axisDirection: "+r.a.k(0))
 s=new A.ael(q)
 s.$2("scroll controller: ",r.b)
@@ -81239,7 +81239,7 @@ t.x.a(b)
 o=b.aK(null)
 n=A.dN(o,new A.x(0,0,0+b.gt().a,0+b.gt().b))
 b=p.d
-b===$&&A.a()
+b===$&&A.b()
 A.dN(o,b)
 p.e=!0
 m=c.gUI()
@@ -81437,7 +81437,7 @@ adY(a,b){var s,r,q,p,o,n,m,l,k,j,i,h,g=this,f=null
 g.gEP()
 switch(g.gEP().a){case 0:s=g.f
 r=g.db
-r===$&&A.a()
+r===$&&A.b()
 q=new A.y(s,r)
 r=g.x
 s+=2*r
@@ -81446,7 +81446,7 @@ p.toString
 o=new A.y(s,p-g.geR())
 n=r+g.CW.a
 m=g.cy
-m===$&&A.a()
+m===$&&A.b()
 r=n-r
 l=g.gt1()
 k=new A.i(r,l)
@@ -81456,7 +81456,7 @@ h=m
 break
 case 1:s=g.f
 r=g.db
-r===$&&A.a()
+r===$&&A.b()
 q=new A.y(s,r)
 r=g.x
 p=g.dx.d
@@ -81464,7 +81464,7 @@ p.toString
 o=new A.y(s+2*r,p-g.geR())
 n=b.a-s-r-g.CW.c
 s=g.cy
-s===$&&A.a()
+s===$&&A.b()
 r=n-r
 m=g.gt1()
 k=new A.i(r,m)
@@ -81473,7 +81473,7 @@ j=k
 h=s
 break
 case 2:s=g.db
-s===$&&A.a()
+s===$&&A.b()
 r=g.f
 q=new A.y(s,r)
 s=g.dx.d
@@ -81483,7 +81483,7 @@ m=g.x
 r+=2*m
 o=new A.y(s-p,r)
 p=g.cy
-p===$&&A.a()
+p===$&&A.b()
 h=m+g.CW.b
 l=g.gt1()
 m=h-m
@@ -81493,7 +81493,7 @@ i=new A.i(l+(s-g.geR()),m+r)
 n=p
 break
 case 3:s=g.db
-s===$&&A.a()
+s===$&&A.b()
 r=g.f
 q=new A.y(s,r)
 s=g.dx.d
@@ -81502,7 +81502,7 @@ p=g.geR()
 m=g.x
 o=new A.y(s-p,r+2*m)
 p=g.cy
-p===$&&A.a()
+p===$&&A.b()
 h=b.b-r-m-g.CW.d
 r=g.gt1()
 m=h-m
@@ -81575,7 +81575,7 @@ n.toString
 r=o.geR()
 q=o.w
 p=o.db
-p===$&&A.a()
+p===$&&A.b()
 return(m-s)*a/(n-r-2*q-p)},
 uK(a){var s,r,q=this
 if(q.cx==null)return null
@@ -81658,14 +81658,14 @@ n.CW=r},
 bh(){this.cV()},
 aio(a){var s,r=this
 if(a!==B.V)if(r.gjv()!=null&&r.goa()){s=r.x
-s===$&&A.a()
+s===$&&A.b()
 s=s.Q
-s===$&&A.a()
+s===$&&A.b()
 if(s===B.bC){s=r.a.e
 s=s===!0}else s=!1
 if(s)return}},
 vE(){var s,r=this,q=r.c.ao(t.I).w,p=r.CW
-p===$&&A.a()
+p===$&&A.b()
 r.a.toString
 p.sd8(B.je)
 r.a.toString
@@ -81702,10 +81702,10 @@ s=r.a.e
 if(s!=a.e)if(s===!0){s=r.w
 if(s!=null)s.b0()
 s=r.x
-s===$&&A.a()
+s===$&&A.b()
 s.z=B.aQ
 s.jp(1,B.a3,null)}else{s=r.x
-s===$&&A.a()
+s===$&&A.b()
 s.dJ()}},
 xs(){var s,r=this
 if(!r.gp5()){s=r.w
@@ -81730,7 +81730,7 @@ case 3:s=a.a
 l.b=n.d.a-s
 k.b=n.e.a-s
 break}s=n.CW
-s===$&&A.a()
+s===$&&A.b()
 r=n.f
 r.toString
 q=s.K0(r+l.aV())
@@ -81773,7 +81773,7 @@ if(k.ay==null)return
 s=k.w
 if(s!=null)s.b0()
 s=k.x
-s===$&&A.a()
+s===$&&A.b()
 s.c7()
 r=B.b.gbn(k.r.f)
 s=$.a3.a6$.x.h(0,k.z).gT()
@@ -81782,7 +81782,7 @@ s=A.bd(t.x.a(s).aK(null),a)
 k.as=r.V_(new A.hj(s,a,null,null),k.ga6x())
 k.e=k.d=a
 s=k.CW
-s===$&&A.a()
+s===$&&A.b()
 q=s.dx
 p=q.b
 p.toString
@@ -81797,7 +81797,7 @@ q.toString
 p=s.geR()
 o=s.w
 s=s.db
-s===$&&A.a()
+s===$&&A.b()
 k.f=l*(q-p-2*o-s)},
 anL(a){var s,r,q,p,o,n,m=this,l=null
 if(J.e(m.e,a))return
@@ -81847,15 +81847,15 @@ s=B.b.gbn(m.f)
 if(!s.r.lR(s))return
 m=s.w
 switch(A.aV(m.a.c).a){case 1:r=n.CW
-r===$&&A.a()
+r===$&&A.b()
 r=r.cy
-r===$&&A.a()
+r===$&&A.b()
 q=a.b.b>r?B.aZ:B.bm
 break
 case 0:r=n.CW
-r===$&&A.a()
+r===$&&A.b()
 r=r.cy
-r===$&&A.a()
+r===$&&A.b()
 q=a.b.a>r?B.c5:B.b9
 break
 default:q=null}m=$.a3.a6$.x.h(0,m.Q)
@@ -81877,14 +81877,14 @@ ag2(a){var s,r,q=this,p=q.a
 p.toString
 if(!p.mR(a.TG()))return!1
 if(q.gp5()){p=q.x
-p===$&&A.a()
+p===$&&A.b()
 p=!p.gaN().gqv()}else p=!1
 if(p){p=q.x
-p===$&&A.a()
+p===$&&A.b()
 p.c7()}s=a.a
 p=s.e
 if(q.EV(A.aV(p))){r=q.CW
-r===$&&A.a()
+r===$&&A.b()
 r.d4(s,p)}if(A.aV(p)!==q.ay)q.a7(new A.acn(q,s))
 p=q.at
 r=s.b
@@ -81899,19 +81899,19 @@ r.toString
 q=s.a
 q.toString
 if(r<=q){r=p.x
-r===$&&A.a()
+r===$&&A.b()
 if(r.gaN().gqv())r.dJ()
 r=s.e
 if(p.EV(A.aV(r))){q=p.CW
-q===$&&A.a()
+q===$&&A.b()
 q.d4(s,r)}return!1}if(a instanceof A.ic||a instanceof A.jL){r=p.x
-r===$&&A.a()
+r===$&&A.b()
 if(!r.gaN().gqv())r.c7()
 r=p.w
 if(r!=null)r.b0()
 r=s.e
 if(p.EV(A.aV(r))){q=p.CW
-q===$&&A.a()
+q===$&&A.b()
 q.d4(s,r)}}else if(a instanceof A.ib)if(p.as==null)p.xs()
 return!1},
 abi(a){this.HG()},
@@ -81948,12 +81948,12 @@ WJ(a,b,c){var s,r=this.z
 if($.a3.a6$.x.h(0,r)==null)return!1
 s=A.awZ(r,a)
 r=this.CW
-r===$&&A.a()
+r===$&&A.b()
 return r.Wc(s,b,!0)},
 Hw(a){var s,r=this
 if(r.WJ(a.gbr(),a.gcp(),!0)){r.Q=!0
 s=r.x
-s===$&&A.a()
+s===$&&A.b()
 s.c7()
 s=r.w
 if(s!=null)s.b0()}else if(r.Q){r.Q=!1
@@ -81981,7 +81981,7 @@ if(q)B.b.gbn(p.r.f).IN(s)},
 ag6(a){var s,r,q,p,o,n=this
 n.r=n.gjv()
 s=n.CW
-s===$&&A.a()
+s===$&&A.b()
 s=s.uK(a.gcZ())
 r=!1
 if(s===!0){s=n.r
@@ -81998,27 +81998,27 @@ if(s)$.el.bq$.Y1(a,n.gag_())}else if(t.xb.b(a)){s=q.at
 s.toString
 q.e3(s)}}},
 l(){var s=this,r=s.x
-r===$&&A.a()
+r===$&&A.b()
 r.l()
 r=s.w
 if(r!=null)r.b0()
 r=s.CW
-r===$&&A.a()
+r===$&&A.b()
 r.r.a.I(r.gcu())
 r.cU()
 r=s.y
-r===$&&A.a()
+r===$&&A.b()
 r.l()
 s.a29()},
 K(a){var s,r,q=this,p=null
 q.vE()
 s=q.ga7G()
 r=q.CW
-r===$&&A.a()
+r===$&&A.b()
 return new A.d1(q.gag1(),new A.d1(q.gag3(),new A.ia(A.zJ(B.cg,new A.iP(A.l9(A.iC(new A.ia(q.a.c,p),r,q.z,p,B.A),B.bD,p,p,new A.acq(q),new A.acr(q)),s,p,!1,q.ch),p,p,p,q.gag5(),p),p),p,t.WA),p,t.ji)}}
 A.acp.prototype={
 $0(){var s=this.a,r=s.x
-r===$&&A.a()
+r===$&&A.b()
 r.dJ()
 s.w=null},
 $S:0}
@@ -82031,11 +82031,11 @@ s.at=!s.at},
 $S:0}
 A.acj.prototype={
 $0(){var s=this.a,r=t.S
-return new A.nP(s.z,B.ab,B.dT,A.ZK(),B.cs,A.o(r,t.GY),A.o(r,t.v),B.h,A.b([],t.t),A.o(r,t.J),A.cN(r),s,null,A.ZL(),A.o(r,t.G))},
+return new A.nP(s.z,B.ab,B.dT,A.ZK(),B.cs,A.o(r,t.GY),A.o(r,t.v),B.h,A.a([],t.t),A.o(r,t.J),A.cN(r),s,null,A.ZL(),A.o(r,t.G))},
 $S:490}
 A.ack.prototype={
 $0(){var s=this.a,r=t.S
-return new A.o5(s.z,B.ab,B.dT,A.ZK(),B.cs,A.o(r,t.GY),A.o(r,t.v),B.h,A.b([],t.t),A.o(r,t.J),A.cN(r),s,null,A.ZL(),A.o(r,t.G))},
+return new A.o5(s.z,B.ab,B.dT,A.ZK(),B.cs,A.o(r,t.GY),A.o(r,t.v),B.h,A.a([],t.t),A.o(r,t.J),A.cN(r),s,null,A.ZL(),A.o(r,t.G))},
 $S:491}
 A.acl.prototype={
 $0(){var s=this.a,r=t.S
@@ -82182,7 +82182,7 @@ else r.RG$.push(s)}},
 a7s(){var s,r,q,p,o,n,m,l,k=this,j=k.Q,i=A.a1(j,A.k(j).c)
 B.b.fT(i,k.gtP())
 s=k.b
-k.b=A.b([],t.D1)
+k.b=A.a([],t.D1)
 r=k.d
 q=k.c
 j=k.gDV()
@@ -82236,7 +82236,7 @@ o=c.a.gT()
 o.toString
 j=A.bd(p.aK(t.x.a(o)),a.a)
 i=isFinite(j.a)&&isFinite(j.b)?new A.qh(j,a.b,a.c):b}else i=b
-h=A.b([],t.AO)
+h=A.a([],t.AO)
 g=c.ganQ()?new A.x(0,0,0+c.gUg().a,0+c.gUg().b):b
 for(f=c.d;f<=c.c;++f){e=c.b[f].gu().d
 a=new A.a_(e,new A.aaN(c,f,g),A.X(e).i("a_<1,x>")).Ch(0,new A.aaO())
@@ -82589,7 +82589,7 @@ aK(a){return this.c.gT().aK(a)},
 gla(){var s=this.c.gT()
 s.toString
 s=t.x.a(s).gt()
-return A.b([new A.x(0,0,0+s.a,0+s.b)],t.AO)},
+return A.a([new A.x(0,0,0+s.a,0+s.b)],t.AO)},
 l(){var s=this.a.e
 if(s!=null){s.a=null
 this.d.am(0,s.gY6())}this.a3h()},
@@ -82642,10 +82642,10 @@ s.ad()}},
 gOT(){var s=this.c
 return s==null?this.c=A.aNi(this.b):s},
 a7h(a,b){var s,r,q,p,o,n,m,l,k,j,i,h,g,f=a.b,e=this.gOT().h(0,f)
-if(e==null)e=A.b([],t.Na)
+if(e==null)e=A.a([],t.Na)
 e=A.a1(e,t.JX)
 s=this.gOT().h(0,null)
-B.b.P(e,s==null?A.b([],t.Na):s)
+B.b.P(e,s==null?A.a([],t.Na):s)
 s=e.length
 r=!(a instanceof A.l4)
 q=a instanceof A.tw
@@ -82659,7 +82659,7 @@ j=k.a
 if(r)i=q
 else i=!0
 h=!1
-if(i)if(B.b.n(A.b([j.a],p),f)){i=A.jG(m)
+if(i)if(B.b.n(A.a([j.a],p),f)){i=A.jG(m)
 i.P(0,new A.ba(o,n))
 h=i.kw($.aGI())
 g=!1
@@ -82689,11 +82689,11 @@ $2(a,b){var s=[a.a],r=this.a,q=0
 for(;q<1;++q)J.ff(r.bI(s[q],new A.afP()),new A.nH(a,b))},
 $S:498}
 A.afP.prototype={
-$0(){return A.b([],t.Na)},
+$0(){return A.a([],t.Na)},
 $S:499}
 A.afR.prototype={
 $0(){var s=$.dx.e0$
-s===$&&A.a()
+s===$&&A.b()
 return this.a.a7h(this.b,s)},
 $S:500}
 A.afS.prototype={
@@ -82884,7 +82884,7 @@ r=n.td(s)
 s=new A.apI(n,r)
 q=n.a_
 if(n.Rg(r)){p=n.cx
-p===$&&A.a()
+p===$&&A.b()
 o=n.gt()
 q.saz(a.kD(p,b,new A.x(0,0,0+o.a,0+o.b),s,n.O,q.a))}else{q.saz(null)
 s.$2(a,b)}}},
@@ -83406,7 +83406,7 @@ $.dx.cJ$=s
 r.d!==$&&A.bu()
 r.d=s},
 l(){var s=this.d
-s===$&&A.a()
+s===$&&A.b()
 s.jI()
 s.f=!0
 this.aI()},
@@ -83417,7 +83417,7 @@ r=o.a.d
 q=A.X(r).i("a_<1,eW>")
 p=A.a1(new A.a_(r,new A.ar2(s),q),q.i("an.E"))
 s=o.d
-s===$&&A.a()
+s===$&&A.b()
 s.a_g(o.a.c,p)}return B.aw}}
 A.ar2.prototype={
 $1(a){return a.nf(this.a)},
@@ -83466,11 +83466,11 @@ r=A.r9(a,k)
 q=t.S
 p=t.rZ
 o=t.bu
-n=A.b([],t.n)
+n=A.a([],t.n)
 m=A.fl(k,k,k,q,t.PA)
 j=new A.uk(B.Lq,j,i,m,l.e,s,l.r,r,l.w,k,A.o(q,p),A.o(q,o),A.o(p,o),n,new A.az(),A.a8(t.T))
 j.aE()
-i=A.b([],t.iG)
+i=A.a([],t.iG)
 B.b.sD(i,j.L*j.O)
 j.q=i
 j.sYr(l.y)
@@ -83518,13 +83518,13 @@ s=t.pN
 r=A.o(t.f0,s)
 for(q=c.p1,p=q.length,o=0;o<p;++o);p=B.b.ga5(q)
 n=new A.h2(p,new A.arj(),A.X(q).i("h2<1>"))
-m=A.b([],t.lD)
+m=A.a([],t.lD)
 for(q=a.c,l=c.p3,k=t.PN,j=0;j<q.length;++j){i=q[j]
 h=n.A()
 g=h?p.gN().b:B.Ls
 h=i.c
 f=h.length
-e=A.b(new Array(f),k)
+e=A.a(new Array(f),k)
 for(d=0;d<f;++d)e[d]=new A.wp(d,j)
 m.push(new A.ha(null,c.YJ(g,h,l,e)))}while(n.A())c.Bm(p.gN().b,B.oJ,l)
 for(q=r.$ti.i("ba<2>"),p=new A.ba(r,q).ga5(0),q=new A.h2(p,new A.ark(A.aD(s)),q.i("h2<z.E>"));q.A();)c.Bm(p.gN(),B.oJ,l)
@@ -83724,7 +83724,7 @@ m=a.ao(m)
 m=(m==null?B.dD:m).x
 if(m==null)m=B.n5
 e=d.d
-e=e!=null?A.b([e],t.VO):c
+e=e!=null?A.a([e],t.VO):c
 n.b=A.l9(new A.Gg(A.cq(e,c,c,c,s,d.c),k,j,i,h,r,g,c,c,b.as,f,m,c),l,c,c,c,c)
 r=j}else{m=d.r
 if(m==null)m=b.x
@@ -83742,7 +83742,7 @@ g=a.ao(t.Uf)
 g=(g==null?B.dD:g).x
 if(g==null)g=B.n5
 f=d.d
-f=f!=null?A.b([f],t.VO):c
+f=f!=null?A.a([f],t.VO):c
 n.b=A.aw1(c,c,i,j,g,c,k,c,A.cq(f,c,c,c,s,d.c),m,l,h,r,b.as)
 r=l}m=d.ax
 if(m!=null)n.b=A.bM(c,new A.mv(!0,n.aV(),c),!1,c,c,!1,c,!1,c,c,c,c,c,c,c,m,c,c,c,c,c,c,c,c,c,c,c,c,c,c,c,c,c,c,c,r,c,c)
@@ -83753,17 +83753,17 @@ A.Wg.prototype={
 aG(){var s,r,q,p=this
 p.aP()
 s=t.x9
-r=A.b([],t.D1)
+r=A.a([],t.D1)
 q=$.ab()
 p.d!==$&&A.bu()
 p.d=new A.Wf(p.e,A.aD(s),A.aD(s),r,A.aD(s),B.z8,q)},
 l(){var s=this.d
-s===$&&A.a()
+s===$&&A.b()
 s.Gg()
 s.Ci()
 this.aI()},
 K(a){var s,r,q,p,o,n,m,l,k,j,i,h,g=this.d
-g===$&&A.a()
+g===$&&A.b()
 s=this.a
 r=s.d
 q=s.e
@@ -84029,7 +84029,7 @@ q.nP()
 s=q.f
 if(s==null)return
 r=q.e
-r===$&&A.a()
+r===$&&A.b()
 r.C0(q.a,s)
 return},
 c8(a){var s,r=this
@@ -84037,10 +84037,10 @@ if(r.r.j(0,a))return
 r.r=a
 r.nP()
 s=r.e
-s===$&&A.a()
+s===$&&A.b()
 s.cq()},
 nP(){var s,r,q,p,o,n,m,l,k,j=this,i=null,h=j.e
-h===$&&A.a()
+h===$&&A.b()
 s=j.b
 r=s.aD
 q=r.w
@@ -84073,7 +84073,7 @@ h.sap9(q==null?r.cl().gb4():q)
 h.sZK(s.vP(j.r.b))
 h.sasa(s.uz)},
 l(){var s,r,q,p=this,o=p.e
-o===$&&A.a()
+o===$&&A.b()
 o.jI()
 s=o.b
 r=s.F$=$.ab()
@@ -84102,7 +84102,7 @@ s=a.a
 r=s.b
 l.Q=r
 q=l.e
-q===$&&A.a()
+q===$&&A.b()
 p=B.b.gac(q.dx)
 o=k.aD.cl().gb4()
 n=A.bd(k.aK(null),new A.i(0,p.a.b-o/2)).b
@@ -84117,16 +84117,16 @@ if(k.y==null)return
 s=a.a
 r=k.dV(s)
 q=l.Q
-q===$&&A.a()
+q===$&&A.b()
 p=l.NR(r.b,k.dV(new A.i(0,q)).b)
 q=A.bd(k.aK(null),new A.i(0,p)).b
 l.Q=q
 o=l.as
-o===$&&A.a()
+o===$&&A.b()
 n=k.fj(new A.i(s.a,q+o))
 switch(A.aF().a){case 2:case 4:q=l.at
 if(q.a===q.b){q=l.e
-q===$&&A.a()
+q===$&&A.b()
 q.oQ(l.k8(n,s,k))
 l.pv(A.ny(n))
 return}o=q.d
@@ -84136,7 +84136,7 @@ m=A.c7(B.j,q,n.a,!1)
 break
 case 0:case 1:case 3:case 5:q=l.r.b
 if(q.a===q.b){q=l.e
-q===$&&A.a()
+q===$&&A.b()
 q.oQ(l.k8(n,s,k))
 l.pv(A.ny(n))
 return}m=A.c7(B.j,q.c,n.a,!1)
@@ -84144,7 +84144,7 @@ if(m.c>=m.d)return
 break
 default:m=null}l.pv(m)
 q=l.e
-q===$&&A.a()
+q===$&&A.b()
 q.oQ(l.k8(m.gdk(),s,k))},
 aaF(a){var s,r,q,p,o,n,m,l=this,k=l.b
 if(k.y==null)return
@@ -84152,7 +84152,7 @@ s=a.a
 r=s.b
 l.ax=r
 q=l.e
-q===$&&A.a()
+q===$&&A.b()
 p=B.b.gab(q.dx)
 o=k.aD.cl().gb4()
 n=A.bd(k.aK(null),new A.i(0,p.a.b-o/2)).b
@@ -84165,16 +84165,16 @@ if(k.y==null)return
 s=a.a
 r=k.dV(s)
 q=l.ax
-q===$&&A.a()
+q===$&&A.b()
 p=l.NR(r.b,k.dV(new A.i(0,q)).b)
 q=A.bd(k.aK(null),new A.i(0,p)).b
 l.ax=q
 o=l.ay
-o===$&&A.a()
+o===$&&A.b()
 n=k.fj(new A.i(s.a,q+o))
 switch(A.aF().a){case 2:case 4:q=l.at
 if(q.a===q.b){q=l.e
-q===$&&A.a()
+q===$&&A.b()
 q.oQ(l.k8(n,s,k))
 l.pv(A.ny(n))
 return}o=q.d
@@ -84184,21 +84184,21 @@ m=A.c7(B.j,q,n.a,!1)
 break
 case 0:case 1:case 3:case 5:q=l.r.b
 if(q.a===q.b){q=l.e
-q===$&&A.a()
+q===$&&A.b()
 q.oQ(l.k8(n,s,k))
 l.pv(A.ny(n))
 return}m=A.c7(B.j,n.a,q.d,!1)
 if(m.c>=m.d)return
 break
 default:m=null}q=l.e
-q===$&&A.a()
+q===$&&A.b()
 q.oQ(l.k8(m.gdk().a<m.gmo().a?m.gdk():m.gmo(),s,k))
 l.pv(m)},
 a8t(a){var s,r,q,p=this,o=p.a
 if(o.e==null)return
 p.at=null
 s=p.e
-s===$&&A.a()
+s===$&&A.b()
 r=s.w||s.r||s.ay||s.ax
 if(!t.qY.b(p.c)){if(!r){s.uI()
 o=p.r.b
@@ -84305,7 +84305,7 @@ p=A.a6b(s,q)
 q=A.tZ(new A.aex(o,p),!1,!1)
 s=A.tZ(new A.aey(o,p),!1,!1)
 o.ok=new A.Vf(s,q)
-r.Wo(0,A.b([q,s],t.wi))},
+r.Wo(0,A.a([q,s],t.wi))},
 anY(){var s=this,r=s.ok
 if(r!=null){r.b.fd(0)
 s.ok.b.l()
@@ -84424,18 +84424,18 @@ if(s!=null)s.a0(r.gy4())},
 l(){var s=this,r=s.a.f
 if(r!=null)r.I(s.gy4())
 r=s.d
-r===$&&A.a()
+r===$&&A.b()
 r.l()
 s.a3j()},
 Fa(){var s,r=this.a.f
 r=r==null?null:r.a
 if(r==null)r=!0
 s=this.d
-if(r){s===$&&A.a()
-s.c7()}else{s===$&&A.a()
+if(r){s===$&&A.b()
+s.c7()}else{s===$&&A.b()
 s.dJ()}},
 K(a){var s,r,q,p=null,o=this.c.ao(t.I).w,n=this.d
-n===$&&A.a()
+n===$&&A.b()
 s=this.a
 r=s.e
 q=s.d
@@ -84451,8 +84451,8 @@ s.a.x.a0(s.gE0())},
 E1(){var s,r=this.a.x.a
 if(r==null)r=!0
 s=this.d
-if(r){s===$&&A.a()
-s.c7()}else{s===$&&A.a()
+if(r){s===$&&A.b()
+s.c7()}else{s===$&&A.b()
 s.dJ()}},
 aL(a){var s,r=this
 r.aY(a)
@@ -84463,7 +84463,7 @@ r.a.x.a0(s)},
 l(){var s,r=this
 r.a.x.I(r.gE0())
 s=r.d
-s===$&&A.a()
+s===$&&A.b()
 s.l()
 r.a3i()},
 K(a){var s,r,q,p,o,n,m,l,k,j,i,h=this,g=null,f=h.a,e=f.y,d=f.w.r6(e)
@@ -84482,7 +84482,7 @@ m=o.z===B.cp&&A.aF()===B.K
 o=o.c
 l=new A.i(-n.a,-n.b).a4(0,new A.i(e,f))
 k=h.d
-k===$&&A.a()
+k===$&&A.b()
 j=A.c([B.is,new A.cn(new A.aqt(h),new A.aqu(h,m),t.YC)],t.u,t.xR)
 i=h.a
 return A.ayT(new A.dK(k,!1,A.ft(new A.hO(B.ek,g,g,new A.iP(new A.bq(new A.av(e,f,e,f),i.w.yC(a,i.z,i.y,i.d),g),j,B.cB,!1,g),g),p,q),g),o,l,!1)}}
@@ -84543,7 +84543,7 @@ r=$.a3.a6$.x.h(0,r)
 r.toString
 s=A.hA(r,null)}return s==null?null:s.a.c},
 aqz(){var s,r=$.dx.e0$
-r===$&&A.a()
+r===$&&A.b()
 r=r.a
 s=A.k(r).i("ba<2>")
 s=A.dM(new A.ba(r,s),s.i("z.E")).kw(A.c5([B.cC,B.d3],t.g))
@@ -85050,14 +85050,14 @@ K(a){A.agD(new A.a_z(this.c,this.d.v()))
 return this.e}}
 A.CV.prototype={
 FO(){var s=this.a.c,r=this.qp$
-if(s){r===$&&A.a()
-r.c7()}else{r===$&&A.a()
+if(s){r===$&&A.b()
+r.c7()}else{r===$&&A.b()
 r.dJ()}},
 aho(a){var s,r=this
 r.a.toString
 r.a7(new A.ahL(r,a))
 s=r.oh$
-s===$&&A.a()
+s===$&&A.b()
 s.c7()},
 RZ(a){var s=this.a,r=this.gagU()
 switch(s.c){case!1:r.$1(!0)
@@ -85070,20 +85070,20 @@ ahm(){return this.RZ(null)},
 OI(a){var s,r=this
 if(r.zA$!=null)r.a7(new A.ahM(r))
 s=r.oh$
-s===$&&A.a()
+s===$&&A.b()
 s.dJ()},
 ab6(){return this.OI(null)},
 a9e(a){var s,r=this
 if(a!==r.ux$){r.a7(new A.ahJ(r,a))
 s=r.Hn$
-if(a){s===$&&A.a()
-s.c7()}else{s===$&&A.a()
+if(a){s===$&&A.b()
+s.c7()}else{s===$&&A.b()
 s.dJ()}}},
 a9q(a){var s,r=this
 if(a!==r.uy$){r.a7(new A.ahK(r,a))
 s=r.Hl$
-if(a){s===$&&A.a()
-s.c7()}else{s===$&&A.a()
+if(a){s===$&&A.b()
+s.c7()}else{s===$&&A.b()
 s.dJ()}}},
 gnq(){var s,r=this,q=A.aD(t.EK)
 r.a.toString
@@ -85224,10 +85224,10 @@ gyG(){return this.e},
 TU(a,b){return this.gyG().$2(a,b)}}
 A.v8.prototype={
 ae(){var s=this.$ti
-return new A.v9(new A.Y0(A.b([],s.i("A<1>")),s.i("Y0<1>")),s.i("v9<1>"))}}
+return new A.v9(new A.Y0(A.a([],s.i("A<1>")),s.i("Y0<1>")),s.i("v9<1>"))}}
 A.v9.prototype={
 gahd(){var s=this.e
-s===$&&A.a()
+s===$&&A.b()
 return s},
 gtq(){var s=this.a.w,r=this.x
 if(r==null){s=$.ab()
@@ -85251,7 +85251,7 @@ s=$.ZV()
 if(s.b===this){q=q.length!==0&&r.b>0
 r=r.gTX()
 s=s.a
-s===$&&A.a()
+s===$&&A.b()
 s.co("UndoManager.setUndoState",A.c(["canUndo",q,"canRedo",r],t.N,t.y),t.H)}},
 ahA(a){this.vA()},
 af1(a){this.vo()},
@@ -85317,7 +85317,7 @@ r=s.f
 if(r!=null)r.b0()
 s.aI()},
 K(a){var s=t.e,r=t.d
-return A.om(A.c([B.Zl,new A.cE(this.gahz(),new A.b0(A.b([],s),r),t._n).di(a),B.Z6,new A.cE(this.gaf0(),new A.b0(A.b([],s),r),t.fN).di(a)],t.u,t.od),this.a.x)},
+return A.om(A.c([B.Zl,new A.cE(this.gahz(),new A.b0(A.a([],s),r),t._n).di(a),B.Z6,new A.cE(this.gaf0(),new A.b0(A.a([],s),r),t.fN).di(a)],t.u,t.od),this.a.x)},
 ahe(a){return this.gahd().$1(a)}}
 A.ai0.prototype={
 $1(a){var s=this.a
@@ -85719,7 +85719,7 @@ return}s=p.q
 if(s===1){a.d0(o,b)
 p.ch.saz(null)
 return}r=p.cx
-r===$&&A.a()
+r===$&&A.b()
 q=p.ch
 q.saz(a.vm(r,b,A.tN(s,s,1),new A.apG(o),t.zV.a(q.a)))},
 cg(a,b){var s,r=this.m$
@@ -85793,7 +85793,7 @@ j(a,b){if(b==null)return!1
 return this.$ti.b(b)&&A.wI(this.a,b.a)},
 gB(a){return new A.pu(B.mx,B.mx,t.S6.bB(this.$ti.c).i("pu<1,2>")).im(this.a)},
 k(a){return"WidgetStateMapper<"+A.bN(this.$ti.c).k(0)+">("+this.a.k(0)+")"},
-H(a,b){throw A.j(A.mx(A.b([A.ju('There was an attempt to access the "'+b.gXe().k(0)+'" field of a WidgetStateMapper<'+A.bN(this.$ti.c).k(0)+"> object."),A.bi(this.k(0)),A.bi("WidgetStateProperty objects should only be used in places that document their support."),A.yA('Double-check whether the map was used in a place that documents support for WidgetStateProperty objects. If so, please file a bug report. (The https://pub.dev/ page for a package contains a link to "View/report issues".)')],t.D)))},
+H(a,b){throw A.j(A.mx(A.a([A.ju('There was an attempt to access the "'+b.gXe().k(0)+'" field of a WidgetStateMapper<'+A.bN(this.$ti.c).k(0)+"> object."),A.bi(this.k(0)),A.bi("WidgetStateProperty objects should only be used in places that document their support."),A.yA('Double-check whether the map was used in a place that documents support for WidgetStateProperty objects. If so, please file a bug report. (The https://pub.dev/ page for a package contains a link to "View/report issues".)')],t.D)))},
 $ibC:1}
 A.bm.prototype={
 U(a){return this.a},
@@ -85856,7 +85856,7 @@ B.b.W(p.cx)
 B.b.W(p.cy)
 p.dy=!1
 p.x.am(0,new A.a7F())
-s.push(new A.Dy(null,A.b([],t.p)))
+s.push(new A.Dy(null,A.a([],t.p)))
 for(r=a.length,q=0;q<a.length;a.length===r||(0,A.B)(a),++q)a[q].eT(p)
 return B.b.gbn(s).b},
 Jy(a){var s,r,q,p,o,n,m,l,k,j=this,i=a.a
@@ -85873,12 +85873,12 @@ s=a.c
 if(s.h(0,"start")!=null){s=s.h(0,"start")
 s.toString
 r=A.fD(s,null)-1}}else if(i==="blockquote")j.dy=!0
-else if(i==="table")j.CW.push(new A.X7(A.b([],t.nk)))
+else if(i==="table")j.CW.push(new A.X7(A.a([],t.nk)))
 else if(i==="tr"){s=j.CW
 q=B.b.gbn(s).a.length
 p=j.c.p2
 if(q===0||(q&1)===1)p=null
-B.b.gbn(s).a.push(new A.k4(p,A.b([],t.p)))}o=new A.Dy(i,A.b([],t.p))
+B.b.gbn(s).a.push(new A.k4(p,A.a([],t.p)))}o=new A.Dy(i,A.a([],t.p))
 if(r!=null)o.c=r
 j.ch.push(o)}else{if(i==="a"){n=j.Vg(a)
 if(n==null)return!1
@@ -85894,7 +85894,7 @@ s.toString
 J.ff(s,new A.ck(""))}s=j.cx
 k=B.b.gac(s).b
 k.toString
-s.push(new A.EI(k.aA(j.c.F.h(0,i)),A.b([],t.p)))}return!0},
+s.push(new A.EI(k.aA(j.c.F.h(0,i)),A.a([],t.p)))}return!0},
 Vg(a){var s,r=a instanceof A.bh
 if(r){s=a.b
 s=s==null?null:J.oi(s)
@@ -85942,7 +85942,7 @@ l=o.fr
 l.toString
 o=o.fy
 o=A.ft(m,b,l+o.a+o.c)
-r=A.d4(A.b([o,new A.te(1,B.o7,r,b)],t.p),q,B.z,B.bI,p)}}else if(a==="table")r=c.a4S()
+r=A.d4(A.a([o,new A.te(1,B.o7,r,b)],t.p),q,B.z,B.bI,p)}}else if(a==="table")r=c.a4S()
 else if(a==="blockquote"){c.dy=!1
 q=c.c
 p=q.R8
@@ -85988,7 +85988,7 @@ if(f!=null){p=f.d
 o=a0.goL()
 l=f.a
 if(l==null)l=b
-else{e=A.b([B.Ik],t.xU)
+else{e=A.a([B.Ik],t.xU)
 l=l.aku(e)}d=c.CI(A.cq(b,b,p,b,l,o))
 q.pop()
 q.push(d)}}}q=s.c
@@ -86037,7 +86037,7 @@ a4Q(a,b){if(a.j(0,B.S))return b
 return new A.bq(a,b,null)},
 LK(a){var s=this.cx
 if(s.length===0){a.toString
-s.push(new A.EI(this.c.F.h(0,a),A.b([],t.p)))}},
+s.push(new A.EI(this.c.F.h(0,a),A.a([],t.p)))}},
 Cu(a){var s=B.b.gac(this.ch),r=s.b
 if(r.length!==0)r.push(A.ft(null,this.c.dy,null))
 r.push(a);++s.c},
@@ -86056,7 +86056,7 @@ if(p.j(0,B.S))m.Cu(n)
 else m.Cu(new A.bq(p,n,null))
 B.b.W(l)}},
 NV(a){var s=a.c
-if(s==null)return A.b([a],t.VO)
+if(s==null)return A.a([a],t.VO)
 return new A.a_(s,new A.a7E(a),A.X(s).i("a_<1,e6>"))},
 NU(a){var s
 $label0$0:{if(a instanceof A.Ot){s=a.d
@@ -86064,12 +86064,12 @@ break $label0$0}if(a instanceof A.bj){s=a.d
 break $label0$0}if(a instanceof A.Bq){s=a.e
 break $label0$0}s=null
 break $label0$0}return s},
-Pq(a,b){var s,r,q,p,o,n,m,l,k,j,i,h=this,g=null,f=A.b([],t.p)
+Pq(a,b){var s,r,q,p,o,n,m,l,k,j,i,h=this,g=null,f=A.a([],t.p)
 for(s=a.length,r=t.VO,q=!1,p=0;p<a.length;q=!m,a.length===s||(0,A.B)(a),++p){o=a[p]
 n=h.NU(o)
 m=n==null
 if(m){f.push(o)
-continue}l=A.b([],r)
+continue}l=A.a([],r)
 if(q){k=h.NU(f.pop())
 k.toString
 B.b.P(l,h.NV(k))}B.b.P(l,h.NV(n))
@@ -86122,10 +86122,10 @@ return s}return B.S},
 acy(a){var s,r,q,p,o,n,m,l,k,j
 if(a.length<2)return a
 s=t.VO
-r=A.b([],s)
+r=A.a([],s)
 for(q=1;q<a.length;++q){p=r.length===0?B.b.gab(a):r.pop()
 o=a[q]
-if(!(p instanceof A.h_)||!(o instanceof A.h_)){B.b.P(r,A.b([p,o],s))
+if(!(p instanceof A.h_)||!(o instanceof A.h_)){B.b.P(r,A.a([p,o],s))
 continue}n=p.d
 if(o.d==n)m=J.e(o.a,p.a)
 else m=!1
@@ -86135,7 +86135,7 @@ k=l.a
 l=new A.cB("")
 o.tR(l,!0,!0)
 j=l.a
-r.push(A.cq(null,null,n,p.w,p.a,(k.charCodeAt(0)==0?k:k)+(j.charCodeAt(0)==0?j:j)))}else B.b.P(r,A.b([p,o],s))}return r},
+r.push(A.cq(null,null,n,p.w,p.a,(k.charCodeAt(0)==0?k:k)+(j.charCodeAt(0)==0?j:j)))}else B.b.P(r,A.a([p,o],s))}return r},
 CJ(a,b){var s=b==null?B.ay:b
 return A.aBL(a,new A.lF(),null,s,this.c.a_)},
 CI(a){return this.CJ(a,null)}}
@@ -86245,7 +86245,7 @@ return A.bx([s.a,s.b,s.c,s.d,s.e,s.f,s.r,s.w,s.x,s.y,s.z,s.Q,s.as,s.at,s.ax,s.ay
 A.Mi.prototype={
 J(){return"MarkdownListItemCrossAxisAlignment."+this.b}}
 A.zR.prototype={
-ae(){return new A.TJ(A.b([],t.vf))}}
+ae(){return new A.TJ(A.a([],t.vf))}}
 A.TJ.prototype={
 bh(){this.PP()
 this.cV()},
@@ -86263,7 +86263,7 @@ i.a.toString
 h=$.aEY()
 g=t.N
 r=t.s
-q=A.b([],r)
+q=A.a([],r)
 p=A.aD(t.Yd)
 o=A.aD(t.dG)
 n=h.b.length!==0
@@ -86278,7 +86278,7 @@ k=A.a_Y(h,m).XA()
 m.PO(k)
 j=m.a7f(k)
 h=i.a
-i.d=new A.a7D(i,!1,s,h.z,h.ax,h.ay,h.ch,h.CW,h.cx,h.cy,!0,h.dx,h.x,h.y,!1,A.b([],r),A.b([],t.vB),A.b([],t.EM),A.b([],t.an),A.b([],t.vf)).K(j)},
+i.d=new A.a7D(i,!1,s,h.z,h.ax,h.ay,h.ch,h.CW,h.cx,h.cy,!0,h.dx,h.x,h.y,!1,A.a([],r),A.a([],t.vB),A.a([],t.EM),A.a([],t.an),A.a([],t.vf)).K(j)},
 Ng(){var s,r,q=this.e
 if(q.length===0)return
 s=A.i2(q,!0,t.cD)
@@ -86333,7 +86333,7 @@ return a.b.test(s)},
 IM(a,b){var s,r,q,p,o,n,m,l,k,j,i,h=this
 h.w=b
 h.x=a
-s=A.b([],t.c)
+s=A.a([],t.c)
 for(r=h.a,q=h.c,p=null,o=0;n=h.d,n<r.length;){for(m=q.length,l=0;l<q.length;q.length===m||(0,A.B)(q),++l){k=q[l]
 if(p===k)continue
 if(k.lc(h)){h.z=h.y
@@ -86361,7 +86361,7 @@ return a.lc(s)&&a.mp(s)},
 $S:67}
 A.J0.prototype={
 geG(){return $.ay3()},
-mV(a){var s,r,q,p,o,n,m,l,k,j,i,h=A.b([],t.Rv)
+mV(a){var s,r,q,p,o,n,m,l,k,j,i,h=A.a([],t.Rv)
 $.a0_=!1
 for(s=a.a,r=a.c;q=a.d,q<s.length;){q=s[q].a
 p=$.ay3().eE(q)
@@ -86393,7 +86393,7 @@ $S:67}
 A.xP.prototype={
 geG(){return $.a_4()},
 mp(a){return!1},
-mV(a){var s,r,q,p,o,n=A.b([],t.Rv)
+mV(a){var s,r,q,p,o,n=A.a([],t.Rv)
 for(s=a.a;r=a.d,r<s.length;){q=s[r].c
 if(q&&this.agq(a))break
 r=!1
@@ -86409,7 +86409,7 @@ q.push(new A.eI("",null,p.b.test("")))
 s=new A.a_(q,new A.a16(),A.X(q).i("a_<1,r>")).bj(0,"\n")
 p=t.c
 r=t.N
-return new A.bh("pre",A.b([new A.bh("code",A.b([new A.ck(s)],p),A.o(r,r))],p),A.o(r,r))},
+return new A.bh("pre",A.a([new A.bh("code",A.a([new A.ck(s)],p),A.o(r,r))],p),A.o(r,r))},
 agq(a){var s,r,q,p
 for(s=1;;){r=a.aqO(s)
 if(r==null)return!0
@@ -86434,13 +86434,13 @@ l=this.aqJ(a,s.b,s.a)
 r=new A.a_(l,new A.a42(),A.X(l).i("a_<1,r>")).bj(0,"\n")
 if(r.length!==0)r+="\n"
 l=t.c
-q=A.b([new A.ck(r)],l)
+q=A.a([new A.ck(r)],l)
 p=t.N
 o=A.o(p,p)
 n=s.c
 if(B.b.gab(n.split(" ")).length!==0){m=A.ZN(B.b.gab(n.split(" ")),$.Io(),A.auj(),null)
-o.p(0,"class","language-"+m)}return new A.bh("pre",A.b([new A.bh("code",q,o)],l),A.o(p,p))},
-aqJ(a,b,c){var s,r,q,p,o,n=A.b([],t.Rv),m=++a.d
+o.p(0,"class","language-"+m)}return new A.bh("pre",A.a([new A.bh("code",q,o)],l),A.o(p,p))},
+aqJ(a,b,c){var s,r,q,p,o,n=A.a([],t.Rv),m=++a.d
 for(s=a.a,r="^\\s{0,"+c+"}",q=null;m<s.length;){p=$.a_1().eE(s[m].a)
 q=p==null?null:A.aCw(p)
 m=q==null||!B.c.bo(q.b,b)||q.c.length!==0
@@ -86466,7 +86466,7 @@ s.b.p(0,n,0)
 r=A.kl(2,n,B.X,!1);++a.d
 o=B.c.bv(p,o[0].length)
 q=$.ix()
-o=A.b([new A.eI(o,null,q.b.test(o))],t.Rv)
+o=A.a([new A.eI(o,null,q.b.test(o))],t.Rv)
 B.b.P(o,this.mV(a))
 q=t.N
 q=A.o(q,q)
@@ -86474,7 +86474,7 @@ s=new A.bh("li",A.a_Y(o,s).XA(),q)
 q.p(0,"id","fn-"+r)
 s.e=n
 return s},
-mV(a){var s,r,q,p,o=A.b([],t.s),n=A.qS(new A.a4E(a))
+mV(a){var s,r,q,p,o=A.a([],t.s),n=A.qS(new A.a4E(a))
 for(s=a.a,r=!1;q=a.d,q<s.length;){p=s[q].a
 if(B.c.fN(p).length===0){o.push(p);++a.d
 r=!0
@@ -86510,7 +86510,7 @@ o=B.c.Y(m[a.d].a,p,n)}o=B.c.fN(o)
 if(l){m=A.aM("^#+$",!0,!1,!1)
 m=m.b.test(o)}else m=!1
 if(m)o=null;++a.d
-m=A.b([],t.c)
+m=A.a([],t.c)
 if(o!=null)m.push(new A.nE(o))
 l=t.N
 return new A.bh("h"+q,m,A.o(l,l))}}
@@ -86522,7 +86522,7 @@ return new A.bh("hr",null,A.o(s,s))}}
 A.Lb.prototype={
 geG(){return $.a_3()},
 mp(a){return $.a_3().eE(a.a[a.d].a).qC("condition_7")==null},
-mV(a){var s,r,q,p=A.b([],t.Rv),o=a.a,n=$.a_3().eE(o[a.d].a).b,m=n.length-1,l=0
+mV(a){var s,r,q,p=A.a([],t.Rv),o=a.a,n=$.a_3().eE(o[a.d].a).b,m=n.length-1,l=0
 for(;;){if(!(l<m)){s=0
 break}r=l+1
 if(n[r]!=null){s=l
@@ -86551,7 +86551,7 @@ $S:62}
 A.zH.prototype={
 geG(){return $.aHF()},
 mp(a){return!1},
-iu(a){var s=a.a,r=A.b([s[a.d]],t.Rv);++a.d
+iu(a){var s=a.a,r=A.a([s[a.d]],t.Rv);++a.d
 while(!A.auN(a)){r.push(s[a.d]);++a.d}if(!this.aed(r,a))a.d-=r.length
 return null},
 aed(a,b){var s,r,q=new A.a79(new A.a_(a,new A.a7a(),A.X(a).i("a_<1,r>")).bj(0,"\n"))
@@ -86588,8 +86588,8 @@ if(s)return!1
 r=r.b[2]
 r=r==null?null:r.length!==0
 return r===!0},
-iu(c6){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8=this,b9=null,c0="class",c1={},c2=c6.a,c3=b8.geG().eE(c2[c6.d].a).b[1]!=null,c4=b8 instanceof A.D9||b8 instanceof A.As,c5=A.b([],t.Y6)
-c1.a=A.b([],t.Rv)
+iu(c6){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8=this,b9=null,c0="class",c1={},c2=c6.a,c3=b8.geG().eE(c2[c6.d].a).b[1]!=null,c4=b8 instanceof A.D9||b8 instanceof A.As,c5=A.a([],t.Y6)
+c1.a=A.a([],t.Rv)
 c1.b=null
 s=new A.a7e(c1,c5)
 r=new A.a7f(c1,c4)
@@ -86644,7 +86644,7 @@ k=b}else if(A.auN(c6))break
 else{j=c1.a
 if(j.length!==0&&B.b.gac(j).c){c6.f=!0
 break}c1.a.push(c2[c6.d])}++c6.d}s.$0()
-a5=A.b([],t.CE)
+a5=A.a([],t.CE)
 B.b.am(c5,b8.gaf5())
 a6=b8.af7(c5)
 for(c2=c5.length,o=t.N,j=c6.b,a7=!1,a8=!1,a9=0;a9<c5.length;c5.length===c2||(0,A.B)(c5),++a9){b0=c5[a9]
@@ -86678,7 +86678,7 @@ if(a.length!==0){s=B.b.gab(a)
 if(s instanceof A.bh&&s.a==="p"){r=s.b
 r.toString
 J.auD(r,0,b)
-return a}}r=A.b([b],t.c)
+return a}}r=A.a([b],t.c)
 B.b.P(r,a)
 return r},
 af6(a){var s=a.a
@@ -86692,7 +86692,7 @@ a[r].a.pop()}}return s}}
 A.a7e.prototype={
 $0(){var s=this.a,r=s.a
 if(r.length!==0){this.b.push(new A.tB(r,s.b))
-s.a=A.b([],t.Rv)}},
+s.a=A.a([],t.Rv)}},
 $S:0}
 A.a7f.prototype={
 $1(a){var s,r,q=A.aM("^ {0,3}\\[([ xX])\\][ \\t]",!0,!1,!1)
@@ -86720,14 +86720,14 @@ A.u2.prototype={
 geG(){return $.aux()},
 mp(a){return!1},
 lc(a){return!0},
-iu(a){var s,r,q=a.a,p=A.b([q[a.d].a],t.s),o=++a.d
+iu(a){var s,r,q=a.a,p=A.a([q[a.d].a],t.s),o=++a.d
 for(;;){if(!(o<q.length)){s=!1
 break}r=this.aoA(a)
 if(r!=null){s=r instanceof A.BW
 break}p.push(q[a.d].a)
 o=++a.d}if(s)return null
 q=t.N
-return new A.bh("p",A.b([new A.nE(B.c.kO(B.b.bj(p,"\n")))],t.c),A.o(q,q))}}
+return new A.bh("p",A.a([new A.nE(B.c.kO(B.b.bj(p,"\n")))],t.c),A.o(q,q))}}
 A.BW.prototype={
 geG(){return $.ay9()},
 lc(a){var s,r,q=a.y
@@ -86743,7 +86743,7 @@ B.b.iv(s)
 r=B.c.fN(p[a.d].a)[0]==="="?"1":"2"
 q=B.c.kO(new A.a_(s,new A.afN(),A.X(s).i("a_<1,r>")).bj(0,"\n"));++a.d
 p=t.N
-return new A.bh("h"+r,A.b([new A.nE(q)],t.c),A.o(p,p))}}
+return new A.bh("h"+r,A.a([new A.nE(q)],t.c),A.o(p,p))}}
 A.afN.prototype={
 $1(a){return a.a},
 $S:62}
@@ -86756,19 +86756,19 @@ i.toString
 if(J.bE(i)!==k){--a.d
 return null}i=t.c
 s=t.N
-r=new A.bh("thead",A.b([j],i),A.o(s,s));++a.d
-q=A.b([],t.CE)
+r=new A.bh("thead",A.a([j],i),A.o(s,s));++a.d
+q=A.a([],t.CE)
 p=a.a
 for(;;){if(!(a.d<p.length&&!A.auN(a)))break
 o=this.PQ(a,l,"td")
 n=o.b
-if(n!=null){for(m=J.aS(n);m.gD(n)<k;)m.C(n,new A.bh("td",A.b([],i),A.o(s,s)))
+if(n!=null){for(m=J.aS(n);m.gD(n)<k;)m.C(n,new A.bh("td",A.a([],i),A.o(s,s)))
 while(m.gD(n)>k)m.iv(n)}n.toString
 m=J.aS(n)
 while(m.gD(n)>k)m.iv(n)
-q.push(o)}if(q.length===0)return new A.bh("table",A.b([r],i),A.o(s,s))
-else return new A.bh("table",A.b([r,new A.bh("tbody",q,A.o(s,s))],i),A.o(s,s))},
-ae6(a){var s,r,q,p,o,n,m,l=A.b([],t._m)
+q.push(o)}if(q.length===0)return new A.bh("table",A.a([r],i),A.o(s,s))
+else return new A.bh("table",A.a([r,new A.bh("tbody",q,A.o(s,s))],i),A.o(s,s))},
+ae6(a){var s,r,q,p,o,n,m,l=A.a([],t._m)
 for(s=a.length,r=!1,q=!1,p=null,o=0;o<s;++o){n=a.charCodeAt(o)
 m=!0
 if(n!==32)if(n!==9)m=!r&&n===124
@@ -86780,7 +86780,7 @@ if(m){l.push(p)
 p=null}q=!m
 r=!0}if(q)l.push(p)
 return l},
-PQ(a,b,c){var s,r,q,p,o,n,m,l=a.a[a.d],k=A.b([],t.s),j=l.a,i=this.aiu(j)
+PQ(a,b,c){var s,r,q,p,o,n,m,l=a.a[a.d],k=A.a([],t.s),j=l.a,i=this.aiu(j)
 for(s=j.length,r=s-1,q="";;){if(i>=s){k.push(B.c.kO(q.charCodeAt(0)==0?q:q))
 break}p=j.charCodeAt(i)
 if(p===92){if(i===r){j=q+A.bL(p)
@@ -86792,8 +86792,8 @@ if(p===124){k.push(B.c.kO(q.charCodeAt(0)==0?q:q))
 i=this.T9(j,i)
 if(i>=s)break
 q=""}else q+=A.bL(p)}}++a.d
-j=A.b([],t.CE)
-for(s=k.length,r=t.c,q=t.N,n=0;n<k.length;k.length===s||(0,A.B)(k),++n)j.push(new A.bh(c,A.b([new A.nE(k[n])],r),A.o(q,q)))
+j=A.a([],t.CE)
+for(s=k.length,r=t.c,q=t.N,n=0;n<k.length;k.length===s||(0,A.B)(k),++n)j.push(new A.bh(c,A.a([new A.nE(k[n])],r),A.o(q,q)))
 m=0
 for(;;){if(!(m<j.length&&m<b.length))break
 c$1:{s=b[m]
@@ -86817,13 +86817,13 @@ A.D9.prototype={}
 A.a28.prototype={
 PO(a){var s,r,q,p,o,n,m,l,k,j,i,h,g=this,f=null
 for(s=J.aS(a),r=t.xB,q=g.z,p=t.HB,o=t.c,n=g.y,m=0;m<s.gD(a);++m){l=s.h(a,m)
-if(l instanceof A.nE){k=A.b([],r)
-j=A.b([],p)
-i=A.b([],o)
+if(l instanceof A.nE){k=A.a([],r)
+j=A.a([],p)
+i=A.a([],o)
 B.b.P(k,n)
 if(q)k.push(new A.v_(A.aM("[A-Za-z0-9]+(?=\\s)",!0,!0,!1),f))
 else k.push(new A.v_(A.aM("[ \\tA-Za-z0-9]*[A-Za-z0-9](?=\\s)",!0,!0,!1),f))
-B.b.P(k,A.b([new A.KE(A.aM("\\\\([!\"#$%&'()*+,\\-./:;<=>?@\\[\\\\\\]^_`{|}~])",!0,!0,!1),92),new A.JZ(A.aM($.Io().a,!1,!0,!1),38),A.aL4(f,"\\[",91),A.aKK(f)],r))
+B.b.P(k,A.a([new A.KE(A.aM("\\\\([!\"#$%&'()*+,\\-./:;<=>?@\\[\\\\\\]^_`{|}~])",!0,!0,!1),92),new A.JZ(A.aM($.Io().a,!1,!0,!1),38),A.aL4(f,"\\[",91),A.aKK(f)],r))
 B.b.P(k,$.aF6())
 h=new A.a6d(l.a,g,k,j,i).aqI()
 s.de(a,m)
@@ -86831,7 +86831,7 @@ s.jK(a,m,h)
 m+=h.length-1}else if(l instanceof A.bh&&l.b!=null){k=l.b
 k.toString
 g.PO(k)}}},
-a7f(a){var s,r,q,p,o,n,m,l,k,j=A.b([],t.CE),i=t.c,h=A.b([],i)
+a7f(a){var s,r,q,p,o,n,m,l,k,j=A.a([],t.CE),i=t.c,h=A.a([],i)
 for(s=a.length,r=this.b,q=0;q<a.length;a.length===s||(0,A.B)(a),++q){p=a[q]
 if(p instanceof A.bh&&p.a==="li"&&r.ap(p.e)){o=p.e
 if(o!=null){n=r.h(0,o)
@@ -86843,27 +86843,27 @@ if(l!=null)this.a4l(l,A.kl(2,o,B.X,!1),n)}}else h.push(p)}if(j.length!==0){s=t.N
 r=A.o(s,t.S)
 for(m=this.c,k=0;k<m.length;++k)r.p(0,"fn-"+m[k],k)
 B.b.fT(j,new A.a29(r))
-i=A.b([new A.bh("ol",j,A.o(s,s))],i)
+i=A.a([new A.bh("ol",j,A.o(s,s))],i)
 s=A.o(s,s)
 s.p(0,"class","footnotes")
 h.push(new A.bh("section",i,s))}return h},
-a4l(a,b,c){var s,r,q,p,o,n,m,l,k,j,i=t.c,h=A.b([],i)
+a4l(a,b,c){var s,r,q,p,o,n,m,l,k,j,i=t.c,h=A.a([],i)
 for(s=t.N,r="#fnref-"+b,q=0;q<c;q=p){p=q+1
 o=""+p
 n=q>0
 m=n?"-"+o:""
-l=A.b([new A.ck("\u21a9")],i)
-if(n){n=A.b([new A.ck(o)],i)
+l=A.a([new A.ck("\u21a9")],i)
+if(n){n=A.a([new A.ck(o)],i)
 k=A.o(s,s)
 k.p(0,"class","footnote-ref")
 l.push(new A.bh("sup",n,k))}n=A.o(s,s)
 n.p(0,"href",r+m)
 n.p(0,"class","footnote-backref")
-B.b.P(h,A.b([new A.ck(" "),new A.bh("a",l,n)],i))}r=J.aS(a)
+B.b.P(h,A.a([new A.ck(" "),new A.bh("a",l,n)],i))}r=J.aS(a)
 if(r.ga9(a))r.P(a,h)
 else{j=r.gac(a)
 if(j instanceof A.bh){i=j.b
-if(i!=null)J.ayb(i,h)}else{i=A.b([j],i)
+if(i!=null)J.ayb(i,h)}else{i=A.a([j],i)
 B.b.P(i,h)
 r.sac(a,new A.bh("p",i,A.o(s,s)))}}}}
 A.a29.prototype={
@@ -87027,7 +87027,7 @@ r.toString
 q=B.c.Y(r,0,s)
 if(n)p="mailto:"+q
 else p=q[0]==="w"?"http://"+q:q
-r=A.b([new A.ck(q)],t.c)
+r=A.a([new A.ck(q)],t.c)
 o=t.N
 o=A.o(o,o)
 o.p(0,"href",A.kl(4,p,B.X,!1))
@@ -87045,7 +87045,7 @@ return a.length-r}}
 A.IO.prototype={
 is(a,b){var s,r,q,p=b.b[1]
 p.toString
-s=A.b([new A.ck(p)],t.c)
+s=A.a([new A.ck(p)],t.c)
 r=t.N
 r=A.o(r,r)
 q=A.axr(p)
@@ -87065,7 +87065,7 @@ is(a,b){var s=b.b[1].length,r=b.h(0,0).length,q=a.d+s,p=B.c.Y(a.a,q,q+(r-s*2))
 if(this.agu(p))p=B.c.Y(p,1,p.length-1)
 p=A.m4(p,"\n"," ")
 r=t.N
-a.r.push(new A.bh("code",A.b([new A.ck(p)],t.c),A.o(r,r)))
+a.r.push(new A.bh("code",A.a([new A.ck(p)],t.c),A.o(r,r)))
 return!0},
 agu(a){var s,r
 if(B.c.fN(a).length===0)return!1
@@ -87099,7 +87099,7 @@ a.f.push(A.aJf(a,q,p,s.d,n,s,o))
 a.r.push(n)
 return!0},
 Gl(a,b,c,d,e){var s=t.N
-return A.b([new A.bh(e,d.$0(),A.o(s,s))],t.c)}}
+return A.a([new A.bh(e,d.$0(),A.o(s,s))],t.c)}}
 A.jq.prototype={}
 A.C_.prototype={$iy9:1,
 gtJ(){return this.b},
@@ -87122,7 +87122,7 @@ $S:560}
 A.Ku.prototype={
 is(a,b){var s,r,q=b.b[1]
 q.toString
-s=A.b([new A.ck(q)],t.c)
+s=A.a([new A.ck(q)],t.c)
 r=t.N
 r=A.o(r,r)
 r.p(0,"href",A.kl(4,"mailto:"+q,B.X,!1))
@@ -87179,7 +87179,7 @@ if(l>=s)return o.y6(n,k)
 r=m.charCodeAt(l)
 if(r===40){a.d=l
 q=o.aec(a)
-if(q!=null)return A.b([o.GC(q.a,q.b,d)],t.c)
+if(q!=null)return A.a([o.GC(q.a,q.b,d)],t.c)
 a.d=l
 a.d=l+-1
 return o.y6(n,k)}if(r===91){a.d=l;++l
@@ -87201,7 +87201,7 @@ r.p(0,"href",A.axr(A.atI(a)))
 if(b!=null&&b.length!==0)r.p(0,"title",B.of.dq(A.ZN(A.atI(b),$.Io(),A.auj(),null)))
 return new A.bh("a",s,r)},
 S4(a,b,c){var s=this.afm(b,a.a.b.a,a.c)
-if(s!=null)return A.b([s],t.c)
+if(s!=null)return A.a([s],t.c)
 return A.aKq(a,b,c)},
 y6(a,b){return this.S4(a,b,null)},
 aee(a){var s,r,q,p,o,n=null,m=++a.d,l=a.a,k=l.length
@@ -87331,7 +87331,7 @@ return}o=m.ac9()
 if(!o&&!p)return
 if(o){m.Al()
 if(m.b!==q&&m.pY()!==10){if(!p)return
-m.f=null}}n=A.b(B.c.bv(r,m.b).split("\n"),t.s)
+m.f=null}}n=A.a(B.c.bv(r,m.b).split("\n"),t.s)
 if(n.length!==0&&B.c.fN(B.b.gab(n)).length===0)B.b.de(n,0)
 m.r=n.length
 m.c=!0},
@@ -87643,7 +87643,7 @@ $S:4}
 A.a94.prototype={
 $1(a){var s=a.c
 if(s===B.dp||s===B.dn){s=a.b.c
-s===$&&A.a()
+s===$&&A.b()
 return s}if(s===B.an)return a.d?85:25
 return a.d?30:90},
 $S:3}
@@ -87754,9 +87754,9 @@ $1(a){var s=a.c
 if(s===B.an)return a.d?60:49
 if(!(s===B.dp||s===B.dn))return a.d?30:90
 s=a.b.c
-s===$&&A.a()
+s===$&&A.b()
 s=A.avd(a.w.bg(s)).c
-s===$&&A.a()
+s===$&&A.b()
 return s},
 $S:3}
 A.a9U.prototype={
@@ -87980,21 +87980,21 @@ j(a,b){var s,r
 if(b==null)return!1
 if(!(b instanceof A.fR))return!1
 s=b.d
-s===$&&A.a()
+s===$&&A.b()
 r=this.d
-r===$&&A.a()
+r===$&&A.b()
 return s===r},
 gB(a){var s=this.d
-s===$&&A.a()
+s===$&&A.b()
 return B.i.gB(s)},
 k(a){var s,r,q=this.a
-q===$&&A.a()
+q===$&&A.b()
 q=B.i.k(B.d.aC(q))
 s=this.b
-s===$&&A.a()
+s===$&&A.b()
 s=B.d.aC(s)
 r=this.c
-r===$&&A.a()
+r===$&&A.b()
 return"H"+q+" C"+s+" T"+B.i.k(B.d.aC(r))}}
 A.aij.prototype={}
 A.qy.prototype={
@@ -88019,12 +88019,12 @@ A.Oi.prototype={}
 A.Oj.prototype={}
 A.agZ.prototype={
 aj0(a2,a3){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a=this,a0=a.a,a1=a0.a
-a1===$&&A.a()
+a1===$&&A.b()
 s=B.d.aC(a1)
 r=a.goo()[s]
 q=a.B3(r)
 a1=t.DU
-p=A.b([r],a1)
+p=A.a([r],a1)
 for(o=0,n=0;n<360;++n,q=l){m=B.i.bs(s+n,360)
 l=a.B3(a.goo()[m])
 o+=Math.abs(l-q)}k=o/a3
@@ -88041,7 +88041,7 @@ p.push(h)
 g=p.length
 f=i>=(g+e)*k;++e}++j
 if(j>360){while(p.length<a3)p.push(h)
-break}}d=A.b([a0],a1)
+break}}d=A.a([a0],a1)
 c=B.d.h7((a2-1)/2)
 for(a0=c+1,n=1;n<a0;++n){b=0-n
 for(a1=p.length;b<0;)b=a1+b
@@ -88050,17 +88050,17 @@ d.push(p[b>=a1?B.i.bs(b,a1):b])}return d},
 gak9(){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d=this,c=d.f
 if(c!=null)return c
 c=B.b.gab(d.glq()).a
-c===$&&A.a()
+c===$&&A.b()
 s=d.gkJ().h(0,B.b.gab(d.glq()))
 s.toString
 r=B.b.gac(d.glq()).a
-r===$&&A.a()
+r===$&&A.b()
 q=d.gkJ().h(0,B.b.gac(d.glq()))
 q.toString
 p=q-s
 q=d.a
 o=q.a
-o===$&&A.a()
+o===$&&A.b()
 n=A.aBK(c,o,r)
 if(n)m=r
 else m=c
@@ -88112,7 +88112,7 @@ s.push(a4.a)
 a5=A.o(a5,t.i)
 for(r=s.length,q=0;q<s.length;s.length===r||(0,A.B)(s),++q){p=s[q]
 o=p.d
-o===$&&A.a()
+o===$&&A.b()
 n=A.cF(B.i.fo(o,16)&255)
 m=A.cF(B.i.fo(o,8)&255)
 l=A.cF(o&255)
@@ -88143,11 +88143,11 @@ a3=B.d.bs(a3-50,360)
 a5.p(0,p,-0.5+0.02*o*Math.cos((a3<0?a3+360:a3)*3.141592653589793/180))}return a4.d=a5},
 goo(){var s,r,q,p,o,n,m,l,k,j,i,h=this.c
 if(h.length!==0)return h
-s=A.b([],t.DU)
+s=A.a([],t.DU)
 for(h=this.a,r=t.n,q=0;q<=360;++q){p=h.b
-p===$&&A.a()
+p===$&&A.b()
 o=h.c
-o===$&&A.a()
+o===$&&A.b()
 n=A.p6(q,p,o)
 m=new A.fR()
 m.d=n
@@ -88155,11 +88155,11 @@ o=$.Il()
 p=n>>>16&255
 l=n>>>8&255
 k=n&255
-j=A.jI(A.b([A.cF(p),A.cF(l),A.cF(k)],r),$.iB)
+j=A.jI(A.a([A.cF(p),A.cF(l),A.cF(k)],r),$.iB)
 i=A.a0n(j[0],j[1],j[2],o)
 m.a=i.a
 m.b=i.b
-m.c=116*A.mk(A.jI(A.b([A.cF(p),A.cF(l),A.cF(k)],r),$.iB)[1]/100)-16
+m.c=116*A.mk(A.jI(A.a([A.cF(p),A.cF(l),A.cF(k)],r),$.iB)[1]/100)-16
 s.push(m)}return this.c=A.i2(s,!1,t.bq)}}
 A.ah_.prototype={
 $2(a,b){var s=this.a,r=s.h(0,a)
@@ -88256,7 +88256,7 @@ gIu(){return"windows"},
 gw5(){return"\\"}}
 A.ru.prototype={
 K(a){var s=this,r=null
-return A.dP(A.dF(r,B.ap,r,0,B.Yg),B.ao,A.eJ(A.b([new A.bq(B.cX,A.by("Gastroenterology (\u80c3\u8178\u809d\u81bd)",r,r,r,r,B.dk,r,r),r),s.ev(a,"R-Factor (Liver Injury)","\u9700: ALT, Alk-P (\u8207\u5176\u6b63\u5e38\u503c\u4e0a\u9650 ULN)",B.oi,B.hL,B.Qh),s.ev(a,"Maddrey's Discriminant","\u9700: PT (Patient/Control), Bilirubin",B.IP,B.f7,B.Ns),s.ev(a,"SAAG (\u8179\u6c34\u68af\u5ea6)","\u9700: Serum Albumin, Ascites Albumin",B.ok,B.da,B.QZ),s.ev(a,"Stool Osmotic Gap","\u9700: Stool Na, Stool K",B.J1,B.kO,B.Td),new A.bq(B.cX,A.by("Pulmonary (\u80f8\u8154)",r,r,r,r,B.dk,r,r),r),s.ev(a,"A-a Gradient","\u9700: Age, PaO2, PaCO2, FiO2",B.Ix,B.hK,B.Bc),s.ev(a,"Ventilator Mechanics","\u9700: Vt, P-peak, P-plat, PEEP",B.IO,B.bf,B.ZN),s.ev(a,"RSBI (Weaning)","\u9700: RR, Vt (mL)",B.IW,B.cj,B.Qi),new A.bq(B.cX,A.by("Nephrology (\u814e\u81df)",r,r,r,r,B.dk,r,r),r),s.ev(a,"Acid-Base Analysis","\u9700: pH, PaCO2, HCO3, Na, Cl, Alb",B.ol,B.kN,B.Bf),s.ev(a,"FeNa (\u9209\u6392\u6cc4\u7387)","\u9700: Serum Na, Serum Cr, Urine Na, Urine Cr",B.IG,B.hM,B.Ie),s.ev(a,"FEUrea (\u5c3f\u7d20\u6392\u6cc4\u7387)","\u9700: Serum BUN, Serum Cr, Urine Urea, Urine Cr",B.ok,B.da,B.If),s.ev(a,"Creatinine Clearance","\u9700: Age, Weight, Creatinine, Gender",B.J0,B.hK,B.GO),new A.bq(B.cX,A.by("Electrolytes (\u96fb\u89e3\u8cea)",r,r,r,r,B.dk,r,r),r),s.ev(a,"Sodium Correction","\u9700: Weight, Serum Na, Gender, Fluids",B.IQ,B.ck,B.Iv),s.ev(a,"Free Water Deficit","\u9700: Weight, Current Na, Target Na",B.IJ,B.d9,B.Ir),s.ev(a,"TTKG Calculator","\u9700: Urine K, Urine Osm, Serum K, Serum Osm",B.IH,B.f5,B.Qe),new A.bq(B.cX,A.by("Cardiology (\u5fc3\u81df)",r,r,r,r,B.dk,r,r),r),s.ev(a,"Corrected QT (QTc)","\u9700: QT Interval, Heart Rate",B.J_,B.bK,B.Qg),s.ev(a,"CHA2DS2-VASc Score","\u9700: Age, Sex, CHF, HTN, DM, Stroke, Vasc",B.IB,B.bf,B.E1),new A.bq(B.cX,A.by("Hematology (\u8840\u6db2)",r,r,r,r,B.dk,r,r),r),s.ev(a,"CCI Calculator","\u9700: Height, Weight, Pre-PLT, Post-PLT",B.IA,B.db,B.Cu),s.ev(a,"ANC Calculator","\u9700: WBC, Seg, Band",B.IV,B.cj,B.Bb),new A.bq(B.cX,A.by("General (\u4e00\u822c)",r,r,r,r,B.dk,r,r),r),s.ev(a,"Bladder Volume","\u9700: Width, Depth, Height",B.IN,B.kL,B.Bu)],t.p),B.H,r,!1))},
+return A.dP(A.dF(r,B.ap,r,0,B.Yg),B.ao,A.eJ(A.a([new A.bq(B.cX,A.by("Gastroenterology (\u80c3\u8178\u809d\u81bd)",r,r,r,r,B.dk,r,r),r),s.ev(a,"R-Factor (Liver Injury)","\u9700: ALT, Alk-P (\u8207\u5176\u6b63\u5e38\u503c\u4e0a\u9650 ULN)",B.oi,B.hL,B.Qh),s.ev(a,"Maddrey's Discriminant","\u9700: PT (Patient/Control), Bilirubin",B.IP,B.f7,B.Ns),s.ev(a,"SAAG (\u8179\u6c34\u68af\u5ea6)","\u9700: Serum Albumin, Ascites Albumin",B.ok,B.da,B.QZ),s.ev(a,"Stool Osmotic Gap","\u9700: Stool Na, Stool K",B.J1,B.kO,B.Td),new A.bq(B.cX,A.by("Pulmonary (\u80f8\u8154)",r,r,r,r,B.dk,r,r),r),s.ev(a,"A-a Gradient","\u9700: Age, PaO2, PaCO2, FiO2",B.Ix,B.hK,B.Bc),s.ev(a,"Ventilator Mechanics","\u9700: Vt, P-peak, P-plat, PEEP",B.IO,B.bf,B.ZN),s.ev(a,"RSBI (Weaning)","\u9700: RR, Vt (mL)",B.IW,B.cj,B.Qi),new A.bq(B.cX,A.by("Nephrology (\u814e\u81df)",r,r,r,r,B.dk,r,r),r),s.ev(a,"Acid-Base Analysis","\u9700: pH, PaCO2, HCO3, Na, Cl, Alb",B.ol,B.kN,B.Bf),s.ev(a,"FeNa (\u9209\u6392\u6cc4\u7387)","\u9700: Serum Na, Serum Cr, Urine Na, Urine Cr",B.IG,B.hM,B.Ie),s.ev(a,"FEUrea (\u5c3f\u7d20\u6392\u6cc4\u7387)","\u9700: Serum BUN, Serum Cr, Urine Urea, Urine Cr",B.ok,B.da,B.If),s.ev(a,"Creatinine Clearance","\u9700: Age, Weight, Creatinine, Gender",B.J0,B.hK,B.GO),new A.bq(B.cX,A.by("Electrolytes (\u96fb\u89e3\u8cea)",r,r,r,r,B.dk,r,r),r),s.ev(a,"Sodium Correction","\u9700: Weight, Serum Na, Gender, Fluids",B.IQ,B.ck,B.Iv),s.ev(a,"Free Water Deficit","\u9700: Weight, Current Na, Target Na",B.IJ,B.d9,B.Ir),s.ev(a,"TTKG Calculator","\u9700: Urine K, Urine Osm, Serum K, Serum Osm",B.IH,B.f5,B.Qe),new A.bq(B.cX,A.by("Cardiology (\u5fc3\u81df)",r,r,r,r,B.dk,r,r),r),s.ev(a,"Corrected QT (QTc)","\u9700: QT Interval, Heart Rate",B.J_,B.bK,B.Qg),s.ev(a,"CHA2DS2-VASc Score","\u9700: Age, Sex, CHF, HTN, DM, Stroke, Vasc",B.IB,B.bf,B.E1),new A.bq(B.cX,A.by("Hematology (\u8840\u6db2)",r,r,r,r,B.dk,r,r),r),s.ev(a,"CCI Calculator","\u9700: Height, Weight, Pre-PLT, Post-PLT",B.IA,B.db,B.Cu),s.ev(a,"ANC Calculator","\u9700: WBC, Seg, Band",B.IV,B.cj,B.Bb),new A.bq(B.cX,A.by("General (\u4e00\u822c)",r,r,r,r,B.dk,r,r),r),s.ev(a,"Bladder Volume","\u9700: Width, Depth, Height",B.IN,B.kL,B.Bu)],t.p),B.H,r,!1))},
 ev(a,b,c,d,e,f){var s=null,r=A.eA(12),q=A.ah(38,e.v()>>>16&255,e.v()>>>8&255,e.v()&255),p=A.jA(d,e,s,s),o=A.by(b,s,s,s,s,B.Al,s,s)
 return A.auW(A.M8(!1,B.jG,s,s,!0,s,s,!0,s,new A.Jj(p,q,s),s,s,new A.a0k(a,f),!1,s,s,s,s,new A.bq(B.jD,A.by(c,s,s,s,s,A.dA(s,s,B.eu,s,s,s,s,s,s,s,s,13,s,s,s,s,1.4,!0,s,s,s,s,s,s,s,s),s,s),s),s,o,A.jA(B.oh,B.cA,s,16),s),B.ez,2,B.nJ,new A.d3(r,B.m))}}
 A.a0k.prototype={
@@ -88279,7 +88279,7 @@ else if(r<=2)s.a="Cholestatic (\u81bd\u6c41\u6de4\u7a4d\u578b)"
 else s.a="Mixed Pattern (\u6df7\u5408\u578b)"
 q.a7(new A.aoW(s,q,r))}},
 K(a){var s=this,r=null,q="U/L",p="ULN (\u4e0a\u9650)",o=t.p
-return A.dP(A.dF(r,B.ap,r,r,B.XX),B.ao,A.eJ(A.b([B.XF,A.d4(A.b([A.bT(A.b6(s.d,"Patient ALT",q)),B.ax,A.bT(A.b6(s.e,p,q))],o),B.E,B.z,B.M,r),B.a7,B.XZ,A.d4(A.b([A.bT(A.b6(s.f,"Patient ALP",q)),B.ax,A.bT(A.b6(s.r,p,q))],o),B.E,B.z,B.M,r),B.Q,A.eE(B.Y0,s.gcv(),A.eF(r,r,B.hL,r,r,r,r,r,r,B.l,r,r,B.H,r,r,r,r,r,r,r)),B.Q,A.fd(s.w,B.hL)],o),B.H,r,!1))}}
+return A.dP(A.dF(r,B.ap,r,r,B.XX),B.ao,A.eJ(A.a([B.XF,A.d4(A.a([A.bT(A.b6(s.d,"Patient ALT",q)),B.ax,A.bT(A.b6(s.e,p,q))],o),B.E,B.z,B.M,r),B.a7,B.XZ,A.d4(A.a([A.bT(A.b6(s.f,"Patient ALP",q)),B.ax,A.bT(A.b6(s.r,p,q))],o),B.E,B.z,B.M,r),B.Q,A.eE(B.Y0,s.gcv(),A.eF(r,r,B.hL,r,r,r,r,r,r,B.l,r,r,B.H,r,r,r,r,r,r,r)),B.Q,A.fd(s.w,B.hL)],o),B.H,r,!1))}}
 A.aoW.prototype={
 $0(){this.b.w="R Factor = "+B.d.a1(this.c,2)+"\n\ud83d\udc49 "+this.a.a},
 $S:0}
@@ -88295,7 +88295,7 @@ if(r>=32)s.a="\u56b4\u91cd\u9152\u7cbe\u6027\u809d\u708e (Severe)\n\u5efa\u8b70\
 else s.a="\u975e\u56b4\u91cd (Non-severe)\n\u652f\u6301\u6027\u7642\u6cd5"
 q.a7(new A.anO(s,q,r))}},
 K(a){var s=this,r=null,q=t.p
-return A.dP(A.dF(r,B.ap,r,r,B.Ya),B.ao,A.eJ(A.b([A.d4(A.b([A.bT(A.b6(s.d,"Patient PT","sec")),B.ax,A.bT(A.b6(s.e,"Control PT","sec"))],q),B.E,B.z,B.M,r),B.a7,A.b6(s.f,"Total Bilirubin","mg/dL"),B.Q,A.eE(B.XL,s.gcv(),A.eF(r,r,B.f7,r,r,r,r,r,r,B.k,r,r,B.H,r,r,r,r,r,r,r)),B.Q,A.fd(s.r,B.f7)],q),B.H,r,!1))}}
+return A.dP(A.dF(r,B.ap,r,r,B.Ya),B.ao,A.eJ(A.a([A.d4(A.a([A.bT(A.b6(s.d,"Patient PT","sec")),B.ax,A.bT(A.b6(s.e,"Control PT","sec"))],q),B.E,B.z,B.M,r),B.a7,A.b6(s.f,"Total Bilirubin","mg/dL"),B.Q,A.eE(B.XL,s.gcv(),A.eF(r,r,B.f7,r,r,r,r,r,r,B.k,r,r,B.H,r,r,r,r,r,r,r)),B.Q,A.fd(s.r,B.f7)],q),B.H,r,!1))}}
 A.anO.prototype={
 $0(){this.b.r="MDF Score = "+B.d.a1(this.c,1)+"\n\ud83d\udc49 "+this.a.a},
 $S:0}
@@ -88311,7 +88311,7 @@ if(r>=1.1)s.a="\u9580\u8108\u9ad8\u58d3\u76f8\u95dc (Portal HTN)\n(Cirrhosis, He
 else s.a="\u975e\u9580\u8108\u9ad8\u58d3 (Non-Portal)\n(Cancer, TB, Nephrotic)"
 q.a7(new A.aqh(s,q,r))}},
 K(a){var s=this,r=null
-return A.dP(A.dF(r,B.ap,r,r,B.Y9),B.ao,A.eJ(A.b([A.b6(s.d,"Serum Albumin","g/dL"),B.a7,A.b6(s.e,"Ascites Albumin","g/dL"),B.Q,A.eE(B.XT,s.gcv(),A.eF(r,r,B.da,r,r,r,r,r,r,B.l,r,r,B.H,r,r,r,r,r,r,r)),B.Q,A.fd(s.f,B.da)],t.p),B.H,r,!1))}}
+return A.dP(A.dF(r,B.ap,r,r,B.Y9),B.ao,A.eJ(A.a([A.b6(s.d,"Serum Albumin","g/dL"),B.a7,A.b6(s.e,"Ascites Albumin","g/dL"),B.Q,A.eE(B.XT,s.gcv(),A.eF(r,r,B.da,r,r,r,r,r,r,B.l,r,r,B.H,r,r,r,r,r,r,r)),B.Q,A.fd(s.f,B.da)],t.p),B.H,r,!1))}}
 A.aqh.prototype={
 $0(){this.b.f="SAAG = "+B.d.a1(this.c,1)+" g/dL\n\ud83d\udc49 "+this.a.a},
 $S:0}
@@ -88328,7 +88328,7 @@ else if(r<50)s.a="\u5206\u6ccc\u6027\u8179\u7009 (Secretory)\n(\u7981\u98df\u5f8
 else s.a="\u6df7\u5408\u578b / \u7070\u8272\u5730\u5e36"
 q.a7(new A.aqH(s,q,r))}},
 K(a){var s=this,r=null,q=t.p
-return A.dP(A.dF(r,B.ap,r,r,B.Y3),B.ao,A.eJ(A.b([A.d4(A.b([A.bT(A.b6(s.d,"Stool Na","mEq/L")),B.ax,A.bT(A.b6(s.e,"Stool K","mEq/L"))],q),B.E,B.z,B.M,r),B.Q,A.eE(B.XQ,s.gcv(),A.eF(r,r,B.kO,r,r,r,r,r,r,B.k,r,r,B.H,r,r,r,r,r,r,r)),B.Q,A.fd(s.f,B.kO),B.a7,B.XE],q),B.H,r,!1))}}
+return A.dP(A.dF(r,B.ap,r,r,B.Y3),B.ao,A.eJ(A.a([A.d4(A.a([A.bT(A.b6(s.d,"Stool Na","mEq/L")),B.ax,A.bT(A.b6(s.e,"Stool K","mEq/L"))],q),B.E,B.z,B.M,r),B.Q,A.eE(B.XQ,s.gcv(),A.eF(r,r,B.kO,r,r,r,r,r,r,B.k,r,r,B.H,r,r,r,r,r,r,r)),B.Q,A.fd(s.f,B.kO),B.a7,B.XE],q),B.H,r,!1))}}
 A.aqH.prototype={
 $0(){this.b.f="Gap = "+B.d.a1(this.c,0)+" mOsm/kg\n\ud83d\udc49 "+this.a.a},
 $S:0}
@@ -88346,7 +88346,7 @@ if(q>p+5)s.a="\u7570\u5e38\u5347\u9ad8 (High Gradient)\n\u539f\u56e0: V/Q mismat
 else s.a="\u6b63\u5e38\u7bc4\u570d (Normal Gradient)\n\u539f\u56e0: Hypoventilation, High Altitude"
 o.a7(new A.aiD(s,o,r,q,p))}},
 K(a){var s=this,r=null,q=t.p
-return A.dP(A.dF(r,B.ap,r,r,B.Y8),B.ao,A.eJ(A.b([A.d4(A.b([A.bT(A.b6(s.d,"Age","yrs")),B.ax,A.bT(A.b6(s.r,"FiO2","%"))],q),B.E,B.z,B.M,r),B.a7,A.d4(A.b([A.bT(A.b6(s.e,"PaO2","mmHg")),B.ax,A.bT(A.b6(s.f,"PaCO2","mmHg"))],q),B.E,B.z,B.M,r),B.Q,A.eE(B.lI,s.gcv(),A.eF(r,r,B.hK,r,r,r,r,r,r,B.l,r,r,B.H,r,r,r,r,r,r,r)),B.Q,A.fd(s.w,B.hK)],q),B.H,r,!1))}}
+return A.dP(A.dF(r,B.ap,r,r,B.Y8),B.ao,A.eJ(A.a([A.d4(A.a([A.bT(A.b6(s.d,"Age","yrs")),B.ax,A.bT(A.b6(s.r,"FiO2","%"))],q),B.E,B.z,B.M,r),B.a7,A.d4(A.a([A.bT(A.b6(s.e,"PaO2","mmHg")),B.ax,A.bT(A.b6(s.f,"PaCO2","mmHg"))],q),B.E,B.z,B.M,r),B.Q,A.eE(B.lI,s.gcv(),A.eF(r,r,B.hK,r,r,r,r,r,r,B.l,r,r,B.H,r,r,r,r,r,r,r)),B.Q,A.fd(s.w,B.hK)],q),B.H,r,!1))}}
 A.aiD.prototype={
 $0(){var s=this
 s.b.w="PAO2 (\u80ba\u6ce1\u6c27): "+B.d.a1(s.c,1)+" mmHg\nA-a Gradient: "+B.d.a1(s.d,1)+" mmHg\n(\u9810\u671f\u503c: < "+B.d.a1(s.e,1)+")\n\n\ud83d\udc49 "+s.a.a},
@@ -88363,7 +88363,7 @@ p=s>15?"\u26a0\ufe0f \u9ad8 (>15)":m
 o=r<50?"\u26a0\ufe0f \u4f4e (<50 ARDS)":m
 n.a7(new A.asq(n,s,p,r,o,q,q>10?"\u26a0\ufe0f \u9ad8 (>10 \u963b\u585e)":m))}},
 K(a){var s=this,r=null,q="cmH2O",p=t.p
-return A.dP(A.dF(r,B.ap,r,r,B.Y5),B.ao,A.eJ(A.b([A.b6(s.d,"Tidal Vol (Vt)","mL"),B.a7,A.d4(A.b([A.bT(A.b6(s.e,"P-peak",q)),B.ax,A.bT(A.b6(s.f,"P-plat",q))],p),B.E,B.z,B.M,r),B.a7,A.b6(s.r,"PEEP",q),B.Q,A.eE(B.lI,s.gcv(),A.eF(r,r,B.bf,r,r,r,r,r,r,B.l,r,r,B.H,r,r,r,r,r,r,r)),B.Q,A.fd(s.w,B.bf)],p),B.H,r,!1))}}
+return A.dP(A.dF(r,B.ap,r,r,B.Y5),B.ao,A.eJ(A.a([A.b6(s.d,"Tidal Vol (Vt)","mL"),B.a7,A.d4(A.a([A.bT(A.b6(s.e,"P-peak",q)),B.ax,A.bT(A.b6(s.f,"P-plat",q))],p),B.E,B.z,B.M,r),B.a7,A.b6(s.r,"PEEP",q),B.Q,A.eE(B.lI,s.gcv(),A.eF(r,r,B.bf,r,r,r,r,r,r,B.l,r,r,B.H,r,r,r,r,r,r,r)),B.Q,A.fd(s.w,B.bf)],p),B.H,r,!1))}}
 A.asq.prototype={
 $0(){var s=this
 s.a.w="Driving Pressure: "+B.d.a1(s.b,1)+" ("+s.c+")\nCompliance: "+B.d.a1(s.d,1)+" ("+s.e+")\nResistance: "+B.d.a1(s.f,1)+" ("+s.r+")"},
@@ -88380,7 +88380,7 @@ if(r>105)s.a="\u812b\u96e2\u5931\u6557\u7387\u9ad8 (>105)"
 else s.a="\u53ef\u5617\u8a66\u812b\u96e2 (<105)"
 q.a7(new A.aoX(s,q,r))}},
 K(a){var s=this,r=null,q=t.p
-return A.dP(A.dF(r,B.ap,r,r,B.XG),B.ao,A.eJ(A.b([A.d4(A.b([A.bT(A.b6(s.d,"RR","/min")),B.ax,A.bT(A.b6(s.e,"Vt","mL"))],q),B.E,B.z,B.M,r),B.Q,A.eE(B.XW,s.gcv(),A.eF(r,r,B.cj,r,r,r,r,r,r,B.l,r,r,B.H,r,r,r,r,r,r,r)),B.Q,A.fd(s.f,B.cj)],q),B.H,r,!1))}}
+return A.dP(A.dF(r,B.ap,r,r,B.XG),B.ao,A.eJ(A.a([A.d4(A.a([A.bT(A.b6(s.d,"RR","/min")),B.ax,A.bT(A.b6(s.e,"Vt","mL"))],q),B.E,B.z,B.M,r),B.Q,A.eE(B.XW,s.gcv(),A.eF(r,r,B.cj,r,r,r,r,r,r,B.l,r,r,B.H,r,r,r,r,r,r,r)),B.Q,A.fd(s.f,B.cj)],q),B.H,r,!1))}}
 A.aoX.prototype={
 $0(){this.b.f="RSBI = "+B.d.a1(this.c,1)+"\n\ud83d\udc49 "+this.a.a},
 $S:0}
@@ -88397,7 +88397,7 @@ q.x=B.cj}else if(r>50){s.a="Intrinsic (ATN)"
 q.x=B.bK}else{s.a="Indeterminate (\u7070\u8272\u5730\u5e36)"
 q.x=B.d9}q.a7(new A.alW(s,q,r))}},
 K(a){var s=this,r=null,q="mg/dL",p=t.p
-return A.dP(A.dF(r,B.ap,r,r,B.XJ),B.ao,A.eJ(A.b([B.Yb,B.zR,A.d4(A.b([A.bT(A.b6(s.d,"Serum BUN",q)),B.ax,A.bT(A.b6(s.e,"Serum Cr",q))],p),B.E,B.z,B.M,r),B.a7,B.XP,B.zR,A.d4(A.b([A.bT(A.b6(s.f,"Urine Urea",q)),B.ax,A.bT(A.b6(s.r,"Urine Cr",q))],p),B.E,B.z,B.M,r),B.Q,A.eE(B.XH,s.gcv(),A.eF(r,r,B.da,r,r,r,r,r,r,B.l,r,r,B.H,r,r,r,r,r,r,r)),B.Q,A.fd(s.w,s.x),B.a7,B.Ye],p),B.H,r,!1))}}
+return A.dP(A.dF(r,B.ap,r,r,B.XJ),B.ao,A.eJ(A.a([B.Yb,B.zR,A.d4(A.a([A.bT(A.b6(s.d,"Serum BUN",q)),B.ax,A.bT(A.b6(s.e,"Serum Cr",q))],p),B.E,B.z,B.M,r),B.a7,B.XP,B.zR,A.d4(A.a([A.bT(A.b6(s.f,"Urine Urea",q)),B.ax,A.bT(A.b6(s.r,"Urine Cr",q))],p),B.E,B.z,B.M,r),B.Q,A.eE(B.XH,s.gcv(),A.eF(r,r,B.da,r,r,r,r,r,r,B.l,r,r,B.H,r,r,r,r,r,r,r)),B.Q,A.fd(s.w,s.x),B.a7,B.Ye],p),B.H,r,!1))}}
 A.alW.prototype={
 $0(){this.b.w="FEUrea = "+B.d.a1(this.c,1)+"%\n\ud83d\udc49 "+this.a.a},
 $S:0}
@@ -88414,7 +88414,7 @@ q.x=B.cj}else if(r>2){s.a="Intrinsic (ATN)"
 q.x=B.bK}else{s.a="Indeterminate / Mixed"
 q.x=B.d9}q.a7(new A.alV(s,q,r))}},
 K(a){var s=this,r=null,q=t.p
-return A.dP(A.dF(r,B.ap,r,r,B.Y_),B.ao,A.eJ(A.b([A.d4(A.b([A.bT(A.b6(s.d,"Serum Na","mEq/L")),B.ax,A.bT(A.b6(s.e,"Serum Cr","mg/dL"))],q),B.E,B.z,B.M,r),B.a7,A.d4(A.b([A.bT(A.b6(s.f,"Urine Na","mEq/L")),B.ax,A.bT(A.b6(s.r,"Urine Cr","mg/dL"))],q),B.E,B.z,B.M,r),B.Q,A.eE(B.XM,s.gcv(),A.eF(r,r,B.hM,r,r,r,r,r,r,r,r,r,B.H,r,r,r,r,r,r,r)),B.Q,A.fd(s.w,s.x),B.a7,B.Yi],q),B.H,r,!1))}}
+return A.dP(A.dF(r,B.ap,r,r,B.Y_),B.ao,A.eJ(A.a([A.d4(A.a([A.bT(A.b6(s.d,"Serum Na","mEq/L")),B.ax,A.bT(A.b6(s.e,"Serum Cr","mg/dL"))],q),B.E,B.z,B.M,r),B.a7,A.d4(A.a([A.bT(A.b6(s.f,"Urine Na","mEq/L")),B.ax,A.bT(A.b6(s.r,"Urine Cr","mg/dL"))],q),B.E,B.z,B.M,r),B.Q,A.eE(B.XM,s.gcv(),A.eF(r,r,B.hM,r,r,r,r,r,r,r,r,r,B.H,r,r,r,r,r,r,r)),B.Q,A.fd(s.w,s.x),B.a7,B.Yi],q),B.H,r,!1))}}
 A.alV.prototype={
 $0(){this.b.w="FeNa = "+B.d.a1(this.c,2)+"%\n\ud83d\udc49 "+this.a.a},
 $S:0}
@@ -88429,7 +88429,7 @@ if(s==="Elderly Male")r=0.5
 if(s==="Elderly Female")r=0.45
 q.a7(new A.amP(q,(q.r-p)/(o*r+1)))}},
 K(a){var s=this,r=null,q=t.p
-return A.dP(A.dF(r,B.ap,r,r,B.XY),B.ao,A.eJ(A.b([A.aDt("Patient Type",s.f,A.b(["Male","Female","Elderly Male","Elderly Female"],t.s),new A.amS(s)),B.a7,A.d4(A.b([A.bT(A.b6(s.e,"Weight","kg")),B.ax,A.bT(A.b6(s.d,"Serum Na","mEq/L"))],q),B.E,B.z,B.M,r),B.a7,s.a4G(new A.amT(s)),B.Q,A.eE(B.Y6,s.gcv(),A.eF(r,r,B.ck,r,r,r,r,r,r,r,r,r,B.H,r,r,r,r,r,r,r)),B.Q,A.fd(s.w,B.ck),B.a7,B.Yj],q),B.H,r,!1))},
+return A.dP(A.dF(r,B.ap,r,r,B.XY),B.ao,A.eJ(A.a([A.aDt("Patient Type",s.f,A.a(["Male","Female","Elderly Male","Elderly Female"],t.s),new A.amS(s)),B.a7,A.d4(A.a([A.bT(A.b6(s.e,"Weight","kg")),B.ax,A.bT(A.b6(s.d,"Serum Na","mEq/L"))],q),B.E,B.z,B.M,r),B.a7,s.a4G(new A.amT(s)),B.Q,A.eE(B.Y6,s.gcv(),A.eF(r,r,B.ck,r,r,r,r,r,r,r,r,r,B.H,r,r,r,r,r,r,r)),B.Q,A.fd(s.w,B.ck),B.a7,B.Yj],q),B.H,r,!1))},
 a4G(a){var s=null,r=A.eA(8),q=this.r,p=this.x,o=A.k(p).i("fo<1,2>")
 o=A.Mg(new A.fo(p,o),new A.amO(),o.i("z.E"),t.EY)
 p=A.a1(o,A.k(o).i("z.E"))
@@ -88472,7 +88472,7 @@ else if(r<3)s.a="Aldosterone \u4f5c\u7528\u4f4e\u4e0b/\u6297\u6027\n(\u814e\u81d
 else s.a="\u7070\u8272\u5730\u5e36 (3-7)"
 q.a7(new A.aoQ(s,q,r))}},
 K(a){var s=this,r=null,q=t.p
-return A.dP(A.dF(r,B.ap,r,r,B.XS),B.ao,A.eJ(A.b([A.d4(A.b([A.bT(A.b6(s.d,"Urine K","mEq/L")),B.ax,A.bT(A.b6(s.f,"Urine Osm","mOsm"))],q),B.E,B.z,B.M,r),B.a7,A.d4(A.b([A.bT(A.b6(s.e,"Serum K","mEq/L")),B.ax,A.bT(A.b6(s.r,"Serum Osm","mOsm"))],q),B.E,B.z,B.M,r),B.Q,A.eE(B.XO,s.gcv(),A.eF(r,r,B.f5,r,r,r,r,r,r,B.l,r,r,B.H,r,r,r,r,r,r,r)),B.Q,A.fd(s.w,B.f5),B.a7,B.XV],q),B.H,r,!1))}}
+return A.dP(A.dF(r,B.ap,r,r,B.XS),B.ao,A.eJ(A.a([A.d4(A.a([A.bT(A.b6(s.d,"Urine K","mEq/L")),B.ax,A.bT(A.b6(s.f,"Urine Osm","mOsm"))],q),B.E,B.z,B.M,r),B.a7,A.d4(A.a([A.bT(A.b6(s.e,"Serum K","mEq/L")),B.ax,A.bT(A.b6(s.r,"Serum Osm","mOsm"))],q),B.E,B.z,B.M,r),B.Q,A.eE(B.XO,s.gcv(),A.eF(r,r,B.f5,r,r,r,r,r,r,B.l,r,r,B.H,r,r,r,r,r,r,r)),B.Q,A.fd(s.w,B.f5),B.a7,B.XV],q),B.H,r,!1))}}
 A.aoQ.prototype={
 $0(){this.b.w="TTKG = "+B.d.a1(this.c,1)+"\n\ud83d\udc49 "+this.a.a},
 $S:0}
@@ -88486,7 +88486,7 @@ r=s==="Female"?0.5:0.6
 if(s==="Elderly Male")r=0.5
 q.a7(new A.amo(q,o*(s==="Elderly Female"?0.45:r)*(p/n-1)))}},
 K(a){var s=this,r=null
-return A.dP(A.dF(r,B.ap,r,r,B.XK),B.ao,A.eJ(A.b([A.aDt("Patient Type",s.r,A.b(["Male","Female","Elderly Male","Elderly Female"],t.s),new A.amq(s)),B.a7,A.b6(s.e,"Weight","kg"),B.a7,A.b6(s.d,"Current Na","mEq/L"),B.a7,A.b6(s.f,"Target Na","mEq/L"),B.Q,A.eE(B.XR,s.gcv(),A.eF(r,r,B.d9,r,r,r,r,r,r,r,r,r,B.H,r,r,r,r,r,r,r)),B.Q,A.fd(s.w,B.d9)],t.p),B.H,r,!1))}}
+return A.dP(A.dF(r,B.ap,r,r,B.XK),B.ao,A.eJ(A.a([A.aDt("Patient Type",s.r,A.a(["Male","Female","Elderly Male","Elderly Female"],t.s),new A.amq(s)),B.a7,A.b6(s.e,"Weight","kg"),B.a7,A.b6(s.d,"Current Na","mEq/L"),B.a7,A.b6(s.f,"Target Na","mEq/L"),B.Q,A.eE(B.XR,s.gcv(),A.eF(r,r,B.d9,r,r,r,r,r,r,r,r,r,B.H,r,r,r,r,r,r,r)),B.Q,A.fd(s.w,B.d9)],t.p),B.H,r,!1))}}
 A.amo.prototype={
 $0(){this.a.w="\u7f3a\u6c34\u91cf: "+B.d.a1(this.b,1)+" Liters\n(\u5efa\u8b70\u5206 48-72 \u5c0f\u6642\u88dc\u5145)"},
 $S:0}
@@ -88509,7 +88509,7 @@ if(r<7.5)s.a="\u8f38\u8840\u7121\u6548 (Refractory)\n* 1hr < 7.5 \u6216 24hr < 4
 else s.a="\u8f38\u8840\u6709\u6548 (Successful)"
 q.a7(new A.ak1(s,q,r))}},
 K(a){var s=this,r=null,q=t.p
-return A.dP(A.dF(r,B.ap,r,r,B.Yh),B.ao,A.eJ(A.b([A.d4(A.b([A.bT(A.b6(s.r,"Height","cm")),B.ax,A.bT(A.b6(s.w,"Weight","kg"))],q),B.E,B.z,B.M,r),B.a7,A.d4(A.b([A.bT(A.b6(s.d,"Pre-PLT","k/uL")),B.ax,A.bT(A.b6(s.e,"Post-PLT","k/uL"))],q),B.E,B.z,B.M,r),B.a7,A.b6(s.f,"Platelet Content","10^11 (LPPH\u7d043)"),B.Q,A.eE(B.XN,s.gcv(),A.eF(r,r,B.bK,r,r,r,r,r,r,r,r,r,B.H,r,r,r,r,r,r,r)),B.Q,A.fd(s.x,B.bK)],q),B.H,r,!1))}}
+return A.dP(A.dF(r,B.ap,r,r,B.Yh),B.ao,A.eJ(A.a([A.d4(A.a([A.bT(A.b6(s.r,"Height","cm")),B.ax,A.bT(A.b6(s.w,"Weight","kg"))],q),B.E,B.z,B.M,r),B.a7,A.d4(A.a([A.bT(A.b6(s.d,"Pre-PLT","k/uL")),B.ax,A.bT(A.b6(s.e,"Post-PLT","k/uL"))],q),B.E,B.z,B.M,r),B.a7,A.b6(s.f,"Platelet Content","10^11 (LPPH\u7d043)"),B.Q,A.eE(B.XN,s.gcv(),A.eF(r,r,B.bK,r,r,r,r,r,r,r,r,r,B.H,r,r,r,r,r,r,r)),B.Q,A.fd(s.x,B.bK)],q),B.H,r,!1))}}
 A.ak1.prototype={
 $0(){this.b.x="CCI: "+B.d.a1(this.c,1)+"\n\ud83d\udc49 "+this.a.a},
 $S:0}
@@ -88527,7 +88527,7 @@ else if(r<1000)s.a="\u4e2d\u5ea6\u4f4e\u4e0b (Moderate)"
 else s.a="\u8f15\u5ea6/\u6b63\u5e38"
 q.a7(new A.aiC(s,q,r))}},
 K(a){var s=this,r=null,q=t.p
-return A.dP(A.dF(r,B.ap,r,r,B.Y4),B.ao,A.eJ(A.b([A.b6(s.d,"WBC Count","/uL (ex. 4000)"),B.a7,A.d4(A.b([A.bT(A.b6(s.e,"Seg","%")),B.ax,A.bT(A.b6(s.f,"Band","%"))],q),B.E,B.z,B.M,r),B.Q,A.eE(B.Y1,s.gcv(),A.eF(r,r,B.cj,r,r,r,r,r,r,B.l,r,r,B.H,r,r,r,r,r,r,r)),B.Q,A.fd(s.r,B.cj)],q),B.H,r,!1))}}
+return A.dP(A.dF(r,B.ap,r,r,B.Y4),B.ao,A.eJ(A.a([A.b6(s.d,"WBC Count","/uL (ex. 4000)"),B.a7,A.d4(A.a([A.bT(A.b6(s.e,"Seg","%")),B.ax,A.bT(A.b6(s.f,"Band","%"))],q),B.E,B.z,B.M,r),B.Q,A.eE(B.Y1,s.gcv(),A.eF(r,r,B.cj,r,r,r,r,r,r,B.l,r,r,B.H,r,r,r,r,r,r,r)),B.Q,A.fd(s.r,B.cj)],q),B.H,r,!1))}}
 A.aiC.prototype={
 $0(){this.b.r="ANC = "+B.d.a1(this.c,0)+" /uL\n\ud83d\udc49 "+this.a.a},
 $S:0}
@@ -88538,7 +88538,7 @@ A.Dx.prototype={
 cw(){var s=this,r=A.b1(s.d.a.a),q=A.b1(s.e.a.a),p=A.b1(s.f.a.a)
 if(r!=null&&q!=null&&p!=null)s.a7(new A.ajo(s,r*q*p*0.7))},
 K(a){var s=this,r=null
-return A.dP(A.dF(r,B.ap,r,r,B.XU),B.ao,A.eJ(A.b([A.b6(s.d,"Width (Transverse)","cm"),B.a7,A.b6(s.e,"Depth (Transverse)","cm"),B.a7,A.b6(s.f,"Height (Longitudinal)","cm"),B.Q,A.eE(B.lI,s.gcv(),A.eF(r,r,B.kL,r,r,r,r,r,r,B.l,r,r,B.H,r,r,r,r,r,r,r)),B.Q,A.fd(s.r,B.kL)],t.p),B.H,r,!1))}}
+return A.dP(A.dF(r,B.ap,r,r,B.XU),B.ao,A.eJ(A.a([A.b6(s.d,"Width (Transverse)","cm"),B.a7,A.b6(s.e,"Depth (Transverse)","cm"),B.a7,A.b6(s.f,"Height (Longitudinal)","cm"),B.Q,A.eE(B.lI,s.gcv(),A.eF(r,r,B.kL,r,r,r,r,r,r,B.l,r,r,B.H,r,r,r,r,r,r,r)),B.Q,A.fd(s.r,B.kL)],t.p),B.H,r,!1))}}
 A.ajo.prototype={
 $0(){var s=this.a,r=this.b,q="Volume \u2248 "+B.d.a1(r,0)+" mL"
 s.r=q
@@ -88571,8 +88571,8 @@ if(n<0.4)j.c=m+k
 else if(n<1)j.c=m+k
 else if(n>2)j.c=m+" (HAGMA + Met Alk)"
 else j.c=m+" (Pure HAGMA)"}}l.a7(new A.aiF(j,l,s))},
-K(a){var s=this,r=null,q=A.dF(r,B.ap,r,r,B.Yk),p=t.p,o=A.b([A.b6(s.d,"pH",""),B.dj,A.b6(s.e,"PaCO2","mmHg"),B.dj,A.b6(s.f,"HCO3","mEq/L"),B.Hn,A.d4(A.b([A.bT(A.b6(s.r,"Na","")),B.ax,A.bT(A.b6(s.w,"Cl",""))],p),B.E,B.z,B.M,r),B.dj,A.b6(s.x,"Albumin","g/dL"),B.Q,A.eE(B.Yc,s.gcv(),A.eF(r,r,B.kN,r,r,r,r,r,r,r,r,B.SU,B.H,r,r,r,r,r,r,r)),B.Q],p),n=s.y
-if(n.length!==0){p=A.b([s.wA("\u8a3a\u65b7",n,B.oi,s.at)],p)
+K(a){var s=this,r=null,q=A.dF(r,B.ap,r,r,B.Yk),p=t.p,o=A.a([A.b6(s.d,"pH",""),B.dj,A.b6(s.e,"PaCO2","mmHg"),B.dj,A.b6(s.f,"HCO3","mEq/L"),B.Hn,A.d4(A.a([A.bT(A.b6(s.r,"Na","")),B.ax,A.bT(A.b6(s.w,"Cl",""))],p),B.E,B.z,B.M,r),B.dj,A.b6(s.x,"Albumin","g/dL"),B.Q,A.eE(B.Yc,s.gcv(),A.eF(r,r,B.kN,r,r,r,r,r,r,r,r,B.SU,B.H,r,r,r,r,r,r,r)),B.Q],p),n=s.y
+if(n.length!==0){p=A.a([s.wA("\u8a3a\u65b7",n,B.oi,s.at)],p)
 n=s.z
 if(n.length!==0)p.push(s.wA("\u4ee3\u511f (Winter's)",n,B.IY,B.P))
 n=s.Q
@@ -88600,7 +88600,7 @@ A.Fn.prototype={
 CM(){var s=this,r=A.b1(s.d.a.a),q=A.b1(s.e.a.a)
 if(r!=null&&q!=null)s.a7(new A.aoV(s,r/Math.sqrt(60/q)))},
 K(a){var s=this,r=null
-return A.dP(A.dF(r,B.ap,r,r,B.XI),B.ao,new A.bq(B.H,A.eR(A.b([A.b6(s.d,"QT Interval","ms"),B.a7,A.b6(s.e,"Heart Rate","bpm"),B.Q,A.eE(B.As,s.gCL(),A.eF(r,r,B.bK,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r)),B.Q,A.fd(s.f,B.bK)],t.p),B.E,B.z,B.M),r))}}
+return A.dP(A.dF(r,B.ap,r,r,B.XI),B.ao,new A.bq(B.H,A.eR(A.a([A.b6(s.d,"QT Interval","ms"),B.a7,A.b6(s.e,"Heart Rate","bpm"),B.Q,A.eE(B.As,s.gCL(),A.eF(r,r,B.bK,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r)),B.Q,A.fd(s.f,B.bK)],t.p),B.E,B.z,B.M),r))}}
 A.aoV.prototype={
 $0(){return this.a.f="QTc = "+B.d.a1(this.b,0)+" ms"},
 $S:0}
@@ -88615,7 +88615,7 @@ s.a=r
 if(q.r)s.a=r*0.85
 q.a7(new A.akD(s,q))}},
 K(a){var s=this,r=null
-return A.dP(A.dF(r,B.ap,r,r,B.Y2),B.ao,new A.bq(B.H,A.eR(A.b([A.ns(B.ck,new A.akF(s),B.Yl,s.r),A.b6(s.d,"Age",""),B.dj,A.b6(s.e,"Weight","kg"),B.dj,A.b6(s.f,"Creatinine","mg/dL"),B.Q,A.eE(B.As,s.gCL(),A.eF(r,r,B.ck,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r)),B.Q,A.fd(s.w,B.ck)],t.p),B.E,B.z,B.M),r))}}
+return A.dP(A.dF(r,B.ap,r,r,B.Y2),B.ao,new A.bq(B.H,A.eR(A.a([A.ns(B.ck,new A.akF(s),B.Yl,s.r),A.b6(s.d,"Age",""),B.dj,A.b6(s.e,"Weight","kg"),B.dj,A.b6(s.f,"Creatinine","mg/dL"),B.Q,A.eE(B.As,s.gCL(),A.eF(r,r,B.ck,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r)),B.Q,A.fd(s.w,B.ck)],t.p),B.E,B.z,B.M),r))}}
 A.akD.prototype={
 $0(){return this.b.w="CrCl = "+B.d.a1(this.a.a,1)+" mL/min"},
 $S:0}
@@ -88645,7 +88645,7 @@ m=j.r
 m=A.ns(B.bf,new A.aki(j),A.by("Stroke/TIA (2pt)",i,i,i,i,B.bj,i,i),m)
 l=A.ns(B.bf,new A.akj(j),A.by("Vascular Dz",i,i,i,i,B.bj,i,i),!1)
 k=j.x
-return A.dP(s,B.ao,A.eJ(A.b([r,q,o,p,n,m,l,A.ns(B.bf,new A.akk(j),A.by("Female",i,i,i,i,B.bj,i,i),k),B.lx,A.hg(A.by("Score: "+(h+g+f+e+d+c),i,i,i,i,B.WR,i,i),i,i)],t.p),B.H,i,!1))}}
+return A.dP(s,B.ao,A.eJ(A.a([r,q,o,p,n,m,l,A.ns(B.bf,new A.akk(j),A.by("Female",i,i,i,i,B.bj,i,i),k),B.lx,A.hg(A.by("Score: "+(h+g+f+e+d+c),i,i,i,i,B.WR,i,i),i,i)],t.p),B.H,i,!1))}}
 A.akd.prototype={
 $1(a){var s=this.a
 return s.a7(new A.akc(s,a))},
@@ -88715,11 +88715,11 @@ A.xy.prototype={
 ae(){return new A.Rc()}}
 A.Rc.prototype={
 a7Y(){var s,r,q,p,o,n=A.X($.aEB).i("b2<1>"),m=A.a1(new A.b2($.aEB,new A.akm(this),n),n.i("z.E")),l=A.o(t.N,t.b5),k=["\ud83d\udea8 \u5371\u6025\u5fb5\u8c61\u8207\u75c7\u72c0","\ud83e\uddea \u5be6\u9a57\u5ba4\u6578\u503c\u7570\u5e38","\u2764\ufe0f \u5fc3\u81df\u5167\u79d1","\ud83e\uded8 \u814e\u81df\u5167\u79d1","\ud83e\udec1 \u80f8\u8154\u5167\u79d1","\ud83e\udd68 \u80c3\u8178\u809d\u81bd\u79d1","\ud83e\ude78 \u8840\u6db2\u816b\u7624\u79d1","\ud83e\udda0 \u611f\u67d3\u79d1","\ud83c\udf6c \u5167\u5206\u6ccc\u79d1","\ud83c\udfe5 \u4e00\u822c\u91ab\u5b78\u79d1"]
-for(n=t.H7,s=0;s<10;++s)l.p(0,k[s],A.b([],n))
+for(n=t.H7,s=0;s<10;++s)l.p(0,k[s],A.a([],n))
 for(r=m.length,s=0;s<m.length;m.length===r||(0,A.B)(m),++s){q=m[s]
 p=q.h(0,"group")
 if(p==null)p="\u5176\u4ed6"
-if(!l.ap(p))l.p(0,p,A.b([],n))
+if(!l.ap(p))l.p(0,p,A.a([],n))
 o=l.h(0,p)
 o.toString
 J.ff(o,q)}l.kH(0,new A.akn())
@@ -88754,7 +88754,7 @@ if(B.c.n(a,"stroke"))return"NS"
 if(B.c.n(a,"aki"))return"AK"
 return B.c.Y(a,0,2).toUpperCase()},
 K(a){var s,r=this,q=null,p=r.a7Y(),o=r.d,n=A.eR(B.Ll,B.E,B.z,B.bI)
-n=A.dF(A.b([A.avx(q,q,B.J6,q,q,new A.akt(a),q,q,"\u91ab\u5b78\u8a08\u7b97\u6a5f")],t.p),q,new A.Nb(new A.bq(B.HX,A.aBP(q,A.avB(q,new A.hx(4,A.eA(10),B.m),q,B.HU,q,q,q,q,!0,q,q,q,q,q,q,B.dA,!0,q,q,q,q,q,q,q,q,q,q,q,q,q,q,"\u641c\u5c0b (\u4f8b\u5982: Shock, K, ACS...)",q,q,q,q,q,!0,q,q,q,!0,!0,q,B.J4,q,q,q,q,q,q,q,q,q,q,q,q),q,new A.aku(r),q,q),q),B.ST,q),q,n)
+n=A.dF(A.a([A.avx(q,q,B.J6,q,q,new A.akt(a),q,q,"\u91ab\u5b78\u8a08\u7b97\u6a5f")],t.p),q,new A.Nb(new A.bq(B.HX,A.aBP(q,A.avB(q,new A.hx(4,A.eA(10),B.m),q,B.HU,q,q,q,q,!0,q,q,q,q,q,q,B.dA,!0,q,q,q,q,q,q,q,q,q,q,q,q,q,q,"\u641c\u5c0b (\u4f8b\u5982: Shock, K, ACS...)",q,q,q,q,q,!0,q,q,q,!0,!0,q,B.J4,q,q,q,q,q,q,q,q,q,q,q,q),q,new A.aku(r),q,q),q),B.ST,q),q,n)
 s=p.a+1
 return A.dP(n,q,new A.tD(new A.OV(new A.akv(r,p,o.length!==0),s,!0,!0,!0,A.aTo(),q),B.HT,B.aI,!1,q,q,B.iS,!1,q,s,B.ab,q,q,B.Y,B.at,q))}}
 A.akm.prototype={
@@ -88780,7 +88780,7 @@ $0(){this.a.d=this.b},
 $S:0}
 A.akv.prototype={
 $2(a,b){var s,r,q,p,o,n,m,l,k,j,i=null,h=this.b
-if(b===h.a)return new A.bq(B.HR,A.hg(A.by("Data Version: 2026.01.29",i,i,i,i,A.dA(i,i,B.cA,i,i,i,i,i,i,i,i,12,B.ho,i,i,i,i,!0,i,1,i,i,i,i,i,i),i,i),i,i),i)
+if(b===h.a)return new A.bq(B.HR,A.hg(A.by("Last Update Date: 2026.01.31",i,i,i,i,A.dA(i,i,B.cA,i,i,i,i,i,i,i,i,12,B.ho,i,i,i,i,!0,i,1,i,i,i,i,i,i),i,i),i,i),i)
 s=new A.b3(h,A.k(h).i("b3<1>")).ct(0,b)
 h=h.h(0,s)
 h.toString
@@ -88828,22 +88828,22 @@ n=o.$ti.i("e7<1,r>")
 k=A.a1(new A.e7(o,new A.a0D(),n),n.i("z.E"))
 g=A.dF(h,h,new A.Cs(B.L0,p,B.Tq,p,B.aF,h),h,A.by(g.h(0,"title"),h,h,h,h,B.Wy,h,h))
 o=t.p
-n=A.b([],o)
+n=A.a([],o)
 if(l.length!==0)n.push(i.Ma(a,A.ah(B.d.aC(25.5),B.db.v()>>>16&255,B.db.v()>>>8&255,B.db.v()&255),B.IX,l,"\u5371\u6025\u6392\u9664 / \u8b66\u793a",B.bK))
 if(l.length!==0)n.push(B.a7)
 if(k.length!==0)n.push(i.Ma(a,B.nk,B.IS,k,"\u6aa2\u67e5\u3001\u516c\u5f0f\u8207\u9451\u5225",p))
 if(s!=null&&s.length!==0){m=A.ah(20,p.v()>>>16&255,p.v()>>>8&255,p.v()&255)
 j=A.eA(12)
-B.b.P(n,A.b([B.lx,A.eD(h,A.eR(A.b([A.d4(A.b([A.jA(B.II,p,h,18),B.zQ,A.by("Clinical Note",h,h,h,h,A.dA(h,h,p,h,h,h,h,h,h,h,h,15,h,h,B.bc,h,h,!0,h,h,h,h,h,h,h,h),h,h)],o),B.E,B.z,B.M,h),B.dj,A.a7C(s,A.zQ(h,h,B.Ar,B.p,B.j_,B.S,h,h,B.p,h,h,h,h,h,B.p,h,h,B.p,h,h,B.p,h,h,B.p,h,h,B.p,h,h,B.p,h,h,h,A.dA(h,h,p,h,h,h,h,h,h,h,h,16,h,h,h,h,h,!0,h,h,h,h,h,h,h,h),h,h,B.p,B.Ar,h,B.Al,h,h,h,h,h,h,h,h,h,h,B.e6,B.p,h,h,B.p))],o),B.bu,B.z,B.M),B.x,h,h,new A.cl(m,h,new A.cU(B.m,B.m,B.m,new A.aC(p,4,B.q,-1)),j,h,h,B.a9),h,h,h,B.H,h,h,h)],o))}m=e.length!==0
+B.b.P(n,A.a([B.lx,A.eD(h,A.eR(A.a([A.d4(A.a([A.jA(B.II,p,h,18),B.zQ,A.by("Clinical Note",h,h,h,h,A.dA(h,h,p,h,h,h,h,h,h,h,h,15,h,h,B.bc,h,h,!0,h,h,h,h,h,h,h,h),h,h)],o),B.E,B.z,B.M,h),B.dj,A.a7C(s,A.zQ(h,h,B.Ar,B.p,B.j_,B.S,h,h,B.p,h,h,h,h,h,B.p,h,h,B.p,h,h,B.p,h,h,B.p,h,h,B.p,h,h,B.p,h,h,h,A.dA(h,h,p,h,h,h,h,h,h,h,h,16,h,h,h,h,h,!0,h,h,h,h,h,h,h,h),h,h,B.p,B.Ar,h,B.Al,h,h,h,h,h,h,h,h,h,h,B.e6,B.p,h,h,B.p))],o),B.bu,B.z,B.M),B.x,h,h,new A.cl(m,h,new A.cU(B.m,B.m,B.m,new A.aC(p,4,B.q,-1)),j,h,h,B.a9),h,h,h,B.H,h,h,h)],o))}m=e.length!==0
 if(m)n.push(i.M7(e))
 n=A.aw8(A.eR(n,B.dB,B.z,B.M),h,B.ab,B.H,h,B.aI)
 j=J.bE(q)
 m=m?1:0
-return new A.y7(2,A.dP(g,h,new A.Ct(A.b([n,A.aAj(new A.a0E(i,q,e,p),j+m,B.H,h,new A.a0F(),!1)],o),h)),h)},
+return new A.y7(2,A.dP(g,h,new A.Ct(A.a([n,A.aAj(new A.a0E(i,q,e,p),j+m,B.H,h,new A.a0F(),!1)],o),h)),h)},
 Ma(a,b,c,d,e,f){var s=null,r=A.eA(12),q=A.auP(A.ah(B.d.aC(76.5),f.v()>>>16&255,f.v()>>>8&255,f.v()&255),1),p=t.p
-return A.eD(s,A.eR(A.b([new A.bq(B.HY,A.d4(A.b([A.jA(c,f,s,20),B.SY,A.by(e,s,s,s,s,A.dA(s,s,f,s,s,s,s,s,s,s,s,16,s,s,B.bc,s,s,!0,s,0.5,s,s,s,s,s,s),s,s)],p),B.E,B.z,B.M,s),s),new A.yf(1,A.ah(51,f.v()>>>16&255,f.v()>>>8&255,f.v()&255),s),A.aAj(new A.a0x(d,f),d.length,B.HP,B.Ou,new A.a0y(),!0)],p),B.bu,B.z,B.M),B.x,s,s,new A.cl(b,s,q,r,s,s,B.a9),s,s,s,s,s,s,s)},
+return A.eD(s,A.eR(A.a([new A.bq(B.HY,A.d4(A.a([A.jA(c,f,s,20),B.SY,A.by(e,s,s,s,s,A.dA(s,s,f,s,s,s,s,s,s,s,s,16,s,s,B.bc,s,s,!0,s,0.5,s,s,s,s,s,s),s,s)],p),B.E,B.z,B.M,s),s),new A.yf(1,A.ah(51,f.v()>>>16&255,f.v()>>>8&255,f.v()&255),s),A.aAj(new A.a0x(d,f),d.length,B.HP,B.Ou,new A.a0y(),!0)],p),B.bu,B.z,B.M),B.x,s,s,new A.cl(b,s,q,r,s,s,B.a9),s,s,s,s,s,s,s)},
 M7(a){var s=null
-return new A.bq(B.HS,A.d4(A.b([A.jA(B.IZ,B.cb,s,14),B.SZ,A.by("\u6700\u5f8c\u66f4\u65b0: "+a,s,s,s,s,A.dA(s,s,B.cA,s,s,s,s,s,s,s,s,12,B.ho,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],t.p),B.E,B.uH,B.M,s),s)},
+return new A.bq(B.HS,A.d4(A.a([A.jA(B.IZ,B.cb,s,14),B.SZ,A.by("\u6700\u5f8c\u66f4\u65b0: "+a,s,s,s,s,A.dA(s,s,B.cA,s,s,s,s,s,s,s,s,12,B.ho,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],t.p),B.E,B.uH,B.M,s),s)},
 DE(a){if(B.c.n(a,"shock")||B.c.n(a,"combative"))return B.db
 if(B.c.n(a,"cardio")||B.c.n(a,"acs")||B.c.n(a,"htn")||B.c.n(a,"arrhythmia"))return B.kM
 if(B.c.n(a,"chest")||B.c.n(a,"pulm")||B.c.n(a,"dyspnea"))return B.f7
@@ -88880,16 +88880,16 @@ j=m.d
 q=A.ah(51,j.v()>>>16&255,j.v()>>>8&255,j.v()&255)
 p=A.auP(A.ah(B.d.aC(127.5),j.v()>>>16&255,j.v()>>>8&255,j.v()&255),1)
 o=t.p
-p=A.eD(l,A.d4(A.b([A.jA(B.IK,j,l,18),B.zQ,A.bT(A.by(k.h(s,"category"),l,l,l,l,A.dA(l,l,j,l,l,l,l,l,l,l,l,16,l,l,B.bc,l,l,!0,l,l,l,l,l,l,l,l),l,l))],o),B.E,B.z,B.M,l),B.x,l,l,new A.cl(q,l,p,B.BB,l,l,B.a9),l,l,l,B.jF,l,l,l)
+p=A.eD(l,A.d4(A.a([A.jA(B.IK,j,l,18),B.zQ,A.bT(A.by(k.h(s,"category"),l,l,l,l,A.dA(l,l,j,l,l,l,l,l,l,l,l,16,l,l,B.bc,l,l,!0,l,l,l,l,l,l,l,l),l,l))],o),B.E,B.z,B.M,l),B.x,l,l,new A.cl(q,l,p,B.BB,l,l,B.a9),l,l,l,B.jF,l,l,l)
 q=B.d.aC(76.5)
 k=A.ah(q,j.v()>>>16&255,j.v()>>>8&255,j.v()&255)
 n=A.ah(q,j.v()>>>16&255,j.v()>>>8&255,j.v()&255)
 j=A.ah(q,j.v()>>>16&255,j.v()>>>8&255,j.v()&255)
-return A.eR(A.b([p,A.eD(l,A.eR(J.aHT(r).gij().hO(0,new A.a0z(r),t.dT).ep(0),B.E,B.z,B.M),B.x,l,l,new A.cl(B.ez,l,new A.cU(B.m,new A.aC(n,1,B.q,-1),new A.aC(j,1,B.q,-1),new A.aC(k,1,B.q,-1)),B.By,l,l,B.a9),l,l,l,l,l,l,l)],o),B.dB,B.z,B.M)},
+return A.eR(A.a([p,A.eD(l,A.eR(J.aHT(r).gij().hO(0,new A.a0z(r),t.dT).ep(0),B.E,B.z,B.M),B.x,l,l,new A.cl(B.ez,l,new A.cU(B.m,new A.aC(n,1,B.q,-1),new A.aC(j,1,B.q,-1),new A.aC(k,1,B.q,-1)),B.By,l,l,B.a9),l,l,l,l,l,l,l)],o),B.dB,B.z,B.M)},
 $S:209}
 A.a0z.prototype={
 $1(a){var s=null,r=a.b,q=a.a===J.bE(this.a)-1?s:new A.cU(B.m,B.m,new A.aC(A.ah(51,B.aF.v()>>>16&255,B.aF.v()>>>8&255,B.aF.v()&255),1,B.q,-1),B.m),p=J.aS(r)
-return A.eD(s,new A.bq(B.HV,A.d4(A.b([A.ft(A.a7C(p.h(r,"drug"),A.zQ(s,s,s,B.p,s,s,s,s,B.p,s,s,s,s,s,B.p,s,s,B.p,s,s,B.p,s,s,B.p,s,s,B.p,s,s,B.p,s,s,s,s,s,s,B.p,B.X0,s,s,s,s,s,s,s,s,s,s,s,s,B.e6,B.p,s,s,B.p)),s,100),B.zP,A.eD(s,s,B.x,A.ah(B.d.aC(76.5),B.aF.v()>>>16&255,B.aF.v()>>>8&255,B.aF.v()&255),s,s,s,20,B.jD,s,s,s,1),B.zP,A.bT(A.a7C(p.h(r,"dose"),A.zQ(s,s,B.Ao,B.p,B.j_,B.S,s,s,B.p,s,s,s,s,s,B.p,s,s,B.p,s,s,B.p,s,s,B.p,s,s,B.p,s,s,B.p,s,s,s,s,s,s,B.p,B.Ao,s,B.WF,s,s,s,s,s,s,s,s,s,s,B.e6,B.p,s,s,B.p)))],t.p),B.bu,B.z,B.M,s),s),B.x,s,s,new A.cl(s,s,q,s,s,s,B.a9),s,s,s,s,s,s,s)},
+return A.eD(s,new A.bq(B.HV,A.d4(A.a([A.ft(A.a7C(p.h(r,"drug"),A.zQ(s,s,s,B.p,s,s,s,s,B.p,s,s,s,s,s,B.p,s,s,B.p,s,s,B.p,s,s,B.p,s,s,B.p,s,s,B.p,s,s,s,s,s,s,B.p,B.X0,s,s,s,s,s,s,s,s,s,s,s,s,B.e6,B.p,s,s,B.p)),s,100),B.zP,A.eD(s,s,B.x,A.ah(B.d.aC(76.5),B.aF.v()>>>16&255,B.aF.v()>>>8&255,B.aF.v()&255),s,s,s,20,B.jD,s,s,s,1),B.zP,A.bT(A.a7C(p.h(r,"dose"),A.zQ(s,s,B.Ao,B.p,B.j_,B.S,s,s,B.p,s,s,s,s,s,B.p,s,s,B.p,s,s,B.p,s,s,B.p,s,s,B.p,s,s,B.p,s,s,s,s,s,s,B.p,B.Ao,s,B.WF,s,s,s,s,s,s,s,s,s,s,B.e6,B.p,s,s,B.p)))],t.p),B.bu,B.z,B.M,s),s),B.x,s,s,new A.cl(s,s,q,s,s,s,B.a9),s,s,s,s,s,s,s)},
 $S:580}
 A.a0y.prototype={
 $2(a,b){return B.dj},
@@ -95288,11 +95288,11 @@ $.aDv=null
 $.aEg=0
 $.awY=!1
 $.kS=null
-$.avr=A.b([],t.no)
+$.avr=A.a([],t.no)
 $.azC=0
 $.azD=0
 $.azB=0
-$.iw=A.b([],t.qj)
+$.iw=A.a([],t.qj)
 $.HX=B.nC
 $.HW=null
 $.avG=null
@@ -95308,7 +95308,7 @@ $.ra=A.o(t.N,t.m)
 $.aDP=1
 $.atu=null
 $.anu=null
-$.re=A.b([],t.jl)
+$.re=A.a([],t.jl)
 $.aAY=null
 $.ac9=0
 $.Ng=A.aR5()
@@ -95320,7 +95320,7 @@ $.aEE=null
 $.atH=null
 $.atX=null
 $.axk=null
-$.ap7=A.b([],A.ak("A<M<J>?>"))
+$.ap7=A.a([],A.ak("A<M<J>?>"))
 $.wA=null
 $.HZ=null
 $.I_=null
@@ -95333,7 +95333,7 @@ $.aDT=A.o(t.C_,t.lT)
 $.hE=null
 $.jw=A.aRH()
 $.avk=0
-$.aKh=A.b([],A.ak("A<aVR>"))
+$.aKh=A.a([],A.ak("A<aVR>"))
 $.aAd=null
 $.Zw=0
 $.asY=null
@@ -95341,7 +95341,7 @@ $.awW=!1
 $.el=null
 $.awF=!0
 $.awE=!1
-$.qz=A.b([],A.ak("A<nz>"))
+$.qz=A.a([],A.ak("A<nz>"))
 $.jN=null
 $.ls=null
 $.aAb=0
@@ -95362,60 +95362,60 @@ $.kH=null
 $.oC=null
 $.aCU=1
 $.avU=-9007199254740992
-$.ata=A.b(["p","h1","h2","h3","h4","h5","h6","li","blockquote","pre","ol","ul","hr","table","thead","tbody","tr","section"],t.s)
+$.ata=A.a(["p","h1","h2","h3","h4","h5","h6","li","blockquote","pre","ol","ul","hr","table","thead","tbody","tr","section"],t.s)
 $.a0_=!1
 $.aKD=function(){var s=t.n
-return A.b([A.b([0.001200833568784504,0.002389694492170889,0.0002795742885861124],s),A.b([0.0005891086651375999,0.0029785502573438758,0.0003270666104008398],s),A.b([0.00010146692491640572,0.0005364214359186694,0.0032979401770712076],s)],t.zg)}()
+return A.a([A.a([0.001200833568784504,0.002389694492170889,0.0002795742885861124],s),A.a([0.0005891086651375999,0.0029785502573438758,0.0003270666104008398],s),A.a([0.00010146692491640572,0.0005364214359186694,0.0032979401770712076],s)],t.zg)}()
 $.aKB=function(){var s=t.n
-return A.b([A.b([1373.2198709594231,-1100.4251190754821,-7.278681089101213],s),A.b([-271.815969077903,559.6580465940733,-32.46047482791194],s),A.b([1.9622899599665666,-57.173814538844006,308.7233197812385],s)],t.zg)}()
-$.z7=A.b([0.2126,0.7152,0.0722],t.n)
-$.aKz=A.b([0.015176349177441876,0.045529047532325624,0.07588174588720938,0.10623444424209313,0.13658714259697685,0.16693984095186062,0.19729253930674434,0.2276452376616281,0.2579979360165119,0.28835063437139563,0.3188300904430532,0.350925934958123,0.3848314933096426,0.42057480301049466,0.458183274052838,0.4976837250274023,0.5391024159806381,0.5824650784040898,0.6277969426914107,0.6751227633498623,0.7244668422128921,0.775853049866786,0.829304845476233,0.8848452951698498,0.942497089126609,1.0022825574869039,1.0642236851973577,1.1283421258858297,1.1946592148522128,1.2631959812511864,1.3339731595349034,1.407011200216447,1.4823302800086415,1.5599503113873272,1.6398909516233677,1.7221716113234105,1.8068114625156377,1.8938294463134073,1.9832442801866852,2.075074464868551,2.1693382909216234,2.2660538449872063,2.36523901573795,2.4669114995532007,2.5710888059345764,2.6777882626779785,2.7870270208169257,2.898822059350997,3.0131901897720907,3.1301480604002863,3.2497121605402226,3.3718988244681087,3.4967242352587946,3.624204428461639,3.754355295633311,3.887192587735158,4.022731918402185,4.160988767090289,4.301978482107941,4.445716283538092,4.592217266055746,4.741496401646282,4.893568542229298,5.048448422192488,5.20615066083972,5.3666897647573375,5.5300801301023865,5.696336044816294,5.865471690767354,6.037501145825082,6.212438385869475,6.390297286737924,6.571091626112461,6.7548350853498045,6.941541251256611,7.131223617812143,7.323895587840543,7.5195704746346665,7.7182615035334345,7.919981813454504,8.124744458384042,8.332562408825165,8.543448553206703,8.757415699253682,8.974476575321063,9.194643831691977,9.417930041841839,9.644347703669503,9.873909240696694,10.106627003236781,10.342513269534024,10.58158024687427,10.8238400726681,11.069304815507364,11.317986476196008,11.569896988756009,11.825048221409341,12.083451977536606,12.345119996613247,12.610063955123938,12.878295467455942,13.149826086772048,13.42466730586372,13.702830557985108,13.984327217668513,14.269168601521828,14.55736596900856,14.848930523210871,15.143873411576273,15.44220572664832,15.743938506781891,16.04908273684337,16.35764934889634,16.66964922287304,16.985093187232053,17.30399201960269,17.62635644741625,17.95219714852476,18.281524751807332,18.614349837764564,18.95068293910138,19.290534541298456,19.633915083172692,19.98083495742689,20.331304511189067,20.685334046541502,21.042933821039977,21.404114048223256,21.76888489811322,22.137256497705877,22.50923893145328,22.884842241736916,23.264076429332462,23.6469514538663,24.033477234264016,24.42366364919083,24.817520537484558,25.21505769858089,25.61628489293138,26.021211842414342,26.429848230738664,26.842203703840827,27.258287870275353,27.678110301598522,28.10168053274597,28.529008062403893,28.96010235337422,29.39497283293396,29.83362889318845,30.276079891419332,30.722335150426627,31.172403958865512,31.62629557157785,32.08401920991837,32.54558406207592,33.010999283389665,33.4802739966603,33.953417292456834,34.430438229418264,34.911345834551085,35.39614910352207,35.88485700094671,36.37747846067349,36.87402238606382,37.37449765026789,37.87891309649659,38.38727753828926,38.89959975977785,39.41588851594697,39.93615253289054,40.460400508064545,40.98864111053629,41.520882981230194,42.05713473317016,42.597404951718396,43.141702194811224,43.6900349931913,44.24241185063697,44.798841244188324,45.35933162437017,45.92389141541209,46.49252901546552,47.065252796817916,47.64207110610409,48.22299226451468,48.808024568002054,49.3971762874833,49.9904556690408,50.587870934119984,51.189430279724725,51.79514187861014,52.40501387947288,53.0190544071392,53.637271562750364,54.259673423945976,54.88626804504493,55.517063457223934,56.15206766869424,56.79128866487574,57.43473440856916,58.08241284012621,58.734331877617365,59.39049941699807,60.05092333227251,60.715611475655585,61.38457167773311,62.057811747619894,62.7353394731159,63.417162620860914,64.10328893648692,64.79372614476921,65.48848194977529,66.18756403501224,66.89098006357258,67.59873767827808,68.31084450182222,69.02730813691093,69.74813616640164,70.47333615344107,71.20291564160104,71.93688215501312,72.67524319850172,73.41800625771542,74.16517879925733,74.9167682708136,75.67278210128072,76.43322770089146,77.1981124613393,77.96744375590167,78.74122893956174,79.51947534912904,80.30219030335869,81.08938110306934,81.88105503125999,82.67721935322541,83.4778813166706,84.28304815182372,85.09272707154808,85.90692527145302,86.72564993000343,87.54890820862819,88.3767072518277,89.2090541872801,90.04595612594655,90.88742016217518,91.73345337380438,92.58406282226491,93.43925555268066,94.29903859396902,95.16341895893969,96.03240364439274,96.9059996312159,97.78421388448044,98.6670533535366,99.55452497210776],t.n)
-$.aBj=A.b([0,21,51,121,151,191,271,321,360],t.n)
-$.aMS=A.b([45,95,45,20,45,90,45,45,45],t.n)
-$.aMT=A.b([120,120,20,45,20,15,20,120,120],t.n)
-$.aBk=A.b([0,41,61,101,131,181,251,301,360],t.n)
-$.aMU=A.b([18,15,10,12,15,18,15,12,12],t.n)
-$.aMV=A.b([35,30,20,25,30,35,30,25,25],t.n)
+return A.a([A.a([1373.2198709594231,-1100.4251190754821,-7.278681089101213],s),A.a([-271.815969077903,559.6580465940733,-32.46047482791194],s),A.a([1.9622899599665666,-57.173814538844006,308.7233197812385],s)],t.zg)}()
+$.z7=A.a([0.2126,0.7152,0.0722],t.n)
+$.aKz=A.a([0.015176349177441876,0.045529047532325624,0.07588174588720938,0.10623444424209313,0.13658714259697685,0.16693984095186062,0.19729253930674434,0.2276452376616281,0.2579979360165119,0.28835063437139563,0.3188300904430532,0.350925934958123,0.3848314933096426,0.42057480301049466,0.458183274052838,0.4976837250274023,0.5391024159806381,0.5824650784040898,0.6277969426914107,0.6751227633498623,0.7244668422128921,0.775853049866786,0.829304845476233,0.8848452951698498,0.942497089126609,1.0022825574869039,1.0642236851973577,1.1283421258858297,1.1946592148522128,1.2631959812511864,1.3339731595349034,1.407011200216447,1.4823302800086415,1.5599503113873272,1.6398909516233677,1.7221716113234105,1.8068114625156377,1.8938294463134073,1.9832442801866852,2.075074464868551,2.1693382909216234,2.2660538449872063,2.36523901573795,2.4669114995532007,2.5710888059345764,2.6777882626779785,2.7870270208169257,2.898822059350997,3.0131901897720907,3.1301480604002863,3.2497121605402226,3.3718988244681087,3.4967242352587946,3.624204428461639,3.754355295633311,3.887192587735158,4.022731918402185,4.160988767090289,4.301978482107941,4.445716283538092,4.592217266055746,4.741496401646282,4.893568542229298,5.048448422192488,5.20615066083972,5.3666897647573375,5.5300801301023865,5.696336044816294,5.865471690767354,6.037501145825082,6.212438385869475,6.390297286737924,6.571091626112461,6.7548350853498045,6.941541251256611,7.131223617812143,7.323895587840543,7.5195704746346665,7.7182615035334345,7.919981813454504,8.124744458384042,8.332562408825165,8.543448553206703,8.757415699253682,8.974476575321063,9.194643831691977,9.417930041841839,9.644347703669503,9.873909240696694,10.106627003236781,10.342513269534024,10.58158024687427,10.8238400726681,11.069304815507364,11.317986476196008,11.569896988756009,11.825048221409341,12.083451977536606,12.345119996613247,12.610063955123938,12.878295467455942,13.149826086772048,13.42466730586372,13.702830557985108,13.984327217668513,14.269168601521828,14.55736596900856,14.848930523210871,15.143873411576273,15.44220572664832,15.743938506781891,16.04908273684337,16.35764934889634,16.66964922287304,16.985093187232053,17.30399201960269,17.62635644741625,17.95219714852476,18.281524751807332,18.614349837764564,18.95068293910138,19.290534541298456,19.633915083172692,19.98083495742689,20.331304511189067,20.685334046541502,21.042933821039977,21.404114048223256,21.76888489811322,22.137256497705877,22.50923893145328,22.884842241736916,23.264076429332462,23.6469514538663,24.033477234264016,24.42366364919083,24.817520537484558,25.21505769858089,25.61628489293138,26.021211842414342,26.429848230738664,26.842203703840827,27.258287870275353,27.678110301598522,28.10168053274597,28.529008062403893,28.96010235337422,29.39497283293396,29.83362889318845,30.276079891419332,30.722335150426627,31.172403958865512,31.62629557157785,32.08401920991837,32.54558406207592,33.010999283389665,33.4802739966603,33.953417292456834,34.430438229418264,34.911345834551085,35.39614910352207,35.88485700094671,36.37747846067349,36.87402238606382,37.37449765026789,37.87891309649659,38.38727753828926,38.89959975977785,39.41588851594697,39.93615253289054,40.460400508064545,40.98864111053629,41.520882981230194,42.05713473317016,42.597404951718396,43.141702194811224,43.6900349931913,44.24241185063697,44.798841244188324,45.35933162437017,45.92389141541209,46.49252901546552,47.065252796817916,47.64207110610409,48.22299226451468,48.808024568002054,49.3971762874833,49.9904556690408,50.587870934119984,51.189430279724725,51.79514187861014,52.40501387947288,53.0190544071392,53.637271562750364,54.259673423945976,54.88626804504493,55.517063457223934,56.15206766869424,56.79128866487574,57.43473440856916,58.08241284012621,58.734331877617365,59.39049941699807,60.05092333227251,60.715611475655585,61.38457167773311,62.057811747619894,62.7353394731159,63.417162620860914,64.10328893648692,64.79372614476921,65.48848194977529,66.18756403501224,66.89098006357258,67.59873767827808,68.31084450182222,69.02730813691093,69.74813616640164,70.47333615344107,71.20291564160104,71.93688215501312,72.67524319850172,73.41800625771542,74.16517879925733,74.9167682708136,75.67278210128072,76.43322770089146,77.1981124613393,77.96744375590167,78.74122893956174,79.51947534912904,80.30219030335869,81.08938110306934,81.88105503125999,82.67721935322541,83.4778813166706,84.28304815182372,85.09272707154808,85.90692527145302,86.72564993000343,87.54890820862819,88.3767072518277,89.2090541872801,90.04595612594655,90.88742016217518,91.73345337380438,92.58406282226491,93.43925555268066,94.29903859396902,95.16341895893969,96.03240364439274,96.9059996312159,97.78421388448044,98.6670533535366,99.55452497210776],t.n)
+$.aBj=A.a([0,21,51,121,151,191,271,321,360],t.n)
+$.aMS=A.a([45,95,45,20,45,90,45,45,45],t.n)
+$.aMT=A.a([120,120,20,45,20,15,20,120,120],t.n)
+$.aBk=A.a([0,41,61,101,131,181,251,301,360],t.n)
+$.aMU=A.a([18,15,10,12,15,18,15,12,12],t.n)
+$.aMV=A.a([35,30,20,25,30,35,30,25,25],t.n)
 $.iB=function(){var s=t.n
-return A.b([A.b([0.41233895,0.35762064,0.18051042],s),A.b([0.2126,0.7152,0.0722],s),A.b([0.01932141,0.11916382,0.95034478],s)],t.zg)}()
-$.rO=A.b([95.047,100,108.883],t.n)
+return A.a([A.a([0.41233895,0.35762064,0.18051042],s),A.a([0.2126,0.7152,0.0722],s),A.a([0.01932141,0.11916382,0.95034478],s)],t.zg)}()
+$.rO=A.a([95.047,100,108.883],t.n)
 $.aDw=null
 $.asX=null
 $.aEB=function(){var s="Nitroglycerin (NTG)",r="[\u516c\u5f0f] **Corrected Na**: Na + 1.6 * ((Glu-100)/100)",q="\u5927\u91cf\u8f38\u6db2 (Hydration) + **Allopurinol**",p="**Rasburicase** (G6PD \u7f3a\u4e4f\u8005\u7981\u7528)",o=t.s,n=t.N,m=A.ak("A<aQ<r,r>>"),l=t.K,k=A.ak("A<aQ<r,J>>"),j=t.z,i=t.UX
-return A.b([A.c(["group","\ud83d\udea8 \u5371\u6025\u5fb5\u8c61\u8207\u75c7\u72c0","id","protocol_shock_01","lastUpdate","2026/01/29","title","\u4f11\u514b\u8207\u4f4e\u8840\u58d3 (Shock)","subtitle","On Call: \u6390\u6c34\u3001\u5347\u58d3\u5291\u6ce1\u6cd5 & \u9451\u5225","content",A.c(["intro","### \u8655\u7f6e\u539f\u5247\n1. **\u5b9a\u7fa9**\uff1a\u4f4e\u8840\u58d3 (Hypotension) \u4e0d\u7b49\u65bc \u4f11\u514b\u3002\u4f11\u514b = SBP<90 + \u704c\u6d41\u4e0d\u8db3 (\u610f\u8b58\u8b8a/\u5c3f\u5c11/\u6fd5\u51b7)\u3002\n2. **\u7b2c\u4e00\u6b65\uff1a\u5148\u6390\u6c34\uff01**\n   * \u5168\u901f\u8f38\u6ce8 N/S 500mL (1-2\u5305)\u3002\n   * **\u4f8b\u5916**\uff1a\u5fc3\u8870\u7aed/\u80ba\u6c34\u816b (\u91cf\u780d\u534a)\u3001\u6d17\u814e\u75c5\u4eba\u3002\n   * \u82e5\u7121\u6548 -> **\u7d66\u5347\u58d3\u5291** \u4e26 Call \u5f8c\u7dda (\u6e96\u5099 CVC)\u3002\n3. **\u75c5\u53f2\u6838\u5c0d**\uff1a\u8fd1\u671f\u624b\u8853? (\u51fa\u8840\u98a8\u96aa -> \u5099\u8840/\u8f38\u8840)\uff1b\u85e5\u7269\u904e\u91cf? (Morphine -> Naloxone)\u3002\n4. **\u76ee\u6a19**\uff1a\u7dad\u6301 MAP >= 65 (SBP > 90-100)\u3002","diagnosis",A.b(["[\u5fc3\u56e0\u6027] Cardiogenic: JVP\u9ad8, \u6fd5\u56c9\u97f3 (MI, \u5fc3\u5305\u586b\u585e, \u5f35\u529b\u6027\u6c23\u80f8)","[\u4f4e\u8840\u5bb9] Hypovolemic: JVP\u4f4e, \u76ae\u819a\u4e7e (\u51fa\u8840, \u812b\u6c34, \u7b2c\u4e09\u9593\u9699)","[\u5206\u4f48\u6027] Distributive: JVP\u4f4e, \u56db\u80a2\u6696 (\u6557\u8840\u75c7, \u904e\u654f, \u810a\u9ad3\u640d\u50b7)","[\u963b\u585e\u6027] Obstructive: JVP\u9ad8, \u80ba\u6813\u585e (PE)","[\u5fb5\u8c61] HR < 50: \u8003\u616e Atropine \u6216 \u5fc3\u81df\u50b3\u5c0e\u963b\u6eef","[\u5fb5\u8c61] Wheezing: \u904e\u654f\u6027\u4f11\u514b \u6216 \u5fc3\u8870\u7aed","[\u5fb5\u8c61] \u55ae\u5074\u547c\u5438\u97f3\u6d88\u5931: \u5f35\u529b\u6027\u6c23\u80f8 -> \u91dd\u523a\u6e1b\u58d3","[\u6aa2\u9a57] Stat EKG (\u6392\u9664 MI), ABG, CBC/Crossmatch (\u5099\u8840), CXR"],o),"treatment",A.b([A.c(["category","A. \u5347\u58d3\u5291 (Vasopressors) - \u5be6\u6230\u6ce1\u6cd5","items",A.b([A.c(["drug","\u9996\u9078\u9806\u5e8f","dose","Levophed -> Pitressin -> Bosmin -> Dopamine"],n,n),A.c(["drug","1. Levophed (Norepinephrine)","dose","**4 amp in 250mL D5W** (\u7531 CVC \u7d66\u4e88)\nRun **2-5 cc/hr** -> Max 40 cc/hr (\u901a\u5e38 20 \u5c31\u8981\u8003\u616e\u52a0\u85e5)\n*\u82e5 Septic shock \u53ef\u52a0 Hydrocortisone 50mg q6h*"],n,n),A.c(["drug","2. Pitressin (Vasopressin)","dose","\u4e8c\u7dda\u7528\u85e5 (Levophed \u4e0d\u5920\u6642\u52a0)\n**2 amp in 100mL NS** -> Run **1.5-6 cc/hr**"],n,n),A.c(["drug","3. Bosmin (Epinephrine)","dose","\u6fc3 (Pure): Max 20 cc/hr\n\u7a00 (**1mg in 19mL NS**): Run 0.6-30 cc/hr"],n,n),A.c(["drug","4. Dopamine (Easydopa)","dose","**\u5468\u908a IV \u53ef\u7528** (\u5347\u58d3+\u5347\u5fc3\u8df3)\n**4 amp in 500mL D5W** -> Run **10-40 cc/hr**"],n,n)],m)],n,l),A.c(["category","B. \u904e\u654f\u6027\u4f11\u514b (Anaphylaxis)","items",A.b([A.c(["drug","Epinephrine (\u6551\u547d\u9996\u9078)","dose","\u8f15\u4e2d\u5ea6: **0.5mg (1:1000) IM** (\u5927\u817f\u5916\u5074)\n\u56b4\u91cd/\u4f11\u514b: **1mg (1:10000) IV** slow push"],n,n),A.c(["drug","\u8f14\u52a9\u85e5\u7269","dose","N/S \u5168\u901f\u8f38\u6ce8 + Solu-Cortef + Antihistamine"],n,n)],m)],n,l),A.c(["category","C. \u5176\u4ed6\u85e5\u7269","items",A.b([A.c(["drug","Midodrine (\u53e3\u670d\u5347\u58d3)","dose","\u50c5\u7528\u65bc **\u6d17\u814e/\u9ad4\u8cea\u6027\u4f4e\u8840\u58d3** (STAT 2-6#)\n[\u8b66\u793a] **\u4f11\u514b\u75c5\u4eba\u7981\u7528** (\u53ea\u6490\u6578\u5b57\u6c92\u89e3\u6c7a\u704c\u6d41)"],n,n),A.c(["drug","Atropine (\u5fc3\u640f\u904e\u7de9)","dose","0.5-1 mg IV push (Max 3mg)"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83d\udea8 \u5371\u6025\u5fb5\u8c61\u8207\u75c7\u72c0","id","protocol_chest_pain_01","lastUpdate","2026/01/28","title","\u80f8\u75db (Chest Pain)","subtitle","On Call: \u96b1\u85cf\u6bba\u624b EKG \u8207\u8655\u7f6e","content",A.c(["intro","### \u8655\u7f6e\u539f\u5247\n1. **\u62bd\u8840\u7b56\u7565**\uff1a\u5efa\u8b70 **TnI/TnT + CKMB + CPK**\u3002\u55ae\u9a57 TnT \u5e72\u64fe\u591a\uff1b**\u52ff\u9a57 NT-proBNP** (\u8a3a\u65b7\u6548\u76ca\u4f4e/\u5065\u4fdd\u9650\u5236)\u3002\n2. **\u8ffd\u8e64\u6642\u6a5f**\uff1a\u6a19\u6e96 **EKG 30min / Lab 2hr** repeat\u3002\u82e5\u5fd9\u788c\u4e14\u4f4e\u98a8\u96aa\uff0c\u53ef 2hr \u4e00\u8d77\u8ffd\u8e64\u3002\u6578\u503c\u6709\u8b8a\u6216\u5716\u5f62\u50cf AMI -> **Call CV**\u3002\n3. **Aortic Dissection**\uff1a\u75c5\u4eba\u75db\u5230\u7206 (Tearing pain) + Refer pain -> **\u76f4\u63a5\u6392 Chest CTA**\u3002\n4. **\u5f8c\u7dda\u652f\u63f4**\uff1a\u770b\u4e0d\u61c2 EKG \u5c31\u5927\u65b9 Call \u5f8c\u7dda\u78ba\u8a8d (\u6216\u50b3\u5716\u6c42\u6551)\u3002","diagnosis",A.b(["[\u5371\u6025] **\u6025\u6027\u51a0\u5fc3\u75c7 (ACS)**: \u5305\u542b STEMI \u8207\u7b49\u540c STEMI \u7684\u9ad8\u5371\u96aa\u5fb5\u8c61","[\u5371\u6025] **\u4e3b\u52d5\u8108\u525d\u96e2**: \u5169\u624b BP \u5dee >20, \u5287\u70c8\u6495\u88c2\u75db","[\u5371\u6025] **\u5f35\u529b\u6027\u6c23\u80f8**: \u4f4e\u8840\u58d3, \u6c23\u7ba1\u504f\u79fb, \u55ae\u5074\u547c\u5438\u97f3\u6d88\u5931","[\u5371\u6025] **\u80ba\u6813\u585e (PE)**: \u4f4e\u8840\u6c27, \u5fc3\u640f\u904e\u901f, D-dimer \u9ad8","[\u96b1\u85cf] **Posterior MI**: V2-V3 **ST Depression** -> \u52a0\u505a V7-V9 (\u5de6\u80a9\u80db\u4e0b\u7de3) \u78ba\u8a8d ST Elevation","[\u96b1\u85cf] **Wellens' Syndrome** (LAD\u72f9\u7a84): V2-V3 \u51fa\u73fe **Biphasic T** (Type A) \u6216 **Deep T Inversion** (Type B)","[\u96b1\u85cf] **De Winter's** (LAD\u963b\u585e): ST depression (\u4e0a\u52fe\u578b concave up) + **Tall T wave**","[\u8655\u7f6e] ECG 12-Lead (Stat) + O2 (\u82e5 SaO2 <94%) + IV Access","[\u62bd\u8840] Troponin, CK-MB, CPK (2hr repeat); CBC, PT/aPTT"],o),"treatment",A.b([A.c(["category","A. \u6025\u6027\u51a0\u5fc3\u75c7 (ACS)","items",A.b([A.c(["drug","Aspirin","dose","300 mg (3#) \u56bc\u788e (\u7acb\u5373\u7d66\u4e88)"],n,n),A.c(["drug",s,"dose","0.6 mg SL q5min x3 (\u7981\u5fcc: BP<90, **RV Infarct**, Viagra)"],n,n),A.c(["drug","Morphine","dose","2-4 mg IV q5-10min (\u82e5 NTG \u7121\u6548)"],n,n)],m)],n,l),A.c(["category","B. \u4e3b\u52d5\u8108\u525d\u96e2 (Aortic Dissection)","items",A.b([A.c(["drug","Beta-blockers (\u9996\u9078)","dose","Propranolol / Esmolol (**\u5148\u964d\u5fc3\u8df3** \u518d\u964d\u8840\u58d3)"],n,n),A.c(["drug","Nitroprusside","dose","[\u8b66\u793a] \u50c5\u5728\u7d66\u4e88 Beta-blocker **\u5f8c** \u5408\u4f75\u4f7f\u7528 (\u55ae\u7528\u6703\u53cd\u5c04\u6027 tachycardia)"],n,n)],m)],n,l),A.c(["category","C. \u5176\u4ed6\u6025\u75c7","items",A.b([A.c(["drug","Pulmonary Embolism","dose","O2 + Anticoagulant (Heparin); \u4e0d\u7a69\u5b9a\u8003\u616e\u6eb6\u6813"],n,n),A.c(["drug","Tension Pneumothorax","dose","\u7acb\u5373\u91dd\u523a\u6e1b\u58d3 (Needle Decompression) -> \u80f8\u7ba1"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83d\udea8 \u5371\u6025\u5fb5\u8c61\u8207\u75c7\u72c0","id","protocol_dyspnea_01","lastUpdate","2026/01/29","title","\u547c\u5438\u6025\u4fc3 (Dyspnea/SOB)","subtitle","On Call: \u81f4\u547d\u9451\u5225\u3001\u6aa2\u67e5\u8207 LMNOP","content",A.c(["intro","### \u8655\u7f6e\u539f\u5247\n1. **\u9996\u8981\u4efb\u52d9**\uff1a\u78ba\u4fdd\u547c\u5438\u9053 + \u4fee\u6b63\u4f4e\u8840\u6c27\u3002**\u5207\u52ff\u53ea\u8abf\u9ad8\u6c27\u6c23\u6d41\u91cf\u800c\u672a\u505a\u8a55\u4f30\uff01**\n2. **\u5371\u53ca\u751f\u547d (Killers)**\uff1a\n   * \u4e0a\u547c\u5438\u9053\u963b\u585e / \u904e\u654f\u6027\u4f11\u514b (Anaphylaxis)\n   * \u5f35\u529b\u6027\u6c23\u80f8 (Tension Pneumo)\n   * \u80ba\u6813\u585e (PE)\n   * \u5fc3\u56e0\u6027\u80ba\u6c34\u816b (Acute CHF)\n   * \u56b4\u91cd\u6c23\u5598/COPD (Bronchospasm)\n   * \u91cd\u75c7\u80ba\u708e/\u6557\u8840\u75c7 (ARDS)\n3. **\u6c27\u6c23\u76ee\u6a19**\uff1a\u4e00\u822c >94%\uff1bCOPD (CO2\u6eef\u7559\u98a8\u96aa) 88-92%\u3002","diagnosis",A.b(["[\u8655\u7f6e] **Bedside \u8a55\u4f30**: \u610f\u8b58? \u547c\u5438\u578b\u614b? \u807d\u8a3a? (\u52ff\u53ea\u770b Monitor)","[\u8655\u7f6e] **IV Access**: \u5efa\u7acb\u5169\u689d\u7ba1\u8def\uff0c\u88dd\u4e0a ECG Monitor & SpO2","[Stat Order] **ABG**: \u8a55\u4f30\u6c27\u5408 (PaO2) \u8207\u901a\u6c23 (PaCO2/pH)","[Stat Order] **CXR (Portable)**: \u5340\u5206\u80ba\u708e/\u6c23\u80f8/\u80ba\u6c34\u816b\u6700\u91cd\u8981\u5de5\u5177","[Stat Order] **12-lead ECG**: \u6392\u9664 MI \u6216\u5fc3\u5f8b\u4e0d\u6574","[\u62bd\u8840] CBC/DC, Lytes, Cr, Trop-I, BNP, D-dimer (\u61f7\u7591PE\u6642)","[\u5371\u6025] **Stridor/Wheezing + \u8541\u9ebb\u75b9**: \u904e\u654f\u6027\u4f11\u514b","[\u5371\u6025] **\u55ae\u5074\u547c\u5438\u97f3\u6d88\u5931 + \u4f4e\u8840\u58d3**: \u5f35\u529b\u6027\u6c23\u80f8 -> \u7acb\u5373\u6e1b\u58d3","[\u5371\u6025] **\u9838\u975c\u8108\u6012\u5f35 (JVP) + \u6fd5\u56c9\u97f3**: \u5fc3\u56e0\u6027\u80ba\u6c34\u816b"],o),"treatment",A.b([A.c(["category","A. \u904e\u654f\u6027\u4f11\u514b (Anaphylaxis)","items",A.b([A.c(["drug","Epinephrine (\u9996\u9078 IM)","dose","**0.5 mg (1:1000) IM** \u5927\u817f\u5916\u5074 (\u6bcf 5min \u53ef\u91cd\u8907)\n*\u6ce8\u610f\u6fc3\u5ea6\u662f 1mg/1mL \u90a3\u7a2e*"],n,n),A.c(["drug","Epinephrine (IV)","dose","[\u8b66\u793a] **\u50c5\u7528\u65bc\u5371\u53ca\u751f\u547d\u4f11\u514b**\n**1 mg (1:10,000) IV** \u7de9\u6162\u63a8\u6ce8 (\u7a00\u91cb\u6210 10mL \u90a3\u7a2e)"],n,n),A.c(["drug","\u8f14\u52a9\u85e5\u7269","dose","Solu-Cortef (Steroid) + Diphenhydramine (Anti-histamine)"],n,n),A.c(["drug","\u547c\u5438\u9053","dose","\u82e5\u5589\u982d\u6c34\u816b\u56b4\u91cd\uff0c\u5118\u65e9\u63d2\u7ba1 (Intubation)"],n,n)],m)],n,l),A.c(["category","B. \u6025\u6027\u80ba\u6c34\u816b (LMNOP)","items",A.b([A.c(["drug","L: Lasix","dose","**40 mg (1-2 amp) IV push** (\u82e5\u814e\u5dee\u6216\u9577\u671f\u4f7f\u7528\u9700\u52a0\u500d)"],n,n),A.c(["drug","M: Morphine","dose","2-4 mg IV (\u7126\u616e/\u64f4\u5f35\u975c\u8108; \u6ce8\u610f\u547c\u5438\u6291\u5236)"],n,n),A.c(["drug","N: Nitroglycerin","dose","\u820c\u4e0b\u542b\u670d \u6216 **IV Pump** (\u964d Afterload \u9996\u9078)"],n,n),A.c(["drug","O: Oxygen/BiPAP","dose","\u8003\u616e BiPAP (\u82e5\u610f\u8b58\u6e05\u695a\u4e14\u7121\u7981\u5fcc)"],n,n),A.c(["drug","P: Position","dose","\u5750\u8d77 (Sit up) \u6e1b\u5c11\u56de\u5fc3\u8840"],n,n)],m)],n,l),A.c(["category","C. \u6c23\u5598 / COPD \u6025\u6027\u60e1\u5316","items",A.b([A.c(["drug","\u5438\u5165\u5291 (Inhalation)","dose","Combivent (SABA+SAMA) \u5438\u5165 q20min (\u56b4\u91cd\u6642\u9023\u7e8c\u7d66)"],n,n),A.c(["drug","\u985e\u56fa\u9187 (Systemic)","dose","**Solu-Medrol** 40-125 mg IV (\u5118\u65e9\u7d66\u4e88\u6e1b\u8f15\u767c\u708e)"],n,n),A.c(["drug","Magnesium Sulfate","dose","\u56b4\u91cd\u6c23\u5598\u53cd\u61c9\u4e0d\u4f73\u6642: **2g IV** run 20min"],n,n)],m)],n,l),A.c(["category","D. \u5176\u4ed6\u6025\u75c7\u8655\u7f6e","items",A.b([A.c(["drug","\u5f35\u529b\u6027\u6c23\u80f8","dose","**\u91dd\u523a\u6e1b\u58d3 (Needle Decompression)**\n\u4f4d\u7f6e: \u60a3\u5074\u9396\u9aa8\u4e2d\u7dda **\u7b2c2\u808b\u9593** (14G/16G \u91dd\u982d)"],n,n),A.c(["drug","\u80ba\u6813\u585e (PE)","dose","\u6297\u51dd\u8840\u5291 (Heparin/Clexane)\n\u82e5\u4f11\u514b (SBP<90): \u8003\u616e tPA \u6eb6\u6813"],n,n),A.c(["drug","\u80ba\u708e (Pneumonia)","dose","\u7d93\u9a57\u6027\u6297\u751f\u7d20 (Ceph + Macrolide/FQ)\n\u8a55\u4f30 HFNC \u6216\u63d2\u7ba1"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83d\udea8 \u5371\u6025\u5fb5\u8c61\u8207\u75c7\u72c0","id","protocol_consciousness_aeiou","lastUpdate","2025/10/15","title","\u610f\u8b58\u6539\u8b8a (AEIOU TIPS)","subtitle","On Call: \u8a73\u7d30\u9451\u5225\u8207\u6297\u751f\u7d20\u8166\u75c5\u8b8a","content",A.c(["intro","### \u8a55\u4f30\u6d41\u7a0b\n1. **Stabilize**: \u78ba\u4fdd\u547c\u5438\u9053 (Respiratory failure? -> Intubation) \u8207 \u5faa\u74b0 (Shock? -> Bosmin/Fluids)\u3002\n2. **Check**: \u77b3\u5b54 (Pupil), \u808c\u529b (MP), \u8db3\u5e95\u53cd\u5c04 (Babinski)\u3002","diagnosis",A.b(["[A] Alcohol, **Acidosis** (ABG), **Ammonia** (\u809d\u6027\u8166\u75c5\u8b8a), Arrhythmia","[E] **Electrolytes** (\u9ad8/\u4f4e\u9209, \u9ad8\u9223), Encephalopathy","[I] **Infection** (Sepsis, Meningitis, UTI, Pneumonia)","[O] **Opioid/Drug**: BZD, Opiate... \u4ee5\u53ca **Ceftriaxone / Cefepime** (\u6297\u751f\u7d20\u8166\u75c5\u8b8a!)","[U] **Uremia**: BUN > 150?","[T] Trauma (\u649e\u5230\u982d?), Temperature (Heat stroke)","[I] **Insulin**: \u4f4e\u8840\u7cd6 (Hypoglycemia) \u6216 DKA/HHS","[P] Psychiatric (\u6392\u9664\u5668\u8cea\u6027\u5f8c\u624d\u8003\u616e)","[S] **Stroke** (ICH/Infarct), Seizure (Post-ictal), Shock"],o),"treatment",A.b([A.c(["category","\u521d\u6b65\u8655\u7f6e Workup","items",A.b([A.c(["drug","\u5fc5\u62bd","dose","Finger sugar (\u8840\u7cd6), ABG, Na/K/Ca, NH3, Cortisol"],n,n),A.c(["drug","\u5f71\u50cf","dose","Brain CT (\u6392\u9664\u51fa\u8840/\u816b\u7624/\u5927\u7247\u6897\u585e)"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83d\udea8 \u5371\u6025\u5fb5\u8c61\u8207\u75c7\u72c0","id","protocol_seizure_01","lastUpdate","2026/01/29","title","\u7672\u7647\u767c\u4f5c (Seizure)","subtitle","On Call: \u6025\u6551\u6642\u5e8f\u3001Loading Dose & \u9451\u5225","content",A.c(["intro","### \u8655\u7f6e\u539f\u5247\n1. **\u83ab\u614c**\uff1a\u5148\u78ba\u4fdd\u5b89\u5168 (\u9632\u54ac\u820c/\u8dcc\u5012) + \u7a69\u5b9a Vital Signs\u3002\n2. **\u79d2\u6392\u9664**\uff1aShock, Hypoglycemia (\u6e2c\u8840\u7cd6!), Stroke, Meningitis\u3002\n3. **\u85e5\u7269\u8a98\u767c**\uff1a**Cefepime** (\u814e\u5dee\u8005)\u3001**Carbapenem** (Imi > Erta > Mero) \u5e38\u8a98\u767c Seizure\u3002\n4. **\u7279\u6b8a\u71df\u990a**\uff1a\u9157\u9152\u8005\u8003\u616e Thiamine 500mg IVD\u3002","diagnosis",A.b(["[0-5min] **\u4fdd\u8b77**: \u5074\u8eba (\u7526\u9192\u59ff\u52e2), Oral bite (\u7259\u95dc\u7dca\u9589\u52ff\u786c\u585e), O2, Monitor","[\u89c0\u5bdf] **\u578b\u614b**: \u55ae/\u96d9\u5074? \u773c\u795e\u4e0a\u540a? \u8d77\u59cb\u90e8\u4f4d? \u610f\u8b58\u72c0\u614b? (\u8acb\u5bb6\u5c6c\u9304\u5f71)","[\u6aa2\u9a57] **Labs**: CBC, Ca/Mg/P, Ammonia, Liver/Renal, Drug level (Dilantin/Valproate)","[\u5f71\u50cf] **Brain CT**: \u521d\u6b21\u767c\u4f5c/\u61f7\u7591\u4e2d\u98a8/\u5916\u50b7\u8005\u5fc5\u505a","[\u611f\u67d3] **Meningitis**: \u767c\u71d2? \u9838\u50f5\u786c (Neck stiffness)? -> Lumbar Puncture","[\u9451\u5225] **EEG**: \u6392\u9664\u5047\u6027\u7672\u7647\u6216\u78ba\u8a8d\u653e\u96fb (\u503c\u73ed\u4e0d\u6025\u505a)"],o),"treatment",A.b([A.c(["category","A. \u7b2c\u4e00\u7dda\u6cbb\u7642 (5-20 min)","items",A.b([A.c(["drug","Ativan (Lorazepam)","dose","**2 mg (1 amp) IV slow push** (2min)\n5\u5206\u9418\u5f8c\u7121\u6548\u53ef\u91cd\u8907\u4e00\u6b21 (Max 4mg)\n*\u6ce8\u610f: \u9700\u6709\u93ae\u975c\u6388\u6b0a/\u8ab2\u7a0b*"],n,n),A.c(["drug","\u66ff\u4ee3\u85e5\u7269","dose","\u7121 IV: **Dormicum** 10mg IM \u6216 **Diazepam** 20mg Rectal"],n,n),A.c(["drug","\u547c\u5438\u98a8\u96aa\u9ad8\u8005","dose","\u82e5 BiPAP full / \u53e3\u6c34\u591a\u6015\u63d2\u7ba1 -> **\u8df3\u904e BZD**\uff0c\u76f4\u63a5\u7d66\u4e8c\u7dda\u85e5 (Keppra/Lacosamide)"],n,n)],m)],n,l),A.c(["category","B. \u7b2c\u4e8c\u7dda\u6cbb\u7642 (20-60 min) - Loading","items",A.b([A.c(["drug","Keppra (Levetiracetam)","dose","\u9996\u9078 (\u526f\u4f5c\u7528\u5c11)\n**Loading**: 40-60 mg/kg (\u7d04 **2000mg**) in 100mL NS run >10min\nMaintain: 500-1000mg q12h (\u4f9d\u814e\u529f\u80fd\u8abf\u6574)"],n,n),A.c(["drug","Depakine (Valproate)","dose","**Loading**: 20-40 mg/kg\nMaintain: 600mg q8h (Max 4500mg)\n*\u7981\u5fcc: \u809d\u529f\u80fd\u7570\u5e38*"],n,n),A.c(["drug","Lacosamide (Vimpat)","dose","**Loading**: 200-400 mg IVD 30min\nMaintain: 200-300mg q12h\n*\u7981\u5fcc: \u5fc3\u81df\u50b3\u5c0e\u963b\u6eef (AV block)*"],n,n),A.c(["drug","Phenytoin (Dilantin)","dose","**Loading**: 20 mg/kg (Max 1500mg)\n*\u6ce8\u610f: \u8f38\u6ce8\u6162\u3001\u5fc3\u5f8b\u4e0d\u6574\u98a8\u96aa\u3001\u5bb9\u6613 Phlebitis*"],n,n)],m)],n,l),A.c(["category","C. \u9811\u56fa\u6027\u7672\u7647 (>60 min)","items",A.b([A.c(["drug","ICU \u7167\u8b77","dose","\u63d2\u7ba1 (Endo) + \u9ebb\u9189\u85e5\u7269 (Propofol / Midazolam / Phenobarbital)"],n,n)],m)],n,l),A.c(["category","D. \u5f8c\u7e8c\u9810\u9632 (Oral)","items",A.b([A.c(["drug","Keppra (Oral)","dose","1000mg BID \u8d77\u624b (\u82e5\u4ecd\u62bd\u53ef\u52a0\u81f3 1500mg)\n*\u6c34\u5291\u8207\u9320\u5291\u5291\u91cf\u63db\u7b97\u76f8\u540c*"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83d\udea8 \u5371\u6025\u5fb5\u8c61\u8207\u75c7\u72c0","id","protocol_stroke_01","lastUpdate","2026/01/29","title","\u8166\u4e2d\u98a8 (Stroke)","subtitle","On Call: tPA \u8a55\u4f30\u3001\u8840\u58d3\u63a7\u5236 & \u6392\u9664 Mimics","content",A.c(["intro","### \u8655\u7f6e\u539f\u5247\n1. **\u9996\u8981\u4efb\u52d9**\uff1a\u8207\u6642\u9593\u8cfd\u8dd1 (Time is Brain)\u3002\n2. **\u9ec3\u91d1\u6642\u9593**\uff1a\u78ba\u8a8d **Last Known Normal** \u6642\u9593 (\u7761\u9192\u767c\u73fe\u4ee5\u7761\u524d\u7b97)\u3002rtPA \u9ec3\u91d1\u671f\u901a\u5e38 < 3~4.5 \u5c0f\u6642\u3002\n3. **\u95dc\u9375\u52d5\u4f5c**\uff1a\u6e2c\u8840\u7cd6 (\u6392\u9664 Mimics) -> Stat CT (\u6392\u9664\u51fa\u8840) -> \u6c7a\u5b9a rtPA\u3002","diagnosis",A.b(["[Mimic] **\u4f4e\u8840\u7cd6 (Hypoglycemia)**: \u6700\u5e38\u898b! \u7acb\u5373\u6e2c Finger stick","[Mimic] **\u7672\u7647\u5f8c\u9ebb\u75fa (Todd's)**: \u6709\u7121\u76ee\u64ca seizure?","[Mimic] **\u8907\u96dc\u6027\u504f\u982d\u75db**: \u6709\u7121 Aura?","[\u6aa2\u67e5] **Non-contrast CT**: \u6700\u512a\u5148! \u5340\u5206\u7f3a\u8840/\u51fa\u8840","[\u6aa2\u67e5] ECG (AFib?), Coagulation (PT/INR, APTT), Platelet","[NIHSS] \u5feb\u901f\u8a55\u4f30\u795e\u7d93\u5b78\u7f3a\u640d\u7a0b\u5ea6"],o),"treatment",A.b([A.c(["category","A. \u6025\u6027\u7f3a\u8840\u6027\u4e2d\u98a8 (Ischemic)","items",A.b([A.c(["drug","tPA (Alteplase)","dose","**0.9 mg/kg** (Max 90mg)\n10% IV bolus (1min) -> 90% IV drip (60min)\n*\u7d66\u85e5\u5f8c 24hr \u7981\u963f\u65af\u5339\u9748/\u6297\u51dd\u8840\u5291*"],n,n),A.c(["drug","tPA \u7981\u5fcc\u75c7 (\u7cbe\u7c21)","dose","\u51fa\u8840\u75c5\u53f2\u3001\u8fd1\u671f\u624b\u8853/\u5916\u50b7\u3001BP > 185/110\u3001INR > 1.7\u3001PLT < 100k"],n,n),A.c(["drug","Aspirin","dose","\u82e5**\u4e0d\u6253 tPA**\uff1a\u7acb\u5373\u7d66 **160-300 mg PO/Supp**\n\u82e5**\u6253 tPA**\uff1a24\u5c0f\u6642\u5167**\u7981\u6b62**\u7d66\u4e88"],n,n)],m)],n,l),A.c(["category","B. \u8840\u58d3\u63a7\u5236 (BP Control)","items",A.b([A.c(["drug","\u6e96\u5099\u6253 tPA","dose","\u56b4\u683c\u63a7\u5236 **< 185 / 110 mmHg**\n**Labetalol** 10-20mg IV push\n**Nicardipine** 5mg/hr IV pump (Max 15mg/hr)"],n,n),A.c(["drug","\u4e0d\u6253 tPA","dose","**\u5141\u8a31\u6027\u9ad8\u8840\u58d3 (Permissive HTN)**\n\u9664\u975e **> 220 / 120 mmHg** \u5426\u5247**\u4e0d\u964d\u58d3** (\u7dad\u6301\u8166\u704c\u6d41)\n\u82e5\u9700\u964d\u58d3\uff0c\u9996\u65e5\u964d\u5e45\u4e0d\u8d85\u904e 15-25%"],n,n)],m)],n,l),A.c(["category","C. \u51fa\u8840\u6027\u4e2d\u98a8 (Hemorrhagic)","items",A.b([A.c(["drug","\u8655\u7f6e","dose","\u56b4\u7981 tPA/Antiplatelet\u3002\u7dca\u6025\u7167\u6703\u795e\u5916 (Neurosurgeon)"],n,n),A.c(["drug","\u53cd\u8f49\u51dd\u8840","dose","Warfarin -> FFP + Vit K\nNOAC -> \u8003\u616e\u53cd\u8f49\u5291 (Idarucizumab for Dabigatran)"],n,n),A.c(["drug","\u8840\u58d3","dose","\u8f03\u56b4\u683c\u63a7\u5236 (SBP < 140-160) \u4ee5\u9632\u8840\u816b\u64f4\u5927"],n,n)],m)],n,l),A.c(["category","D. \u4e00\u822c\u7167\u8b77","items",A.b([A.c(["drug","NPO","dose","\u76f4\u5230\u5b8c\u6210\u541e\u56a5\u8a55\u4f30 (\u9632\u5438\u5165\u6027\u80ba\u708e)"],n,n),A.c(["drug","\u8840\u7cd6","dose","\u7dad\u6301 140-180 (\u9ad8/\u4f4e\u8840\u7cd6\u7686\u6703\u52a0\u91cd\u8166\u50b7)"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83d\udea8 \u5371\u6025\u5fb5\u8c61\u8207\u75c7\u72c0","id","protocol_arrhythmia_01","lastUpdate","2025/10/15","title","\u5fc3\u5f8b\u7570\u5e38 (Arrhythmia)","subtitle","On Call: \u983b\u8108\u3001\u7de9\u8108\u3001TCP \u8a2d\u5b9a & \u85e5\u7269\u6ce1\u6cd5","content",A.c(["intro","### \u8655\u7f6e\u539f\u5247\n1. **\u6838\u5fc3\u89c0\u5ff5**\uff1a\u7a69\u5b9a (Stable) vs \u4e0d\u7a69\u5b9a (Unstable)\u3002\u4e0d\u7a69\u5b9a (\u4f11\u514b/\u80f8\u75db/\u610f\u8b58\u8b8a) = **\u96fb\u64ca**\u3002\n2. **Sinus Tachycardia**\uff1a\u5148\u627e\u539f\u56e0 (Fever, Pain, Shock, Thyroid)\uff0c\u4e0d\u8981\u53ea\u6703\u964d\u5fc3\u8df3\uff01\n3. **Bradycardia**\uff1a\u7121\u75c7\u72c0\u4e14 HR > 50 \u53ef\u89c0\u5bdf\u3002\u6709\u75c7\u72c0 (BP\u4f4e/Shock) \u518d\u8655\u7406\u3002\n4. **IHCA**\uff1a\u53eb\u4e0d\u9192+\u7121\u8108\u640f -> **\u76f4\u63a5\u58d3\u80f8 CPR**\u3002","diagnosis",A.b(["\ud83d\udea8 [\u5371\u6025] **VF / Pulseless VT**: \u53bb\u986b (Defib) 200J -> CPR","\ud83d\udea8 [\u5371\u6025] **Unstable Tachycardia**: \u540c\u6b65\u96fb\u64ca (Sync Cardioversion)","\ud83d\udea8 [\u5371\u6025] **Symptomatic Bradycardia**: Atropine -> TCP / Dopamine","\u26a1\ufe0f [\u5224\u8b80] **PSVT**: \u7a84/\u898f\u5247/\u5feb (HR 160+)","\u26a1\ufe0f [\u5224\u8b80] **Afib**: \u7a84/\u4e0d\u898f\u5247/\u5feb","\u26a1\ufe0f [\u5224\u8b80] **VT**: \u5bec/\u898f\u5247/\u5feb","\u26a1\ufe0f [\u5224\u8b80] **Torsades**: \u5bec/\u4e0d\u898f\u5247/\u65cb\u8f49 (Mg \u7f3a\u4e4f)","\ud83e\uddea [\u6aa2\u9a57] K, Mg, Ca, Troponin-I, Digoxin level, TSH/T4"],o),"treatment",A.b([A.c(["category","A. \u7de9\u8108 (Bradycardia)","items",A.b([A.c(["drug","Atropine (\u9996\u9078)","dose","**1mg (1amp) IV push** q3-5min (Max 3mg)\n*\u82e5\u7121\u6548\u6216 IV \u4e0d\u9806\uff0c\u76f4\u63a5\u8df3\u4e8c\u7dda*"],n,n),A.c(["drug","Dopamine (\u4e8c\u7dda)","dose","**Easydopa** (400mg/250mL) Run **10-40 cc/hr**\n(\u7d04 5-20 mcg/kg/min)"],n,n),A.c(["drug","Epinephrine (\u4e8c\u7dda)","dose","**1mg in 100mL NS** Run **12-60 cc/hr**\n(\u7d04 2-10 mcg/min)"],n,n),A.c(["drug","TCP (\u9ad4\u5916\u7bc0\u5f8b)","dose","\u8cbc\u7247\u8cbc\u597d -> \u8f49 Demand mode\nRate: **60 bpm**\nCurrent: \u5f9e 30mA \u5f80\u4e0a\u8abf\uff0c\u76f4\u5230\u6709 Capture (QRS\u5f8c\u6709T\u6ce2) \u518d\u52a0 10mA \u5b89\u5168\u7bc4\u570d"],n,n)],m)],n,l),A.c(["category","B. \u983b\u8108 - PSVT","items",A.b([A.c(["drug","Vagal Maneuver","dose","Valsalva \u6216 \u9838\u52d5\u8108\u6309\u6469 (\u6210\u529f\u7387\u4f4e\uff0c\u53ef\u8df3\u904e)"],n,n),A.c(["drug","Adenosine","dose","**6mg \u5feb\u63a8 (1-3\u79d2) + 20cc NS \u6c96**\n\u7121\u6548 -> 12mg -> 12mg\n*\u5099\u8a3b: \u75c5\u4eba\u6703\u5f88\u4e0d\u8212\u670d (Chest tight)*"],n,n),A.c(["drug","Verapamil (CCB)","dose","5mg IV slow push (>2min) \u6216 in 100mL NS drip"],n,n)],m)],n,l),A.c(["category","C. \u983b\u8108 - Afib/Flutter","items",A.b([A.c(["drug","Rate Control (\u9996\u9078)","dose","**Concor** 1.25-5mg PO (\u6700\u5b89\u5168)\n**Metoprolol** 5mg IV push q5m (Max 15mg)"],n,n),A.c(["drug","Digoxin (HF\u9996\u9078)","dose","0.5 amp (0.25mg) IV slow push q6h -> PO 0.5-1# QD"],n,n),A.c(["drug","Amiodarone (\u4e8c\u7dda)","dose","Loading: **300mg (2\u652f)** IV push -> 150mg\nPump: **900mg in D5W 500cc**\nRun **34 cc/hr** (6hr) -> **17 cc/hr** (18hr)"],n,n)],m)],n,l),A.c(["category","D. \u983b\u8108 - VT (Stable)","items",A.b([A.c(["drug","Amiodarone","dose","\u540c Afib \u6ce1\u6cd5 (900mg in 500cc)\n*\u6ce8\u610f: Torsades \u7981\u7528!*"],n,n),A.c(["drug","Lidocaine","dose","1-1.5 mg/kg IV push -> Pump (50mL in 250mL NS run 10cc/hr)"],n,n)],m)],n,l),A.c(["category","E. \u7279\u6b8a - Torsades de Pointes","items",A.b([A.c(["drug","MgSO4","dose","**2g (10%) IV** (Unstable: push; Stable: drip 15min)\n*\u7981\u7528 Amiodarone!*"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83d\udea8 \u5371\u6025\u5fb5\u8c61\u8207\u75c7\u72c0","id","protocol_fever_01","title","\u767c\u71d2 (Fever)","subtitle","On Call: Survey, \u7ba1\u8def\u611f\u67d3 & \u6297\u751f\u7d20","content",A.c(["intro","### \u8655\u7f6e\u8207\u5224\u65b7\u539f\u5247\n1. **\u9000\u71d2\u85e5\u5225\u540d**\uff1a**Tinten** (\u8b77\u7406\u5e2b\u611b\u7528\u8a5e) = Scanol = Acetaminophen\u3002\n2. **\u6642\u6a5f**\uff1aOP day \u7576\u5929 Fever \u5e38\u898b\uff0c\u4e0d\u6025\u8457 Survey\uff1b\u82e5 **Day 2-3 \u4ecd\u71d2** \u6216 **New peak** \u5247\u5fc5\u9808 Survey\u3002\n3. **CRBSI (\u5c0e\u7ba1\u611f\u67d3) \u5224\u65b7**\uff1a\n   * \u540c\u6642\u62bd\u5468\u908a\u8840\u8207\u7ba1\u8def\u8840 (CVC/Port-A)\u3002\n   * \u82e5\u7ba1\u8def\u8840\u9577\u83cc\u6642\u9593\u6bd4\u5468\u908a\u8840 **\u65e9 > 1-2 \u5c0f\u6642** -> \u9ad8\u5ea6\u61f7\u7591\u7ba1\u8def\u611f\u67d3\u3002\n4. **Fungemia Risk**\uff1a\u9577\u671f TPN\u3001ICU\u3001\u5ee3\u6548\u6297\u751f\u7d20\u4f7f\u7528\u3001\u514d\u75ab\u6291\u5236 -> **\u52d9\u5fc5\u9a57 B/C for Fungus** (\u4e00\u822c B/C \u6613\u6f0f)\uff01","diagnosis",A.b(["[\u5e38\u898f] **Labs**: CBC/DC, Cr, ALT, Na/K, **B/C x2\u5957** (\u7b2c1\u5957\u9577\u83cc\u5c31\u62bd\u7b2c2\u5957\u9632\u6c59\u67d3)","[\u5e38\u898f] **Urine**: U/A, U/C (Aerobic); **Sputum**: Culture, Gram stain","[\u5f71\u50cf] **CXR** (New patch?)","[\u80ba\u708e] \u82e5\u7121 Focus \u4e14\u71d2\u4e0d\u9000:\n   * **Urine Ag**: Pneumococcal & Legionella\n   * **Mycoplasma**: Throat swab PCR (\u6316\u6df1\u4e00\u9ede!) > IgM/IgG\n   * **Viral**: Flu Ag, Covid PCR","[\u7279\u6b8a] **Procalcitonin / Lactate**: \u7528\u65bc Septic shock \u6216 Toxic sign \u5f37\u70c8\u6642","[\u7279\u6b8a] **D-Dimer**: \u6392\u9664 PE","[\u8166\u819c\u708e] Neck Stiffness? Jolt accentuation? -> **Lumbar Puncture**","[\u5fc3\u5167\u819c\u708e] \u53cd\u8986\u71d2\u4e0d\u9000 -> **Echo (TTE/TEE)** (Order: Doppler + M-mode + Color flow)"],o),"treatment",A.b([A.c(["category","A. \u9000\u71d2\u7b56\u7565 (Antipyretics)","items",A.b([A.c(["drug","\u53e3\u670d","dose","**Acetaminophen** (Tinten/Scanol) 500mg PO"],n,n),A.c(["drug","Aspegic (\u5065\u4fdd\u91dd)","dose","IM / IV push / IVD (\u6548\u679c\u5f37\uff0c\u53e3\u670d\u7121\u6548\u53ef\u7d66)"],n,n),A.c(["drug","Acetamol (\u81ea\u8cbb\u91dd)","dose","1 amp in 100mL NS run 1hr (\u6216 IV push)"],n,n),A.c(["drug","\u7269\u7406\u9000\u71d2","dose","\u51b0\u6795 (Ice pillow) \u6216 \u5c0f\u6797\u9000\u71b1\u8cbc"],n,n)],m)],n,l),A.c(["category","B. \u6297\u751f\u7d20\u5347\u968e (Escalation)","items",A.b([A.c(["drug","\u8d77\u624b\u5f0f","dose","\u61f7\u7591\u9662\u5167\u611f\u67d3 (Cover Pseudo) -> **Tazocin**"],n,n),A.c(["drug","Unstable / Toxic","dose","Septic shock \u6216\u5df2\u7528 Tazocin \u4ecd\u71d2 -> **Meropenem** \u6216 **Doripenem**"],n,n),A.c(["drug","Fungemia","dose","\u82e5\u6709 Risk (TPN/CVC) -> \u52a0\u505a **B/C for Fungus** \u4e26\u8003\u616e\u6297\u9ef4\u83cc\u85e5"],n,n)],m)],n,l),A.c(["category","C. \u7ba1\u8def\u8655\u7f6e (Source Control)","items",A.b([A.c(["drug","CVC (\u4e2d\u5fc3\u975c\u8108\u5c0e\u7ba1)","dose","\u61f7\u7591\u611f\u67d3\u5c31\u62d4 (\u63db\u65b0\u4f4d\u7f6e)\uff0c\u7559 **Tip Culture** (\u7121\u83cc\u526a\u5200\u526a\u4e0b)\n*\u62d4\u9664\u524d\u53ef\u7531\u820a\u7ba1\u8def\u62bd\u4e00\u5957 B/C for Fungus*"],n,n),A.c(["drug","Foley (\u5c0e\u5c3f\u7ba1)","dose","\u653e\u5f88\u4e45? \u9ad2? -> **\u63db\u65b0**\u4e26\u7559 U/A, U/C"],n,n),A.c(["drug","PCN (\u814e\u9020\u5ed4)","dose","\u76f4\u63a5\u7559 PCN \u7684\u5c3f (\u8a3b\u8a18\u5de6/\u53f3\u5074)\uff0c\u7531\u4e3b\u6cbb\u91ab\u5e2b\u6c7a\u5b9a\u62d4\u9664\u6642\u6a5f"],n,n),A.c(["drug","Port-A / Permcath","dose","\u503c\u73ed**\u4e0d\u62d4** -> \u6703\u8a3a\u5916\u79d1\u8655\u7406\uff0c\u8a18\u5f97\u958b **Tip Culture** \u55ae"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83d\udea8 \u5371\u6025\u5fb5\u8c61\u8207\u75c7\u72c0","id","protocol_gib_01","lastUpdate","2025/10/15","title","\u8178\u80c3\u9053\u51fa\u8840 (GI Bleeding)","subtitle","On Call: \u7c21\u6613\u6d41\u7a0b\u8207 PPI \u6ce1\u6cd5","content",A.c(["diagnosis",A.b(["[\u8a55\u4f30] \u79e4\u91cd\u8a08\u91cf (Tarry stool/Coffee ground)","[\u8a55\u4f30] Vital signs (Tachycardia? Shock?) -> \u6c7a\u5b9a\u662f\u5426\u6025\u505a\u80c3\u93e1/\u63d2\u7ba1","[\u62bd\u8840] Hb, Platelet, PT/APTT, Lactate (\u5927\u91cf\u51fa\u8840 Q4-6H \u8ffd\u8e64)"],o),"treatment",A.b([A.c(["category","A. \u85e5\u7269\u6cbb\u7642","items",A.b([A.c(["drug","PPI (Pantoloc)","dose","\u8f15\u5fae: 40mg IV QD-Q12H\n**\u56b4\u91cd**: **200mg in 500cc NS**, IV Pump run **21 cc/hr**"],n,n),A.c(["drug","\u5176\u4ed6","dose","Prokinetic agents (\u4fc3\u9032\u6392\u7a7a), Transamine (\u4e0b\u6d88\u5316\u9053)"],n,n)],m)],n,l),A.c(["category","B. \u8655\u7f6e","items",A.b([A.c(["drug","NPO","dose","\u7d66\u4e88\u542b\u7cd6\u9ede\u6ef4 (D5W/Run), \u7981\u98df\u81f3\u9694\u5929\u8a55\u4f30"],n,n)],m)],n,l)],k)],n,i)],n,j),A.c(["group","\ud83d\udea8 \u5371\u6025\u5fb5\u8c61\u8207\u75c7\u72c0","id","protocol_abd_01","title","\u8179\u75db (Abdominal Pain)","subtitle","On Call: \u5371\u6025\u6392\u9664\u8207\u8655\u7f6e","content",A.c(["diagnosis",A.b(["[\u8b66\u793a] \u521d\u6b65\u8a3a\u65b7\u524d\u907f\u514d\u96a8\u610f\u4f7f\u7528\u6b62\u75db\u85e5 (\u4ee5\u514d\u63a9\u84cb\u5fb5\u8c61)","[\u5371\u6025] \u81df\u5668\u7a7f\u5b54/\u7834\u88c2 (Perforated Viscus): \u4f11\u514b\u98a8\u96aa","[\u5371\u6025] \u4e0a\u884c\u6027\u81bd\u7ba1\u708e (Cholangitis): \u6557\u8840\u6027\u4f11\u514b","[\u5371\u6025] \u5927\u91cf\u51fa\u8840: AAA \u7834\u88c2, \u5b50\u5bae\u5916\u5b55, \u813e\u81df\u7834\u88c2","[\u8655\u7f6e] \u751f\u547d\u5fb5\u8c61\u4e0d\u7a69: \u7acb\u5373 IV \u8f38\u6db2, \u7dca\u6025\u5099\u8840","[\u5f71\u50cf] KUB (Free air/Air-fluid level/Calcification)","[\u9032\u968e] \u8d85\u97f3\u6ce2, CT (\u61f7\u7591\u81bf\u760d/\u80f0\u81df\u708e)"],o),"treatment",A.b([A.c(["category","A. \u80f0\u81df\u708e (Pancreatitis)","items",A.b([A.c(["drug","\u8655\u7f6e","dose","\u7981\u98df (NPO) + IV \u8f38\u6db2\u88dc\u5145"],n,n),A.c(["drug","Meperidine (Demerol)","dose","50-150 mg IM/SC q3-4h (\u6b62\u75db\u9996\u9078)"],n,n)],m)],n,l),A.c(["category","B. \u6d88\u5316\u6027\u6f70\u760d / GERD","items",A.b([A.c(["drug","PPIs","dose","Omeprazole 20mg PO \u6216 Pantoprazole 40mg PO qd"],n,n),A.c(["drug","H2 Blockers","dose","Famotidine 40mg PO hs \u6216 Ranitidine 300mg hs"],n,n)],m)],n,l)],k)],n,i)],n,j),A.c(["group","\ud83d\udea8 \u5371\u6025\u5fb5\u8c61\u8207\u75c7\u72c0","id","protocol_sepsis_01","lastUpdate","2025/10/15","title","\u6557\u8840\u6027\u4f11\u514b (Septic Shock)","subtitle","On Call: Hour-1 Bundle & Source ID","content",A.c(["intro","### \u8655\u7f6e\u539f\u5247\n1. **\u932f\u8aa4\u793a\u7bc4**\uff1a\u53ea\u6709\u6390\u6c34\u6c92\u505a Survey\uff1bLVEF \u6b63\u5e38\u537b\u8aa4\u5224\u5fc3\u56e0\u6027\u4f11\u514b\u3002\n2. **\u6b63\u78ba\u6d41\u7a0b**\uff1aBedside \u8a55\u4f30 -> \u62bd\u8840/\u7d30\u83cc\u57f9\u990a -> \u6297\u751f\u7d20 -> \u6c34\u5206\u5fa9\u7526 (Fluid challenge)\u3002\n3. **Hour-1 Bundle**\uff1a\u6e2c Lactate, \u7559 B/C (\u4f7f\u7528\u6297\u751f\u7d20\u524d), \u5ee3\u6548\u6297\u751f\u7d20, 30mL/kg \u8f38\u6db2 (\u82e5\u4f4e\u8840\u58d3/Lactate>4), \u5347\u58d3\u5291 (\u7dad\u6301 MAP>=65)\u3002","diagnosis",A.b(["[\u611f\u67d3\u6e90] **Pneumonia**: \u547c\u5438\u9053\u75c7\u72c0, CXR Patch (\u9a57 Urine Ag, Flu/Covid)","[\u611f\u67d3\u6e90] **UTI**: \u6572\u75db (Flank pain), \u5c3f\u7ba1\u653e\u592a\u4e45? (\u63db\u7ba1+\u7559\u5c3f)","[\u611f\u67d3\u6e90] **BSI (\u5c0e\u7ba1)**: \u6709 CVC/Port-A? (\u540c\u6642\u62bd\u5468\u908a+\u5c0e\u7ba1\u8840)","[\u611f\u67d3\u6e90] **Cellulitis**: \u6a19\u8a18\u7d05\u816b\u7bc4\u570d, \u6aa2\u67e5 Crepitus (\u58de\u6b7b\u6027\u7b4b\u819c\u708e?)","[\u611f\u67d3\u6e90] **Intra-abdominal**: \u809a\u5b50\u8139/\u75db? Peritoneal signs? (KUB/CT)","[\u6aa2\u9a57] CBC/DC, Na/K, Cr/ALT, Lactate, VBG/ABG, B/C x2"],o),"treatment",A.b([A.c(["category","A. \u521d\u6b65\u5fa9\u7526 (Resuscitation)","items",A.b([A.c(["drug","Fluids","dose","Crystalloid (NS/LR) 30 mL/kg \u5feb\u901f\u8f38\u6ce8 (\u8996\u5fc3\u80ba\u529f\u80fd\u8abf\u6574)"],n,n),A.c(["drug","Vasopressor","dose","\u9996\u9078 **Norepinephrine** (Levophed) -> \u7dad\u6301 MAP >= 65"],n,n),A.c(["drug","2nd Line","dose","Vasopressin (\u901a\u5e38\u7528\u65bc\u4e8c\u7dda\uff0c\u75c5\u623f\u8f03\u5c11\u958b)"],n,n)],m)],n,l),A.c(["category","B. \u6297\u751f\u7d20 (Antibiotics)","items",A.b([A.c(["drug","\u539f\u5247","dose","\u8a3a\u65b7\u5f8c 1 \u5c0f\u6642\u5167\u7d66\u4e88\u5ee3\u6548\u6297\u751f\u7d20 (\u5982 Tazocin, Cefepime)"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83d\udea8 \u5371\u6025\u5fb5\u8c61\u8207\u75c7\u72c0","id","protocol_combative_01","title","\u8e81\u52d5\u8207\u653b\u64ca\u6027 (Combative)","subtitle","\u5b89\u5168\u78ba\u8a8d\u3001\u8b6b\u5984 (Haldol) vs \u6212\u65b7 (BZD)","content",A.c(["intro","### \u6838\u5fc3\u539f\u5247\uff1a\u5340\u5206\u75c5\u56e0 (Differential)\n1. **\u5b89\u5168\u7b2c\u4e00**: \u4fdd\u8b77\u81ea\u5df1\u8207\u75c5\u4eba\u3002\u5148\u6392\u9664 **\u4f4e\u8840\u7cd6 / \u7f3a\u6c27 / \u4f11\u514b**\u3002\n2. **\u9ec3\u91d1\u4ea4\u53c9**: \u5224\u65b7\u662f **\u4e00\u822c\u8b6b\u5984** \u9084\u662f **\u9152\u7cbe\u6212\u65b7**\uff1f\n   * **\u8b6b\u5984 (Delirium)**: \u9996\u9078 **Haldol** (\u274c \u5fcc\u7528 BZD\uff0c\u6703\u66f4\u4e82)\u3002\n   * **\u6212\u65b7 (Withdrawal)**: \u9996\u9078 **BZD** (\u274c \u5fcc\u7528 Haldol\uff0c\u6703\u964d\u7672\u7647\u95be\u503c)\u3002","diagnosis",A.b(["[\u6392\u9664] **\u4f4e\u8840\u7cd6**: Check sugar (<70 \u7acb\u5373\u7d66 D50W 2-3 amp)\u3002","[\u6392\u9664] **\u7f3a\u6c27**: Check SpO2 (<90 \u7d66 O2\uff0cCOPD \u76ee\u6a19 88-92)\u3002","[\u8b6b\u5984] \u5b9a\u5411\u611f\u8b8a\u5dee\u3001\u65e5\u591c\u985b\u5012\u3001\u80e1\u8a00\u4e82\u8a9e\u3002\u5e38\u898b\u65bc\u611f\u67d3/\u4ee3\u8b1d/\u85e5\u7269\u3002","[\u6212\u65b7] **\u9157\u9152\u53f2** + \u505c\u9152 6-48hr + \u9707\u986b/\u5fc3\u8df3\u5feb/\u5192\u6c57/\u7672\u7647\u3002"],o),"treatment",A.b([A.c(["category","A. \u8b6b\u5984\u63a7\u5236 (Delirium)","items",A.b([A.c(["drug","Haloperidol (Haldol)","dose","\u9996\u9078 (\u82e5\u975e\u6212\u65b7)\u3002**0.5-1 mg IM/PO** q30m PRN (Max 5mg/day)\u3002\n*\u6ce8\u610f: QT prolong (>460ms \u614e\u7528), EPS*"],n,n),A.c(["drug","\u975e\u5178\u578b\u6297\u7cbe\u795e\u75c5\u85e5","dose","**Quetiapine (Seroquel)** 25mg PO (\u9069\u5408\u7761\u524d/\u8f15\u5ea6\u8e81\u52d5)\n**Olanzapine (Zyprexa)** 5mg PO/IM\n*EPS \u98a8\u96aa\u8f03\u4f4e\uff0c\u9069\u5408\u8001\u4eba*"],n,n),A.c(["drug","EPS \u89e3\u6bd2\u5291","dose","**Vena (Diphenhydramine)** 30-50mg IV/IM (\u82e5\u767c\u751f\u808c\u5f35\u529b\u7570\u5e38)"],n,n)],m)],n,l),A.c(["category","B. \u9152\u7cbe\u6212\u65b7 (Withdrawal)","items",A.b([A.c(["drug","Benzodiazepine","dose","\u9996\u9078 (\u6291\u5236\u4ea4\u611f\u8208\u596e)\u3002\n**Ativan** 2-4mg IVP \u6216 **Valium** 5-10mg IVP\n\u6bcf 5-20min \u91cd\u8907\u76f4\u5230\u93ae\u975c (\u76ee\u6a19: \u55dc\u7761\u4f46\u53ef\u559a\u9192)"],n,n),A.c(["drug","Thiamine (B1)","dose","**100mg IVD** (\u52d9\u5fc5\u5728**\u6253\u7cd6\u6c34\u4e4b\u524d**\u7d66\u4e88!)\n\u9810\u9632 Wernicke Encephalopathy"],n,n),A.c(["drug","\u7981\u5fcc","dose","\u907f\u514d\u55ae\u7368\u4f7f\u7528 Beta-blocker (\u6703\u63a9\u84cb\u6212\u65b7\u5fb5\u8c61)"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83d\udea8 \u5371\u6025\u5fb5\u8c61\u8207\u75c7\u72c0","id","protocol_falls_01","title","\u8dcc\u5012 (Falls)","subtitle","On Call: \u8a55\u4f30\u50b7\u5bb3\u8207\u6f5b\u5728\u75c5\u56e0","content",A.c(["diagnosis",A.b(["[\u5371\u6025] \u9871\u5167\u51fa\u8840 (ICH): \u5c24\u5176\u670d\u7528\u6297\u51dd\u8840\u5291\u8005 (Warfarin/DOAC)","[\u5371\u6025] \u9ad6\u90e8\u9aa8\u6298 (Hip Fx): \u8001\u5e74\u4eba/\u5973\u6027\u5e38\u898b, \u7e2e\u77ed/\u5916\u65cb","[\u6aa2\u67e5] GCS/\u77b3\u5b54 (\u795e\u7d93\u7f3a\u640d?), \u982d\u90e8\u89f8\u8a3a (\u8840\u816b/\u718a\u8c93\u773c)","[\u6aa2\u67e5] \u59ff\u52e2\u6027\u8840\u58d3 (Postural BP): \u81e5->\u7acb, SBP\u964d>15 \u63d0\u793a\u812b\u6c34","[\u5fc5\u6e2c] \u6307\u5c16\u8840\u7cd6 (Finger stick)"],o),"treatment",A.b([A.c(["category","A. \u91dd\u5c0d\u539f\u56e0\u8abf\u6574 (Prevention)","items",A.b([A.c(["drug","\u9ad4\u6db2\u5fa9\u7526","dose","\u82e5\u6709\u59ff\u52e2\u6027\u4f4e\u8840\u58d3/\u812b\u6c34, \u7d66\u4e88 IV Normal Saline"],n,n),A.c(["drug","\u85e5\u7269\u6aa2\u8996 (Stop)","dose","\u505c\u7528/\u6e1b\u91cf: \u5b89\u7720\u85e5 (BZD), \u5229\u5c3f\u5291 (\u591c\u5c3f), \u964d\u58d3\u85e5"],n,n)],m)],n,l),A.c(["category","B. \u4f75\u767c\u75c7\u8207\u8655\u7f6e","items",A.b([A.c(["drug","\u9871\u5167\u51fa\u8840 (ICH)","dose","\u7dca\u6025\u6703\u8a3a\u795e\u7d93\u5916\u79d1; \u8003\u616e\u53cd\u8f49\u6297\u51dd\u8840\u5291 (Vit K, FFP)"],n,n),A.c(["drug","\u50b7\u53e3\u8655\u7406","dose","\u7e2b\u5408/\u5305\u7d2e (\u6ce8\u610f\u6297\u51dd\u8840\u5291\u4f7f\u7528\u8005\u4e4b\u5ef6\u9072\u51fa\u8840)"],n,n)],m)],n,l)],k)],n,i)],n,j),A.c(["group","\ud83d\udea8 \u5371\u6025\u5fb5\u8c61\u8207\u75c7\u72c0","id","protocol_dnr_01","lastUpdate","2025/10/15","title","DNR \u7c3d\u7f72\u8207\u502b\u7406","subtitle","On Call: \u555f\u7528\u6642\u6a5f\u8207\u6e9d\u901a","content",A.c(["intro","### \u555f\u7528\u6642\u6a5f\n1. **\u75c5\u4eba\u7b26\u5408\u672b\u671f\u8a3a\u65b7**\uff1a\u764c\u75c7\u672b\u671f \u6216 **\u516b\u5927\u975e\u764c\u672b\u671f**\u3002\n2. **\u516b\u5927\u975e\u764c\u672b\u671f**\uff1a\u5931\u667a\u3001\u56b4\u91cd\u4e2d\u98a8\u3001\u5fc3\u81df\u8870\u7aed\u3001\u56b4\u91cd COPD\u3001\u56b4\u91cd\u80ba\u7e96\u7dad\u5316\u3001\u809d\u786c\u5316\u3001\u6025\u6027/\u6162\u6027\u814e\u8870\u7aed\u3002\n3. **\u6c7a\u7b56\u6b0a\u91cd**\uff1a\u75c5\u4eba\u610f\u9858 > \u5bb6\u5c6c\u610f\u9858\u3002\n4. **\u503c\u73ed\u539f\u5247**\uff1aVS \u8aaa\u53ef\u4ee5 DNR \u624d\u53ef\u4ee5 DNR\uff1b\u6025\u8a3a\u7c3d\u7684 DNR \u4e0d\u4e00\u5b9a\u7b97\u6578 (\u9700 VS \u78ba\u8a8d)\u3002","diagnosis",[],"treatment",[]],n,l)],n,j),A.c(["group","\ud83e\uddea \u5be6\u9a57\u5ba4\u6578\u503c\u7570\u5e38","id","protocol_potassium_01","lastUpdate","2026/01/29","title","\u9240\u96e2\u5b50\u7570\u5e38 (Hyper/Hypokalemia)","subtitle","On Call: \u9ad8\u8840\u9240\u6025\u6551 & \u4f4e\u8840\u9240\u88dc\u5145","content",A.c(["intro","### \u8655\u7f6e\u539f\u5247\n1. **\u6838\u5fc3\u76ee\u6a19**\uff1a\u9632\u7bc4\u81f4\u6b7b\u6027\u5fc3\u5f8b\u4e0d\u6574 (VF/Asystole)\u3002\n2. **\u9ad8\u8840\u9240 (>5.5)**\uff1a\u5167\u79d1\u6025\u75c7\uff0c\u9700\u5148\u6392\u9664**\u5047\u6027 (\u6eb6\u8840)**\uff0c\u82e5 ECG \u6709\u8b8a\u5316\u9700\u7acb\u5373\u6cbb\u7642\u3002\n3. **\u4f4e\u8840\u9240 (<3.5)**\uff1a\u7531\u53e3\u670d\u512a\u5148\u3002\u9700\u6ce8\u610f **Mg (\u9382)** \u662f\u5426\u4f4e\u4e0b\uff0c\u4e26\u7559\u610f **TPP** (\u4e9e\u88d4\u7537\u6027\u5e38\u898b)\u3002","diagnosis",A.b(["[\u9ad8\u8840\u9240 ECG] **Peaked T** (\u65e9) -> P\u6ce2\u6d88\u5931 -> QRS\u8b8a\u5bec -> **Sine wave** (\u7015\u6b7b)","[\u6392\u9664\u5047\u6027] **\u6eb6\u8840 (Hemolysis)** \u6700\u5e38\u898b\uff01(\u6b62\u8840\u5e36\u7d81\u592a\u4e45/\u62bd\u8840\u56f0\u96e3)","[\u627e\u539f\u56e0] \u9178\u4e2d\u6bd2 (Acidosis), \u814e\u8870\u7aed, \u85e5\u7269 (ACEI/ARB/NSAIDs/Spiro), \u6a6b\u7d0b\u808c\u6eb6\u89e3","[\u4f4e\u8840\u9240 ECG] **U waves**, T\u6ce2\u5e73\u5766, QT \u5ef6\u9577 (\u6050\u8a98\u767c Torsades)","[\u627e\u539f\u56e0] \u9e7c\u4e2d\u6bd2, \u5229\u5c3f\u5291, \u8179\u7009, **\u4f4e\u8840\u9382 (Hypomagnesemia)**","[\u6aa2\u9a57] Stat ECG, K, Mg, Ca, Cr, ABG (\u9178\u9e7c), CPK (Rhabdo?)"],o),"treatment",A.b([A.c(["category","A. \u9ad8\u8840\u9240: 1. \u7a69\u5b9a\u7d30\u80de\u819c (Stabilize)","items",A.b([A.c(["drug","Calcium Gluconate","dose","**1-2 amp (10-20mL) IV** run > 3min\n*\u4f5c\u7528\u5feb\u4f46\u77ed (1hr)*"],n,n),A.c(["drug","\u8b66\u793a","dose","[\u8b66\u793a] \u82e5\u75c5\u4eba\u4f7f\u7528 **Digoxin** \u9700\u6975\u5ea6\u5c0f\u5fc3 (\u6050\u8a98\u767c\u4e2d\u6bd2)\uff0c\u9664\u975e\u7015\u6b7b\u5426\u5247\u907f\u514d\u4f7f\u7528\u6216\u6975\u6162\u901f\u7d66\u4e88"],n,n)],m)],n,l),A.c(["category","A. \u9ad8\u8840\u9240: 2. \u4fc3\u9032\u5167\u79fb (Shift)","items",A.b([A.c(["drug","Insulin + Glucose","dose","**10u RI + 50mL D50W** IV push\n*\u82e5\u8840\u7cd6 >250 \u53ef\u55ae\u7d66 RI*"],n,n),A.c(["drug","Inhalation","dose","Salbutamol (Albuterol) 10-20mg \u5438\u5165 (Nebulizer)"],n,n),A.c(["drug","Bicarbonate","dose","1 amp IV (\u50c5\u5728 **\u4ee3\u8b1d\u6027\u9178\u4e2d\u6bd2** \u6642\u6709\u6548)"],n,n)],m)],n,l),A.c(["category","A. \u9ad8\u8840\u9240: 3. \u79fb\u9664 (Remove)","items",A.b([A.c(["drug","Diuretics","dose","Lasix 40-80 mg IV (\u9700\u78ba\u8a8d\u6709\u5c3f)"],n,n),A.c(["drug","Resins (\u5438\u9644\u5291)","dose","Kalimate/Kayexalate 15-30g PO \u6216 50g Enema (\u704c\u8178)\nLokelma (\u65b0\u578b) 1\u5305 QD"],n,n),A.c(["drug","Dialysis","dose","\u7dca\u6025\u6d17\u814e (\u7121\u5c3f\u6216\u85e5\u7269\u7121\u6548\u6642)"],n,n)],m)],n,l),A.c(["category","B. \u4f4e\u8840\u9240 (Hypokalemia)","items",A.b([A.c(["drug","\u8f15\u5ea6 (3.0-3.5)","dose","**\u53e3\u670d\u512a\u5148**: K-Glu \u6216 Slow-K 10-20 mEq PO TID"],n,n),A.c(["drug","\u4e2d\u5ea6 (2.5-3.0)","dose","\u53e3\u670d 20 mEq + **KCl 20 mEq in 500mL NS** IV drip"],n,n),A.c(["drug","\u91cd\u5ea6 (<2.5) / \u6709\u75c7\u72c0","dose","\u7a4d\u6975\u975c\u8108\u8f38\u6ce8: **KCl 10-20 mEq in 100mL NS** run > 1hr"],n,n),A.c(["drug","\u8f38\u6ce8\u9650\u901f (\u91cd\u8981!)","dose","\u5468\u908a\u8840\u7ba1: Max **10-20 mEq/hr** (\u592a\u5feb\u6703\u75db/\u5fc3\u5f8b\u4e0d\u6574)\n\u6fc3\u5ea6: \u6bcf\u516c\u5347\u4e0d\u5b9c\u8d85\u904e 40-60 mEq"],n,n),A.c(["drug","\u88dc\u5145\u9382 (Mg)","dose","\u82e5 Mg \u4f4e\u4e0b\u52d9\u5fc5\u88dc\u5145\uff0c\u5426\u5247 K \u88dc\u4e0d\u8d77\u4f86 (**MgSO4 1-2g IV**)"],n,n)],m)],n,l),A.c(["category","C. \u7279\u6b8a\u60c5\u6cc1: TPP","items",A.b([A.c(["drug","\u7532\u72c0\u817a\u6bd2\u6027\u9031\u671f\u6027\u9ebb\u75fa","dose","\u5e38\u898b\u65bc\u4e9e\u88d4\u7537\u6027\u3002**\u907f\u514d\u5927\u91cf\u88dc\u9240** (\u6703\u53cd\u5f48\u6027\u9ad8\u8840\u9240)\u3002\n\u6cbb\u7642\u91cd\u9ede\u70ba\u63a7\u5236\u7532\u72c0\u817a\u4ea2\u9032 + \u975e\u9078\u64c7\u6027 Beta-blocker (Propranolol)"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83e\uddea \u5be6\u9a57\u5ba4\u6578\u503c\u7570\u5e38","id","protocol_sodium_01","lastUpdate","2026/01/29","title","\u9209\u96e2\u5b50\u7570\u5e38 (Sodium)","subtitle","On Call: \u9451\u5225\u3001U_osm & \u77ef\u6b63\u901f\u5ea6","content",A.c(["intro","### \u8655\u7f6e\u539f\u5247\n1. **\u6838\u5fc3\u539f\u5247**\uff1a\u9209\u7570\u5e38 = \u6c34\u5206\u5e73\u8861\u554f\u984c\u3002\u6cbb\u7642\u91cd\u9ede\u662f\u300c\u901f\u5ea6\u63a7\u5236\u300d\u3002\n2. **\u77ef\u6b63\u9650\u901f**\uff1a\u6bcf\u65e5\u8b8a\u5316 **< 8 mEq/L** (\u9632\u8166\u6c34\u816b/ODS)\u3002\n3. **\u4f4e\u8840\u9209\u9451\u5225**\uff1a\n   * **P_osm**: \u6b63\u5e38/\u9ad8 (\u9ad8\u8840\u7cd6?), \u4f4e (\u771f\u6027\u4f4e\u8840\u9209)\n   * **U_osm**: <100 (\u559d\u592a\u591a\u6c34/Beer potomania), >300 (ADH \u4f5c\u7528\u4e2d)\n   * **U_Na**: <10 (\u5fc3\u8870/\u809d\u786c\u5316/\u812b\u6c34), >20 (\u5229\u5c3f\u5291/\u814e\u6d41\u5931/SIADH)","diagnosis",A.b([r,"[\u516c\u5f0f] **Free Water Deficit**: (Na-140)/140 * TBW","[\u9451\u5225] **SIADH**: Euvolemic + U_Na > 20 + U_osm \u9ad8\u3002\u6392\u9664\u7532\u72c0\u817a/\u814e\u4e0a\u817a\u4f4e\u4e0b\u3002","[\u9451\u5225] **CSW (\u8166\u8017\u9e7d)**: Hypovolemic (\u812b\u6c34) + U_Na \u9ad8\u3002\u9700\u88dc\u6c34\u88dc\u9e7d\u3002"],o),"treatment",A.b([A.c(["category","A. \u4f4e\u8840\u9209 (Hyponatremia)","items",A.b([A.c(["drug","\u56b4\u91cd\u75c7\u72c0 (\u7672\u7647/\u660f\u8ff7)","dose","**3% Hypertonic Saline** 100mL IV bolus (\u76ee\u6a19\u5347 4-6 mEq)"],n,n),A.c(["drug","\u4f4e\u8840\u5bb9 (\u812b\u6c34)","dose","**Normal Saline** (\u6062\u5fa9\u8840\u5bb9\u5f8c Na \u6703\u5feb\u901f\u4e0a\u5347\uff0c\u9700\u5bc6\u5207\u8ffd\u8e64)"],n,n),A.c(["drug","\u9ad8\u8840\u5bb9 (CHF/Liver)","dose","**\u9650\u6c34** + **Lasix** (Loop diuretic)"],n,n),A.c(["drug","SIADH","dose","**\u9650\u6c34** (<800mL)\u3002\u9e7d\u7247 (Salt tab) \u6216 Tolvaptan"],n,n)],m)],n,l),A.c(["category","B. \u9ad8\u8840\u9209 (Hypernatremia)","items",A.b([A.c(["drug","\u4f4e\u8840\u5bb9 (Shock)","dose","\u5148 **NS** \u7a69\u5b9a\u8840\u58d3\uff0c\u518d\u63db **0.45%S** \u6216 **D5W**"],n,n),A.c(["drug","\u55ae\u7d14\u5931\u6c34 (DI/\u8001\u4eba)","dose","\u88dc **Free Water** (D5W / \u53e3\u670d\u6c34)\u3002\u8a08\u7b97\u7f3a\u6c34\u91cf\u5206 48hr \u88dc\u56de"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83e\uddea \u5be6\u9a57\u5ba4\u6578\u503c\u7570\u5e38","id","protocol_acid_base_01","lastUpdate","2026/01/29","title","\u9178\u9e7c\u5931\u8861 (Acid-Base)","subtitle","On Call: \u5224\u8b80\u6d41\u7a0b\u3001UAG & Delta Ratio","content",A.c(["intro","### \u5224\u8b80\u4e09\u90e8\u66f2\n1. **pH**: \u9178 (<7.35) vs \u9e7c (>7.45)\n2. **PCO2**: \u547c\u5438\u6027 (\u7570\u5e38) vs \u4ee3\u8b1d\u6027 (\u6b63\u5e38/\u4ee3\u511f)\n3. **Anion Gap (AG)**: \u82e5\u4ee3\u9178\u5fc5\u7b97\u3002\u6b63\u5e38 12\xb12\u3002\n   * **AG \u4e0a\u5347**: \u627e GOLD MARK (Glycols, Oxyproline, Lactate, Methanol, Aspirin, Renal, Ketoacidosis)\u3002\n   * **AG \u6b63\u5e38**: \u7b97 **Urine AG (UAG)**\u3002\n     * \u8ca0\u503c: \u8179\u7009 (\u8178\u9053\u6d41\u5931)\n     * \u6b63\u503c: RTA (\u814e\u5c0f\u7ba1\u9178\u4e2d\u6bd2)","diagnosis",A.b(["[\u516c\u5f0f] **Anion Gap**: Na - (Cl + HCO3)","[\u516c\u5f0f] **Delta Ratio**: (AG-12) / (24-HCO3)\u3002<0.4 (NAGMA), 1-2 (\u5355\u7eaf\u9ad8AG), >2 (\u4ee3\u9e7c)","[\u516c\u5f0f] **Winters**: PCO2 = 1.5 x HCO3 + 8 \xb1 2 (\u4ee3\u9178\u4ee3\u511f)","[\u5371\u6025] **pH < 7.1**: \u56b4\u91cd\u9178\u4e2d\u6bd2\uff0c\u8003\u616e Bicarb \u6cbb\u7642 (\u5c24\u5176\u662f AKI/RTA)","[\u9451\u5225] **\u4ee3\u9e7c (Met. Alk)**: \u6e2c\u5c3f\u6c2f (U_Cl)\u3002<25 (\u5614\u5410/\u5229\u5c3f\u5291), >40 (\u9ad8\u919b\u56fa\u916e/\u4f4e\u9240)"],o),"treatment",A.b([A.c(["category","A. \u4ee3\u8b1d\u6027\u9178\u4e2d\u6bd2 (MA)","items",A.b([A.c(["drug","\u6cbb\u7642\u6839\u672c","dose","DKA (\u80f0\u5cf6\u7d20), \u4f11\u514b (\u5faa\u74b0), \u5c3f\u6bd2 (\u6d17\u814e)"],n,n),A.c(["drug","Bicarbonate","dose","**pH < 7.1-7.2** \u6642\u8003\u616e\u30021-3 amp in D5W\u6ef4\u6ce8\u3002\n*\u6ce8\u610f: \u907f\u514d\u8207 Ca \u540c\u7ba1\u8def (\u6c88\u6fb1)*"],n,n)],m)],n,l),A.c(["category","B. \u4ee3\u8b1d\u6027\u9e7c\u4e2d\u6bd2 (M. Alk)","items",A.b([A.c(["drug","Saline Responsive","dose","\u7d66\u4e88 **Normal Saline** + **KCl** (\u4f4e\u9240\u6703\u7dad\u6301\u4ee3\u9e7c)"],n,n),A.c(["drug","Saline Resistant","dose","**Acetazolamide** (Diamox) 250mg PO/IV (\u6392 HCO3)"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83e\uddea \u5be6\u9a57\u5ba4\u6578\u503c\u7570\u5e38","id","protocol_dka_hhs_01","lastUpdate","2026/01/29","title","\u9ad8\u8840\u7cd6\u6025\u75c7 (DKA/HHS)","subtitle","On Call: SC vs Pump \u6ce1\u6cd5 & \u95dc\u9589\u6642\u6a5f","content",A.c(["intro","### \u8655\u7f6e\u539f\u5247\n1. **\u6838\u5fc3\u76ee\u6a19**\uff1a\u88dc\u6c34 > \u964d\u7cd6\u3002\u5be7\u53ef\u9ad8\u8840\u7cd6 (180-200) \u4e5f\u4e0d\u8981\u4f4e\u8840\u7cd6\u3002\n2. **\u85e5\u7269\u9078\u64c7**\uff1aNovorapid \u7f3a\u8ca8\u53ef\u6539 **Apidra** (Duration \u7a0d\u77ed\uff0c\u5291\u91cf\u76f8\u540c)\u3002\n3. **\u8a3a\u65b7\u6a19\u6e96**\uff1a\n   * **DKA**: BS>200 + Ketone(+) + Acidosis (pH<7.3)\n   * **HHS**: BS>600 + Osm>320 (\u901a\u5e38 BS>600 Osm \u5c31\u9ad8\u4e86)\n4. **\u91cd\u8981\u89c0\u5ff5**\uff1a\n   * DKA/HHS \u53ef\u80fd\u5408\u4f75\u767c\u751f\u3002\n   * **HHS** \u8840\u7cd6\u6b63\u5e38\u53ef\u76f4\u63a5 Off pump\u3002\n   * **DKA** \u9700\u7b49 **Anion Gap \u6b63\u5e38** \u6216 **Ketone \u6d88\u5931** \u624d\u80fd Off (\u82e5\u8840\u7cd6\u4f4e\u4f46 Ketone \u4ecd\u5728 -> \u88dc D5W \u7e7c\u7e8c Run Pump)\u3002","diagnosis",A.b([r,"[\u6aa2\u9a57] Blood Ketone (\u52ff\u9a57 Urine! \u53cd\u61c9\u6162), ABG/VBG, K (Q4-6H), Sugar (Q1-2H)","[\u8655\u7f6e] **NPO**: \u8840\u7cd6\u90fd\u9019\u6a23\u4e86\u5225\u518d\u5403\u4e86","[\u8655\u7f6e] **Hydration**: \u7b2c\u4e00\u5c0f\u6642\u7d66 1L (15-20ml/kg) 0.9% NS\n*DKA \u7f3a\u6c34 3-5L; HHS \u7f3a\u6c34 8-10L (\u8001\u4eba/\u5fc3\u8870\u7aed\u8acb\u659f\u914c)*"],o),"treatment",A.b([A.c(["category","A. \u8f15\u4e2d\u5ea6 DKA (pH >= 7.0)","items",A.b([A.c(["drug","SC Protocol (\u514d Pump)","dose","\u8b49\u64da: Diabetes Care 2004\n1. **Stat**: Novorapid/Apidra 0.3 U/kg SC\n2. **Maintain**: 0.2 U/kg SC q2h\n3. **\u7576 BS < 250**: \u6539 D5-0.45%S + 0.1 U/kg SC q2h"],n,n)],m)],n,l),A.c(["category","B. \u91cd\u5ea6 DKA / HHS (Insulin Pump)","items",A.b([A.c(["drug","\u6ce1\u6cd5 (1:1)","dose","**100U RI (\u6216 Novorapid Vial) + 100mL NS**\n*\u6ce8\u610f\u85e5\u540d\u7d50\u5c3e\u662f Vial \u4e0d\u662f PC*"],n,n),A.c(["drug","IV Push (Loading)","dose","DKA 6U / HHS 10U (\u8996\u60c5\u6cc1\u53ef\u7701\u7565)"],n,n),A.c(["drug","Run \u6cd5 1 (Titration)","dose","BS 120-180: 1 cc/hr\nBS 181-240: 2 cc/hr\nBS 241-300: 3 cc/hr\nBS 301-360: 4 cc/hr\nBS 361-400: 5 cc/hr\nBS > 400: Call Duty"],n,n),A.c(["drug","Run \u6cd5 2 (Continuous)","dose","Maintain: **0.1 U/kg/hr**\nBS < 250 \u6642: \u6539 D5-0.45%S + \u6e1b\u901f\u81f3 0.05 U/kg/hr"],n,n)],m)],n,l),A.c(["category","C. \u9240\u96e2\u5b50 (Potassium)","items",A.b([A.c(["drug","K < 3.0","dose","\ud83d\udea8 **Hold Insulin Pump!** \u5148\u88dc\u9240\u518d\u8aaa (\u9632\u5fc3\u5f8b\u4e0d\u6574)"],n,n),A.c(["drug","K 3.0-4.0","dose","Insulin \u4f7f\u7528\u4e2d\u9810\u671f\u6703\u964d\uff0c**\u9810\u9632\u6027\u88dc\u9240** (\u5468\u908a IV / \u53e3\u670d)"],n,n)],m)],n,l),A.c(["category","D. \u4e00\u822c\u8840\u7cd6\u63a7\u5236 (\u4f4f\u9662)","items",A.b([A.c(["drug","Stat Control","dose","BS > 300 \u518d\u8655\u7406 (200\u591a\u53ef OBS)\nNovorapid/Apidra \u4f9d\u6ed1\u52d5\u91cf\u8868 (Scale) \u7d66\u4e88"],n,n),A.c(["drug","SC\u8d77\u59cb\u5291\u91cf","dose","TDD = \u9ad4\u91cd * 0.5\n50% Basal (Lantus/Toujeo) + 50% Meal (Novorapid TID)"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83e\uddea \u5be6\u9a57\u5ba4\u6578\u503c\u7570\u5e38","id","chap_endo_04","title","\u9223\u8cea\u4ee3\u8b1d (Calcium)","subtitle","Hypercalcemia & Hypocalcemia","content",A.c(["diagnosis",A.b(["HyperCa: \u75c7\u72c0 Stones, Bones, Groans","HypoCa: Chvostek's / Trousseau's signs"],o),"treatment",A.b([A.c(["category","\u9ad8\u8840\u9223 (Hypercalcemia)","items",A.b([A.c(["drug","Fluids","dose","NS 200-500 mL/hr (\u9996\u9078)"],n,n),A.c(["drug","Calcitonin","dose","4 IU/kg SC q12h (\u901f\u6548)"],n,n),A.c(["drug","Bisphosphonate","dose","Zoledronic acid 4mg IV (\u9577\u6548)"],n,n)],m)],n,l),A.c(["category","\u4f4e\u8840\u9223 (Hypocalcemia)","items",A.b([A.c(["drug","Acute Sx","dose","Ca-Gluconate 1-2g IV over 10-20min"],n,n)],m)],n,l)],k)],n,i)],n,j),A.c(["group","\u2764\ufe0f \u5fc3\u81df\u5167\u79d1","id","protocol_ecg_01","title","\u5fc3\u96fb\u5716\u5224\u8b80 (ECG)","subtitle","STEMI \u6a19\u6e96\u3001Sgarbossa & \u5371\u6025\u6ce2\u5f62","content",A.c(["intro","### STEMI \u5224\u8b80\u6a19\u6e96 (ST Elevation)\n* **V2-V3**: \u7537\u226540\u6b72 >2mm; \u7537<40\u6b72 >2.5mm; \u5973 >1.5mm\n* **\u5176\u4ed6\u5c0e\u6975**: >1mm (\u9700\u5169\u500b\u76f8\u9130\u5c0e\u6975)\n* **LBBB (Sgarbossa)**: \u540c\u5411 ST \u4e0a\u5347 \u22651mm; \u540c\u5411 ST \u4e0b\u964d \u22651mm (V1-V3); \u53cd\u5411 ST \u4e0a\u5347 \u226525% S\u6ce2\n\n### \u5371\u6025\u5fb5\u8c61 (STEMI Equivalent)\n1. **Wellens'**: V2-V3 \u96d9\u76f8 T \u6216 \u6df1\u5012\u7f6e T (LAD \u56b4\u91cd\u72f9\u7a84)\u3002\n2. **De Winter's**: ST \u4e0a\u659c\u58d3\u4f4e + \u9ad8\u5c16 T (LAD \u963b\u585e)\u3002\n3. **Posterior MI**: V1-V3 ST \u4e0b\u964d (\u93e1\u50cf\u8b8a\u5316)\u3002","diagnosis",A.b(["[\u5fc3\u5305\u819c\u708e] \u5ee3\u6cdb ST \u4e0a\u5347 + PR \u4e0b\u964d\u3002**V6 ST/T \u9ad8\u5ea6\u6bd4 > 0.25**","[\u5fc3\u5305\u586b\u585e] **Electrical Alternans** (QRS \u5ffd\u5927\u5ffd\u5c0f), Low voltage","[\u9ad8\u8840\u9240] Peaked T -> P \u6d88\u5931 -> QRS \u8b8a\u5bec -> Sine wave","[\u80ba\u6813\u585e] S1Q3T3 (\u5c11\u898b\u4f46\u7279\u7570), RV Strain (V1-V4 T inversion)"],o),"treatment",A.b([A.c(["category","\u8655\u7f6e\u539f\u5247","items",A.b([A.c(["drug","STEMI","dose","\u555f\u52d5\u5c0e\u7ba1\u5ba4 (Code AMI)\u3002\u76ee\u6a19 Door-to-Balloon < 90min"],n,n),A.c(["drug","LBBB / De Winter","dose","\u8996\u540c STEMI \u8655\u7406\u3002\u7167\u6703\u5fc3\u81df\u79d1"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\u2764\ufe0f \u5fc3\u81df\u5167\u79d1","id","protocol_acs_01","lastUpdate","2026/01/29","title","\u6025\u6027\u51a0\u5fc3\u75c7 (ACS)","subtitle","PCI \u6642\u6a5f\u3001MONA \u6cbb\u7642 & \u8853\u524d\u505c\u85e5","content",A.c(["intro","### \u4ecb\u5165\u6cbb\u7642\u6642\u6a5f (PCI Timing)\n1. **STEMI**: \u767c\u4f5c 12hr \u5167 -> Primary PCI (90min \u5167)\u3002\u82e5\u8f49\u9001\u9700 >120min \u5247\u8003\u616e\u6eb6\u6813\u3002\n2. **NSTE-ACS**:\n   * **Immediate (<2hr)**: \u4f11\u514b\u3001\u5fc3\u8870\u7aed\u3001\u9811\u56fa\u5fc3\u7d5e\u75db\u3001\u81f4\u547d\u5fc3\u5f8b\u4e0d\u6574\u3002\n   * **Early (<24hr)**: GRACE > 140\u3001Troponin (+)\u3001ST \u52d5\u614b\u8b8a\u5316\u3002\n\n### \u8853\u524d\u505c\u85e5 (Anti-platelet)\n* **Ticagrelor / Prasugrel**: \u505c 5-7 \u5929\u3002\n* **Clopidogrel**: \u505c 5 \u5929\u3002","diagnosis",A.b(["[\u7981\u5fcc] **RV Infarct** (\u4e0b\u58c1/\u5f8c\u58c1 MI): **\u7981\u7528 NTG/Morphine** (Preload \u654f\u611f)\uff01","[\u7981\u5fcc] **HOCM / Severe AS**: **\u7981\u7528 NTG** (\u8840\u7ba1\u64f4\u5f35 -> \u4f11\u514b)","[\u9451\u5225] **Takotsubo**: \u58d3\u529b\u6027\u5fc3\u808c\u75c5\u8b8a\uff0cTrop-I \u6703\u5347\uff0c\u9700\u505a\u5c0e\u7ba1\u6392\u9664\u963b\u585e"],o),"treatment",A.b([A.c(["category","A. \u6025\u6027\u671f\u85e5\u7269 (MONA)","items",A.b([A.c(["drug","Aspirin","dose","**300 mg (3#) \u56bc\u788e** (\u6700\u91cd\u8981! \u964d\u4f4e\u6b7b\u4ea1\u7387)"],n,n),A.c(["drug",s,"dose","0.6 mg SL q5m (Max 3\u6b21)\u3002**SBP<90 \u6216 RV MI \u7981\u7528**"],n,n),A.c(["drug","P2Y12 Inhibitor","dose","**Ticagrelor** 180mg (\u9996\u9078) \u6216 **Clopidogrel** 300-600mg"],n,n),A.c(["drug","Heparin","dose","60 U/kg IV bolus -> 12 U/kg/hr (\u7dad\u6301 aPTT 1.5-2\u500d)"],n,n)],m)],n,l),A.c(["category","B. \u8853\u5f8c\u85e5\u7269 (DAPT)","items",A.b([A.c(["drug","Aspirin + P2Y12","dose","\u81f3\u5c11\u7dad\u6301 12 \u500b\u6708 (\u8996\u51fa\u8840\u98a8\u96aa\u8abf\u6574)"],n,n),A.c(["drug","Statins","dose","\u9ad8\u5f37\u5ea6 (Atorvastatin 40-80mg) \u76ee\u6a19 LDL < 55"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\u2764\ufe0f \u5fc3\u81df\u5167\u79d1","id","protocol_htn_01","lastUpdate","2026/01/28","title","\u9ad8\u8840\u58d3 (Hypertension)","subtitle","On Call: ESC/AHA \u6307\u5f15 & \u5e38\u7528\u85e5\u7269","content",A.c(["intro","\u8655\u7f6e\u539f\u5247\uff1a**\u6cbb\u7642\u75c5\u4eba\u800c\u975e\u6cbb\u7642\u6578\u5b57**\u3002\u9664\u9ad8\u8840\u58d3\u6025\u75c7\u5916\uff0c\u907f\u514d\u77ed\u6548\u820c\u4e0b\u85e5\u7269 (Nifedipine SL) \u4ee5\u9632\u4e2d\u98a8\u3002\u4ee5\u4e0b\u4f9d\u64da **ESC 2024 & AHA 2022** \u6307\u5f15\u6574\u7406\u3002","diagnosis",A.b(["[\u7b56\u7565] \u5e74\u8f15\u4eba (<50\u6b72): **ACEI/ARB** \u9996\u9078 (*\u964d\u8166\u58d3\u512a*)","[\u7b56\u7565] \u8001\u4eba (>65\u6b72): **CCB/Thiazide** \u9996\u9078","[\u7b56\u7565] \u7cd6\u5c3f\u75c5/CKD: **ACEI/ARB** (\u76e3\u6e2c K/Cr, eGFR<30\u6e1b\u91cf)","[\u7b56\u7565] CAD: **\u03b2-blocker + ACEI/ARB** (\u907f\u514d\u55ae\u7528 CCB)","[\u7b56\u7565] \u4e2d\u98a8\u904e: **Thiazide + ACEI/ARB** (Combine therapy)","[\u7b56\u7565] Afib: **\u03b2-blocker** \u6216 **Non-DHP CCB** (Rate control)","[\u5b55\u5a66] **Labetalol** (\u9996\u9078) \u6216 Methyldopa; [\u8b66\u793a] **\u7981\u7528 ACEI/ARB**","[\u5371\u6025] \u9ad8\u8840\u58d3\u8166\u75c5\u8b8a: **\u610f\u8b58\u6539\u8b8a**, **\u8996\u4e73\u982d\u6c34\u816b**","[\u5371\u6025] \u4e3b\u52d5\u8108\u525d\u96e2: **\u6495\u88c2\u75db**, **\u5169\u624b\u8840\u58d3\u5dee >20 mmHg**","[\u5371\u6025] \u80ba\u6c34\u816b/MI: **\u547c\u5438\u7a98\u8feb**, **\u80f8\u75db**"],o),"treatment",A.b([A.c(["category","A. \u53e3\u670d\u55ae\u65b9 (Single Agents)","items",A.b([A.c(["drug","Norvasc (Amlodipine)","dose","5mg 1# QD (**\u503c\u73ed\u795e\u85e5**, \u4e0d\u77e5\u958b\u5565\u5c31\u958b\u9019\u500b; \u6ce8\u610f\u4e0b\u80a2\u6c34\u816b)"],n,n),A.c(["drug","Concor (Bisoprolol)","dose","1.25-5mg QD (**\u03b21 selective**, \u9069\u5408\u964d HR; \u7559\u610f\u5fc3\u8df3\u904e\u6162)"],n,n),A.c(["drug","Adalat CC (Nifedipine)","dose","30/60mg QD (*\u9577\u6548\u7de9\u91cb\u578b*, \u52ff\u78e8\u7c89)"],n,n),A.c(["drug","Herbesser (Diltiazem)","dose","30/60mg TID-QID (**Non-DHP**, \u964d\u5fc3\u8df3)"],n,n),A.c(["drug","Doxaben (Doxazosin)","dose","XL 4mg (\u9577\u6548) \u6216 2mg (\u901f\u6548); **\u03b1-blocker**, \u6ce8\u610f\u59ff\u52e2\u6027\u4f4e\u8840\u58d3"],n,n),A.c(["drug","Aldactone (Spironolactone)","dose","25mg QD (**\u4fdd\u9240\u5229\u5c3f\u5291**, \u96e3\u6cbb\u6027\u9ad8\u8840\u58d3)"],n,n)],m)],n,l),A.c(["category","B. \u53e3\u670d\u8907\u65b9 (Combination)","items",A.b([A.c(["drug","Exforge (ARB+CCB)","dose","5/80mg \u6216 5/160mg (Max 2#)"],n,n),A.c(["drug","Sevikar (ARB+CCB)","dose","5/20mg (Max 2#)"],n,n),A.c(["drug","Amtrel (ACEI+CCB)","dose","5/10mg (Max 2#)"],n,n),A.c(["drug","Co-Diovan (ARB+Thiazide)","dose","80/12.5mg (Max 4#)"],n,n),A.c(["drug","Exforge HCT (\u4e09\u5408\u4e00)","dose","5/160/12.5mg (Max 2#)"],n,n)],m)],n,l),A.c(["category","C. \u91dd\u5291\u6025\u7528 (IV Push)","items",A.b([A.c(["drug","Trandate (Labetalol)","dose","0.5-1 amp IV push (**\u03b1+\u03b2 blocker**, \u6703\u964d HR, \u5efa\u8b70\u534a\u652f\u7d66)"],n,n),A.c(["drug","Perdipine (Nicardipine)","dose","3-5 mg IV push (\u8f03\u4e0d\u5f71\u97ff HR, \u53ef\u5148 3mg try)"],n,n)],m)],n,l),A.c(["category","D. \u9023\u7e8c\u8f38\u6ce8 (IV Pump)","items",A.b([A.c(["drug","Nicardipine Pump","dose","4 amp (40mg) in 100mL NS -> **Run 10 mL/hr** (Stroke SBP<140)"],n,n),A.c(["drug","NTG (Millisrol) \u539f\u6db2","dose","Run 1.2~24 cc/hr\n* \u8d77\u59cb **1.2 cc/hr**\n* Q3-5min \u4e0a\u8abf **0.6 cc/hr**"],n,n),A.c(["drug","NTG Pre-mixed (\u63a8\u85a6)","dose","**50mg/250mL D5W**\n* \u8d77\u59cb **1.5 mL/hr**\n* Q3-5min \u4e0a\u8abf **1.5 mL/hr**\n* Max 60 mL/hr (\u901a\u5e38 12 mL/hr \u5373\u53ef)"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\u2764\ufe0f \u5fc3\u81df\u5167\u79d1","id","protocol_hf_acute","lastUpdate","2026/01/29","title","\u5fc3\u8870\u7aed\u7e3d\u8ad6 (Acute HF)","subtitle","\u5206\u985e\u3001\u8a3a\u65b7 & \u6025\u6027\u671f\u8655\u7f6e","content",A.c(["intro","### \u8a3a\u65b7\u8207\u5206\u985e (LVEF)\n* **HFrEF**: EF \u2264 40% (\u56db\u67f1\u85e5\u7269\u6cbb\u7642\u6838\u5fc3)\n* **HFmrEF**: EF 41-49%\n* **HFpEF**: EF \u2265 50%\n\n### \u6025\u6027\u671f\u539f\u5247 (CHAMPIT)\n\u9700\u6392\u9664\u81f4\u547d\u53ef\u9006\u56e0\u5b50\uff1a**C** (ACS), **H** (HTN crisis), **A** (Arrhythmia), **M** (Mechanical), **P** (PE), **I** (Infection), **T** (Tamponade)\u3002","diagnosis",A.b(["\ud83e\uddea [BNP] NT-proBNP < 125 pg/mL \u53ef\u6392\u9664\u5fc3\u8870\u7aed","\u26a1\ufe0f [\u5206\u578b] **Warm & Wet** (\u6700\u5e38\u898b): \u704c\u6d41\u597d\u4f46\u6c34\u816b -> \u5229\u5c3f\u5291/\u8840\u7ba1\u64f4\u5f35","\u26a1\ufe0f [\u5206\u578b] **Cold & Wet**: \u4f11\u514b\u4e14\u6c34\u816b -> \u5f37\u5fc3\u5291 (Inotrope) + \u5229\u5c3f\u5291","\u26a1\ufe0f [\u5206\u578b] **Cold & Dry**: \u4f4e\u8840\u5bb9/\u4f11\u514b -> \u8f38\u6db2\u6e2c\u8a66","\u2622\ufe0f [\u5f71\u50cf] CXR (\u80ba\u6c34\u816b/\u5fc3\u64f4\u5927), Echo (EF/\u74e3\u819c/Wall motion)"],o),"treatment",A.b([A.c(["category","A. \u6025\u6027\u671f\u85e5\u7269 (Acute)","items",A.b([A.c(["drug","Diuretics (Class I)","dose","**Lasix** IV push (\u5291\u91cf\u70ba\u53e3\u670d 1-2.5\u500d)\n\u76ee\u6a19: \u89e3\u9664\u5145\u8840 (Congestion)"],n,n),A.c(["drug","Vasodilators","dose","**NTG** (\u82e5 SBP > 110): \u964d\u4f4e Preload/Afterload\n\u7de9\u89e3\u5598\u75c7\u72c0\u512a\u65bc\u5229\u5c3f\u5291"],n,n),A.c(["drug","Inotropes","dose","**Dobutamine / Milrinone**\n\u50c5\u7528\u65bc Cold (\u4f4e\u704c\u6d41/\u4f11\u514b) \u75c5\u4eba\uff0c\u52ff\u5e38\u898f\u4f7f\u7528"],n,n)],m)],n,l),A.c(["category","B. \u547c\u5438\u652f\u6301","items",A.b([A.c(["drug","BiPAP (NIV)","dose","\u547c\u5438\u7a98\u8feb (RR>25, SpO2<90) \u5118\u65e9\u4f7f\u7528\n\u53ef\u964d\u4f4e\u63d2\u7ba1\u7387"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\u2764\ufe0f \u5fc3\u81df\u5167\u79d1","id","protocol_hf_chronic","lastUpdate","2026/01/29","title","\u6162\u6027\u5fc3\u8870\u7aed (Chronic HF)","subtitle","GDMT \u56db\u67f1\u85e5\u7269 & \u5291\u91cf\u6ef4\u5b9a","content",A.c(["intro","### HFrEF \u56db\u67f1\u85e5\u7269 (Four Pillars)\n1. **ARNI** (\u9996\u9078) \u6216 ACEI/ARB\n2. **Beta-blocker** (\u7a69\u5b9a\u5f8c\u7d66\u4e88)\n3. **MRA** (Spironolactone)\n4. **SGLT2i** (Dapa/Empagliflozin)\n\n*\u76ee\u6a19\uff1a\u76e1\u65e9\u555f\u52d5\u4e26\u6ef4\u5b9a\u81f3 Target Dose*","diagnosis",A.b(["[\u8ffd\u8e64] \u6bcf\u65e5\u9ad4\u91cd, I/O, \u75c7\u72c0 (\u7aef\u5750\u547c\u5438/PND)","[\u51fa\u9662] \u9700\u7121\u5145\u8840 (Congestion free) \u4e14\u5df2\u8abf\u6574 GDMT"],o),"treatment",A.b([A.c(["category","1. ARNI / ACEI / ARB","items",A.b([A.c(["drug","ARNI (Entresto)","dose","Start: **49/51 mg BID** (\u82e5\u7531 ACEI \u8f49\u9700\u505c 36hr)\nTarget: 97/103 mg BID"],n,n),A.c(["drug","ACEI (Ramipril)","dose","Start: 1.25-2.5 mg QD\nTarget: 10 mg QD"],n,n),A.c(["drug","ARB (Valsartan)","dose","Start: 40 mg BID\nTarget: 160 mg BID"],n,n)],m)],n,l),A.c(["category","2. Beta-blockers (HFrEF)","items",A.b([A.c(["drug","Bisoprolol (Concor)","dose","Start: 1.25 mg QD\nTarget: 10 mg QD"],n,n),A.c(["drug","Carvedilol","dose","Start: 3.125 mg BID\nTarget: 25 mg BID"],n,n),A.c(["drug","Metoprolol Succ.","dose","Start: 12.5-25 mg QD\nTarget: 200 mg QD (\u9700\u7528\u9577\u6548\u578b)"],n,n)],m)],n,l),A.c(["category","3. MRA & 4. SGLT2i","items",A.b([A.c(["drug","Spironolactone","dose","Start: 12.5-25 mg QD\nTarget: 50 mg QD (\u76e3\u6e2c K+ & Cr)"],n,n),A.c(["drug","SGLT2i (For All)","dose","**Dapa / Empagliflozin** 10 mg QD\n*\u7121\u9700\u6ef4\u5b9a\uff0cHFrEF/HFpEF \u7686\u53ef\u7528*"],n,n)],m)],n,l),A.c(["category","\u5176\u4ed6\u85e5\u7269","items",A.b([A.c(["drug","Ivabradine","dose","SR + HR>70 + Max BB used\n5-7.5 mg BID"],n,n),A.c(["drug","Digoxin","dose","0.125-0.25 mg QD (\u75c7\u72c0\u63a7\u5236/AF Rate control)\n\u76ee\u6a19\u6fc3\u5ea6 0.5-0.9 (\u4f4e\u5291\u91cf\u70ba\u4f73)"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\u2764\ufe0f \u5fc3\u81df\u5167\u79d1","id","protocol_structural_heart","title","\u7d50\u69cb\u6027\u5fc3\u81df\u8207\u5927\u8840\u7ba1","subtitle","\u4e3b\u52d5\u8108\u525d\u96e2\u3001\u5fc3\u5305\u586b\u585e & \u74e3\u819c\u7981\u5fcc","content",A.c(["intro","### \u5371\u6025\u91cd\u75c7\u8655\u7f6e\n1. **\u4e3b\u52d5\u8108\u525d\u96e2 (Aortic Dissection)**: \u76ee\u6a19 SBP 100-120, HR < 60\u3002\n   * **\u7d66\u85e5\u9806\u5e8f**: \u5148\u7d66 Beta-blocker (\u964d\u5fc3\u8df3) -> \u518d\u7d66 Vasodilator (\u964d\u58d3)\u3002**\u9806\u5e8f\u932f\u6703\u589e\u52a0\u526a\u529b (Shear stress)!**\n2. **\u5fc3\u5305\u586b\u585e (Tamponade)**: Beck's Triad (\u4f4e\u8840\u58d3/\u9838\u975c\u8108\u6012\u5f35/\u5fc3\u97f3\u9059\u9060)\u3002\n   * **\u7981\u5fcc**: **\u4e0d\u53ef\u7d66\u5229\u5c3f\u5291** (\u9664\u975e\u80ba\u6c34\u816b)\uff0c\u9700\u8f38\u6db2\u7dad\u6301 Preload\u3002\n3. **\u4e3b\u52d5\u8108\u72f9\u7a84 (AS)** / **\u80a5\u539a\u5fc3\u808c (HOCM)**: **\u7981\u7528 NTG / Nicardipine** (\u907f\u514d\u4f11\u514b)\u3002","diagnosis",A.b(["[\u525d\u96e2] **\u6495\u88c2\u75db** + **\u96d9\u624b\u8840\u58d3\u5dee > 20**\u3002CXR: \u7e31\u8188\u8154\u8b8a\u5bec\u3002","[\u586b\u585e] **Pulsus Paradoxus**: \u5438\u6c23\u6642 SBP \u4e0b\u964d > 10 mmHg\u3002","[\u96dc\u97f3] \u65b0\u7684\u6536\u7e2e\u671f\u96dc\u97f3 + MI -> \u61f7\u7591\u4e73\u982d\u808c\u65b7\u88c2 (Papillary muscle rupture)"],o),"treatment",A.b([A.c(["category","A. \u4e3b\u52d5\u8108\u525d\u96e2 (Type A/B)","items",A.b([A.c(["drug","1. \u964d\u5fc3\u8df3 (\u9996\u9078)","dose","**Trandate (Labetalol)** 10-20mg IV push (\u540c\u6642\u964d\u58d3\u964d\u5fc3\u8df3)\n**Esmolol** Pump: 50-200 mcg/kg/min"],n,n),A.c(["drug","2. \u964d\u8840\u58d3 (\u6b21\u9078)","dose","**Nicardipine** Pump: 5mg/hr (\u5fc5\u5148\u78ba\u8a8d HR \u5df2\u63a7\u5236)"],n,n),A.c(["drug","3. \u6b62\u75db","dose","**Morphine** 2-4mg IV (\u6e1b\u4f4e\u4ea4\u611f\u8208\u596e)"],n,n)],m)],n,l),A.c(["category","B. \u5fc3\u5305\u819c\u708e (Pericarditis)","items",A.b([A.c(["drug","\u6297\u767c\u708e","dose","**NSAIDs** (Ibuprofen) + **Colchicine** (\u9810\u9632\u5fa9\u767c)"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\u2764\ufe0f \u5fc3\u81df\u5167\u79d1","id","protocol_pad_ali","title","\u5468\u908a\u52d5\u8108\u75be\u75c5 (PAD & ALI)","subtitle","ABI \u5224\u8b80\u3001\u8ddb\u884c\u6cbb\u7642 & 6P \u6025\u75c7","content",A.c(["intro","### \u5169\u5927\u985e\u5225\n1. **\u6162\u6027 PAD**: \u9593\u6b47\u6027\u8ddb\u884c (\u4f11\u606f\u7de9\u89e3)\u3002\u76ee\u6a19\u662f\u964d\u4f4e\u5fc3\u8840\u7ba1\u98a8\u96aa (MACE) \u8207\u6539\u5584\u75c7\u72c0\u3002\n2. **\u6025\u6027\u80a2\u9ad4\u7f3a\u8840 (ALI)**: **\u8840\u7ba1\u6025\u75c7**\uff01\u9700\u7acb\u5373 Heparin \u5316\u4e26\u7167\u6703\u8840\u7ba1\u5916\u79d1 (CVS)\u3002\n   * **6 Ps**: Pain, Pallor (\u84bc\u767d), Pulselessness, Poikilothermia (\u51b0\u51b7), Paresthesia (\u9ebb), Paralysis (\u7671)\u3002","diagnosis",A.b(["[ABI] **\u6b63\u5e38**: 1.0-1.4; **\u7570\u5e38**: \u2264 0.90\n* **>1.4**: \u8840\u7ba1\u9223\u5316 (\u5e38\u898b\u65bc\u6d17\u814e/\u7cd6\u5c3f\u75c5)\uff0c\u6578\u503c\u4e0d\u53ef\u4fe1\uff0c\u9700\u6539\u6e2c PVR/TBI\u3002","[Leriche] **\u4e09\u806f\u5fb5**: \u8ddb\u884c + \u80a1\u52d5\u8108\u640f\u52d5\u6d88\u5931 + \u52c3\u8d77\u969c\u7919\u3002","[ALI \u5206\u7d1a] **Viable**: \u7121\u7f3a\u640d; **Threatened**: \u611f\u89ba/\u904b\u52d5\u7f3a\u640d (\u9700\u6975\u7dca\u6025\u624b\u8853); **Irreversible**: \u808c\u8089\u50f5\u786c (\u9700\u622a\u80a2)\u3002"],o),"treatment",A.b([A.c(["category","A. \u6162\u6027 PAD \u7ba1\u7406","items",A.b([A.c(["drug","\u6297\u8840\u5c0f\u677f","dose","Aspirin \u6216 Clopidogrel (\u6709\u75c7\u72c0\u6216 ABI\u22640.9 \u6642\u7d66\u4e88)"],n,n),A.c(["drug","\u75c7\u72c0\u63a7\u5236","dose","**Cilostazol (Pletal)** 100mg BID (\u6539\u5584\u8ddb\u884c\u8ddd\u96e2)\n*\u7981\u5fcc: \u5fc3\u8870\u7aed (HF) \u60a3\u8005\u7981\u7528!*"],n,n),A.c(["drug","\u98a8\u96aa\u56e0\u5b50","dose","\u6212\u83f8 (\u6700\u91cd\u8981)\u3001\u9ad8\u5f37\u5ea6 Statin\u3001\u8840\u58d3\u63a7\u5236"],n,n)],m)],n,l),A.c(["category","B. \u6025\u6027\u80a2\u9ad4\u7f3a\u8840 (ALI)","items",A.b([A.c(["drug","\u7dca\u6025\u6297\u51dd\u8840","dose","**Heparin** IV STAT\n80 U/kg Bolus -> 18 U/kg/hr Infusion (\u7dad\u6301 aPTT 1.5-2\u500d)"],n,n),A.c(["drug","\u8840\u904b\u91cd\u5efa","dose","\u7dca\u6025\u5c0e\u7ba1\u6eb6\u6813 (Thrombolysis) \u6216 \u5916\u79d1\u53d6\u6813 (Thrombectomy)"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\u2764\ufe0f \u5fc3\u81df\u5167\u79d1","id","protocol_syncope_01","title","\u6688\u53a5\u8207\u8853\u524d\u8a55\u4f30 (Syncope)","subtitle","\u6688\u53a5\u9451\u5225\u3001\u59ff\u52e2\u6027\u4f4e\u8840\u58d3 & \u8853\u524d\u98a8\u96aa","content",A.c(["diagnosis",A.b(["[\u5b9a\u7fa9] **\u6688\u53a5**: \u773c\u524d\u767c\u9ed1/\u610f\u8b58\u55aa\u5931 (\u5fc3\u81df/\u795e\u7d93); **\u7729\u6688**: \u5929\u65cb\u5730\u8f49 (\u8033/\u8166)\u3002","[OH] **\u59ff\u52e2\u6027\u4f4e\u8840\u58d3**: \u7ad9\u7acb 3min \u5f8c SBP \u964d >20 \u6216 DBP \u964d >10\u3002","[POTS] \u9ad4\u4f4d\u6027\u5fc3\u640f\u904e\u901f: \u7ad9\u7acb\u5f8c HR \u589e\u52a0 > 30 bpm\u3002","[\u9ad8\u98a8\u96aa] **San Francisco Rule**: \u5fc3\u8870\u7aed, Hct<30, ECG\u7570\u5e38, SOB, SBP<90\u3002","[\u8853\u524d] \u975e\u5fc3\u81df\u624b\u8853 MI \u98a8\u96aa\u7d04 5% (65% \u7121\u75c7\u72c0)\u3002"],o),"treatment",A.b([A.c(["category","\u6688\u53a5\u8655\u7f6e","items",A.b([A.c(["drug","Vasovagal (\u8ff7\u8d70\u795e\u7d93)","dose","\u8173\u62ac\u9ad8\u3001\u88dc\u5145\u6c34\u5206\u3002\u907f\u514d\u8a98\u767c\u56e0\u5b50\u3002"],n,n),A.c(["drug","\u5fc3\u56e0\u6027 (Arrhythmia)","dose","\u5b89\u6392 24hr Holter \u6216 Event recorder\u3002\u5fc5\u8981\u6642\u88dd TCP/PPM\u3002"],n,n)],m)],n,l)],k)],n,i)],n,j),A.c(["group","\ud83e\udec1 \u80f8\u8154\u5167\u79d1","id","chap_pulm_03","title","\u6c23\u5598 (Asthma)","subtitle","Acute Exacerbation & Chronic Care","content",A.c(["diagnosis",A.b(["\u80ba\u91cf\u8a08: \u963b\u585e\u4e14\u652f\u6c23\u7ba1\u64f4\u5f35\u5291\u5f8c FEV1 \u589e\u52a0 >=12% \u4e14 >=200 mL","Methacholine \u6fc0\u767c\u6e2c\u8a66 (\u82e5\u80ba\u91cf\u8a08\u6b63\u5e38)"],o),"treatment",A.b([A.c(["category","\u6025\u6027\u767c\u4f5c (Acute Exacerbation)","items",A.b([A.c(["drug","Oxygen","dose","\u7dad\u6301 SaO2 93-95%"],n,n),A.c(["drug","SABA (Albuterol)","dose","4-8 puffs \u6216 2.5-5 mg \u9727\u5316, q20min"],n,n),A.c(["drug","Ipratropium","dose","0.5 mg \u9727\u5316 (\u56b4\u91cd\u8005\u52a0\u7528)"],n,n),A.c(["drug","Steroids (IV)","dose","Methylprednisolone 125 mg q6h"],n,n)],m)],n,l),A.c(["category","\u6162\u6027\u63a7\u5236 (Controller)","items",A.b([A.c(["drug","\u9996\u9078: ICS-Formoterol","dose","\u4f4e\u5291\u91cf\u4f5c\u70ba Reliever (MART strategy)"],n,n),A.c(["drug","ICS","dose","\u4f9d\u7167\u968e\u68af\u6cbb\u7642\u8abf\u6574\u5291\u91cf"],n,n)],m)],n,l)],k)],n,i)],n,j),A.c(["group","\ud83e\udec1 \u80f8\u8154\u5167\u79d1","id","chap_pulm_05","title","\u6162\u6027\u963b\u585e\u6027\u80ba\u75c5 (COPD)","subtitle","AECOPD & Stable COPD","content",A.c(["diagnosis",A.b(["\u80ba\u91cf\u8a08 FEV1/FVC < 0.7","\u8a55\u4f30\u75c7\u72c0 (CAT/mMRC) \u8207\u60e1\u5316\u53f2"],o),"treatment",A.b([A.c(["category","\u6025\u6027\u60e1\u5316 (AECOPD)","items",A.b([A.c(["drug","Bronchodilators","dose","SABA + SAMA \u9727\u5316\u5438\u5165"],n,n),A.c(["drug","Steroids","dose","Prednisone 40 mg PO x 5 \u5929"],n,n),A.c(["drug","Antibiotics","dose","Azithromycin / Doxycycline / Resp. FQ (\u82e5\u6fc3\u75f0\u589e\u52a0)"],n,n)],m)],n,l),A.c(["category","\u6162\u6027\u671f\u9996\u9078","items",A.b([A.c(["drug","LAMA / LABA","dose","Tiotropium \u7b49\u9577\u6548\u578b"],n,n),A.c(["drug","ICS","dose","\u82e5 Eosinophil >300 \u6216\u983b\u7e41\u60e1\u5316\u6642\u52a0\u7528"],n,n)],m)],n,l)],k)],n,i)],n,j),A.c(["group","\ud83e\udd68 \u80c3\u8178\u809d\u81bd\u79d1","id","protocol_upper_gi","title","\u4e0a\u6d88\u5316\u9053\u75be\u75c5 (Upper GI)","subtitle","GERD, PUD & UGIB \u8655\u7f6e","content",A.c(["intro","### \u8a3a\u65b7\u91cd\u9ede\n1. **GERD**: \u5178\u578b\u75c7\u72c0 (\u706b\u71d2\u5fc3) \u53ef\u505a PPI Test\u3002\u82e5\u6709 **Alarm Features** (\u541e\u56a5\u56f0\u96e3/\u75db, \u9ad4\u91cd\u6e1b\u8f15, \u8ca7\u8840, \u5410\u8840, >60\u6b72) -> \u5fc5\u505a\u80c3\u93e1 (EGD)\u3002\n2. **PUD**: H. pylori (80% DU / 40% GU) \u8207 NSAIDs \u662f\u4e3b\u56e0\u3002GU \u5fc5\u5207\u7247\u9664\u60e1\u6027\u3002\u7a7a\u8179\u75db=DU; \u9910\u5f8c\u75db=GU\u3002\n3. **UGIB**: BUN/Cr > 36 \u63d0\u793a UGIB\u3002\u51fa\u8840\u91cf\u5927\u6642\u5148 NPO + PPI + \u8f38\u6db2\uff0c24hr \u5167\u505a\u80c3\u93e1\u3002","diagnosis",A.b(["[GERD] **Alarm Features**: Dysphagia, Odynophagia, Wt loss, Anemia, GI bleeding","[PUD] **H. pylori**: UBT/Stool Ag (\u9700\u505c PPI/\u6297\u751f\u7d20 2\u9031)\u3002\u80c3\u93e1\u5207\u7247 (CLO test)","[UGIB] **Triad**: \u5410\u8840, \u9ed1\u4fbf, BUN\u5347\u9ad8\u3002Shock index > 1 (HR>SBP) \u8868\u5931\u8840\u56b4\u91cd"],o),"treatment",A.b([A.c(["category","A. \u80c3\u98df\u9053\u9006\u6d41 (GERD)","items",A.b([A.c(["drug","PPI Test","dose","Omeprazole / Pantoprazole / Esomeprazole QD-BID \u6e2c\u8a66 2\u9031"],n,n),A.c(["drug","H2 Blockers","dose","Famotidine 20-40mg BID (\u591c\u9593\u7a81\u7834\u6027\u9178\u9006\u6d41\u6709\u6548)"],n,n)],m)],n,l),A.c(["category","B. \u6d88\u5316\u6027\u6f70\u760d (PUD)","items",A.b([A.c(["drug","H. pylori \u9664\u83cc","dose","**\u56db\u5408\u4e00\u7642\u6cd5 (14\u5929)**:\nPPI BID + Bismuth QID + Tetracycline 500 QID + Metronidazole 500 TID"],n,n),A.c(["drug","NSAID \u6f70\u760d","dose","\u505c\u7528 NSAID\u3002PPI \u6cbb\u7642 4-8 \u9031"],n,n)],m)],n,l),A.c(["category","C. \u4e0a\u6d88\u5316\u9053\u51fa\u8840 (UGIB)","items",A.b([A.c(["drug","PPI (High Dose)","dose","**Nexium** (Esomeprazole) 80mg IV stat -> **8mg/hr** run 72hr\n(\u6216 40mg IV BID)"],n,n),A.c(["drug","Variceal Bleeding","dose","**Sandostatin** (Octreotide) 50mcg IV st -> 50mcg/hr\n**Terlipressin** 1mg q4-6h\n\u9810\u9632\u6027\u6297\u751f\u7d20: **Ceftriaxone** 1g QD"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83e\udd68 \u80c3\u8178\u809d\u81bd\u79d1","id","protocol_liver_01","title","\u809d\u81bd\u80f0\u75be\u75c5 (Hepato-Biliary-Pancreatic)","subtitle","Cirrhosis, Cholecystitis & Pancreatitis","content",A.c(["intro","### \u8a3a\u65b7\u91cd\u9ede\n1. **Cirrhosis**: SAAG \u2265 1.1 (\u9580\u8108\u9ad8\u58d3)\u3002SBP \u8a3a\u65b7: PMN \u2265 250\u3002\n2. **Pancreatitis**: \u8a3a\u65b7\u4e09\u4e2d\u4e8c (\u5178\u578b\u75db / Lipase>3\u500d / CT)\u3002TG>1000 \u9700\u6d17\u8840\u6216 Insulin\u3002\n3. **Cholangitis**: Charcot triad (Fever, RUQ pain, Jaundice)\u3002\u9700\u7dca\u6025\u5f15\u6d41 (ERCP/PTCD)\u3002","diagnosis",A.b(["[HE] **\u809d\u8166\u75c5\u8b8a**: Ammonia \u8207\u75c5\u60c5\u4e0d\u4e00\u5b9a\u76f8\u95dc\u3002\u770b Asterixis (\u64b2\u7ffc\u9707\u986b)\u3002","[SBP] **\u81ea\u767c\u6027\u8179\u819c\u708e**: Ascites PMN \u2265 250\u3002\u5e38\u898b E. coli / Klebsiella\u3002","[Cholecystitis] **Murphy's sign (+)**\u3002US: Wall > 4mm, Pericholecystic fluid\u3002","[Pancreatitis] **Ranson / BISAP score** \u8a55\u4f30\u56b4\u91cd\u5ea6\u3002\u5927\u91cf\u8f38\u6db2\u70ba\u95dc\u9375\u3002"],o),"treatment",A.b([A.c(["category","A. \u809d\u786c\u5316\u4f75\u767c\u75c7","items",A.b([A.c(["drug","\u809d\u8166\u75c5\u8b8a (HE)","dose","**Lactulose** 30-45mL TID (\u76ee\u6a19\u8edf\u4fbf 2-3\u6b21/\u5929)\n**Rifaximin** 550mg BID (\u4e8c\u7dda)"],n,n),A.c(["drug","\u8179\u6c34 (Ascites)","dose","**Spiro : Lasix = 100mg : 40mg** (\u6bd4\u4f8b 2.5:1)\n\u5927\u91cf\u653e\u6c34 (>5L) \u9700\u88dc Albumin (6-8g per 1L)"],n,n),A.c(["drug","SBP","dose","**Ceftriaxone** 2g QD \u6216 **Flomoxef**"],n,n)],m)],n,l),A.c(["category","B. \u6025\u6027\u81bd\u56ca/\u81bd\u7ba1\u708e","items",A.b([A.c(["drug","\u6297\u751f\u7d20","dose","**Ceftriaxone + Metronidazole** (Cover GNB + Anaerobe)\n\u6216 **Flomoxef**, **Tazocin**"],n,n),A.c(["drug","\u5f15\u6d41","dose","PTGBD (\u81bd\u56ca\u708e) \u6216 ERCP (\u81bd\u7ba1\u708e)"],n,n)],m)],n,l),A.c(["category","C. \u6025\u6027\u80f0\u81df\u708e","items",A.b([A.c(["drug","\u8f38\u6db2 (Hydration)","dose","**LR / NS** \u5927\u91cf\u8f38\u6ce8 (250-500ml/hr) \u7dad\u6301\u5c3f\u91cf\n*\u75db\u63a7\u5236: Morphine / Demerol*"],n,n),A.c(["drug","\u9ad8\u8840\u8102 (TG>1000)","dose","**Insulin infusion** 0.1 U/kg/hr (\u9700\u88dc\u7cd6 D5W \u9632\u6b62\u4f4e\u8840\u7cd6)"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83e\udd68 \u80c3\u8178\u809d\u81bd\u79d1","id","protocol_lower_gi","title","\u4e0b\u6d88\u5316\u9053\u8207\u529f\u80fd\u6027\u969c\u7919","subtitle","Ileus, Diarrhea, Constipation & Meds","content",A.c(["intro","### \u8655\u7f6e\u539f\u5247\n1. **Ileus (\u8178\u963b\u585e)**: \u5206\u6a5f\u68b0\u6027 (\u958b\u5200\u53f2/\u816b\u7624) vs \u9ebb\u75fa\u6027 (\u96fb\u89e3\u8cea/\u85e5\u7269)\u3002\u8655\u7f6e: NPO + NG decompression\u3002\n2. **Diarrhea**: \u6025\u6027\u591a\u611f\u67d3\uff0c\u6162\u6027\u591a\u529f\u80fd\u6027\u3002\u8b66\u793a: \u767c\u71d2/\u8840\u4fbf\u52ff\u7528\u5f37\u6548\u6b62\u7009 (Imodium)\u3002\n3. **Constipation**: \u6392\u9664\u8b66\u793a\u5fb5\u5146 (>50\u6b72, \u8840\u4fbf, \u8ca7\u8840)\u3002","diagnosis",A.b(["[Ileus] **KUB**: \u64f4\u5f35\u8178\u6c23\u3002\u6a5f\u68b0\u6027\u6709 Transition zone; \u9ebb\u75fa\u6027\u7030\u6f2b\u64f4\u5f35\u3002","[Diarrhea] **C. diff**: \u6297\u751f\u7d20\u4f7f\u7528\u53f2 + \u6c34\u7009\u3002\u9a57 Stool Toxin\u3002","[Bladder] **\u6383\u63cf\u516c\u5f0f**: W x D x H x 0.7\u3002\u9918\u5c3f >400ml \u5efa\u8b70\u5c0e\u5c3f\u3002"],o),"treatment",A.b([A.c(["category","A. \u5e38\u7528\u91dd\u5291 (Injectable)","items",A.b([A.c(["drug","\u6b62\u5410","dose","**Primperan** 1amp IV/IM (EPS\u98a8\u96aa)\n**Novamin** 1amp IM (\u6b62\u5410\u5f37)\n**Zofran** (\u5316\u7642/\u8853\u5f8c)"],n,n),A.c(["drug","\u6b62\u75db (\u8179\u75db)","dose","**Buscopan** 1amp IV (\u89e3\u75d9\u6523, BPH/\u9752\u5149\u773c\u7981)\n**Ketorolac** 1amp IM (\u814e\u5dee\u7981)\n**Morphine** 3-5mg IV (\u56b4\u91cd\u75db)"],n,n)],m)],n,l),A.c(["category","B. \u5e38\u7528\u53e3\u670d\u85e5 (Oral)","items",A.b([A.c(["drug","\u4fbf\u79d8 (Laxatives)","dose","**MgO** 1-2# BID (\u8edf\u4fbf)\n**Sennoside** 1-2# HS (\u523a\u6fc0)\n**Dulcolax** 1-2# (\u5f37\u6548, \u543b\u5408\u8853\u5f8c\u7981)"],n,n),A.c(["drug","\u8179\u7009 (Antidiarrheal)","dose","**Smecta** 1\u5305 TID (\u5438\u9644\u5291, \u5b89\u5168)\n**Imodium** (\u5f37\u6548, \u611f\u67d3\u6027/C.diff \u7981)"],n,n),A.c(["drug","\u80c3\u8f15\u7671 / \u8139\u6c23","dose","**Erythromycin** 250mg 1# TID (\u4fc3\u9032\u8815\u52d5)\n**Gascon** 1# TID"],n,n)],m)],n,l),A.c(["category","C. \u56f0\u96e3\u68ad\u72c0\u687f\u83cc (C. diff)","items",A.b([A.c(["drug","\u9996\u9078","dose","**Vancomycin (PO)** 125mg QID x10d\n\u6216 **Fidaxomicin** 200mg BID x10d"],n,n),A.c(["drug","\u6b21\u9078/\u8f15\u75c7","dose","**Metronidazole** 500mg TID (IV/PO)"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83e\udd68 \u80c3\u8178\u809d\u81bd\u79d1","id","protocol_hep_01","lastUpdate","2026/01/29","title","\u6025\u6027\u809d\u708e (Acute Hepatitis)","subtitle","ALT \u7570\u5e38\u8a55\u4f30\u3001B\u809d\u6a19\u8a18\u8207\u6cbb\u7642","content",A.c(["intro","### \u8a55\u4f30\u539f\u5247\n1. **\u521d\u6b65\u6aa2\u67e5**\uff1aALT \u9ad8\u6642\u5fc5\u9a57 AST, HBsAg, Anti-HCV, T.Bili, Lipase (\u6392\u9664\u80f0\u81df\u708e), \u6392 Abdominal Echo, \u4e26\u56de\u9867**\u85e5\u7269\u53f2**\u3002\n2. **B\u809d\u6a19\u8a18\u89e3\u8b80**\uff1a\n   * **Anti-HBc IgM**: \u6025\u6027\u611f\u67d3\u6307\u6a19 (30\u5929\u5167\u967d\u6027, \u6b64\u6642 HBsAg \u53ef\u80fd\u9084\u5728\u7a7a\u7a97\u671f)\u3002\n   * **HBeAg**: \u75c5\u6bd2\u6d3b\u8e8d\u6307\u6a19\u3002**REVEAL Study**: \u809d\u786c\u5316/\u809d\u764c\u98a8\u96aa (\u975eB\u809d : HBeAg(-) : HBeAg(+) = 1 : 3 : 9)\u3002\n   * **HBV DNA**: \u78ba\u8a3a B \u809d\u5f8c\u8a55\u4f30\u75c5\u6bd2\u91cf\u8207\u6cbb\u7642\u6548\u679c\u3002","diagnosis",A.b(["[ALT 2-5\u500d] \u4e0d\u898b\u5f97\u6709\u610f\u7fa9\u3002\u505a Survey, \u53ef\u7d66 Silymarin\u3002","[ALT 5-10\u500d] **\u7070\u8272\u5730\u5e36**\u3002\u5bc6\u5207\u8ffd\u8e64 (Close monitor), \u8003\u616e SNMC\u3002","[ALT >10\u500d] **\u5371\u6025\u7570\u5e38**\u3002\u5f37\u70c8\u5efa\u8b70 SNMC \u6cbb\u7642, \u82e5\u4e0d\u6cbb\u7642\u9700 QD \u8ffd\u8e64 ALT \u9632\u6b62 Liver Failure\u3002","[\u9451\u5225] **HBsAg(-)** \u4f46\u9ad8\u5ea6\u61f7\u7591\u6025\u6027 B \u809d? \u9a57 **Anti-HBc IgM** (\u7a7a\u7a97\u671f)\u3002"],o),"treatment",A.b([A.c(["category","A. \u4fdd\u809d\u85e5\u7269 (Hepatoprotective)","items",A.b([A.c(["drug","Silymarin","dose","1# BID (\u5065\u4fdd)\n*\u5be6\u8b49\u5f31 (\u8001\u9f20\u9700 15# TID \u624d\u6709\u6548)\u3002\u4e3b\u8981\u4f5c\u70ba**\u5b89\u6170\u5291**\u9632\u6b62\u75c5\u4eba\u53bb\u5403\u504f\u65b9/\u8349\u85e5*"],n,n),A.c(["drug","SNMC (Stronger Neo-Minophagen C)","dose","**5 amp in 100mL NS QD** run 3-5 \u5929\n*\u9700\u81ea\u8cbb (\u7d041750/\u5929)\u3002\u5c0d\u964d ALT \u6709\u986f\u8457\u6548\u679c\u3002*"],n,n)],m)],n,l),A.c(["category","B. \u75c5\u6bd2\u6027\u809d\u708e\u8ffd\u8e64","items",A.b([A.c(["drug","Acute HBV","dose","\u652f\u6301\u6027\u7642\u6cd5\u70ba\u4e3b\u3002\u76e3\u6e2c PT/INR (\u51dd\u8840\u529f\u80fd) \u8207 Bilirubin (\u9ec3\u75b8)\u3002"],n,n),A.c(["drug","Chronic HBV","dose","\u7b26\u5408\u5065\u4fdd\u898f\u7bc4\u6642\u958b\u59cb\u6297\u75c5\u6bd2\u85e5\u7269 (Entecavir/Tenofovir)\u3002"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83e\uded8 \u814e\u81df\u5167\u79d1","id","protocol_aki_01","title","\u6025\u6027\u814e\u640d\u50b7 (AKI)","subtitle","KDIGO \u5206\u671f\u3001\u5c3f\u6db2\u6c89\u6e23 & AEIOU \u6d17\u814e\u6642\u6a5f","content",A.c(["intro","### KDIGO \u5206\u671f\u6a19\u6e96\n* **Stage 1**: Cr \u4e0a\u5347 \u22650.3 \u6216 1.5-1.9\u500d; UO < 0.5 (6-12hr)\n* **Stage 2**: Cr \u4e0a\u5347 2.0-2.9\u500d; UO < 0.5 (\u226512hr)\n* **Stage 3**: Cr \u4e0a\u5347 3.0\u500d \u6216 \u22654.0 \u6216 \u6d17\u814e; UO < 0.3 (\u226524hr)","diagnosis",A.b(["[\u9451\u5225] **Prerenal**: EAV\u2193 (\u5fc3\u8870/\u809d\u786c\u5316/\u6557\u8840)\u3002\u85e5\u7269: NSAIDs (\u7e2e\u5165\u7403), ACEI/ARB (\u653e\u51fa\u7403)\u3002\u5c3f: **Hyaline casts**","[\u9451\u5225] **ATN (\u58de\u6b7b)**: \u7f3a\u8840 (Shock) \u6216 \u6bd2\u6027 (Vanco/Contrast/Myoglobin)\u3002\u5c3f: **Muddy brown casts**","[\u9451\u5225] **AIN (\u9593\u8cea)**: \u904e\u654f (PNC/PPI/NSAIDs)\u3002\u5c3f: **WBC casts**, Eosinophils","[\u9451\u5225] **GN (\u7d72\u7403\u9ad4)**: \u8840\u7ba1\u708e/SLE\u3002\u5c3f: **Dysmorphic RBC**, RBC casts"],o),"treatment",A.b([A.c(["category","A. \u4e00\u822c\u8655\u7f6e\u539f\u5247","items",A.b([A.c(["drug","\u9ad4\u6db2\u4e0d\u8db3","dose","\u7b49\u5f35\u8f38\u6db2 (NS / Lactated Ringer's)"],n,n),A.c(["drug","\u9ad4\u6db2\u904e\u591a","dose","**Lasix** (Loop diuretic)\u3002IV Bolus \u8207 Continuous infusion \u6548\u679c\u76f8\u7576"],n,n),A.c(["drug","\u7121\u6548\u85e5\u7269","dose","Dopamine (Low dose) \u8207 Nesiritide \u7121\u8b49\u64da\u986f\u793a\u6709\u52a9\u76ca"],n,n)],m)],n,l),A.c(["category","B. \u7279\u5b9a\u75c5\u56e0\u6cbb\u7642","items",A.b([A.c(["drug","\u986f\u5f71\u5291 (Contrast)","dose","\u9810\u9632\u52dd\u65bc\u6cbb\u7642: **\u5927\u91cf\u8f38\u6db2 (Hydration)**\u3002\n\u9ad8\u98a8\u96aa\u8005\u66ab\u505c NSAIDs/Metformin/RAASi"],n,n),A.c(["drug","\u6a6b\u7d0b\u808c\u6eb6\u89e3 (Rhabdo)","dose","\u76ee\u6a19\u5c3f\u91cf **3 mL/kg/hr**\u3002\n\u82e5 pH<6.5 \u53ef\u7d66 Bicarb \u9e7c\u5316 (\u6ce8\u610f\u4f4e\u8840\u9223\u98a8\u96aa)"],n,n),A.c(["drug","\u809d\u814e\u75c7\u5019\u7fa4 (HRS)","dose","**Terlipressin** + Albumin (\u9996\u9078)\n\u6216 Octreotide + Midodrine + Albumin"],n,n),A.c(["drug","\u9593\u8cea\u6027\u814e\u708e (AIN)","dose","\u79fb\u9664\u81f4\u75c5\u85e5\u7269\u3002\u8003\u616e\u77ed\u671f\u985e\u56fa\u9187 (Steroids)"],n,n)],m)],n,l),A.c(["category","C. \u7dca\u6025\u6d17\u814e\u9069\u61c9\u75c7 (AEIOU)","items",A.b([A.c(["drug","A: Acidosis","dose","\u96e3\u6cbb\u6027\u9178\u4e2d\u6bd2 (pH < 7.1)"],n,n),A.c(["drug","E: Electrolyte","dose","\u9ad8\u8840\u9240 (HyperK > 6.5 \u6216 ECG \u8b8a\u5316)"],n,n),A.c(["drug","I: Intoxication","dose","\u53ef\u900f\u6790\u6bd2\u7269: \u92f0\u9e7d (Li), \u4e59\u4e8c\u9187, \u6c34\u694a\u9178, Theophylline"],n,n),A.c(["drug","O: Overload","dose","\u9ad4\u6db2\u904e\u8f09\u5408\u4f75\u4f4e\u8840\u6c27 (Refractory Hypoxemia)"],n,n),A.c(["drug","U: Uremia","dose","\u5c3f\u6bd2\u6027\u5fc3\u5305\u819c\u708e, \u8166\u75c5\u8b8a (Encephalopathy), \u51fa\u8840"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83e\uded8 \u814e\u81df\u5167\u79d1","id","chap_nephro_ckd","title","\u6162\u6027\u814e\u81df\u75c5 (CKD)","subtitle","\u7ba1\u7406\u91cd\u9ede\u8207\u85e5\u7269\u8abf\u6574","content",A.c(["diagnosis",A.b(["eGFR \u5206\u671f: G1(>90), G2(60-89), G3a(45-59), G3b(30-44), G4(15-29), G5(<15)","\u86cb\u767d\u5c3f: ACR > 30 mg/g \u70ba\u7570\u5e38"],o),"treatment",A.b([A.c(["category","\u5ef6\u7de9\u60e1\u5316 (Renoprotection)","items",A.b([A.c(["drug","ACEI / ARB","dose","\u9996\u9078 (\u86cb\u767d\u5c3f\u8005)\u3002\u6ce8\u610f\u9ad8\u8840\u9240\u8207 Cr \u4e0a\u5347 (<30% \u53ef\u63a5\u53d7)"],n,n),A.c(["drug","SGLT2 inhibitors","dose","Dapagliflozin / Empagliflozin (eGFR > 20 \u53ef\u4f7f\u7528)"],n,n)],m)],n,l),A.c(["category","\u4f75\u767c\u75c7\u7ba1\u7406","items",A.b([A.c(["drug","\u8ca7\u8840 (Anemia)","dose","EPO / Darbepoetin (\u76ee\u6a19 Hb 10-11.5)"],n,n),A.c(["drug","\u9ad8\u8840\u78f7","dose","\u78f7\u7d50\u5408\u5291 (Calcium acetate, Sevelamer)"],n,n),A.c(["drug","\u9178\u4e2d\u6bd2","dose","Sodium Bicarbonate (\u7dad\u6301 Bicarb > 22)"],n,n)],m)],n,l)],k)],n,i)],n,j),A.c(["group","\ud83e\uded8 \u814e\u81df\u5167\u79d1","id","chap_nephro_gn","title","\u814e\u7d72\u7403\u75be\u75c5 (Glomerular Disease)","subtitle","Nephritic vs Nephrotic, ANCA & Lupus","content",A.c(["intro","### \u5169\u5927\u75c7\u5019\u7fa4\u9451\u5225\n1. **\u814e\u708e (Nephritic)**: \u767c\u708e\u70ba\u4e3b\u3002**\u8840\u5c3f** (RBC casts/Dysmorphic RBC)\u3001\u9ad8\u8840\u58d3\u3001AKI\u3002\n2. **\u814e\u75c5 (Nephrotic)**: \u8db3\u7d30\u80de\u53d7\u640d\u3002**\u86cb\u767d\u5c3f** (>3.5g/day)\u3001\u6c34\u816b\u3001\u4f4e\u767d\u86cb\u767d (<3.0)\u3001\u9ad8\u8840\u8102\u3002\n3. **\u5207\u7247**: \u75c5\u56e0\u4e0d\u660e\u3001\u5feb\u901f\u60e1\u5316\u6216\u61f7\u7591\u7cfb\u7d71\u6027\u75be\u75c5\u6642\uff0c\u70ba\u8a3a\u65b7\u9ec3\u91d1\u6a19\u6e96\u3002","diagnosis",A.b(["[ANCA] **c-ANCA (PR3)**: GPA (Wegener's); **p-ANCA (MPO)**: MPA, EGPA","[C3 \u4f4e\u4e0b] Lupus (SLE), PSGN (\u611f\u67d3\u5f8c), MPGN (C\u809d/\u51b7\u51dd\u7403\u86cb\u767d)","[Anti-GBM] **Goodpasture**: \u80ba\u51fa\u8840+\u814e\u8870\u7aed (\u7dda\u6027 Linear \u6c88\u7a4d)","[PLA2R] **Membranous**: \u539f\u767c\u6027\u819c\u6027\u814e\u75c5\u8b8a\u7279\u7570\u6027\u6297\u9ad4","[\u75c5\u7406] **MCD**: \u8db3\u7a81\u878d\u5408; **Diabetic**: K-W nodules; **Amyloid**: \u525b\u679c\u7d05\u860b\u679c\u7da0"],o),"treatment",A.b([A.c(["category","A. \u814e\u708e\u75c7\u5019\u7fa4 (Nephritic)","items",A.b([A.c(["drug","ANCA \u8840\u7ba1\u708e","dose","GPA/MPA: \u985e\u56fa\u9187 + Cyclophosphamide / Rituximab\n*GPA\u5e38\u898b\u4e0a\u547c\u5438\u9053(\u9f3b\u7ac7)/\u80ba\u7d50\u7bc0*"],n,n),A.c(["drug","IgA \u814e\u75c5\u8b8a","dose","\u6700\u5e38\u898b GN\u3002\u611f\u5192\u5f8c 1-3 \u5929\u8089\u773c\u8840\u5c3f (Synpharyngitic)\n\u6cbb\u7642: ACEI/ARB \u652f\u6301\uff0c\u86cb\u767d\u5c3f\u56b4\u91cd\u8005\u7d66\u985e\u56fa\u9187"],n,n),A.c(["drug","Goodpasture","dose","\u7dca\u6025 **\u8840\u6f3f\u7f6e\u63db (Plasmapheresis)** \u79fb\u9664\u6297\u9ad4\n\u52a0\u4e0a\u985e\u56fa\u9187\u8207 Cyclophosphamide"],n,n)],m)],n,l),A.c(["category","B. \u814e\u75c5\u75c7\u5019\u7fa4 (Nephrotic)","items",A.b([A.c(["drug","\u5fae\u5c0f\u8b8a\u5316 (MCD)","dose","\u5152\u7ae5\u6700\u5e38\u898b\u3002\u5149\u93e1\u6b63\u5e38/\u96fb\u93e1\u8db3\u7a81\u878d\u5408\u3002\n\u5c0d **Steroids** \u53cd\u61c9\u6975\u4f73"],n,n),A.c(["drug","\u819c\u6027 (Membranous)","dose","\u6210\u4eba\u5e38\u898b\u3002\u539f\u767c\u6027\u9a57 **Anti-PLA2R**\u3002\n**VTE \u98a8\u96aa\u9ad8**: \u82e5 Alb < 2.5 \u9700\u8003\u616e\u9810\u9632\u6027\u6297\u51dd\u8840"],n,n),A.c(["drug","FSGS","dose","\u6392\u9664\u6b21\u767c\u6027: HIV, \u80a5\u80d6, \u85e5\u7269 (Heroin)\n\u975e\u88d4\u7f8e\u570b\u4eba\u5e38\u898b APOL1 \u57fa\u56e0"],n,n),A.c(["drug","\u7cd6\u5c3f\u75c5\u814e\u75c5\u8b8a","dose","\u5178\u578b\u75c5\u7a0b: \u5fae\u91cf\u767d\u86cb\u767d\u5c3f -> \u986f\u6027\u86cb\u767d\u5c3f\n\u56b4\u683c\u63a7\u5236\u8840\u58d3/\u8840\u7cd6 (**SGLT2i** \u53ef\u5ef6\u7de9\u60e1\u5316)"],n,n)],m)],n,l),A.c(["category","C. \u4e00\u822c\u652f\u6301\u7642\u6cd5","items",A.b([A.c(["drug","\u964d\u86cb\u767d\u5c3f","dose","**ACEI / ARB** (\u964d\u4f4e\u814e\u7d72\u7403\u5167\u58d3)\n\u76ee\u6a19 BP < 130/80"],n,n),A.c(["drug","\u6c34\u816b\u63a7\u5236","dose","\u9650\u9e7d (<2g/day) + **Loop Diuretics** (Lasix)"],n,n),A.c(["drug","\u9ad8\u8840\u8102","dose","Statins (\u964d\u4f4e\u5fc3\u8840\u7ba1\u98a8\u96aa)"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83e\uded8 \u814e\u81df\u5167\u79d1","id","chap_nephro_urology","title","\u5c3f\u6db2\u5206\u6790\u8207\u7d50\u77f3 (Urinalysis)","subtitle","\u6c89\u6e23\u5224\u8b80 & \u814e\u7d50\u77f3\u6025\u75c7","content",A.c(["diagnosis",A.b(["[Cast] **RBC cast**: \u814e\u7d72\u7403\u814e\u708e (GN)","[Cast] **WBC cast**: \u9593\u8cea\u6027\u814e\u708e (AIN), \u814e\u76c2\u814e\u708e (Pyelo)","[Cast] **Muddy Brown**: \u6025\u6027\u814e\u5c0f\u7ba1\u58de\u6b7b (ATN)","[Crystal] **\u4fe1\u5c01\u72c0**: Ca-Oxalate (\u4e59\u4e8c\u9187\u4e2d\u6bd2/\u7d50\u77f3); **\u68fa\u6750\u84cb**: Struvite (\u611f\u67d3)","[Stone] **Urosepsis**: \u7d50\u77f3+\u767c\u71d2+\u963b\u585e -> **\u7dca\u6025\u5f15\u6d41 (PCN/Double-J)**"],o),"treatment",A.b([A.c(["category","\u814e\u7d50\u77f3\u6025\u6027\u671f","items",A.b([A.c(["drug","\u6b62\u75db (Analgesics)","dose","**NSAIDs** (Ketorolac) \u512a\u65bc\u9d09\u7247\u985e (\u4f46\u814e\u5dee\u7981\u7528)\n**Morphine** (\u56b4\u91cd\u7d5e\u75db)"],n,n),A.c(["drug","\u6392\u77f3 (MET)","dose","**Tamsulosin** (alpha-blocker) 0.4mg QD (\u9069\u7528 <10mm)"],n,n),A.c(["drug","\u5927\u91cf\u8f38\u6db2","dose","\u589e\u52a0\u5c3f\u91cf\u63a8\u52d5\u7d50\u77f3"],n,n)],m)],n,l)],k)],n,i)],n,j),A.c(["group","\ud83e\ude78 \u8840\u6db2\u816b\u7624\u79d1","id","chap_hema_01","title","\u8ca7\u8840\u9451\u5225 (Anemia)","subtitle","\u9451\u5225\u908f\u8f2f\u3001MCV \u5206\u985e & \u6eb6\u8840","content",A.c(["intro","### \u9451\u5225\u908f\u8f2f\n1. **Reticulocyte Index (RI)**\uff1a\n   * **RI < 2% (\u751f\u6210\u4e0d\u8db3)**\uff1a\u770b MCV \u5206\u985e (\u5de5\u5ee0\u554f\u984c)\u3002\n   * **RI > 2% (\u7834\u58de/\u6d41\u5931)**\uff1a\u6eb6\u8840\u6216\u6025\u6027\u51fa\u8840\u3002\n2. **\u9435\u5291\u6cbb\u7642**\uff1a\u9700\u6cbb\u7642\u81f3 Hb \u6b63\u5e38\u5f8c\u518d\u6301\u7e8c 6 \u500b\u6708\u88dc\u8db3\u5eab\u5b58\u3002","diagnosis",A.b(["[\u5c0f\u7403\u6027] **Microcytic (MCV<80)**: \u7f3a\u9435 (IDA), \u5730\u4e2d\u6d77 (Thalassemia), \u6162\u6027\u75c5 (ACD)","[\u6b63\u7403\u6027] **Normocytic (MCV 80-100)**: \u6eb6\u8840 (Hemolysis), \u814e\u8870\u7aed, \u9aa8\u9ad3\u4fb5\u72af","[\u5927\u7403\u6027] **Macrocytic (MCV>100)**: B12/\u8449\u9178\u7f3a\u4e4f (Megaloblastic), \u809d\u75c5, MDS, \u9157\u9152","[\u6307\u6a19] **Ferritin**: <15-30 ng/mL \u78ba\u8a3a IDA (\u6392\u9664\u767c\u708e\u5047\u6027\u5347\u9ad8)","[\u6307\u6a19] **Mentzer Index** (MCV/RBC): <13 \u5730\u4e2d\u6d77\u8ca7\u8840; >13 \u7f3a\u9435\u6027\u8ca7\u8840","[\u6eb6\u8840] Lab: LDH\u2191, Haptoglobin\u2193, Ind. Bilirubin\u2191, Retic\u2191","[Coombs] **DAT(+)**: AIHA (\u6eab\u578b IgG / \u51b7\u578b IgM)\n**DAT(-)**: TTP/HUS, PNH, G6PD"],o),"treatment",A.b([A.c(["category","A. \u7f3a\u9435\u6027\u8ca7\u8840 (IDA)","items",A.b([A.c(["drug","Oral Iron","dose","Ferrous sulfate 325mg TID (\u7a7a\u8179\u5438\u6536\u4f73\uff0c\u4f46\u5728\u98ef\u5f8c\u5403\u526f\u4f5c\u7528\u5c11)"],n,n),A.c(["drug","IV Iron","dose","\u7528\u65bc\u5438\u6536\u4e0d\u826f\u6216\u7121\u6cd5\u8010\u53d7\u53e3\u670d\u8005 (Ferrum)"],n,n)],m)],n,l),A.c(["category","B. \u5de8\u7403\u6027\u8ca7\u8840","items",A.b([A.c(["drug","B12 Deficiency","dose","Vit B12 1000mcg IM qd x7d -> wk -> mo\n*\u88dc\u8449\u9178\u524d\u52d9\u5fc5\u5148\u78ba\u8a8d B12\uff0c\u5426\u5247\u795e\u7d93\u75c7\u72c0\u60e1\u5316*"],n,n),A.c(["drug","Folate Deficiency","dose","Folic acid 1-5 mg PO qd"],n,n)],m)],n,l),A.c(["category","C. \u6eb6\u8840\u6027\u8ca7\u8840 (AIHA)","items",A.b([A.c(["drug","Warm (IgG)","dose","\u985e\u56fa\u9187 (Prednisolone 1mg/kg), Rituximab, \u5207\u813e"],n,n),A.c(["drug","Cold (IgM)","dose","\u4fdd\u6696 (Avoid cold), Rituximab (\u985e\u56fa\u9187\u7121\u6548)"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83e\ude78 \u8840\u6db2\u816b\u7624\u79d1","id","chap_hema_02","title","\u767d\u8840\u75c5 (Leukemia)","subtitle","AML, CML, CLL & APL \u6025\u75c7","content",A.c(["intro","### \u91cd\u9ede\u6458\u8981\n1. **AML**: \u9aa8\u9ad3 Blast \u2265 20% \u6216 Auer rods\u3002ELN \u5206\u96aa\u5206\u5c64\u6c7a\u5b9a\u79fb\u690d\u8207\u5426\u3002\n2. **APL (M3)**: \u5167\u79d1\u6025\u75c7 (DIC \u98a8\u96aa)\uff01\u61f7\u7591\u5373\u7d66 ATRA\uff0c\u52ff\u7b49\u57fa\u56e0\u5831\u544a\u3002\n3. **CML**: t(9;22) BCR-ABL1\u3002TKI \u6cbb\u7642\u76ee\u6a19\uff1a3\u500b\u6708 <10%\uff0c12\u500b\u6708 <0.1% (MMR)\u3002","diagnosis",A.b(["[AML] **Auer rods**: \u5e7e\u4e4e\u78ba\u8a3a AML","[AML] **ELN Risk**: Favorable (t(8;21), inv(16), NPM1); Adverse (-5, -7, TP53, FLT3-ITD)","[CML] **Philadelphia (Ph+)**: t(9;22), BCR-ABL1","[CLL] **Rai Staging**: 0\u671f\u89c0\u5bdf; III/IV\u671f (\u8ca7\u8840/\u8840\u5c0f\u677f\u4f4e) \u9700\u6cbb\u7642"],o),"treatment",A.b([A.c(["category","A. \u6025\u6027\u9aa8\u9ad3\u6027\u767d\u8840\u75c5 (AML)","items",A.b([A.c(["drug","\u6a19\u6e96\u6cbb\u7642 (7+3)","dose","Cytarabine (7\u5929) + Anthracycline (3\u5929)"],n,n),A.c(["drug","APL (M3) \u6025\u75c7","dose","**ATRA** (All-trans retinoic acid) \u7acb\u5373\u7d66\u4e88\n\u9810\u9632\u56b4\u91cd DIC \u51fa\u8840"],n,n)],m)],n,l),A.c(["category","B. \u6162\u6027\u767d\u8840\u75c5 (CML/CLL)","items",A.b([A.c(["drug","CML","dose","TKI (Imatinib, Dasatinib, Nilotinib)"],n,n),A.c(["drug","CLL","dose","BTKi (Acalabrutinib, Ibrutinib), Venetoclax"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83e\ude78 \u8840\u6db2\u816b\u7624\u79d1","id","chap_hema_03","title","\u6dcb\u5df4\u7624 (Lymphoma)","subtitle","Hodgkin, NHL & Tumor Lysis Syndrome","content",A.c(["intro","### \u6cbb\u7642\u91cd\u9ede\n1. **Hodgkin**: Reed-Sternberg cells\u3002ABVD \u8ab2\u8868 (\u6ce8\u610f\u80ba/\u5fc3\u6bd2\u6027)\u3002\n2. **NHL (DLBCL)**: IPI Score \u8a55\u4f30\u9810\u5f8c\u3002R-CHOP \u6cbb\u7642 (R \u4f7f\u7528\u524d\u5fc5\u9a57 B \u809d)\u3002\n3. **TLS (\u816b\u7624\u6eb6\u89e3)**: \u9ad8\u5c3f\u9178/\u9240/\u78f7 -> \u4f4e\u9223/\u814e\u8870\u7aed\u3002\u9810\u9632\u52dd\u65bc\u6cbb\u7642\u3002","diagnosis",A.b(["[HL] **Pathology**: Reed-Sternberg (\u8c93\u982d\u9df9\u773c\u7d30\u80de)","[NHL] **IPI Score**: Age>60, LDH\u9ad8, ECOG\u5dee, Stage III/IV, Extranodal>1","[TLS] **\u96fb\u89e3\u8cea**: Uric acid\u2191, K\u2191, P\u2191, Ca\u2193, Cr\u2191"],o),"treatment",A.b([A.c(["category","A. \u5316\u5b78\u6cbb\u7642","items",A.b([A.c(["drug","Hodgkin (HL)","dose","**ABVD**: Adriamycin (\u5fc3\u6bd2), Bleomycin (\u80ba\u6bd2), Vinblastine, Dacarbazine"],n,n),A.c(["drug","NHL (DLBCL)","dose","**R-CHOP**: Rituximab + CHOP\n*Rituximab \u524d\u9700\u7be9\u6aa2 HBsAg & Anti-HBc*"],n,n)],m)],n,l),A.c(["category","B. \u816b\u7624\u6eb6\u89e3\u75c7\u5019\u7fa4 (TLS)","items",A.b([A.c(["drug","\u9810\u9632/\u6cbb\u7642","dose",q],n,n),A.c(["drug","\u56b4\u91cd/\u9ad8\u5c3f\u9178","dose",p],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83e\ude78 \u8840\u6db2\u816b\u7624\u79d1","id","chap_hema_04","title","\u591a\u767c\u6027\u9aa8\u9ad3\u7624 (Myeloma)","subtitle","CRAB \u6e96\u5247 & MDS","content",A.c(["intro","### \u8a3a\u65b7\u8207\u6025\u75c7\n1. **CRAB**: Calcium (>11), Renal (Cr>2), Anemia (Hb<10), Bone lesions\u3002\n2. **\u810a\u9ad3\u58d3\u8feb**: \u80cc\u75db+\u795e\u7d93\u75c7\u72c0 -> STAT MRI + Dexamethasone + \u7167\u6703\u3002\n3. **MDS**: \u7121\u6548\u9020\u8840\u3002IPSS-R \u8a55\u5206\u6c7a\u5b9a\u652f\u6301\u7642\u6cd5\u6216\u79fb\u690d\u3002","diagnosis",A.b(["[\u8a3a\u65b7] **Plasma cells \u2265 10%** + CRAB \u75c7\u72c0","[MDS] **Hypercellular marrow** with **Cytopenia** (\u7121\u6548\u9020\u8840)"],o),"treatment",A.b([A.c(["category","A. \u591a\u767c\u6027\u9aa8\u9ad3\u7624 (MM)","items",A.b([A.c(["drug","Induction","dose","Dara-VRd (Daratumumab + Bortezomib + Lenalidomide + Dex)"],n,n),A.c(["drug","\u9ad8\u8840\u9223\u6025\u75c7","dose","\u5927\u91cf NS \u8f38\u6db2 + Calcitonin (\u901f\u6548) + Zoledronic acid (\u9577\u6548)"],n,n),A.c(["drug","\u810a\u9ad3\u58d3\u8feb","dose","**Dexamethasone 10-16mg IV** + \u7dca\u6025\u653e\u7642/\u624b\u8853"],n,n)],m)],n,l),A.c(["category","B. \u9aa8\u9ad3\u5206\u5316\u4e0d\u826f (MDS)","items",A.b([A.c(["drug","\u4f4e\u98a8\u96aa","dose","\u8f38\u8840\u652f\u6301, EPO, Lenalidomide (5q- syndrome)"],n,n),A.c(["drug","\u9ad8\u98a8\u96aa","dose","HMA (Azacitidine) \u6216 \u7570\u9ad4\u5e79\u7d30\u80de\u79fb\u690d"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83e\ude78 \u8840\u6db2\u816b\u7624\u79d1","id","chap_hema_05","title","\u8840\u5c0f\u677f\u8207\u51dd\u8840 (Hemostasis)","subtitle","ITP \u6a5f\u8f49, TTP & HIT","content",A.c(["intro","### \u75c5\u751f\u7406\u6a5f\u8f49\n1. **ITP**: \u81ea\u9ad4\u6297\u9ad4 (IgG) \u7d50\u5408\u8840\u5c0f\u677f\u819c\u86cb\u767d (GPIIb/IIIa) -> \u6d41\u7d93\u813e\u81df\u88ab\u5de8\u566c\u7d30\u80de\u541e\u566c -> \u58fd\u547d\u7e2e\u77ed\u3002\n2. **TTP**: ADAMTS13 \u7f3a\u4e4f -> vWF \u5207\u5272\u7570\u5e38 -> \u5fae\u8840\u7ba1\u8840\u6813 (FAT RN \u4e94\u806f\u5fb5)\u3002","diagnosis",A.b(["[ITP] **\u6392\u9664\u6cd5**: \u62b9\u7247\u6b63\u5e38, \u7121\u809d\u813e\u816b\u5927\u3002PLT > 30k \u4e14\u7121\u51fa\u8840\u53ef\u89c0\u5bdf\u3002","[TTP] **FAT RN**: Fever, Anemia (MAHA), Thrombocytopenia, Renal, Neuro","[HIT] **4Ts Score**: Heparin \u4f7f\u7528\u5f8c 5-10 \u5929 PLT \u964d >50%\u3002"],o),"treatment",A.b([A.c(["category","A. \u514d\u75ab\u6027 (ITP)","items",A.b([A.c(["drug","\u4e00\u7dda\u6cbb\u7642","dose","Prednisolone 1mg/kg \u6216 IVIG (\u6025\u9700\u63d0\u5347\u6642)"],n,n),A.c(["drug","\u4e8c\u7dda\u6cbb\u7642","dose","TPO-RA (Eltrombopag), Rituximab, \u5207\u813e"],n,n)],m)],n,l),A.c(["category","B. \u8840\u6813\u6027\u5fae\u8840\u7ba1\u75c5\u8b8a (TTP)","items",A.b([A.c(["drug","\u6551\u547d\u95dc\u9375","dose","**\u8840\u6f3f\u7f6e\u63db (Plasma Exchange)** + \u985e\u56fa\u9187"],n,n),A.c(["drug","\u7981\u5fcc","dose","\u274c **\u7981\u6b62\u8f38\u8840\u5c0f\u677f** (\u52a0\u91cd\u8840\u6813)"],n,n)],m)],n,l),A.c(["category","C. \u809d\u7d20\u5f15\u8d77 (HIT)","items",A.b([A.c(["drug","\u8655\u7f6e","dose","\u7acb\u5373**\u505c\u7528 Heparin** (\u542b\u7ba1\u8def\u6c96\u6d17)\uff0c\u6539\u7528 Argatroban"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83e\ude78 \u8840\u6db2\u816b\u7624\u79d1","id","chap_hema_06","title","\u816b\u7624\u6025\u75c7 (Oncologic Emergencies)","subtitle","TLS, HyperCa, SVC & SCC","content",A.c(["intro","### \u75c5\u751f\u7406\u6a5f\u8f49\n1. **TLS (\u816b\u7624\u6eb6\u89e3)**\uff1a\u7d30\u80de\u5d29\u89e3 -> \u91cb\u653e K/P/Nucleic acid -> \u9ad8\u5c3f\u9178(\u814e\u8870\u7aed)\u3001\u9ad8\u8840\u9240(\u5fc3\u5f8b\u4e0d\u6574)\u3001\u4f4e\u8840\u9223(\u62bd\u7b4b)\u3002\n2. **HyperCa (\u9ad8\u8840\u9223)**\uff1a\u7834\u9aa8\u7d30\u80de\u6d3b\u6027\u2191 + \u814e\u91cd\u5438\u6536\u2191 + PTHrP \u5206\u6ccc -> \u610f\u8b58\u6df7\u4e82/\u591a\u5c3f\u3002\n3. **SVC Syndrome**\uff1a\u7e31\u8188\u8154\u816b\u7624\u58d3\u8feb\u4e0a\u8154\u975c\u8108 -> \u56de\u6d41\u53d7\u963b -> \u6c34\u816b/\u6012\u5f35\u3002\n4. **SCC (\u810a\u9ad3\u58d3\u8feb)**\uff1a\u816b\u7624\u58d3\u8feb\u810a\u9ad3/\u8840\u7ba1 -> \u6c34\u816b/\u7f3a\u8840 -> \u7671\u7613/\u5931\u7981\u3002","diagnosis",A.b(["[TLS] **Labs**: Uric acid\u2191, K\u2191, P\u2191, Ca\u2193, Cr\u2191 (\u5e38\u898b\u65bc\u9ad8\u5468\u8f49\u7387\u816b\u7624)","[HyperCa] **Sx**: Stones, Bones, Groans, Psychic moans","[SCC] **Sx**: \u80cc\u75db (\u65e9) -> \u7121\u529b/\u611f\u89ba\u7570\u5e38 -> \u5927\u5c0f\u4fbf\u5931\u7981 (\u665a)\u3002**STAT MRI!**"],o),"treatment",A.b([A.c(["category","A. \u816b\u7624\u6eb6\u89e3\u75c7\u5019\u7fa4 (TLS)","items",A.b([A.c(["drug","\u9810\u9632/\u6cbb\u7642","dose",q],n,n),A.c(["drug","\u56b4\u91cd/\u9ad8\u5c3f\u9178","dose",p],n,n)],m)],n,l),A.c(["category","B. \u60e1\u6027\u9ad8\u8840\u9223 (Hypercalcemia)","items",A.b([A.c(["drug","\u6025\u6027\u671f","dose","\u5927\u91cf NS \u8f38\u6db2 + **Calcitonin** (\u901f\u6548)"],n,n),A.c(["drug","\u7dad\u6301\u671f","dose","**Bisphosphonate** (Zoledronic acid) (\u6162\u6548\u6301\u4e45)"],n,n)],m)],n,l),A.c(["category","C. \u810a\u9ad3\u58d3\u8feb (SCC)","items",A.b([A.c(["drug","\u6e1b\u58d3","dose","**Dexamethasone 10-16mg IV** stat + \u7dca\u6025\u653e\u7642/\u624b\u8853"],n,n)],m)],n,l),A.c(["category","D. \u767c\u71d2\u6027\u55dc\u4e2d\u6027\u7403\u4f4e\u4e0b (FN)","items",A.b([A.c(["drug","\u6297\u751f\u7d20","dose","\u5fc5 Cover Pseudomonas (Cefepime/Tazocin/Meropenem)"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83e\ude78 \u8840\u6db2\u816b\u7624\u79d1","id","protocol_chemo_toxicity","title","\u5316\u5b78\u6cbb\u7642\u526f\u4f5c\u7528 (Chemo Toxicity)","subtitle","N/V \u6a5f\u8f49\u3001\u5668\u5b98\u6bd2\u6027\u8207\u8655\u7f6e","content",A.c(["intro","### \u75c5\u751f\u7406\u6a5f\u8f49 (Pathophysiology)\n1. **\u5641\u5fc3\u5614\u5410 (CINV)**\uff1a\u85e5\u7269\u523a\u6fc0\u7b2c\u56db\u8166\u5ba4 **CTZ**\uff0c\u91cb\u653e Dopamine/Serotonin \u50b3\u81f3\u5614\u5410\u4e2d\u6a1e\u3002\n2. **\u53e3\u8154\u9ecf\u819c\u708e**\uff1a\u963b\u65b7\u57fa\u5e95\u5c64\u5e79\u7d30\u80de\u5206\u88c2 -> \u9ecf\u819c\u840e\u7e2e (\u7d04\u7d66\u85e5 1 \u9031\u5f8c\u9ad8\u5cf0)\u3002\n3. **\u9aa8\u9ad3\u6291\u5236**\uff1a\u6291\u5236\u9020\u8840\u7d30\u80de\u5206\u5316 -> \u8ca7\u8840\u3001\u51fa\u8840\u3001\u611f\u67d3 (Neutropenia)\u3002","diagnosis",A.b(["[\u5206\u985e] **\u6025\u6027\u5614\u5410**: \u7d66\u85e5 4-10hr (Serotonin \u70ba\u4e3b); **\u5ef6\u9072\u5614\u5410**: >24hr (Substance P \u70ba\u4e3b)","[\u4fbf\u79d8] **Vinca Alkaloids** (Vincristine) \u795e\u7d93\u6bd2\u6027 -> \u6291\u5236\u8178\u8815\u52d5 (Adynamic ileus)","[\u8179\u7009] **5-FU / MTX** -> \u5e72\u64fe\u4e0a\u76ae\u5206\u88c2 -> \u9ecf\u819c\u840e\u7e2e","[\u51fa\u8840\u6027\u8180\u80f1\u708e] **Cyclophosphamide / Ifosfamide** \u4ee3\u8b1d\u7269 **Acrolein** \u6c89\u7a4d","[\u5fc3\u81df\u6bd2\u6027] **Anthracyclines** (Doxorubicin) -> \u7522\u751f\u81ea\u7531\u57fa (Free radicals) \u7834\u58de\u5fc3\u808c","[\u795e\u7d93\u6bd2\u6027] **Taxanes / Vinca** -> \u7834\u58de\u5fae\u7ba1\u9ad4 (Microtubules) -> \u624b\u8173\u9ebb\u6728"],o),"treatment",A.b([A.c(["category","A. \u5641\u5fc3\u5614\u5410 (N/V)","items",A.b([A.c(["drug","\u9810\u9632\u6027 (Pre-med)","dose","5-HT3 antagonist (Ondansetron) + Steroid (Dexamethasone) + NK1 antagonist (Aprepitant)"],n,n),A.c(["drug","\u7a81\u7834\u6027 (Breakthrough)","dose","Metoclopramide (Dopamine antagonist) \u6216 Lorazepam"],n,n)],m)],n,l),A.c(["category","B. \u5668\u5b98\u6bd2\u6027\u89e3\u6bd2/\u9810\u9632","items",A.b([A.c(["drug","\u51fa\u8840\u6027\u8180\u80f1\u708e","dose","\u5927\u91cf\u8f38\u6db2 (Hydration) + **Mesna** (\u4e2d\u548c Acrolein)"],n,n),A.c(["drug","\u795e\u7d93\u6bd2\u6027","dose","\u88dc\u5145 B6 / Glutamine (\u6548\u679c\u6709\u9650)\uff0c\u56b4\u91cd\u6642\u9700\u6e1b\u91cf\u6216\u505c\u85e5"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83e\ude78 \u8840\u6db2\u816b\u7624\u79d1","id","chap_hema_mpd","title","\u9aa8\u9ad3\u589e\u751f\u6027\u75be\u75c5 (MPD)","subtitle","PV, ET & Pathophysiology","content",A.c(["intro","### \u75c5\u751f\u7406\u6a5f\u8f49\n1. **PV (\u771f\u6027\u591a\u8840\u75c7)**\uff1a\u9020\u8840\u5e79\u7d30\u80de\u7570\u5e38\uff0c**\u4e0d\u4f9d\u8cf4 EPO** \u81ea\u4e3b\u589e\u751f\u3002\u75c7\u72c0 (\u982d\u75db/\u8996\u529b\u6a21\u7cca) \u4f86\u81ea\u8840\u6db2\u9ecf\u6eef\u5ea6\u9ad8\u3002\n2. **ET (\u539f\u767c\u6027\u8840\u5c0f\u677f\u589e\u591a)**\uff1a\u5de8\u6838\u7d30\u80de\u904e\u5ea6\u589e\u751f\u3002\u8840\u5c0f\u677f\u96d6\u591a\u4f46\u6709 **\u529f\u80fd\u7f3a\u9677 (Qualitative defect)** -> \u6613\u8840\u6813\u4e5f\u6613\u51fa\u8840\u3002","diagnosis",A.b(["[PV] Hb > 16.5(\u7537)/16.0(\u5973), JAK2 V617F Mutation (+), EPO \u4f4e","[ET] PLT > 450k, JAK2/CALR/MPL Mutation (+), \u6392\u9664\u53cd\u61c9\u6027\u589e\u591a","[\u5371\u6025] **Hyperviscosity**: \u8996\u529b\u6539\u8b8a\u3001\u982d\u6688\u3001\u4e2d\u98a8\u5fb5\u5146"],o),"treatment",A.b([A.c(["category","A. \u771f\u6027\u591a\u8840\u75c7 (PV)","items",A.b([A.c(["drug","\u653e\u8840 (Phlebotomy)","dose","\u76ee\u6a19 Hct < 45%"],n,n),A.c(["drug","\u7d30\u80de\u6e1b\u91cf","dose","Hydroxyurea (Hydrea) \u6216 Interferon"],n,n),A.c(["drug","\u9810\u9632\u8840\u6813","dose","\u4f4e\u5291\u91cf Aspirin 100mg QD"],n,n)],m)],n,l),A.c(["category","B. \u539f\u767c\u6027\u8840\u5c0f\u677f\u589e\u591a\u75c7 (ET)","items",A.b([A.c(["drug","\u9ad8\u98a8\u96aa\u8005","dose","Hydroxyurea \u6216 Anagrelide (\u6291\u5236\u5de8\u6838\u7d30\u80de\u6210\u719f)"],n,n),A.c(["drug","Aspirin","dose","\u7528\u65bc\u9810\u9632\u8840\u7ba1\u6813\u585e (\u82e5\u6709\u51fa\u8840\u50be\u5411\u9700\u8b39\u614e)"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83e\ude78 \u8840\u6db2\u816b\u7624\u79d1","id","protocol_hema_pbsct","title","\u9031\u908a\u8840\u5e79\u7d30\u80de\u79fb\u690d (PBSCT)","subtitle","\u52d5\u54e1\u539f\u7406\u3001VOD/GVHD \u4f75\u767c\u75c7\u8207\u8ff7\u4f60\u79fb\u690d","content",A.c(["intro","### \u6838\u5fc3\u539f\u7406\n1. **\u52d5\u54e1 (Mobilization)**: \u5316\u7642\u5f8c\u7d66\u4e88 **G-CSF**\uff0c\u4f7f\u9aa8\u9ad3\u5e79\u7d30\u80de\u91cb\u653e\u81f3\u9031\u908a\u8840 (\u589e\u52a010-300\u500d)\uff0c\u518d\u900f\u904e\u5206\u96e2\u8853\u6536\u96c6\u3002\n2. **\u512a\u52e2 (vs BMT)**: \u514d\u5168\u8eab\u9ebb\u9189\u3001\u6c59\u67d3\u7387\u4f4e\u3001**\u6062\u5fa9\u5feb** (PLT \u5feb 14\u5929\u4ee5\u4e0a)\u3002\n3. **\u8ff7\u4f60\u79fb\u690d (Mini-transplant)**: \u4f7f\u7528\u6e1b\u4f4e\u5291\u91cf\u8abf\u7406 (RIC)\uff0c\u4f9d\u8cf4 **GVL (\u690d\u9ad4\u6297\u764c)** \u6548\u61c9\u3002\u9069\u7528\u65bc\u9ad8\u9f61 (>50\u6b72) \u6216\u5171\u75c5\u60a3\u8005\u3002","diagnosis",A.b(["[VOD] **\u809d\u975c\u8108\u963b\u585e (SOS)**: \u9ec3\u75b8 + \u6c34\u5206\u6eef\u7559 (\u9ad4\u91cd\u589e) + \u809d\u816b\u5927/\u75db\u3002","[aGVHD] **\u6025\u6027\u6392\u65a5 (<100\u5929)**: \u76ae\u819a\u7d05\u75b9\u3001\u8179\u7009/\u8179\u75db\u3001\u809d\u529f\u80fd\u7570\u5e38 (\u9ec3\u75b8)\u3002","[cGVHD] **\u6162\u6027\u6392\u65a5 (>100\u5929)**: \u985e\u4f3c\u81ea\u9ad4\u514d\u75ab\u75be\u75c5\uff0c\u4fb5\u72af\u76ae\u819a/\u53e3/\u773c/\u80ba/\u809d\u3002","[\u611f\u67d3] \u79fb\u690d\u5f8c\u514d\u75ab\u7a7a\u7a97\u671f\uff0c\u6613\u53d7\u7d30\u83cc\u3001CMV\u3001\u9ef4\u83cc\u611f\u67d3\u3002"],o),"treatment",A.b([A.c(["category","A. \u79fb\u690d\u524d\u8655\u7f6e","items",A.b([A.c(["drug","\u8abf\u7406\u6cbb\u7642 (Conditioning)","dose","\u9ad8\u5291\u91cf\u5316\u7642 (High dose C/T) \xb1 TBI\n\u76ee\u7684: \u6bba\u6ec5\u764c\u7d30\u80de + \u6291\u5236\u514d\u75ab (\u9632\u6392\u65a5)"],n,n),A.c(["drug","CD34+ \u7d14\u5316","dose","\u81ea\u9ad4\u79fb\u690d\u4f7f\u7528\u3002\u5229\u7528\u514d\u75ab\u78c1\u73e0\u53bb\u9664\u764c\u7d30\u80de\uff0c\u964d\u4f4e\u5fa9\u767c\u3002"],n,n)],m)],n,l),A.c(["category","B. \u4f75\u767c\u75c7\u7ba1\u7406","items",A.b([A.c(["drug","VOD / SOS","dose","\u56b4\u683c\u9650\u5236\u6c34/\u9209\u3001\u4f7f\u7528\u5229\u5c3f\u5291\u3002\n\u76e3\u6e2c: \u6bcf\u65e5\u9ad4\u91cd\u3001\u8179\u570d\u3002"],n,n),A.c(["drug","GVHD \u9810\u9632","dose","**MTX + Cyclosporine (CsA) + Steroids**\n\u6025\u6027\u6cbb\u7642: \u589e\u52a0\u985e\u56fa\u9187\u5291\u91cf"],n,n),A.c(["drug","\u8f38\u6ce8\u7167\u8b77","dose","\u76e3\u6e2c EKG\u3001\u8f38\u8840\u53cd\u61c9\u3001\u5c3f\u6db2 (\u6eb6\u8840?)"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83e\udda0 \u611f\u67d3\u79d1","id","protocol_id_basic","title","\u6297\u751f\u7d20\u57fa\u790e\u539f\u5247","subtitle","Loading Dose, \u57f9\u990a\u5224\u8b80 & \u5e38\u7528\u89c0\u5ff5","content",A.c(["intro","### \u958b\u85e5\u524d\u4e09\u554f\n1. **Focus**\uff1a\u611f\u67d3\u6e90\u5728\u54ea\uff1f(Lung/Urine/Skin/BSI?)\n2. **Severity**\uff1a\u75c5\u4eba\u6709\u7121\u5bb9\u932f\u7a7a\u9593\uff1f(Shock? Immunocompromised?) -> \u6c7a\u5b9a\u662f\u5426\u8981\u5f9e\u5f37\u85e5\u958b\u59cb\u3002\n3. **Pathogen**\uff1a\u5e38\u898b\u83cc\u7a2e\uff1f(GNB/GPC/Anaerobe/MDRO?)\n\n### \u91cd\u8981\u89c0\u5ff5\n* **Loading Dose**: \u70ba\u4e86\u5feb\u901f\u9054\u5230\u6709\u6548\u6fc3\u5ea6 (\u7279\u5225\u662f Vanco, Teico, Colistin)\u3002\n* **\u6c61\u67d3\u5224\u8b80**: B/C \u9577 *Corynebacterium, Bacillus, Micrococcus* \u591a\u70ba\u6c61\u67d3 (\u9664\u975e 2 \u5957\u90fd\u9577)\u3002\n* **K.P BSI**: \u52d9\u5fc5\u6703\u8a3a\u773c\u79d1\u6392\u9664\u773c\u5167\u708e (Endophthalmitis)\u3002\n* **Daptomycin**: \u76e3\u6e2c CPK (\u6a6b\u7d0b\u808c\u6eb6\u89e3)\uff0c\u4e0d\u53ef\u7528\u65bc\u80ba\u708e (\u88ab Surfactant \u5206\u89e3)\u3002","diagnosis",[],"treatment",[]],n,l)],n,j),A.c(["group","\ud83e\udda0 \u611f\u67d3\u79d1","id","protocol_id_common","title","\u5e38\u898b\u611f\u67d3\u75c7\u6cbb\u7642","subtitle","UTI, CAP, HAP, Cellulitis, Meningitis","content",A.c(["diagnosis",A.b(["[UTI] **U/A**: WBC \u2265 100~200 \u70ba\u986f\u8457 Pyuria\u3002\u82e5\u7121\u75c7\u72c0\u4e14 U/A \u4e7e\u6de8\uff0cU/C \u9577\u83cc\u53ef\u80fd\u662f\u6c61\u67d3\u3002","[CAP] **S/C \u54c1\u8cea**: WBC>25, Epithelial<10 \u624d\u662f\u597d\u75f0\u3002\u53ef\u9a57 Urine Ag (Pneumo/Legionella)\u3002","[Cellulitis] **S. aureus**: \u6709\u81bf/\u50b7\u53e3/\u64f4\u6563\u5feb; **Streptococcus**: \u7121\u81bf/\u64f4\u6563\u6162/\u6dcb\u5df4\u816b\u3002","[Meningitis] **Age > 50**: \u9700 Cover *Listeria* (\u52a0 Ampicillin)\u3002","[IE] **Echo**: TEE \u512a\u65bc TTE\u3002MRSA \u83cc\u8840\u75c7\u5efa\u8b70\u5fc5\u6392 Echo\u3002"],o),"treatment",A.b([A.c(["category","A. \u6ccc\u5c3f\u9053\u611f\u67d3 (UTI)","items",A.b([A.c(["drug","\u8f15\u5fae/\u9810\u9632","dose","Fosfomycin (\u53e3\u670d\u7c89\u5291)"],n,n),A.c(["drug","\u4f4f\u9662\u9996\u9078","dose","Ceftriaxone (Sintrix) 1-2g QD"],n,n),A.c(["drug","\u56b4\u91cd/ESBL risk","dose","Ertapenem 1g QD (Cover ESBL, \u4e0d Cover Pseudo)"],n,n),A.c(["drug","Shock","dose","Doripenem / Meropenem"],n,n)],m)],n,l),A.c(["category","B. \u793e\u5340\u578b\u80ba\u708e (CAP)","items",A.b([A.c(["drug","\u8f15\u75c7/\u9580\u8a3a","dose","Augmentin \u6216 Unasyn \xb1 Azithromycin (\u9ef4\u6f3f\u83cc)"],n,n),A.c(["drug","\u4f4f\u9662","dose","Ceftriaxone + Azithromycin/Doxycycline"],n,n),A.c(["drug","Aspiration","dose","Unasyn \u6216 Ceftriaxone + Metronidazole (\u53ad\u6c27\u83cc)"],n,n)],m)],n,l),A.c(["category","C. \u9662\u5167\u80ba\u708e (HAP/VAP)","items",A.b([A.c(["drug","\u539f\u5247","dose","\u9700 Cover **Pseudomonas**"],n,n),A.c(["drug","\u7d93\u9a57\u6027","dose","Tazocin / Cefepime / Ceftazidime (Brosym)"],n,n),A.c(["drug","\u5347\u968e","dose","Meropenem / Doripenem (\u6ce8\u610f: Ertapenem \u7121\u6548!)"],n,n)],m)],n,l),A.c(["category","D. \u8702\u7aa9\u6027\u7d44\u7e54\u708e (Cellulitis)","items",A.b([A.c(["drug","\u8f15\u5ea6 (\u53e3\u670d)","dose","Cephalexin (Keflex) \u6216 Clindamycin"],n,n),A.c(["drug","\u4e2d\u5ea6 (\u4f4f\u9662)","dose","Oxacillin (MSSA\u9996\u9078) \u6216 Cefazolin"],n,n),A.c(["drug","\u56b4\u91cd/MRSA risk","dose","Vancomycin / Teicoplanin / Daptomycin / Linezolid"],n,n)],m)],n,l),A.c(["category","E. \u7d30\u83cc\u6027\u8166\u819c\u708e","items",A.b([A.c(["drug","\u7d93\u9a57\u6027 (<50\u6b72)","dose","Vancomycin + Ceftriaxone (2g q12h)"],n,n),A.c(["drug","\u7d93\u9a57\u6027 (>50\u6b72)","dose","Vancomycin + Ceftriaxone + **Ampicillin** (2g q4h)"],n,n),A.c(["drug","Steroids","dose","Dexamethasone (\u6297\u751f\u7d20\u524d\u7d66\u4e88)"],n,n)],m)],n,l)],k)],n,i)],n,j),A.c(["group","\ud83e\udda0 \u611f\u67d3\u79d1","id","protocol_id_mdro","title","\u591a\u91cd\u6297\u85e5\u6027\u83cc (MDRO)","subtitle","ESBL, MRSA, VRE, CRAB, CRE","content",A.c(["intro","### \u6cbb\u7642\u7b56\u7565\n1. **ESBL**: \u9996\u9078 Carbapenem\u3002Cefepime/Tazocin \u6548\u679c\u8f03\u5dee (\u7279\u5225\u662f High inoculum)\u3002\n2. **AmpC**: \u907f\u958b 1-3 \u4ee3 Cefa\u3002\u9996\u9078 Cefepime \u6216 Carbapenem\u3002\n3. **MRSA**: \u83cc\u8840\u75c7\u9700\u9664\u611f\u67d3\u6e90 (\u7ba1\u8def/IE)\u3002Vanco \u9700\u6e2c Trough level\u3002\n4. **CRAB**: Colistin + (Meropenem/Tigecycline/Sulbactam)\u3002","diagnosis",A.b(["[MRSA] **B/C \u967d\u6027**: \u5fc5\u627e Source (CVC? IE? Osteo?)","[ESBL] **\u7279\u5fb5**: 1-3 \u4ee3 Cefa \u6297\u85e5\u3002E. coli / K.P \u5e38\u898b\u3002","[AmpC] **\u7279\u5fb5**: 2 \u4ee3 Cefa \u6297\u85e5 (ESBL \u901a\u5e38 S)\u3002Enterobacter / Citrobacter \u5e38\u898b\u3002","[CRE/CRAB] **\u5168\u6297\u85e5**: \u9700\u7d44\u5408\u7642\u6cd5\u6216\u65b0\u85e5 (Cefiderocol, Zavicefta)\u3002"],o),"treatment",A.b([A.c(["category","A. MRSA (GPC)","items",A.b([A.c(["drug","Vancomycin","dose","\u9700 Loading\u3002\u76e3\u6e2c Trough (15-20 mcg/mL)\nMIC \u2265 2 \u5efa\u8b70\u63db\u85e5"],n,n),A.c(["drug","Teicoplanin","dose","Loading (q12h x3) -> Maintain\u3002\u4e0d\u9069\u5408 IE/Meningitis"],n,n),A.c(["drug","Daptomycin","dose","8-12 mg/kg\u3002**\u80ba\u708e\u7121\u6548**\u3002\u76e3\u6e2c CPK"],n,n),A.c(["drug","Linezolid","dose","\u53e3\u670d\u5438\u6536\u4f73\u3002\u80ba\u708e/\u76ae\u819a\u6709\u6548\u3002\u6ce8\u610f\u9aa8\u9ad3\u6291\u5236"],n,n)],m)],n,l),A.c(["category","B. ESBL / AmpC (GNB)","items",A.b([A.c(["drug","ESBL \u9996\u9078","dose","**Ertapenem** (\u793e\u5340) \u6216 **Meropenem** (\u91cd\u75c7)"],n,n),A.c(["drug","AmpC \u9996\u9078","dose","**Cefepime** \u6216 **Carbapenem** (Tazocin \u4e0d\u5efa\u8b70)"],n,n),A.c(["drug","Fosfomycin","dose","\u53ef\u55ae\u7528\u65bc ESBL UTI (E. coli \u6548\u679c > K.P)"],n,n)],m)],n,l),A.c(["category","C. VRE (\u8178\u7403\u83cc)","items",A.b([A.c(["drug","Linezolid","dose","\u6291\u83cc\u6027\u3002\u9069\u5408\u80ba\u708e/\u8edf\u7d44\u7e54"],n,n),A.c(["drug","Daptomycin","dose","\u6bba\u83cc\u6027\u3002\u9069\u5408\u83cc\u8840\u75c7/\u5fc3\u5167\u819c\u708e (\u9700\u9ad8\u5291\u91cf)"],n,n)],m)],n,l),A.c(["category","D. CRAB (\u9b91\u6c0f\u4e0d\u52d5\u687f\u83cc)","items",A.b([A.c(["drug","\u7d44\u5408\u7642\u6cd5","dose","**Colistin** (IV+Inhalation) + \n(Meropenem / Tigecycline / Sulbactam / Cefiderocol)"],n,n),A.c(["drug","Tigecycline","dose","Loading 200mg -> 100mg q12h\u3002\n**\u8840\u4e2d\u6fc3\u5ea6\u4f4e\uff0c\u83cc\u8840\u75c7/UTI \u4e0d\u5efa\u8b70\u55ae\u7528** (\u8001\u864e\u6015\u6c34)"],n,n)],m)],n,l),A.c(["category","E. CRE / CRPA (\u65b0\u85e5)","items",A.b([A.c(["drug","Cefiderocol","dose","2g q8h (3hr infusion)\u3002\u8986\u84cb\u5ee3 (CRE, CRAB, CRPA)"],n,n),A.c(["drug","Zavicefta","dose","Ceftazidime-avibactam\u3002\u5c0d KPC/OXA-48 \u6709\u6548 (MBL \u7121\u6548)"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83e\udda0 \u611f\u67d3\u79d1","id","protocol_id_fungal","title","\u9ef4\u83cc\u611f\u67d3 (Fungal)","subtitle","Candida, Aspergillus & Anti-fungal agents","content",A.c(["intro","### \u6cbb\u7642\u539f\u5247\n1. **Fungemia (\u5ff5\u73e0\u83cc\u8840\u75c7)**: **\u4e00\u5b9a\u8981\u6cbb**\uff01\u79fb\u9664 CVC\u3002\u9700\u6cbb\u7642\u81f3 B/C \u9670\u6027\u5f8c 14 \u5929\u3002\u6aa2\u67e5\u773c\u5e95 (\u773c\u5167\u708e)\u3002\n2. **Urine/Sputum Candida**: \u591a\u70ba **Colonization**\uff0c\u539f\u5247\u4e0a**\u4e0d\u6cbb\u7642** (\u9664\u975e Neutropenia \u6216\u6ccc\u5c3f\u9053\u8655\u7f6e)\u3002\n3. **Aspergillus (\u9eb4\u83cc)**: \u5e38\u898b\u65bc\u514d\u75ab\u4f4e\u4e0b/\u79fb\u690d\u75c5\u4eba (\u80ba\u90e8\u7a7a\u6d1e)\u3002","diagnosis",A.b(["[\u5206\u985e] **Yeast**: Candida, Cryptococcus (\u8166\u819c\u708e/HIV)","[\u5206\u985e] **Mold**: Aspergillus, Mucor","[\u6aa2\u9a57] Beta-D-Glucan (\u5ee3\u6cdb), Galactomannan (Aspergillus)"],o),"treatment",A.b([A.c(["category","A. \u5ff5\u73e0\u83cc (Candida)","items",A.b([A.c(["drug","Fluconazole","dose","\u9996\u9078 (\u4f4e\u98a8\u96aa)\u3002**UTI \u9996\u9078** (\u6fc3\u5ea6\u9ad8)\u3002C. krusei \u7121\u6548"],n,n),A.c(["drug","Echinocandin","dose","**Micafungin / Anidulafungin**\n\u4e2d\u91cd\u5ea6/\u9ad8\u98a8\u96aa\u9996\u9078\u3002**UTI \u7121\u6548**!"],n,n),A.c(["drug","Amphotericin B","dose","\u5f8c\u7dda/\u6297\u85e5\u6027\u83cc\u682a\u3002\u814e\u6bd2\u6027\u5f37"],n,n)],m)],n,l),A.c(["category","B. \u9eb4\u83cc (Aspergillus)","items",A.b([A.c(["drug","Voriconazole","dose","\u9996\u9078\u6cbb\u7642 (\u8996\u5e7b\u89ba\u526f\u4f5c\u7528)"],n,n),A.c(["drug","Posaconazole","dose","\u9810\u9632\u6027\u7528\u85e5\u70ba\u4e3b"],n,n),A.c(["drug","Isavuconazole","dose","\u526f\u4f5c\u7528\u8f03\u5c11\uff0c\u53ef\u7528\u65bc\u814e\u529f\u80fd\u5dee\u8005"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83e\udda0 \u611f\u67d3\u79d1","id","protocol_id_viral","title","\u75c5\u6bd2\u611f\u67d3 (Viral)","subtitle","COVID-19, Influenza, CMV, C. diff","content",A.c(["diagnosis",A.b(["[COVID-19] \u9ad8\u98a8\u96aa: \u5e74\u9f61\u226565, \u6162\u6027\u75c5, \u514d\u75ab\u4f4e\u4e0b, \u5b55\u5a66","[CMV] \u9a57 **CMV PCR** (Viral load)\u3002\u5e38\u898b\u65bc\u79fb\u690d/\u514d\u75ab\u6291\u5236\u75c5\u4eba\u3002","[C. diff] \u6297\u751f\u7d20\u5f8c\u8179\u7009\u3002\u9a57 **Stool Toxin**\u3002\u5206\u8f15/\u91cd/\u731b\u7206\u6027\u3002"],o),"treatment",A.b([A.c(["category","A. COVID-19","items",A.b([A.c(["drug","Paxlovid (\u53e3\u670d)","dose","\u9996\u9078\u3002\u767c\u75c55\u5929\u5167\u3002\u9700\u8abf\u6574\u814e\u529f\u80fd & \u4ea4\u4e92\u4f5c\u7528 (\u6297\u51dd\u8840\u5291/Statin)"],n,n),A.c(["drug","Molnupiravir (\u53e3\u670d)","dose","\u7121\u6cd5\u7528 Paxlovid \u8005\u3002\u6548\u679c\u8f03\u5dee\u3002\u5b55\u5a66\u7981\u7528"],n,n),A.c(["drug","Remdesivir (IV)","dose","\u4f4f\u9662/\u80ba\u708e/\u7121\u6cd5\u53e3\u670d\u8005\u3002200mg -> 100mg QD (\u51713-5\u5929)"],n,n)],m)],n,l),A.c(["category","B. \u6d41\u611f (Influenza)","items",A.b([A.c(["drug","Tamiflu (\u53e3\u670d)","dose","75mg BID x 5\u5929"],n,n),A.c(["drug","Peramivir (IV)","dose","300-600mg \u55ae\u6b21\u6ce8\u5c04 (\u5438\u6536\u4e0d\u826f/\u91cd\u75c7)"],n,n)],m)],n,l),A.c(["category","C. \u5de8\u7d30\u80de\u75c5\u6bd2 (CMV)","items",A.b([A.c(["drug","Ganciclovir","dose","\u6cbb\u7642\u9996\u9078\u3002\u6ce8\u610f\u9aa8\u9ad3\u6291\u5236 (Cytopenia)"],n,n),A.c(["drug","Letermovir","dose","\u9810\u9632\u6027\u70ba\u4e3b\u3002\u8f03\u7121\u9aa8\u9ad3\u6bd2\u6027"],n,n)],m)],n,l),A.c(["category","D. \u56f0\u96e3\u68ad\u72c0\u687f\u83cc (C. diff)","items",A.b([A.c(["drug","\u7b2c\u4e00\u7dda","dose","**Vancomycin (Oral)** 125mg QID \u6216 **Fidaxomicin**"],n,n),A.c(["drug","\u66ff\u4ee3","dose","Metronidazole 500mg TID (\u50c5\u8f15\u75c7/\u7121\u85e5\u6642)"],n,n),A.c(["drug","\u731b\u7206\u6027 (Fulminant)","dose","Vanco (Oral/Rectal) + Metronidazole (IV)"],n,n)],m)],n,l)],k)],n,i)],n,j),A.c(["group","\ud83c\udf6c \u5167\u5206\u6ccc\u79d1","id","chap_endo_01","title","\u8166\u4e0b\u5782\u9ad4 (Pituitary)","subtitle","Apoplexy, Prolactinoma & Acromegaly","content",A.c(["diagnosis",A.b(["Apoplexy: \u7a81\u767c\u982d\u75db, \u8996\u91ce\u7f3a\u640d, \u4f4e\u8840\u58d3","Prolactinoma: PRL > 100 ng/mL","Acromegaly: IGF-1 \u9ad8, GH \u7121\u6cd5\u88ab OGTT \u6291\u5236"],o),"treatment",A.b([A.c(["category","\u8166\u4e0b\u5782\u9ad4\u4e2d\u98a8 (Apoplexy)","items",A.b([A.c(["drug","Steroids (First!)","dose","\u9ad8\u5291\u91cf Hydrocortisone (\u907f\u514d Adrenal Crisis)"],n,n),A.c(["drug","Surgery","dose","\u7dca\u6025\u6e1b\u58d3 (\u82e5\u6709\u795e\u7d93\u7f3a\u640d)"],n,n)],m)],n,l),A.c(["category","\u9ad8\u6ccc\u4e73\u6fc0\u7d20\u8840\u75c7","items",A.b([A.c(["drug","Agonist (\u9996\u9078)","dose","Cabergoline \u6216 Bromocriptine"],n,n),A.c(["drug","Surgery","dose","\u85e5\u7269\u7121\u6548\u6216\u58d3\u8feb\u8996\u795e\u7d93"],n,n)],m)],n,l)],k)],n,i)],n,j),A.c(["group","\ud83c\udf6c \u5167\u5206\u6ccc\u79d1","id","chap_endo_02","title","\u7532\u72c0\u817a (Thyroid)","subtitle","Storm, Myxedema & Hyper/Hypo","content",A.c(["intro","### \u7532\u72c0\u817a\u98a8\u66b4 (Thyroid Storm)\n1. **\u5b9a\u7fa9**\uff1a\u5371\u53ca\u751f\u547d\u7684\u7532\u72c0\u817a\u6a5f\u80fd\u4ea2\u9032\u60e1\u5316\u3002\n2. **\u8a3a\u65b7 (Burch-Wartofsky Score)**\uff1a\n   * **> 45\u5206**\uff1a\u9ad8\u5ea6\u61f7\u7591 (Highly suggestive)\n   * **25-44\u5206**\uff1a\u7591\u4f3c (Suggestive)\n   * **< 25\u5206**\uff1a\u4e0d\u592a\u50cf (Unlikely)\n   * *\u8a55\u5206\u9805\u76ee\uff1a\u9ad4\u6eab\u3001CNS\u75c7\u72c0\u3001\u5fc3\u8df3\u3001\u5fc3\u8870\u7aed\u3001\u8178\u80c3\u9053\u75c7\u72c0*\n3. **\u62bd\u8840**\uff1aFree T4, 3rd-gen TSH (T3 \u53ef\u9806\u4fbf)\u3002\n4. **\u7981\u5fcc**\uff1a\u274c **\u9000\u71d2\u4e0d\u53ef\u7528 Aspirin** (\u6703\u589e\u52a0 Free T4)\u3002","diagnosis",A.b(["[Graves'] Diffuse uptake; [Thyroiditis] Low uptake","[Hyper] TSH\u4f4e, fT4\u9ad8; [Hypo] TSH\u9ad8, fT4\u4f4e","[Storm] \u9ad8\u71d2 >38\xb0C, \u5fc3\u8df3 >140, \u610f\u8b58\u6539\u8b8a, \u9ec3\u75b8/\u8179\u7009"],o),"treatment",A.b([A.c(["category","A. \u7532\u72c0\u817a\u98a8\u66b4 (4\u5927\u85e5\u7269\u9806\u5e8f)","items",A.b([A.c(["drug","1. Beta-blocker (\u63a7\u5236\u75c7\u72c0)","dose","**Propranolol** 40-80mg PO q4h (\u9996\u9078, \u6291\u5236T4\u8f49T3)\n**Esmolol** IV (\u82e5\u9700\u5feb\u901f\u8abf\u6574): 250-500 mcg/kg loading -> 50-100 mcg/kg/min"],n,n),A.c(["drug","2. Thionamide (\u6291\u5236\u5408\u6210)","dose","**PTU** (\u9996\u9078): 500-1000mg loading -> 250mg q4h (\u6291\u5236T4\u8f49T3)\n**Methimazole**: 20-40mg q4h-q6h (Max 120mg/day)"],n,n),A.c(["drug","3. Iodine (\u6291\u5236\u91cb\u653e)","dose","\u26a0\ufe0f **\u5fc5\u9808\u5728\u6297\u7532\u72c0\u817a\u85e5\u5f8c 1 \u5c0f\u6642\u7d66\u4e88** (Wolff-Chaikoff effect)\n**SSKI**: 5\u6ef4 PO q6h\n**Lugol's**: 8\u6ef4 PO q6h\n*\u82e5\u7898\u904e\u654f: Lithium 300mg q6-8h*"],n,n),A.c(["drug","4. Steroid (\u6291\u5236\u8f49\u63db)","dose","**Hydrocortisone**: 300mg IV st -> 100mg q8h\n**Dexamethasone**: 2mg IV q12h"],n,n)],m)],n,l),A.c(["category","B. \u652f\u6301\u6027\u7642\u6cd5","items",A.b([A.c(["drug","\u9000\u71d2","dose","**Acetaminophen** (\u9996\u9078)\n\u274c **\u7981\u7528 Aspirin** (\u6703\u7f6e\u63db\u51fa Free T4 \u52a0\u91cd\u75c5\u60c5)"],n,n),A.c(["drug","\u8f38\u6db2\u8207\u964d\u6eab","dose","\u7a4d\u6975\u8f38\u6db2 (Fluid resuscitation) \u8207 \u7269\u7406\u964d\u6eab (\u51b0\u6795/\u51b7\u6c23)"],n,n)],m)],n,l),A.c(["category","C. \u9ecf\u6db2\u6c34\u816b\u6027\u660f\u8ff7 (Myxedema)","items",A.b([A.c(["drug","Steroids (Must!)","dose","**Hydrocortisone 100mg IV stat** (\u5148\u7d66! \u907f\u514d Adrenal Crisis)"],n,n),A.c(["drug","Thyroxine","dose","T4 200-400 mcg IV loading"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83c\udfe5 \u4e00\u822c\u91ab\u5b78\u79d1","id","chap_gen_01","title","\u9152\u7cbe\u6212\u65b7 (Alcohol Withdrawal)","subtitle","CIWA Protocol & DTs","content",A.c(["diagnosis",A.b(["CIWA-Ar \u91cf\u8868\u8a55\u4f30","Delirium Tremens (DTs): \u9707\u986b, \u8996\u5e7b\u89ba, \u81ea\u5f8b\u795e\u7d93\u5931\u8abf (48-96hr)"],o),"treatment",A.b([A.c(["category","Benzodiazepines (\u4e3b\u8981\u6cbb\u7642)","items",A.b([A.c(["drug","Symptom-Triggered","dose","CIWA >8 \u7d66 Lorazepam 2-4mg (\u9996\u9078)"],n,n),A.c(["drug","Fixed-Schedule","dose","Chlordiazepoxide \u6216 Lorazepam \u5b9a\u6642\u7d66\u4e88 (\u91cd\u75c7\u8005)"],n,n)],m)],n,l),A.c(["category","\u5176\u4ed6\u652f\u6301","items",A.b([A.c(["drug","Thiamine (B1)","dose","100-500mg IV/IM (\u9810\u9632 Wernicke's)"],n,n),A.c(["drug","Electrolytes","dose","\u88dc\u5145\u9240\u3001\u9382\u3001\u78f7"],n,n)],m)],n,l)],k)],n,i)],n,j),A.c(["group","\ud83c\udfe5 \u4e00\u822c\u91ab\u5b78\u79d1","id","protocol_pain_01","title","\u75bc\u75db\u63a7\u5236 (Pain & Opioids)","subtitle","On Call: Morphine, Fentanyl & Rescue","content",A.c(["intro","### \u8655\u7f6e\u539f\u5247\n1. **\u5f37\u5ea6\u63db\u7b97**\uff1aPO : SC : IV = 1 : 2 : 3\u3002\n2. **\u521d\u6b21\u4f7f\u7528**\uff1a\u975e\u672b\u671f/Naive \u75c5\u4eba\u76e1\u91cf\u5225\u4e82\u958b\u3002\u8853\u5f8c\u5e38\u898b: Morphine 5mg in 100mL NS run 15min Q6H prn\u3002\n3. **\u8abf\u6574\u539f\u5247**\uff1a\u4e0d\u8981\u75c5\u4eba\u4e00\u558a\u75db\u5c31\u8abf\u9ad8\u3002\u6bcf\u65e5\u589e\u52a0\u7e3d\u91cf\u4ee5\u4e0d\u8d85\u904e\u524d 24hr \u7684 1/3 \u70ba\u539f\u5247\u3002\n4. **\u6551\u63f4\u5291\u91cf (Rescue)**\uff1a\u4e00\u6b21 prn = \u6bcf\u65e5\u7e3d\u91cf\u7684 10-20% (\u6216 1/6)\u3002","diagnosis",A.b(["[\u89e3\u6bd2] **RR < 8** \u6216 **Pinpoint pupil**: \u61f7\u7591\u4e2d\u6bd2 -> Naloxone","[\u8b66\u793a] **Fentanyl \u8cbc\u7247**: Onset \u6162 (6-12hr)\uff0c\u4e0d\u9069\u5408\u6025\u6027\u6b62\u75db\u3002\u4e00\u7247 = 60mg PO Morphine\u3002","[\u8b66\u793a] **\u9577\u6548\u53e3\u670d (MST)**: \u4e0d\u53ef\u78e8\u7c89/\u525d\u534a (\u541e\u56a5\u56f0\u96e3\u7981\u7528)\u3002","[\u63db\u7b97] \u53e3\u670d Morphine 2 mg = \u76ae\u4e0b Morphine 1 mg\u3002"],o),"treatment",A.b([A.c(["category","A. \u53e3\u670d\u85e5\u7269 (Oral Opioids)","items",A.b([A.c(["drug","Morphine Sulfate (\u77ed\u6548)","dose","5-15 mg PO q4h (\u8001\u4eba/\u809d\u814e\u5dee q6h)\n*30min\u751f\u6548, 1hr\u9054\u5cf0\u503c*"],n,n),A.c(["drug","MST Continus (\u9577\u6548)","dose","30mg q12h \u8d77\u59cb\u3002\n**\u4e0d\u53ef\u78e8\u7c89/\u54ac\u788e**\u3002\u6bcf 2-3 \u5929\u8abf\u4e00\u6b21 (\u5e45\u5ea6 30-50%)"],n,n),A.c(["drug","MXL (\u9577\u6548\u81a0\u56ca)","dose","q12h \u6216 QD\u3002**\u53ef\u64a5\u958b**\u52a0\u5728\u6c34/\u98f2\u6599\u670d\u7528 (NG\u53ef\u7528)"],n,n),A.c(["drug","Oxycodone","dose","\u5f37\u5ea6\u7d04 Morphine \u7684 **1.5\u500d**\nOxyNorm (\u77ed\u6548), Oxycontin (\u9577\u6548 q12h)"],n,n)],m)],n,l),A.c(["category","B. \u91dd\u5291\u8207\u8abf\u6574 (IV/SC)","items",A.b([A.c(["drug","Naive Patient","dose","**Morphine 2-5 mg IV/SC q4-6h prn**\nIV peak: 5-15min"],n,n),A.c(["drug","\u5291\u91cf\u8abf\u6574 (Titration)","dose","5 -> 10 -> 15 -> 20 -> 30 -> 45 -> 60 mg\n*\u82e5 prn \u9700\u6c42 >=3 \u6b21/\u65e5\uff0c\u5efa\u8b70\u8abf\u6574\u57fa\u5e95\u5291\u91cf*"],n,n)],m)],n,l),A.c(["category","C. Fentanyl (Patch & Pump)","items",A.b([A.c(["drug","Transdermal Patch","dose","3\u5929\u63db\u4e00\u6b21 (\u5c11\u65782\u5929)\u3002\u82e5\u591a\u7247\u5efa\u8b70\u4ea4\u932f\u6642\u9593\u63db\u3002\n*\u521d\u6b21\u4f7f\u7528\u9700 12-24hr \u9054\u7a69\u614b*"],n,n),A.c(["drug","ICU Pump (\u539f\u6db2)","dose","Fentanyl (500mcg/10mL) 1 amp **Run 1-3 ml/hr**\n\u8abf\u6574: \xb1 5cc/hr (Max 20cc/hr)"],n,n),A.c(["drug","ICU Pump (\u7a00\u91cb)","dose","Fentanyl 1 amp in 100mL NS -> **Run 10-20 ml/hr**"],n,n)],m)],n,l),A.c(["category","D. \u547c\u5438\u56f0\u96e3\u8207\u62d4\u7ba1 (Dyspnea)","items",A.b([A.c(["drug","\u547c\u5438\u5598 (Dyspnea)","dose","Morphine 5-15mg PO \u6216 2-5mg IV/SC prn\n\u56b4\u91cd: \u52a0 Midazolam 0.5-1 mg"],n,n),A.c(["drug","\u64a4\u9664\u547c\u5438\u5668 (Terminal)","dose","Morphine 5-10mg + Midazolam 5-10mg SC (\u62d4\u7ba1\u524d)\n\u8003\u616e Syringe pump \u6301\u7e8c\u8f38\u6ce8 (\u5404 10-20mg/day)"],n,n)],m)],n,l),A.c(["category","E. \u89e3\u6bd2\u5291 (Antidote)","items",A.b([A.c(["drug","Naloxone","dose","**0.4-2 mg (1-5\u652f) IV/SC** \u6bcf 3min \u53ef\u91cd\u8907\n\u76f4\u5230 RR > 8/min\u3002\u82e5\u7d66 10mg \u7121\u6548\u61c9\u91cd\u65b0\u8a3a\u65b7"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83c\udfe5 \u4e00\u822c\u91ab\u5b78\u79d1","id","protocol_transfusion_01","title","\u8f38\u8840\u6307\u5f15 (Transfusion)","subtitle","On Call: \u8840\u54c1\u9078\u64c7\u3001\u5291\u91cf\u8a08\u7b97 & \u8f38\u8840\u53cd\u61c9","content",A.c(["intro","### \u8f38\u8840\u539f\u5247\n1. **Hb \u76ee\u6a19**\uff1a\u539f\u5247\u4e0a < 7.0 \u624d\u8f38 (Active bleeding \u9664\u5916)\u3002\n2. **\u7167\u5c04 (Irradiation)**\uff1a\u9810\u9632 GVHD (\u9069\u61c9\u75c7: \u514d\u75ab\u4e0d\u5168/\u5316\u7642/\u79fb\u690d)\u3002\n3. **MTP (\u5927\u91cf\u8f38\u8840)**\uff1a\u5275\u50b7/\u5927\u51fa\u8840\u6642\u555f\u52d5 (\u6bd4\u4f8b 1:1:1)\u3002","diagnosis",A.b(["[RBC] **Hb < 7.0** \u6216 Active bleeding\u3002Check Reticulocyte, Ferritin, OB\u3002","[PLT] **< 20k** (\u9810\u9632), **< 50k** (\u51fa\u8840/\u624b\u8853), **< 100k** (\u8166/\u773c\u624b\u8853)\u3002","[FFP] **PT/APTT > 1.5x** \u4e14\u6709\u51fa\u8840\u98a8\u96aa\u3002","[Cryo] **Fibrinogen < 100** (DIC \u5e38\u898b)\u3002","[\u9451\u5225] **PLT \u8f38\u4e0d\u4e0a\u53bb?** \u9a57 CCI (1hr < 7.5 = Refractory)\u3002\u8003\u616e HLA-matched\u3002","[\u53cd\u61c9] **TACO** (\u6c34\u816b/\u9ad8\u8840\u58d3) vs **TRALI** (ARDS/\u767c\u71d2/\u4f4e\u8840\u58d3)\u3002"],o),"treatment",A.b([A.c(["category","A. \u7d05\u8840\u7403 (LPR/pRBC)","items",A.b([A.c(["drug","\u5291\u91cf","dose","**2 U \u4e0a\u5347 Hb 1.0** (\u6bcf U 250mL)\u3002\n*\u5efa\u8b70\u6bcf\u6b21 2U \u6162\u6162\u7d66\uff0c\u907f\u514d Volume overload*"],n,n),A.c(["drug","MTP (\u5927\u91cf\u8f38\u8840)","dose","\u7b2c1\u8f2a: 6U RBC + 1U LPPH + 2U FFP\n\u7b2c2\u8f2a: 6U RBC + 10U FFP"],n,n)],m)],n,l),A.c(["category","B. \u8840\u5c0f\u677f (Platelet)","items",A.b([A.c(["drug","LPPH (\u5206\u96e2\u8853)","dose","**\u9996\u9078**\u30021 \u888b (\u7d04200mL) = 12U \u6fc3\u7e2e\u8840\u5c0f\u677f\n**\u9810\u671f\u4e0a\u5347 30k**"],n,n),A.c(["drug","PLT Concentrate","dose","12 U \u4e0a\u5347 30k (\u6bcf U 30-40mL)"],n,n),A.c(["drug","CCI \u516c\u5f0f","dose","(\u8f38\u5f8c-\u8f38\u524d) x BSA / \u8f38\u6ce8\u91cf(10^11)\n*LPPH \u542b 3x10^11*"],n,n),A.c(["drug","\u9451\u5225 (Refractory)","dose","ITP, DIC, TTP (\u7981\u8f38\u8840!), Splenomegaly"],n,n)],m)],n,l),A.c(["category","C. \u51dd\u8840\u56e0\u5b50 (FFP & Cryo)","items",A.b([A.c(["drug","FFP (\u8840\u6f3f)","dose","**10-15 mL/kg** (\u6210\u4eba\u7d04 4-6 U)\n*\u6bcf mL \u4e0a\u5347 1% \u56e0\u5b50\u6fc3\u5ea6*"],n,n),A.c(["drug","Cryoprecipitate","dose","**Fibrinogen < 100** \u6642\u4f7f\u7528 (DIC)\n\u6210\u4eba\u7d04 **10-12 U** (20U \u4e0a\u5347 Fibrinogen 75)"],n,n)],m)],n,l),A.c(["category","D. \u8f38\u8840\u53cd\u61c9\u8655\u7f6e","items",A.b([A.c(["drug","TACO (\u9ad4\u6db2\u904e\u591a)","dose","\u5750\u8d77, O2, **Lasix** (\u5229\u5c3f\u5291), \u6e1b\u6162\u8f38\u8840"],n,n),A.c(["drug","TRALI (\u80ba\u640d\u50b7)","dose","\u652f\u6301\u6027\u7642\u6cd5 (ARDS protocol), \u63d2\u7ba1/\u6c27\u6c23\n*\u52ff\u7d66\u5229\u5c3f\u5291 (\u9664\u975e\u5408\u4f75\u904e\u91cf)*"],n,n),A.c(["drug","\u904e\u654f (Allergy)","dose","\u505c\u8f38\u8840, \u7d66 **Benadryl** (\u6297\u7d44\u7e54\u80fa) \xb1 Steroid"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83c\udfe5 \u4e00\u822c\u91ab\u5b78\u79d1","id","protocol_common_meds","title","\u503c\u73ed\u5e38\u7528\u85e5\u7269\u901f\u67e5","subtitle","\u75c7\u72c0\u6cbb\u7642\u3001\u76ae\u819a\u85e5\u818f\u3001\u6ccc\u5c3f\u8655\u7f6e & \u985e\u56fa\u9187\u5206\u7d1a","content",A.c(["intro","### \u4f7f\u7528\u8aaa\u660e\n\u672c\u7ae0\u7bc0\u5f59\u6574\u503c\u73ed\u5e38\u898b\u7684\u4e3b\u8a34\u75c7\u72c0\u8655\u7406 (Symptomatic treatment)\uff0c\u5305\u542b\u91dd\u5291\u3001\u53e3\u670d\u8207\u5916\u7528\u85e5\u7269\u3002\u85e5\u540d\u4ee5**\u4e9e\u6771\u91ab\u9662**\u5e38\u898b\u54c1\u9805\u70ba\u4e3b\u3002\n\n**\u8180\u80f1\u6383\u63cf (Bladder Scan) \u516c\u5f0f**\uff1a\n$$ \\\\text{Volume} = \\\\text{Width} \\\\times \\\\text{Depth} \\\\times \\\\text{Height} \\\\times 0.7 $$","diagnosis",A.b(["[\u8b66\u793a] **Novamin**: \u5efa\u8b70 IM\uff0cIV push \u6613\u6709 EPS \u526f\u4f5c\u7528\u3002","[\u8b66\u793a] **Imodium**: \u7d30\u83cc\u6027\u8179\u7009\u6216\u4e00\u5929\u62c9 <5 \u6b21\u8005**\u7981\u7528** (\u6539\u7528 Smecta)\u3002","[\u8b66\u793a] **Dulcolax**: \u525b\u505a\u5b8c\u8178\u543b\u5408\u8853\u8005**\u7981\u7528** (\u9664\u975e\u4e3b\u6cbb\u91ab\u5e2b\u540c\u610f)\u3002","[\u6280\u5de7] **\u76ae\u819a\u85e5\u818f**: \u4e0d\u77e5\u9053\u958b\u4ec0\u9ebc? \u958b **Scheree (\u56db\u76ca)** (\u985e\u56fa\u9187+\u6297\u9ef4\u83cc+\u6297\u751f\u7d20)\u3002","[\u6280\u5de7] **\u6297\u7d44\u7e54\u80fa**: \u4e0d\u77e5\u9053\u958b\u4ec0\u9ebc? \u958b **Benamine** (Vena \u53e3\u670d\u7248)\u3002","[\u4fdd\u809d] **Silymarin**: \u5be6\u8b49\u5f31 (\u970015# TID)\uff0c\u4e3b\u8981\u7576**\u5b89\u6170\u5291**\u7528 (\u9632\u6b62\u75c5\u4eba\u4e82\u5403\u504f\u65b9)\u3002"],o),"treatment",A.b([A.c(["category","A. \u91dd\u5291\u6025\u7528 (Injectables)","items",A.b([A.c(["drug","\u6297\u904e\u654f/\u8541\u9ebb\u75b9","dose","1. **Vena** (Diphenhydramine) 1 amp IV/IM\n2. \u7121\u6548 -> **Prednisolone** 5mg PO\n3. \u7121\u6548 -> **Solu-Medrol** 40mg IV -> \u6703\u8a3a\u76ae\u819a\u79d1"],n,n),A.c(["drug","\u6b62\u5410 (Antiemetic)","dose","**Primperan** (Metoclopramide) 1 amp IV/IM\n**Novamin** 1 amp **IM** (IV \u526f\u4f5c\u7528\u591a)\n**Kytril** (\u81ea\u8cbb, \u5316\u7642\u7528)"],n,n),A.c(["drug","\u5f37\u529b\u5229\u5c3f (Diuretics)","dose","**Lasix**: 1 amp IV push\n**Burinex**: 1 amp = 4 amp Lasix (\u5f37\u6548!)\n*\u7528\u65bc\u56b4\u91cd\u6c34\u816b\u4e14 Lasix \u7121\u6548\u6642\uff0c\u53ef\u6ce1 pump 1-4 cc/hr*"],n,n)],m)],n,l),A.c(["category","B. \u5e38\u898b\u53e3\u670d\u85e5 (Oral Meds)","items",A.b([A.c(["drug","\u8178\u80c3\u9053 (GI)","dose","**MgO**: 1# QID (\u80c3\u85e5), 2# BID (\u8edf\u4fbf)\n**Sennoside**: \u8edf\u4fbf\u5291\n**Dulcolax**: \u5f37\u529b\u7009\u85e5\n**Smecta**: \u6b62\u7009 (\u5438\u9644\u5291)\n**Erythromycin**: 1-2# TID (Off-label \u4fc3\u9032\u80c3\u6392\u7a7a/\u80c3\u8f15\u7671)"],n,n),A.c(["drug","\u611f\u5192/\u547c\u5438\u9053","dose","**Medicon-A**: \u6b62\u54b3\n**Actein / Kotan**: \u5316\u75f0 (Kotan \u53ef\u958b\u5438\u5165)\n**Benamine**: \u6297\u7d44\u7e54\u80fa (\u9f3b\u6c34/\u7662/\u6688)"],n,n),A.c(["drug","\u6b62\u6688 (Vertigo)","dose","**Betaserc** (\u6885\u5c3c\u723e\u6c0f\u75c7), **Bonamin**"],n,n),A.c(["drug","\u5176\u4ed6","dose","**Lipitor**: \u964d\u8840\u8102\n**Zoloft / Lexapro**: \u8001\u4eba\u6182\u9b31\n**Pentoxifylline**: \u672b\u68a2\u5faa\u74b0"],n,n)],m)],n,l),A.c(["category","C. \u76ae\u819a\u8207\u5916\u7528 (Topical)","items",A.b([A.c(["drug","\u7d9c\u5408/\u842c\u7528","dose","**Scheree (\u56db\u76ca\u4e73\u818f)**: \u542b Steroid/Anti-fungal/Antibiotics\u3002\u6fd5\u75b9/\u7d05\u816b/\u9ef4\u83cc\u7686\u53ef\u8a66\u3002"],n,n),A.c(["drug","\u6b62\u7662/\u6b62\u75db","dose","**Diclofenac Gel**: \u6b62\u7662/\u6b62\u75db\n**Teiria Gel**: \u808c\u8089\u75e0\u75db\n**Flur Di Fen Patch**: \u75e0\u75db\u8cbc\u5e03\n**Heparinoid**: \u7600\u9752\u85e5\u818f"],n,n),A.c(["drug","\u7279\u5b9a\u90e8\u4f4d","dose","**Smile Orabase**: \u53e3\u5167\u818f\n**High-Xylmol**: \u75d4\u7621/\u6703\u9670\u75bc\u75db\n**Artelac**: \u4eba\u5de5\u6dda\u6db2"],n,n)],m)],n,l),A.c(["category","D. \u6ccc\u5c3f\u8207\u6eef\u7559 (Urology)","items",A.b([A.c(["drug","\u5c3f\u6eef\u7559 (Retention)","dose","\u9918\u5c3f > 400ml -> \u55ae\u5c0e\u6216 Foley\n\u85e5\u7269: **Bethanechol** (\u4fc3\u9032\u6536\u7e2e)"],n,n),A.c(["drug","\u651d\u8b77\u817a\u80a5\u5927 (BPH)","dose","**Harnalidge** (\u4e0d\u53ef\u78e8\u7c89)\n**Urief** (\u53ef\u78e8\u7c89)"],n,n)],m)],n,l),A.c(["category","E. \u985e\u56fa\u9187\u85e5\u818f\u5f37\u5f31\u8868 (Steroid Potency)","items",A.b([A.c(["drug","\u8d85\u5f37\u6548 (Super Potent)","dose","**Clobetasol**\n\u5546\u54c1\u540d: **Dermovate (\u6234\u6469\u819a)**, Vimax (\u6ce1\u6cab\u6db2)"],n,n),A.c(["drug","\u5f37\u6548 (Potent)","dose","**Fluocinonide**\n\u5546\u54c1\u540d: **Topsym (\u59a5\u819a\u6de8)**"],n,n),A.c(["drug","\u4e2d\u6548 (Mid-strength)","dose","**Betamethasone / Mometasone**\n\u5546\u54c1\u540d: **Septon (\u8212\u819a\u901a)**, **Rinderon-VA (\u81e8\u5f97\u9686)**, **Elison (\u5b89\u819a\u6a02)**"],n,n),A.c(["drug","\u4e2d\u5f31\u6548","dose","**Fluticasone**\n\u5546\u54c1\u540d: **Cutivate (\u514b\u5ef7\u819a)**, **Scheree (\u56db\u76ca)**"],n,n),A.c(["drug","\u5f31\u6548 (Mild)","dose","**Hydrocortisone**\n\u5546\u54c1\u540d: **Cort. S (\u76ae\u8cea\u9187)** -> \u81c9\u90e8/\u5b30\u5152\u53ef\u7528"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83c\udfe5 \u4e00\u822c\u91ab\u5b78\u79d1","id","protocol_lines_tubes","title","\u7ba1\u8def\u7167\u8b77 (Lines & Tubes)","subtitle","CVC, Chest Tube, Foley & Drains","content",A.c(["intro","### \u6838\u5fc3\u539f\u5247\n1. **CVC \u963b\u585e**: **\u7981\u5fcc\u7528\u529b\u6c96\u6d17 (Do NOT flush)**\uff0c\u907f\u514d\u8840\u6813\u5165\u80ba\u3002\u5617\u8a66\u56de\u62bd\u3002\n2. **\u80f8\u7ba1\u5192\u6ce1**: \u6301\u7e8c\u5192\u6ce1=\u6f0f\u6c23\u3002**\u7981\u5fcc\u96a8\u610f\u593e\u7ba1** (\u6050\u81f4\u5f35\u529b\u6027\u6c23\u80f8)\u3002\n3. **CRBSI \u5224\u8b80**: \u61f7\u7591\u611f\u67d3\u6642\u62bd **\u6210\u5c0d\u8840\u6bd4 (Paired BC)**\u3002\u82e5\u7ba1\u8def\u6bd4\u5468\u908a\u65e9 2hr \u9577\u83cc -> \u62d4\u7ba1\u3002\n4. **SB Tube**: \u98df\u9053\u975c\u8108\u66f2\u5f35\u5927\u51fa\u8840\u6551\u547d\u7528\u3002\u6bcf 4-6hr \u9700\u653e\u6c23\u6e1b\u58d3\u3002","diagnosis",A.b(["[CVC] **\u51fa\u8840**: \u52a0\u58d3 20min\u3002\u7121\u6548\u53ef\u7528 Bosmin (Epi) \u6fd5\u6577\u3002\u9838\u90e8\u8840\u816b\u9700\u9632\u547c\u5438\u9053\u58d3\u8feb\u3002","[\u6c23\u80f8] **Tension**: \u4f4e\u8840\u58d3+\u9838\u975c\u8108\u6012\u5f35 -> **\u7acb\u5373\u91dd\u523a\u6e1b\u58d3**\u3002\n*\u91cf\u5316: Apex > 3cm \u6216 Hilum > 2cm \u5efa\u8b70\u653e\u7ba1*","[Foley] **\u9918\u5c3f**: Scan > 400ml \u5efa\u8b70\u5c0e\u5c3f\u3002\n*\u8840\u5c3f\u963b\u585e: \u6539\u7528 3-way Foley \u6c96\u6d17*","[Drain] **JP\u7570\u5e38**: \u4e73\u767d(\u4e73\u7cdc), \u7cde\u8272(\u8178\u6f0f), \u7da0\u8272(\u81bd\u6c41), \u9bae\u7d05(\u51fa\u8840)\u3002"],o),"treatment",A.b([A.c(["category","A. \u4e2d\u5fc3\u975c\u8108\u5c0e\u7ba1 (CVC/Port-A)","items",A.b([A.c(["drug","\u963b\u585e\u8655\u7406","dose","1. \u6aa2\u67e5\u626d\u7d50\n2. \u5617\u8a66 **\u56de\u62bd (Aspirate)**\n3. \u274c **\u7981\u6b62\u7528\u529b\u6c96\u6d17**"],n,n),A.c(["drug","\u611f\u67d3\u62d4\u9664","dose","\u82e5\u9577 **Fungus (\u5ff5\u73e0\u83cc)** -> \u5f37\u70c8\u5efa\u8b70\u62d4\u9664\n\u62d4\u9664\u5f8c\u526a\u4e0b Tip \u9001 Aerobic culture"],n,n)],m)],n,l),A.c(["category","B. \u80f8\u7ba1 (Chest Tube)","items",A.b([A.c(["drug","\u5927\u91cf\u51fa\u8840","dose","> 500ml/8hr \u6216 > 50ml/hr \u6301\u7e8c\u589e\u52a0 -> \u901a\u77e5\u5916\u79d1 (\u53ef\u80fd\u9700\u624b\u8853)"],n,n),A.c(["drug","\u76ae\u4e0b\u6c23\u816b","dose","\u6aa2\u67e5\u5074\u5b54\u662f\u5426\u6ed1\u51fa\u3002\u82e5\u6ed1\u51fa **\u4e0d\u53ef\u63a8\u56de**\uff0c\u9700\u66f4\u63db\u3002"],n,n)],m)],n,l),A.c(["category","C. \u9f3b\u80c3\u7ba1 & SB Tube","items",A.b([A.c(["drug","UGI Bleeding","dose","\u653e\u7f6e NG \u505a **Free drainage** (\u76e3\u6e2c\u51fa\u8840\u91cf/\u6e1b\u58d3)"],n,n),A.c(["drug","SB Tube (\u98df\u9053\u7403)","dose","\u80c3\u7403: 250cc \u7a7a\u6c23 (\u62c9\u7dca)\n\u98df\u9053\u7403: 30-50 mmHg (\u6bcf 4-6hr \u653e\u6c23 15min)"],n,n)],m)],n,l),A.c(["category","D. \u5916\u79d1\u5f15\u6d41\u7ba1 (JP)","items",A.b([A.c(["drug","\u79fb\u9664\u6a19\u6e96 (\u53c3\u8003)","dose","\u8179\u8154: < 100ml/day\n\u8edf\u7d44\u7e54: < 30ml/day\n*\u8178\u80c3\u9053\u624b\u8853\u9700\u7b49\u6392\u6c23/\u6392\u4fbf*"],n,n)],m)],n,l)],k)],n,l)],n,j)],t.H7)}()
+return A.a([A.c(["group","\ud83d\udea8 \u5371\u6025\u5fb5\u8c61\u8207\u75c7\u72c0","id","protocol_shock_01","lastUpdate","2026/01/29","title","\u4f11\u514b\u8207\u4f4e\u8840\u58d3 (Shock)","subtitle","On Call: \u6390\u6c34\u3001\u5347\u58d3\u5291\u6ce1\u6cd5 & \u9451\u5225","content",A.c(["intro","### \u8655\u7f6e\u539f\u5247\n1. **\u5b9a\u7fa9**\uff1a\u4f4e\u8840\u58d3 (Hypotension) \u4e0d\u7b49\u65bc \u4f11\u514b\u3002\u4f11\u514b = SBP<90 + \u704c\u6d41\u4e0d\u8db3 (\u610f\u8b58\u8b8a/\u5c3f\u5c11/\u6fd5\u51b7)\u3002\n2. **\u7b2c\u4e00\u6b65\uff1a\u5148\u6390\u6c34\uff01**\n   * \u5168\u901f\u8f38\u6ce8 N/S 500mL (1-2\u5305)\u3002\n   * **\u4f8b\u5916**\uff1a\u5fc3\u8870\u7aed/\u80ba\u6c34\u816b (\u91cf\u780d\u534a)\u3001\u6d17\u814e\u75c5\u4eba\u3002\n   * \u82e5\u7121\u6548 -> **\u7d66\u5347\u58d3\u5291** \u4e26 Call \u5f8c\u7dda (\u6e96\u5099 CVC)\u3002\n3. **\u75c5\u53f2\u6838\u5c0d**\uff1a\u8fd1\u671f\u624b\u8853? (\u51fa\u8840\u98a8\u96aa -> \u5099\u8840/\u8f38\u8840)\uff1b\u85e5\u7269\u904e\u91cf? (Morphine -> Naloxone)\u3002\n4. **\u76ee\u6a19**\uff1a\u7dad\u6301 MAP >= 65 (SBP > 90-100)\u3002","diagnosis",A.a(["[\u5fc3\u56e0\u6027] Cardiogenic: JVP\u9ad8, \u6fd5\u56c9\u97f3 (MI, \u5fc3\u5305\u586b\u585e, \u5f35\u529b\u6027\u6c23\u80f8)","[\u4f4e\u8840\u5bb9] Hypovolemic: JVP\u4f4e, \u76ae\u819a\u4e7e (\u51fa\u8840, \u812b\u6c34, \u7b2c\u4e09\u9593\u9699)","[\u5206\u4f48\u6027] Distributive: JVP\u4f4e, \u56db\u80a2\u6696 (\u6557\u8840\u75c7, \u904e\u654f, \u810a\u9ad3\u640d\u50b7)","[\u963b\u585e\u6027] Obstructive: JVP\u9ad8, \u80ba\u6813\u585e (PE)","[\u5fb5\u8c61] HR < 50: \u8003\u616e Atropine \u6216 \u5fc3\u81df\u50b3\u5c0e\u963b\u6eef","[\u5fb5\u8c61] Wheezing: \u904e\u654f\u6027\u4f11\u514b \u6216 \u5fc3\u8870\u7aed","[\u5fb5\u8c61] \u55ae\u5074\u547c\u5438\u97f3\u6d88\u5931: \u5f35\u529b\u6027\u6c23\u80f8 -> \u91dd\u523a\u6e1b\u58d3","[\u6aa2\u9a57] Stat EKG (\u6392\u9664 MI), ABG, CBC/Crossmatch (\u5099\u8840), CXR"],o),"treatment",A.a([A.c(["category","A. \u5347\u58d3\u5291 (Vasopressors) - \u5be6\u6230\u6ce1\u6cd5","items",A.a([A.c(["drug","\u9996\u9078\u9806\u5e8f","dose","Levophed -> Pitressin -> Bosmin -> Dopamine"],n,n),A.c(["drug","1. Levophed (Norepinephrine)","dose","**4 amp in 250mL D5W** (\u7531 CVC \u7d66\u4e88)\nRun **2-5 cc/hr** -> Max 40 cc/hr (\u901a\u5e38 20 \u5c31\u8981\u8003\u616e\u52a0\u85e5)\n*\u82e5 Septic shock \u53ef\u52a0 Hydrocortisone 50mg q6h*"],n,n),A.c(["drug","2. Pitressin (Vasopressin)","dose","\u4e8c\u7dda\u7528\u85e5 (Levophed \u4e0d\u5920\u6642\u52a0)\n**2 amp in 100mL NS** -> Run **1.5-6 cc/hr**"],n,n),A.c(["drug","3. Bosmin (Epinephrine)","dose","\u6fc3 (Pure): Max 20 cc/hr\n\u7a00 (**1mg in 19mL NS**): Run 0.6-30 cc/hr"],n,n),A.c(["drug","4. Dopamine (Easydopa)","dose","**\u5468\u908a IV \u53ef\u7528** (\u5347\u58d3+\u5347\u5fc3\u8df3)\n**4 amp in 500mL D5W** -> Run **10-40 cc/hr**"],n,n)],m)],n,l),A.c(["category","B. \u904e\u654f\u6027\u4f11\u514b (Anaphylaxis)","items",A.a([A.c(["drug","Epinephrine (\u6551\u547d\u9996\u9078)","dose","\u8f15\u4e2d\u5ea6: **0.5mg (1:1000) IM** (\u5927\u817f\u5916\u5074)\n\u56b4\u91cd/\u4f11\u514b: **1mg (1:10000) IV** slow push"],n,n),A.c(["drug","\u8f14\u52a9\u85e5\u7269","dose","N/S \u5168\u901f\u8f38\u6ce8 + Solu-Cortef + Antihistamine"],n,n)],m)],n,l),A.c(["category","C. \u5176\u4ed6\u85e5\u7269","items",A.a([A.c(["drug","Midodrine (\u53e3\u670d\u5347\u58d3)","dose","\u50c5\u7528\u65bc **\u6d17\u814e/\u9ad4\u8cea\u6027\u4f4e\u8840\u58d3** (STAT 2-6#)\n[\u8b66\u793a] **\u4f11\u514b\u75c5\u4eba\u7981\u7528** (\u53ea\u6490\u6578\u5b57\u6c92\u89e3\u6c7a\u704c\u6d41)"],n,n),A.c(["drug","Atropine (\u5fc3\u640f\u904e\u7de9)","dose","0.5-1 mg IV push (Max 3mg)"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83d\udea8 \u5371\u6025\u5fb5\u8c61\u8207\u75c7\u72c0","id","protocol_chest_pain_01","lastUpdate","2026/01/28","title","\u80f8\u75db (Chest Pain)","subtitle","On Call: \u96b1\u85cf\u6bba\u624b EKG \u8207\u8655\u7f6e","content",A.c(["intro","### \u8655\u7f6e\u539f\u5247\n1. **\u62bd\u8840\u7b56\u7565**\uff1a\u5efa\u8b70 **TnI/TnT + CKMB + CPK**\u3002\u55ae\u9a57 TnT \u5e72\u64fe\u591a\uff1b**\u52ff\u9a57 NT-proBNP** (\u8a3a\u65b7\u6548\u76ca\u4f4e/\u5065\u4fdd\u9650\u5236)\u3002\n2. **\u8ffd\u8e64\u6642\u6a5f**\uff1a\u6a19\u6e96 **EKG 30min / Lab 2hr** repeat\u3002\u82e5\u5fd9\u788c\u4e14\u4f4e\u98a8\u96aa\uff0c\u53ef 2hr \u4e00\u8d77\u8ffd\u8e64\u3002\u6578\u503c\u6709\u8b8a\u6216\u5716\u5f62\u50cf AMI -> **Call CV**\u3002\n3. **Aortic Dissection**\uff1a\u75c5\u4eba\u75db\u5230\u7206 (Tearing pain) + Refer pain -> **\u76f4\u63a5\u6392 Chest CTA**\u3002\n4. **\u5f8c\u7dda\u652f\u63f4**\uff1a\u770b\u4e0d\u61c2 EKG \u5c31\u5927\u65b9 Call \u5f8c\u7dda\u78ba\u8a8d (\u6216\u50b3\u5716\u6c42\u6551)\u3002","diagnosis",A.a(["[\u5371\u6025] **\u6025\u6027\u51a0\u5fc3\u75c7 (ACS)**: \u5305\u542b STEMI \u8207\u7b49\u540c STEMI \u7684\u9ad8\u5371\u96aa\u5fb5\u8c61","[\u5371\u6025] **\u4e3b\u52d5\u8108\u525d\u96e2**: \u5169\u624b BP \u5dee >20, \u5287\u70c8\u6495\u88c2\u75db","[\u5371\u6025] **\u5f35\u529b\u6027\u6c23\u80f8**: \u4f4e\u8840\u58d3, \u6c23\u7ba1\u504f\u79fb, \u55ae\u5074\u547c\u5438\u97f3\u6d88\u5931","[\u5371\u6025] **\u80ba\u6813\u585e (PE)**: \u4f4e\u8840\u6c27, \u5fc3\u640f\u904e\u901f, D-dimer \u9ad8","[\u96b1\u85cf] **Posterior MI**: V2-V3 **ST Depression** -> \u52a0\u505a V7-V9 (\u5de6\u80a9\u80db\u4e0b\u7de3) \u78ba\u8a8d ST Elevation","[\u96b1\u85cf] **Wellens' Syndrome** (LAD\u72f9\u7a84): V2-V3 \u51fa\u73fe **Biphasic T** (Type A) \u6216 **Deep T Inversion** (Type B)","[\u96b1\u85cf] **De Winter's** (LAD\u963b\u585e): ST depression (\u4e0a\u52fe\u578b concave up) + **Tall T wave**","[\u8655\u7f6e] ECG 12-Lead (Stat) + O2 (\u82e5 SaO2 <94%) + IV Access","[\u62bd\u8840] Troponin, CK-MB, CPK (2hr repeat); CBC, PT/aPTT"],o),"treatment",A.a([A.c(["category","A. \u6025\u6027\u51a0\u5fc3\u75c7 (ACS)","items",A.a([A.c(["drug","Aspirin","dose","300 mg (3#) \u56bc\u788e (\u7acb\u5373\u7d66\u4e88)"],n,n),A.c(["drug",s,"dose","0.6 mg SL q5min x3 (\u7981\u5fcc: BP<90, **RV Infarct**, Viagra)"],n,n),A.c(["drug","Morphine","dose","2-4 mg IV q5-10min (\u82e5 NTG \u7121\u6548)"],n,n)],m)],n,l),A.c(["category","B. \u4e3b\u52d5\u8108\u525d\u96e2 (Aortic Dissection)","items",A.a([A.c(["drug","Beta-blockers (\u9996\u9078)","dose","Propranolol / Esmolol (**\u5148\u964d\u5fc3\u8df3** \u518d\u964d\u8840\u58d3)"],n,n),A.c(["drug","Nitroprusside","dose","[\u8b66\u793a] \u50c5\u5728\u7d66\u4e88 Beta-blocker **\u5f8c** \u5408\u4f75\u4f7f\u7528 (\u55ae\u7528\u6703\u53cd\u5c04\u6027 tachycardia)"],n,n)],m)],n,l),A.c(["category","C. \u5176\u4ed6\u6025\u75c7","items",A.a([A.c(["drug","Pulmonary Embolism","dose","O2 + Anticoagulant (Heparin); \u4e0d\u7a69\u5b9a\u8003\u616e\u6eb6\u6813"],n,n),A.c(["drug","Tension Pneumothorax","dose","\u7acb\u5373\u91dd\u523a\u6e1b\u58d3 (Needle Decompression) -> \u80f8\u7ba1"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83d\udea8 \u5371\u6025\u5fb5\u8c61\u8207\u75c7\u72c0","id","protocol_dyspnea_01","lastUpdate","2026/01/29","title","\u547c\u5438\u6025\u4fc3 (Dyspnea/SOB)","subtitle","On Call: \u81f4\u547d\u9451\u5225\u3001\u6aa2\u67e5\u8207 LMNOP","content",A.c(["intro","### \u8655\u7f6e\u539f\u5247\n1. **\u9996\u8981\u4efb\u52d9**\uff1a\u78ba\u4fdd\u547c\u5438\u9053 + \u4fee\u6b63\u4f4e\u8840\u6c27\u3002**\u5207\u52ff\u53ea\u8abf\u9ad8\u6c27\u6c23\u6d41\u91cf\u800c\u672a\u505a\u8a55\u4f30\uff01**\n2. **\u5371\u53ca\u751f\u547d (Killers)**\uff1a\n   * \u4e0a\u547c\u5438\u9053\u963b\u585e / \u904e\u654f\u6027\u4f11\u514b (Anaphylaxis)\n   * \u5f35\u529b\u6027\u6c23\u80f8 (Tension Pneumo)\n   * \u80ba\u6813\u585e (PE)\n   * \u5fc3\u56e0\u6027\u80ba\u6c34\u816b (Acute CHF)\n   * \u56b4\u91cd\u6c23\u5598/COPD (Bronchospasm)\n   * \u91cd\u75c7\u80ba\u708e/\u6557\u8840\u75c7 (ARDS)\n3. **\u6c27\u6c23\u76ee\u6a19**\uff1a\u4e00\u822c >94%\uff1bCOPD (CO2\u6eef\u7559\u98a8\u96aa) 88-92%\u3002","diagnosis",A.a(["[\u8655\u7f6e] **Bedside \u8a55\u4f30**: \u610f\u8b58? \u547c\u5438\u578b\u614b? \u807d\u8a3a? (\u52ff\u53ea\u770b Monitor)","[\u8655\u7f6e] **IV Access**: \u5efa\u7acb\u5169\u689d\u7ba1\u8def\uff0c\u88dd\u4e0a ECG Monitor & SpO2","[Stat Order] **ABG**: \u8a55\u4f30\u6c27\u5408 (PaO2) \u8207\u901a\u6c23 (PaCO2/pH)","[Stat Order] **CXR (Portable)**: \u5340\u5206\u80ba\u708e/\u6c23\u80f8/\u80ba\u6c34\u816b\u6700\u91cd\u8981\u5de5\u5177","[Stat Order] **12-lead ECG**: \u6392\u9664 MI \u6216\u5fc3\u5f8b\u4e0d\u6574","[\u62bd\u8840] CBC/DC, Lytes, Cr, Trop-I, BNP, D-dimer (\u61f7\u7591PE\u6642)","[\u5371\u6025] **Stridor/Wheezing + \u8541\u9ebb\u75b9**: \u904e\u654f\u6027\u4f11\u514b","[\u5371\u6025] **\u55ae\u5074\u547c\u5438\u97f3\u6d88\u5931 + \u4f4e\u8840\u58d3**: \u5f35\u529b\u6027\u6c23\u80f8 -> \u7acb\u5373\u6e1b\u58d3","[\u5371\u6025] **\u9838\u975c\u8108\u6012\u5f35 (JVP) + \u6fd5\u56c9\u97f3**: \u5fc3\u56e0\u6027\u80ba\u6c34\u816b"],o),"treatment",A.a([A.c(["category","A. \u904e\u654f\u6027\u4f11\u514b (Anaphylaxis)","items",A.a([A.c(["drug","Epinephrine (\u9996\u9078 IM)","dose","**0.5 mg (1:1000) IM** \u5927\u817f\u5916\u5074 (\u6bcf 5min \u53ef\u91cd\u8907)\n*\u6ce8\u610f\u6fc3\u5ea6\u662f 1mg/1mL \u90a3\u7a2e*"],n,n),A.c(["drug","Epinephrine (IV)","dose","[\u8b66\u793a] **\u50c5\u7528\u65bc\u5371\u53ca\u751f\u547d\u4f11\u514b**\n**1 mg (1:10,000) IV** \u7de9\u6162\u63a8\u6ce8 (\u7a00\u91cb\u6210 10mL \u90a3\u7a2e)"],n,n),A.c(["drug","\u8f14\u52a9\u85e5\u7269","dose","Solu-Cortef (Steroid) + Diphenhydramine (Anti-histamine)"],n,n),A.c(["drug","\u547c\u5438\u9053","dose","\u82e5\u5589\u982d\u6c34\u816b\u56b4\u91cd\uff0c\u5118\u65e9\u63d2\u7ba1 (Intubation)"],n,n)],m)],n,l),A.c(["category","B. \u6025\u6027\u80ba\u6c34\u816b (LMNOP)","items",A.a([A.c(["drug","L: Lasix","dose","**40 mg (1-2 amp) IV push** (\u82e5\u814e\u5dee\u6216\u9577\u671f\u4f7f\u7528\u9700\u52a0\u500d)"],n,n),A.c(["drug","M: Morphine","dose","2-4 mg IV (\u7126\u616e/\u64f4\u5f35\u975c\u8108; \u6ce8\u610f\u547c\u5438\u6291\u5236)"],n,n),A.c(["drug","N: Nitroglycerin","dose","\u820c\u4e0b\u542b\u670d \u6216 **IV Pump** (\u964d Afterload \u9996\u9078)"],n,n),A.c(["drug","O: Oxygen/BiPAP","dose","\u8003\u616e BiPAP (\u82e5\u610f\u8b58\u6e05\u695a\u4e14\u7121\u7981\u5fcc)"],n,n),A.c(["drug","P: Position","dose","\u5750\u8d77 (Sit up) \u6e1b\u5c11\u56de\u5fc3\u8840"],n,n)],m)],n,l),A.c(["category","C. \u6c23\u5598 / COPD \u6025\u6027\u60e1\u5316","items",A.a([A.c(["drug","\u5438\u5165\u5291 (Inhalation)","dose","Combivent (SABA+SAMA) \u5438\u5165 q20min (\u56b4\u91cd\u6642\u9023\u7e8c\u7d66)"],n,n),A.c(["drug","\u985e\u56fa\u9187 (Systemic)","dose","**Solu-Medrol** 40-125 mg IV (\u5118\u65e9\u7d66\u4e88\u6e1b\u8f15\u767c\u708e)"],n,n),A.c(["drug","Magnesium Sulfate","dose","\u56b4\u91cd\u6c23\u5598\u53cd\u61c9\u4e0d\u4f73\u6642: **2g IV** run 20min"],n,n)],m)],n,l),A.c(["category","D. \u5176\u4ed6\u6025\u75c7\u8655\u7f6e","items",A.a([A.c(["drug","\u5f35\u529b\u6027\u6c23\u80f8","dose","**\u91dd\u523a\u6e1b\u58d3 (Needle Decompression)**\n\u4f4d\u7f6e: \u60a3\u5074\u9396\u9aa8\u4e2d\u7dda **\u7b2c2\u808b\u9593** (14G/16G \u91dd\u982d)"],n,n),A.c(["drug","\u80ba\u6813\u585e (PE)","dose","\u6297\u51dd\u8840\u5291 (Heparin/Clexane)\n\u82e5\u4f11\u514b (SBP<90): \u8003\u616e tPA \u6eb6\u6813"],n,n),A.c(["drug","\u80ba\u708e (Pneumonia)","dose","\u7d93\u9a57\u6027\u6297\u751f\u7d20 (Ceph + Macrolide/FQ)\n\u8a55\u4f30 HFNC \u6216\u63d2\u7ba1"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83d\udea8 \u5371\u6025\u5fb5\u8c61\u8207\u75c7\u72c0","id","protocol_consciousness_aeiou","lastUpdate","2025/10/15","title","\u610f\u8b58\u6539\u8b8a (AEIOU TIPS)","subtitle","On Call: \u8a73\u7d30\u9451\u5225\u8207\u6297\u751f\u7d20\u8166\u75c5\u8b8a","content",A.c(["intro","### \u8a55\u4f30\u6d41\u7a0b\n1. **Stabilize**: \u78ba\u4fdd\u547c\u5438\u9053 (Respiratory failure? -> Intubation) \u8207 \u5faa\u74b0 (Shock? -> Bosmin/Fluids)\u3002\n2. **Check**: \u77b3\u5b54 (Pupil), \u808c\u529b (MP), \u8db3\u5e95\u53cd\u5c04 (Babinski)\u3002","diagnosis",A.a(["[A] Alcohol, **Acidosis** (ABG), **Ammonia** (\u809d\u6027\u8166\u75c5\u8b8a), Arrhythmia","[E] **Electrolytes** (\u9ad8/\u4f4e\u9209, \u9ad8\u9223), Encephalopathy","[I] **Infection** (Sepsis, Meningitis, UTI, Pneumonia)","[O] **Opioid/Drug**: BZD, Opiate... \u4ee5\u53ca **Ceftriaxone / Cefepime** (\u6297\u751f\u7d20\u8166\u75c5\u8b8a!)","[U] **Uremia**: BUN > 150?","[T] Trauma (\u649e\u5230\u982d?), Temperature (Heat stroke)","[I] **Insulin**: \u4f4e\u8840\u7cd6 (Hypoglycemia) \u6216 DKA/HHS","[P] Psychiatric (\u6392\u9664\u5668\u8cea\u6027\u5f8c\u624d\u8003\u616e)","[S] **Stroke** (ICH/Infarct), Seizure (Post-ictal), Shock"],o),"treatment",A.a([A.c(["category","\u521d\u6b65\u8655\u7f6e Workup","items",A.a([A.c(["drug","\u5fc5\u62bd","dose","Finger sugar (\u8840\u7cd6), ABG, Na/K/Ca, NH3, Cortisol"],n,n),A.c(["drug","\u5f71\u50cf","dose","Brain CT (\u6392\u9664\u51fa\u8840/\u816b\u7624/\u5927\u7247\u6897\u585e)"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83d\udea8 \u5371\u6025\u5fb5\u8c61\u8207\u75c7\u72c0","id","protocol_seizure_01","lastUpdate","2026/01/29","title","\u7672\u7647\u767c\u4f5c (Seizure)","subtitle","On Call: \u6025\u6551\u6642\u5e8f\u3001Loading Dose & \u9451\u5225","content",A.c(["intro","### \u8655\u7f6e\u539f\u5247\n1. **\u83ab\u614c**\uff1a\u5148\u78ba\u4fdd\u5b89\u5168 (\u9632\u54ac\u820c/\u8dcc\u5012) + \u7a69\u5b9a Vital Signs\u3002\n2. **\u79d2\u6392\u9664**\uff1aShock, Hypoglycemia (\u6e2c\u8840\u7cd6!), Stroke, Meningitis\u3002\n3. **\u85e5\u7269\u8a98\u767c**\uff1a**Cefepime** (\u814e\u5dee\u8005)\u3001**Carbapenem** (Imi > Erta > Mero) \u5e38\u8a98\u767c Seizure\u3002\n4. **\u7279\u6b8a\u71df\u990a**\uff1a\u9157\u9152\u8005\u8003\u616e Thiamine 500mg IVD\u3002","diagnosis",A.a(["[0-5min] **\u4fdd\u8b77**: \u5074\u8eba (\u7526\u9192\u59ff\u52e2), Oral bite (\u7259\u95dc\u7dca\u9589\u52ff\u786c\u585e), O2, Monitor","[\u89c0\u5bdf] **\u578b\u614b**: \u55ae/\u96d9\u5074? \u773c\u795e\u4e0a\u540a? \u8d77\u59cb\u90e8\u4f4d? \u610f\u8b58\u72c0\u614b? (\u8acb\u5bb6\u5c6c\u9304\u5f71)","[\u6aa2\u9a57] **Labs**: CBC, Ca/Mg/P, Ammonia, Liver/Renal, Drug level (Dilantin/Valproate)","[\u5f71\u50cf] **Brain CT**: \u521d\u6b21\u767c\u4f5c/\u61f7\u7591\u4e2d\u98a8/\u5916\u50b7\u8005\u5fc5\u505a","[\u611f\u67d3] **Meningitis**: \u767c\u71d2? \u9838\u50f5\u786c (Neck stiffness)? -> Lumbar Puncture","[\u9451\u5225] **EEG**: \u6392\u9664\u5047\u6027\u7672\u7647\u6216\u78ba\u8a8d\u653e\u96fb (\u503c\u73ed\u4e0d\u6025\u505a)"],o),"treatment",A.a([A.c(["category","A. \u7b2c\u4e00\u7dda\u6cbb\u7642 (5-20 min)","items",A.a([A.c(["drug","Ativan (Lorazepam)","dose","**2 mg (1 amp) IV slow push** (2min)\n5\u5206\u9418\u5f8c\u7121\u6548\u53ef\u91cd\u8907\u4e00\u6b21 (Max 4mg)\n*\u6ce8\u610f: \u9700\u6709\u93ae\u975c\u6388\u6b0a/\u8ab2\u7a0b*"],n,n),A.c(["drug","\u66ff\u4ee3\u85e5\u7269","dose","\u7121 IV: **Dormicum** 10mg IM \u6216 **Diazepam** 20mg Rectal"],n,n),A.c(["drug","\u547c\u5438\u98a8\u96aa\u9ad8\u8005","dose","\u82e5 BiPAP full / \u53e3\u6c34\u591a\u6015\u63d2\u7ba1 -> **\u8df3\u904e BZD**\uff0c\u76f4\u63a5\u7d66\u4e8c\u7dda\u85e5 (Keppra/Lacosamide)"],n,n)],m)],n,l),A.c(["category","B. \u7b2c\u4e8c\u7dda\u6cbb\u7642 (20-60 min) - Loading","items",A.a([A.c(["drug","Keppra (Levetiracetam)","dose","\u9996\u9078 (\u526f\u4f5c\u7528\u5c11)\n**Loading**: 40-60 mg/kg (\u7d04 **2000mg**) in 100mL NS run >10min\nMaintain: 500-1000mg q12h (\u4f9d\u814e\u529f\u80fd\u8abf\u6574)"],n,n),A.c(["drug","Depakine (Valproate)","dose","**Loading**: 20-40 mg/kg\nMaintain: 600mg q8h (Max 4500mg)\n*\u7981\u5fcc: \u809d\u529f\u80fd\u7570\u5e38*"],n,n),A.c(["drug","Lacosamide (Vimpat)","dose","**Loading**: 200-400 mg IVD 30min\nMaintain: 200-300mg q12h\n*\u7981\u5fcc: \u5fc3\u81df\u50b3\u5c0e\u963b\u6eef (AV block)*"],n,n),A.c(["drug","Phenytoin (Dilantin)","dose","**Loading**: 20 mg/kg (Max 1500mg)\n*\u6ce8\u610f: \u8f38\u6ce8\u6162\u3001\u5fc3\u5f8b\u4e0d\u6574\u98a8\u96aa\u3001\u5bb9\u6613 Phlebitis*"],n,n)],m)],n,l),A.c(["category","C. \u9811\u56fa\u6027\u7672\u7647 (>60 min)","items",A.a([A.c(["drug","ICU \u7167\u8b77","dose","\u63d2\u7ba1 (Endo) + \u9ebb\u9189\u85e5\u7269 (Propofol / Midazolam / Phenobarbital)"],n,n)],m)],n,l),A.c(["category","D. \u5f8c\u7e8c\u9810\u9632 (Oral)","items",A.a([A.c(["drug","Keppra (Oral)","dose","1000mg BID \u8d77\u624b (\u82e5\u4ecd\u62bd\u53ef\u52a0\u81f3 1500mg)\n*\u6c34\u5291\u8207\u9320\u5291\u5291\u91cf\u63db\u7b97\u76f8\u540c*"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83d\udea8 \u5371\u6025\u5fb5\u8c61\u8207\u75c7\u72c0","id","protocol_stroke_01","lastUpdate","2026/01/29","title","\u8166\u4e2d\u98a8 (Stroke)","subtitle","On Call: tPA \u8a55\u4f30\u3001\u8840\u58d3\u63a7\u5236 & \u6392\u9664 Mimics","content",A.c(["intro","### \u8655\u7f6e\u539f\u5247\n1. **\u9996\u8981\u4efb\u52d9**\uff1a\u8207\u6642\u9593\u8cfd\u8dd1 (Time is Brain)\u3002\n2. **\u9ec3\u91d1\u6642\u9593**\uff1a\u78ba\u8a8d **Last Known Normal** \u6642\u9593 (\u7761\u9192\u767c\u73fe\u4ee5\u7761\u524d\u7b97)\u3002rtPA \u9ec3\u91d1\u671f\u901a\u5e38 < 3~4.5 \u5c0f\u6642\u3002\n3. **\u95dc\u9375\u52d5\u4f5c**\uff1a\u6e2c\u8840\u7cd6 (\u6392\u9664 Mimics) -> Stat CT (\u6392\u9664\u51fa\u8840) -> \u6c7a\u5b9a rtPA\u3002","diagnosis",A.a(["[Mimic] **\u4f4e\u8840\u7cd6 (Hypoglycemia)**: \u6700\u5e38\u898b! \u7acb\u5373\u6e2c Finger stick","[Mimic] **\u7672\u7647\u5f8c\u9ebb\u75fa (Todd's)**: \u6709\u7121\u76ee\u64ca seizure?","[Mimic] **\u8907\u96dc\u6027\u504f\u982d\u75db**: \u6709\u7121 Aura?","[\u6aa2\u67e5] **Non-contrast CT**: \u6700\u512a\u5148! \u5340\u5206\u7f3a\u8840/\u51fa\u8840","[\u6aa2\u67e5] ECG (AFib?), Coagulation (PT/INR, APTT), Platelet","[NIHSS] \u5feb\u901f\u8a55\u4f30\u795e\u7d93\u5b78\u7f3a\u640d\u7a0b\u5ea6"],o),"treatment",A.a([A.c(["category","A. \u6025\u6027\u7f3a\u8840\u6027\u4e2d\u98a8 (Ischemic)","items",A.a([A.c(["drug","tPA (Alteplase)","dose","**0.9 mg/kg** (Max 90mg)\n10% IV bolus (1min) -> 90% IV drip (60min)\n*\u7d66\u85e5\u5f8c 24hr \u7981\u963f\u65af\u5339\u9748/\u6297\u51dd\u8840\u5291*"],n,n),A.c(["drug","tPA \u7981\u5fcc\u75c7 (\u7cbe\u7c21)","dose","\u51fa\u8840\u75c5\u53f2\u3001\u8fd1\u671f\u624b\u8853/\u5916\u50b7\u3001BP > 185/110\u3001INR > 1.7\u3001PLT < 100k"],n,n),A.c(["drug","Aspirin","dose","\u82e5**\u4e0d\u6253 tPA**\uff1a\u7acb\u5373\u7d66 **160-300 mg PO/Supp**\n\u82e5**\u6253 tPA**\uff1a24\u5c0f\u6642\u5167**\u7981\u6b62**\u7d66\u4e88"],n,n)],m)],n,l),A.c(["category","B. \u8840\u58d3\u63a7\u5236 (BP Control)","items",A.a([A.c(["drug","\u6e96\u5099\u6253 tPA","dose","\u56b4\u683c\u63a7\u5236 **< 185 / 110 mmHg**\n**Labetalol** 10-20mg IV push\n**Nicardipine** 5mg/hr IV pump (Max 15mg/hr)"],n,n),A.c(["drug","\u4e0d\u6253 tPA","dose","**\u5141\u8a31\u6027\u9ad8\u8840\u58d3 (Permissive HTN)**\n\u9664\u975e **> 220 / 120 mmHg** \u5426\u5247**\u4e0d\u964d\u58d3** (\u7dad\u6301\u8166\u704c\u6d41)\n\u82e5\u9700\u964d\u58d3\uff0c\u9996\u65e5\u964d\u5e45\u4e0d\u8d85\u904e 15-25%"],n,n)],m)],n,l),A.c(["category","C. \u51fa\u8840\u6027\u4e2d\u98a8 (Hemorrhagic)","items",A.a([A.c(["drug","\u8655\u7f6e","dose","\u56b4\u7981 tPA/Antiplatelet\u3002\u7dca\u6025\u7167\u6703\u795e\u5916 (Neurosurgeon)"],n,n),A.c(["drug","\u53cd\u8f49\u51dd\u8840","dose","Warfarin -> FFP + Vit K\nNOAC -> \u8003\u616e\u53cd\u8f49\u5291 (Idarucizumab for Dabigatran)"],n,n),A.c(["drug","\u8840\u58d3","dose","\u8f03\u56b4\u683c\u63a7\u5236 (SBP < 140-160) \u4ee5\u9632\u8840\u816b\u64f4\u5927"],n,n)],m)],n,l),A.c(["category","D. \u4e00\u822c\u7167\u8b77","items",A.a([A.c(["drug","NPO","dose","\u76f4\u5230\u5b8c\u6210\u541e\u56a5\u8a55\u4f30 (\u9632\u5438\u5165\u6027\u80ba\u708e)"],n,n),A.c(["drug","\u8840\u7cd6","dose","\u7dad\u6301 140-180 (\u9ad8/\u4f4e\u8840\u7cd6\u7686\u6703\u52a0\u91cd\u8166\u50b7)"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83d\udea8 \u5371\u6025\u5fb5\u8c61\u8207\u75c7\u72c0","id","protocol_arrhythmia_01","lastUpdate","2025/10/15","title","\u5fc3\u5f8b\u7570\u5e38 (Arrhythmia)","subtitle","On Call: \u983b\u8108\u3001\u7de9\u8108\u3001TCP \u8a2d\u5b9a & \u85e5\u7269\u6ce1\u6cd5","content",A.c(["intro","### \u8655\u7f6e\u539f\u5247\n1. **\u6838\u5fc3\u89c0\u5ff5**\uff1a\u7a69\u5b9a (Stable) vs \u4e0d\u7a69\u5b9a (Unstable)\u3002\u4e0d\u7a69\u5b9a (\u4f11\u514b/\u80f8\u75db/\u610f\u8b58\u8b8a) = **\u96fb\u64ca**\u3002\n2. **Sinus Tachycardia**\uff1a\u5148\u627e\u539f\u56e0 (Fever, Pain, Shock, Thyroid)\uff0c\u4e0d\u8981\u53ea\u6703\u964d\u5fc3\u8df3\uff01\n3. **Bradycardia**\uff1a\u7121\u75c7\u72c0\u4e14 HR > 50 \u53ef\u89c0\u5bdf\u3002\u6709\u75c7\u72c0 (BP\u4f4e/Shock) \u518d\u8655\u7406\u3002\n4. **IHCA**\uff1a\u53eb\u4e0d\u9192+\u7121\u8108\u640f -> **\u76f4\u63a5\u58d3\u80f8 CPR**\u3002","diagnosis",A.a(["\ud83d\udea8 [\u5371\u6025] **VF / Pulseless VT**: \u53bb\u986b (Defib) 200J -> CPR","\ud83d\udea8 [\u5371\u6025] **Unstable Tachycardia**: \u540c\u6b65\u96fb\u64ca (Sync Cardioversion)","\ud83d\udea8 [\u5371\u6025] **Symptomatic Bradycardia**: Atropine -> TCP / Dopamine","\u26a1\ufe0f [\u5224\u8b80] **PSVT**: \u7a84/\u898f\u5247/\u5feb (HR 160+)","\u26a1\ufe0f [\u5224\u8b80] **Afib**: \u7a84/\u4e0d\u898f\u5247/\u5feb","\u26a1\ufe0f [\u5224\u8b80] **VT**: \u5bec/\u898f\u5247/\u5feb","\u26a1\ufe0f [\u5224\u8b80] **Torsades**: \u5bec/\u4e0d\u898f\u5247/\u65cb\u8f49 (Mg \u7f3a\u4e4f)","\ud83e\uddea [\u6aa2\u9a57] K, Mg, Ca, Troponin-I, Digoxin level, TSH/T4"],o),"treatment",A.a([A.c(["category","A. \u7de9\u8108 (Bradycardia)","items",A.a([A.c(["drug","Atropine (\u9996\u9078)","dose","**1mg (1amp) IV push** q3-5min (Max 3mg)\n*\u82e5\u7121\u6548\u6216 IV \u4e0d\u9806\uff0c\u76f4\u63a5\u8df3\u4e8c\u7dda*"],n,n),A.c(["drug","Dopamine (\u4e8c\u7dda)","dose","**Easydopa** (400mg/250mL) Run **10-40 cc/hr**\n(\u7d04 5-20 mcg/kg/min)"],n,n),A.c(["drug","Epinephrine (\u4e8c\u7dda)","dose","**1mg in 100mL NS** Run **12-60 cc/hr**\n(\u7d04 2-10 mcg/min)"],n,n),A.c(["drug","TCP (\u9ad4\u5916\u7bc0\u5f8b)","dose","\u8cbc\u7247\u8cbc\u597d -> \u8f49 Demand mode\nRate: **60 bpm**\nCurrent: \u5f9e 30mA \u5f80\u4e0a\u8abf\uff0c\u76f4\u5230\u6709 Capture (QRS\u5f8c\u6709T\u6ce2) \u518d\u52a0 10mA \u5b89\u5168\u7bc4\u570d"],n,n)],m)],n,l),A.c(["category","B. \u983b\u8108 - PSVT","items",A.a([A.c(["drug","Vagal Maneuver","dose","Valsalva \u6216 \u9838\u52d5\u8108\u6309\u6469 (\u6210\u529f\u7387\u4f4e\uff0c\u53ef\u8df3\u904e)"],n,n),A.c(["drug","Adenosine","dose","**6mg \u5feb\u63a8 (1-3\u79d2) + 20cc NS \u6c96**\n\u7121\u6548 -> 12mg -> 12mg\n*\u5099\u8a3b: \u75c5\u4eba\u6703\u5f88\u4e0d\u8212\u670d (Chest tight)*"],n,n),A.c(["drug","Verapamil (CCB)","dose","5mg IV slow push (>2min) \u6216 in 100mL NS drip"],n,n)],m)],n,l),A.c(["category","C. \u983b\u8108 - Afib/Flutter","items",A.a([A.c(["drug","Rate Control (\u9996\u9078)","dose","**Concor** 1.25-5mg PO (\u6700\u5b89\u5168)\n**Metoprolol** 5mg IV push q5m (Max 15mg)"],n,n),A.c(["drug","Digoxin (HF\u9996\u9078)","dose","0.5 amp (0.25mg) IV slow push q6h -> PO 0.5-1# QD"],n,n),A.c(["drug","Amiodarone (\u4e8c\u7dda)","dose","Loading: **300mg (2\u652f)** IV push -> 150mg\nPump: **900mg in D5W 500cc**\nRun **34 cc/hr** (6hr) -> **17 cc/hr** (18hr)"],n,n)],m)],n,l),A.c(["category","D. \u983b\u8108 - VT (Stable)","items",A.a([A.c(["drug","Amiodarone","dose","\u540c Afib \u6ce1\u6cd5 (900mg in 500cc)\n*\u6ce8\u610f: Torsades \u7981\u7528!*"],n,n),A.c(["drug","Lidocaine","dose","1-1.5 mg/kg IV push -> Pump (50mL in 250mL NS run 10cc/hr)"],n,n)],m)],n,l),A.c(["category","E. \u7279\u6b8a - Torsades de Pointes","items",A.a([A.c(["drug","MgSO4","dose","**2g (10%) IV** (Unstable: push; Stable: drip 15min)\n*\u7981\u7528 Amiodarone!*"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83d\udea8 \u5371\u6025\u5fb5\u8c61\u8207\u75c7\u72c0","id","protocol_fever_01","title","\u767c\u71d2 (Fever)","subtitle","On Call: Survey, \u7ba1\u8def\u611f\u67d3 & \u6297\u751f\u7d20","content",A.c(["intro","### \u8655\u7f6e\u8207\u5224\u65b7\u539f\u5247\n1. **\u9000\u71d2\u85e5\u5225\u540d**\uff1a**Tinten** (\u8b77\u7406\u5e2b\u611b\u7528\u8a5e) = Scanol = Acetaminophen\u3002\n2. **\u6642\u6a5f**\uff1aOP day \u7576\u5929 Fever \u5e38\u898b\uff0c\u4e0d\u6025\u8457 Survey\uff1b\u82e5 **Day 2-3 \u4ecd\u71d2** \u6216 **New peak** \u5247\u5fc5\u9808 Survey\u3002\n3. **CRBSI (\u5c0e\u7ba1\u611f\u67d3) \u5224\u65b7**\uff1a\n   * \u540c\u6642\u62bd\u5468\u908a\u8840\u8207\u7ba1\u8def\u8840 (CVC/Port-A)\u3002\n   * \u82e5\u7ba1\u8def\u8840\u9577\u83cc\u6642\u9593\u6bd4\u5468\u908a\u8840 **\u65e9 > 1-2 \u5c0f\u6642** -> \u9ad8\u5ea6\u61f7\u7591\u7ba1\u8def\u611f\u67d3\u3002\n4. **Fungemia Risk**\uff1a\u9577\u671f TPN\u3001ICU\u3001\u5ee3\u6548\u6297\u751f\u7d20\u4f7f\u7528\u3001\u514d\u75ab\u6291\u5236 -> **\u52d9\u5fc5\u9a57 B/C for Fungus** (\u4e00\u822c B/C \u6613\u6f0f)\uff01","diagnosis",A.a(["[\u5e38\u898f] **Labs**: CBC/DC, Cr, ALT, Na/K, **B/C x2\u5957** (\u7b2c1\u5957\u9577\u83cc\u5c31\u62bd\u7b2c2\u5957\u9632\u6c59\u67d3)","[\u5e38\u898f] **Urine**: U/A, U/C (Aerobic); **Sputum**: Culture, Gram stain","[\u5f71\u50cf] **CXR** (New patch?)","[\u80ba\u708e] \u82e5\u7121 Focus \u4e14\u71d2\u4e0d\u9000:\n   * **Urine Ag**: Pneumococcal & Legionella\n   * **Mycoplasma**: Throat swab PCR (\u6316\u6df1\u4e00\u9ede!) > IgM/IgG\n   * **Viral**: Flu Ag, Covid PCR","[\u7279\u6b8a] **Procalcitonin / Lactate**: \u7528\u65bc Septic shock \u6216 Toxic sign \u5f37\u70c8\u6642","[\u7279\u6b8a] **D-Dimer**: \u6392\u9664 PE","[\u8166\u819c\u708e] Neck Stiffness? Jolt accentuation? -> **Lumbar Puncture**","[\u5fc3\u5167\u819c\u708e] \u53cd\u8986\u71d2\u4e0d\u9000 -> **Echo (TTE/TEE)** (Order: Doppler + M-mode + Color flow)"],o),"treatment",A.a([A.c(["category","A. \u9000\u71d2\u7b56\u7565 (Antipyretics)","items",A.a([A.c(["drug","\u53e3\u670d","dose","**Acetaminophen** (Tinten/Scanol) 500mg PO"],n,n),A.c(["drug","Aspegic (\u5065\u4fdd\u91dd)","dose","IM / IV push / IVD (\u6548\u679c\u5f37\uff0c\u53e3\u670d\u7121\u6548\u53ef\u7d66)"],n,n),A.c(["drug","Acetamol (\u81ea\u8cbb\u91dd)","dose","1 amp in 100mL NS run 1hr (\u6216 IV push)"],n,n),A.c(["drug","\u7269\u7406\u9000\u71d2","dose","\u51b0\u6795 (Ice pillow) \u6216 \u5c0f\u6797\u9000\u71b1\u8cbc"],n,n)],m)],n,l),A.c(["category","B. \u6297\u751f\u7d20\u5347\u968e (Escalation)","items",A.a([A.c(["drug","\u8d77\u624b\u5f0f","dose","\u61f7\u7591\u9662\u5167\u611f\u67d3 (Cover Pseudo) -> **Tazocin**"],n,n),A.c(["drug","Unstable / Toxic","dose","Septic shock \u6216\u5df2\u7528 Tazocin \u4ecd\u71d2 -> **Meropenem** \u6216 **Doripenem**"],n,n),A.c(["drug","Fungemia","dose","\u82e5\u6709 Risk (TPN/CVC) -> \u52a0\u505a **B/C for Fungus** \u4e26\u8003\u616e\u6297\u9ef4\u83cc\u85e5"],n,n)],m)],n,l),A.c(["category","C. \u7ba1\u8def\u8655\u7f6e (Source Control)","items",A.a([A.c(["drug","CVC (\u4e2d\u5fc3\u975c\u8108\u5c0e\u7ba1)","dose","\u61f7\u7591\u611f\u67d3\u5c31\u62d4 (\u63db\u65b0\u4f4d\u7f6e)\uff0c\u7559 **Tip Culture** (\u7121\u83cc\u526a\u5200\u526a\u4e0b)\n*\u62d4\u9664\u524d\u53ef\u7531\u820a\u7ba1\u8def\u62bd\u4e00\u5957 B/C for Fungus*"],n,n),A.c(["drug","Foley (\u5c0e\u5c3f\u7ba1)","dose","\u653e\u5f88\u4e45? \u9ad2? -> **\u63db\u65b0**\u4e26\u7559 U/A, U/C"],n,n),A.c(["drug","PCN (\u814e\u9020\u5ed4)","dose","\u76f4\u63a5\u7559 PCN \u7684\u5c3f (\u8a3b\u8a18\u5de6/\u53f3\u5074)\uff0c\u7531\u4e3b\u6cbb\u91ab\u5e2b\u6c7a\u5b9a\u62d4\u9664\u6642\u6a5f"],n,n),A.c(["drug","Port-A / Permcath","dose","\u503c\u73ed**\u4e0d\u62d4** -> \u6703\u8a3a\u5916\u79d1\u8655\u7406\uff0c\u8a18\u5f97\u958b **Tip Culture** \u55ae"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83d\udea8 \u5371\u6025\u5fb5\u8c61\u8207\u75c7\u72c0","id","protocol_gib_01","lastUpdate","2025/10/15","title","\u8178\u80c3\u9053\u51fa\u8840 (GI Bleeding)","subtitle","On Call: \u7c21\u6613\u6d41\u7a0b\u8207 PPI \u6ce1\u6cd5","content",A.c(["diagnosis",A.a(["[\u8a55\u4f30] \u79e4\u91cd\u8a08\u91cf (Tarry stool/Coffee ground)","[\u8a55\u4f30] Vital signs (Tachycardia? Shock?) -> \u6c7a\u5b9a\u662f\u5426\u6025\u505a\u80c3\u93e1/\u63d2\u7ba1","[\u62bd\u8840] Hb, Platelet, PT/APTT, Lactate (\u5927\u91cf\u51fa\u8840 Q4-6H \u8ffd\u8e64)"],o),"treatment",A.a([A.c(["category","A. \u85e5\u7269\u6cbb\u7642","items",A.a([A.c(["drug","PPI (Pantoloc)","dose","\u8f15\u5fae: 40mg IV QD-Q12H\n**\u56b4\u91cd**: **200mg in 500cc NS**, IV Pump run **21 cc/hr**"],n,n),A.c(["drug","\u5176\u4ed6","dose","Prokinetic agents (\u4fc3\u9032\u6392\u7a7a), Transamine (\u4e0b\u6d88\u5316\u9053)"],n,n)],m)],n,l),A.c(["category","B. \u8655\u7f6e","items",A.a([A.c(["drug","NPO","dose","\u7d66\u4e88\u542b\u7cd6\u9ede\u6ef4 (D5W/Run), \u7981\u98df\u81f3\u9694\u5929\u8a55\u4f30"],n,n)],m)],n,l)],k)],n,i)],n,j),A.c(["group","\ud83d\udea8 \u5371\u6025\u5fb5\u8c61\u8207\u75c7\u72c0","id","protocol_abd_01","title","\u8179\u75db (Abdominal Pain)","subtitle","On Call: \u5371\u6025\u6392\u9664\u8207\u8655\u7f6e","content",A.c(["diagnosis",A.a(["[\u8b66\u793a] \u521d\u6b65\u8a3a\u65b7\u524d\u907f\u514d\u96a8\u610f\u4f7f\u7528\u6b62\u75db\u85e5 (\u4ee5\u514d\u63a9\u84cb\u5fb5\u8c61)","[\u5371\u6025] \u81df\u5668\u7a7f\u5b54/\u7834\u88c2 (Perforated Viscus): \u4f11\u514b\u98a8\u96aa","[\u5371\u6025] \u4e0a\u884c\u6027\u81bd\u7ba1\u708e (Cholangitis): \u6557\u8840\u6027\u4f11\u514b","[\u5371\u6025] \u5927\u91cf\u51fa\u8840: AAA \u7834\u88c2, \u5b50\u5bae\u5916\u5b55, \u813e\u81df\u7834\u88c2","[\u8655\u7f6e] \u751f\u547d\u5fb5\u8c61\u4e0d\u7a69: \u7acb\u5373 IV \u8f38\u6db2, \u7dca\u6025\u5099\u8840","[\u5f71\u50cf] KUB (Free air/Air-fluid level/Calcification)","[\u9032\u968e] \u8d85\u97f3\u6ce2, CT (\u61f7\u7591\u81bf\u760d/\u80f0\u81df\u708e)"],o),"treatment",A.a([A.c(["category","A. \u80f0\u81df\u708e (Pancreatitis)","items",A.a([A.c(["drug","\u8655\u7f6e","dose","\u7981\u98df (NPO) + IV \u8f38\u6db2\u88dc\u5145"],n,n),A.c(["drug","Meperidine (Demerol)","dose","50-150 mg IM/SC q3-4h (\u6b62\u75db\u9996\u9078)"],n,n)],m)],n,l),A.c(["category","B. \u6d88\u5316\u6027\u6f70\u760d / GERD","items",A.a([A.c(["drug","PPIs","dose","Omeprazole 20mg PO \u6216 Pantoprazole 40mg PO qd"],n,n),A.c(["drug","H2 Blockers","dose","Famotidine 40mg PO hs \u6216 Ranitidine 300mg hs"],n,n)],m)],n,l)],k)],n,i)],n,j),A.c(["group","\ud83d\udea8 \u5371\u6025\u5fb5\u8c61\u8207\u75c7\u72c0","id","protocol_sepsis_01","lastUpdate","2025/10/15","title","\u6557\u8840\u6027\u4f11\u514b (Septic Shock)","subtitle","On Call: Hour-1 Bundle & Source ID","content",A.c(["intro","### \u8655\u7f6e\u539f\u5247\n1. **\u932f\u8aa4\u793a\u7bc4**\uff1a\u53ea\u6709\u6390\u6c34\u6c92\u505a Survey\uff1bLVEF \u6b63\u5e38\u537b\u8aa4\u5224\u5fc3\u56e0\u6027\u4f11\u514b\u3002\n2. **\u6b63\u78ba\u6d41\u7a0b**\uff1aBedside \u8a55\u4f30 -> \u62bd\u8840/\u7d30\u83cc\u57f9\u990a -> \u6297\u751f\u7d20 -> \u6c34\u5206\u5fa9\u7526 (Fluid challenge)\u3002\n3. **Hour-1 Bundle**\uff1a\u6e2c Lactate, \u7559 B/C (\u4f7f\u7528\u6297\u751f\u7d20\u524d), \u5ee3\u6548\u6297\u751f\u7d20, 30mL/kg \u8f38\u6db2 (\u82e5\u4f4e\u8840\u58d3/Lactate>4), \u5347\u58d3\u5291 (\u7dad\u6301 MAP>=65)\u3002","diagnosis",A.a(["[\u611f\u67d3\u6e90] **Pneumonia**: \u547c\u5438\u9053\u75c7\u72c0, CXR Patch (\u9a57 Urine Ag, Flu/Covid)","[\u611f\u67d3\u6e90] **UTI**: \u6572\u75db (Flank pain), \u5c3f\u7ba1\u653e\u592a\u4e45? (\u63db\u7ba1+\u7559\u5c3f)","[\u611f\u67d3\u6e90] **BSI (\u5c0e\u7ba1)**: \u6709 CVC/Port-A? (\u540c\u6642\u62bd\u5468\u908a+\u5c0e\u7ba1\u8840)","[\u611f\u67d3\u6e90] **Cellulitis**: \u6a19\u8a18\u7d05\u816b\u7bc4\u570d, \u6aa2\u67e5 Crepitus (\u58de\u6b7b\u6027\u7b4b\u819c\u708e?)","[\u611f\u67d3\u6e90] **Intra-abdominal**: \u809a\u5b50\u8139/\u75db? Peritoneal signs? (KUB/CT)","[\u6aa2\u9a57] CBC/DC, Na/K, Cr/ALT, Lactate, VBG/ABG, B/C x2"],o),"treatment",A.a([A.c(["category","A. \u521d\u6b65\u5fa9\u7526 (Resuscitation)","items",A.a([A.c(["drug","Fluids","dose","Crystalloid (NS/LR) 30 mL/kg \u5feb\u901f\u8f38\u6ce8 (\u8996\u5fc3\u80ba\u529f\u80fd\u8abf\u6574)"],n,n),A.c(["drug","Vasopressor","dose","\u9996\u9078 **Norepinephrine** (Levophed) -> \u7dad\u6301 MAP >= 65"],n,n),A.c(["drug","2nd Line","dose","Vasopressin (\u901a\u5e38\u7528\u65bc\u4e8c\u7dda\uff0c\u75c5\u623f\u8f03\u5c11\u958b)"],n,n)],m)],n,l),A.c(["category","B. \u6297\u751f\u7d20 (Antibiotics)","items",A.a([A.c(["drug","\u539f\u5247","dose","\u8a3a\u65b7\u5f8c 1 \u5c0f\u6642\u5167\u7d66\u4e88\u5ee3\u6548\u6297\u751f\u7d20 (\u5982 Tazocin, Cefepime)"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83d\udea8 \u5371\u6025\u5fb5\u8c61\u8207\u75c7\u72c0","id","protocol_combative_01","title","\u8e81\u52d5\u8207\u653b\u64ca\u6027 (Combative)","subtitle","\u5b89\u5168\u78ba\u8a8d\u3001\u8b6b\u5984 (Haldol) vs \u6212\u65b7 (BZD)","content",A.c(["intro","### \u6838\u5fc3\u539f\u5247\uff1a\u5340\u5206\u75c5\u56e0 (Differential)\n1. **\u5b89\u5168\u7b2c\u4e00**: \u4fdd\u8b77\u81ea\u5df1\u8207\u75c5\u4eba\u3002\u5148\u6392\u9664 **\u4f4e\u8840\u7cd6 / \u7f3a\u6c27 / \u4f11\u514b**\u3002\n2. **\u9ec3\u91d1\u4ea4\u53c9**: \u5224\u65b7\u662f **\u4e00\u822c\u8b6b\u5984** \u9084\u662f **\u9152\u7cbe\u6212\u65b7**\uff1f\n   * **\u8b6b\u5984 (Delirium)**: \u9996\u9078 **Haldol** (\u274c \u5fcc\u7528 BZD\uff0c\u6703\u66f4\u4e82)\u3002\n   * **\u6212\u65b7 (Withdrawal)**: \u9996\u9078 **BZD** (\u274c \u5fcc\u7528 Haldol\uff0c\u6703\u964d\u7672\u7647\u95be\u503c)\u3002","diagnosis",A.a(["[\u6392\u9664] **\u4f4e\u8840\u7cd6**: Check sugar (<70 \u7acb\u5373\u7d66 D50W 2-3 amp)\u3002","[\u6392\u9664] **\u7f3a\u6c27**: Check SpO2 (<90 \u7d66 O2\uff0cCOPD \u76ee\u6a19 88-92)\u3002","[\u8b6b\u5984] \u5b9a\u5411\u611f\u8b8a\u5dee\u3001\u65e5\u591c\u985b\u5012\u3001\u80e1\u8a00\u4e82\u8a9e\u3002\u5e38\u898b\u65bc\u611f\u67d3/\u4ee3\u8b1d/\u85e5\u7269\u3002","[\u6212\u65b7] **\u9157\u9152\u53f2** + \u505c\u9152 6-48hr + \u9707\u986b/\u5fc3\u8df3\u5feb/\u5192\u6c57/\u7672\u7647\u3002"],o),"treatment",A.a([A.c(["category","A. \u8b6b\u5984\u63a7\u5236 (Delirium)","items",A.a([A.c(["drug","Haloperidol (Haldol)","dose","\u9996\u9078 (\u82e5\u975e\u6212\u65b7)\u3002**0.5-1 mg IM/PO** q30m PRN (Max 5mg/day)\u3002\n*\u6ce8\u610f: QT prolong (>460ms \u614e\u7528), EPS*"],n,n),A.c(["drug","\u975e\u5178\u578b\u6297\u7cbe\u795e\u75c5\u85e5","dose","**Quetiapine (Seroquel)** 25mg PO (\u9069\u5408\u7761\u524d/\u8f15\u5ea6\u8e81\u52d5)\n**Olanzapine (Zyprexa)** 5mg PO/IM\n*EPS \u98a8\u96aa\u8f03\u4f4e\uff0c\u9069\u5408\u8001\u4eba*"],n,n),A.c(["drug","EPS \u89e3\u6bd2\u5291","dose","**Vena (Diphenhydramine)** 30-50mg IV/IM (\u82e5\u767c\u751f\u808c\u5f35\u529b\u7570\u5e38)"],n,n)],m)],n,l),A.c(["category","B. \u9152\u7cbe\u6212\u65b7 (Withdrawal)","items",A.a([A.c(["drug","Benzodiazepine","dose","\u9996\u9078 (\u6291\u5236\u4ea4\u611f\u8208\u596e)\u3002\n**Ativan** 2-4mg IVP \u6216 **Valium** 5-10mg IVP\n\u6bcf 5-20min \u91cd\u8907\u76f4\u5230\u93ae\u975c (\u76ee\u6a19: \u55dc\u7761\u4f46\u53ef\u559a\u9192)"],n,n),A.c(["drug","Thiamine (B1)","dose","**100mg IVD** (\u52d9\u5fc5\u5728**\u6253\u7cd6\u6c34\u4e4b\u524d**\u7d66\u4e88!)\n\u9810\u9632 Wernicke Encephalopathy"],n,n),A.c(["drug","\u7981\u5fcc","dose","\u907f\u514d\u55ae\u7368\u4f7f\u7528 Beta-blocker (\u6703\u63a9\u84cb\u6212\u65b7\u5fb5\u8c61)"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83d\udea8 \u5371\u6025\u5fb5\u8c61\u8207\u75c7\u72c0","id","protocol_falls_01","title","\u8dcc\u5012 (Falls)","subtitle","On Call: \u8a55\u4f30\u50b7\u5bb3\u8207\u6f5b\u5728\u75c5\u56e0","content",A.c(["diagnosis",A.a(["[\u5371\u6025] \u9871\u5167\u51fa\u8840 (ICH): \u5c24\u5176\u670d\u7528\u6297\u51dd\u8840\u5291\u8005 (Warfarin/DOAC)","[\u5371\u6025] \u9ad6\u90e8\u9aa8\u6298 (Hip Fx): \u8001\u5e74\u4eba/\u5973\u6027\u5e38\u898b, \u7e2e\u77ed/\u5916\u65cb","[\u6aa2\u67e5] GCS/\u77b3\u5b54 (\u795e\u7d93\u7f3a\u640d?), \u982d\u90e8\u89f8\u8a3a (\u8840\u816b/\u718a\u8c93\u773c)","[\u6aa2\u67e5] \u59ff\u52e2\u6027\u8840\u58d3 (Postural BP): \u81e5->\u7acb, SBP\u964d>15 \u63d0\u793a\u812b\u6c34","[\u5fc5\u6e2c] \u6307\u5c16\u8840\u7cd6 (Finger stick)"],o),"treatment",A.a([A.c(["category","A. \u91dd\u5c0d\u539f\u56e0\u8abf\u6574 (Prevention)","items",A.a([A.c(["drug","\u9ad4\u6db2\u5fa9\u7526","dose","\u82e5\u6709\u59ff\u52e2\u6027\u4f4e\u8840\u58d3/\u812b\u6c34, \u7d66\u4e88 IV Normal Saline"],n,n),A.c(["drug","\u85e5\u7269\u6aa2\u8996 (Stop)","dose","\u505c\u7528/\u6e1b\u91cf: \u5b89\u7720\u85e5 (BZD), \u5229\u5c3f\u5291 (\u591c\u5c3f), \u964d\u58d3\u85e5"],n,n)],m)],n,l),A.c(["category","B. \u4f75\u767c\u75c7\u8207\u8655\u7f6e","items",A.a([A.c(["drug","\u9871\u5167\u51fa\u8840 (ICH)","dose","\u7dca\u6025\u6703\u8a3a\u795e\u7d93\u5916\u79d1; \u8003\u616e\u53cd\u8f49\u6297\u51dd\u8840\u5291 (Vit K, FFP)"],n,n),A.c(["drug","\u50b7\u53e3\u8655\u7406","dose","\u7e2b\u5408/\u5305\u7d2e (\u6ce8\u610f\u6297\u51dd\u8840\u5291\u4f7f\u7528\u8005\u4e4b\u5ef6\u9072\u51fa\u8840)"],n,n)],m)],n,l)],k)],n,i)],n,j),A.c(["group","\ud83d\udea8 \u5371\u6025\u5fb5\u8c61\u8207\u75c7\u72c0","id","protocol_dnr_01","lastUpdate","2025/10/15","title","DNR \u7c3d\u7f72\u8207\u502b\u7406","subtitle","On Call: \u555f\u7528\u6642\u6a5f\u8207\u6e9d\u901a","content",A.c(["intro","### \u555f\u7528\u6642\u6a5f\n1. **\u75c5\u4eba\u7b26\u5408\u672b\u671f\u8a3a\u65b7**\uff1a\u764c\u75c7\u672b\u671f \u6216 **\u516b\u5927\u975e\u764c\u672b\u671f**\u3002\n2. **\u516b\u5927\u975e\u764c\u672b\u671f**\uff1a\u5931\u667a\u3001\u56b4\u91cd\u4e2d\u98a8\u3001\u5fc3\u81df\u8870\u7aed\u3001\u56b4\u91cd COPD\u3001\u56b4\u91cd\u80ba\u7e96\u7dad\u5316\u3001\u809d\u786c\u5316\u3001\u6025\u6027/\u6162\u6027\u814e\u8870\u7aed\u3002\n3. **\u6c7a\u7b56\u6b0a\u91cd**\uff1a\u75c5\u4eba\u610f\u9858 > \u5bb6\u5c6c\u610f\u9858\u3002\n4. **\u503c\u73ed\u539f\u5247**\uff1aVS \u8aaa\u53ef\u4ee5 DNR \u624d\u53ef\u4ee5 DNR\uff1b\u6025\u8a3a\u7c3d\u7684 DNR \u4e0d\u4e00\u5b9a\u7b97\u6578 (\u9700 VS \u78ba\u8a8d)\u3002","diagnosis",[],"treatment",[]],n,l)],n,j),A.c(["group","\ud83e\uddea \u5be6\u9a57\u5ba4\u6578\u503c\u7570\u5e38","id","protocol_potassium_01","lastUpdate","2026/01/29","title","\u9240\u96e2\u5b50\u7570\u5e38 (Hyper/Hypokalemia)","subtitle","On Call: \u9ad8\u8840\u9240\u6025\u6551 & \u4f4e\u8840\u9240\u88dc\u5145","content",A.c(["intro","### \u8655\u7f6e\u539f\u5247\n1. **\u6838\u5fc3\u76ee\u6a19**\uff1a\u9632\u7bc4\u81f4\u6b7b\u6027\u5fc3\u5f8b\u4e0d\u6574 (VF/Asystole)\u3002\n2. **\u9ad8\u8840\u9240 (>5.5)**\uff1a\u5167\u79d1\u6025\u75c7\uff0c\u9700\u5148\u6392\u9664**\u5047\u6027 (\u6eb6\u8840)**\uff0c\u82e5 ECG \u6709\u8b8a\u5316\u9700\u7acb\u5373\u6cbb\u7642\u3002\n3. **\u4f4e\u8840\u9240 (<3.5)**\uff1a\u7531\u53e3\u670d\u512a\u5148\u3002\u9700\u6ce8\u610f **Mg (\u9382)** \u662f\u5426\u4f4e\u4e0b\uff0c\u4e26\u7559\u610f **TPP** (\u4e9e\u88d4\u7537\u6027\u5e38\u898b)\u3002","diagnosis",A.a(["[\u9ad8\u8840\u9240 ECG] **Peaked T** (\u65e9) -> P\u6ce2\u6d88\u5931 -> QRS\u8b8a\u5bec -> **Sine wave** (\u7015\u6b7b)","[\u6392\u9664\u5047\u6027] **\u6eb6\u8840 (Hemolysis)** \u6700\u5e38\u898b\uff01(\u6b62\u8840\u5e36\u7d81\u592a\u4e45/\u62bd\u8840\u56f0\u96e3)","[\u627e\u539f\u56e0] \u9178\u4e2d\u6bd2 (Acidosis), \u814e\u8870\u7aed, \u85e5\u7269 (ACEI/ARB/NSAIDs/Spiro), \u6a6b\u7d0b\u808c\u6eb6\u89e3","[\u4f4e\u8840\u9240 ECG] **U waves**, T\u6ce2\u5e73\u5766, QT \u5ef6\u9577 (\u6050\u8a98\u767c Torsades)","[\u627e\u539f\u56e0] \u9e7c\u4e2d\u6bd2, \u5229\u5c3f\u5291, \u8179\u7009, **\u4f4e\u8840\u9382 (Hypomagnesemia)**","[\u6aa2\u9a57] Stat ECG, K, Mg, Ca, Cr, ABG (\u9178\u9e7c), CPK (Rhabdo?)"],o),"treatment",A.a([A.c(["category","A. \u9ad8\u8840\u9240: 1. \u7a69\u5b9a\u7d30\u80de\u819c (Stabilize)","items",A.a([A.c(["drug","Calcium Gluconate","dose","**1-2 amp (10-20mL) IV** run > 3min\n*\u4f5c\u7528\u5feb\u4f46\u77ed (1hr)*"],n,n),A.c(["drug","\u8b66\u793a","dose","[\u8b66\u793a] \u82e5\u75c5\u4eba\u4f7f\u7528 **Digoxin** \u9700\u6975\u5ea6\u5c0f\u5fc3 (\u6050\u8a98\u767c\u4e2d\u6bd2)\uff0c\u9664\u975e\u7015\u6b7b\u5426\u5247\u907f\u514d\u4f7f\u7528\u6216\u6975\u6162\u901f\u7d66\u4e88"],n,n)],m)],n,l),A.c(["category","A. \u9ad8\u8840\u9240: 2. \u4fc3\u9032\u5167\u79fb (Shift)","items",A.a([A.c(["drug","Insulin + Glucose","dose","**10u RI + 50mL D50W** IV push\n*\u82e5\u8840\u7cd6 >250 \u53ef\u55ae\u7d66 RI*"],n,n),A.c(["drug","Inhalation","dose","Salbutamol (Albuterol) 10-20mg \u5438\u5165 (Nebulizer)"],n,n),A.c(["drug","Bicarbonate","dose","1 amp IV (\u50c5\u5728 **\u4ee3\u8b1d\u6027\u9178\u4e2d\u6bd2** \u6642\u6709\u6548)"],n,n)],m)],n,l),A.c(["category","A. \u9ad8\u8840\u9240: 3. \u79fb\u9664 (Remove)","items",A.a([A.c(["drug","Diuretics","dose","Lasix 40-80 mg IV (\u9700\u78ba\u8a8d\u6709\u5c3f)"],n,n),A.c(["drug","Resins (\u5438\u9644\u5291)","dose","Kalimate/Kayexalate 15-30g PO \u6216 50g Enema (\u704c\u8178)\nLokelma (\u65b0\u578b) 1\u5305 QD"],n,n),A.c(["drug","Dialysis","dose","\u7dca\u6025\u6d17\u814e (\u7121\u5c3f\u6216\u85e5\u7269\u7121\u6548\u6642)"],n,n)],m)],n,l),A.c(["category","B. \u4f4e\u8840\u9240 (Hypokalemia)","items",A.a([A.c(["drug","\u8f15\u5ea6 (3.0-3.5)","dose","**\u53e3\u670d\u512a\u5148**: K-Glu \u6216 Slow-K 10-20 mEq PO TID"],n,n),A.c(["drug","\u4e2d\u5ea6 (2.5-3.0)","dose","\u53e3\u670d 20 mEq + **KCl 20 mEq in 500mL NS** IV drip"],n,n),A.c(["drug","\u91cd\u5ea6 (<2.5) / \u6709\u75c7\u72c0","dose","\u7a4d\u6975\u975c\u8108\u8f38\u6ce8: **KCl 10-20 mEq in 100mL NS** run > 1hr"],n,n),A.c(["drug","\u8f38\u6ce8\u9650\u901f (\u91cd\u8981!)","dose","\u5468\u908a\u8840\u7ba1: Max **10-20 mEq/hr** (\u592a\u5feb\u6703\u75db/\u5fc3\u5f8b\u4e0d\u6574)\n\u6fc3\u5ea6: \u6bcf\u516c\u5347\u4e0d\u5b9c\u8d85\u904e 40-60 mEq"],n,n),A.c(["drug","\u88dc\u5145\u9382 (Mg)","dose","\u82e5 Mg \u4f4e\u4e0b\u52d9\u5fc5\u88dc\u5145\uff0c\u5426\u5247 K \u88dc\u4e0d\u8d77\u4f86 (**MgSO4 1-2g IV**)"],n,n)],m)],n,l),A.c(["category","C. \u7279\u6b8a\u60c5\u6cc1: TPP","items",A.a([A.c(["drug","\u7532\u72c0\u817a\u6bd2\u6027\u9031\u671f\u6027\u9ebb\u75fa","dose","\u5e38\u898b\u65bc\u4e9e\u88d4\u7537\u6027\u3002**\u907f\u514d\u5927\u91cf\u88dc\u9240** (\u6703\u53cd\u5f48\u6027\u9ad8\u8840\u9240)\u3002\n\u6cbb\u7642\u91cd\u9ede\u70ba\u63a7\u5236\u7532\u72c0\u817a\u4ea2\u9032 + \u975e\u9078\u64c7\u6027 Beta-blocker (Propranolol)"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83e\uddea \u5be6\u9a57\u5ba4\u6578\u503c\u7570\u5e38","id","protocol_sodium_01","lastUpdate","2026/01/29","title","\u9209\u96e2\u5b50\u7570\u5e38 (Sodium)","subtitle","On Call: \u9451\u5225\u3001U_osm & \u77ef\u6b63\u901f\u5ea6","content",A.c(["intro","### \u8655\u7f6e\u539f\u5247\n1. **\u6838\u5fc3\u539f\u5247**\uff1a\u9209\u7570\u5e38 = \u6c34\u5206\u5e73\u8861\u554f\u984c\u3002\u6cbb\u7642\u91cd\u9ede\u662f\u300c\u901f\u5ea6\u63a7\u5236\u300d\u3002\n2. **\u77ef\u6b63\u9650\u901f**\uff1a\u6bcf\u65e5\u8b8a\u5316 **< 8 mEq/L** (\u9632\u8166\u6c34\u816b/ODS)\u3002\n3. **\u4f4e\u8840\u9209\u9451\u5225**\uff1a\n   * **P_osm**: \u6b63\u5e38/\u9ad8 (\u9ad8\u8840\u7cd6?), \u4f4e (\u771f\u6027\u4f4e\u8840\u9209)\n   * **U_osm**: <100 (\u559d\u592a\u591a\u6c34/Beer potomania), >300 (ADH \u4f5c\u7528\u4e2d)\n   * **U_Na**: <10 (\u5fc3\u8870/\u809d\u786c\u5316/\u812b\u6c34), >20 (\u5229\u5c3f\u5291/\u814e\u6d41\u5931/SIADH)","diagnosis",A.a([r,"[\u516c\u5f0f] **Free Water Deficit**: (Na-140)/140 * TBW","[\u9451\u5225] **SIADH**: Euvolemic + U_Na > 20 + U_osm \u9ad8\u3002\u6392\u9664\u7532\u72c0\u817a/\u814e\u4e0a\u817a\u4f4e\u4e0b\u3002","[\u9451\u5225] **CSW (\u8166\u8017\u9e7d)**: Hypovolemic (\u812b\u6c34) + U_Na \u9ad8\u3002\u9700\u88dc\u6c34\u88dc\u9e7d\u3002"],o),"treatment",A.a([A.c(["category","A. \u4f4e\u8840\u9209 (Hyponatremia)","items",A.a([A.c(["drug","\u56b4\u91cd\u75c7\u72c0 (\u7672\u7647/\u660f\u8ff7)","dose","**3% Hypertonic Saline** 100mL IV bolus (\u76ee\u6a19\u5347 4-6 mEq)"],n,n),A.c(["drug","\u4f4e\u8840\u5bb9 (\u812b\u6c34)","dose","**Normal Saline** (\u6062\u5fa9\u8840\u5bb9\u5f8c Na \u6703\u5feb\u901f\u4e0a\u5347\uff0c\u9700\u5bc6\u5207\u8ffd\u8e64)"],n,n),A.c(["drug","\u9ad8\u8840\u5bb9 (CHF/Liver)","dose","**\u9650\u6c34** + **Lasix** (Loop diuretic)"],n,n),A.c(["drug","SIADH","dose","**\u9650\u6c34** (<800mL)\u3002\u9e7d\u7247 (Salt tab) \u6216 Tolvaptan"],n,n)],m)],n,l),A.c(["category","B. \u9ad8\u8840\u9209 (Hypernatremia)","items",A.a([A.c(["drug","\u4f4e\u8840\u5bb9 (Shock)","dose","\u5148 **NS** \u7a69\u5b9a\u8840\u58d3\uff0c\u518d\u63db **0.45%S** \u6216 **D5W**"],n,n),A.c(["drug","\u55ae\u7d14\u5931\u6c34 (DI/\u8001\u4eba)","dose","\u88dc **Free Water** (D5W / \u53e3\u670d\u6c34)\u3002\u8a08\u7b97\u7f3a\u6c34\u91cf\u5206 48hr \u88dc\u56de"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83e\uddea \u5be6\u9a57\u5ba4\u6578\u503c\u7570\u5e38","id","protocol_acid_base_01","lastUpdate","2026/01/29","title","\u9178\u9e7c\u5931\u8861 (Acid-Base)","subtitle","On Call: \u5224\u8b80\u6d41\u7a0b\u3001UAG & Delta Ratio","content",A.c(["intro","### \u5224\u8b80\u4e09\u90e8\u66f2\n1. **pH**: \u9178 (<7.35) vs \u9e7c (>7.45)\n2. **PCO2**: \u547c\u5438\u6027 (\u7570\u5e38) vs \u4ee3\u8b1d\u6027 (\u6b63\u5e38/\u4ee3\u511f)\n3. **Anion Gap (AG)**: \u82e5\u4ee3\u9178\u5fc5\u7b97\u3002\u6b63\u5e38 12\xb12\u3002\n   * **AG \u4e0a\u5347**: \u627e GOLD MARK (Glycols, Oxyproline, Lactate, Methanol, Aspirin, Renal, Ketoacidosis)\u3002\n   * **AG \u6b63\u5e38**: \u7b97 **Urine AG (UAG)**\u3002\n     * \u8ca0\u503c: \u8179\u7009 (\u8178\u9053\u6d41\u5931)\n     * \u6b63\u503c: RTA (\u814e\u5c0f\u7ba1\u9178\u4e2d\u6bd2)","diagnosis",A.a(["[\u516c\u5f0f] **Anion Gap**: Na - (Cl + HCO3)","[\u516c\u5f0f] **Delta Ratio**: (AG-12) / (24-HCO3)\u3002<0.4 (NAGMA), 1-2 (\u5355\u7eaf\u9ad8AG), >2 (\u4ee3\u9e7c)","[\u516c\u5f0f] **Winters**: PCO2 = 1.5 x HCO3 + 8 \xb1 2 (\u4ee3\u9178\u4ee3\u511f)","[\u5371\u6025] **pH < 7.1**: \u56b4\u91cd\u9178\u4e2d\u6bd2\uff0c\u8003\u616e Bicarb \u6cbb\u7642 (\u5c24\u5176\u662f AKI/RTA)","[\u9451\u5225] **\u4ee3\u9e7c (Met. Alk)**: \u6e2c\u5c3f\u6c2f (U_Cl)\u3002<25 (\u5614\u5410/\u5229\u5c3f\u5291), >40 (\u9ad8\u919b\u56fa\u916e/\u4f4e\u9240)"],o),"treatment",A.a([A.c(["category","A. \u4ee3\u8b1d\u6027\u9178\u4e2d\u6bd2 (MA)","items",A.a([A.c(["drug","\u6cbb\u7642\u6839\u672c","dose","DKA (\u80f0\u5cf6\u7d20), \u4f11\u514b (\u5faa\u74b0), \u5c3f\u6bd2 (\u6d17\u814e)"],n,n),A.c(["drug","Bicarbonate","dose","**pH < 7.1-7.2** \u6642\u8003\u616e\u30021-3 amp in D5W\u6ef4\u6ce8\u3002\n*\u6ce8\u610f: \u907f\u514d\u8207 Ca \u540c\u7ba1\u8def (\u6c88\u6fb1)*"],n,n)],m)],n,l),A.c(["category","B. \u4ee3\u8b1d\u6027\u9e7c\u4e2d\u6bd2 (M. Alk)","items",A.a([A.c(["drug","Saline Responsive","dose","\u7d66\u4e88 **Normal Saline** + **KCl** (\u4f4e\u9240\u6703\u7dad\u6301\u4ee3\u9e7c)"],n,n),A.c(["drug","Saline Resistant","dose","**Acetazolamide** (Diamox) 250mg PO/IV (\u6392 HCO3)"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83e\uddea \u5be6\u9a57\u5ba4\u6578\u503c\u7570\u5e38","id","protocol_dka_hhs_01","lastUpdate","2026/01/29","title","\u9ad8\u8840\u7cd6\u6025\u75c7 (DKA/HHS)","subtitle","On Call: SC vs Pump \u6ce1\u6cd5 & \u95dc\u9589\u6642\u6a5f","content",A.c(["intro","### \u8655\u7f6e\u539f\u5247\n1. **\u6838\u5fc3\u76ee\u6a19**\uff1a\u88dc\u6c34 > \u964d\u7cd6\u3002\u5be7\u53ef\u9ad8\u8840\u7cd6 (180-200) \u4e5f\u4e0d\u8981\u4f4e\u8840\u7cd6\u3002\n2. **\u85e5\u7269\u9078\u64c7**\uff1aNovorapid \u7f3a\u8ca8\u53ef\u6539 **Apidra** (Duration \u7a0d\u77ed\uff0c\u5291\u91cf\u76f8\u540c)\u3002\n3. **\u8a3a\u65b7\u6a19\u6e96**\uff1a\n   * **DKA**: BS>200 + Ketone(+) + Acidosis (pH<7.3)\n   * **HHS**: BS>600 + Osm>320 (\u901a\u5e38 BS>600 Osm \u5c31\u9ad8\u4e86)\n4. **\u91cd\u8981\u89c0\u5ff5**\uff1a\n   * DKA/HHS \u53ef\u80fd\u5408\u4f75\u767c\u751f\u3002\n   * **HHS** \u8840\u7cd6\u6b63\u5e38\u53ef\u76f4\u63a5 Off pump\u3002\n   * **DKA** \u9700\u7b49 **Anion Gap \u6b63\u5e38** \u6216 **Ketone \u6d88\u5931** \u624d\u80fd Off (\u82e5\u8840\u7cd6\u4f4e\u4f46 Ketone \u4ecd\u5728 -> \u88dc D5W \u7e7c\u7e8c Run Pump)\u3002","diagnosis",A.a([r,"[\u6aa2\u9a57] Blood Ketone (\u52ff\u9a57 Urine! \u53cd\u61c9\u6162), ABG/VBG, K (Q4-6H), Sugar (Q1-2H)","[\u8655\u7f6e] **NPO**: \u8840\u7cd6\u90fd\u9019\u6a23\u4e86\u5225\u518d\u5403\u4e86","[\u8655\u7f6e] **Hydration**: \u7b2c\u4e00\u5c0f\u6642\u7d66 1L (15-20ml/kg) 0.9% NS\n*DKA \u7f3a\u6c34 3-5L; HHS \u7f3a\u6c34 8-10L (\u8001\u4eba/\u5fc3\u8870\u7aed\u8acb\u659f\u914c)*"],o),"treatment",A.a([A.c(["category","A. \u8f15\u4e2d\u5ea6 DKA (pH >= 7.0)","items",A.a([A.c(["drug","SC Protocol (\u514d Pump)","dose","\u8b49\u64da: Diabetes Care 2004\n1. **Stat**: Novorapid/Apidra 0.3 U/kg SC\n2. **Maintain**: 0.2 U/kg SC q2h\n3. **\u7576 BS < 250**: \u6539 D5-0.45%S + 0.1 U/kg SC q2h"],n,n)],m)],n,l),A.c(["category","B. \u91cd\u5ea6 DKA / HHS (Insulin Pump)","items",A.a([A.c(["drug","\u6ce1\u6cd5 (1:1)","dose","**100U RI (\u6216 Novorapid Vial) + 100mL NS**\n*\u6ce8\u610f\u85e5\u540d\u7d50\u5c3e\u662f Vial \u4e0d\u662f PC*"],n,n),A.c(["drug","IV Push (Loading)","dose","DKA 6U / HHS 10U (\u8996\u60c5\u6cc1\u53ef\u7701\u7565)"],n,n),A.c(["drug","Run \u6cd5 1 (Titration)","dose","BS 120-180: 1 cc/hr\nBS 181-240: 2 cc/hr\nBS 241-300: 3 cc/hr\nBS 301-360: 4 cc/hr\nBS 361-400: 5 cc/hr\nBS > 400: Call Duty"],n,n),A.c(["drug","Run \u6cd5 2 (Continuous)","dose","Maintain: **0.1 U/kg/hr**\nBS < 250 \u6642: \u6539 D5-0.45%S + \u6e1b\u901f\u81f3 0.05 U/kg/hr"],n,n)],m)],n,l),A.c(["category","C. \u9240\u96e2\u5b50 (Potassium)","items",A.a([A.c(["drug","K < 3.0","dose","\ud83d\udea8 **Hold Insulin Pump!** \u5148\u88dc\u9240\u518d\u8aaa (\u9632\u5fc3\u5f8b\u4e0d\u6574)"],n,n),A.c(["drug","K 3.0-4.0","dose","Insulin \u4f7f\u7528\u4e2d\u9810\u671f\u6703\u964d\uff0c**\u9810\u9632\u6027\u88dc\u9240** (\u5468\u908a IV / \u53e3\u670d)"],n,n)],m)],n,l),A.c(["category","D. \u4e00\u822c\u8840\u7cd6\u63a7\u5236 (\u4f4f\u9662)","items",A.a([A.c(["drug","Stat Control","dose","BS > 300 \u518d\u8655\u7406 (200\u591a\u53ef OBS)\nNovorapid/Apidra \u4f9d\u6ed1\u52d5\u91cf\u8868 (Scale) \u7d66\u4e88"],n,n),A.c(["drug","SC\u8d77\u59cb\u5291\u91cf","dose","TDD = \u9ad4\u91cd * 0.5\n50% Basal (Lantus/Toujeo) + 50% Meal (Novorapid TID)"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83e\uddea \u5be6\u9a57\u5ba4\u6578\u503c\u7570\u5e38","id","chap_endo_04","title","\u9223\u8cea\u4ee3\u8b1d (Calcium)","subtitle","Hypercalcemia & Hypocalcemia","content",A.c(["diagnosis",A.a(["HyperCa: \u75c7\u72c0 Stones, Bones, Groans","HypoCa: Chvostek's / Trousseau's signs"],o),"treatment",A.a([A.c(["category","\u9ad8\u8840\u9223 (Hypercalcemia)","items",A.a([A.c(["drug","Fluids","dose","NS 200-500 mL/hr (\u9996\u9078)"],n,n),A.c(["drug","Calcitonin","dose","4 IU/kg SC q12h (\u901f\u6548)"],n,n),A.c(["drug","Bisphosphonate","dose","Zoledronic acid 4mg IV (\u9577\u6548)"],n,n)],m)],n,l),A.c(["category","\u4f4e\u8840\u9223 (Hypocalcemia)","items",A.a([A.c(["drug","Acute Sx","dose","Ca-Gluconate 1-2g IV over 10-20min"],n,n)],m)],n,l)],k)],n,i)],n,j),A.c(["group","\u2764\ufe0f \u5fc3\u81df\u5167\u79d1","id","protocol_ecg_01","title","\u5fc3\u96fb\u5716\u5224\u8b80 (ECG)","subtitle","STEMI \u6a19\u6e96\u3001Sgarbossa & \u5371\u6025\u6ce2\u5f62","content",A.c(["intro","### STEMI \u5224\u8b80\u6a19\u6e96 (ST Elevation)\n* **V2-V3**: \u7537\u226540\u6b72 >2mm; \u7537<40\u6b72 >2.5mm; \u5973 >1.5mm\n* **\u5176\u4ed6\u5c0e\u6975**: >1mm (\u9700\u5169\u500b\u76f8\u9130\u5c0e\u6975)\n* **LBBB (Sgarbossa)**: \u540c\u5411 ST \u4e0a\u5347 \u22651mm; \u540c\u5411 ST \u4e0b\u964d \u22651mm (V1-V3); \u53cd\u5411 ST \u4e0a\u5347 \u226525% S\u6ce2\n\n### \u5371\u6025\u5fb5\u8c61 (STEMI Equivalent)\n1. **Wellens'**: V2-V3 \u96d9\u76f8 T \u6216 \u6df1\u5012\u7f6e T (LAD \u56b4\u91cd\u72f9\u7a84)\u3002\n2. **De Winter's**: ST \u4e0a\u659c\u58d3\u4f4e + \u9ad8\u5c16 T (LAD \u963b\u585e)\u3002\n3. **Posterior MI**: V1-V3 ST \u4e0b\u964d (\u93e1\u50cf\u8b8a\u5316)\u3002","diagnosis",A.a(["[\u5fc3\u5305\u819c\u708e] \u5ee3\u6cdb ST \u4e0a\u5347 + PR \u4e0b\u964d\u3002**V6 ST/T \u9ad8\u5ea6\u6bd4 > 0.25**","[\u5fc3\u5305\u586b\u585e] **Electrical Alternans** (QRS \u5ffd\u5927\u5ffd\u5c0f), Low voltage","[\u9ad8\u8840\u9240] Peaked T -> P \u6d88\u5931 -> QRS \u8b8a\u5bec -> Sine wave","[\u80ba\u6813\u585e] S1Q3T3 (\u5c11\u898b\u4f46\u7279\u7570), RV Strain (V1-V4 T inversion)"],o),"treatment",A.a([A.c(["category","\u8655\u7f6e\u539f\u5247","items",A.a([A.c(["drug","STEMI","dose","\u555f\u52d5\u5c0e\u7ba1\u5ba4 (Code AMI)\u3002\u76ee\u6a19 Door-to-Balloon < 90min"],n,n),A.c(["drug","LBBB / De Winter","dose","\u8996\u540c STEMI \u8655\u7406\u3002\u7167\u6703\u5fc3\u81df\u79d1"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\u2764\ufe0f \u5fc3\u81df\u5167\u79d1","id","protocol_acs_01","lastUpdate","2026/01/29","title","\u6025\u6027\u51a0\u5fc3\u75c7 (ACS)","subtitle","PCI \u6642\u6a5f\u3001MONA \u6cbb\u7642 & \u8853\u524d\u505c\u85e5","content",A.c(["intro","### \u4ecb\u5165\u6cbb\u7642\u6642\u6a5f (PCI Timing)\n1. **STEMI**: \u767c\u4f5c 12hr \u5167 -> Primary PCI (90min \u5167)\u3002\u82e5\u8f49\u9001\u9700 >120min \u5247\u8003\u616e\u6eb6\u6813\u3002\n2. **NSTE-ACS**:\n   * **Immediate (<2hr)**: \u4f11\u514b\u3001\u5fc3\u8870\u7aed\u3001\u9811\u56fa\u5fc3\u7d5e\u75db\u3001\u81f4\u547d\u5fc3\u5f8b\u4e0d\u6574\u3002\n   * **Early (<24hr)**: GRACE > 140\u3001Troponin (+)\u3001ST \u52d5\u614b\u8b8a\u5316\u3002\n\n### \u8853\u524d\u505c\u85e5 (Anti-platelet)\n* **Ticagrelor / Prasugrel**: \u505c 5-7 \u5929\u3002\n* **Clopidogrel**: \u505c 5 \u5929\u3002","diagnosis",A.a(["[\u7981\u5fcc] **RV Infarct** (\u4e0b\u58c1/\u5f8c\u58c1 MI): **\u7981\u7528 NTG/Morphine** (Preload \u654f\u611f)\uff01","[\u7981\u5fcc] **HOCM / Severe AS**: **\u7981\u7528 NTG** (\u8840\u7ba1\u64f4\u5f35 -> \u4f11\u514b)","[\u9451\u5225] **Takotsubo**: \u58d3\u529b\u6027\u5fc3\u808c\u75c5\u8b8a\uff0cTrop-I \u6703\u5347\uff0c\u9700\u505a\u5c0e\u7ba1\u6392\u9664\u963b\u585e"],o),"treatment",A.a([A.c(["category","A. \u6025\u6027\u671f\u85e5\u7269 (MONA)","items",A.a([A.c(["drug","Aspirin","dose","**300 mg (3#) \u56bc\u788e** (\u6700\u91cd\u8981! \u964d\u4f4e\u6b7b\u4ea1\u7387)"],n,n),A.c(["drug",s,"dose","0.6 mg SL q5m (Max 3\u6b21)\u3002**SBP<90 \u6216 RV MI \u7981\u7528**"],n,n),A.c(["drug","P2Y12 Inhibitor","dose","**Ticagrelor** 180mg (\u9996\u9078) \u6216 **Clopidogrel** 300-600mg"],n,n),A.c(["drug","Heparin","dose","60 U/kg IV bolus -> 12 U/kg/hr (\u7dad\u6301 aPTT 1.5-2\u500d)"],n,n)],m)],n,l),A.c(["category","B. \u8853\u5f8c\u85e5\u7269 (DAPT)","items",A.a([A.c(["drug","Aspirin + P2Y12","dose","\u81f3\u5c11\u7dad\u6301 12 \u500b\u6708 (\u8996\u51fa\u8840\u98a8\u96aa\u8abf\u6574)"],n,n),A.c(["drug","Statins","dose","\u9ad8\u5f37\u5ea6 (Atorvastatin 40-80mg) \u76ee\u6a19 LDL < 55"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\u2764\ufe0f \u5fc3\u81df\u5167\u79d1","id","protocol_htn_01","lastUpdate","2026/01/28","title","\u9ad8\u8840\u58d3 (Hypertension)","subtitle","On Call: ESC/AHA \u6307\u5f15 & \u5e38\u7528\u85e5\u7269","content",A.c(["intro","\u8655\u7f6e\u539f\u5247\uff1a**\u6cbb\u7642\u75c5\u4eba\u800c\u975e\u6cbb\u7642\u6578\u5b57**\u3002\u9664\u9ad8\u8840\u58d3\u6025\u75c7\u5916\uff0c\u907f\u514d\u77ed\u6548\u820c\u4e0b\u85e5\u7269 (Nifedipine SL) \u4ee5\u9632\u4e2d\u98a8\u3002\u4ee5\u4e0b\u4f9d\u64da **ESC 2024 & AHA 2022** \u6307\u5f15\u6574\u7406\u3002","diagnosis",A.a(["[\u7b56\u7565] \u5e74\u8f15\u4eba (<50\u6b72): **ACEI/ARB** \u9996\u9078 (*\u964d\u8166\u58d3\u512a*)","[\u7b56\u7565] \u8001\u4eba (>65\u6b72): **CCB/Thiazide** \u9996\u9078","[\u7b56\u7565] \u7cd6\u5c3f\u75c5/CKD: **ACEI/ARB** (\u76e3\u6e2c K/Cr, eGFR<30\u6e1b\u91cf)","[\u7b56\u7565] CAD: **\u03b2-blocker + ACEI/ARB** (\u907f\u514d\u55ae\u7528 CCB)","[\u7b56\u7565] \u4e2d\u98a8\u904e: **Thiazide + ACEI/ARB** (Combine therapy)","[\u7b56\u7565] Afib: **\u03b2-blocker** \u6216 **Non-DHP CCB** (Rate control)","[\u5b55\u5a66] **Labetalol** (\u9996\u9078) \u6216 Methyldopa; [\u8b66\u793a] **\u7981\u7528 ACEI/ARB**","[\u5371\u6025] \u9ad8\u8840\u58d3\u8166\u75c5\u8b8a: **\u610f\u8b58\u6539\u8b8a**, **\u8996\u4e73\u982d\u6c34\u816b**","[\u5371\u6025] \u4e3b\u52d5\u8108\u525d\u96e2: **\u6495\u88c2\u75db**, **\u5169\u624b\u8840\u58d3\u5dee >20 mmHg**","[\u5371\u6025] \u80ba\u6c34\u816b/MI: **\u547c\u5438\u7a98\u8feb**, **\u80f8\u75db**"],o),"treatment",A.a([A.c(["category","A. \u53e3\u670d\u55ae\u65b9 (Single Agents)","items",A.a([A.c(["drug","Norvasc (Amlodipine)","dose","5mg 1# QD (**\u503c\u73ed\u795e\u85e5**, \u4e0d\u77e5\u958b\u5565\u5c31\u958b\u9019\u500b; \u6ce8\u610f\u4e0b\u80a2\u6c34\u816b)"],n,n),A.c(["drug","Concor (Bisoprolol)","dose","1.25-5mg QD (**\u03b21 selective**, \u9069\u5408\u964d HR; \u7559\u610f\u5fc3\u8df3\u904e\u6162)"],n,n),A.c(["drug","Adalat CC (Nifedipine)","dose","30/60mg QD (*\u9577\u6548\u7de9\u91cb\u578b*, \u52ff\u78e8\u7c89)"],n,n),A.c(["drug","Herbesser (Diltiazem)","dose","30/60mg TID-QID (**Non-DHP**, \u964d\u5fc3\u8df3)"],n,n),A.c(["drug","Doxaben (Doxazosin)","dose","XL 4mg (\u9577\u6548) \u6216 2mg (\u901f\u6548); **\u03b1-blocker**, \u6ce8\u610f\u59ff\u52e2\u6027\u4f4e\u8840\u58d3"],n,n),A.c(["drug","Aldactone (Spironolactone)","dose","25mg QD (**\u4fdd\u9240\u5229\u5c3f\u5291**, \u96e3\u6cbb\u6027\u9ad8\u8840\u58d3)"],n,n)],m)],n,l),A.c(["category","B. \u53e3\u670d\u8907\u65b9 (Combination)","items",A.a([A.c(["drug","Exforge (ARB+CCB)","dose","5/80mg \u6216 5/160mg (Max 2#)"],n,n),A.c(["drug","Sevikar (ARB+CCB)","dose","5/20mg (Max 2#)"],n,n),A.c(["drug","Amtrel (ACEI+CCB)","dose","5/10mg (Max 2#)"],n,n),A.c(["drug","Co-Diovan (ARB+Thiazide)","dose","80/12.5mg (Max 4#)"],n,n),A.c(["drug","Exforge HCT (\u4e09\u5408\u4e00)","dose","5/160/12.5mg (Max 2#)"],n,n)],m)],n,l),A.c(["category","C. \u91dd\u5291\u6025\u7528 (IV Push)","items",A.a([A.c(["drug","Trandate (Labetalol)","dose","0.5-1 amp IV push (**\u03b1+\u03b2 blocker**, \u6703\u964d HR, \u5efa\u8b70\u534a\u652f\u7d66)"],n,n),A.c(["drug","Perdipine (Nicardipine)","dose","3-5 mg IV push (\u8f03\u4e0d\u5f71\u97ff HR, \u53ef\u5148 3mg try)"],n,n)],m)],n,l),A.c(["category","D. \u9023\u7e8c\u8f38\u6ce8 (IV Pump)","items",A.a([A.c(["drug","Nicardipine Pump","dose","4 amp (40mg) in 100mL NS -> **Run 10 mL/hr** (Stroke SBP<140)"],n,n),A.c(["drug","NTG (Millisrol) \u539f\u6db2","dose","Run 1.2~24 cc/hr\n* \u8d77\u59cb **1.2 cc/hr**\n* Q3-5min \u4e0a\u8abf **0.6 cc/hr**"],n,n),A.c(["drug","NTG Pre-mixed (\u63a8\u85a6)","dose","**50mg/250mL D5W**\n* \u8d77\u59cb **1.5 mL/hr**\n* Q3-5min \u4e0a\u8abf **1.5 mL/hr**\n* Max 60 mL/hr (\u901a\u5e38 12 mL/hr \u5373\u53ef)"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\u2764\ufe0f \u5fc3\u81df\u5167\u79d1","id","protocol_hf_acute","lastUpdate","2026/01/29","title","\u5fc3\u8870\u7aed\u7e3d\u8ad6 (Acute HF)","subtitle","\u5206\u985e\u3001\u8a3a\u65b7 & \u6025\u6027\u671f\u8655\u7f6e","content",A.c(["intro","### \u8a3a\u65b7\u8207\u5206\u985e (LVEF)\n* **HFrEF**: EF \u2264 40% (\u56db\u67f1\u85e5\u7269\u6cbb\u7642\u6838\u5fc3)\n* **HFmrEF**: EF 41-49%\n* **HFpEF**: EF \u2265 50%\n\n### \u6025\u6027\u671f\u539f\u5247 (CHAMPIT)\n\u9700\u6392\u9664\u81f4\u547d\u53ef\u9006\u56e0\u5b50\uff1a**C** (ACS), **H** (HTN crisis), **A** (Arrhythmia), **M** (Mechanical), **P** (PE), **I** (Infection), **T** (Tamponade)\u3002","diagnosis",A.a(["\ud83e\uddea [BNP] NT-proBNP < 125 pg/mL \u53ef\u6392\u9664\u5fc3\u8870\u7aed","\u26a1\ufe0f [\u5206\u578b] **Warm & Wet** (\u6700\u5e38\u898b): \u704c\u6d41\u597d\u4f46\u6c34\u816b -> \u5229\u5c3f\u5291/\u8840\u7ba1\u64f4\u5f35","\u26a1\ufe0f [\u5206\u578b] **Cold & Wet**: \u4f11\u514b\u4e14\u6c34\u816b -> \u5f37\u5fc3\u5291 (Inotrope) + \u5229\u5c3f\u5291","\u26a1\ufe0f [\u5206\u578b] **Cold & Dry**: \u4f4e\u8840\u5bb9/\u4f11\u514b -> \u8f38\u6db2\u6e2c\u8a66","\u2622\ufe0f [\u5f71\u50cf] CXR (\u80ba\u6c34\u816b/\u5fc3\u64f4\u5927), Echo (EF/\u74e3\u819c/Wall motion)"],o),"treatment",A.a([A.c(["category","A. \u6025\u6027\u671f\u85e5\u7269 (Acute)","items",A.a([A.c(["drug","Diuretics (Class I)","dose","**Lasix** IV push (\u5291\u91cf\u70ba\u53e3\u670d 1-2.5\u500d)\n\u76ee\u6a19: \u89e3\u9664\u5145\u8840 (Congestion)"],n,n),A.c(["drug","Vasodilators","dose","**NTG** (\u82e5 SBP > 110): \u964d\u4f4e Preload/Afterload\n\u7de9\u89e3\u5598\u75c7\u72c0\u512a\u65bc\u5229\u5c3f\u5291"],n,n),A.c(["drug","Inotropes","dose","**Dobutamine / Milrinone**\n\u50c5\u7528\u65bc Cold (\u4f4e\u704c\u6d41/\u4f11\u514b) \u75c5\u4eba\uff0c\u52ff\u5e38\u898f\u4f7f\u7528"],n,n)],m)],n,l),A.c(["category","B. \u547c\u5438\u652f\u6301","items",A.a([A.c(["drug","BiPAP (NIV)","dose","\u547c\u5438\u7a98\u8feb (RR>25, SpO2<90) \u5118\u65e9\u4f7f\u7528\n\u53ef\u964d\u4f4e\u63d2\u7ba1\u7387"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\u2764\ufe0f \u5fc3\u81df\u5167\u79d1","id","protocol_hf_chronic","lastUpdate","2026/01/29","title","\u6162\u6027\u5fc3\u8870\u7aed (Chronic HF)","subtitle","GDMT \u56db\u67f1\u85e5\u7269 & \u5291\u91cf\u6ef4\u5b9a","content",A.c(["intro","### HFrEF \u56db\u67f1\u85e5\u7269 (Four Pillars)\n1. **ARNI** (\u9996\u9078) \u6216 ACEI/ARB\n2. **Beta-blocker** (\u7a69\u5b9a\u5f8c\u7d66\u4e88)\n3. **MRA** (Spironolactone)\n4. **SGLT2i** (Dapa/Empagliflozin)\n\n*\u76ee\u6a19\uff1a\u76e1\u65e9\u555f\u52d5\u4e26\u6ef4\u5b9a\u81f3 Target Dose*","diagnosis",A.a(["[\u8ffd\u8e64] \u6bcf\u65e5\u9ad4\u91cd, I/O, \u75c7\u72c0 (\u7aef\u5750\u547c\u5438/PND)","[\u51fa\u9662] \u9700\u7121\u5145\u8840 (Congestion free) \u4e14\u5df2\u8abf\u6574 GDMT"],o),"treatment",A.a([A.c(["category","1. ARNI / ACEI / ARB","items",A.a([A.c(["drug","ARNI (Entresto)","dose","Start: **49/51 mg BID** (\u82e5\u7531 ACEI \u8f49\u9700\u505c 36hr)\nTarget: 97/103 mg BID"],n,n),A.c(["drug","ACEI (Ramipril)","dose","Start: 1.25-2.5 mg QD\nTarget: 10 mg QD"],n,n),A.c(["drug","ARB (Valsartan)","dose","Start: 40 mg BID\nTarget: 160 mg BID"],n,n)],m)],n,l),A.c(["category","2. Beta-blockers (HFrEF)","items",A.a([A.c(["drug","Bisoprolol (Concor)","dose","Start: 1.25 mg QD\nTarget: 10 mg QD"],n,n),A.c(["drug","Carvedilol","dose","Start: 3.125 mg BID\nTarget: 25 mg BID"],n,n),A.c(["drug","Metoprolol Succ.","dose","Start: 12.5-25 mg QD\nTarget: 200 mg QD (\u9700\u7528\u9577\u6548\u578b)"],n,n)],m)],n,l),A.c(["category","3. MRA & 4. SGLT2i","items",A.a([A.c(["drug","Spironolactone","dose","Start: 12.5-25 mg QD\nTarget: 50 mg QD (\u76e3\u6e2c K+ & Cr)"],n,n),A.c(["drug","SGLT2i (For All)","dose","**Dapa / Empagliflozin** 10 mg QD\n*\u7121\u9700\u6ef4\u5b9a\uff0cHFrEF/HFpEF \u7686\u53ef\u7528*"],n,n)],m)],n,l),A.c(["category","\u5176\u4ed6\u85e5\u7269","items",A.a([A.c(["drug","Ivabradine","dose","SR + HR>70 + Max BB used\n5-7.5 mg BID"],n,n),A.c(["drug","Digoxin","dose","0.125-0.25 mg QD (\u75c7\u72c0\u63a7\u5236/AF Rate control)\n\u76ee\u6a19\u6fc3\u5ea6 0.5-0.9 (\u4f4e\u5291\u91cf\u70ba\u4f73)"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\u2764\ufe0f \u5fc3\u81df\u5167\u79d1","id","protocol_structural_heart","title","\u7d50\u69cb\u6027\u5fc3\u81df\u8207\u5927\u8840\u7ba1","subtitle","\u4e3b\u52d5\u8108\u525d\u96e2\u3001\u5fc3\u5305\u586b\u585e & \u74e3\u819c\u7981\u5fcc","content",A.c(["intro","### \u5371\u6025\u91cd\u75c7\u8655\u7f6e\n1. **\u4e3b\u52d5\u8108\u525d\u96e2 (Aortic Dissection)**: \u76ee\u6a19 SBP 100-120, HR < 60\u3002\n   * **\u7d66\u85e5\u9806\u5e8f**: \u5148\u7d66 Beta-blocker (\u964d\u5fc3\u8df3) -> \u518d\u7d66 Vasodilator (\u964d\u58d3)\u3002**\u9806\u5e8f\u932f\u6703\u589e\u52a0\u526a\u529b (Shear stress)!**\n2. **\u5fc3\u5305\u586b\u585e (Tamponade)**: Beck's Triad (\u4f4e\u8840\u58d3/\u9838\u975c\u8108\u6012\u5f35/\u5fc3\u97f3\u9059\u9060)\u3002\n   * **\u7981\u5fcc**: **\u4e0d\u53ef\u7d66\u5229\u5c3f\u5291** (\u9664\u975e\u80ba\u6c34\u816b)\uff0c\u9700\u8f38\u6db2\u7dad\u6301 Preload\u3002\n3. **\u4e3b\u52d5\u8108\u72f9\u7a84 (AS)** / **\u80a5\u539a\u5fc3\u808c (HOCM)**: **\u7981\u7528 NTG / Nicardipine** (\u907f\u514d\u4f11\u514b)\u3002","diagnosis",A.a(["[\u525d\u96e2] **\u6495\u88c2\u75db** + **\u96d9\u624b\u8840\u58d3\u5dee > 20**\u3002CXR: \u7e31\u8188\u8154\u8b8a\u5bec\u3002","[\u586b\u585e] **Pulsus Paradoxus**: \u5438\u6c23\u6642 SBP \u4e0b\u964d > 10 mmHg\u3002","[\u96dc\u97f3] \u65b0\u7684\u6536\u7e2e\u671f\u96dc\u97f3 + MI -> \u61f7\u7591\u4e73\u982d\u808c\u65b7\u88c2 (Papillary muscle rupture)"],o),"treatment",A.a([A.c(["category","A. \u4e3b\u52d5\u8108\u525d\u96e2 (Type A/B)","items",A.a([A.c(["drug","1. \u964d\u5fc3\u8df3 (\u9996\u9078)","dose","**Trandate (Labetalol)** 10-20mg IV push (\u540c\u6642\u964d\u58d3\u964d\u5fc3\u8df3)\n**Esmolol** Pump: 50-200 mcg/kg/min"],n,n),A.c(["drug","2. \u964d\u8840\u58d3 (\u6b21\u9078)","dose","**Nicardipine** Pump: 5mg/hr (\u5fc5\u5148\u78ba\u8a8d HR \u5df2\u63a7\u5236)"],n,n),A.c(["drug","3. \u6b62\u75db","dose","**Morphine** 2-4mg IV (\u6e1b\u4f4e\u4ea4\u611f\u8208\u596e)"],n,n)],m)],n,l),A.c(["category","B. \u5fc3\u5305\u819c\u708e (Pericarditis)","items",A.a([A.c(["drug","\u6297\u767c\u708e","dose","**NSAIDs** (Ibuprofen) + **Colchicine** (\u9810\u9632\u5fa9\u767c)"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\u2764\ufe0f \u5fc3\u81df\u5167\u79d1","id","protocol_pad_ali","title","\u5468\u908a\u52d5\u8108\u75be\u75c5 (PAD & ALI)","subtitle","ABI \u5224\u8b80\u3001\u8ddb\u884c\u6cbb\u7642 & 6P \u6025\u75c7","content",A.c(["intro","### \u5169\u5927\u985e\u5225\n1. **\u6162\u6027 PAD**: \u9593\u6b47\u6027\u8ddb\u884c (\u4f11\u606f\u7de9\u89e3)\u3002\u76ee\u6a19\u662f\u964d\u4f4e\u5fc3\u8840\u7ba1\u98a8\u96aa (MACE) \u8207\u6539\u5584\u75c7\u72c0\u3002\n2. **\u6025\u6027\u80a2\u9ad4\u7f3a\u8840 (ALI)**: **\u8840\u7ba1\u6025\u75c7**\uff01\u9700\u7acb\u5373 Heparin \u5316\u4e26\u7167\u6703\u8840\u7ba1\u5916\u79d1 (CVS)\u3002\n   * **6 Ps**: Pain, Pallor (\u84bc\u767d), Pulselessness, Poikilothermia (\u51b0\u51b7), Paresthesia (\u9ebb), Paralysis (\u7671)\u3002","diagnosis",A.a(["[ABI] **\u6b63\u5e38**: 1.0-1.4; **\u7570\u5e38**: \u2264 0.90\n* **>1.4**: \u8840\u7ba1\u9223\u5316 (\u5e38\u898b\u65bc\u6d17\u814e/\u7cd6\u5c3f\u75c5)\uff0c\u6578\u503c\u4e0d\u53ef\u4fe1\uff0c\u9700\u6539\u6e2c PVR/TBI\u3002","[Leriche] **\u4e09\u806f\u5fb5**: \u8ddb\u884c + \u80a1\u52d5\u8108\u640f\u52d5\u6d88\u5931 + \u52c3\u8d77\u969c\u7919\u3002","[ALI \u5206\u7d1a] **Viable**: \u7121\u7f3a\u640d; **Threatened**: \u611f\u89ba/\u904b\u52d5\u7f3a\u640d (\u9700\u6975\u7dca\u6025\u624b\u8853); **Irreversible**: \u808c\u8089\u50f5\u786c (\u9700\u622a\u80a2)\u3002"],o),"treatment",A.a([A.c(["category","A. \u6162\u6027 PAD \u7ba1\u7406","items",A.a([A.c(["drug","\u6297\u8840\u5c0f\u677f","dose","Aspirin \u6216 Clopidogrel (\u6709\u75c7\u72c0\u6216 ABI\u22640.9 \u6642\u7d66\u4e88)"],n,n),A.c(["drug","\u75c7\u72c0\u63a7\u5236","dose","**Cilostazol (Pletal)** 100mg BID (\u6539\u5584\u8ddb\u884c\u8ddd\u96e2)\n*\u7981\u5fcc: \u5fc3\u8870\u7aed (HF) \u60a3\u8005\u7981\u7528!*"],n,n),A.c(["drug","\u98a8\u96aa\u56e0\u5b50","dose","\u6212\u83f8 (\u6700\u91cd\u8981)\u3001\u9ad8\u5f37\u5ea6 Statin\u3001\u8840\u58d3\u63a7\u5236"],n,n)],m)],n,l),A.c(["category","B. \u6025\u6027\u80a2\u9ad4\u7f3a\u8840 (ALI)","items",A.a([A.c(["drug","\u7dca\u6025\u6297\u51dd\u8840","dose","**Heparin** IV STAT\n80 U/kg Bolus -> 18 U/kg/hr Infusion (\u7dad\u6301 aPTT 1.5-2\u500d)"],n,n),A.c(["drug","\u8840\u904b\u91cd\u5efa","dose","\u7dca\u6025\u5c0e\u7ba1\u6eb6\u6813 (Thrombolysis) \u6216 \u5916\u79d1\u53d6\u6813 (Thrombectomy)"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\u2764\ufe0f \u5fc3\u81df\u5167\u79d1","id","protocol_syncope_01","title","\u6688\u53a5\u8207\u8853\u524d\u8a55\u4f30 (Syncope)","subtitle","\u6688\u53a5\u9451\u5225\u3001\u59ff\u52e2\u6027\u4f4e\u8840\u58d3 & \u8853\u524d\u98a8\u96aa","content",A.c(["diagnosis",A.a(["[\u5b9a\u7fa9] **\u6688\u53a5**: \u773c\u524d\u767c\u9ed1/\u610f\u8b58\u55aa\u5931 (\u5fc3\u81df/\u795e\u7d93); **\u7729\u6688**: \u5929\u65cb\u5730\u8f49 (\u8033/\u8166)\u3002","[OH] **\u59ff\u52e2\u6027\u4f4e\u8840\u58d3**: \u7ad9\u7acb 3min \u5f8c SBP \u964d >20 \u6216 DBP \u964d >10\u3002","[POTS] \u9ad4\u4f4d\u6027\u5fc3\u640f\u904e\u901f: \u7ad9\u7acb\u5f8c HR \u589e\u52a0 > 30 bpm\u3002","[\u9ad8\u98a8\u96aa] **San Francisco Rule**: \u5fc3\u8870\u7aed, Hct<30, ECG\u7570\u5e38, SOB, SBP<90\u3002","[\u8853\u524d] \u975e\u5fc3\u81df\u624b\u8853 MI \u98a8\u96aa\u7d04 5% (65% \u7121\u75c7\u72c0)\u3002"],o),"treatment",A.a([A.c(["category","\u6688\u53a5\u8655\u7f6e","items",A.a([A.c(["drug","Vasovagal (\u8ff7\u8d70\u795e\u7d93)","dose","\u8173\u62ac\u9ad8\u3001\u88dc\u5145\u6c34\u5206\u3002\u907f\u514d\u8a98\u767c\u56e0\u5b50\u3002"],n,n),A.c(["drug","\u5fc3\u56e0\u6027 (Arrhythmia)","dose","\u5b89\u6392 24hr Holter \u6216 Event recorder\u3002\u5fc5\u8981\u6642\u88dd TCP/PPM\u3002"],n,n)],m)],n,l)],k)],n,i)],n,j),A.c(["group","\ud83e\udec1 \u80f8\u8154\u5167\u79d1","id","chap_pulm_03","title","\u6c23\u5598 (Asthma)","subtitle","Acute Exacerbation & Chronic Care","content",A.c(["diagnosis",A.a(["\u80ba\u91cf\u8a08: \u963b\u585e\u4e14\u652f\u6c23\u7ba1\u64f4\u5f35\u5291\u5f8c FEV1 \u589e\u52a0 >=12% \u4e14 >=200 mL","Methacholine \u6fc0\u767c\u6e2c\u8a66 (\u82e5\u80ba\u91cf\u8a08\u6b63\u5e38)"],o),"treatment",A.a([A.c(["category","\u6025\u6027\u767c\u4f5c (Acute Exacerbation)","items",A.a([A.c(["drug","Oxygen","dose","\u7dad\u6301 SaO2 93-95%"],n,n),A.c(["drug","SABA (Albuterol)","dose","4-8 puffs \u6216 2.5-5 mg \u9727\u5316, q20min"],n,n),A.c(["drug","Ipratropium","dose","0.5 mg \u9727\u5316 (\u56b4\u91cd\u8005\u52a0\u7528)"],n,n),A.c(["drug","Steroids (IV)","dose","Methylprednisolone 125 mg q6h"],n,n)],m)],n,l),A.c(["category","\u6162\u6027\u63a7\u5236 (Controller)","items",A.a([A.c(["drug","\u9996\u9078: ICS-Formoterol","dose","\u4f4e\u5291\u91cf\u4f5c\u70ba Reliever (MART strategy)"],n,n),A.c(["drug","ICS","dose","\u4f9d\u7167\u968e\u68af\u6cbb\u7642\u8abf\u6574\u5291\u91cf"],n,n)],m)],n,l)],k)],n,i)],n,j),A.c(["group","\ud83e\udec1 \u80f8\u8154\u5167\u79d1","id","chap_pulm_05","title","\u6162\u6027\u963b\u585e\u6027\u80ba\u75c5 (COPD)","subtitle","AECOPD & Stable COPD","content",A.c(["diagnosis",A.a(["\u80ba\u91cf\u8a08 FEV1/FVC < 0.7","\u8a55\u4f30\u75c7\u72c0 (CAT/mMRC) \u8207\u60e1\u5316\u53f2"],o),"treatment",A.a([A.c(["category","\u6025\u6027\u60e1\u5316 (AECOPD)","items",A.a([A.c(["drug","Bronchodilators","dose","SABA + SAMA \u9727\u5316\u5438\u5165"],n,n),A.c(["drug","Steroids","dose","Prednisone 40 mg PO x 5 \u5929"],n,n),A.c(["drug","Antibiotics","dose","Azithromycin / Doxycycline / Resp. FQ (\u82e5\u6fc3\u75f0\u589e\u52a0)"],n,n)],m)],n,l),A.c(["category","\u6162\u6027\u671f\u9996\u9078","items",A.a([A.c(["drug","LAMA / LABA","dose","Tiotropium \u7b49\u9577\u6548\u578b"],n,n),A.c(["drug","ICS","dose","\u82e5 Eosinophil >300 \u6216\u983b\u7e41\u60e1\u5316\u6642\u52a0\u7528"],n,n)],m)],n,l)],k)],n,i)],n,j),A.c(["group","\ud83e\udd68 \u80c3\u8178\u809d\u81bd\u79d1","id","protocol_upper_gi","title","\u4e0a\u6d88\u5316\u9053\u75be\u75c5 (Upper GI)","subtitle","GERD, PUD & UGIB \u8655\u7f6e","content",A.c(["intro","### \u8a3a\u65b7\u91cd\u9ede\n1. **GERD**: \u5178\u578b\u75c7\u72c0 (\u706b\u71d2\u5fc3) \u53ef\u505a PPI Test\u3002\u82e5\u6709 **Alarm Features** (\u541e\u56a5\u56f0\u96e3/\u75db, \u9ad4\u91cd\u6e1b\u8f15, \u8ca7\u8840, \u5410\u8840, >60\u6b72) -> \u5fc5\u505a\u80c3\u93e1 (EGD)\u3002\n2. **PUD**: H. pylori (80% DU / 40% GU) \u8207 NSAIDs \u662f\u4e3b\u56e0\u3002GU \u5fc5\u5207\u7247\u9664\u60e1\u6027\u3002\u7a7a\u8179\u75db=DU; \u9910\u5f8c\u75db=GU\u3002\n3. **UGIB**: BUN/Cr > 36 \u63d0\u793a UGIB\u3002\u51fa\u8840\u91cf\u5927\u6642\u5148 NPO + PPI + \u8f38\u6db2\uff0c24hr \u5167\u505a\u80c3\u93e1\u3002","diagnosis",A.a(["[GERD] **Alarm Features**: Dysphagia, Odynophagia, Wt loss, Anemia, GI bleeding","[PUD] **H. pylori**: UBT/Stool Ag (\u9700\u505c PPI/\u6297\u751f\u7d20 2\u9031)\u3002\u80c3\u93e1\u5207\u7247 (CLO test)","[UGIB] **Triad**: \u5410\u8840, \u9ed1\u4fbf, BUN\u5347\u9ad8\u3002Shock index > 1 (HR>SBP) \u8868\u5931\u8840\u56b4\u91cd"],o),"treatment",A.a([A.c(["category","A. \u80c3\u98df\u9053\u9006\u6d41 (GERD)","items",A.a([A.c(["drug","PPI Test","dose","Omeprazole / Pantoprazole / Esomeprazole QD-BID \u6e2c\u8a66 2\u9031"],n,n),A.c(["drug","H2 Blockers","dose","Famotidine 20-40mg BID (\u591c\u9593\u7a81\u7834\u6027\u9178\u9006\u6d41\u6709\u6548)"],n,n)],m)],n,l),A.c(["category","B. \u6d88\u5316\u6027\u6f70\u760d (PUD)","items",A.a([A.c(["drug","H. pylori \u9664\u83cc","dose","**\u56db\u5408\u4e00\u7642\u6cd5 (14\u5929)**:\nPPI BID + Bismuth QID + Tetracycline 500 QID + Metronidazole 500 TID"],n,n),A.c(["drug","NSAID \u6f70\u760d","dose","\u505c\u7528 NSAID\u3002PPI \u6cbb\u7642 4-8 \u9031"],n,n)],m)],n,l),A.c(["category","C. \u4e0a\u6d88\u5316\u9053\u51fa\u8840 (UGIB)","items",A.a([A.c(["drug","PPI (High Dose)","dose","**Nexium** (Esomeprazole) 80mg IV stat -> **8mg/hr** run 72hr\n(\u6216 40mg IV BID)"],n,n),A.c(["drug","Variceal Bleeding","dose","**Sandostatin** (Octreotide) 50mcg IV st -> 50mcg/hr\n**Terlipressin** 1mg q4-6h\n\u9810\u9632\u6027\u6297\u751f\u7d20: **Ceftriaxone** 1g QD"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83e\udd68 \u80c3\u8178\u809d\u81bd\u79d1","id","protocol_liver_01","title","\u809d\u81bd\u80f0\u75be\u75c5 (Hepato-Biliary-Pancreatic)","subtitle","Cirrhosis, Cholecystitis & Pancreatitis","content",A.c(["intro","### \u8a3a\u65b7\u91cd\u9ede\n1. **Cirrhosis**: SAAG \u2265 1.1 (\u9580\u8108\u9ad8\u58d3)\u3002SBP \u8a3a\u65b7: PMN \u2265 250\u3002\n2. **Pancreatitis**: \u8a3a\u65b7\u4e09\u4e2d\u4e8c (\u5178\u578b\u75db / Lipase>3\u500d / CT)\u3002TG>1000 \u9700\u6d17\u8840\u6216 Insulin\u3002\n3. **Cholangitis**: Charcot triad (Fever, RUQ pain, Jaundice)\u3002\u9700\u7dca\u6025\u5f15\u6d41 (ERCP/PTCD)\u3002","diagnosis",A.a(["[HE] **\u809d\u8166\u75c5\u8b8a**: Ammonia \u8207\u75c5\u60c5\u4e0d\u4e00\u5b9a\u76f8\u95dc\u3002\u770b Asterixis (\u64b2\u7ffc\u9707\u986b)\u3002","[SBP] **\u81ea\u767c\u6027\u8179\u819c\u708e**: Ascites PMN \u2265 250\u3002\u5e38\u898b E. coli / Klebsiella\u3002","[Cholecystitis] **Murphy's sign (+)**\u3002US: Wall > 4mm, Pericholecystic fluid\u3002","[Pancreatitis] **Ranson / BISAP score** \u8a55\u4f30\u56b4\u91cd\u5ea6\u3002\u5927\u91cf\u8f38\u6db2\u70ba\u95dc\u9375\u3002"],o),"treatment",A.a([A.c(["category","A. \u809d\u786c\u5316\u4f75\u767c\u75c7","items",A.a([A.c(["drug","\u809d\u8166\u75c5\u8b8a (HE)","dose","**Lactulose** 30-45mL TID (\u76ee\u6a19\u8edf\u4fbf 2-3\u6b21/\u5929)\n**Rifaximin** 550mg BID (\u4e8c\u7dda)"],n,n),A.c(["drug","\u8179\u6c34 (Ascites)","dose","**Spiro : Lasix = 100mg : 40mg** (\u6bd4\u4f8b 2.5:1)\n\u5927\u91cf\u653e\u6c34 (>5L) \u9700\u88dc Albumin (6-8g per 1L)"],n,n),A.c(["drug","SBP","dose","**Ceftriaxone** 2g QD \u6216 **Flomoxef**"],n,n)],m)],n,l),A.c(["category","B. \u6025\u6027\u81bd\u56ca/\u81bd\u7ba1\u708e","items",A.a([A.c(["drug","\u6297\u751f\u7d20","dose","**Ceftriaxone + Metronidazole** (Cover GNB + Anaerobe)\n\u6216 **Flomoxef**, **Tazocin**"],n,n),A.c(["drug","\u5f15\u6d41","dose","PTGBD (\u81bd\u56ca\u708e) \u6216 ERCP (\u81bd\u7ba1\u708e)"],n,n)],m)],n,l),A.c(["category","C. \u6025\u6027\u80f0\u81df\u708e","items",A.a([A.c(["drug","\u8f38\u6db2 (Hydration)","dose","**LR / NS** \u5927\u91cf\u8f38\u6ce8 (250-500ml/hr) \u7dad\u6301\u5c3f\u91cf\n*\u75db\u63a7\u5236: Morphine / Demerol*"],n,n),A.c(["drug","\u9ad8\u8840\u8102 (TG>1000)","dose","**Insulin infusion** 0.1 U/kg/hr (\u9700\u88dc\u7cd6 D5W \u9632\u6b62\u4f4e\u8840\u7cd6)"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83e\udd68 \u80c3\u8178\u809d\u81bd\u79d1","id","protocol_lower_gi","title","\u4e0b\u6d88\u5316\u9053\u8207\u529f\u80fd\u6027\u969c\u7919","subtitle","Ileus, Diarrhea, Constipation & Meds","content",A.c(["intro","### \u8655\u7f6e\u539f\u5247\n1. **Ileus (\u8178\u963b\u585e)**: \u5206\u6a5f\u68b0\u6027 (\u958b\u5200\u53f2/\u816b\u7624) vs \u9ebb\u75fa\u6027 (\u96fb\u89e3\u8cea/\u85e5\u7269)\u3002\u8655\u7f6e: NPO + NG decompression\u3002\n2. **Diarrhea**: \u6025\u6027\u591a\u611f\u67d3\uff0c\u6162\u6027\u591a\u529f\u80fd\u6027\u3002\u8b66\u793a: \u767c\u71d2/\u8840\u4fbf\u52ff\u7528\u5f37\u6548\u6b62\u7009 (Imodium)\u3002\n3. **Constipation**: \u6392\u9664\u8b66\u793a\u5fb5\u5146 (>50\u6b72, \u8840\u4fbf, \u8ca7\u8840)\u3002","diagnosis",A.a(["[Ileus] **KUB**: \u64f4\u5f35\u8178\u6c23\u3002\u6a5f\u68b0\u6027\u6709 Transition zone; \u9ebb\u75fa\u6027\u7030\u6f2b\u64f4\u5f35\u3002","[Diarrhea] **C. diff**: \u6297\u751f\u7d20\u4f7f\u7528\u53f2 + \u6c34\u7009\u3002\u9a57 Stool Toxin\u3002","[Bladder] **\u6383\u63cf\u516c\u5f0f**: W x D x H x 0.7\u3002\u9918\u5c3f >400ml \u5efa\u8b70\u5c0e\u5c3f\u3002"],o),"treatment",A.a([A.c(["category","A. \u5e38\u7528\u91dd\u5291 (Injectable)","items",A.a([A.c(["drug","\u6b62\u5410","dose","**Primperan** 1amp IV/IM (EPS\u98a8\u96aa)\n**Novamin** 1amp IM (\u6b62\u5410\u5f37)\n**Zofran** (\u5316\u7642/\u8853\u5f8c)"],n,n),A.c(["drug","\u6b62\u75db (\u8179\u75db)","dose","**Buscopan** 1amp IV (\u89e3\u75d9\u6523, BPH/\u9752\u5149\u773c\u7981)\n**Ketorolac** 1amp IM (\u814e\u5dee\u7981)\n**Morphine** 3-5mg IV (\u56b4\u91cd\u75db)"],n,n)],m)],n,l),A.c(["category","B. \u5e38\u7528\u53e3\u670d\u85e5 (Oral)","items",A.a([A.c(["drug","\u4fbf\u79d8 (Laxatives)","dose","**MgO** 1-2# BID (\u8edf\u4fbf)\n**Sennoside** 1-2# HS (\u523a\u6fc0)\n**Dulcolax** 1-2# (\u5f37\u6548, \u543b\u5408\u8853\u5f8c\u7981)"],n,n),A.c(["drug","\u8179\u7009 (Antidiarrheal)","dose","**Smecta** 1\u5305 TID (\u5438\u9644\u5291, \u5b89\u5168)\n**Imodium** (\u5f37\u6548, \u611f\u67d3\u6027/C.diff \u7981)"],n,n),A.c(["drug","\u80c3\u8f15\u7671 / \u8139\u6c23","dose","**Erythromycin** 250mg 1# TID (\u4fc3\u9032\u8815\u52d5)\n**Gascon** 1# TID"],n,n)],m)],n,l),A.c(["category","C. \u56f0\u96e3\u68ad\u72c0\u687f\u83cc (C. diff)","items",A.a([A.c(["drug","\u9996\u9078","dose","**Vancomycin (PO)** 125mg QID x10d\n\u6216 **Fidaxomicin** 200mg BID x10d"],n,n),A.c(["drug","\u6b21\u9078/\u8f15\u75c7","dose","**Metronidazole** 500mg TID (IV/PO)"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83e\udd68 \u80c3\u8178\u809d\u81bd\u79d1","id","protocol_hep_01","lastUpdate","2026/01/29","title","\u6025\u6027\u809d\u708e (Acute Hepatitis)","subtitle","ALT \u7570\u5e38\u8a55\u4f30\u3001B\u809d\u6a19\u8a18\u8207\u6cbb\u7642","content",A.c(["intro","### \u8a55\u4f30\u539f\u5247\n1. **\u521d\u6b65\u6aa2\u67e5**\uff1aALT \u9ad8\u6642\u5fc5\u9a57 AST, HBsAg, Anti-HCV, T.Bili, Lipase (\u6392\u9664\u80f0\u81df\u708e), \u6392 Abdominal Echo, \u4e26\u56de\u9867**\u85e5\u7269\u53f2**\u3002\n2. **B\u809d\u6a19\u8a18\u89e3\u8b80**\uff1a\n   * **Anti-HBc IgM**: \u6025\u6027\u611f\u67d3\u6307\u6a19 (30\u5929\u5167\u967d\u6027, \u6b64\u6642 HBsAg \u53ef\u80fd\u9084\u5728\u7a7a\u7a97\u671f)\u3002\n   * **HBeAg**: \u75c5\u6bd2\u6d3b\u8e8d\u6307\u6a19\u3002**REVEAL Study**: \u809d\u786c\u5316/\u809d\u764c\u98a8\u96aa (\u975eB\u809d : HBeAg(-) : HBeAg(+) = 1 : 3 : 9)\u3002\n   * **HBV DNA**: \u78ba\u8a3a B \u809d\u5f8c\u8a55\u4f30\u75c5\u6bd2\u91cf\u8207\u6cbb\u7642\u6548\u679c\u3002","diagnosis",A.a(["[ALT 2-5\u500d] \u4e0d\u898b\u5f97\u6709\u610f\u7fa9\u3002\u505a Survey, \u53ef\u7d66 Silymarin\u3002","[ALT 5-10\u500d] **\u7070\u8272\u5730\u5e36**\u3002\u5bc6\u5207\u8ffd\u8e64 (Close monitor), \u8003\u616e SNMC\u3002","[ALT >10\u500d] **\u5371\u6025\u7570\u5e38**\u3002\u5f37\u70c8\u5efa\u8b70 SNMC \u6cbb\u7642, \u82e5\u4e0d\u6cbb\u7642\u9700 QD \u8ffd\u8e64 ALT \u9632\u6b62 Liver Failure\u3002","[\u9451\u5225] **HBsAg(-)** \u4f46\u9ad8\u5ea6\u61f7\u7591\u6025\u6027 B \u809d? \u9a57 **Anti-HBc IgM** (\u7a7a\u7a97\u671f)\u3002"],o),"treatment",A.a([A.c(["category","A. \u4fdd\u809d\u85e5\u7269 (Hepatoprotective)","items",A.a([A.c(["drug","Silymarin","dose","1# BID (\u5065\u4fdd)\n*\u5be6\u8b49\u5f31 (\u8001\u9f20\u9700 15# TID \u624d\u6709\u6548)\u3002\u4e3b\u8981\u4f5c\u70ba**\u5b89\u6170\u5291**\u9632\u6b62\u75c5\u4eba\u53bb\u5403\u504f\u65b9/\u8349\u85e5*"],n,n),A.c(["drug","SNMC (Stronger Neo-Minophagen C)","dose","**5 amp in 100mL NS QD** run 3-5 \u5929\n*\u9700\u81ea\u8cbb (\u7d041750/\u5929)\u3002\u5c0d\u964d ALT \u6709\u986f\u8457\u6548\u679c\u3002*"],n,n)],m)],n,l),A.c(["category","B. \u75c5\u6bd2\u6027\u809d\u708e\u8ffd\u8e64","items",A.a([A.c(["drug","Acute HBV","dose","\u652f\u6301\u6027\u7642\u6cd5\u70ba\u4e3b\u3002\u76e3\u6e2c PT/INR (\u51dd\u8840\u529f\u80fd) \u8207 Bilirubin (\u9ec3\u75b8)\u3002"],n,n),A.c(["drug","Chronic HBV","dose","\u7b26\u5408\u5065\u4fdd\u898f\u7bc4\u6642\u958b\u59cb\u6297\u75c5\u6bd2\u85e5\u7269 (Entecavir/Tenofovir)\u3002"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83e\uded8 \u814e\u81df\u5167\u79d1","id","protocol_aki_01","title","\u6025\u6027\u814e\u640d\u50b7 (AKI)","subtitle","KDIGO \u5206\u671f\u3001\u5c3f\u6db2\u6c89\u6e23 & AEIOU \u6d17\u814e\u6642\u6a5f","content",A.c(["intro","### KDIGO \u5206\u671f\u6a19\u6e96\n* **Stage 1**: Cr \u4e0a\u5347 \u22650.3 \u6216 1.5-1.9\u500d; UO < 0.5 (6-12hr)\n* **Stage 2**: Cr \u4e0a\u5347 2.0-2.9\u500d; UO < 0.5 (\u226512hr)\n* **Stage 3**: Cr \u4e0a\u5347 3.0\u500d \u6216 \u22654.0 \u6216 \u6d17\u814e; UO < 0.3 (\u226524hr)","diagnosis",A.a(["[\u9451\u5225] **Prerenal**: EAV\u2193 (\u5fc3\u8870/\u809d\u786c\u5316/\u6557\u8840)\u3002\u85e5\u7269: NSAIDs (\u7e2e\u5165\u7403), ACEI/ARB (\u653e\u51fa\u7403)\u3002\u5c3f: **Hyaline casts**","[\u9451\u5225] **ATN (\u58de\u6b7b)**: \u7f3a\u8840 (Shock) \u6216 \u6bd2\u6027 (Vanco/Contrast/Myoglobin)\u3002\u5c3f: **Muddy brown casts**","[\u9451\u5225] **AIN (\u9593\u8cea)**: \u904e\u654f (PNC/PPI/NSAIDs)\u3002\u5c3f: **WBC casts**, Eosinophils","[\u9451\u5225] **GN (\u7d72\u7403\u9ad4)**: \u8840\u7ba1\u708e/SLE\u3002\u5c3f: **Dysmorphic RBC**, RBC casts"],o),"treatment",A.a([A.c(["category","A. \u4e00\u822c\u8655\u7f6e\u539f\u5247","items",A.a([A.c(["drug","\u9ad4\u6db2\u4e0d\u8db3","dose","\u7b49\u5f35\u8f38\u6db2 (NS / Lactated Ringer's)"],n,n),A.c(["drug","\u9ad4\u6db2\u904e\u591a","dose","**Lasix** (Loop diuretic)\u3002IV Bolus \u8207 Continuous infusion \u6548\u679c\u76f8\u7576"],n,n),A.c(["drug","\u7121\u6548\u85e5\u7269","dose","Dopamine (Low dose) \u8207 Nesiritide \u7121\u8b49\u64da\u986f\u793a\u6709\u52a9\u76ca"],n,n)],m)],n,l),A.c(["category","B. \u7279\u5b9a\u75c5\u56e0\u6cbb\u7642","items",A.a([A.c(["drug","\u986f\u5f71\u5291 (Contrast)","dose","\u9810\u9632\u52dd\u65bc\u6cbb\u7642: **\u5927\u91cf\u8f38\u6db2 (Hydration)**\u3002\n\u9ad8\u98a8\u96aa\u8005\u66ab\u505c NSAIDs/Metformin/RAASi"],n,n),A.c(["drug","\u6a6b\u7d0b\u808c\u6eb6\u89e3 (Rhabdo)","dose","\u76ee\u6a19\u5c3f\u91cf **3 mL/kg/hr**\u3002\n\u82e5 pH<6.5 \u53ef\u7d66 Bicarb \u9e7c\u5316 (\u6ce8\u610f\u4f4e\u8840\u9223\u98a8\u96aa)"],n,n),A.c(["drug","\u809d\u814e\u75c7\u5019\u7fa4 (HRS)","dose","**Terlipressin** + Albumin (\u9996\u9078)\n\u6216 Octreotide + Midodrine + Albumin"],n,n),A.c(["drug","\u9593\u8cea\u6027\u814e\u708e (AIN)","dose","\u79fb\u9664\u81f4\u75c5\u85e5\u7269\u3002\u8003\u616e\u77ed\u671f\u985e\u56fa\u9187 (Steroids)"],n,n)],m)],n,l),A.c(["category","C. \u7dca\u6025\u6d17\u814e\u9069\u61c9\u75c7 (AEIOU)","items",A.a([A.c(["drug","A: Acidosis","dose","\u96e3\u6cbb\u6027\u9178\u4e2d\u6bd2 (pH < 7.1)"],n,n),A.c(["drug","E: Electrolyte","dose","\u9ad8\u8840\u9240 (HyperK > 6.5 \u6216 ECG \u8b8a\u5316)"],n,n),A.c(["drug","I: Intoxication","dose","\u53ef\u900f\u6790\u6bd2\u7269: \u92f0\u9e7d (Li), \u4e59\u4e8c\u9187, \u6c34\u694a\u9178, Theophylline"],n,n),A.c(["drug","O: Overload","dose","\u9ad4\u6db2\u904e\u8f09\u5408\u4f75\u4f4e\u8840\u6c27 (Refractory Hypoxemia)"],n,n),A.c(["drug","U: Uremia","dose","\u5c3f\u6bd2\u6027\u5fc3\u5305\u819c\u708e, \u8166\u75c5\u8b8a (Encephalopathy), \u51fa\u8840"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83e\uded8 \u814e\u81df\u5167\u79d1","id","chap_nephro_ckd","title","\u6162\u6027\u814e\u81df\u75c5 (CKD)","subtitle","\u7ba1\u7406\u91cd\u9ede\u8207\u85e5\u7269\u8abf\u6574","content",A.c(["diagnosis",A.a(["eGFR \u5206\u671f: G1(>90), G2(60-89), G3a(45-59), G3b(30-44), G4(15-29), G5(<15)","\u86cb\u767d\u5c3f: ACR > 30 mg/g \u70ba\u7570\u5e38"],o),"treatment",A.a([A.c(["category","\u5ef6\u7de9\u60e1\u5316 (Renoprotection)","items",A.a([A.c(["drug","ACEI / ARB","dose","\u9996\u9078 (\u86cb\u767d\u5c3f\u8005)\u3002\u6ce8\u610f\u9ad8\u8840\u9240\u8207 Cr \u4e0a\u5347 (<30% \u53ef\u63a5\u53d7)"],n,n),A.c(["drug","SGLT2 inhibitors","dose","Dapagliflozin / Empagliflozin (eGFR > 20 \u53ef\u4f7f\u7528)"],n,n)],m)],n,l),A.c(["category","\u4f75\u767c\u75c7\u7ba1\u7406","items",A.a([A.c(["drug","\u8ca7\u8840 (Anemia)","dose","EPO / Darbepoetin (\u76ee\u6a19 Hb 10-11.5)"],n,n),A.c(["drug","\u9ad8\u8840\u78f7","dose","\u78f7\u7d50\u5408\u5291 (Calcium acetate, Sevelamer)"],n,n),A.c(["drug","\u9178\u4e2d\u6bd2","dose","Sodium Bicarbonate (\u7dad\u6301 Bicarb > 22)"],n,n)],m)],n,l)],k)],n,i)],n,j),A.c(["group","\ud83e\uded8 \u814e\u81df\u5167\u79d1","id","chap_nephro_gn","title","\u814e\u7d72\u7403\u75be\u75c5 (Glomerular Disease)","subtitle","Nephritic vs Nephrotic, ANCA & Lupus","content",A.c(["intro","### \u5169\u5927\u75c7\u5019\u7fa4\u9451\u5225\n1. **\u814e\u708e (Nephritic)**: \u767c\u708e\u70ba\u4e3b\u3002**\u8840\u5c3f** (RBC casts/Dysmorphic RBC)\u3001\u9ad8\u8840\u58d3\u3001AKI\u3002\n2. **\u814e\u75c5 (Nephrotic)**: \u8db3\u7d30\u80de\u53d7\u640d\u3002**\u86cb\u767d\u5c3f** (>3.5g/day)\u3001\u6c34\u816b\u3001\u4f4e\u767d\u86cb\u767d (<3.0)\u3001\u9ad8\u8840\u8102\u3002\n3. **\u5207\u7247**: \u75c5\u56e0\u4e0d\u660e\u3001\u5feb\u901f\u60e1\u5316\u6216\u61f7\u7591\u7cfb\u7d71\u6027\u75be\u75c5\u6642\uff0c\u70ba\u8a3a\u65b7\u9ec3\u91d1\u6a19\u6e96\u3002","diagnosis",A.a(["[ANCA] **c-ANCA (PR3)**: GPA (Wegener's); **p-ANCA (MPO)**: MPA, EGPA","[C3 \u4f4e\u4e0b] Lupus (SLE), PSGN (\u611f\u67d3\u5f8c), MPGN (C\u809d/\u51b7\u51dd\u7403\u86cb\u767d)","[Anti-GBM] **Goodpasture**: \u80ba\u51fa\u8840+\u814e\u8870\u7aed (\u7dda\u6027 Linear \u6c88\u7a4d)","[PLA2R] **Membranous**: \u539f\u767c\u6027\u819c\u6027\u814e\u75c5\u8b8a\u7279\u7570\u6027\u6297\u9ad4","[\u75c5\u7406] **MCD**: \u8db3\u7a81\u878d\u5408; **Diabetic**: K-W nodules; **Amyloid**: \u525b\u679c\u7d05\u860b\u679c\u7da0"],o),"treatment",A.a([A.c(["category","A. \u814e\u708e\u75c7\u5019\u7fa4 (Nephritic)","items",A.a([A.c(["drug","ANCA \u8840\u7ba1\u708e","dose","GPA/MPA: \u985e\u56fa\u9187 + Cyclophosphamide / Rituximab\n*GPA\u5e38\u898b\u4e0a\u547c\u5438\u9053(\u9f3b\u7ac7)/\u80ba\u7d50\u7bc0*"],n,n),A.c(["drug","IgA \u814e\u75c5\u8b8a","dose","\u6700\u5e38\u898b GN\u3002\u611f\u5192\u5f8c 1-3 \u5929\u8089\u773c\u8840\u5c3f (Synpharyngitic)\n\u6cbb\u7642: ACEI/ARB \u652f\u6301\uff0c\u86cb\u767d\u5c3f\u56b4\u91cd\u8005\u7d66\u985e\u56fa\u9187"],n,n),A.c(["drug","Goodpasture","dose","\u7dca\u6025 **\u8840\u6f3f\u7f6e\u63db (Plasmapheresis)** \u79fb\u9664\u6297\u9ad4\n\u52a0\u4e0a\u985e\u56fa\u9187\u8207 Cyclophosphamide"],n,n)],m)],n,l),A.c(["category","B. \u814e\u75c5\u75c7\u5019\u7fa4 (Nephrotic)","items",A.a([A.c(["drug","\u5fae\u5c0f\u8b8a\u5316 (MCD)","dose","\u5152\u7ae5\u6700\u5e38\u898b\u3002\u5149\u93e1\u6b63\u5e38/\u96fb\u93e1\u8db3\u7a81\u878d\u5408\u3002\n\u5c0d **Steroids** \u53cd\u61c9\u6975\u4f73"],n,n),A.c(["drug","\u819c\u6027 (Membranous)","dose","\u6210\u4eba\u5e38\u898b\u3002\u539f\u767c\u6027\u9a57 **Anti-PLA2R**\u3002\n**VTE \u98a8\u96aa\u9ad8**: \u82e5 Alb < 2.5 \u9700\u8003\u616e\u9810\u9632\u6027\u6297\u51dd\u8840"],n,n),A.c(["drug","FSGS","dose","\u6392\u9664\u6b21\u767c\u6027: HIV, \u80a5\u80d6, \u85e5\u7269 (Heroin)\n\u975e\u88d4\u7f8e\u570b\u4eba\u5e38\u898b APOL1 \u57fa\u56e0"],n,n),A.c(["drug","\u7cd6\u5c3f\u75c5\u814e\u75c5\u8b8a","dose","\u5178\u578b\u75c5\u7a0b: \u5fae\u91cf\u767d\u86cb\u767d\u5c3f -> \u986f\u6027\u86cb\u767d\u5c3f\n\u56b4\u683c\u63a7\u5236\u8840\u58d3/\u8840\u7cd6 (**SGLT2i** \u53ef\u5ef6\u7de9\u60e1\u5316)"],n,n)],m)],n,l),A.c(["category","C. \u4e00\u822c\u652f\u6301\u7642\u6cd5","items",A.a([A.c(["drug","\u964d\u86cb\u767d\u5c3f","dose","**ACEI / ARB** (\u964d\u4f4e\u814e\u7d72\u7403\u5167\u58d3)\n\u76ee\u6a19 BP < 130/80"],n,n),A.c(["drug","\u6c34\u816b\u63a7\u5236","dose","\u9650\u9e7d (<2g/day) + **Loop Diuretics** (Lasix)"],n,n),A.c(["drug","\u9ad8\u8840\u8102","dose","Statins (\u964d\u4f4e\u5fc3\u8840\u7ba1\u98a8\u96aa)"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83e\uded8 \u814e\u81df\u5167\u79d1","id","chap_nephro_urology","title","\u5c3f\u6db2\u5206\u6790\u8207\u7d50\u77f3 (Urinalysis)","subtitle","\u6c89\u6e23\u5224\u8b80 & \u814e\u7d50\u77f3\u6025\u75c7","content",A.c(["diagnosis",A.a(["[Cast] **RBC cast**: \u814e\u7d72\u7403\u814e\u708e (GN)","[Cast] **WBC cast**: \u9593\u8cea\u6027\u814e\u708e (AIN), \u814e\u76c2\u814e\u708e (Pyelo)","[Cast] **Muddy Brown**: \u6025\u6027\u814e\u5c0f\u7ba1\u58de\u6b7b (ATN)","[Crystal] **\u4fe1\u5c01\u72c0**: Ca-Oxalate (\u4e59\u4e8c\u9187\u4e2d\u6bd2/\u7d50\u77f3); **\u68fa\u6750\u84cb**: Struvite (\u611f\u67d3)","[Stone] **Urosepsis**: \u7d50\u77f3+\u767c\u71d2+\u963b\u585e -> **\u7dca\u6025\u5f15\u6d41 (PCN/Double-J)**"],o),"treatment",A.a([A.c(["category","\u814e\u7d50\u77f3\u6025\u6027\u671f","items",A.a([A.c(["drug","\u6b62\u75db (Analgesics)","dose","**NSAIDs** (Ketorolac) \u512a\u65bc\u9d09\u7247\u985e (\u4f46\u814e\u5dee\u7981\u7528)\n**Morphine** (\u56b4\u91cd\u7d5e\u75db)"],n,n),A.c(["drug","\u6392\u77f3 (MET)","dose","**Tamsulosin** (alpha-blocker) 0.4mg QD (\u9069\u7528 <10mm)"],n,n),A.c(["drug","\u5927\u91cf\u8f38\u6db2","dose","\u589e\u52a0\u5c3f\u91cf\u63a8\u52d5\u7d50\u77f3"],n,n)],m)],n,l)],k)],n,i)],n,j),A.c(["group","\ud83e\ude78 \u8840\u6db2\u816b\u7624\u79d1","id","chap_hema_01","title","\u8ca7\u8840\u9451\u5225 (Anemia)","subtitle","\u9451\u5225\u908f\u8f2f\u3001MCV \u5206\u985e & \u6eb6\u8840","content",A.c(["intro","### \u9451\u5225\u908f\u8f2f\n1. **Reticulocyte Index (RI)**\uff1a\n   * **RI < 2% (\u751f\u6210\u4e0d\u8db3)**\uff1a\u770b MCV \u5206\u985e (\u5de5\u5ee0\u554f\u984c)\u3002\n   * **RI > 2% (\u7834\u58de/\u6d41\u5931)**\uff1a\u6eb6\u8840\u6216\u6025\u6027\u51fa\u8840\u3002\n2. **\u9435\u5291\u6cbb\u7642**\uff1a\u9700\u6cbb\u7642\u81f3 Hb \u6b63\u5e38\u5f8c\u518d\u6301\u7e8c 6 \u500b\u6708\u88dc\u8db3\u5eab\u5b58\u3002","diagnosis",A.a(["[\u5c0f\u7403\u6027] **Microcytic (MCV<80)**: \u7f3a\u9435 (IDA), \u5730\u4e2d\u6d77 (Thalassemia), \u6162\u6027\u75c5 (ACD)","[\u6b63\u7403\u6027] **Normocytic (MCV 80-100)**: \u6eb6\u8840 (Hemolysis), \u814e\u8870\u7aed, \u9aa8\u9ad3\u4fb5\u72af","[\u5927\u7403\u6027] **Macrocytic (MCV>100)**: B12/\u8449\u9178\u7f3a\u4e4f (Megaloblastic), \u809d\u75c5, MDS, \u9157\u9152","[\u6307\u6a19] **Ferritin**: <15-30 ng/mL \u78ba\u8a3a IDA (\u6392\u9664\u767c\u708e\u5047\u6027\u5347\u9ad8)","[\u6307\u6a19] **Mentzer Index** (MCV/RBC): <13 \u5730\u4e2d\u6d77\u8ca7\u8840; >13 \u7f3a\u9435\u6027\u8ca7\u8840","[\u6eb6\u8840] Lab: LDH\u2191, Haptoglobin\u2193, Ind. Bilirubin\u2191, Retic\u2191","[Coombs] **DAT(+)**: AIHA (\u6eab\u578b IgG / \u51b7\u578b IgM)\n**DAT(-)**: TTP/HUS, PNH, G6PD"],o),"treatment",A.a([A.c(["category","A. \u7f3a\u9435\u6027\u8ca7\u8840 (IDA)","items",A.a([A.c(["drug","Oral Iron","dose","Ferrous sulfate 325mg TID (\u7a7a\u8179\u5438\u6536\u4f73\uff0c\u4f46\u5728\u98ef\u5f8c\u5403\u526f\u4f5c\u7528\u5c11)"],n,n),A.c(["drug","IV Iron","dose","\u7528\u65bc\u5438\u6536\u4e0d\u826f\u6216\u7121\u6cd5\u8010\u53d7\u53e3\u670d\u8005 (Ferrum)"],n,n)],m)],n,l),A.c(["category","B. \u5de8\u7403\u6027\u8ca7\u8840","items",A.a([A.c(["drug","B12 Deficiency","dose","Vit B12 1000mcg IM qd x7d -> wk -> mo\n*\u88dc\u8449\u9178\u524d\u52d9\u5fc5\u5148\u78ba\u8a8d B12\uff0c\u5426\u5247\u795e\u7d93\u75c7\u72c0\u60e1\u5316*"],n,n),A.c(["drug","Folate Deficiency","dose","Folic acid 1-5 mg PO qd"],n,n)],m)],n,l),A.c(["category","C. \u6eb6\u8840\u6027\u8ca7\u8840 (AIHA)","items",A.a([A.c(["drug","Warm (IgG)","dose","\u985e\u56fa\u9187 (Prednisolone 1mg/kg), Rituximab, \u5207\u813e"],n,n),A.c(["drug","Cold (IgM)","dose","\u4fdd\u6696 (Avoid cold), Rituximab (\u985e\u56fa\u9187\u7121\u6548)"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83e\ude78 \u8840\u6db2\u816b\u7624\u79d1","id","chap_hema_02","title","\u767d\u8840\u75c5 (Leukemia)","subtitle","AML, CML, CLL & APL \u6025\u75c7","content",A.c(["intro","### \u91cd\u9ede\u6458\u8981\n1. **AML**: \u9aa8\u9ad3 Blast \u2265 20% \u6216 Auer rods\u3002ELN \u5206\u96aa\u5206\u5c64\u6c7a\u5b9a\u79fb\u690d\u8207\u5426\u3002\n2. **APL (M3)**: \u5167\u79d1\u6025\u75c7 (DIC \u98a8\u96aa)\uff01\u61f7\u7591\u5373\u7d66 ATRA\uff0c\u52ff\u7b49\u57fa\u56e0\u5831\u544a\u3002\n3. **CML**: t(9;22) BCR-ABL1\u3002TKI \u6cbb\u7642\u76ee\u6a19\uff1a3\u500b\u6708 <10%\uff0c12\u500b\u6708 <0.1% (MMR)\u3002","diagnosis",A.a(["[AML] **Auer rods**: \u5e7e\u4e4e\u78ba\u8a3a AML","[AML] **ELN Risk**: Favorable (t(8;21), inv(16), NPM1); Adverse (-5, -7, TP53, FLT3-ITD)","[CML] **Philadelphia (Ph+)**: t(9;22), BCR-ABL1","[CLL] **Rai Staging**: 0\u671f\u89c0\u5bdf; III/IV\u671f (\u8ca7\u8840/\u8840\u5c0f\u677f\u4f4e) \u9700\u6cbb\u7642"],o),"treatment",A.a([A.c(["category","A. \u6025\u6027\u9aa8\u9ad3\u6027\u767d\u8840\u75c5 (AML)","items",A.a([A.c(["drug","\u6a19\u6e96\u6cbb\u7642 (7+3)","dose","Cytarabine (7\u5929) + Anthracycline (3\u5929)"],n,n),A.c(["drug","APL (M3) \u6025\u75c7","dose","**ATRA** (All-trans retinoic acid) \u7acb\u5373\u7d66\u4e88\n\u9810\u9632\u56b4\u91cd DIC \u51fa\u8840"],n,n)],m)],n,l),A.c(["category","B. \u6162\u6027\u767d\u8840\u75c5 (CML/CLL)","items",A.a([A.c(["drug","CML","dose","TKI (Imatinib, Dasatinib, Nilotinib)"],n,n),A.c(["drug","CLL","dose","BTKi (Acalabrutinib, Ibrutinib), Venetoclax"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83e\ude78 \u8840\u6db2\u816b\u7624\u79d1","id","chap_hema_03","title","\u6dcb\u5df4\u7624 (Lymphoma)","subtitle","Hodgkin, NHL & Tumor Lysis Syndrome","content",A.c(["intro","### \u6cbb\u7642\u91cd\u9ede\n1. **Hodgkin**: Reed-Sternberg cells\u3002ABVD \u8ab2\u8868 (\u6ce8\u610f\u80ba/\u5fc3\u6bd2\u6027)\u3002\n2. **NHL (DLBCL)**: IPI Score \u8a55\u4f30\u9810\u5f8c\u3002R-CHOP \u6cbb\u7642 (R \u4f7f\u7528\u524d\u5fc5\u9a57 B \u809d)\u3002\n3. **TLS (\u816b\u7624\u6eb6\u89e3)**: \u9ad8\u5c3f\u9178/\u9240/\u78f7 -> \u4f4e\u9223/\u814e\u8870\u7aed\u3002\u9810\u9632\u52dd\u65bc\u6cbb\u7642\u3002","diagnosis",A.a(["[HL] **Pathology**: Reed-Sternberg (\u8c93\u982d\u9df9\u773c\u7d30\u80de)","[NHL] **IPI Score**: Age>60, LDH\u9ad8, ECOG\u5dee, Stage III/IV, Extranodal>1","[TLS] **\u96fb\u89e3\u8cea**: Uric acid\u2191, K\u2191, P\u2191, Ca\u2193, Cr\u2191"],o),"treatment",A.a([A.c(["category","A. \u5316\u5b78\u6cbb\u7642","items",A.a([A.c(["drug","Hodgkin (HL)","dose","**ABVD**: Adriamycin (\u5fc3\u6bd2), Bleomycin (\u80ba\u6bd2), Vinblastine, Dacarbazine"],n,n),A.c(["drug","NHL (DLBCL)","dose","**R-CHOP**: Rituximab + CHOP\n*Rituximab \u524d\u9700\u7be9\u6aa2 HBsAg & Anti-HBc*"],n,n)],m)],n,l),A.c(["category","B. \u816b\u7624\u6eb6\u89e3\u75c7\u5019\u7fa4 (TLS)","items",A.a([A.c(["drug","\u9810\u9632/\u6cbb\u7642","dose",q],n,n),A.c(["drug","\u56b4\u91cd/\u9ad8\u5c3f\u9178","dose",p],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83e\ude78 \u8840\u6db2\u816b\u7624\u79d1","id","chap_hema_04","title","\u591a\u767c\u6027\u9aa8\u9ad3\u7624 (Myeloma)","subtitle","CRAB \u6e96\u5247 & MDS","content",A.c(["intro","### \u8a3a\u65b7\u8207\u6025\u75c7\n1. **CRAB**: Calcium (>11), Renal (Cr>2), Anemia (Hb<10), Bone lesions\u3002\n2. **\u810a\u9ad3\u58d3\u8feb**: \u80cc\u75db+\u795e\u7d93\u75c7\u72c0 -> STAT MRI + Dexamethasone + \u7167\u6703\u3002\n3. **MDS**: \u7121\u6548\u9020\u8840\u3002IPSS-R \u8a55\u5206\u6c7a\u5b9a\u652f\u6301\u7642\u6cd5\u6216\u79fb\u690d\u3002","diagnosis",A.a(["[\u8a3a\u65b7] **Plasma cells \u2265 10%** + CRAB \u75c7\u72c0","[MDS] **Hypercellular marrow** with **Cytopenia** (\u7121\u6548\u9020\u8840)"],o),"treatment",A.a([A.c(["category","A. \u591a\u767c\u6027\u9aa8\u9ad3\u7624 (MM)","items",A.a([A.c(["drug","Induction","dose","Dara-VRd (Daratumumab + Bortezomib + Lenalidomide + Dex)"],n,n),A.c(["drug","\u9ad8\u8840\u9223\u6025\u75c7","dose","\u5927\u91cf NS \u8f38\u6db2 + Calcitonin (\u901f\u6548) + Zoledronic acid (\u9577\u6548)"],n,n),A.c(["drug","\u810a\u9ad3\u58d3\u8feb","dose","**Dexamethasone 10-16mg IV** + \u7dca\u6025\u653e\u7642/\u624b\u8853"],n,n)],m)],n,l),A.c(["category","B. \u9aa8\u9ad3\u5206\u5316\u4e0d\u826f (MDS)","items",A.a([A.c(["drug","\u4f4e\u98a8\u96aa","dose","\u8f38\u8840\u652f\u6301, EPO, Lenalidomide (5q- syndrome)"],n,n),A.c(["drug","\u9ad8\u98a8\u96aa","dose","HMA (Azacitidine) \u6216 \u7570\u9ad4\u5e79\u7d30\u80de\u79fb\u690d"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83e\ude78 \u8840\u6db2\u816b\u7624\u79d1","id","chap_hema_05","title","\u8840\u5c0f\u677f\u8207\u51dd\u8840 (Hemostasis)","subtitle","ITP \u6a5f\u8f49, TTP & HIT","content",A.c(["intro","### \u75c5\u751f\u7406\u6a5f\u8f49\n1. **ITP**: \u81ea\u9ad4\u6297\u9ad4 (IgG) \u7d50\u5408\u8840\u5c0f\u677f\u819c\u86cb\u767d (GPIIb/IIIa) -> \u6d41\u7d93\u813e\u81df\u88ab\u5de8\u566c\u7d30\u80de\u541e\u566c -> \u58fd\u547d\u7e2e\u77ed\u3002\n2. **TTP**: ADAMTS13 \u7f3a\u4e4f -> vWF \u5207\u5272\u7570\u5e38 -> \u5fae\u8840\u7ba1\u8840\u6813 (FAT RN \u4e94\u806f\u5fb5)\u3002","diagnosis",A.a(["[ITP] **\u6392\u9664\u6cd5**: \u62b9\u7247\u6b63\u5e38, \u7121\u809d\u813e\u816b\u5927\u3002PLT > 30k \u4e14\u7121\u51fa\u8840\u53ef\u89c0\u5bdf\u3002","[TTP] **FAT RN**: Fever, Anemia (MAHA), Thrombocytopenia, Renal, Neuro","[HIT] **4Ts Score**: Heparin \u4f7f\u7528\u5f8c 5-10 \u5929 PLT \u964d >50%\u3002"],o),"treatment",A.a([A.c(["category","A. \u514d\u75ab\u6027 (ITP)","items",A.a([A.c(["drug","\u4e00\u7dda\u6cbb\u7642","dose","Prednisolone 1mg/kg \u6216 IVIG (\u6025\u9700\u63d0\u5347\u6642)"],n,n),A.c(["drug","\u4e8c\u7dda\u6cbb\u7642","dose","TPO-RA (Eltrombopag), Rituximab, \u5207\u813e"],n,n)],m)],n,l),A.c(["category","B. \u8840\u6813\u6027\u5fae\u8840\u7ba1\u75c5\u8b8a (TTP)","items",A.a([A.c(["drug","\u6551\u547d\u95dc\u9375","dose","**\u8840\u6f3f\u7f6e\u63db (Plasma Exchange)** + \u985e\u56fa\u9187"],n,n),A.c(["drug","\u7981\u5fcc","dose","\u274c **\u7981\u6b62\u8f38\u8840\u5c0f\u677f** (\u52a0\u91cd\u8840\u6813)"],n,n)],m)],n,l),A.c(["category","C. \u809d\u7d20\u5f15\u8d77 (HIT)","items",A.a([A.c(["drug","\u8655\u7f6e","dose","\u7acb\u5373**\u505c\u7528 Heparin** (\u542b\u7ba1\u8def\u6c96\u6d17)\uff0c\u6539\u7528 Argatroban"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83e\ude78 \u8840\u6db2\u816b\u7624\u79d1","id","chap_hema_06","title","\u816b\u7624\u6025\u75c7 (Oncologic Emergencies)","subtitle","TLS, HyperCa, SVC & SCC","content",A.c(["intro","### \u75c5\u751f\u7406\u6a5f\u8f49\n1. **TLS (\u816b\u7624\u6eb6\u89e3)**\uff1a\u7d30\u80de\u5d29\u89e3 -> \u91cb\u653e K/P/Nucleic acid -> \u9ad8\u5c3f\u9178(\u814e\u8870\u7aed)\u3001\u9ad8\u8840\u9240(\u5fc3\u5f8b\u4e0d\u6574)\u3001\u4f4e\u8840\u9223(\u62bd\u7b4b)\u3002\n2. **HyperCa (\u9ad8\u8840\u9223)**\uff1a\u7834\u9aa8\u7d30\u80de\u6d3b\u6027\u2191 + \u814e\u91cd\u5438\u6536\u2191 + PTHrP \u5206\u6ccc -> \u610f\u8b58\u6df7\u4e82/\u591a\u5c3f\u3002\n3. **SVC Syndrome**\uff1a\u7e31\u8188\u8154\u816b\u7624\u58d3\u8feb\u4e0a\u8154\u975c\u8108 -> \u56de\u6d41\u53d7\u963b -> \u6c34\u816b/\u6012\u5f35\u3002\n4. **SCC (\u810a\u9ad3\u58d3\u8feb)**\uff1a\u816b\u7624\u58d3\u8feb\u810a\u9ad3/\u8840\u7ba1 -> \u6c34\u816b/\u7f3a\u8840 -> \u7671\u7613/\u5931\u7981\u3002","diagnosis",A.a(["[TLS] **Labs**: Uric acid\u2191, K\u2191, P\u2191, Ca\u2193, Cr\u2191 (\u5e38\u898b\u65bc\u9ad8\u5468\u8f49\u7387\u816b\u7624)","[HyperCa] **Sx**: Stones, Bones, Groans, Psychic moans","[SCC] **Sx**: \u80cc\u75db (\u65e9) -> \u7121\u529b/\u611f\u89ba\u7570\u5e38 -> \u5927\u5c0f\u4fbf\u5931\u7981 (\u665a)\u3002**STAT MRI!**"],o),"treatment",A.a([A.c(["category","A. \u816b\u7624\u6eb6\u89e3\u75c7\u5019\u7fa4 (TLS)","items",A.a([A.c(["drug","\u9810\u9632/\u6cbb\u7642","dose",q],n,n),A.c(["drug","\u56b4\u91cd/\u9ad8\u5c3f\u9178","dose",p],n,n)],m)],n,l),A.c(["category","B. \u60e1\u6027\u9ad8\u8840\u9223 (Hypercalcemia)","items",A.a([A.c(["drug","\u6025\u6027\u671f","dose","\u5927\u91cf NS \u8f38\u6db2 + **Calcitonin** (\u901f\u6548)"],n,n),A.c(["drug","\u7dad\u6301\u671f","dose","**Bisphosphonate** (Zoledronic acid) (\u6162\u6548\u6301\u4e45)"],n,n)],m)],n,l),A.c(["category","C. \u810a\u9ad3\u58d3\u8feb (SCC)","items",A.a([A.c(["drug","\u6e1b\u58d3","dose","**Dexamethasone 10-16mg IV** stat + \u7dca\u6025\u653e\u7642/\u624b\u8853"],n,n)],m)],n,l),A.c(["category","D. \u767c\u71d2\u6027\u55dc\u4e2d\u6027\u7403\u4f4e\u4e0b (FN)","items",A.a([A.c(["drug","\u6297\u751f\u7d20","dose","\u5fc5 Cover Pseudomonas (Cefepime/Tazocin/Meropenem)"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83e\ude78 \u8840\u6db2\u816b\u7624\u79d1","id","protocol_chemo_toxicity","title","\u5316\u5b78\u6cbb\u7642\u526f\u4f5c\u7528 (Chemo Toxicity)","subtitle","N/V \u6a5f\u8f49\u3001\u5668\u5b98\u6bd2\u6027\u8207\u8655\u7f6e","content",A.c(["intro","### \u75c5\u751f\u7406\u6a5f\u8f49 (Pathophysiology)\n1. **\u5641\u5fc3\u5614\u5410 (CINV)**\uff1a\u85e5\u7269\u523a\u6fc0\u7b2c\u56db\u8166\u5ba4 **CTZ**\uff0c\u91cb\u653e Dopamine/Serotonin \u50b3\u81f3\u5614\u5410\u4e2d\u6a1e\u3002\n2. **\u53e3\u8154\u9ecf\u819c\u708e**\uff1a\u963b\u65b7\u57fa\u5e95\u5c64\u5e79\u7d30\u80de\u5206\u88c2 -> \u9ecf\u819c\u840e\u7e2e (\u7d04\u7d66\u85e5 1 \u9031\u5f8c\u9ad8\u5cf0)\u3002\n3. **\u9aa8\u9ad3\u6291\u5236**\uff1a\u6291\u5236\u9020\u8840\u7d30\u80de\u5206\u5316 -> \u8ca7\u8840\u3001\u51fa\u8840\u3001\u611f\u67d3 (Neutropenia)\u3002","diagnosis",A.a(["[\u5206\u985e] **\u6025\u6027\u5614\u5410**: \u7d66\u85e5 4-10hr (Serotonin \u70ba\u4e3b); **\u5ef6\u9072\u5614\u5410**: >24hr (Substance P \u70ba\u4e3b)","[\u4fbf\u79d8] **Vinca Alkaloids** (Vincristine) \u795e\u7d93\u6bd2\u6027 -> \u6291\u5236\u8178\u8815\u52d5 (Adynamic ileus)","[\u8179\u7009] **5-FU / MTX** -> \u5e72\u64fe\u4e0a\u76ae\u5206\u88c2 -> \u9ecf\u819c\u840e\u7e2e","[\u51fa\u8840\u6027\u8180\u80f1\u708e] **Cyclophosphamide / Ifosfamide** \u4ee3\u8b1d\u7269 **Acrolein** \u6c89\u7a4d","[\u5fc3\u81df\u6bd2\u6027] **Anthracyclines** (Doxorubicin) -> \u7522\u751f\u81ea\u7531\u57fa (Free radicals) \u7834\u58de\u5fc3\u808c","[\u795e\u7d93\u6bd2\u6027] **Taxanes / Vinca** -> \u7834\u58de\u5fae\u7ba1\u9ad4 (Microtubules) -> \u624b\u8173\u9ebb\u6728"],o),"treatment",A.a([A.c(["category","A. \u5641\u5fc3\u5614\u5410 (N/V)","items",A.a([A.c(["drug","\u9810\u9632\u6027 (Pre-med)","dose","5-HT3 antagonist (Ondansetron) + Steroid (Dexamethasone) + NK1 antagonist (Aprepitant)"],n,n),A.c(["drug","\u7a81\u7834\u6027 (Breakthrough)","dose","Metoclopramide (Dopamine antagonist) \u6216 Lorazepam"],n,n)],m)],n,l),A.c(["category","B. \u5668\u5b98\u6bd2\u6027\u89e3\u6bd2/\u9810\u9632","items",A.a([A.c(["drug","\u51fa\u8840\u6027\u8180\u80f1\u708e","dose","\u5927\u91cf\u8f38\u6db2 (Hydration) + **Mesna** (\u4e2d\u548c Acrolein)"],n,n),A.c(["drug","\u795e\u7d93\u6bd2\u6027","dose","\u88dc\u5145 B6 / Glutamine (\u6548\u679c\u6709\u9650)\uff0c\u56b4\u91cd\u6642\u9700\u6e1b\u91cf\u6216\u505c\u85e5"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83e\ude78 \u8840\u6db2\u816b\u7624\u79d1","id","chap_hema_mpd","title","\u9aa8\u9ad3\u589e\u751f\u6027\u75be\u75c5 (MPD)","subtitle","PV, ET & Pathophysiology","content",A.c(["intro","### \u75c5\u751f\u7406\u6a5f\u8f49\n1. **PV (\u771f\u6027\u591a\u8840\u75c7)**\uff1a\u9020\u8840\u5e79\u7d30\u80de\u7570\u5e38\uff0c**\u4e0d\u4f9d\u8cf4 EPO** \u81ea\u4e3b\u589e\u751f\u3002\u75c7\u72c0 (\u982d\u75db/\u8996\u529b\u6a21\u7cca) \u4f86\u81ea\u8840\u6db2\u9ecf\u6eef\u5ea6\u9ad8\u3002\n2. **ET (\u539f\u767c\u6027\u8840\u5c0f\u677f\u589e\u591a)**\uff1a\u5de8\u6838\u7d30\u80de\u904e\u5ea6\u589e\u751f\u3002\u8840\u5c0f\u677f\u96d6\u591a\u4f46\u6709 **\u529f\u80fd\u7f3a\u9677 (Qualitative defect)** -> \u6613\u8840\u6813\u4e5f\u6613\u51fa\u8840\u3002","diagnosis",A.a(["[PV] Hb > 16.5(\u7537)/16.0(\u5973), JAK2 V617F Mutation (+), EPO \u4f4e","[ET] PLT > 450k, JAK2/CALR/MPL Mutation (+), \u6392\u9664\u53cd\u61c9\u6027\u589e\u591a","[\u5371\u6025] **Hyperviscosity**: \u8996\u529b\u6539\u8b8a\u3001\u982d\u6688\u3001\u4e2d\u98a8\u5fb5\u5146"],o),"treatment",A.a([A.c(["category","A. \u771f\u6027\u591a\u8840\u75c7 (PV)","items",A.a([A.c(["drug","\u653e\u8840 (Phlebotomy)","dose","\u76ee\u6a19 Hct < 45%"],n,n),A.c(["drug","\u7d30\u80de\u6e1b\u91cf","dose","Hydroxyurea (Hydrea) \u6216 Interferon"],n,n),A.c(["drug","\u9810\u9632\u8840\u6813","dose","\u4f4e\u5291\u91cf Aspirin 100mg QD"],n,n)],m)],n,l),A.c(["category","B. \u539f\u767c\u6027\u8840\u5c0f\u677f\u589e\u591a\u75c7 (ET)","items",A.a([A.c(["drug","\u9ad8\u98a8\u96aa\u8005","dose","Hydroxyurea \u6216 Anagrelide (\u6291\u5236\u5de8\u6838\u7d30\u80de\u6210\u719f)"],n,n),A.c(["drug","Aspirin","dose","\u7528\u65bc\u9810\u9632\u8840\u7ba1\u6813\u585e (\u82e5\u6709\u51fa\u8840\u50be\u5411\u9700\u8b39\u614e)"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83e\ude78 \u8840\u6db2\u816b\u7624\u79d1","id","protocol_hema_pbsct","title","\u9031\u908a\u8840\u5e79\u7d30\u80de\u79fb\u690d (PBSCT)","subtitle","\u52d5\u54e1\u539f\u7406\u3001VOD/GVHD \u4f75\u767c\u75c7\u8207\u8ff7\u4f60\u79fb\u690d","content",A.c(["intro","### \u6838\u5fc3\u539f\u7406\n1. **\u52d5\u54e1 (Mobilization)**: \u5316\u7642\u5f8c\u7d66\u4e88 **G-CSF**\uff0c\u4f7f\u9aa8\u9ad3\u5e79\u7d30\u80de\u91cb\u653e\u81f3\u9031\u908a\u8840 (\u589e\u52a010-300\u500d)\uff0c\u518d\u900f\u904e\u5206\u96e2\u8853\u6536\u96c6\u3002\n2. **\u512a\u52e2 (vs BMT)**: \u514d\u5168\u8eab\u9ebb\u9189\u3001\u6c59\u67d3\u7387\u4f4e\u3001**\u6062\u5fa9\u5feb** (PLT \u5feb 14\u5929\u4ee5\u4e0a)\u3002\n3. **\u8ff7\u4f60\u79fb\u690d (Mini-transplant)**: \u4f7f\u7528\u6e1b\u4f4e\u5291\u91cf\u8abf\u7406 (RIC)\uff0c\u4f9d\u8cf4 **GVL (\u690d\u9ad4\u6297\u764c)** \u6548\u61c9\u3002\u9069\u7528\u65bc\u9ad8\u9f61 (>50\u6b72) \u6216\u5171\u75c5\u60a3\u8005\u3002","diagnosis",A.a(["[VOD] **\u809d\u975c\u8108\u963b\u585e (SOS)**: \u9ec3\u75b8 + \u6c34\u5206\u6eef\u7559 (\u9ad4\u91cd\u589e) + \u809d\u816b\u5927/\u75db\u3002","[aGVHD] **\u6025\u6027\u6392\u65a5 (<100\u5929)**: \u76ae\u819a\u7d05\u75b9\u3001\u8179\u7009/\u8179\u75db\u3001\u809d\u529f\u80fd\u7570\u5e38 (\u9ec3\u75b8)\u3002","[cGVHD] **\u6162\u6027\u6392\u65a5 (>100\u5929)**: \u985e\u4f3c\u81ea\u9ad4\u514d\u75ab\u75be\u75c5\uff0c\u4fb5\u72af\u76ae\u819a/\u53e3/\u773c/\u80ba/\u809d\u3002","[\u611f\u67d3] \u79fb\u690d\u5f8c\u514d\u75ab\u7a7a\u7a97\u671f\uff0c\u6613\u53d7\u7d30\u83cc\u3001CMV\u3001\u9ef4\u83cc\u611f\u67d3\u3002"],o),"treatment",A.a([A.c(["category","A. \u79fb\u690d\u524d\u8655\u7f6e","items",A.a([A.c(["drug","\u8abf\u7406\u6cbb\u7642 (Conditioning)","dose","\u9ad8\u5291\u91cf\u5316\u7642 (High dose C/T) \xb1 TBI\n\u76ee\u7684: \u6bba\u6ec5\u764c\u7d30\u80de + \u6291\u5236\u514d\u75ab (\u9632\u6392\u65a5)"],n,n),A.c(["drug","CD34+ \u7d14\u5316","dose","\u81ea\u9ad4\u79fb\u690d\u4f7f\u7528\u3002\u5229\u7528\u514d\u75ab\u78c1\u73e0\u53bb\u9664\u764c\u7d30\u80de\uff0c\u964d\u4f4e\u5fa9\u767c\u3002"],n,n)],m)],n,l),A.c(["category","B. \u4f75\u767c\u75c7\u7ba1\u7406","items",A.a([A.c(["drug","VOD / SOS","dose","\u56b4\u683c\u9650\u5236\u6c34/\u9209\u3001\u4f7f\u7528\u5229\u5c3f\u5291\u3002\n\u76e3\u6e2c: \u6bcf\u65e5\u9ad4\u91cd\u3001\u8179\u570d\u3002"],n,n),A.c(["drug","GVHD \u9810\u9632","dose","**MTX + Cyclosporine (CsA) + Steroids**\n\u6025\u6027\u6cbb\u7642: \u589e\u52a0\u985e\u56fa\u9187\u5291\u91cf"],n,n),A.c(["drug","\u8f38\u6ce8\u7167\u8b77","dose","\u76e3\u6e2c EKG\u3001\u8f38\u8840\u53cd\u61c9\u3001\u5c3f\u6db2 (\u6eb6\u8840?)"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83e\ude78 \u8840\u6db2\u816b\u7624\u79d1","id","protocol_hema_pre_bmt_check","title","\u79fb\u690d\u524d\u8a55\u4f30\u6e05\u55ae (Pre-BMT)","subtitle","Recipient Evaluation Protocol v1.0","content",A.c(["intro","### \u6838\u5fc3\u8cc7\u8a0a (Baseline)\n1. **\u57fa\u672c**: Name / Age / Gender / Dx\n2. **\u79fb\u690d\u7a2e\u985e**: Auto vs Allo (Matched/Haplo) vs Syngeneic\n3. **\u5e79\u7d30\u80de\u4f86\u6e90**: PBSC / Bone Marrow / Cord Blood\n4. **\u8abf\u7406\u8655\u65b9**: Conditioning Regimen","diagnosis",A.a(["[\u91cd\u8981] **\u7259\u79d1\u6703\u8a3a**: \u62d4\u7259\u524d\u52d9\u5fc5\u8207\u8840\u6db2\u79d1\u8a0e\u8ad6 (\u51fa\u8840/\u611f\u67d3\u98a8\u96aa)\u3002","[\u91cd\u8981] **\u653e\u5c04\u816b\u7624**: \u82e5\u9700 TBI\uff0c\u9700\u5728 HSCT \u524d **\u4e00\u500b\u6708** \u6703\u8a3a\u3002","[\u91cd\u8981] **\u5fc3\u81df\u8d85\u97f3\u6ce2**: \u5fc5\u505a LVEF \u8a55\u4f30\u3002","[\u91cd\u8981] **Water's View**: \u8033\u9f3b\u5589\u79d1\u6703\u8a3a\u524d\u5148\u7167 (32009c)\u3002"],o),"treatment",A.a([A.c(["category","A. \u6703\u8a3a (Consultations)","items",A.a([A.c(["drug","\u5fc5\u6703\u79d1\u5225","dose","1. **Neuro** (\u795e\u7d93)\n2. **Psych** (\u7cbe\u795e)\n3. **ENT** (\u8033\u9f3b\u5589 - \u5148\u7167 Water's view)\n4. **Dent** (\u7259\u79d1 - \u62d4\u7259\u9700\u8a0e\u8ad6)\n5. **Gyn** (\u5a66\u79d1 - \u5973\u6027)\n6. **Derma** (\u76ae\u819a)\n7. **CV** (\u5fc3\u81df - \u6392 Echo)\n8. **Diet** (\u71df\u990a)\n9. **Inf** (\u611f\u67d3\u79d1)"],n,n),A.c(["drug","\u9078\u586b / \u8996\u60c5\u6cc1","dose","1. **Urology** (\u6ccc\u5c3f - \u7537\u6027)\n2. **Social Worker** (\u793e\u5de5 - \u6ffe\u6c34\u5668\u88dc\u52a9)\n3. **Radio-Onco** (\u653e\u816b - \u82e5\u9700 TBI)"],n,n)],m)],n,l),A.c(["category","B-D. \u5668\u5b98\u5f71\u50cf\u8207\u529f\u80fd","items",A.a([A.c(["drug","ENT & Chest","dose","Water's view (32009c)\nCXR\nSpirometry (17004-207)\nDLCO (17009-207)"],n,n),A.c(["drug","Heart & GI","dose","EKG\nCardiac Echo (LVEF)\nStool OB (P002)\nKUB (32006c)"],n,n)],m)],n,l),A.c(["category","E-G. \u611f\u67d3\u8207\u514d\u75ab\u6a19\u8a18","items",A.a([A.c(["drug","\u514d\u75ab/\u8840\u5eab","dose","SPEP, IgA, IgG, IgM\nVDRL (S001)\nAnti-A/B IgM (\u82e5\u8840\u578b\u4e0d\u5408 Allo)\n*HLA typing (Confirm DNA compatibility)*"],n,n),A.c(["drug","\u75c5\u6bd2\u809d\u708e","dose","HBsAg, Anti-HBs, Anti-HBc\nAnti-HCV\n*\u82e5\u967d\u6027\u52a0\u9a57: HBV DNA / HCV RNA*"],n,n),A.c(["drug","\u75c5\u6bd2\u8207\u5176\u4ed6","dose","Anti-HIV (I184)\nAnti-HTLV I/II (I033)\nCMV IgG/IgM\nSerum Crypto Ag\nSerum Aspergillus Ag (I190)"],n,n)],m)],n,l),A.c(["category","H. \u5168\u5957\u7d30\u83cc\u57f9\u990a (Pan-culture)","items",A.a([A.c(["drug","\u6aa2\u9ad4\u90e8\u4f4d","dose","1. **Stool** (+Clostridium/Campylobacter)\n2. **Anal Swab** (VRE)\n3. **Urine**\n4. **Nasal Swab** (Bac/Fungus)\n5. **Throat Swab** (Bac/Fungus)\n6. **Sputum** (G/S, Bac, TB, Fungus)\n7. **Port-A Blood** (Bac/Fungus)"],n,n)],m)],n,l),A.c(["category","J. \u884c\u653f\u8207\u8b77\u7406","items",A.a([A.c(["drug","\u6d41\u7a0b\u78ba\u8a8d","dose","1. \u806f\u7d61 10D \u8b77\u7406\u9577 (\u885b\u6559/Protocol)\n2. \u901a\u77e5\u8840\u5eab (\u79fb\u690d\u6642\u9593)\n3. \u78ba\u8a8d\u5316\u7642\u85e5\u7269\u5eab\u5b58\n4. \u78ba\u8a8d\u85e5\u7269\u904e\u654f\u53f2"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83e\ude78 \u8840\u6db2\u816b\u7624\u79d1","id","protocol_hema_allo_orders","title","\u7570\u9ad4\u79fb\u690d\u5e38\u898f\u91ab\u56d1 (Allo-SCT Orders)","subtitle","\u9810\u9632\u7528\u85e5\u3001\u5168\u8840\u578b\u8f38\u8840\u898f\u7bc4\u8207\u6392\u7a0b","content",A.c(["intro","### \u6838\u5fc3\u6458\u8981\n1. **\u8f38\u8840\u901a\u5247**: \u4f9d\u64da Major/Minor Mismatch \u9078\u64c7 Phase II/III \u8840\u54c1\u3002\n2. **\u8a18\u61b6\u53e3\u8a23**: \n   * **Major**: RBC \u7d66 O (\u8ddfRecipient)\uff0c\u8840\u6f3f\u7d66 AB (\u8ddfDonor)\u3002\n   * **Minor**: RBC \u7d66 O (\u8ddfDonor)\uff0c\u8840\u6f3f\u7d66 AB (\u8ddfRecipient)\u3002\n3. **Infusion**: \u56b4\u7981\u4f7f\u7528\u904e\u6ffe\u5668 (No Filter)\u3002\n4. **Cefepime**: D0 ~ D+2 \u9810\u9632\u6027\u4f7f\u7528\u3002","diagnosis",A.a(["[\u8b77\u7406] **BMT Diet**, I/O Q8H, BW/Girth QD\u3002","[\u8b77\u7406] N/S \u6f31\u53e3, **Betadine \u5750\u6d74**\u3002","[\u7d30\u80de] \u82e5 CD34 > 5x10^6/kg\uff0c\u591a\u9918\u90e8\u5206\u51b0\u5b58\u81f3 Engraftment\u3002","[\u5165\u9662] CXR, KUB, Port-A culture, Oral virus culture, **DNA-STR (\u2606\u91cd\u8981)**\u3002"],o),"treatment",A.a([A.c(["category","A. \u9810\u9632\u6027\u7528\u85e5 (Prophylaxis)","items",A.a([A.c(["drug","Baktar (PCP)","dose","2# BID (D-7 \u81f3 D-2)\n*Engraftment \u5f8c\u6062\u5fa9\u4f7f\u7528*"],n,n),A.c(["drug","Cefepime","dose","**2g Q12H** (D0 \u81f3 D+2)\n*\u6b64\u671f\u9593\u66ab\u505c Cravit*"],n,n),A.c(["drug","Micafungin","dose","50mg QD (D-8 \u958b\u59cb)\n*\u8996\u60c5\u6cc1\u8abf\u6574\u5291\u91cf*"],n,n),A.c(["drug","G-CSF (Filgrastim)","dose","300mcg QD (D+1 \u958b\u59cb)\n*Stop if WBC > 4000 / ANC > 2000*"],n,n)],m)],n,l),A.c(["category","B. \u5e79\u7d30\u80de\u8f38\u6ce8 (D0)","items",A.a([A.c(["drug","Pre-medication","dose","Vena 1 amp + Solu-cortef 100mg IV (\u8f38\u6ce8\u524d 15min)"],n,n),A.c(["drug","\u8f38\u6ce8\u7981\u5fcc","dose","\u274c **No Leukocyte Filter** (\u4e0d\u53ef\u7528\u904e\u6ffe\u5668)\n\u2705 **On EKG Monitor**"],n,n)],m)],n,l),A.c(["category","C. \u8f38\u8840\u898f\u7bc4 (\u5168\u8840\u578b\u901a\u7528)","items",A.a([A.c(["drug","\u57fa\u672c\u539f\u5247","dose","1. \u6240\u6709\u8840\u54c1\u9700 **Irradiated (\u8f3b\u5c04\u7167\u5c04)**\n2. \u8f38\u8840\u524d\u7d66 Vena 1 amp\n3. \u4f7f\u7528 **Phase II/III** (\u690d\u5165\u671f) \u6a19\u6e96"],n,n),A.c(["drug","1. Compatible (\u540c\u8840\u578b)","dose","RBC: **\u540c\u8840\u578b**\nPlt/FFP: **\u540c\u8840\u578b**"],n,n),A.c(["drug","2. Major (\u5927\u6392\u65a5)","dose","\u60c5\u5883: R\u6709\u6297\u9ad4 (\u5982 A\u6350\u7d66O)\nRBC: **Recipient \u578b** (\u6216 O)\nPlt/FFP: **Donor \u578b** (\u6216 AB)"],n,n),A.c(["drug","3. Minor (\u5c0f\u6392\u65a5)","dose","\u60c5\u5883: D\u6709\u6297\u9ad4 (\u5982 O\u6350\u7d66A)\nRBC: **Donor \u578b** (\u6216 O)\nPlt/FFP: **Recipient \u578b** (\u6216 AB)"],n,n),A.c(["drug","4. Bi-directional (\u96d9\u5411)","dose","\u60c5\u5883: \u4e92\u76f8\u6392\u65a5 (\u5982 A\u6350\u7d66B)\nRBC: **Type O** (\u842c\u7528)\nPlt/FFP: **Type AB** (\u842c\u7528)"],n,n)],m)],n,l),A.c(["category","D. \u62bd\u8840\u6392\u7a0b (Lab Schedule)","items",A.a([A.c(["drug","\u6bcf\u9031\u4e00 (QW1)","dose","CBC, SMAC (\u542b Ca/P/Mg), **CMV PCR**, **Aspergillus Ag**"],n,n),A.c(["drug","\u6bcf\u9031\u56db (QW4)","dose","CBC, Renal, Liver, Na/K, **CsA Level**"],n,n),A.c(["drug","\u9031\u4e00\u56db\u516d (Q146)","dose","CBC/DC (\u76e3\u6e2c\u7403\u6578\u56de\u5347)"],n,n),A.c(["drug","\u5176\u4ed6","dose","One-touch Sugar QOD (\u6bcf\u5169\u5929)\nCsA Level: \u9031\u4e00\u3001\u9031\u56db\u9a57"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83e\udda0 \u611f\u67d3\u79d1","id","protocol_id_basic","title","\u6297\u751f\u7d20\u57fa\u790e\u539f\u5247","subtitle","Loading Dose, \u57f9\u990a\u5224\u8b80 & \u5e38\u7528\u89c0\u5ff5","content",A.c(["intro","### \u958b\u85e5\u524d\u4e09\u554f\n1. **Focus**\uff1a\u611f\u67d3\u6e90\u5728\u54ea\uff1f(Lung/Urine/Skin/BSI?)\n2. **Severity**\uff1a\u75c5\u4eba\u6709\u7121\u5bb9\u932f\u7a7a\u9593\uff1f(Shock? Immunocompromised?) -> \u6c7a\u5b9a\u662f\u5426\u8981\u5f9e\u5f37\u85e5\u958b\u59cb\u3002\n3. **Pathogen**\uff1a\u5e38\u898b\u83cc\u7a2e\uff1f(GNB/GPC/Anaerobe/MDRO?)\n\n### \u91cd\u8981\u89c0\u5ff5\n* **Loading Dose**: \u70ba\u4e86\u5feb\u901f\u9054\u5230\u6709\u6548\u6fc3\u5ea6 (\u7279\u5225\u662f Vanco, Teico, Colistin)\u3002\n* **\u6c61\u67d3\u5224\u8b80**: B/C \u9577 *Corynebacterium, Bacillus, Micrococcus* \u591a\u70ba\u6c61\u67d3 (\u9664\u975e 2 \u5957\u90fd\u9577)\u3002\n* **K.P BSI**: \u52d9\u5fc5\u6703\u8a3a\u773c\u79d1\u6392\u9664\u773c\u5167\u708e (Endophthalmitis)\u3002\n* **Daptomycin**: \u76e3\u6e2c CPK (\u6a6b\u7d0b\u808c\u6eb6\u89e3)\uff0c\u4e0d\u53ef\u7528\u65bc\u80ba\u708e (\u88ab Surfactant \u5206\u89e3)\u3002","diagnosis",[],"treatment",[]],n,l)],n,j),A.c(["group","\ud83e\udda0 \u611f\u67d3\u79d1","id","protocol_id_common","title","\u5e38\u898b\u611f\u67d3\u75c7\u6cbb\u7642","subtitle","UTI, CAP, HAP, Cellulitis, Meningitis","content",A.c(["diagnosis",A.a(["[UTI] **U/A**: WBC \u2265 100~200 \u70ba\u986f\u8457 Pyuria\u3002\u82e5\u7121\u75c7\u72c0\u4e14 U/A \u4e7e\u6de8\uff0cU/C \u9577\u83cc\u53ef\u80fd\u662f\u6c61\u67d3\u3002","[CAP] **S/C \u54c1\u8cea**: WBC>25, Epithelial<10 \u624d\u662f\u597d\u75f0\u3002\u53ef\u9a57 Urine Ag (Pneumo/Legionella)\u3002","[Cellulitis] **S. aureus**: \u6709\u81bf/\u50b7\u53e3/\u64f4\u6563\u5feb; **Streptococcus**: \u7121\u81bf/\u64f4\u6563\u6162/\u6dcb\u5df4\u816b\u3002","[Meningitis] **Age > 50**: \u9700 Cover *Listeria* (\u52a0 Ampicillin)\u3002","[IE] **Echo**: TEE \u512a\u65bc TTE\u3002MRSA \u83cc\u8840\u75c7\u5efa\u8b70\u5fc5\u6392 Echo\u3002"],o),"treatment",A.a([A.c(["category","A. \u6ccc\u5c3f\u9053\u611f\u67d3 (UTI)","items",A.a([A.c(["drug","\u8f15\u5fae/\u9810\u9632","dose","Fosfomycin (\u53e3\u670d\u7c89\u5291)"],n,n),A.c(["drug","\u4f4f\u9662\u9996\u9078","dose","Ceftriaxone (Sintrix) 1-2g QD"],n,n),A.c(["drug","\u56b4\u91cd/ESBL risk","dose","Ertapenem 1g QD (Cover ESBL, \u4e0d Cover Pseudo)"],n,n),A.c(["drug","Shock","dose","Doripenem / Meropenem"],n,n)],m)],n,l),A.c(["category","B. \u793e\u5340\u578b\u80ba\u708e (CAP)","items",A.a([A.c(["drug","\u8f15\u75c7/\u9580\u8a3a","dose","Augmentin \u6216 Unasyn \xb1 Azithromycin (\u9ef4\u6f3f\u83cc)"],n,n),A.c(["drug","\u4f4f\u9662","dose","Ceftriaxone + Azithromycin/Doxycycline"],n,n),A.c(["drug","Aspiration","dose","Unasyn \u6216 Ceftriaxone + Metronidazole (\u53ad\u6c27\u83cc)"],n,n)],m)],n,l),A.c(["category","C. \u9662\u5167\u80ba\u708e (HAP/VAP)","items",A.a([A.c(["drug","\u539f\u5247","dose","\u9700 Cover **Pseudomonas**"],n,n),A.c(["drug","\u7d93\u9a57\u6027","dose","Tazocin / Cefepime / Ceftazidime (Brosym)"],n,n),A.c(["drug","\u5347\u968e","dose","Meropenem / Doripenem (\u6ce8\u610f: Ertapenem \u7121\u6548!)"],n,n)],m)],n,l),A.c(["category","D. \u8702\u7aa9\u6027\u7d44\u7e54\u708e (Cellulitis)","items",A.a([A.c(["drug","\u8f15\u5ea6 (\u53e3\u670d)","dose","Cephalexin (Keflex) \u6216 Clindamycin"],n,n),A.c(["drug","\u4e2d\u5ea6 (\u4f4f\u9662)","dose","Oxacillin (MSSA\u9996\u9078) \u6216 Cefazolin"],n,n),A.c(["drug","\u56b4\u91cd/MRSA risk","dose","Vancomycin / Teicoplanin / Daptomycin / Linezolid"],n,n)],m)],n,l),A.c(["category","E. \u7d30\u83cc\u6027\u8166\u819c\u708e","items",A.a([A.c(["drug","\u7d93\u9a57\u6027 (<50\u6b72)","dose","Vancomycin + Ceftriaxone (2g q12h)"],n,n),A.c(["drug","\u7d93\u9a57\u6027 (>50\u6b72)","dose","Vancomycin + Ceftriaxone + **Ampicillin** (2g q4h)"],n,n),A.c(["drug","Steroids","dose","Dexamethasone (\u6297\u751f\u7d20\u524d\u7d66\u4e88)"],n,n)],m)],n,l)],k)],n,i)],n,j),A.c(["group","\ud83e\udda0 \u611f\u67d3\u79d1","id","protocol_id_mdro","title","\u591a\u91cd\u6297\u85e5\u6027\u83cc (MDRO)","subtitle","ESBL, MRSA, VRE, CRAB, CRE","content",A.c(["intro","### \u6cbb\u7642\u7b56\u7565\n1. **ESBL**: \u9996\u9078 Carbapenem\u3002Cefepime/Tazocin \u6548\u679c\u8f03\u5dee (\u7279\u5225\u662f High inoculum)\u3002\n2. **AmpC**: \u907f\u958b 1-3 \u4ee3 Cefa\u3002\u9996\u9078 Cefepime \u6216 Carbapenem\u3002\n3. **MRSA**: \u83cc\u8840\u75c7\u9700\u9664\u611f\u67d3\u6e90 (\u7ba1\u8def/IE)\u3002Vanco \u9700\u6e2c Trough level\u3002\n4. **CRAB**: Colistin + (Meropenem/Tigecycline/Sulbactam)\u3002","diagnosis",A.a(["[MRSA] **B/C \u967d\u6027**: \u5fc5\u627e Source (CVC? IE? Osteo?)","[ESBL] **\u7279\u5fb5**: 1-3 \u4ee3 Cefa \u6297\u85e5\u3002E. coli / K.P \u5e38\u898b\u3002","[AmpC] **\u7279\u5fb5**: 2 \u4ee3 Cefa \u6297\u85e5 (ESBL \u901a\u5e38 S)\u3002Enterobacter / Citrobacter \u5e38\u898b\u3002","[CRE/CRAB] **\u5168\u6297\u85e5**: \u9700\u7d44\u5408\u7642\u6cd5\u6216\u65b0\u85e5 (Cefiderocol, Zavicefta)\u3002"],o),"treatment",A.a([A.c(["category","A. MRSA (GPC)","items",A.a([A.c(["drug","Vancomycin","dose","\u9700 Loading\u3002\u76e3\u6e2c Trough (15-20 mcg/mL)\nMIC \u2265 2 \u5efa\u8b70\u63db\u85e5"],n,n),A.c(["drug","Teicoplanin","dose","Loading (q12h x3) -> Maintain\u3002\u4e0d\u9069\u5408 IE/Meningitis"],n,n),A.c(["drug","Daptomycin","dose","8-12 mg/kg\u3002**\u80ba\u708e\u7121\u6548**\u3002\u76e3\u6e2c CPK"],n,n),A.c(["drug","Linezolid","dose","\u53e3\u670d\u5438\u6536\u4f73\u3002\u80ba\u708e/\u76ae\u819a\u6709\u6548\u3002\u6ce8\u610f\u9aa8\u9ad3\u6291\u5236"],n,n)],m)],n,l),A.c(["category","B. ESBL / AmpC (GNB)","items",A.a([A.c(["drug","ESBL \u9996\u9078","dose","**Ertapenem** (\u793e\u5340) \u6216 **Meropenem** (\u91cd\u75c7)"],n,n),A.c(["drug","AmpC \u9996\u9078","dose","**Cefepime** \u6216 **Carbapenem** (Tazocin \u4e0d\u5efa\u8b70)"],n,n),A.c(["drug","Fosfomycin","dose","\u53ef\u55ae\u7528\u65bc ESBL UTI (E. coli \u6548\u679c > K.P)"],n,n)],m)],n,l),A.c(["category","C. VRE (\u8178\u7403\u83cc)","items",A.a([A.c(["drug","Linezolid","dose","\u6291\u83cc\u6027\u3002\u9069\u5408\u80ba\u708e/\u8edf\u7d44\u7e54"],n,n),A.c(["drug","Daptomycin","dose","\u6bba\u83cc\u6027\u3002\u9069\u5408\u83cc\u8840\u75c7/\u5fc3\u5167\u819c\u708e (\u9700\u9ad8\u5291\u91cf)"],n,n)],m)],n,l),A.c(["category","D. CRAB (\u9b91\u6c0f\u4e0d\u52d5\u687f\u83cc)","items",A.a([A.c(["drug","\u7d44\u5408\u7642\u6cd5","dose","**Colistin** (IV+Inhalation) + \n(Meropenem / Tigecycline / Sulbactam / Cefiderocol)"],n,n),A.c(["drug","Tigecycline","dose","Loading 200mg -> 100mg q12h\u3002\n**\u8840\u4e2d\u6fc3\u5ea6\u4f4e\uff0c\u83cc\u8840\u75c7/UTI \u4e0d\u5efa\u8b70\u55ae\u7528** (\u8001\u864e\u6015\u6c34)"],n,n)],m)],n,l),A.c(["category","E. CRE / CRPA (\u65b0\u85e5)","items",A.a([A.c(["drug","Cefiderocol","dose","2g q8h (3hr infusion)\u3002\u8986\u84cb\u5ee3 (CRE, CRAB, CRPA)"],n,n),A.c(["drug","Zavicefta","dose","Ceftazidime-avibactam\u3002\u5c0d KPC/OXA-48 \u6709\u6548 (MBL \u7121\u6548)"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83e\udda0 \u611f\u67d3\u79d1","id","protocol_id_fungal","title","\u9ef4\u83cc\u611f\u67d3 (Fungal)","subtitle","Candida, Aspergillus & Anti-fungal agents","content",A.c(["intro","### \u6cbb\u7642\u539f\u5247\n1. **Fungemia (\u5ff5\u73e0\u83cc\u8840\u75c7)**: **\u4e00\u5b9a\u8981\u6cbb**\uff01\u79fb\u9664 CVC\u3002\u9700\u6cbb\u7642\u81f3 B/C \u9670\u6027\u5f8c 14 \u5929\u3002\u6aa2\u67e5\u773c\u5e95 (\u773c\u5167\u708e)\u3002\n2. **Urine/Sputum Candida**: \u591a\u70ba **Colonization**\uff0c\u539f\u5247\u4e0a**\u4e0d\u6cbb\u7642** (\u9664\u975e Neutropenia \u6216\u6ccc\u5c3f\u9053\u8655\u7f6e)\u3002\n3. **Aspergillus (\u9eb4\u83cc)**: \u5e38\u898b\u65bc\u514d\u75ab\u4f4e\u4e0b/\u79fb\u690d\u75c5\u4eba (\u80ba\u90e8\u7a7a\u6d1e)\u3002","diagnosis",A.a(["[\u5206\u985e] **Yeast**: Candida, Cryptococcus (\u8166\u819c\u708e/HIV)","[\u5206\u985e] **Mold**: Aspergillus, Mucor","[\u6aa2\u9a57] Beta-D-Glucan (\u5ee3\u6cdb), Galactomannan (Aspergillus)"],o),"treatment",A.a([A.c(["category","A. \u5ff5\u73e0\u83cc (Candida)","items",A.a([A.c(["drug","Fluconazole","dose","\u9996\u9078 (\u4f4e\u98a8\u96aa)\u3002**UTI \u9996\u9078** (\u6fc3\u5ea6\u9ad8)\u3002C. krusei \u7121\u6548"],n,n),A.c(["drug","Echinocandin","dose","**Micafungin / Anidulafungin**\n\u4e2d\u91cd\u5ea6/\u9ad8\u98a8\u96aa\u9996\u9078\u3002**UTI \u7121\u6548**!"],n,n),A.c(["drug","Amphotericin B","dose","\u5f8c\u7dda/\u6297\u85e5\u6027\u83cc\u682a\u3002\u814e\u6bd2\u6027\u5f37"],n,n)],m)],n,l),A.c(["category","B. \u9eb4\u83cc (Aspergillus)","items",A.a([A.c(["drug","Voriconazole","dose","\u9996\u9078\u6cbb\u7642 (\u8996\u5e7b\u89ba\u526f\u4f5c\u7528)"],n,n),A.c(["drug","Posaconazole","dose","\u9810\u9632\u6027\u7528\u85e5\u70ba\u4e3b"],n,n),A.c(["drug","Isavuconazole","dose","\u526f\u4f5c\u7528\u8f03\u5c11\uff0c\u53ef\u7528\u65bc\u814e\u529f\u80fd\u5dee\u8005"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83e\udda0 \u611f\u67d3\u79d1","id","protocol_id_viral","title","\u75c5\u6bd2\u611f\u67d3 (Viral)","subtitle","COVID-19, Influenza, CMV, C. diff","content",A.c(["diagnosis",A.a(["[COVID-19] \u9ad8\u98a8\u96aa: \u5e74\u9f61\u226565, \u6162\u6027\u75c5, \u514d\u75ab\u4f4e\u4e0b, \u5b55\u5a66","[CMV] \u9a57 **CMV PCR** (Viral load)\u3002\u5e38\u898b\u65bc\u79fb\u690d/\u514d\u75ab\u6291\u5236\u75c5\u4eba\u3002","[C. diff] \u6297\u751f\u7d20\u5f8c\u8179\u7009\u3002\u9a57 **Stool Toxin**\u3002\u5206\u8f15/\u91cd/\u731b\u7206\u6027\u3002"],o),"treatment",A.a([A.c(["category","A. COVID-19","items",A.a([A.c(["drug","Paxlovid (\u53e3\u670d)","dose","\u9996\u9078\u3002\u767c\u75c55\u5929\u5167\u3002\u9700\u8abf\u6574\u814e\u529f\u80fd & \u4ea4\u4e92\u4f5c\u7528 (\u6297\u51dd\u8840\u5291/Statin)"],n,n),A.c(["drug","Molnupiravir (\u53e3\u670d)","dose","\u7121\u6cd5\u7528 Paxlovid \u8005\u3002\u6548\u679c\u8f03\u5dee\u3002\u5b55\u5a66\u7981\u7528"],n,n),A.c(["drug","Remdesivir (IV)","dose","\u4f4f\u9662/\u80ba\u708e/\u7121\u6cd5\u53e3\u670d\u8005\u3002200mg -> 100mg QD (\u51713-5\u5929)"],n,n)],m)],n,l),A.c(["category","B. \u6d41\u611f (Influenza)","items",A.a([A.c(["drug","Tamiflu (\u53e3\u670d)","dose","75mg BID x 5\u5929"],n,n),A.c(["drug","Peramivir (IV)","dose","300-600mg \u55ae\u6b21\u6ce8\u5c04 (\u5438\u6536\u4e0d\u826f/\u91cd\u75c7)"],n,n)],m)],n,l),A.c(["category","C. \u5de8\u7d30\u80de\u75c5\u6bd2 (CMV)","items",A.a([A.c(["drug","Ganciclovir","dose","\u6cbb\u7642\u9996\u9078\u3002\u6ce8\u610f\u9aa8\u9ad3\u6291\u5236 (Cytopenia)"],n,n),A.c(["drug","Letermovir","dose","\u9810\u9632\u6027\u70ba\u4e3b\u3002\u8f03\u7121\u9aa8\u9ad3\u6bd2\u6027"],n,n)],m)],n,l),A.c(["category","D. \u56f0\u96e3\u68ad\u72c0\u687f\u83cc (C. diff)","items",A.a([A.c(["drug","\u7b2c\u4e00\u7dda","dose","**Vancomycin (Oral)** 125mg QID \u6216 **Fidaxomicin**"],n,n),A.c(["drug","\u66ff\u4ee3","dose","Metronidazole 500mg TID (\u50c5\u8f15\u75c7/\u7121\u85e5\u6642)"],n,n),A.c(["drug","\u731b\u7206\u6027 (Fulminant)","dose","Vanco (Oral/Rectal) + Metronidazole (IV)"],n,n)],m)],n,l)],k)],n,i)],n,j),A.c(["group","\ud83c\udf6c \u5167\u5206\u6ccc\u79d1","id","chap_endo_01","title","\u8166\u4e0b\u5782\u9ad4 (Pituitary)","subtitle","Apoplexy, Prolactinoma & Acromegaly","content",A.c(["diagnosis",A.a(["Apoplexy: \u7a81\u767c\u982d\u75db, \u8996\u91ce\u7f3a\u640d, \u4f4e\u8840\u58d3","Prolactinoma: PRL > 100 ng/mL","Acromegaly: IGF-1 \u9ad8, GH \u7121\u6cd5\u88ab OGTT \u6291\u5236"],o),"treatment",A.a([A.c(["category","\u8166\u4e0b\u5782\u9ad4\u4e2d\u98a8 (Apoplexy)","items",A.a([A.c(["drug","Steroids (First!)","dose","\u9ad8\u5291\u91cf Hydrocortisone (\u907f\u514d Adrenal Crisis)"],n,n),A.c(["drug","Surgery","dose","\u7dca\u6025\u6e1b\u58d3 (\u82e5\u6709\u795e\u7d93\u7f3a\u640d)"],n,n)],m)],n,l),A.c(["category","\u9ad8\u6ccc\u4e73\u6fc0\u7d20\u8840\u75c7","items",A.a([A.c(["drug","Agonist (\u9996\u9078)","dose","Cabergoline \u6216 Bromocriptine"],n,n),A.c(["drug","Surgery","dose","\u85e5\u7269\u7121\u6548\u6216\u58d3\u8feb\u8996\u795e\u7d93"],n,n)],m)],n,l)],k)],n,i)],n,j),A.c(["group","\ud83c\udf6c \u5167\u5206\u6ccc\u79d1","id","chap_endo_02","title","\u7532\u72c0\u817a (Thyroid)","subtitle","Storm, Myxedema & Hyper/Hypo","content",A.c(["intro","### \u7532\u72c0\u817a\u98a8\u66b4 (Thyroid Storm)\n1. **\u5b9a\u7fa9**\uff1a\u5371\u53ca\u751f\u547d\u7684\u7532\u72c0\u817a\u6a5f\u80fd\u4ea2\u9032\u60e1\u5316\u3002\n2. **\u8a3a\u65b7 (Burch-Wartofsky Score)**\uff1a\n   * **> 45\u5206**\uff1a\u9ad8\u5ea6\u61f7\u7591 (Highly suggestive)\n   * **25-44\u5206**\uff1a\u7591\u4f3c (Suggestive)\n   * **< 25\u5206**\uff1a\u4e0d\u592a\u50cf (Unlikely)\n   * *\u8a55\u5206\u9805\u76ee\uff1a\u9ad4\u6eab\u3001CNS\u75c7\u72c0\u3001\u5fc3\u8df3\u3001\u5fc3\u8870\u7aed\u3001\u8178\u80c3\u9053\u75c7\u72c0*\n3. **\u62bd\u8840**\uff1aFree T4, 3rd-gen TSH (T3 \u53ef\u9806\u4fbf)\u3002\n4. **\u7981\u5fcc**\uff1a\u274c **\u9000\u71d2\u4e0d\u53ef\u7528 Aspirin** (\u6703\u589e\u52a0 Free T4)\u3002","diagnosis",A.a(["[Graves'] Diffuse uptake; [Thyroiditis] Low uptake","[Hyper] TSH\u4f4e, fT4\u9ad8; [Hypo] TSH\u9ad8, fT4\u4f4e","[Storm] \u9ad8\u71d2 >38\xb0C, \u5fc3\u8df3 >140, \u610f\u8b58\u6539\u8b8a, \u9ec3\u75b8/\u8179\u7009"],o),"treatment",A.a([A.c(["category","A. \u7532\u72c0\u817a\u98a8\u66b4 (4\u5927\u85e5\u7269\u9806\u5e8f)","items",A.a([A.c(["drug","1. Beta-blocker (\u63a7\u5236\u75c7\u72c0)","dose","**Propranolol** 40-80mg PO q4h (\u9996\u9078, \u6291\u5236T4\u8f49T3)\n**Esmolol** IV (\u82e5\u9700\u5feb\u901f\u8abf\u6574): 250-500 mcg/kg loading -> 50-100 mcg/kg/min"],n,n),A.c(["drug","2. Thionamide (\u6291\u5236\u5408\u6210)","dose","**PTU** (\u9996\u9078): 500-1000mg loading -> 250mg q4h (\u6291\u5236T4\u8f49T3)\n**Methimazole**: 20-40mg q4h-q6h (Max 120mg/day)"],n,n),A.c(["drug","3. Iodine (\u6291\u5236\u91cb\u653e)","dose","\u26a0\ufe0f **\u5fc5\u9808\u5728\u6297\u7532\u72c0\u817a\u85e5\u5f8c 1 \u5c0f\u6642\u7d66\u4e88** (Wolff-Chaikoff effect)\n**SSKI**: 5\u6ef4 PO q6h\n**Lugol's**: 8\u6ef4 PO q6h\n*\u82e5\u7898\u904e\u654f: Lithium 300mg q6-8h*"],n,n),A.c(["drug","4. Steroid (\u6291\u5236\u8f49\u63db)","dose","**Hydrocortisone**: 300mg IV st -> 100mg q8h\n**Dexamethasone**: 2mg IV q12h"],n,n)],m)],n,l),A.c(["category","B. \u652f\u6301\u6027\u7642\u6cd5","items",A.a([A.c(["drug","\u9000\u71d2","dose","**Acetaminophen** (\u9996\u9078)\n\u274c **\u7981\u7528 Aspirin** (\u6703\u7f6e\u63db\u51fa Free T4 \u52a0\u91cd\u75c5\u60c5)"],n,n),A.c(["drug","\u8f38\u6db2\u8207\u964d\u6eab","dose","\u7a4d\u6975\u8f38\u6db2 (Fluid resuscitation) \u8207 \u7269\u7406\u964d\u6eab (\u51b0\u6795/\u51b7\u6c23)"],n,n)],m)],n,l),A.c(["category","C. \u9ecf\u6db2\u6c34\u816b\u6027\u660f\u8ff7 (Myxedema)","items",A.a([A.c(["drug","Steroids (Must!)","dose","**Hydrocortisone 100mg IV stat** (\u5148\u7d66! \u907f\u514d Adrenal Crisis)"],n,n),A.c(["drug","Thyroxine","dose","T4 200-400 mcg IV loading"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83c\udfe5 \u4e00\u822c\u91ab\u5b78\u79d1","id","chap_gen_01","title","\u9152\u7cbe\u6212\u65b7 (Alcohol Withdrawal)","subtitle","CIWA Protocol & DTs","content",A.c(["diagnosis",A.a(["CIWA-Ar \u91cf\u8868\u8a55\u4f30","Delirium Tremens (DTs): \u9707\u986b, \u8996\u5e7b\u89ba, \u81ea\u5f8b\u795e\u7d93\u5931\u8abf (48-96hr)"],o),"treatment",A.a([A.c(["category","Benzodiazepines (\u4e3b\u8981\u6cbb\u7642)","items",A.a([A.c(["drug","Symptom-Triggered","dose","CIWA >8 \u7d66 Lorazepam 2-4mg (\u9996\u9078)"],n,n),A.c(["drug","Fixed-Schedule","dose","Chlordiazepoxide \u6216 Lorazepam \u5b9a\u6642\u7d66\u4e88 (\u91cd\u75c7\u8005)"],n,n)],m)],n,l),A.c(["category","\u5176\u4ed6\u652f\u6301","items",A.a([A.c(["drug","Thiamine (B1)","dose","100-500mg IV/IM (\u9810\u9632 Wernicke's)"],n,n),A.c(["drug","Electrolytes","dose","\u88dc\u5145\u9240\u3001\u9382\u3001\u78f7"],n,n)],m)],n,l)],k)],n,i)],n,j),A.c(["group","\ud83c\udfe5 \u4e00\u822c\u91ab\u5b78\u79d1","id","protocol_pain_01","title","\u75bc\u75db\u63a7\u5236 (Pain & Opioids)","subtitle","On Call: Morphine, Fentanyl & Rescue","content",A.c(["intro","### \u8655\u7f6e\u539f\u5247\n1. **\u5f37\u5ea6\u63db\u7b97**\uff1aPO : SC : IV = 1 : 2 : 3\u3002\n2. **\u521d\u6b21\u4f7f\u7528**\uff1a\u975e\u672b\u671f/Naive \u75c5\u4eba\u76e1\u91cf\u5225\u4e82\u958b\u3002\u8853\u5f8c\u5e38\u898b: Morphine 5mg in 100mL NS run 15min Q6H prn\u3002\n3. **\u8abf\u6574\u539f\u5247**\uff1a\u4e0d\u8981\u75c5\u4eba\u4e00\u558a\u75db\u5c31\u8abf\u9ad8\u3002\u6bcf\u65e5\u589e\u52a0\u7e3d\u91cf\u4ee5\u4e0d\u8d85\u904e\u524d 24hr \u7684 1/3 \u70ba\u539f\u5247\u3002\n4. **\u6551\u63f4\u5291\u91cf (Rescue)**\uff1a\u4e00\u6b21 prn = \u6bcf\u65e5\u7e3d\u91cf\u7684 10-20% (\u6216 1/6)\u3002","diagnosis",A.a(["[\u89e3\u6bd2] **RR < 8** \u6216 **Pinpoint pupil**: \u61f7\u7591\u4e2d\u6bd2 -> Naloxone","[\u8b66\u793a] **Fentanyl \u8cbc\u7247**: Onset \u6162 (6-12hr)\uff0c\u4e0d\u9069\u5408\u6025\u6027\u6b62\u75db\u3002\u4e00\u7247 = 60mg PO Morphine\u3002","[\u8b66\u793a] **\u9577\u6548\u53e3\u670d (MST)**: \u4e0d\u53ef\u78e8\u7c89/\u525d\u534a (\u541e\u56a5\u56f0\u96e3\u7981\u7528)\u3002","[\u63db\u7b97] \u53e3\u670d Morphine 2 mg = \u76ae\u4e0b Morphine 1 mg\u3002"],o),"treatment",A.a([A.c(["category","A. \u53e3\u670d\u85e5\u7269 (Oral Opioids)","items",A.a([A.c(["drug","Morphine Sulfate (\u77ed\u6548)","dose","5-15 mg PO q4h (\u8001\u4eba/\u809d\u814e\u5dee q6h)\n*30min\u751f\u6548, 1hr\u9054\u5cf0\u503c*"],n,n),A.c(["drug","MST Continus (\u9577\u6548)","dose","30mg q12h \u8d77\u59cb\u3002\n**\u4e0d\u53ef\u78e8\u7c89/\u54ac\u788e**\u3002\u6bcf 2-3 \u5929\u8abf\u4e00\u6b21 (\u5e45\u5ea6 30-50%)"],n,n),A.c(["drug","MXL (\u9577\u6548\u81a0\u56ca)","dose","q12h \u6216 QD\u3002**\u53ef\u64a5\u958b**\u52a0\u5728\u6c34/\u98f2\u6599\u670d\u7528 (NG\u53ef\u7528)"],n,n),A.c(["drug","Oxycodone","dose","\u5f37\u5ea6\u7d04 Morphine \u7684 **1.5\u500d**\nOxyNorm (\u77ed\u6548), Oxycontin (\u9577\u6548 q12h)"],n,n)],m)],n,l),A.c(["category","B. \u91dd\u5291\u8207\u8abf\u6574 (IV/SC)","items",A.a([A.c(["drug","Naive Patient","dose","**Morphine 2-5 mg IV/SC q4-6h prn**\nIV peak: 5-15min"],n,n),A.c(["drug","\u5291\u91cf\u8abf\u6574 (Titration)","dose","5 -> 10 -> 15 -> 20 -> 30 -> 45 -> 60 mg\n*\u82e5 prn \u9700\u6c42 >=3 \u6b21/\u65e5\uff0c\u5efa\u8b70\u8abf\u6574\u57fa\u5e95\u5291\u91cf*"],n,n)],m)],n,l),A.c(["category","C. Fentanyl (Patch & Pump)","items",A.a([A.c(["drug","Transdermal Patch","dose","3\u5929\u63db\u4e00\u6b21 (\u5c11\u65782\u5929)\u3002\u82e5\u591a\u7247\u5efa\u8b70\u4ea4\u932f\u6642\u9593\u63db\u3002\n*\u521d\u6b21\u4f7f\u7528\u9700 12-24hr \u9054\u7a69\u614b*"],n,n),A.c(["drug","ICU Pump (\u539f\u6db2)","dose","Fentanyl (500mcg/10mL) 1 amp **Run 1-3 ml/hr**\n\u8abf\u6574: \xb1 5cc/hr (Max 20cc/hr)"],n,n),A.c(["drug","ICU Pump (\u7a00\u91cb)","dose","Fentanyl 1 amp in 100mL NS -> **Run 10-20 ml/hr**"],n,n)],m)],n,l),A.c(["category","D. \u547c\u5438\u56f0\u96e3\u8207\u62d4\u7ba1 (Dyspnea)","items",A.a([A.c(["drug","\u547c\u5438\u5598 (Dyspnea)","dose","Morphine 5-15mg PO \u6216 2-5mg IV/SC prn\n\u56b4\u91cd: \u52a0 Midazolam 0.5-1 mg"],n,n),A.c(["drug","\u64a4\u9664\u547c\u5438\u5668 (Terminal)","dose","Morphine 5-10mg + Midazolam 5-10mg SC (\u62d4\u7ba1\u524d)\n\u8003\u616e Syringe pump \u6301\u7e8c\u8f38\u6ce8 (\u5404 10-20mg/day)"],n,n)],m)],n,l),A.c(["category","E. \u89e3\u6bd2\u5291 (Antidote)","items",A.a([A.c(["drug","Naloxone","dose","**0.4-2 mg (1-5\u652f) IV/SC** \u6bcf 3min \u53ef\u91cd\u8907\n\u76f4\u5230 RR > 8/min\u3002\u82e5\u7d66 10mg \u7121\u6548\u61c9\u91cd\u65b0\u8a3a\u65b7"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83c\udfe5 \u4e00\u822c\u91ab\u5b78\u79d1","id","protocol_transfusion_01","title","\u8f38\u8840\u6307\u5f15 (Transfusion)","subtitle","On Call: \u8840\u54c1\u9078\u64c7\u3001\u5291\u91cf\u8a08\u7b97 & \u8f38\u8840\u53cd\u61c9","content",A.c(["intro","### \u8f38\u8840\u539f\u5247\n1. **Hb \u76ee\u6a19**\uff1a\u539f\u5247\u4e0a < 7.0 \u624d\u8f38 (Active bleeding \u9664\u5916)\u3002\n2. **\u7167\u5c04 (Irradiation)**\uff1a\u9810\u9632 GVHD (\u9069\u61c9\u75c7: \u514d\u75ab\u4e0d\u5168/\u5316\u7642/\u79fb\u690d)\u3002\n3. **MTP (\u5927\u91cf\u8f38\u8840)**\uff1a\u5275\u50b7/\u5927\u51fa\u8840\u6642\u555f\u52d5 (\u6bd4\u4f8b 1:1:1)\u3002","diagnosis",A.a(["[RBC] **Hb < 7.0** \u6216 Active bleeding\u3002Check Reticulocyte, Ferritin, OB\u3002","[PLT] **< 20k** (\u9810\u9632), **< 50k** (\u51fa\u8840/\u624b\u8853), **< 100k** (\u8166/\u773c\u624b\u8853)\u3002","[FFP] **PT/APTT > 1.5x** \u4e14\u6709\u51fa\u8840\u98a8\u96aa\u3002","[Cryo] **Fibrinogen < 100** (DIC \u5e38\u898b)\u3002","[\u9451\u5225] **PLT \u8f38\u4e0d\u4e0a\u53bb?** \u9a57 CCI (1hr < 7.5 = Refractory)\u3002\u8003\u616e HLA-matched\u3002","[\u53cd\u61c9] **TACO** (\u6c34\u816b/\u9ad8\u8840\u58d3) vs **TRALI** (ARDS/\u767c\u71d2/\u4f4e\u8840\u58d3)\u3002"],o),"treatment",A.a([A.c(["category","A. \u7d05\u8840\u7403 (LPR/pRBC)","items",A.a([A.c(["drug","\u5291\u91cf","dose","**2 U \u4e0a\u5347 Hb 1.0** (\u6bcf U 250mL)\u3002\n*\u5efa\u8b70\u6bcf\u6b21 2U \u6162\u6162\u7d66\uff0c\u907f\u514d Volume overload*"],n,n),A.c(["drug","MTP (\u5927\u91cf\u8f38\u8840)","dose","\u7b2c1\u8f2a: 6U RBC + 1U LPPH + 2U FFP\n\u7b2c2\u8f2a: 6U RBC + 10U FFP"],n,n)],m)],n,l),A.c(["category","B. \u8840\u5c0f\u677f (Platelet)","items",A.a([A.c(["drug","LPPH (\u5206\u96e2\u8853)","dose","**\u9996\u9078**\u30021 \u888b (\u7d04200mL) = 12U \u6fc3\u7e2e\u8840\u5c0f\u677f\n**\u9810\u671f\u4e0a\u5347 30k**"],n,n),A.c(["drug","PLT Concentrate","dose","12 U \u4e0a\u5347 30k (\u6bcf U 30-40mL)"],n,n),A.c(["drug","CCI \u516c\u5f0f","dose","(\u8f38\u5f8c-\u8f38\u524d) x BSA / \u8f38\u6ce8\u91cf(10^11)\n*LPPH \u542b 3x10^11*"],n,n),A.c(["drug","\u9451\u5225 (Refractory)","dose","ITP, DIC, TTP (\u7981\u8f38\u8840!), Splenomegaly"],n,n)],m)],n,l),A.c(["category","C. \u51dd\u8840\u56e0\u5b50 (FFP & Cryo)","items",A.a([A.c(["drug","FFP (\u8840\u6f3f)","dose","**10-15 mL/kg** (\u6210\u4eba\u7d04 4-6 U)\n*\u6bcf mL \u4e0a\u5347 1% \u56e0\u5b50\u6fc3\u5ea6*"],n,n),A.c(["drug","Cryoprecipitate","dose","**Fibrinogen < 100** \u6642\u4f7f\u7528 (DIC)\n\u6210\u4eba\u7d04 **10-12 U** (20U \u4e0a\u5347 Fibrinogen 75)"],n,n)],m)],n,l),A.c(["category","D. \u8f38\u8840\u53cd\u61c9\u8655\u7f6e","items",A.a([A.c(["drug","TACO (\u9ad4\u6db2\u904e\u591a)","dose","\u5750\u8d77, O2, **Lasix** (\u5229\u5c3f\u5291), \u6e1b\u6162\u8f38\u8840"],n,n),A.c(["drug","TRALI (\u80ba\u640d\u50b7)","dose","\u652f\u6301\u6027\u7642\u6cd5 (ARDS protocol), \u63d2\u7ba1/\u6c27\u6c23\n*\u52ff\u7d66\u5229\u5c3f\u5291 (\u9664\u975e\u5408\u4f75\u904e\u91cf)*"],n,n),A.c(["drug","\u904e\u654f (Allergy)","dose","\u505c\u8f38\u8840, \u7d66 **Benadryl** (\u6297\u7d44\u7e54\u80fa) \xb1 Steroid"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83c\udfe5 \u4e00\u822c\u91ab\u5b78\u79d1","id","protocol_common_meds","title","\u503c\u73ed\u5e38\u7528\u85e5\u7269\u901f\u67e5","subtitle","\u75c7\u72c0\u6cbb\u7642\u3001\u76ae\u819a\u85e5\u818f\u3001\u6ccc\u5c3f\u8655\u7f6e & \u985e\u56fa\u9187\u5206\u7d1a","content",A.c(["intro","### \u4f7f\u7528\u8aaa\u660e\n\u672c\u7ae0\u7bc0\u5f59\u6574\u503c\u73ed\u5e38\u898b\u7684\u4e3b\u8a34\u75c7\u72c0\u8655\u7406 (Symptomatic treatment)\uff0c\u5305\u542b\u91dd\u5291\u3001\u53e3\u670d\u8207\u5916\u7528\u85e5\u7269\u3002\u85e5\u540d\u4ee5**\u4e9e\u6771\u91ab\u9662**\u5e38\u898b\u54c1\u9805\u70ba\u4e3b\u3002\n\n**\u8180\u80f1\u6383\u63cf (Bladder Scan) \u516c\u5f0f**\uff1a\n$$ \\\\text{Volume} = \\\\text{Width} \\\\times \\\\text{Depth} \\\\times \\\\text{Height} \\\\times 0.7 $$","diagnosis",A.a(["[\u8b66\u793a] **Novamin**: \u5efa\u8b70 IM\uff0cIV push \u6613\u6709 EPS \u526f\u4f5c\u7528\u3002","[\u8b66\u793a] **Imodium**: \u7d30\u83cc\u6027\u8179\u7009\u6216\u4e00\u5929\u62c9 <5 \u6b21\u8005**\u7981\u7528** (\u6539\u7528 Smecta)\u3002","[\u8b66\u793a] **Dulcolax**: \u525b\u505a\u5b8c\u8178\u543b\u5408\u8853\u8005**\u7981\u7528** (\u9664\u975e\u4e3b\u6cbb\u91ab\u5e2b\u540c\u610f)\u3002","[\u6280\u5de7] **\u76ae\u819a\u85e5\u818f**: \u4e0d\u77e5\u9053\u958b\u4ec0\u9ebc? \u958b **Scheree (\u56db\u76ca)** (\u985e\u56fa\u9187+\u6297\u9ef4\u83cc+\u6297\u751f\u7d20)\u3002","[\u6280\u5de7] **\u6297\u7d44\u7e54\u80fa**: \u4e0d\u77e5\u9053\u958b\u4ec0\u9ebc? \u958b **Benamine** (Vena \u53e3\u670d\u7248)\u3002","[\u4fdd\u809d] **Silymarin**: \u5be6\u8b49\u5f31 (\u970015# TID)\uff0c\u4e3b\u8981\u7576**\u5b89\u6170\u5291**\u7528 (\u9632\u6b62\u75c5\u4eba\u4e82\u5403\u504f\u65b9)\u3002"],o),"treatment",A.a([A.c(["category","A. \u91dd\u5291\u6025\u7528 (Injectables)","items",A.a([A.c(["drug","\u6297\u904e\u654f/\u8541\u9ebb\u75b9","dose","1. **Vena** (Diphenhydramine) 1 amp IV/IM\n2. \u7121\u6548 -> **Prednisolone** 5mg PO\n3. \u7121\u6548 -> **Solu-Medrol** 40mg IV -> \u6703\u8a3a\u76ae\u819a\u79d1"],n,n),A.c(["drug","\u6b62\u5410 (Antiemetic)","dose","**Primperan** (Metoclopramide) 1 amp IV/IM\n**Novamin** 1 amp **IM** (IV \u526f\u4f5c\u7528\u591a)\n**Kytril** (\u81ea\u8cbb, \u5316\u7642\u7528)"],n,n),A.c(["drug","\u5f37\u529b\u5229\u5c3f (Diuretics)","dose","**Lasix**: 1 amp IV push\n**Burinex**: 1 amp = 4 amp Lasix (\u5f37\u6548!)\n*\u7528\u65bc\u56b4\u91cd\u6c34\u816b\u4e14 Lasix \u7121\u6548\u6642\uff0c\u53ef\u6ce1 pump 1-4 cc/hr*"],n,n)],m)],n,l),A.c(["category","B. \u5e38\u898b\u53e3\u670d\u85e5 (Oral Meds)","items",A.a([A.c(["drug","\u8178\u80c3\u9053 (GI)","dose","**MgO**: 1# QID (\u80c3\u85e5), 2# BID (\u8edf\u4fbf)\n**Sennoside**: \u8edf\u4fbf\u5291\n**Dulcolax**: \u5f37\u529b\u7009\u85e5\n**Smecta**: \u6b62\u7009 (\u5438\u9644\u5291)\n**Erythromycin**: 1-2# TID (Off-label \u4fc3\u9032\u80c3\u6392\u7a7a/\u80c3\u8f15\u7671)"],n,n),A.c(["drug","\u611f\u5192/\u547c\u5438\u9053","dose","**Medicon-A**: \u6b62\u54b3\n**Actein / Kotan**: \u5316\u75f0 (Kotan \u53ef\u958b\u5438\u5165)\n**Benamine**: \u6297\u7d44\u7e54\u80fa (\u9f3b\u6c34/\u7662/\u6688)"],n,n),A.c(["drug","\u6b62\u6688 (Vertigo)","dose","**Betaserc** (\u6885\u5c3c\u723e\u6c0f\u75c7), **Bonamin**"],n,n),A.c(["drug","\u5176\u4ed6","dose","**Lipitor**: \u964d\u8840\u8102\n**Zoloft / Lexapro**: \u8001\u4eba\u6182\u9b31\n**Pentoxifylline**: \u672b\u68a2\u5faa\u74b0"],n,n)],m)],n,l),A.c(["category","C. \u76ae\u819a\u8207\u5916\u7528 (Topical)","items",A.a([A.c(["drug","\u7d9c\u5408/\u842c\u7528","dose","**Scheree (\u56db\u76ca\u4e73\u818f)**: \u542b Steroid/Anti-fungal/Antibiotics\u3002\u6fd5\u75b9/\u7d05\u816b/\u9ef4\u83cc\u7686\u53ef\u8a66\u3002"],n,n),A.c(["drug","\u6b62\u7662/\u6b62\u75db","dose","**Diclofenac Gel**: \u6b62\u7662/\u6b62\u75db\n**Teiria Gel**: \u808c\u8089\u75e0\u75db\n**Flur Di Fen Patch**: \u75e0\u75db\u8cbc\u5e03\n**Heparinoid**: \u7600\u9752\u85e5\u818f"],n,n),A.c(["drug","\u7279\u5b9a\u90e8\u4f4d","dose","**Smile Orabase**: \u53e3\u5167\u818f\n**High-Xylmol**: \u75d4\u7621/\u6703\u9670\u75bc\u75db\n**Artelac**: \u4eba\u5de5\u6dda\u6db2"],n,n)],m)],n,l),A.c(["category","D. \u6ccc\u5c3f\u8207\u6eef\u7559 (Urology)","items",A.a([A.c(["drug","\u5c3f\u6eef\u7559 (Retention)","dose","\u9918\u5c3f > 400ml -> \u55ae\u5c0e\u6216 Foley\n\u85e5\u7269: **Bethanechol** (\u4fc3\u9032\u6536\u7e2e)"],n,n),A.c(["drug","\u651d\u8b77\u817a\u80a5\u5927 (BPH)","dose","**Harnalidge** (\u4e0d\u53ef\u78e8\u7c89)\n**Urief** (\u53ef\u78e8\u7c89)"],n,n)],m)],n,l),A.c(["category","E. \u985e\u56fa\u9187\u85e5\u818f\u5f37\u5f31\u8868 (Steroid Potency)","items",A.a([A.c(["drug","\u8d85\u5f37\u6548 (Super Potent)","dose","**Clobetasol**\n\u5546\u54c1\u540d: **Dermovate (\u6234\u6469\u819a)**, Vimax (\u6ce1\u6cab\u6db2)"],n,n),A.c(["drug","\u5f37\u6548 (Potent)","dose","**Fluocinonide**\n\u5546\u54c1\u540d: **Topsym (\u59a5\u819a\u6de8)**"],n,n),A.c(["drug","\u4e2d\u6548 (Mid-strength)","dose","**Betamethasone / Mometasone**\n\u5546\u54c1\u540d: **Septon (\u8212\u819a\u901a)**, **Rinderon-VA (\u81e8\u5f97\u9686)**, **Elison (\u5b89\u819a\u6a02)**"],n,n),A.c(["drug","\u4e2d\u5f31\u6548","dose","**Fluticasone**\n\u5546\u54c1\u540d: **Cutivate (\u514b\u5ef7\u819a)**, **Scheree (\u56db\u76ca)**"],n,n),A.c(["drug","\u5f31\u6548 (Mild)","dose","**Hydrocortisone**\n\u5546\u54c1\u540d: **Cort. S (\u76ae\u8cea\u9187)** -> \u81c9\u90e8/\u5b30\u5152\u53ef\u7528"],n,n)],m)],n,l)],k)],n,l)],n,j),A.c(["group","\ud83c\udfe5 \u4e00\u822c\u91ab\u5b78\u79d1","id","protocol_lines_tubes","title","\u7ba1\u8def\u7167\u8b77 (Lines & Tubes)","subtitle","CVC, Chest Tube, Foley & Drains","content",A.c(["intro","### \u6838\u5fc3\u539f\u5247\n1. **CVC \u963b\u585e**: **\u7981\u5fcc\u7528\u529b\u6c96\u6d17 (Do NOT flush)**\uff0c\u907f\u514d\u8840\u6813\u5165\u80ba\u3002\u5617\u8a66\u56de\u62bd\u3002\n2. **\u80f8\u7ba1\u5192\u6ce1**: \u6301\u7e8c\u5192\u6ce1=\u6f0f\u6c23\u3002**\u7981\u5fcc\u96a8\u610f\u593e\u7ba1** (\u6050\u81f4\u5f35\u529b\u6027\u6c23\u80f8)\u3002\n3. **CRBSI \u5224\u8b80**: \u61f7\u7591\u611f\u67d3\u6642\u62bd **\u6210\u5c0d\u8840\u6bd4 (Paired BC)**\u3002\u82e5\u7ba1\u8def\u6bd4\u5468\u908a\u65e9 2hr \u9577\u83cc -> \u62d4\u7ba1\u3002\n4. **SB Tube**: \u98df\u9053\u975c\u8108\u66f2\u5f35\u5927\u51fa\u8840\u6551\u547d\u7528\u3002\u6bcf 4-6hr \u9700\u653e\u6c23\u6e1b\u58d3\u3002","diagnosis",A.a(["[CVC] **\u51fa\u8840**: \u52a0\u58d3 20min\u3002\u7121\u6548\u53ef\u7528 Bosmin (Epi) \u6fd5\u6577\u3002\u9838\u90e8\u8840\u816b\u9700\u9632\u547c\u5438\u9053\u58d3\u8feb\u3002","[\u6c23\u80f8] **Tension**: \u4f4e\u8840\u58d3+\u9838\u975c\u8108\u6012\u5f35 -> **\u7acb\u5373\u91dd\u523a\u6e1b\u58d3**\u3002\n*\u91cf\u5316: Apex > 3cm \u6216 Hilum > 2cm \u5efa\u8b70\u653e\u7ba1*","[Foley] **\u9918\u5c3f**: Scan > 400ml \u5efa\u8b70\u5c0e\u5c3f\u3002\n*\u8840\u5c3f\u963b\u585e: \u6539\u7528 3-way Foley \u6c96\u6d17*","[Drain] **JP\u7570\u5e38**: \u4e73\u767d(\u4e73\u7cdc), \u7cde\u8272(\u8178\u6f0f), \u7da0\u8272(\u81bd\u6c41), \u9bae\u7d05(\u51fa\u8840)\u3002"],o),"treatment",A.a([A.c(["category","A. \u4e2d\u5fc3\u975c\u8108\u5c0e\u7ba1 (CVC/Port-A)","items",A.a([A.c(["drug","\u963b\u585e\u8655\u7406","dose","1. \u6aa2\u67e5\u626d\u7d50\n2. \u5617\u8a66 **\u56de\u62bd (Aspirate)**\n3. \u274c **\u7981\u6b62\u7528\u529b\u6c96\u6d17**"],n,n),A.c(["drug","\u611f\u67d3\u62d4\u9664","dose","\u82e5\u9577 **Fungus (\u5ff5\u73e0\u83cc)** -> \u5f37\u70c8\u5efa\u8b70\u62d4\u9664\n\u62d4\u9664\u5f8c\u526a\u4e0b Tip \u9001 Aerobic culture"],n,n)],m)],n,l),A.c(["category","B. \u80f8\u7ba1 (Chest Tube)","items",A.a([A.c(["drug","\u5927\u91cf\u51fa\u8840","dose","> 500ml/8hr \u6216 > 50ml/hr \u6301\u7e8c\u589e\u52a0 -> \u901a\u77e5\u5916\u79d1 (\u53ef\u80fd\u9700\u624b\u8853)"],n,n),A.c(["drug","\u76ae\u4e0b\u6c23\u816b","dose","\u6aa2\u67e5\u5074\u5b54\u662f\u5426\u6ed1\u51fa\u3002\u82e5\u6ed1\u51fa **\u4e0d\u53ef\u63a8\u56de**\uff0c\u9700\u66f4\u63db\u3002"],n,n)],m)],n,l),A.c(["category","C. \u9f3b\u80c3\u7ba1 & SB Tube","items",A.a([A.c(["drug","UGI Bleeding","dose","\u653e\u7f6e NG \u505a **Free drainage** (\u76e3\u6e2c\u51fa\u8840\u91cf/\u6e1b\u58d3)"],n,n),A.c(["drug","SB Tube (\u98df\u9053\u7403)","dose","\u80c3\u7403: 250cc \u7a7a\u6c23 (\u62c9\u7dca)\n\u98df\u9053\u7403: 30-50 mmHg (\u6bcf 4-6hr \u653e\u6c23 15min)"],n,n)],m)],n,l),A.c(["category","D. \u5916\u79d1\u5f15\u6d41\u7ba1 (JP)","items",A.a([A.c(["drug","\u79fb\u9664\u6a19\u6e96 (\u53c3\u8003)","dose","\u8179\u8154: < 100ml/day\n\u8edf\u7d44\u7e54: < 30ml/day\n*\u8178\u80c3\u9053\u624b\u8853\u9700\u7b49\u6392\u6c23/\u6392\u4fbf*"],n,n)],m)],n,l)],k)],n,l)],n,j)],t.H7)}()
 $.aAs=null
 $.aAq=null
 $.aAr=null})();(function lazyInitializers(){var s=hunkHelpers.lazyFinal,r=hunkHelpers.lazy
 s($,"aX1","rf",()=>A.E(A.E(A.ag(),"ClipOp"),"Intersect"))
 s($,"aXQ","aHe",()=>{var q="FontSlant"
-return A.b([A.E(A.E(A.ag(),q),"Upright"),A.E(A.E(A.ag(),q),"Italic")],t.O)})
+return A.a([A.E(A.E(A.ag(),q),"Upright"),A.E(A.E(A.ag(),q),"Italic")],t.O)})
 s($,"aXR","aHf",()=>{var q="FontWeight"
-return A.b([A.E(A.E(A.ag(),q),"Thin"),A.E(A.E(A.ag(),q),"ExtraLight"),A.E(A.E(A.ag(),q),"Light"),A.E(A.E(A.ag(),q),"Normal"),A.E(A.E(A.ag(),q),"Medium"),A.E(A.E(A.ag(),q),"SemiBold"),A.E(A.E(A.ag(),q),"Bold"),A.E(A.E(A.ag(),q),"ExtraBold"),A.E(A.E(A.ag(),q),"ExtraBlack")],t.O)})
+return A.a([A.E(A.E(A.ag(),q),"Thin"),A.E(A.E(A.ag(),q),"ExtraLight"),A.E(A.E(A.ag(),q),"Light"),A.E(A.E(A.ag(),q),"Normal"),A.E(A.E(A.ag(),q),"Medium"),A.E(A.E(A.ag(),q),"SemiBold"),A.E(A.E(A.ag(),q),"Bold"),A.E(A.E(A.ag(),q),"ExtraBold"),A.E(A.E(A.ag(),q),"ExtraBlack")],t.O)})
 s($,"aY0","ay1",()=>{var q="TextDirection"
-return A.b([A.E(A.E(A.ag(),q),"RTL"),A.E(A.E(A.ag(),q),"LTR")],t.O)})
+return A.a([A.E(A.E(A.ag(),q),"RTL"),A.E(A.E(A.ag(),q),"LTR")],t.O)})
 s($,"aXY","aHm",()=>{var q="TextAlign"
-return A.b([A.E(A.E(A.ag(),q),"Left"),A.E(A.E(A.ag(),q),"Right"),A.E(A.E(A.ag(),q),"Center"),A.E(A.E(A.ag(),q),"Justify"),A.E(A.E(A.ag(),q),"Start"),A.E(A.E(A.ag(),q),"End")],t.O)})
+return A.a([A.E(A.E(A.ag(),q),"Left"),A.E(A.E(A.ag(),q),"Right"),A.E(A.E(A.ag(),q),"Center"),A.E(A.E(A.ag(),q),"Justify"),A.E(A.E(A.ag(),q),"Start"),A.E(A.E(A.ag(),q),"End")],t.O)})
 s($,"aY1","aHo",()=>{var q="TextHeightBehavior"
-return A.b([A.E(A.E(A.ag(),q),"All"),A.E(A.E(A.ag(),q),"DisableFirstAscent"),A.E(A.E(A.ag(),q),"DisableLastDescent"),A.E(A.E(A.ag(),q),"DisableAll")],t.O)})
+return A.a([A.E(A.E(A.ag(),q),"All"),A.E(A.E(A.ag(),q),"DisableFirstAscent"),A.E(A.E(A.ag(),q),"DisableLastDescent"),A.E(A.E(A.ag(),q),"DisableAll")],t.O)})
 s($,"aXU","aHi",()=>{var q="RectHeightStyle"
-return A.b([A.E(A.E(A.ag(),q),"Tight"),A.E(A.E(A.ag(),q),"Max"),A.E(A.E(A.ag(),q),"IncludeLineSpacingMiddle"),A.E(A.E(A.ag(),q),"IncludeLineSpacingTop"),A.E(A.E(A.ag(),q),"IncludeLineSpacingBottom"),A.E(A.E(A.ag(),q),"Strut")],t.O)})
+return A.a([A.E(A.E(A.ag(),q),"Tight"),A.E(A.E(A.ag(),q),"Max"),A.E(A.E(A.ag(),q),"IncludeLineSpacingMiddle"),A.E(A.E(A.ag(),q),"IncludeLineSpacingTop"),A.E(A.E(A.ag(),q),"IncludeLineSpacingBottom"),A.E(A.E(A.ag(),q),"Strut")],t.O)})
 s($,"aXV","aHj",()=>{var q="RectWidthStyle"
-return A.b([A.E(A.E(A.ag(),q),"Tight"),A.E(A.E(A.ag(),q),"Max")],t.O)})
-s($,"aXO","m6",()=>A.b([A.E(A.E(A.ag(),"ClipOp"),"Difference"),A.E(A.E(A.ag(),"ClipOp"),"Intersect")],t.O))
+return A.a([A.E(A.E(A.ag(),q),"Tight"),A.E(A.E(A.ag(),q),"Max")],t.O)})
+s($,"aXO","m6",()=>A.a([A.E(A.E(A.ag(),"ClipOp"),"Difference"),A.E(A.E(A.ag(),"ClipOp"),"Intersect")],t.O))
 s($,"aXP","a__",()=>{var q="FillType"
-return A.b([A.E(A.E(A.ag(),q),"Winding"),A.E(A.E(A.ag(),q),"EvenOdd")],t.O)})
+return A.a([A.E(A.E(A.ag(),q),"Winding"),A.E(A.E(A.ag(),q),"EvenOdd")],t.O)})
 s($,"aXN","aHd",()=>{var q="BlurStyle"
-return A.b([A.E(A.E(A.ag(),q),"Normal"),A.E(A.E(A.ag(),q),"Solid"),A.E(A.E(A.ag(),q),"Outer"),A.E(A.E(A.ag(),q),"Inner")],t.O)})
+return A.a([A.E(A.E(A.ag(),q),"Normal"),A.E(A.E(A.ag(),q),"Solid"),A.E(A.E(A.ag(),q),"Outer"),A.E(A.E(A.ag(),q),"Inner")],t.O)})
 s($,"aXW","aHk",()=>{var q="StrokeCap"
-return A.b([A.E(A.E(A.ag(),q),"Butt"),A.E(A.E(A.ag(),q),"Round"),A.E(A.E(A.ag(),q),"Square")],t.O)})
+return A.a([A.E(A.E(A.ag(),q),"Butt"),A.E(A.E(A.ag(),q),"Round"),A.E(A.E(A.ag(),q),"Square")],t.O)})
 s($,"aXS","aHg",()=>{var q="PaintStyle"
-return A.b([A.E(A.E(A.ag(),q),"Fill"),A.E(A.E(A.ag(),q),"Stroke")],t.O)})
+return A.a([A.E(A.E(A.ag(),q),"Fill"),A.E(A.E(A.ag(),q),"Stroke")],t.O)})
 s($,"aXM","aHc",()=>{var q="BlendMode"
-return A.b([A.E(A.E(A.ag(),q),"Clear"),A.E(A.E(A.ag(),q),"Src"),A.E(A.E(A.ag(),q),"Dst"),A.E(A.E(A.ag(),q),"SrcOver"),A.E(A.E(A.ag(),q),"DstOver"),A.E(A.E(A.ag(),q),"SrcIn"),A.E(A.E(A.ag(),q),"DstIn"),A.E(A.E(A.ag(),q),"SrcOut"),A.E(A.E(A.ag(),q),"DstOut"),A.E(A.E(A.ag(),q),"SrcATop"),A.E(A.E(A.ag(),q),"DstATop"),A.E(A.E(A.ag(),q),"Xor"),A.E(A.E(A.ag(),q),"Plus"),A.E(A.E(A.ag(),q),"Modulate"),A.E(A.E(A.ag(),q),"Screen"),A.E(A.E(A.ag(),q),"Overlay"),A.E(A.E(A.ag(),q),"Darken"),A.E(A.E(A.ag(),q),"Lighten"),A.E(A.E(A.ag(),q),"ColorDodge"),A.E(A.E(A.ag(),q),"ColorBurn"),A.E(A.E(A.ag(),q),"HardLight"),A.E(A.E(A.ag(),q),"SoftLight"),A.E(A.E(A.ag(),q),"Difference"),A.E(A.E(A.ag(),q),"Exclusion"),A.E(A.E(A.ag(),q),"Multiply"),A.E(A.E(A.ag(),q),"Hue"),A.E(A.E(A.ag(),q),"Saturation"),A.E(A.E(A.ag(),q),"Color"),A.E(A.E(A.ag(),q),"Luminosity")],t.O)})
+return A.a([A.E(A.E(A.ag(),q),"Clear"),A.E(A.E(A.ag(),q),"Src"),A.E(A.E(A.ag(),q),"Dst"),A.E(A.E(A.ag(),q),"SrcOver"),A.E(A.E(A.ag(),q),"DstOver"),A.E(A.E(A.ag(),q),"SrcIn"),A.E(A.E(A.ag(),q),"DstIn"),A.E(A.E(A.ag(),q),"SrcOut"),A.E(A.E(A.ag(),q),"DstOut"),A.E(A.E(A.ag(),q),"SrcATop"),A.E(A.E(A.ag(),q),"DstATop"),A.E(A.E(A.ag(),q),"Xor"),A.E(A.E(A.ag(),q),"Plus"),A.E(A.E(A.ag(),q),"Modulate"),A.E(A.E(A.ag(),q),"Screen"),A.E(A.E(A.ag(),q),"Overlay"),A.E(A.E(A.ag(),q),"Darken"),A.E(A.E(A.ag(),q),"Lighten"),A.E(A.E(A.ag(),q),"ColorDodge"),A.E(A.E(A.ag(),q),"ColorBurn"),A.E(A.E(A.ag(),q),"HardLight"),A.E(A.E(A.ag(),q),"SoftLight"),A.E(A.E(A.ag(),q),"Difference"),A.E(A.E(A.ag(),q),"Exclusion"),A.E(A.E(A.ag(),q),"Multiply"),A.E(A.E(A.ag(),q),"Hue"),A.E(A.E(A.ag(),q),"Saturation"),A.E(A.E(A.ag(),q),"Color"),A.E(A.E(A.ag(),q),"Luminosity")],t.O)})
 s($,"aXX","aHl",()=>{var q="StrokeJoin"
-return A.b([A.E(A.E(A.ag(),q),"Miter"),A.E(A.E(A.ag(),q),"Round"),A.E(A.E(A.ag(),q),"Bevel")],t.O)})
+return A.a([A.E(A.E(A.ag(),q),"Miter"),A.E(A.E(A.ag(),q),"Round"),A.E(A.E(A.ag(),q),"Bevel")],t.O)})
 s($,"aY2","aHp",()=>{var q="TileMode"
-return A.b([A.E(A.E(A.ag(),q),"Clamp"),A.E(A.E(A.ag(),q),"Repeat"),A.E(A.E(A.ag(),q),"Mirror"),A.E(A.E(A.ag(),q),"Decal")],t.O)})
+return A.a([A.E(A.E(A.ag(),q),"Clamp"),A.E(A.E(A.ag(),q),"Repeat"),A.E(A.E(A.ag(),q),"Mirror"),A.E(A.E(A.ag(),q),"Decal")],t.O)})
 s($,"aX6","axV",()=>{var q="FilterMode",p="MipmapMode",o="Linear"
 return A.c([B.d_,{filter:A.E(A.E(A.ag(),q),"Nearest"),mipmap:A.E(A.E(A.ag(),p),"None")},B.Ih,{filter:A.E(A.E(A.ag(),q),o),mipmap:A.E(A.E(A.ag(),p),"None")},B.eN,{filter:A.E(A.E(A.ag(),q),o),mipmap:A.E(A.E(A.ag(),p),o)},B.kh,{B:0.3333333333333333,C:0.3333333333333333}],A.ak("oS"),t.m)})
 s($,"aXe","aGO",()=>{var q=A.avO(2)
@@ -95426,11 +95426,11 @@ return q})
 s($,"aXK","auv",()=>A.aT8(4))
 s($,"aX0","aGH",()=>A.aBx(A.E(A.ag(),"ParagraphBuilder")))
 s($,"aY_","aHn",()=>{var q="DecorationStyle"
-return A.b([A.E(A.E(A.ag(),q),"Solid"),A.E(A.E(A.ag(),q),"Double"),A.E(A.E(A.ag(),q),"Dotted"),A.E(A.E(A.ag(),q),"Dashed"),A.E(A.E(A.ag(),q),"Wavy")],t.O)})
+return A.a([A.E(A.E(A.ag(),q),"Solid"),A.E(A.E(A.ag(),q),"Double"),A.E(A.E(A.ag(),q),"Dotted"),A.E(A.E(A.ag(),q),"Dashed"),A.E(A.E(A.ag(),q),"Wavy")],t.O)})
 s($,"aXZ","ay0",()=>{var q="TextBaseline"
-return A.b([A.E(A.E(A.ag(),q),"Alphabetic"),A.E(A.E(A.ag(),q),"Ideographic")],t.O)})
+return A.a([A.E(A.E(A.ag(),q),"Alphabetic"),A.E(A.E(A.ag(),q),"Ideographic")],t.O)})
 s($,"aXT","aHh",()=>{var q="PlaceholderAlignment"
-return A.b([A.E(A.E(A.ag(),q),"Baseline"),A.E(A.E(A.ag(),q),"AboveBaseline"),A.E(A.E(A.ag(),q),"BelowBaseline"),A.E(A.E(A.ag(),q),"Top"),A.E(A.E(A.ag(),q),"Bottom"),A.E(A.E(A.ag(),q),"Middle")],t.O)})
+return A.a([A.E(A.E(A.ag(),q),"Baseline"),A.E(A.E(A.ag(),q),"AboveBaseline"),A.E(A.E(A.ag(),q),"BelowBaseline"),A.E(A.E(A.ag(),q),"Top"),A.E(A.E(A.ag(),q),"Bottom"),A.E(A.E(A.ag(),q),"Middle")],t.O)})
 r($,"aXI","aH9",()=>A.db().gVD()+"roboto/v32/KFOmCnqEu92Fr1Me4GZLCzYlKw.woff2")
 r($,"aX7","aGK",()=>A.aPX(A.wz(A.wz(A.kq(),"window"),"FinalizationRegistry"),A.iv(new A.at2())))
 r($,"aYI","aHH",()=>new A.aaU())
@@ -95450,7 +95450,7 @@ r($,"aYa","aHu",()=>A.E(A.wz(A.kq(),"window"),"FinalizationRegistry")!=null)
 r($,"aYc","auw",()=>A.E(A.wz(A.kq(),"window"),"OffscreenCanvas")!=null)
 s($,"aX8","aGL",()=>B.a6.bZ(A.c(["type","fontsChange"],t.N,t.z)))
 r($,"aKs","aF2",()=>A.tg())
-r($,"aUs","aum",()=>new A.L8(A.b([],A.ak("A<~(G)>")),A.aQ1(A.E(A.kq(),"window"),"matchMedia","(forced-colors: active)")))
+r($,"aUs","aum",()=>new A.L8(A.a([],A.ak("A<~(G)>")),A.aQ1(A.E(A.kq(),"window"),"matchMedia","(forced-colors: active)")))
 s($,"aWZ","aGF",()=>A.aIM("ftyp"))
 s($,"aXg","axW",()=>8589934852)
 s($,"aXh","aGQ",()=>8589934853)
@@ -95507,7 +95507,7 @@ s($,"aWg","aG7",()=>A.aM("\\b\\d",!0,!1,!1))
 s($,"aYE","aHE",()=>A.aJv(A.atB(0,0)))
 s($,"aTW","ZP",()=>A.aSI("_$dart_dartClosure"))
 s($,"aYJ","aHI",()=>B.aD.hj(new A.au9()))
-s($,"aXJ","aHa",()=>A.b([new J.LM()],A.ak("A<Bw>")))
+s($,"aXJ","aHa",()=>A.a([new J.LM()],A.ak("A<Bw>")))
 s($,"aW2","aFW",()=>A.lE(A.ahX({
 toString:function(){return"$receiver$"}})))
 s($,"aW3","aFX",()=>A.lE(A.ahX({$method$:null,
@@ -95533,7 +95533,7 @@ s($,"aUq","ZQ",()=>t.W.a($.aHI()))
 s($,"aWN","aGv",()=>A.avP(4096))
 s($,"aWL","aGt",()=>new A.asn().$0())
 s($,"aWM","aGu",()=>new A.asm().$0())
-s($,"aWm","axR",()=>A.aLG(A.km(A.b([-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-1,-2,-2,-2,-2,-2,62,-2,62,-2,63,52,53,54,55,56,57,58,59,60,61,-2,-2,-2,-1,-2,-2,-2,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,-2,-2,-2,-2,63,-2,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,-2,-2,-2,-2,-2],t.t))))
+s($,"aWm","axR",()=>A.aLG(A.km(A.a([-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-1,-2,-2,-2,-2,-2,62,-2,62,-2,63,52,53,54,55,56,57,58,59,60,61,-2,-2,-2,-1,-2,-2,-2,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,-2,-2,-2,-2,63,-2,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,-2,-2,-2,-2,-2],t.t))))
 r($,"aWl","aGb",()=>A.avP(0))
 s($,"aUe","aEX",()=>A.c(["iso_8859-1:1987",B.bP,"iso-ir-100",B.bP,"iso_8859-1",B.bP,"iso-8859-1",B.bP,"latin1",B.bP,"l1",B.bP,"ibm819",B.bP,"cp819",B.bP,"csisolatin1",B.bP,"iso-ir-6",B.bt,"ansi_x3.4-1968",B.bt,"ansi_x3.4-1986",B.bt,"iso_646.irv:1991",B.bt,"iso646-us",B.bt,"us-ascii",B.bt,"us",B.bt,"ibm367",B.bt,"cp367",B.bt,"csascii",B.bt,"ascii",B.bt,"csutf8",B.X,"utf-8",B.X],t.N,A.ak("oM")))
 s($,"aWO","ZW",()=>A.aPQ())
@@ -95542,7 +95542,7 @@ s($,"aWK","aGs",()=>typeof URLSearchParams=="function")
 s($,"aX9","e0",()=>A.rc(B.Z0))
 s($,"aVT","Ik",()=>{A.aMo()
 return $.ac9})
-s($,"aUf","dU",()=>J.Ir(B.Op.gcd(A.aLH(A.km(A.b([1],t.t)))),0,null).getInt8(0)===1?B.aB:B.CK)
+s($,"aUf","dU",()=>J.Ir(B.Op.gcd(A.aLH(A.km(A.a([1],t.t)))),0,null).getInt8(0)===1?B.aB:B.CK)
 s($,"aYd","a_0",()=>new A.a0u(A.o(t.N,A.ak("lK"))))
 s($,"aWI","aGq",()=>new A.as5())
 s($,"aWB","aGl",()=>new A.aoY(50,A.o(A.ak("Fq"),t.ke)))
@@ -95560,7 +95560,7 @@ s($,"aXs","ay_",()=>A.ee(B.h,B.P0,t.v))
 r($,"aWr","aGe",()=>A.aJ9(B.a_3,B.a_2))
 s($,"aYi","aHy",()=>new A.JU())
 r($,"aYv","aHA",()=>$.aHz().n(0,"windowing"))
-s($,"aYj","aHz",()=>A.dM(A.b("".split(","),t.s),t.N))
+s($,"aYj","aHz",()=>A.dM(A.a("".split(","),t.s),t.N))
 s($,"aX_","aGG",()=>A.aRh($.bc().gdm()))
 s($,"aTS","ab",()=>A.be(0,null,!1,t.Nw))
 s($,"aWp","Im",()=>new A.nL(0,$.aGc()))
@@ -95581,7 +95581,7 @@ s($,"aUu","aF4",()=>A.eS(B.aT))
 s($,"aUv","aF5",()=>A.eS(B.Jw))
 r($,"aW_","aFT",()=>new A.PE(new A.ahs(),A.aF()===B.K))
 s($,"aWX","aGD",()=>{var q=t.i
-return A.b([A.aC8(A.ee(0,0.4,q).fu(A.eS(B.GP)),0.166666,q),A.aC8(A.ee(0.4,1,q).fu(A.eS(B.GR)),0.833334,q)],A.ak("A<h0<I>>"))})
+return A.a([A.aC8(A.ee(0,0.4,q).fu(A.eS(B.GP)),0.166666,q),A.aC8(A.ee(0.4,1,q).fu(A.eS(B.GR)),0.833334,q)],A.ak("A<h0<I>>"))})
 s($,"aWW","ZX",()=>A.aC7($.aGD(),t.i))
 s($,"aWP","aGw",()=>A.ee(0,1,t.i).fu(A.eS(B.JB)))
 s($,"aWQ","aGx",()=>A.ee(1.1,1,t.i).fu($.ZX()))
@@ -95624,7 +95624,7 @@ s($,"aUx","aF7",()=>A.c([4294967562,B.ko,4294967564,B.JL,4294967556,B.JM],t.S,t.
 s($,"aUz","aF9",()=>{var q=t.g
 return A.c([B.kB,A.c5([B.cC,B.d3],q),B.kD,A.c5([B.f0,B.hH],q),B.kC,A.c5([B.f_,B.hG],q),B.kA,A.c5([B.eZ,B.hF],q)],q,A.ak("bb<h>"))})
 s($,"aYK","aHJ",()=>new A.abT())
-s($,"aVA","axO",()=>new A.acg(A.b([],A.ak("A<~(lq)>")),A.o(t.v3,t.g)))
+s($,"aVA","axO",()=>new A.acg(A.a([],A.ak("A<~(lq)>")),A.o(t.v3,t.g)))
 s($,"aVz","aFH",()=>{var q=t.v3
 return A.c([B.a_K,A.c5([B.dY],q),B.a_L,A.c5([B.e_],q),B.a_M,A.c5([B.dY,B.e_],q),B.a_J,A.c5([B.dY],q),B.a_G,A.c5([B.dX],q),B.a_H,A.c5([B.fc],q),B.a_I,A.c5([B.dX,B.fc],q),B.a_F,A.c5([B.dX],q),B.a_C,A.c5([B.dW],q),B.a_D,A.c5([B.fb],q),B.a_E,A.c5([B.dW,B.fb],q),B.a_B,A.c5([B.dW],q),B.a_O,A.c5([B.dZ],q),B.a_P,A.c5([B.fd],q),B.a_Q,A.c5([B.dZ,B.fd],q),B.a_N,A.c5([B.dZ],q),B.a_R,A.c5([B.dc],q),B.a_S,A.c5([B.hS],q),B.a_T,A.c5([B.hR],q),B.a_U,A.c5([B.fa],q)],A.ak("d6"),A.ak("bb<p>"))})
 s($,"aVy","axN",()=>A.c([B.dY,B.f_,B.e_,B.hG,B.dX,B.cC,B.fc,B.d3,B.dW,B.eZ,B.fb,B.hF,B.dZ,B.f0,B.fd,B.hH,B.dc,B.eW,B.hS,B.hD,B.hR,B.hE],t.v3,t.g))
@@ -95818,12 +95818,12 @@ s($,"aYA","Ip",()=>new A.au0())
 s($,"aYB","aHD",()=>new A.au1())
 s($,"aUo","aF1",()=>A.c5([$.ix(),$.aux()],A.ak("Ns")))
 s($,"aUt","aF3",()=>{var q=A.aM("</(?:pre|script|style|textarea)>",!1,!1,!1),p=A.aM("-->",!0,!1,!1),o=A.aM("\\?>",!0,!1,!1),n=A.aM(">",!0,!1,!1),m=A.aM("]]>",!0,!1,!1),l=$.ix()
-return A.b([q,p,o,n,m,l,l],A.ak("A<Ns>"))})
-s($,"aUi","aEY",()=>A.aK7(A.tE(A.b([B.CM,B.DA,B.DK,B.Dm,B.CO],t.vA),t.Yd),A.tE(A.b([A.aKQ(),new A.Pc(!0,!0,A.b([A.a1N("del",1),A.a1N("del",2)],t.IF),A.aM("~+",!0,!0,!1),126),new A.IN(A.aM("((?:(?:https?|ftp):\\/\\/|www\\.)(?:[-_a-z0-9]+\\.)*(?:[-a-z0-9]+\\.[-a-z0-9]+)[^\\s<]*[^\\s<?!.,:*_~])|([-_.+a-z0-9]+@(?:[-_a-z0-9]+\\.)+[-_a-z0-9]*[a-z0-9])",!1,!0,!1),null)],t.xB),t.dG)))
+return A.a([q,p,o,n,m,l,l],A.ak("A<Ns>"))})
+s($,"aUi","aEY",()=>A.aK7(A.tE(A.a([B.CM,B.DA,B.DK,B.Dm,B.CO],t.vA),t.Yd),A.tE(A.a([A.aKQ(),new A.Pc(!0,!0,A.a([A.a1N("del",1),A.a1N("del",2)],t.IF),A.aM("~+",!0,!0,!1),126),new A.IN(A.aM("((?:(?:https?|ftp):\\/\\/|www\\.)(?:[-_a-z0-9]+\\.)*(?:[-a-z0-9]+\\.[-a-z0-9]+)[^\\s<]*[^\\s<?!.,:*_~])|([-_.+a-z0-9]+@(?:[-_a-z0-9]+\\.)+[-_a-z0-9]*[a-z0-9])",!1,!0,!1),null)],t.xB),t.dG)))
 s($,"aUw","aF6",()=>{var q=A.aM("<([a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*)>",!0,!0,!1),p=A.aM("<(([a-zA-Z][a-zA-Z\\-\\+\\.]+):(?://)?[^\\s>]*)>",!0,!0,!1),o=A.aM("(?:\\\\|  +)\\n",!0,!0,!1),n=$.aEW()
-return A.tE(A.b([new A.Ku(q,60),new A.IO(p,null),new A.M4(o,null),new A.yu(!0,!0,n,A.aM("\\*+",!0,!0,!1),42),new A.yu(!0,!1,n,A.aM("_+",!0,!0,!1),95),new A.JG(A.aM("(`+(?!`))((?:.|\\n)*?[^`])\\1(?!`)",!0,!0,!1),null),new A.P4(A.aM(" \n",!0,!0,!1),32)],t.xB),t.dG)})
+return A.tE(A.a([new A.Ku(q,60),new A.IO(p,null),new A.M4(o,null),new A.yu(!0,!0,n,A.aM("\\*+",!0,!0,!1),42),new A.yu(!0,!1,n,A.aM("_+",!0,!0,!1),95),new A.JG(A.aM("(`+(?!`))((?:.|\\n)*?[^`])\\1(?!`)",!0,!0,!1),null),new A.P4(A.aM(" \n",!0,!0,!1),32)],t.xB),t.dG)})
 s($,"aU7","axI",()=>A.aM("[!\"#$%&'()*+,\\-./:;<=>?@\\[\\\\\\]^_`{|}~\\xA1\\xA7\\xAB\\xB6\\xB7\\xBB\\xBF\\u037E\\u0387\\u055A-\\u055F\\u0589\\u058A\\u05BE\\u05C0\\u05C3\\u05C6\\u05F3\\u05F4\\u0609\\u060A\\u060C\\u060D\\u061B\\u061E\\u061F\\u066A-\\u066D\\u06D4\\u0700-\\u070D\\u07F7-\\u07F9\\u0830-\\u083E\\u085E\\u0964\\u0965\\u0970\\u0AF0\\u0DF4\\u0E4F\\u0E5A\\u0E5B\\u0F04-\\u0F12\\u0F14\\u0F3A-\\u0F3D\\u0F85\\u0FD0-\\u0FD4\\u0FD9\\u0FDA\\u104A-\\u104F\\u10FB\\u1360-\\u1368\\u1400\\u166D\\u166E\\u169B\\u169C\\u16EB-\\u16ED\\u1735\\u1736\\u17D4-\\u17D6\\u17D8-\\u17DA\\u1800-\\u180A\\u1944\\u1945\\u1A1E\\u1A1F\\u1AA0-\\u1AA6\\u1AA8-\\u1AAD\\u1B5A-\\u1B60\\u1BFC-\\u1BFF\\u1C3B-\\u1C3F\\u1C7E\\u1C7F\\u1CC0-\\u1CC7\\u1CD3\\u2010-\\u2027\\u2030-\\u2043\\u2045-\\u2051\\u2053-\\u205E\\u207D\\u207E\\u208D\\u208E\\u2308-\\u230B\\u2329\\u232A\\u2768-\\u2775\\u27C5\\u27C6\\u27E6-\\u27EF\\u2983-\\u2998\\u29D8-\\u29DB\\u29FC\\u29FD\\u2CF9-\\u2CFC\\u2CFE\\u2CFF\\u2D70\\u2E00-\\u2E2E\\u2E30-\\u2E42\\u3001-\\u3003\\u3008-\\u3011\\u3014-\\u301F\\u3030\\u303D\\u30A0\\u30FB\\uA4FE\\uA4FF\\uA60D-\\uA60F\\uA673\\uA67E\\uA6F2-\\uA6F7\\uA874-\\uA877\\uA8CE\\uA8CF\\uA8F8-\\uA8FA\\uA8FC\\uA92E\\uA92F\\uA95F\\uA9C1-\\uA9CD\\uA9DE\\uA9DF\\uAA5C-\\uAA5F\\uAADE\\uAADF\\uAAF0\\uAAF1\\uABEB\\uFD3E\\uFD3F\\uFE10-\\uFE19\\uFE30-\\uFE52\\uFE54-\\uFE61\\uFE63\\uFE68\\uFE6A\\uFE6B\\uFF01-\\uFF03\\uFF05-\\uFF0A\\uFF0C-\\uFF0F\\uFF1A\\uFF1B\\uFF1F\\uFF20\\uFF3B-\\uFF3D\\uFF3F\\uFF5B\\uFF5D\\uFF5F-\\uFF65]",!0,!1,!1))
-s($,"aUd","aEW",()=>A.b([A.a1N("em",1),A.a1N("strong",2)],t.IF))
+s($,"aUd","aEW",()=>A.a([A.a1N("em",1),A.a1N("strong",2)],t.IF))
 s($,"aUy","aF8",()=>A.aM("^\\s*$",!0,!1,!1))
 s($,"aYn","ix",()=>A.aM("^(?:[ \\t]*)$",!0,!1,!1))
 s($,"aYP","ay9",()=>A.aM("^[ ]{0,3}(=+|-+)\\s*$",!0,!1,!1))
@@ -95905,7 +95905,7 @@ s($,"aWe","aG5",()=>$.Il())
 s($,"aWd","Il",()=>{var q,p,o,n,m,l,k,j,i,h,g=63.66197723675813*A.oA(50)/100,f=A.axq(0.1,50),e=$.rO[0],d=$.rO[1],c=$.rO[2],b=e*0.401288+d*0.650173+c*-0.051461,a=e*-0.250268+d*1.204414+c*0.045854,a0=e*-0.002079+d*0.048952+c*0.953127,a1=A.avL(0.59,0.69,0.9999999999999998),a2=1-0.2777777777777778*A.aSs((-g-42)/92)
 if(a2>1)a2=1
 else if(a2<0)a2=0
-q=A.b([a2*(100/b)+1-a2,a2*(100/a)+1-a2,a2*(100/a0)+1-a2],t.n)
+q=A.a([a2*(100/b)+1-a2,a2*(100/a)+1-a2,a2*(100/a0)+1-a2],t.n)
 e=5*g
 p=1/(e+1)
 o=p*p*p*p
