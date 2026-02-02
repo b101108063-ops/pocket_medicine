@@ -2441,38 +2441,66 @@ final List<Map<String, dynamic>> pocketMedicineData = [
   },
   {
     "group": "🩸 血液腫瘤科",
-    "id": "protocol_hema_pbsct",
-    "title": "週邊血幹細胞移植 (PBSCT)",
-    "subtitle": "動員原理、VOD/GVHD 併發症與迷你移植",
+    "id": "hema_pbsct_complete",
+    "title": "週邊血液幹細胞移植 (PBSCT)",
+    "subtitle": "原理、適應症、流程與併發症管理",
     "content": {
       "intro":
-          "### 核心原理\n1. **動員 (Mobilization)**: 化療後給予 **G-CSF**，使骨髓幹細胞釋放至週邊血 (增加10-300倍)，再透過分離術收集。\n2. **優勢 (vs BMT)**: 免全身麻醉、汙染率低、**恢復快** (PLT 快 14天以上)。\n3. **迷你移植 (Mini-transplant)**: 使用減低劑量調理 (RIC)，依賴 **GVL (植體抗癌)** 效應。適用於高齡 (>50歲) 或共病患者。",
+          "### 核心原理\n1. **動員 (Mobilization)**: 化療後給予 **G-CSF**，使骨髓 HSC 釋放至週邊血 (增加 10-300 倍)，再經白血球分離術收集。\n2. **PBSCT vs. BMT 優勢**:\n   * **免麻醉**: 無全身麻醉風險與疼痛。\n   * **恢復快**: 血小板恢復比 BMT 快 **14 天以上**，減少輸血。\n   * **少汙染**: 較不易受骨髓內癌細胞汙染。\n3. **間葉系幹細胞 (MSC)**: 具再生潛力，加速造血恢復。",
       "diagnosis": [
-        "[VOD] **肝靜脈阻塞 (SOS)**: 黃疸 + 水分滯留 (體重增) + 肝腫大/痛。",
-        "[aGVHD] **急性排斥 (<100天)**: 皮膚紅疹、腹瀉/腹痛、肝功能異常 (黃疸)。",
-        "[cGVHD] **慢性排斥 (>100天)**: 類似自體免疫疾病，侵犯皮膚/口/眼/肺/肝。",
-        "[感染] 移植後免疫空窗期，易受細菌、CMV、黴菌感染。",
+        "### 1. 適應症 (Indications)",
+        "• **自體 (Auto)**: 實體腫瘤 (鼻咽/卵巢/腎癌)、淋巴瘤、AML/ALL。",
+        "• **異體 (Allo)**: 白血病 (AML/ALL/CML)、MDS、SAA、重度海洋性貧血。",
+        "• **特殊**: 癌細胞侵犯骨髓者、骨盆腔曾放療無法抽骨髓者。",
+        "------------------------------------",
+        "### 2. 併發症徵兆 (Signs)",
+        "• **肝靜脈阻塞 (VOD/SOS)**: 黃疸 + 體重增加 (水腫) + 肝腫大/腹痛。",
+        "• **急性排斥 (aGVHD)**: 發生於 3 個月內。皮膚紅疹、腹瀉/嘔吐、肝指數上升。",
+        "• **感染**: 中性球低下發燒、黏膜炎 (Mucositis)。",
       ],
       "treatment": [
         {
-          "category": "A. 移植前處置",
+          "category": "A. 移植流程 (Workflow)",
           "items": [
             {
-              "drug": "調理治療 (Conditioning)",
-              "dose": "高劑量化療 (High dose C/T) ± TBI\n目的: 殺滅癌細胞 + 抑制免疫 (防排斥)",
+              "drug": "1. 植前準備",
+              "dose": "HLA 配對、病毒篩檢 (HBV/HCV/HIV/CMV)、置放 Hickman/Port-A、牙科評估。",
             },
-            {"drug": "CD34+ 純化", "dose": "自體移植使用。利用免疫磁珠去除癌細胞，降低復發。"},
+            {
+              "drug": "2. 調理 (Conditioning)",
+              "dose":
+                  "高劑量化療 (High-dose Chemo) ± TBI\n目的: 殺滅癌細胞 (騰出空間) + 抑制免疫 (防排斥)。",
+            },
+            {
+              "drug": "3. 輸注與防護",
+              "dose": "經導管輸注 (監測 EKG/溶血)。\n住 HEPA 房、低菌飲食 (熟食)。",
+            },
           ],
         },
         {
-          "category": "B. 併發症管理",
+          "category": "B. 併發症處置 (Management)",
           "items": [
-            {"drug": "VOD / SOS", "dose": "嚴格限制水/鈉、使用利尿劑。\n監測: 每日體重、腹圍。"},
             {
-              "drug": "GVHD 預防",
-              "dose": "**MTX + Cyclosporine (CsA) + Steroids**\n急性治療: 增加類固醇劑量",
+              "drug": "VOD / SOS 照護",
+              "dose": "處置: **嚴格限水/限鈉**、使用利尿劑。\n監測: **每日量體重、腹圍**。",
             },
-            {"drug": "輸注照護", "dose": "監測 EKG、輸血反應、尿液 (溶血?)"},
+            {
+              "drug": "GVHD 預防與治療",
+              "dose":
+                  "預防: **MTX + Cyclosporine (CsA) + Steroids**。\n治療: 增加類固醇劑量。",
+            },
+            {"drug": "感染控制", "dose": "保護性隔離。移植後免疫空窗期需防範細菌、CMV、黴菌。"},
+          ],
+        },
+        {
+          "category": "C. 特殊技術 (Advanced)",
+          "items": [
+            {
+              "drug": "迷你移植 (Mini-SCT)",
+              "dose":
+                  "**原理**: 減低劑量調理 (RIC)，依賴 **GVL (植體抗癌)** 效應。\n**對象**: >50歲、共病多不適合高劑量者。\n**感受性**: CML/Lymphoma (佳) > ALL (差)。",
+            },
+            {"drug": "CD34+ 純化", "dose": "自體移植使用。利用磁珠去除癌細胞，降低復發率。"},
           ],
         },
       ],
@@ -2565,75 +2593,7 @@ final List<Map<String, dynamic>> pocketMedicineData = [
       ],
     },
   },
-  {
-    "group": "🩸 血液腫瘤科",
-    "id": "hema_pbsct_overview",
-    "title": "週邊血液幹細胞移植 (PBSCT)",
-    "subtitle": "原理、流程、併發症與迷你移植",
-    "content": {
-      "intro":
-          "### 核心概念\n1. **來源**: 經 G-CSF 動員後，HSC 從骨髓釋放至週邊血 (增加 10-300 倍)，再由機器收集。\n2. **PBSCT vs. BMT 優勢**:\n   * **免麻醉**: 無麻醉風險/疼痛。\n   * **恢復快**: 血小板快 14 天以上，減少輸血。\n   * **少汙染**: 較不易受骨髓內癌細胞汙染。\n3. **MSC (間葉系幹細胞)**: 具再生潛力，可加速造血恢復。",
-      "diagnosis": [
-        "**適應症 (Indications)**:",
-        "1. **自體 (Auto)**: 實體腫瘤 (鼻咽/卵巢/腎癌)、淋巴瘤、AML/ALL。",
-        "2. **異體 (Allo)**: 白血病 (AML/ALL/CML)、MDS、SAA、重度海洋性貧血。",
-        "3. **特殊 PBSCT**: 癌細胞侵犯骨髓者、骨盆腔曾放療無法抽骨髓者。",
-      ],
-      "treatment": [
-        {
-          "category": "A. 移植流程 (Workflow)",
-          "items": [
-            {
-              "drug": "1. 植前準備",
-              "dose": "HLA 配對、病毒篩檢 (HBV/HCV/HIV/CMV)、置放 Hickman/Port-A、牙科評估。",
-            },
-            {
-              "drug": "2. 調理 (Conditioning)",
-              "dose":
-                  "高劑量化療 (High-dose Chemo) 或全身放療 (TBI)。\n目的: 殺滅癌細胞 + 抑制免疫 (防排斥)。",
-            },
-            {
-              "drug": "3. 輸注 (Infusion)",
-              "dose": "經導管輸注。\n監測: EKG, 尿液顏色 (溶血?), 過敏反應。",
-            },
-          ],
-        },
-        {
-          "category": "B. 急性併發症 (Complications)",
-          "items": [
-            {
-              "drug": "肝靜脈阻塞 (VOD/SOS)",
-              "dose":
-                  "**徵兆**: 黃疸、體重增加 (水腫)、肝腫大/腹痛。\n**處置**: 限水/限鈉、利尿劑、每日量腹圍/體重。",
-            },
-            {
-              "drug": "急性 GVHD",
-              "dose":
-                  "**時間**: 3 個月內 (通常隨白血球生長出現)。\n**症狀**: 皮膚紅疹、腹瀉/嘔吐、黃疸/肝指數升。\n**藥物**: Steroid, MTX, Cyclosporine (CsA)。",
-            },
-            {
-              "drug": "感染 (Infection)",
-              "dose": "黏膜炎 (Mucositis)、中性球低下發燒。\n需保護性隔離 (HEPA, 低菌飲食)。",
-            },
-          ],
-        },
-        {
-          "category": "C. 特殊技術 (Advanced)",
-          "items": [
-            {
-              "drug": "迷你移植 (Mini-SCT)",
-              "dose":
-                  "**原理**: 減低劑量調理 (RIC)，靠 **GVL (植體抗癌)** 殺腫瘤。\n**對象**: >50歲、共病多不適合高劑量者。\n**感受性**: CML/Lymphoma (佳) > ALL (差)。",
-            },
-            {
-              "drug": "CD34+ 純化 (Selection)",
-              "dose": "利用磁珠選取 CD34+ 細胞，去除癌細胞。\n目的: 降低自體移植復發率。",
-            },
-          ],
-        },
-      ],
-    },
-  },
+
   {
     "group": "🩸 血液腫瘤科",
     "id": "protocol_hema_allo_orders",
