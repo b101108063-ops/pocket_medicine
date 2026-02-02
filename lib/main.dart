@@ -184,7 +184,17 @@ class _ChapterListScreenState extends State<ChapterListScreen> {
               );
             },
           ),
+          IconButton(
+            icon: const Icon(Icons.history_edu), // 歷史紀錄圖示
+            tooltip: '更新日誌',
+            onPressed: () {
+              _showUpdateLogDialog(context); // 呼叫剛剛寫好的彈窗
+            },
+          ),
+          // (選填) 如果覺得太擠，可以加這行留一點邊距
+          const SizedBox(width: 10),
         ],
+
         bottom: PreferredSize(
           preferredSize: const Size.fromHeight(60),
           child: Padding(
@@ -223,7 +233,7 @@ class _ChapterListScreenState extends State<ChapterListScreen> {
               padding: const EdgeInsets.symmetric(vertical: 24.0),
               child: Center(
                 child: Text(
-                  "Data Version: 2026.01.29",
+                  "Last Update Date: 2026.02.02",
                   style: TextStyle(
                     color: Colors.grey[600],
                     fontSize: 12,
@@ -343,6 +353,71 @@ class _ChapterListScreenState extends State<ChapterListScreen> {
           );
         },
       ),
+    );
+  }
+
+  void _showUpdateLogDialog(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: const Text("更新日誌 (Change Log)"),
+          content: SizedBox(
+            width: double.maxFinite,
+            child: ListView.builder(
+              shrinkWrap: true,
+              itemCount: updateLog.length, // 讀取我們剛剛在 data.dart 寫的資料
+              itemBuilder: (context, index) {
+                final log = updateLog[index];
+                return Padding(
+                  padding: const EdgeInsets.only(bottom: 16.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      // 版本號與日期
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            log["version"]!,
+                            style: const TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: Colors.blue,
+                              fontSize: 16,
+                            ),
+                          ),
+                          Text(
+                            log["date"]!,
+                            style: TextStyle(
+                              color: Colors.grey[600],
+                              fontSize: 12,
+                            ),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 4),
+                      // 更新內容
+                      Text(
+                        log["content"]!,
+                        style: const TextStyle(fontSize: 14, height: 1.5),
+                      ),
+                      const Divider(), // 分隔線
+                    ],
+                  ),
+                );
+              },
+            ),
+          ),
+          actions: [
+            TextButton(
+              child: const Text("知道了"),
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+            ),
+          ],
+        );
+      },
     );
   }
 }

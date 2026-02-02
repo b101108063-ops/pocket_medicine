@@ -90,8 +90,13 @@ flutter:
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
 flutter_launcher_icons:
-  android: "ic_launcher" # Android 圖示名稱
-  ios: true              # 是否生成 iOS 圖示
+  android: true
+  ios: true
+  web:
+    generate: true
+    image_path: "assets/icon/app_icon.png" # 建議再指定一次路徑
+    background_color: "#ffffff" # (選填) PWA 啟動畫面的背景色
+    theme_color: "#ffffff"      # (選填) 瀏覽器網址列的顏色
   image_path: "assets/icon.png" # 您的圖片路徑
   min_sdk_android: 21    # 建議設定
   # adaptive_icon_background: "#121212" # (選用) Android 自適應圖示背景色，設為深色

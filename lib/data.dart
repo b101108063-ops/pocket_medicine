@@ -354,73 +354,64 @@ final List<Map<String, dynamic>> pocketMedicineData = [
   },
   {
     "group": "🚨 危急徵象與症狀",
-    "id": "protocol_stroke_01",
-    "lastUpdate": "2026/01/29",
-    "title": "腦中風 (Stroke)",
-    "subtitle": "On Call: tPA 評估、血壓控制 & 排除 Mimics",
+    "id": "oncall_stroke_acute",
+    "title": "急性中風處置 (Acute Stroke)",
+    "subtitle": "2026 Update: TNK, BP & Sugar Limits",
     "content": {
       "intro":
-          "### 處置原則\n1. **首要任務**：與時間賽跑 (Time is Brain)。\n2. **黃金時間**：確認 **Last Known Normal** 時間 (睡醒發現以睡前算)。rtPA 黃金期通常 < 3~4.5 小時。\n3. **關鍵動作**：測血糖 (排除 Mimics) -> Stat CT (排除出血) -> 決定 rtPA。",
+          "### 🚑 Stroke Code 啟動流程\n1. **FAST 評估**: Face, Arm, Speech, Time.\n2. **排除低血糖**: 立即測手指血糖 (Finger sugar)。\n3. **影像**: NECT (排除出血) + CTA (確認大血管阻塞)。\n4. **關鍵時間**: LKW (最後正常時間) < 4.5h (IVT) 或 < 24h (EVT)。",
       "diagnosis": [
-        "[Mimic] **低血糖 (Hypoglycemia)**: 最常見! 立即測 Finger stick",
-        "[Mimic] **癲癇後麻痺 (Todd's)**: 有無目擊 seizure?",
-        "[Mimic] **複雜性偏頭痛**: 有無 Aura?",
-        "[檢查] **Non-contrast CT**: 最優先! 區分缺血/出血",
-        "[檢查] ECG (AFib?), Coagulation (PT/INR, APTT), Platelet",
-        "[NIHSS] 快速評估神經學缺損程度",
+        "**排除禁忌症 (Contraindications)**:",
+        "1. **出血**: ICH, SAH, 近期重大創傷/手術。",
+        "2. **血壓**: BP > 185/110 (降不下來不可打)。",
+        "3. **凝血**: INR > 1.7, PLT < 100k, 48h內用 NOAC。",
+        "**⚠️ 2026 更新重點**:",
+        "輕微非失能 (NIHSS ≤ 5): **不打 tPA/TNK**，改用 DAPT。",
+        "大片梗塞 (ASPECTS 3-5): **仍需照會** 取栓評估。",
       ],
       "treatment": [
         {
-          "category": "A. 急性缺血性中風 (Ischemic)",
+          "category": "A. 靜脈溶栓 (IVT) - 首選改變",
           "items": [
             {
-              "drug": "tPA (Alteplase)",
+              "drug": "Tenecteplase (TNK)",
               "dose":
-                  "**0.9 mg/kg** (Max 90mg)\n10% IV bolus (1min) -> 90% IV drip (60min)\n*給藥後 24hr 禁阿斯匹靈/抗凝血劑*",
+                  "**首選藥物 (Preferred)**\n劑量: **0.25 mg/kg** IV Bolus (Max 25mg)\n優點: 5秒推完，不需 Pump。",
             },
             {
-              "drug": "tPA 禁忌症 (精簡)",
-              "dose": "出血病史、近期手術/外傷、BP > 185/110、INR > 1.7、PLT < 100k",
-            },
-            {
-              "drug": "Aspirin",
+              "drug": "Alteplase (tPA)",
               "dose":
-                  "若**不打 tPA**：立即給 **160-300 mg PO/Supp**\n若**打 tPA**：24小時內**禁止**給予",
+                  "替代藥物\n劑量: **0.9 mg/kg** (Max 90mg)\n用法: 10% Bolus, 90% 滴注 60 min。",
             },
           ],
         },
         {
-          "category": "B. 血壓控制 (BP Control)",
+          "category": "B. 急性期血壓 (BP Control)",
           "items": [
             {
-              "drug": "準備打 tPA",
-              "dose":
-                  "嚴格控制 **< 185 / 110 mmHg**\n**Labetalol** 10-20mg IV push\n**Nicardipine** 5mg/hr IV pump (Max 15mg/hr)",
+              "drug": "治療前 (Before)",
+              "dose": "目標: **< 185/110** mmHg\n藥物: Nicardipine / Labetalol",
             },
             {
-              "drug": "不打 tPA",
+              "drug": "治療後 (After 72h)",
               "dose":
-                  "**允許性高血壓 (Permissive HTN)**\n除非 **> 220 / 120 mmHg** 否則**不降壓** (維持腦灌流)\n若需降壓，首日降幅不超過 15-25%",
+                  "目標: **< 180/105** mmHg\n⚠️ **禁忌**: 嚴禁降至 < 140 (Class 3 Harmful)\n*若掉太低需給水或升壓劑維持灌流*",
             },
           ],
         },
         {
-          "category": "C. 出血性中風 (Hemorrhagic)",
+          "category": "C. 血糖與抗血小板",
           "items": [
-            {"drug": "處置", "dose": "嚴禁 tPA/Antiplatelet。緊急照會神外 (Neurosurgeon)"},
             {
-              "drug": "反轉凝血",
+              "drug": "血糖目標 (Sugar)",
               "dose":
-                  "Warfarin -> FFP + Vit K\nNOAC -> 考慮反轉劑 (Idarucizumab for Dabigatran)",
+                  "**140 - 180 mg/dL**\n*不要嚴格控制 (80-130 有害)*\n*大於 180 再打 RI Sliding Scale*",
             },
-            {"drug": "血壓", "dose": "較嚴格控制 (SBP < 140-160) 以防血腫擴大"},
-          ],
-        },
-        {
-          "category": "D. 一般照護",
-          "items": [
-            {"drug": "NPO", "dose": "直到完成吞嚥評估 (防吸入性肺炎)"},
-            {"drug": "血糖", "dose": "維持 140-180 (高/低血糖皆會加重腦傷)"},
+            {
+              "drug": "抗血小板 (Antiplatelet)",
+              "dose":
+                  "若打 IVT: **24小時內禁吃** Aspirin/Plavix。\n若未打 IVT (輕症): 給予 **DAPT** (Asp+Plavix)。",
+            },
           ],
         },
       ],
@@ -1537,6 +1528,103 @@ final List<Map<String, dynamic>> pocketMedicineData = [
     },
   },
   {
+    "group": "❤️ 心臟內科",
+    "id": "cardio_hyperlipidemia",
+    "title": "脂質異常 (Hyperlipidemia)",
+    "subtitle": "2025 台灣共識：風險分層與達標策略",
+    "content": {
+      "intro":
+          "### 1. 評估重點 (Evaluation)\n* **時機**: 空腹 12h。**ACS 病人需於入院 24h 內檢測**。\n* **公式**: LDL = TC - HDL - (TG/5)。\n    *(限制: 若 TG > 400 或 LDL < 70 則不準，需直接測量)*\n* **代謝症候群 (Metabolic Syn.)**: 腹胖(M>90/F>80 cm)、TG ≥150、HDL <40/50、BP ≥130/85、AC Sugar ≥100 (5 取 3)。\n* **體徵**: \n    * Tendon Xanthomas: 跟腱/手伸肌 (提示 FH, LDL>300)。\n    * Eruptive Xanthomas: 丘疹 (提示 TG>1500)。\n\n### 2. 次發性成因排除\n* **LDL 升高**: 甲狀腺低下、腎病症候群、膽汁淤積。\n* **TG 升高**: 糖尿病、酒精、腎衰竭、肥胖。\n* **藥物**: Thiazide, BB, Steroids, Estrogen。",
+      "diagnosis": [
+        "### A. 次級預防 (已發病) - 積極治療",
+        "**極高風險 Extreme (< 55 mg/dL)**:\nCAD 患者合併以下任一：\n1. 1年內曾 MI\n2. ≥2 次 MI 病史\n3. 多支血管阻塞\n4. 合併 DM\n5. 合併 PAD 或頸動脈狹窄\n*(註: 反覆血管事件者可考慮 < 40)*",
+        "**非常高風險 Very High (< 70 mg/dL)**:\n1. 確診 ASCVD (ACS, Stable angina, Stroke/TIA, PAD)\n2. 影像證實顯著斑塊 (CT/導管顯示狹窄 ≥50%)",
+        "------------------------------------",
+        "### B. 初級預防 (未發病) - 風險導向",
+        "**高風險 High (< 100 mg/dL)**: [立即用藥]\n1. 糖尿病\n2. CKD (eGFR<60 或 UACR≥30)\n3. LDL ≥ 190 (疑 FH)\n4. 鈣化指數 CAC ≥ 400",
+        "**中風險 Moderate (< 115 mg/dL)**: [生活調整 3-6m]\n不符高風險，但危險因子 ≥ 2 項。",
+        "**低風險 Low (< 130 mg/dL)**: [生活調整 3-6m]\n不符高風險，危險因子 0-1 項。",
+        "*(危險因子: 高血壓, 抽菸, 早發冠心病家族史, HDL低, 年齡 M≥45/F≥55, 代謝症候群)*",
+      ],
+      "treatment": [
+        {
+          "category": "治療階梯 (Step-wise Approach)",
+          "items": [
+            {
+              "drug": "Step 1: Statin",
+              "dose": "啟動 **High-intensity** (預期降 ≥50%)\nACS 急性期應立即給予。",
+            },
+            {
+              "drug": "Step 2: Ezetimibe",
+              "dose": "若 6-8 週未達標或不耐受 Statin 時加入。\n(額外降 15-24%)",
+            },
+            {
+              "drug": "Step 3: PCSK9i / Others",
+              "dose":
+                  "極高風險仍未達標時使用。\n包含單株抗體 (Evolocumab) 或 siRNA (Inclisiran)。\n或 ATP citrate lyase 抑制劑 (Bempedoic acid)。",
+            },
+          ],
+        },
+        {
+          "category": "Statin 強度表 (Intensity)",
+          "items": [
+            {
+              "drug": "高強度 (預期降LDL ≥50%)",
+              "dose": "Atorvastatin **40-80mg**\nRosuvastatin **20-40mg**",
+            },
+            {
+              "drug": "中強度 (預期降LDL 40%)",
+              "dose":
+                  "Atorvastatin 10-20mg\nRosuvastatin 5-10mg\nSimvastatin 20-40mg\nPravastatin 40-80mg\npitavastatin 2-4mg",
+            },
+          ],
+        },
+        {
+          "category": "追蹤與其他目標",
+          "items": [
+            {"drug": "追蹤頻率", "dose": "起始/調整後 **6-8週** 複驗。\n達標後每 6-12 個月追蹤。"},
+            {
+              "drug": "其他目標",
+              "dose": "BP < 130/80\nHbA1c < 7.0%\nNon-HDL-C = LDL目標 + 30",
+            },
+          ],
+        },
+      ],
+    },
+  },
+  // ====================================================================
+  // Group: 🫁 胸腔內科 (Pulmonology)
+  // ====================================================================
+  {
+    "group": "🫁 胸腔內科",
+    "id": "chap_pulm_05",
+    "title": "慢性阻塞性肺病 (COPD)",
+    "subtitle": "AECOPD & Stable COPD",
+    "content": {
+      "diagnosis": ["肺量計 FEV1/FVC < 0.7", "評估症狀 (CAT/mMRC) 與惡化史"],
+      "treatment": [
+        {
+          "category": "急性惡化 (AECOPD)",
+          "items": [
+            {"drug": "Bronchodilators", "dose": "SABA + SAMA 霧化吸入"},
+            {"drug": "Steroids", "dose": "Prednisone 40 mg PO x 5 天"},
+            {
+              "drug": "Antibiotics",
+              "dose": "Azithromycin / Doxycycline / Resp. FQ (若濃痰增加)",
+            },
+          ],
+        },
+        {
+          "category": "慢性期首選",
+          "items": [
+            {"drug": "LAMA / LABA", "dose": "Tiotropium 等長效型"},
+            {"drug": "ICS", "dose": "若 Eosinophil >300 或頻繁惡化時加用"},
+          ],
+        },
+      ],
+    },
+  },
+  {
     "group": "🫁 胸腔內科",
     "id": "chap_pulm_03",
     "title": "氣喘 (Asthma)",
@@ -1567,35 +1655,6 @@ final List<Map<String, dynamic>> pocketMedicineData = [
               "dose": "低劑量作為 Reliever (MART strategy)",
             },
             {"drug": "ICS", "dose": "依照階梯治療調整劑量"},
-          ],
-        },
-      ],
-    },
-  },
-  {
-    "group": "🫁 胸腔內科",
-    "id": "chap_pulm_05",
-    "title": "慢性阻塞性肺病 (COPD)",
-    "subtitle": "AECOPD & Stable COPD",
-    "content": {
-      "diagnosis": ["肺量計 FEV1/FVC < 0.7", "評估症狀 (CAT/mMRC) 與惡化史"],
-      "treatment": [
-        {
-          "category": "急性惡化 (AECOPD)",
-          "items": [
-            {"drug": "Bronchodilators", "dose": "SABA + SAMA 霧化吸入"},
-            {"drug": "Steroids", "dose": "Prednisone 40 mg PO x 5 天"},
-            {
-              "drug": "Antibiotics",
-              "dose": "Azithromycin / Doxycycline / Resp. FQ (若濃痰增加)",
-            },
-          ],
-        },
-        {
-          "category": "慢性期首選",
-          "items": [
-            {"drug": "LAMA / LABA", "dose": "Tiotropium 等長效型"},
-            {"drug": "ICS", "dose": "若 Eosinophil >300 或頻繁惡化時加用"},
           ],
         },
       ],
@@ -2419,6 +2478,259 @@ final List<Map<String, dynamic>> pocketMedicineData = [
       ],
     },
   },
+  {
+    "group": "🩸 血液腫瘤科",
+    "id": "protocol_hema_pre_bmt_check",
+    "title": "移植前評估清單 (Pre-BMT)",
+    "subtitle": "Recipient Evaluation Protocol v1.0",
+    "content": {
+      "intro":
+          "### 核心資訊 (Baseline)\n1. **基本**: Name / Age / Gender / Dx\n2. **移植種類**: Auto vs Allo (Matched/Haplo) vs Syngeneic\n3. **幹細胞來源**: PBSC / Bone Marrow / Cord Blood\n4. **調理處方**: Conditioning Regimen",
+      "diagnosis": [
+        "[重要] **牙科會診**: 拔牙前務必與血液科討論 (出血/感染風險)。",
+        "[重要] **放射腫瘤**: 若需 TBI，需在 HSCT 前 **一個月** 會診。",
+        "[重要] **心臟超音波**: 必做 LVEF 評估。",
+        "[重要] **Water's View**: 耳鼻喉科會診前先照 (32009c)。",
+      ],
+      "treatment": [
+        {
+          "category": "A. 會診 (Consultations)",
+          "items": [
+            {
+              "drug": "必會科別",
+              "dose":
+                  "1. **Neuro** (神經)\n2. **Psych** (精神)\n3. **ENT** (耳鼻喉 - 先照 Water's view)\n4. **Dent** (牙科 - 拔牙需討論)\n5. **Gyn** (婦科 - 女性)\n6. **Derma** (皮膚)\n7. **CV** (心臟 - 排 Echo)\n8. **Diet** (營養)\n9. **Inf** (感染科)",
+            },
+            {
+              "drug": "選填 / 視情況",
+              "dose":
+                  "1. **Urology** (泌尿 - 男性)\n2. **Social Worker** (社工 - 濾水器補助)\n3. **Radio-Onco** (放腫 - 若需 TBI)",
+            },
+          ],
+        },
+        {
+          "category": "B-D. 器官影像與功能",
+          "items": [
+            {
+              "drug": "ENT & Chest",
+              "dose":
+                  "Water's view (32009c)\nCXR\nSpirometry (17004-207)\nDLCO (17009-207)",
+            },
+            {
+              "drug": "Heart & GI",
+              "dose": "EKG\nCardiac Echo (LVEF)\nStool OB (P002)\nKUB (32006c)",
+            },
+          ],
+        },
+        {
+          "category": "E-G. 感染與免疫標記",
+          "items": [
+            {
+              "drug": "免疫/血庫",
+              "dose":
+                  "SPEP, IgA, IgG, IgM\nVDRL (S001)\nAnti-A/B IgM (若血型不合 Allo)\n*HLA typing (Confirm DNA compatibility)*",
+            },
+            {
+              "drug": "病毒肝炎",
+              "dose":
+                  "HBsAg, Anti-HBs, Anti-HBc\nAnti-HCV\n*若陽性加驗: HBV DNA / HCV RNA*",
+            },
+            {
+              "drug": "病毒與其他",
+              "dose":
+                  "Anti-HIV (I184)\nAnti-HTLV I/II (I033)\nCMV IgG/IgM\nSerum Crypto Ag\nSerum Aspergillus Ag (I190)",
+            },
+          ],
+        },
+        {
+          "category": "H. 全套細菌培養 (Pan-culture)",
+          "items": [
+            {
+              "drug": "檢體部位",
+              "dose":
+                  "1. **Stool** (+Clostridium/Campylobacter)\n2. **Anal Swab** (VRE)\n3. **Urine**\n4. **Nasal Swab** (Bac/Fungus)\n5. **Throat Swab** (Bac/Fungus)\n6. **Sputum** (G/S, Bac, TB, Fungus)\n7. **Port-A Blood** (Bac/Fungus)",
+            },
+          ],
+        },
+        {
+          "category": "J. 行政與護理",
+          "items": [
+            {
+              "drug": "流程確認",
+              "dose":
+                  "1. 聯絡 10D 護理長 (衛教/Protocol)\n2. 通知血庫 (移植時間)\n3. 確認化療藥物庫存\n4. 確認藥物過敏史",
+            },
+          ],
+        },
+      ],
+    },
+  },
+  {
+    "group": "🩸 血液腫瘤科",
+    "id": "hema_pbsct_overview",
+    "title": "週邊血液幹細胞移植 (PBSCT)",
+    "subtitle": "原理、流程、併發症與迷你移植",
+    "content": {
+      "intro":
+          "### 核心概念\n1. **來源**: 經 G-CSF 動員後，HSC 從骨髓釋放至週邊血 (增加 10-300 倍)，再由機器收集。\n2. **PBSCT vs. BMT 優勢**:\n   * **免麻醉**: 無麻醉風險/疼痛。\n   * **恢復快**: 血小板快 14 天以上，減少輸血。\n   * **少汙染**: 較不易受骨髓內癌細胞汙染。\n3. **MSC (間葉系幹細胞)**: 具再生潛力，可加速造血恢復。",
+      "diagnosis": [
+        "**適應症 (Indications)**:",
+        "1. **自體 (Auto)**: 實體腫瘤 (鼻咽/卵巢/腎癌)、淋巴瘤、AML/ALL。",
+        "2. **異體 (Allo)**: 白血病 (AML/ALL/CML)、MDS、SAA、重度海洋性貧血。",
+        "3. **特殊 PBSCT**: 癌細胞侵犯骨髓者、骨盆腔曾放療無法抽骨髓者。",
+      ],
+      "treatment": [
+        {
+          "category": "A. 移植流程 (Workflow)",
+          "items": [
+            {
+              "drug": "1. 植前準備",
+              "dose": "HLA 配對、病毒篩檢 (HBV/HCV/HIV/CMV)、置放 Hickman/Port-A、牙科評估。",
+            },
+            {
+              "drug": "2. 調理 (Conditioning)",
+              "dose":
+                  "高劑量化療 (High-dose Chemo) 或全身放療 (TBI)。\n目的: 殺滅癌細胞 + 抑制免疫 (防排斥)。",
+            },
+            {
+              "drug": "3. 輸注 (Infusion)",
+              "dose": "經導管輸注。\n監測: EKG, 尿液顏色 (溶血?), 過敏反應。",
+            },
+          ],
+        },
+        {
+          "category": "B. 急性併發症 (Complications)",
+          "items": [
+            {
+              "drug": "肝靜脈阻塞 (VOD/SOS)",
+              "dose":
+                  "**徵兆**: 黃疸、體重增加 (水腫)、肝腫大/腹痛。\n**處置**: 限水/限鈉、利尿劑、每日量腹圍/體重。",
+            },
+            {
+              "drug": "急性 GVHD",
+              "dose":
+                  "**時間**: 3 個月內 (通常隨白血球生長出現)。\n**症狀**: 皮膚紅疹、腹瀉/嘔吐、黃疸/肝指數升。\n**藥物**: Steroid, MTX, Cyclosporine (CsA)。",
+            },
+            {
+              "drug": "感染 (Infection)",
+              "dose": "黏膜炎 (Mucositis)、中性球低下發燒。\n需保護性隔離 (HEPA, 低菌飲食)。",
+            },
+          ],
+        },
+        {
+          "category": "C. 特殊技術 (Advanced)",
+          "items": [
+            {
+              "drug": "迷你移植 (Mini-SCT)",
+              "dose":
+                  "**原理**: 減低劑量調理 (RIC)，靠 **GVL (植體抗癌)** 殺腫瘤。\n**對象**: >50歲、共病多不適合高劑量者。\n**感受性**: CML/Lymphoma (佳) > ALL (差)。",
+            },
+            {
+              "drug": "CD34+ 純化 (Selection)",
+              "dose": "利用磁珠選取 CD34+ 細胞，去除癌細胞。\n目的: 降低自體移植復發率。",
+            },
+          ],
+        },
+      ],
+    },
+  },
+  {
+    "group": "🩸 血液腫瘤科",
+    "id": "protocol_hema_allo_orders",
+    "title": "異體移植常規醫囑 (Allo-SCT Orders)",
+    "subtitle": "預防用藥、全血型輸血規範與排程",
+    "content": {
+      "intro":
+          "### 核心摘要\n1. **輸血通則**: 依據 Major/Minor Mismatch 選擇 Phase II/III 血品。\n2. **記憶口訣**: \n   * **Major**: RBC 給 O (跟Recipient)，血漿給 AB (跟Donor)。\n   * **Minor**: RBC 給 O (跟Donor)，血漿給 AB (跟Recipient)。\n3. **Infusion**: 嚴禁使用過濾器 (No Filter)。\n4. **Cefepime**: D0 ~ D+2 預防性使用。",
+      "diagnosis": [
+        "[護理] **BMT Diet**, I/O Q8H, BW/Girth QD。",
+        "[護理] N/S 漱口, **Betadine 坐浴**。",
+        "[細胞] 若 CD34 > 5x10^6/kg，多餘部分冰存至 Engraftment。",
+        "[入院] CXR, KUB, Port-A culture, Oral virus culture, **DNA-STR (☆重要)**。",
+      ],
+      "treatment": [
+        {
+          "category": "A. 預防性用藥 (Prophylaxis)",
+          "items": [
+            {
+              "drug": "Baktar (PCP)",
+              "dose": "2# BID (D-7 至 D-2)\n*Engraftment 後恢復使用*",
+            },
+            {
+              "drug": "Cefepime",
+              "dose": "**2g Q12H** (D0 至 D+2)\n*此期間暫停 Cravit*",
+            },
+            {"drug": "Micafungin", "dose": "50mg QD (D-8 開始)\n*視情況調整劑量*"},
+            {
+              "drug": "G-CSF (Filgrastim)",
+              "dose": "300mcg QD (D+1 開始)\n*Stop if WBC > 4000 / ANC > 2000*",
+            },
+          ],
+        },
+        {
+          "category": "B. 幹細胞輸注 (D0)",
+          "items": [
+            {
+              "drug": "Pre-medication",
+              "dose": "Vena 1 amp + Solu-cortef 100mg IV (輸注前 15min)",
+            },
+            {
+              "drug": "輸注禁忌",
+              "dose":
+                  "❌ **No Leukocyte Filter** (不可用過濾器)\n✅ **On EKG Monitor**",
+            },
+          ],
+        },
+        {
+          "category": "C. 輸血規範 (全血型通用)",
+          "items": [
+            {
+              "drug": "基本原則",
+              "dose":
+                  "1. 所有血品需 **Irradiated (輻射照射)**\n2. 輸血前給 Vena 1 amp\n3. 使用 **Phase II/III** (植入期) 標準",
+            },
+            {
+              "drug": "1. Compatible (同血型)",
+              "dose": "RBC: **同血型**\nPlt/FFP: **同血型**",
+            },
+            {
+              "drug": "2. Major (大排斥)",
+              "dose":
+                  "情境: R有抗體 (如 A捐給O)\nRBC: **Recipient 型** (或 O)\nPlt/FFP: **Donor 型** (或 AB)",
+            },
+            {
+              "drug": "3. Minor (小排斥)",
+              "dose":
+                  "情境: D有抗體 (如 O捐給A)\nRBC: **Donor 型** (或 O)\nPlt/FFP: **Recipient 型** (或 AB)",
+            },
+            {
+              "drug": "4. Bi-directional (雙向)",
+              "dose":
+                  "情境: 互相排斥 (如 A捐給B)\nRBC: **Type O** (萬用)\nPlt/FFP: **Type AB** (萬用)",
+            },
+          ],
+        },
+        {
+          "category": "D. 抽血排程 (Lab Schedule)",
+          "items": [
+            {
+              "drug": "每週一 (QW1)",
+              "dose": "CBC, SMAC (含 Ca/P/Mg), **CMV PCR**, **Aspergillus Ag**",
+            },
+            {
+              "drug": "每週四 (QW4)",
+              "dose": "CBC, Renal, Liver, Na/K, **CsA Level**",
+            },
+            {"drug": "週一四六 (Q146)", "dose": "CBC/DC (監測球數回升)"},
+            {
+              "drug": "其他",
+              "dose": "One-touch Sugar QOD (每兩天)\nCsA Level: 週一、週四驗",
+            },
+          ],
+        },
+      ],
+    },
+  },
   // ====================================================================
   // Group: 🦠 感染科 (Infectious Diseases)
   // ====================================================================
@@ -3194,5 +3506,98 @@ final List<Map<String, dynamic>> pocketMedicineData = [
         },
       ],
     },
+  },
+  // ====================================================================
+  // Group: 🧠 神經內科 (Neurology)
+  // ====================================================================
+  {
+    "group": "🧠 神經內科",
+    "id": "neuro_stroke_comparison",
+    "title": "2026 vs 舊版處置差異對照",
+    "subtitle": "藥物、血壓、血糖與取栓標準變革",
+    "content": {
+      "intro":
+          "### 核心警示 (Critical Changes)\n1. **血壓禁忌**: 血管打通後 72 小時內，**絕對不可**將收縮壓降至 < 140 mmHg (Class 3: Harmful)。\n2. **藥物換代**: Tenecteplase (TNK) 正式上位，施打僅需 5 秒，優於 Alteplase (1 小時)。\n3. **輕症不溶栓**: NIHSS ≤ 5 且無失能者，改用 DAPT。",
+      "diagnosis": [
+        "**大核心梗塞 (Large Core)**:\n* 舊觀念: ASPECTS < 6 分 (大片黑) -> 放棄取栓。\n* **新指引**: ASPECTS 3-5 分 -> **仍建議取栓** (Level 1A/2B)。",
+        "**基底動脈阻塞 (Basilar Artery)**:\n* 舊觀念: 證據不明確。\n* **新指引**: 強烈建議取栓 (Class 1)。",
+      ],
+      "treatment": [
+        {
+          "category": "藥物與血糖 (Med & Sugar)",
+          "items": [
+            {
+              "drug": "溶栓藥物 (IVT)",
+              "dose":
+                  "舊: Alteplase Only\n新: **Tenecteplase (TNK)** 或 Alteplase",
+            },
+            {
+              "drug": "血糖目標 (Sugar)",
+              "dose": "舊: 80 - 130 mg/dL (嚴格)\n新: **140 - 180 mg/dL** (寬鬆)",
+            },
+          ],
+        },
+        {
+          "category": "血壓控制 (BP Control)",
+          "items": [
+            {
+              "drug": "IVT/EVT 治療後",
+              "dose": "舊: < 180/105 (部分指引建議 <140)\n新: **< 180/105** (嚴禁 < 140)",
+            },
+            {
+              "drug": "原因",
+              "dose": "積極降壓會降低腦灌流壓 (CPP)，導致缺血半影區 (Penumbra) 壞死擴大。",
+            },
+          ],
+        },
+        {
+          "category": "輕微中風 (Minor Stroke)",
+          "items": [
+            {
+              "drug": "NIHSS ≤ 5 (非失能)",
+              "dose": "舊: 考慮 IVT ?\n新: **不建議 IVT**，應給予 DAPT (Asp+Plavix)",
+            },
+            {"drug": "NIHSS ≤ 5 (失能)", "dose": "新: 仍建議 IVT (如失語、手癱瘓影響生活)"},
+          ],
+        },
+      ],
+    },
+  },
+];
+// ==========================================
+// 更新日誌資料 (請把這段貼在 data.dart 最下面)
+// ==========================================
+final List<Map<String, String>> updateLog = [
+  {
+    "version": "v1.1.0",
+    "date": "2026/02/02",
+    "content":
+        "1. 新增 2026 腦中風指引 (TNK/血壓禁忌)\n2. 新增週邊血幹細胞移植 (PBSCT) 總論\n3. 更新 On Call 值班 stroke 處置流程",
+  },
+  {
+    "version": "v1.0.5", // 記得改版號
+    "date": "2026/02/01", // 今天的日期
+    "content": "1. 新增 2026 腦中風指引 (TNK, 大核心取栓)\n2. 更新血壓血糖控制標準", // 您這次做了什麼
+  },
+  {
+    "version": "v1.0.4", // 記得改版號
+    "date": "2026/02/01", // 今天的日期
+    "content": "1. 新增心臟科脂質異常指引\n2. 修正計算機介面", // 您這次做了什麼
+  },
+  {
+    "version": "v1.0.3",
+    "date": "2026/01/31",
+    "content":
+        "1. 新增異體移植常規醫囑 (Allo-SCT Protocol)\n2. 整合 ABO Mismatch 輸血規範 (Major/Minor/Bi-directional)\n3. 修正 Cefepime 預防性投藥天數",
+  },
+  {
+    "version": "v1.0.2",
+    "date": "2026/01/30",
+    "content": "1. 新增 Pre-BMT Evaluation Checklist\n2. 更新抗生素劑量計算機",
+  },
+  {
+    "version": "v1.0.1",
+    "date": "2026/01/26",
+    "content": "1. 首次發布 Pocket Medicine\n2. 包含基礎計算機與常用表格",
   },
 ];
