@@ -4575,11 +4575,198 @@ final List<Map<String, dynamic>> pocketMedicineData = [
       ],
     },
   },
+
+  // ====================================================================
+  // Batch 6: 血液/皮膚/一般 (來源：PGY臨床工作入門指南 2022)
+  // ====================================================================
+
+  {
+    "group": "🩸 血液與皮膚",
+    "id": "protocol_anaphylaxis",
+    "lastUpdate": "2022/01/01",
+    "title": "過敏反應與血管性水腫 (Allergic Reactions)",
+    "subtitle": "PGY: 過敏反應、蕁麻疹、血管性水腫處理",
+    "content": {
+      "intro":
+          "### 過敏反應類型\n1. **蕁麻疹 (Urticaria)**：局部鼓起、會癢的疹塊。\n2. **血管性水腫 (Angioedema)**：深層皮膚水腫，口唇/臉部/舌頭腫脹。\n3. **過敏性休克 (Anaphylaxis)**：危及生命的過敏反應。",
+      "diagnosis": [
+        "[過敏性休克] 蕁麻疹/血管性水腫 + 呼吸困難/低血壓",
+        "[血管性水腫] ACEI 停用常見（Hoffmann's 水腫）",
+        "[嚴重症狀] 口腔/舌頭腫脹、喘鳴、意識改變 → 立即處理",
+      ],
+      "treatment": [
+        {
+          "category": "A. 過敏性休克",
+          "items": [
+            {"drug": "Epinephrine 1:1000", "dose": "0.5mg IM（大腿外側），可每5-15分鐘重複"},
+            {"drug": "NS 500mL full run", "dose": "低血壓時靜脈輸液"},
+            {"drug": "Hydrocortisone", "dose": "60mg IV Q8H"},
+            {"drug": "Diphenhydramine", "dose": "50mg IV/IM"},
+          ],
+        },
+        {
+          "category": "B. 單純蕁麻疹",
+          "items": [
+            {"drug": "Cetirizine (Xyzal)", "dose": "10mg PO QD（2代抗組織胺）"},
+            {"drug": "Chlorpheniramine", "dose": "4mg PO TID（1代，嗜睡）"},
+          ],
+        },
+        {
+          "category": "C. 血管性水腫",
+          "items": [
+            {"drug": "停用 ACEI", "dose": "必要第一步"},
+            {"drug": "Icatibant", "dose": "30mg SC（Bradykinin 介導的水腫）"},
+            {"drug": "Fresh Frozen Plasma", "dose": "替代 C1esterase inhibitor（hereditary angioedema）"},
+          ],
+        },
+      ],
+    },
+  },
+
+  {
+    "group": "🩸 血液與皮膚",
+    "id": "protocol_transfusion_reactions",
+    "lastUpdate": "2022/01/01",
+    "title": "輸血反應 (Transfusion Reactions)",
+    "subtitle": "PGY: 急性與遲發性輸血反應處置",
+    "content": {
+      "intro":
+          "### 處置原則\n1. **任何懷疑輸血反應：立即停止輸血！**\n2. **保持靜脈通路通暢（NS）。**\n3. **核對血袋與患者資料。**\n4. **通知血庫。**",
+      "diagnosis": [
+        "[發燒性非溶血性] 輸血中/後發燒 > 1°C → 最常見",
+        "[急性溶血性] 腰背痛、血紅蛋白尿、DIC → 血型不合 → 立即停止！",
+        "[過敏性] 蕁麻疹、癢 → 抗組織胺",
+        "[TRALI] 輸血6hr內低血氧 + 雙側肺浸潤 → 立即停止",
+        "[TACO] 心衰竭症狀 → 輸血過快過量",
+      ],
+      "treatment": [
+        {
+          "category": "A. 急性溶血反應（AHTR）",
+          "items": [
+            {"drug": "立即停止輸血", "dose": "保留血袋 + 重新核對血型"},
+            {"drug": "NS 輸液", "dose": "維持血壓 + 利尿"},
+            {"drug": "通知血庫", "dose": "送回血袋 + 檢體做Coombs test"},
+            {"drug": "DIC", "dose": "新鮮冰凍血漿 + 血小板 + cryoprecipitate"},
+          ],
+        },
+        {
+          "category": "B. TRALI（輸血相關急性肺損傷）",
+          "items": [
+            {"drug": "立即停止輸血", "dose": "不再使用該血品"},
+            {"drug": "O2 + 呼吸支持", "dose": "目標 SpO2 ≥ 92%"},
+            {"drug": "血庫通知", "dose": "回報為 TRALI 反應"},
+          ],
+        },
+        {
+          "category": "C. 發燒性非溶血性反應",
+          "items": [
+            {"drug": "停止輸血", "dose": "短暫停止並觀察"},
+            {"drug": "Acetaminophen", "dose": "650mg PO/PRN退燒"},
+            {"drug": "血庫重新評估", "dose": "排除溶血反應後可考慮繼續輸血"},
+          ],
+        },
+        {
+          "category": "D. 過敏反應",
+          "items": [
+            {"drug": "輕微", "dose": "Diphenhydramine 50mg IV/IM"},
+            {"drug": "嚴重（低血壓/血管性水腫）", "dose": "Epinephrine 0.5mg IM + Hydrocortisone 60mg IV"},
+          ],
+        },
+      ],
+    },
+  },
+
+  {
+    "group": "🏥 一般醫學",
+    "id": "protocol_death_declaration",
+    "lastUpdate": "2022/01/01",
+    "title": "死亡宣告與溝通交班 (Death Declaration & Handoff)",
+    "subtitle": "PGY: 死亡宣告流程與溝通技巧",
+    "content": {
+      "intro":
+          "### 死亡宣告流程\n1. **準備**：拿空白紙寫下姓名、死亡時間。\n2. **核對**：手圈 + 床頭卡確認身分。\n3. **理學檢查**：聽診無呼吸音/心音、瞳孔無光反射。\n4. **宣布**：向家屬說明死亡時間與死因。",
+      "diagnosis": [
+        "[確認死亡] 聽診：無呼吸音、無心音。觸診：無頸總動脈脈搏。瞳孔：無光反射。",
+        "[心電圖] Asystole（並非必須，但可確認）",
+        "[法律要件] 死因（直接或間接）、時間、地點",
+      ],
+      "treatment": [
+        {
+          "category": "A. 死亡宣告步驟",
+          "items": [
+            {"drug": "Step 1", "dose": "準備：姓名、死亡日期/時間寫下來"},
+            {"drug": "Step 2", "dose": "理學檢查：聽心音/呼吸、觸診脈搏、筆燈照瞳孔"},
+            {"drug": "Step 3", "dose": "宣布：向家屬說明『○○○於○年○月○日病逝』"},
+            {"drug": "Step 4", "dose": "開立死亡證明書：填寫因果關係鏈"},
+          ],
+        },
+        {
+          "category": "B. 溝通與交班（電話）",
+          "items": [
+            {"drug": "確認對方", "dose": "『請問是○醫師嗎？』"},
+            {"drug": "自我介紹", "dose": "『我是○○病房值班PGY』"},
+            {"drug": "主旨", "dose": "先說主要問題（如：65歲男性，懷疑NSTEMI...）"},
+            {"drug": "詳細內容", "dose": "病患基本資料、入院原因、目前問題、需要的幫助"},
+          ],
+        },
+        {
+          "category": "C. 死亡證明書填寫",
+          "items": [
+            {"drug": "直接死因", "dose": "直接引起死亡之疾病或傷害（甲）"},
+            {"drug": "先行原因", "dose": "引起甲之疾病（乙）"},
+            {"drug": "其他", "dose": "菸酒史、是否死於外力"},
+          ],
+        },
+      ],
+    },
+  },
+
+  {
+    "group": "🏥 一般醫學",
+    "id": "protocol_wound_care",
+    "lastUpdate": "2022/01/01",
+    "title": "傷口處理 (Wound Care)",
+    "subtitle": "PGY: 傷口評估、換藥原則與感染處置",
+    "content": {
+      "intro":
+          "### 傷口處理原則\n1. **紅、腫、熱、痛、滲液** → 感染疑慮。\n2. **傷口膿樣分泌物** → 需要引流或傷口照護。\n3. **大面積燒燙傷** → 類固醇禁用、燒傷中心。",
+      "diagnosis": [
+        "[蜂窩性組織炎] 局部紅腫熱痛、發燒 → 系統性抗生素",
+        "[壞死性筋膜炎] 红腫範圍快速擴大 + crepitus → 緊急手術",
+        "[傷口裂開] 評估筋膜層是否完整 → 外科緊急會診",
+      ],
+      "treatment": [
+        {
+          "category": "A. 基本傷口處理",
+          "items": [
+            {"drug": "沖洗", "dose": "生理食鹽水沖洗傷口，清除壞死組織"},
+            {"drug": "濕潤環境", "dose": "凡士林紗布覆蓋，保持傷口濕潤"},
+            {"drug": "感染傷口", "dose": "碘酒/優碘消毒 + 系統性抗生素"},
+          ],
+        },
+        {
+          "category": "B. 燒燙傷",
+          "items": [
+            {"drug": "緊急處理", "dose": "冷水降溫 20 分鐘，勿塗抹油脂或牙膏"},
+            {"drug": "燒傷面積", "dose": "Rule of 9s 估算TBSA"},
+            {"drug": "液體復甦", "dose": "Lactated Ringer's：2-4 mL × 體重(kg) × 燒傷面積% BSA"},
+            {"drug": "感染的局部抗生素", "dose": "Fucidic acid, Neomycin, Silver sulfadiazine（燙傷面積大時）"},
+          ],
+        },
+      ],
+    },
+  },
 ];
 // ==========================================
 // 更新日誌資料 (請把這段貼在 data.dart 最下面)
 // ==========================================
 final List<Map<String, String>> updateLog = [
+  {
+    "version": "v1.7.0",
+    "date": "2026/07/20",
+    "content":
+        "1. 新增 Batch 6: 血液/皮膚/一般（過敏反應、輸血反應、死亡宣告、傷口處理）\n2. 來源：PGY臨床工作入門指南 2022\n3. 建議群組色彩：Colors.green",
+  },
   {
     "version": "v1.6.0",
     "date": "2026/07/20",
