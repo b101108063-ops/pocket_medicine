@@ -4441,11 +4441,151 @@ final List<Map<String, dynamic>> pocketMedicineData = [
       ],
     },
   },
+
+  // ====================================================================
+  // Batch 5: 內分泌與代謝 (來源：臨床知識庫)
+  // ====================================================================
+
+  {
+    "group": "🍬 內分泌與代謝",
+    "id": "protocol_thyroid_storm",
+    "lastUpdate": "2026/07/20",
+    "title": "甲狀腺風暴 (Thyroid Storm)",
+    "subtitle": "甲狀腺毒症危急重症：診斷與處理",
+    "content": {
+      "intro":
+          "### 定義\n甲狀腺風暴 = 甲狀腺毒症 + 極端兒茶酚胺敏感度 → 多器官衰竭。\n\n### 常見誘發因素\n手術、感染、創傷、放射性甲狀腺炎、驟然停用抗甲狀腺藥物、糖尿病酮酸血症。",
+      "diagnosis": [
+        "[臨床診斷] 高燒（> 40°C）、心搏過速（> 140 bpm）、意識改變、腸道症狀（腹瀉/嘔吐）",
+        "[Burch-Wartofsky Score (BWSS)] ≥ 45 分確診甲狀腺風暴；25-44 分可能；< 25 分不太像",
+        "[評分項目] 發燒、心率、肝臟功能、中樞神經、心力衰竭、胃腸/肝臟、誘發因素",
+        "[排除診斷] 敗血症、惡性高熱、抗精神病藥惡性症候群（NMS）、中樞神經感染",
+      ],
+      "treatment": [
+        {
+          "category": "A. 抑制甲狀腺素合成與釋放",
+          "items": [
+            {"drug": "PTU (Propylthiouracil)", "dose": "500-1000 mg 起始劑量 PO/NGT → 250 mg Q4H"},
+            {"drug": "Methimazole", "dose": "60-80 mg 起始 → 20-30 mg Q6-8H（優於PTU，但PTU首過肝臟）"},
+            {"drug": "Iodine ( Lugol's solution)", "dose": "饱和碘化钾溶液（SSKI）5滴 Q6H 或 碘化钠 500 mg IVD Q12H（在PTU 1小時後給）"},
+          ],
+        },
+        {
+          "category": "B. 抑制周邊T4→T3轉換",
+          "items": [
+            {"drug": "PTU", "dose": "500-1000 mg 起始後1小時給予（PTU抑制T4→T3）"},
+            {"drug": "Hydrocortisone", "dose": "300 mg IV 起始 → 100 mg Q8H（抑制T4→T3 + 补充相對腎上腺不足）"},
+            {"drug": "Propranolol", "dose": "60-80 mg PO/NGT Q4-6H（抑制T4→T3）"},
+          ],
+        },
+        {
+          "category": "C. 循環支持與症狀控制",
+          "items": [
+            {"drug": "Propranolol", "dose": "1-2 mg IV (over 10 min) → 60-80 mg PO Q4H（心率控制）"},
+            {"drug": "Esmolol", "dose": "β1-selective，可用於有支氣管痙攣者"},
+            {"drug": "Cold IV fluids", "dose": "積極输液晶充 + 物理降溫"},
+            {"drug": "Phenytoin", "dose": "癲癇發作時 15-20 mg/kg IVD"},
+          ],
+        },
+      ],
+    },
+  },
+
+  {
+    "group": "🍬 內分泌與代謝",
+    "id": "protocol_adrenal_crisis",
+    "lastUpdate": "2026/07/20",
+    "title": "腎上腺危機 (Adrenal Crisis)",
+    "subtitle": "急性腎上腺機能不全：診斷與緊急處理",
+    "content": {
+      "intro":
+          "### 定義\n皮質醇不足 + 壓力事件 → 威脅生命的休克。\n\n### 常見誘發因素\n感染、創傷、手術、驟然停用類固醇、甲狀腺毒症。",
+      "diagnosis": [
+        "[典型表現] 難治性休克（SBP < 90）+ 心搏過速 + 發燒 + 意識改變",
+        "[常見特徵] 虛弱、噁心、嘔吐、腹痛、低血糖、低血鈉、高血鉀",
+        "[類固醇服用史] 近期感染/手術/創傷 + 曾使用類固醇（任何劑量 > 2-4週）",
+        "[排除] 敗血症（對輸液+升壓劑反應差）",
+      ],
+      "treatment": [
+        {
+          "category": "A. 即刻處理（不要等檢驗結果）",
+          "items": [
+            {"drug": "Hydrocortisone", "dose": "200 mg IV 起始 bolus → 200-300 mg/day（continuous IVD 或 50 mg Q6H）"},
+            {"drug": "NS 1L", "dose": "快速输注（第一小時）"},
+            {"drug": "D50W", "dose": "低血糖時 25-50 mL IV"},
+          ],
+        },
+        {
+          "category": "B. 液體復甦",
+          "items": [
+            {"drug": "NS", "dose": "第一小時 1L，評估血流動力學後調整"},
+            {"drug": "可能需要 3-5L", "dose": "根據臨床反應調整"},
+            {"drug": " cautions", "dose": "心衰竭/腎衰竭者需保守"},
+          ],
+        },
+        {
+          "category": "C. 長期類固醇覆蓋原則",
+          "items": [
+            {"drug": "手術/感染/創傷", "dose": "Hydrocortisone 50-100 mg IV Q8H + fluid"},
+            {"drug": "Minor illness", "dose": "口服劑量加倍直到康復"},
+          ],
+        },
+      ],
+    },
+  },
+
+  {
+    "group": "🍬 內分泌與代謝",
+    "id": "protocol_steroid_use",
+    "lastUpdate": "2026/07/20",
+    "title": "類固醇使用與術後覆蓋 (Steroid Coverage)",
+    "subtitle": "慢性類固醇使用者的perioperative stress dosing",
+    "content": {
+      "intro":
+          "### 原則\n1. **任何剂量的類固醇使用 > 2-3週** 即可抑制 HPA 軸。\n2. 手術/感染/創傷時需要**增加劑量**。\n3. 輕中型手術：維持平常劑量或小幅增加。\n4. 重型手術：需要靜脈補充。",
+      "diagnosis": [
+        "[HPA軸抑制風險] 使用 > 3週任何劑量類固醇，或使用劑量相當於 prednisolone > 5 mg/day > 4週",
+        "[手術分級] Minor: 局部麻醉、小手術；Moderate: 半身/全身麻醉 < 1小時；Major: 大手術 > 1小時",
+        "[庫欣氏外表] 滿月臉、水牛肩、紫紋 → 高度懷疑 HPA 軸抑制",
+      ],
+      "treatment": [
+        {
+          "category": "A. 手術前當天",
+          "items": [
+            {"drug": "平常類固醇劑量", "dose": "手術當天早晨照常服用"},
+            {"drug": "額外補充", "dose": "手術前靜脈給予 Hydrocortisone 50 mg（小型手術）或 100 mg（大型手術）"},
+          ],
+        },
+        {
+          "category": "B. 手術後Cover",
+          "items": [
+            {"drug": "小型手術", "dose": "Hydrocortisone 25-50 mg IV Q8H × 24小時，之後恢復平常劑量"},
+            {"drug": "大型手術", "dose": "Hydrocortisone 50-100 mg IV Q8H × 48-72小時，之後逐漸減量"},
+            {"drug": "平常劑量", "dose": "手術後第3-5天開始慢慢減回平常劑量"},
+          ],
+        },
+        {
+          "category": "C. 平常類固醇替代劑量參考",
+          "items": [
+            {"drug": "Hydrocortisone", "dose": "20-30 mg/day（分成 2-3 次）"},
+            {"drug": "Prednisolone", "dose": "5-7.5 mg/day"},
+            {"drug": "Dexamethasone", "dose": "0.5-0.75 mg/day"},
+          ],
+        },
+      ],
+    },
+  },
 ];
 // ==========================================
 // 更新日誌資料 (請把這段貼在 data.dart 最下面)
 // ==========================================
 final List<Map<String, String>> updateLog = [
+  {
+    "version": "v1.6.0",
+    "date": "2026/07/20",
+    "content":
+        "1. 新增 Batch 5: 內分泌與代謝（甲狀腺風暴、腎上腺危機、類固醇覆蓋）\n2. 建議群組色彩：Colors.amber",
+  },
   {
     "version": "v1.5.0",
     "date": "2026/07/20",
