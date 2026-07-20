@@ -4036,11 +4036,265 @@ final List<Map<String, dynamic>> pocketMedicineData = [
       ],
     },
   },
+
+  // ====================================================================
+  // Batch 3: 胃腸與營養 (來源：PGY臨床工作入門指南 2022)
+  // ====================================================================
+
+  {
+    "group": "🥨 胃腸與營養",
+    "id": "protocol_abdominal_pain",
+    "lastUpdate": "2022/01/01",
+    "title": "腹痛 (Abdominal Pain)",
+    "subtitle": "PGY: 位置鑑別與危急徵候",
+    "content": {
+      "intro":
+          "### 處置原則\n1. **突發、劇烈、合併生命徵象異常 → 儘快到 bedside。**\n2. **位置鑑別：上腹/右上/左上/右下/左下/廣泛**\n3. **可能快速致死**：消化道破裂、敗血症、主動脈剝離、腸梗塞/缺血/壞死。",
+      "diagnosis": [
+        "[上腹痛] 消化性潰瘍、胰臟炎、胃食道逆流、心肌梗塞",
+        "[右上腹痛] 膽囊炎、膽絞痛、膽管炎、肝炎、肝膿瘍",
+        "[左上腹痛] 脾臟相關、腎臟、結腸脾曲",
+        "[右下腹痛] 闌尾炎、膿痬、腸阻塞",
+        "[左下腹痛] 憩室炎、腸阻塞、膿痬",
+        "[廣泛腹痛] 腹膜炎、自發性細菌性腹膜炎、DKA、紫質症、腎上腺機能不全",
+        "[危險徵候] Murphy sign (膽囊炎)、Rovsing sign (闌尾炎)、 rebound tenderness (腹膜炎)",
+      ],
+      "treatment": [
+        {
+          "category": "A. 基本處置",
+          "items": [
+            {"drug": "止痛", "dose": "Tramadol 50mg or Morphine 4mg IM（不影響診斷正確性）"},
+            {"drug": "膽絞痛", "dose": "Ketorolac 30mg IM（NSAIDs 禁用時才給 Morphine）"},
+            {"drug": "禁食", "dose": "懷疑消化道阻塞、胰臟炎、闌尾炎時"},
+          ],
+        },
+        {
+          "category": "B. 胰臟炎",
+          "items": [
+            {"drug": "止痛", "dose": "Morphine 4mg IM"},
+            {"drug": "積極輸液", "dose": "3 mL/kg/hr 前24hr，留意電解質"},
+            {"drug": "TG > 1000", "dose": "Insulin 0.05-0.1 U/kg/hr + D5W輸液"},
+            {"drug": "ERCP 24hr", "dose": "膽結石 + 膽管炎/敗血症/T-bili ≥ 5 mg/dL"},
+          ],
+        },
+        {
+          "category": "C. 闌尾炎",
+          "items": [
+            {"drug": "禁食 + 輸液", "dose": "維持體液平衡"},
+            {"drug": "抗生素", "dose": "Flomoxef or (Ceftriaxone + Metronidazole)"},
+            {"drug": "會診外科", "dose": "緊急手術"},
+          ],
+        },
+        {
+          "category": "D. 膽囊炎/膽管炎",
+          "items": [
+            {"drug": "止痛 + 禁食 + 輸液", "dose": ""},
+            {"drug": "膽管炎 (Charcot triad)", "dose": "緊急 ERCP + 抗生素"},
+          ],
+        },
+        {
+          "category": "E. 腸阻塞",
+          "items": [
+            {"drug": "禁食 + 鼻胃管", "dose": "胃腸減壓"},
+            {"drug": "輸液", "dose": "維持體液平衡（大量液體滯積腸腔）"},
+            {"drug": "手術", "dose": "圈閉性/扭轉/疝氣嵌頓/腫瘤 → 會診外科"},
+          ],
+        },
+      ],
+    },
+  },
+
+  {
+    "group": "🥨 胃腸與營養",
+    "id": "protocol_gi_bleeding",
+    "lastUpdate": "2022/01/01",
+    "title": "消化道出血 (GI Bleeding)",
+    "subtitle": "PGY: 上消化道 vs 下消化道處置差異",
+    "content": {
+      "intro":
+          "### 定義\n- **上消化道**：Treitz韌帶以上（食道、胃、十二指腸）\n- **吐血 (hematemesis)**：上消化道出血\n- **咖啡渣樣嘔吐 (coffee-ground)**：上消化道出血，血液被胃酸氧化\n- **黑便 (melena)**：通常為升結腸以上出血\n- **血便 (hematochezia)**：下消化道出血，或大量上消化道出血",
+      "diagnosis": [
+        "[上消化道] 消化性潰瘡、糜爛性胃炎、食道靜脈曲張、 Mallory-Weiss tear",
+        "[下消化道] 憩室出血、息肉/腫瘤、腸炎、血管擴張",
+        "[BUN/Cr > 36] 可能是上消化道出血（血液被腸道吸收）",
+        "[GI bleeding + 低血壓] 緊急输血 + 內視鏡",
+      ],
+      "treatment": [
+        {
+          "category": "A. 基本處置",
+          "items": [
+            {"drug": "NPO", "dose": "禁食"},
+            {"drug": "NS 500mL full run", "dose": "低血壓時快速输液压制"},
+            {"drug": "備血 pRBC 4U", "dose": "大量出血/生命徵象不穩時"},
+          ],
+        },
+        {
+          "category": "B. 上消化道出血",
+          "items": [
+            {"drug": "PPI", "dose": "Omeprazole/Eso/ Pantoprazole 80mg → 40mg IVD Q12H"},
+            {"drug": "食道靜脈曲張", "dose": "Octreotide + PPI + 12hr內胃鏡"},
+            {"drug": "內視鏡治療", "dose": "24hr內（生命徵象不穩/食道靜脈曲張 12hr內）"},
+          ],
+        },
+        {
+          "category": "C. 輸血閾值",
+          "items": [
+            {"drug": "Hb < 7 g/dL", "dose": "pRBC（CAD < 8 g/dL）"},
+            {"drug": "Plt < 1萬", "dose": "血小板輸注"},
+            {"drug": "PT/aPTT > 1.5× + 出血", "dose": "FFP"},
+          ],
+        },
+      ],
+    },
+  },
+
+  {
+    "group": "🥨 胃腸與營養",
+    "id": "protocol_nausea_vomiting",
+    "lastUpdate": "2022/01/01",
+    "title": "嘔吐、噁心、腹瀉 (Nausea/Vomiting/Diarrhea)",
+    "subtitle": "PGY: 消化道症狀處理（含C. difficile化療後腹瀉）",
+    "content": {
+      "intro":
+          "### 嘔吐/噁心\n1. **最常見原因**：眩暈或消化道問題。\n2. **術後功能性腸阻塞**：腹部手術後數日內常見。\n3. **鼻胃管引流**：確認通暢，沖注-反抽。\n\n### 腹瀉\n1. **感染性**：發燒、糞便帶黏液/血絲。\n2. **C. difficile**：近期抗生素使用史。\n3. **追蹤電解質**：腹瀑導致低血鉀。",
+      "diagnosis": [
+        "[嘔吐膽汁] 膽汁色（綠色）= 十二指腸以下阻塞",
+        "[嘔吐糞便樣] 迴腸以下阻塞",
+        "[C. difficile] 抗生素使用後 + 腹瀑 → C. difficile toxin",
+        "[發燒+血便] 侵襲性腸炎（Salmonella/Shigella/Campylobacter）",
+      ],
+      "treatment": [
+        {
+          "category": "A. 嘔吐/噁心",
+          "items": [
+            {"drug": "Metoclopramide (Primperan)", "dose": "10mg PO/IM TID（可能導致EPS）"},
+            {"drug": "Domperidone (Motilium)", "dose": "10mg PO BID-TID（中樞副作用少）"},
+            {"drug": "Prochlorperazine (Novamin)", "dose": "5-10mg IM/PO TID"},
+            {"drug": "Nasogastric tube", "dose": "嚴重嘔吐時胃腸減壓"},
+          ],
+        },
+        {
+          "category": "B. 腹瀑",
+          "items": [
+            {"drug": "Hydration", "dose": "積極输液晶充（根據流失量調整）"},
+            {"drug": "Loperamide (Imodium)", "dose": "4mg 起始 → 2mg Q4H PRN max 16mg/day"},
+            {"drug": "Racecadotril (Hidrasec)", "dose": "60mg PO TID（減少腸液分泌）"},
+            {"drug": "Ciprofloxacin", "dose": "侵襲性腸炎/發燒時考慮"},
+            {"drug": "Vancomycin/Metronidazole", "dose": "C. difficile 感染（首選 Vancomycin PO）"},
+          ],
+        },
+        {
+          "category": "C. 便秘",
+          "items": [
+            {"drug": "Glycerin ball", "dose": "1-2 ball PR（急性便祕，30分鐘生效）"},
+            {"drug": "Bisacodyl (Ducolax)", "dose": "5-10mg PR"},
+            {"drug": "Sodium phosphate (Fleet)", "dose": "1 bottle PR（腎衰竭禁用）"},
+            {"drug": "Lactulose", "dose": "慢性便祕 15-30mL BID"},
+          ],
+        },
+      ],
+    },
+  },
+
+  {
+    "group": "🥨 胃腸與營養",
+    "id": "protocol_iv_fluids",
+    "lastUpdate": "2022/01/01",
+    "title": "輸液 (IV Fluids)",
+    "subtitle": "PGY: 脫水評估、輸液選擇與每日需求",
+    "content": {
+      "intro":
+          "### 體液評估\n| 徵候 | 正常 | 脫水 |\n|------|------|------|\n| 皮膚 | 溫暖、彈性好 | 冰冷、彈性↓、微血管充填>2秒 |\n| 黏膜 | 濕潤 | 乾燥、唾液黏稠 |\n| 意識 | 正常 | 嗜睡或躁動 |\n\n### 每日基本需求（禁食狀態）\n- 水分：30 mL/kg/day（約 1400-2000 mL）\n- Na+：75-175 mEq/day\n- K+：40-80 mEq/day",
+      "diagnosis": [
+        "[脫水] 心搏過速、低血壓、姿態性低血壓、尿量↓",
+        "[體液過多] 周邊水腫、肺水腫、頸靜脈鼓脹",
+        "[尿量] 正常 > 0.5 mL/kg/hr",
+      ],
+      "treatment": [
+        {
+          "category": "A. 常用輸液",
+          "items": [
+            {"drug": "NS (0.9% NaCl)", "dose": "154 mEq Na+/L，適中擴容"},
+            {"drug": "D5-1/2NS", "dose": "50g dextrose + 77 mEq Na+/L，維持輸液"},
+            {"drug": "LR (Lactated Ringer's)", "dose": "130 Na+, 4K+, 3Ca++, 28 HCO3-/L"},
+            {"drug": "D5W", "dose": "50g dextrose/L，自由水補充"},
+          ],
+        },
+        {
+          "category": "B. 脫水治療",
+          "items": [
+            {"drug": "NS 500mL full run", "dose": "重複直到血壓穩定（可達 1-2L）"},
+            {"drug": "心衰竭/腎衰竭", "dose": "保守：250-300mL full run，密集評估"},
+            {"drug": "水分需求", "dose": "30 mL/kg/day（理想體重）"},
+          ],
+        },
+        {
+          "category": "C. 電解質補充",
+          "items": [
+            {"drug": "KCl 稀釋", "dose": "每500mL輸液 ≤ 20-40 mEq K+"},
+            {"drug": "低血鈉", "dose": "NS 或 3% NaCl（急性 Symptomatic 低鈉需緊急處理）"},
+            {"drug": "高血鈉", "dose": "D5W 或 1/2NS 補充"},
+          ],
+        },
+      ],
+    },
+  },
+
+  {
+    "group": "🥨 胃腸與營養",
+    "id": "protocol_upper_gi",
+    "lastUpdate": "2022/01/01",
+    "title": "上腸胃道症狀 (Upper GI Symptoms)",
+    "subtitle": "PGY: GERD、PUD與幽門桿菌除菌",
+    "content": {
+      "intro":
+          "### GERD（胃食道逆流疾病）\n典型症狀：胸口灼熱感、酸液逆流、餐後加重、平躺加劇。\n\n### PUD（消化性潰痬）\n- **十二指腸潰痬**：上腹持續性疼痛，餐後緩解\n- **胃潰痬**：餐後加劇\n\n### 幽門桿菌除菌療程（一線）\n- **Clarithromycin-based**: Pantoprazole + Clarithromycin + Amoxicillin\n- **Bismuth-based**: Pantoprazole + Bismuth + Tetracycline + Metronidazole",
+      "diagnosis": [
+        "[GERD] 胸口燒灼感、逆流、進食後加劇、平躺加劇",
+        "[PUD] 上腹持續疼痛、餐後緩解/加劇、體重變化",
+        "[警報症狀] 吞嚥困難、體重減輕、嘔血、黑便、貧血",
+        "[H. pylori] 確診：胃鏡切片或糞便抗原；治療後：UBT或胃鏡確認",
+      ],
+      "treatment": [
+        {
+          "category": "A. GERD 治療",
+          "items": [
+            {"drug": "PPI", "dose": "症狀嚴重時 PriSec 20-40mg QD-BID"},
+            {"drug": "H2-blocker", "dose": "Cimetidine 300mg BID 或 Famotidine 20mg BID"},
+            {"drug": "制酸劑", "dose": "含 Al+Mg 複方，飯後 1-2 錠"},
+            {"drug": "生活調整", "dose": "床頭搖高、避免油膩/咖啡因/酒精"},
+          ],
+        },
+        {
+          "category": "B. PUD 治療",
+          "items": [
+            {"drug": "PPI 一線", "dose": "Pantoprazole 40mg BID × 4-8 週"},
+            {"drug": "H. pylori除菌", "dose": "PPI + Amoxicillin 1g + Clarithromycin 500mg BID × 14天"},
+            {"drug": "Sucralfate", "dose": "1000mg QID（黏膜保護）"},
+          ],
+        },
+        {
+          "category": "C. NSAIDs 相關潰痬",
+          "items": [
+            {"drug": "停用 NSAIDs", "dose": "若可能的話"},
+            {"drug": "PPI 預防", "dose": "高風險患者使用 NSAIDs 時并发 PPI"},
+            {"drug": "有溃疡史", "dose": "H. pylori 除菌後再给 NSAIDs"},
+          ],
+        },
+      ],
+    },
+  },
 ];
 // ==========================================
 // 更新日誌資料 (請把這段貼在 data.dart 最下面)
 // ==========================================
 final List<Map<String, String>> updateLog = [
+  {
+    "version": "v1.4.0",
+    "date": "2026/07/20",
+    "content":
+        "1. 新增 Batch 3: 胃腸與營養（腹痛、消化道出血、嘔吐腹瀑、輸液、GERD/PUD）\n2. 來源：PGY臨床工作入門指南 2022\n3. 建議群組色彩：Colors.orange",
+  },
   {
     "version": "v1.3.0",
     "date": "2026/07/20",
