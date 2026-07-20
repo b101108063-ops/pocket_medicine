@@ -4284,11 +4284,174 @@ final List<Map<String, dynamic>> pocketMedicineData = [
       ],
     },
   },
+
+  // ====================================================================
+  // Batch 4: 腎臟與水電 (來源：PGY臨床工作入門指南 2022)
+  // ====================================================================
+
+  {
+    "group": "🫘 腎臟與水電",
+    "id": "protocol_aki",
+    "lastUpdate": "2022/01/01",
+    "title": "尿量減少/急性腎損傷 (AKI)",
+    "subtitle": "PGY: 腎前性 vs 腎因性 vs 阻塞性鑑別",
+    "content": {
+      "intro":
+          "### 寡尿定義\n< 0.5 mL/kg/hr 即為寡尿。\n\n### 三大原因\n1. **腎前性**：灌流不足（脫水、出血、敗血症）\n2. **腎因性**：ATN、AIN、腎毒素\n3. **阻塞性**：尿路阻塞",
+      "diagnosis": [
+        "[腎前性] UNa < 15, FENa < 1%, UOsm > 500",
+        "[腎因性 ATN] Muddy brown cast, FeNa > 2%",
+        "[腎因性 AIN] 無菌性膿尿, WBC cast, eosinophil",
+        "[腎前性] BUN/Cr > 20:1；腎因性 BUN/Cr ≈ 10:1",
+        "[AKI 緊急透析 AEIOU] Acidosis, Electrolyte (K+ > 6.5), Intoxication, Overload, Uremia",
+      ],
+      "treatment": [
+        {
+          "category": "A. 緊急透析 (AEIOU)",
+          "items": [
+            {"drug": "Acidosis", "dose": "pH < 7.1 急性代謝性酸中毒"},
+            {"drug": "Electrolyte", "dose": "K+ > 6.5 mEq/L 或 > 6.0 合併進展中"},
+            {"drug": "Intoxication", "dose": "藥物過量（甲醇、乙二醇、鋰、metformin）"},
+            {"drug": "Overload", "dose": "肺水腫經藥物治療效果差"},
+            {"drug": "Uremia", "dose": "心包膜炎、意識改變、凝血↓"},
+          ],
+        },
+        {
+          "category": "B. 腎前性治療",
+          "items": [
+            {"drug": "增加輸液", "dose": "NS 500mL full run 重複直到血壓穩定"},
+            {"drug": "停用腎毒性藥物", "dose": "NSAIDs, ACEI/ARB, 顯影劑"},
+          ],
+        },
+        {
+          "category": "C. 尿路阻塞",
+          "items": [
+            {"drug": "Tamsulosin (Harnalidge)", "dose": "0.2mg PO QD（前列腺肥大）"},
+            {"drug": "導尿", "dose": "餘尿 > 300-400mL 考慮放置導尿管"},
+          ],
+        },
+      ],
+    },
+  },
+
+  {
+    "group": "🫘 腎臟與水電",
+    "id": "protocol_electrolytes",
+    "lastUpdate": "2022/01/01",
+    "title": "電解質異常 (Electrolyte Disturbances)",
+    "subtitle": "PGY: 鈉、鉀、鈣、磷、鎂重點處置",
+    "content": {
+      "intro":
+          "### 緊急閾值\n| 電解質 | 危急值 | 嚴重症狀 |\n|--------|--------|----------|\n| K+ | > 6.5 或 < 2.5 | 心律不整、癱瘓 |\n| Na+ | < 120 或 > 160 | 癲癇、昏迷 |\n| Ca2+ | < 7.5 或 > 14 | 癲癇、心律不整 |\n| Mg2+ | > 4 | 呼吸抑制、心跳停止 |",
+      "diagnosis": [
+        "[低血鉀] K+ < 3.5：無力、腸阻塞、心悸、U波",
+        "[高血鉀] K+ > 5.5：無力、癱瘓、心電圖變化（T波高尖、QRS寬）",
+        "[低血鈉] Na+ < 135：意識改變、噁心、癲癇、昏迷",
+        "[高血鈉] Na+ > 145：意識改變、痙攣、昏迷",
+        "[低血鈣] Ca2+ < 8.5：口周麻木、痙攣、Chvostek/Trousseau sign",
+        "[低血磷] PO4 < 2.5：呼吸衰竭、橫紋肌溶解、溶血",
+        "[低血鎂] Mg2+ < 1.8：心律不整、癲癇、增強毛地黃毒性",
+      ],
+      "treatment": [
+        {
+          "category": "A. 低血鉀",
+          "items": [
+            {"drug": "口服K+", "dose": "K+ 2.5-3.4：20-40 mEq/day PO 分2-4次"},
+            {"drug": "靜脈K+", "dose": "K+ < 2.5 或嚴重症狀：10-20 mEq/500mL Q4-6H"},
+            {"drug": "注意", "dose": "KCl 禁止 IV push（致命性心律不整）"},
+          ],
+        },
+        {
+          "category": "B. 高血鉀",
+          "items": [
+            {"drug": "Calcium gluconate", "dose": "1g IV 保護心臟（心電圖變化時）"},
+            {"drug": "Insulin + D50W", "dose": "10-20 units + 25-50g IVD → 促使K+進入細胞內"},
+            {"drug": "Salbutamol", "dose": "10-20 mg INHL 促使K+進入細胞內"},
+            {"drug": "Kayexalate", "dose": "15-30g PO/PR 促進K+排出"},
+            {"drug": "透析", "dose": "K+ > 6.5 合併心律不整或無效時"},
+          ],
+        },
+        {
+          "category": "C. 低血鈉",
+          "items": [
+            {"drug": "3% NaCl", "dose": "急性有症狀：1-2 mEq/L/hr 直到症狀緩解"},
+            {"drug": "NS", "dose": "慢性或輕微症狀：0.5 mEq/L/hr"},
+            {"drug": "注意", "dose": "糾正速度不宜超過 8 mEq/L/day（避免CPM/ODS）"},
+          ],
+        },
+        {
+          "category": "D. 低血鈣",
+          "items": [
+            {"drug": "Ca gluconate", "dose": "1-2g IVD（急性嚴重低鈣）"},
+            {"drug": "CaCO3 口服", "dose": "慢性低血鈣：500-1000mg PO BID-TID"},
+            {"drug": "Vit. D", "dose": "配合補充缺乏的 Vit. D"},
+          ],
+        },
+        {
+          "category": "E. 低血磷",
+          "items": [
+            {"drug": "Na/K phosphate", "dose": "嚴重低磷（< 1 mg/dL）：0.08-0.16 mmol/kg IVD"},
+            {"drug": "口服磷", "dose": "輕度：Fleet Phospho-soda 5-10 mL PO"},
+          ],
+        },
+        {
+          "category": "F. 低血鎂",
+          "items": [
+            {"drug": "MgO 或 MgCl2", "dose": "輕度：250-500mg PO BID"},
+            {"drug": "MgSO4 IV", "dose": "嚴重或口服不吸收：1-2g IVD"},
+          ],
+        },
+      ],
+    },
+  },
+
+  {
+    "group": "🫘 腎臟與水電",
+    "id": "protocol_ckd",
+    "lastUpdate": "2022/01/01",
+    "title": "慢性腎病與透析 (CKD/Dialysis)",
+    "subtitle": "PGY: 慢性腎病分期與透析病人值班重點",
+    "content": {
+      "intro":
+          "### CKD 分期（GFR）\n| Stage | GFR (mL/min/1.73m²) | 描述 |\n|-------|---------------------|------|\n| G1 | ≥ 90 | 正常或高 |\n| G2 | 60-89 | 輕度下降 |\n| G3a | 45-59 | 輕中度下降 |\n| G3b | 30-44 | 中重度下降 |\n| G4 | 15-29 | 重度下降 |\n| G5 | < 15 或透析 | 腎衰竭 |",
+      "diagnosis": [
+        "[CKD 急性惡化] 往往是可逆因素：脫水、NSAIDs、ACEI/ARB、顯影劑、感染",
+        "[透析病人] 水分控制嚴格、留意血管通路感染、EPO/iron 缺乏、鈣磷失衡",
+        "[透析通路] CVC, AV fistula, permcath - 感染是最常見併發症",
+      ],
+      "treatment": [
+        {
+          "category": "A. CKD 急性惡化處理",
+          "items": [
+            {"drug": "找出可逆因素", "dose": "脫水、感染、尿路阻塞、腎毒性藥物"},
+            {"drug": "停用 NSAID/ACEI/ARB", "dose": "急性惡化時暫停"},
+            {"drug": "適當輸液", "dose": "脫水時積极补液，但避免過量（心衰竭風險）"},
+          ],
+        },
+        {
+          "category": "B. 透析病人值班重點",
+          "items": [
+            {"drug": "水分控制", "dose": "透析間體重增加不宜超過 3-5% 乾體重"},
+            {"drug": "EPO/iron 補充", "dose": "目標 Hb 10-11 g/dL"},
+            {"drug": "磷結合劑", "dose": "CaCO3, Sevelamer, Lanthanum（隨餐服用）"},
+            {"drug": "Vit. D analogues", "dose": "Paricalcitol 或 Calcitriol"},
+            {"drug": "血管通路感染", "dose": "發燒時抽血 + 病灶培養，考慮 Vancomycin"},
+          ],
+        },
+      ],
+    },
+  },
 ];
 // ==========================================
 // 更新日誌資料 (請把這段貼在 data.dart 最下面)
 // ==========================================
 final List<Map<String, String>> updateLog = [
+  {
+    "version": "v1.5.0",
+    "date": "2026/07/20",
+    "content":
+        "1. 新增 Batch 4: 腎臟與水電（AKI、尿量異常、電解質、CKD/透析）\n2. 來源：PGY臨床工作入門指南 2022\n3. 建議群組色彩：Colors.blue",
+  },
   {
     "version": "v1.4.0",
     "date": "2026/07/20",
