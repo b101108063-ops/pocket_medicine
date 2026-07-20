@@ -3523,11 +3523,277 @@ final List<Map<String, dynamic>> pocketMedicineData = [
       ],
     },
   },
+
+  // ====================================================================
+  // Batch 1: 神經與精神 (來源：PGY臨床工作入門指南 2022)
+  // ====================================================================
+
+  {
+    "group": "🧠 神經與精神",
+    "id": "protocol_mental_status",
+    "lastUpdate": "2022/01/01",
+    "title": "意識改變 (Altered Mental Status)",
+    "subtitle": "PGY: AEIOU腦心肺肝腎鑑別與處置流程",
+    "content": {
+      "intro":
+          "### 處置原則\n1. **首要任務**：確認血糖 + 生命徵象。\n2. **到 bedside 評估病人在電話中是關鍵。**\n3. **記憶口訣：AEIOU 腦心肺肝腎**\n   * A: Alcohol（酒精）、Anemia\n   * E: Electrolyte（電解質）、Endocrine（內分泌）\n   * I: Insulin（血糖）、Infection（感染）\n   * O: Overdose（藥物過量）\n   * U: Uremia（尿毒）\n4. **特別留意**：藥物中毒、顱內出血/感染、腦壓↑、敗血症、器官衰竭、休克。",
+      "diagnosis": [
+        "[危急] GCS ≤ 8：考慮插管保護呼吸道",
+        "[危急] 顱內壓上升 Cushing triad：血壓↑、心率↓、呼吸↓/不規則",
+        "[危急] 意識不清 + 喘：懷疑缺氧或 CO2 滯留",
+        "[快速致死] 藥物中毒、顱內出血/感染、腦壓↑、敗血症",
+        "[酒精戒斷] 需留意震顫性譫妄 (Delirium tremens)",
+        "[檢驗] CBC/DC, Na/K/Ca/Mg, BUN/Cr, ABG, LFT, ammonia, TSH, cortisol",
+        "[影像] 頭部 CT ± CTA；懷疑顱內感染做腰椎穿刺",
+      ],
+      "treatment": [
+        {
+          "category": "A. 初步穩定",
+          "items": [
+            {"drug": "血糖 < 70", "dose": "D50W 40mL IV push"},
+            {"drug": "O2", "dose": "維持 SpO2 ≥ 92%（COPD 88-92%）"},
+            {"drug": "GCS ≤ 8", "dose": "考慮插管"},
+            {"drug": "BZD 戒斷/譫妄", "dose": "Lorazepam 2-4mg IVP 或 Diazepam 5-10mg IVP"},
+          ],
+        },
+        {
+          "category": "B. 藥物過量解毒",
+          "items": [
+            {"drug": "Flumazenil (BZD)", "dose": "0.2mg IVP max 1mg（藥效短，警惕癲癇）"},
+            {"drug": "Naloxone (鴉片)", "dose": "0.05-0.2mg IV q3-5min max 5-10mg"},
+          ],
+        },
+        {
+          "category": "C. 酒精戒斷治療",
+          "items": [
+            {"drug": "Lorazepam (Ativan)", "dose": "2-4mg IVP q15-20min 直到適度鎮靜"},
+            {"drug": "Thiamine (Vit B1)", "dose": "100mg IVD BID（先給再給糖水）"},
+            {"drug": "避免 β-blocker", "dose": "會掩蓋戒斷症狀"},
+          ],
+        },
+        {
+          "category": "D. 顱內壓上升",
+          "items": [
+            {"drug": "床頭搖高 30°", "dose": "減少腦靜脈回流"},
+            {"drug": "Mannitol 20%", "dose": "1g/kg IVD STAT → 0.5g/kg Q6-8H"},
+            {"drug": "Furosemide", "dose": "0.5-1mg/kg IVP（與 mannitol 協同）"},
+            {"drug": "積極退燒", "dose": "Acetaminophen + 物理降溫"},
+          ],
+        },
+        {
+          "category": "E. 肝腦病變",
+          "items": [
+            {"drug": "Lactulose", "dose": "30-45mL TID 目標 2-3 次軟便/日"},
+            {"drug": "營養", "dose": "35-40 kcal/kg/day，蛋白 0.8-1.2 g/kg/day"},
+          ],
+        },
+      ],
+    },
+  },
+
+  {
+    "group": "🧠 神經與精神",
+    "id": "protocol_agitation",
+    "lastUpdate": "2022/01/01",
+    "title": "躁動、攻擊性 (Agitation)",
+    "subtitle": "PGY: 譫妄處理與酒精戒斷",
+    "content": {
+      "intro":
+          "### 處置原則\n1. **醫師的職責是評估疾病因素，而非壓制病人。**\n2. **先確認血糖 + 生命徵象，再找原因。**\n3. **躁動可能是嚴重病症（敗血症/休克）的唯一表現。**\n4. **譫妄治療核心：處理潛在成因 + 環境處置。**",
+      "diagnosis": [
+        "[根本] 譫妄可能源於：脫水、電解質異常、感染、低血糖、肝/腎/呼吸衰竭、酒精/鎮靜藥物戒斷、鎮靜劑",
+        "[酒精戒斷] 6-48hr 發生：焦慮、顫抖、心搏過速、盜汗",
+        "[震顫性譫妄] 2-4 天發生：躁動、定向力喪失、幻覺、HR↑、BP↑、發燒",
+        "[GCS ≤ 8] 考慮插管保護呼吸道",
+      ],
+      "treatment": [
+        {
+          "category": "A. 抗精神病藥（譫妄一線）",
+          "items": [
+            {"drug": "Haloperidol (Haldol)", "dose": "0.5-1mg IM/PO q30min max 5mg/day"},
+            {"drug": "EPS 處理", "dose": "Diphenhydramine 30-50mg IV STAT"},
+          ],
+        },
+        {
+          "category": "B. BZD（僅用於 BZD/酒精戒斷）",
+          "items": [
+            {"drug": "Lorazepam (Ativan)", "dose": "0.5-1mg PO/IM/IV q30min max 2mg"},
+          ],
+        },
+        {
+          "category": "C. 酒精戒斷",
+          "items": [
+            {"drug": "Lorazepam", "dose": "2-4mg IVP q15-20min 直到適度鎮靜"},
+            {"drug": "Thiamine", "dose": "100mg IVD BID（先給再給糖水）"},
+            {"drug": "避免 β-blocker", "dose": "會掩蓋戒斷症狀"},
+          ],
+        },
+        {
+          "category": "D. 非藥物處理",
+          "items": [
+            {"drug": "增加定向感", "dose": "時鐘、窗戶、親友探訪"},
+            {"drug": "肢體約束", "dose": "必要時暫時使用，先知會家屬"},
+          ],
+        },
+      ],
+    },
+  },
+
+  {
+    "group": "🧠 神經與精神",
+    "id": "protocol_seizure",
+    "lastUpdate": "2022/01/01",
+    "title": "癲癇 (Seizures)",
+    "subtitle": "PGY: 癲癇持續狀態處理與後續預防",
+    "content": {
+      "intro":
+          "### 處置原則\n1. **癲癇發作 ≥ 5min 給 BZD 藥物治療。**\n2. **癲癇重積症 (Status epilepticus)：連續發作或發作間意識未恢復。**\n3. **千萬不要塞東西到嘴巴裡。**\n4. **BZD 會呼吸抑制 → 密切監測、備 ambu bag。**",
+      "diagnosis": [
+        "[超過 5 分鐘] 考慮給予 BZD 藥物",
+        "[癲癇重積症] 發作 ≥ 5min 或連續兩次發作意識未恢復 → 緊急處理",
+        "[Postictal state] 發作後意識混亂、肢體無力 (Todd paralysis) 可持續數小時",
+        "[非痙攣型] 意識時好時壞交替、面部/肢體局部抽動",
+        "[驗血糖] < 70 mg/dL → D50W 40mL IV",
+        "[CK > 1000] 可能有橫紋肌溶解，積極輸液避免腎衰竭",
+      ],
+      "treatment": [
+        {
+          "category": "A. BZD 一線（癲癇 ≥ 5 分鐘）",
+          "items": [
+            {"drug": "Lorazepam (Ativan)", "dose": "0.1mg/kg max 4-10mg IVP（首選）"},
+            {"drug": "Diazepam (Valium)", "dose": "0.2mg/kg max 10mg IVP"},
+            {"drug": "Midazolam (Dormicum)", "dose": "0.2mg/kg max 10mg IM（無 IV 時）"},
+          ],
+        },
+        {
+          "category": "B. 二線抗癲癇藥（BZD 無效時）",
+          "items": [
+            {"drug": "Levetiracetam (Keppra)", "dose": "20-40mg/kg max 4.5g IVD → 1000mg Q12H（首選）"},
+            {"drug": "Valproate (Depakine)", "dose": "20-40mg/kg max 3g IVD → 400mg Q8H"},
+            {"drug": "Phenytoin (Dilantin)", "dose": "20mg/kg max 1.5g IVD（監測血壓/心律）"},
+          ],
+        },
+        {
+          "category": "C. 難治型癲癇重積症 (RSE)",
+          "items": [
+            {"drug": "Propofol", "dose": "1-2mg/kg IVP → 2-10mg/kg/hr IVD（注意 propofol infusion syndrome）"},
+            {"drug": "Midazolam", "dose": "0.2mg/kg IVP → 0.1-2mg/kg/hr IVD"},
+            {"drug": "Phenobarbital (Luminal)", "dose": "5-15mg/kg IVD → 1-5mg/kg/hr IVD"},
+          ],
+        },
+        {
+          "category": "D. 預防復發",
+          "items": [
+            {"drug": "適應症", "dose": "癲癇 ≥ 2次、EEG 異常、顱內病灶、Todd paralysis"},
+            {"drug": "Levetiracetam", "dose": "20-40mg/kg max 4.5g IVD → 1000mg Q12H"},
+          ],
+        },
+      ],
+    },
+  },
+
+  {
+    "group": "🧠 神經與精神",
+    "id": "protocol_headache",
+    "lastUpdate": "2022/01/01",
+    "title": "頭痛 (Headache)",
+    "subtitle": "PGY: 危險徵候 SNOOP 與顱內壓處置",
+    "content": {
+      "intro":
+          "### 處置原則\n1. **突然劇烈頭痛、意識改變、嘔吐 → 儘快到 bedside。**\n2. **危險徵候 SNOOP：Systemic/Neurologic/Onset猝發/Old ≥50/Pattern 變化。**\n3. **顱內壓上升：頭痛、嘔吐、意識↓、視乳突水腫、Cushing triad。**",
+      "diagnosis": [
+        "[危急] 顱內壓上升：頭痛(躺下加劇)、嘔吐、視乳突水腫、Cushing triad",
+        "[危急] 腦疝：單側 CN III 缺損、瞳孔失去光反射、偏癱 → 緊急處理",
+        "[危險徵候 SNOOP] Systemic/Neurologic/猝發/Old≥50/Pattern 變化",
+        "[發燒+頸僵] 考慮腦膜炎 → 腰椎穿刺確診",
+        "[猝發性劇烈頭痛] 考慮蛛網膜下出血 → CT + 腰椎穿刺",
+        "[偏癱型偏頭痛禁用] Sumatriptan、麥角鹼",
+      ],
+      "treatment": [
+        {
+          "category": "A. 顱內壓上升",
+          "items": [
+            {"drug": "床頭搖高 30°", "dose": "減少腦靜脈回流"},
+            {"drug": "Mannitol 20%", "dose": "1g/kg IVD STAT → 0.5g/kg Q6-8H"},
+            {"drug": "Furosemide", "dose": "0.5-1mg/kg IVP（與 mannitol 協同）"},
+            {"drug": "積極退燒", "dose": "Acetaminophen + 物理降溫"},
+          ],
+        },
+        {
+          "category": "B. 腦膜炎",
+          "items": [
+            {"drug": "經驗性抗生素", "dose": "Ceftriaxone + Vancomycin（免疫低下加 Ampicillin）"},
+            {"drug": "Dexamethasone", "dose": "10mg IVP Q6H × 4 天（第一劑抗生素前給）"},
+          ],
+        },
+        {
+          "category": "C. 偏頭痛",
+          "items": [
+            {"drug": "Sumatriptan (Imigran)", "dose": "50-100mg PO，2hr 後可再給一次"},
+            {"drug": "禁忌", "dose": "偏癱型/腦幹型偏頭痛、缺血性中風、冠心病、未控制高血壓"},
+          ],
+        },
+        {
+          "category": "D. 叢集性頭痛",
+          "items": [
+            {"drug": "O2（一線）", "dose": "NRM 12-15L/min × 15min"},
+            {"drug": "Sumatriptan", "dose": "50-100mg PO"},
+          ],
+        },
+      ],
+    },
+  },
+
+  {
+    "group": "🧠 神經與精神",
+    "id": "protocol_dizziness",
+    "lastUpdate": "2022/01/01",
+    "title": "頭暈、昏厥 (Dizziness/Syncope)",
+    "subtitle": "PGY: 眩暈 vs 昏厥鑑別與緊急處置",
+    "content": {
+      "intro":
+          "### 處置原則\n1. **眩暈 (Vertigo)：天旋地轉，意識正常 → 顱內或內耳病灶。**\n2. **昏厥 (Syncope)：眼前發黑、意識喪失 → 短暫腦灌流不足。**\n3. **眩暈常見病因：BPPV、Meniere's、前庭神經炎。**\n4. **昏厥常見病因：心律不整、姿態性低血壓、血管迷走反射。**",
+      "diagnosis": [
+        "[眩暈] 天旋地轉 + 意識正常 → 周邊（良性）或中樞（腦幹中風）",
+        "[昏厥] 眼前發黑、意識喪失 → 心臟（心律不整/瓣膜）或神經性（迷走/姿態性）",
+        "[眩暈+單側耳鳴] Meniere's disease",
+        "[眩暈+姿勢變化] BPPV（Epley 法復位）",
+        "[昏厥+心悸/胸悶] 心臟因素 → ECG 緊急",
+        "[姿態性低血壓] 站立 3min 後 SBP 降 >20 或 DBP 降 >10",
+        "[心律不整] ECG 緊急評估",
+      ],
+      "treatment": [
+        {
+          "category": "A. 眩暈治療",
+          "items": [
+            {"drug": "Meclizine (Bonine)", "dose": "25mg PO（抗組織胺，首選）"},
+            {"drug": "Betahistine (Betaserc)", "dose": "24mg PO"},
+            {"drug": "Diazepam", "dose": "2mg PO/IV（BZD，眩暈嚴重時）"},
+            {"drug": "中樞性眩暈", "dose": "需懷疑中風 → CT 評估 → 聯絡後線"},
+          ],
+        },
+        {
+          "category": "B. 昏厥治療",
+          "items": [
+            {"drug": "迷走神經反射", "dose": "平躺 + 下肢抬高，通常自行恢復"},
+            {"drug": "姿態性低血壓", "dose": "增加水分攝取、站立前先坐 5 分鐘"},
+            {"drug": "心因性昏厥", "dose": "ECG 監測 → 心臟科會診"},
+          ],
+        },
+      ],
+    },
+  },
 ];
 // ==========================================
 // 更新日誌資料 (請把這段貼在 data.dart 最下面)
 // ==========================================
 final List<Map<String, String>> updateLog = [
+  {
+    "version": "v1.2.0",
+    "date": "2026/07/20",
+    "content":
+        "1. 新增 Batch 1: 神經與精神（意識改變、躁動、癲癇、頭痛、頭暈）\n2. 來源：PGY臨床工作入門指南 2022\n3. 建議群組色彩：Colors.deepPurple",
+  },
   {
     "version": "v1.1.0",
     "date": "2026/02/02",
