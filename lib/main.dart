@@ -57,13 +57,21 @@ class _ChapterListScreenState extends State<ChapterListScreen> {
       "🚨 危急徵象與症狀",
       "🧪 實驗室數值異常",
       "❤️ 心臟內科",
-      "🫘 腎臟內科",
+      "🧠 神經與精神",
+      "🧠 神經內科",
+      "🫁 胸腔與感染",
       "🫁 胸腔內科",
+      "🥨 胃腸與營養",
       "🥨 胃腸肝膽科",
-      "🩸 血液腫瘤科",
-      "🦠 感染科",
+      "🫘 腎臟與水電",
+      "🫘 腎臟內科",
+      "🍬 內分泌與代謝",
       "🍬 內分泌科",
+      "🩸 血液與皮膚",
+      "🩸 血液腫瘤科",
+      "🏥 一般醫學",
       "🏥 一般醫學科",
+      "🦠 感染科",
     ];
 
     for (var key in order) {
@@ -88,12 +96,13 @@ class _ChapterListScreenState extends State<ChapterListScreen> {
     if (groupName.contains("實驗室")) return Colors.blueAccent;
 
     if (groupName.contains("心臟")) return Colors.pinkAccent;
-    if (groupName.contains("腎臟")) return Colors.indigoAccent;
-    if (groupName.contains("胸腔")) return Colors.orangeAccent;
-    if (groupName.contains("胃腸")) return Colors.greenAccent;
-    if (groupName.contains("血液")) return Colors.red;
-    if (groupName.contains("感染")) return Colors.purpleAccent;
-    if (groupName.contains("內分泌")) return Colors.cyanAccent;
+    if (groupName.contains("神經") || groupName.contains("精神")) return Colors.deepPurple;
+    if (groupName.contains("胸腔") || groupName.contains("感染")) return Colors.teal;
+    if (groupName.contains("胃腸") || groupName.contains("營養")) return Colors.orange;
+    if (groupName.contains("腎臟") || groupName.contains("水電")) return Colors.blue;
+    if (groupName.contains("內分泌") || groupName.contains("代謝")) return Colors.amber;
+    if (groupName.contains("血液") || groupName.contains("皮膚")) return Colors.green;
+    if (groupName.contains("一般")) return Colors.grey;
 
     return Colors.grey;
   }
@@ -233,7 +242,7 @@ class _ChapterListScreenState extends State<ChapterListScreen> {
               padding: const EdgeInsets.symmetric(vertical: 24.0),
               child: Center(
                 child: Text(
-                  "Last Update Date: 2026.02.02",
+                  "Last Update Date: 2026.07.20",
                   style: TextStyle(
                     color: Colors.grey[600],
                     fontSize: 12,
