@@ -3783,11 +3783,270 @@ final List<Map<String, dynamic>> pocketMedicineData = [
       ],
     },
   },
+
+  // ====================================================================
+  // Batch 2: 胸腔與感染 (來源：PGY臨床工作入門指南 2022 + 值班疑難雜症 2025)
+  // ====================================================================
+
+  {
+    "group": "🫁 胸腔與感染",
+    "id": "protocol_dyspnea",
+    "lastUpdate": "2025/10/15",
+    "title": "呼吸困難與低血氧 (Dyspnea/Desaturation)",
+    "subtitle": "FEMH R4: 值班step-by-step處理流程",
+    "content": {
+      "intro":
+          "### 常見病因（值班常見）\n1. **胸腔**：Pneumonia, aspiration, COPD/Asthma AE, pleural effusion, lung edema, PE\n2. **心臟**：急性心衰竭、瓣膜疾病、AMI\n3. **腸胃道**：Upper GI bleeding\n4. **其他**：嚴重貧血、敗血症、DKA/HHS\n5. **最後**：精神因素\n\n### 錯誤 vs 正確示範\n❌ 一直上調氧氣，卻沒有做 survey\n❌ 病人血氧差，卻只抽 VBG 而不是 ABG\n✅ 快速查閱病歷、追蹤抽血及胸部 X 光\n✅ 務必到 bedside 評估病人呼吸、意識及血氧！",
+      "diagnosis": [
+        "[喘+胸悶+胸痛] → AMI?\n[躺著更喘+肺部濕囉音+心衰竭/洗腎病史] → Lung edema?\n[呼吸時會痛+單側呼吸音減弱+鼓音] → Pneumothorax?\n[發燒+TOCC+痰多+肺部囉音] → Pneumonia/Aspiration?\n[明顯Wheezing+COPD/Asthma病史+CO2 retention] → COPD/Asthma AE?",
+        "[初始評估] Stat CXR + VBG/ABG + CBC, DC, Na/K/BUN/Cr/AST/ALT + Lactate",
+      ],
+      "treatment": [
+        {
+          "category": "A. Pneumothorax",
+          "items": [
+            {"drug": "評估", "dose": "Stat CXR + VBG/ABG + Chest echo（看到 barcode sign）"},
+            {"drug": "穩定病人", "dose": "Simple mask 8-10L，次日追蹤 CXR"},
+            {"drug": "不穩定+大片氣胸", "dose": "立即 Call 二線 → 細針減壓 + Pigtail/Chest tube"},
+          ],
+        },
+        {
+          "category": "B. Lung Edema",
+          "items": [
+            {"drug": "評估", "dose": "Stat CXR + VBG/ABG + NT-proBNP"},
+            {"drug": "Lasix", "dose": "1-2 amp Q8-12H IV push（根據年紀、血壓、體重）"},
+            {"drug": "限水", "dose": "Diet 限水 1000-1300 cc/day"},
+            {"drug": "NTG pump + BiPAP", "dose": "建議跟二線討論後使用"},
+          ],
+        },
+        {
+          "category": "C. COPD/Asthma AE",
+          "items": [
+            {"drug": "Ipratropium + Terbutaline", "dose": "各 1 amp Q6H INHL"},
+            {"drug": "Methylprednisolone", "dose": "20-40mg Q8-12H IV（根據年紀及體重）"},
+            {"drug": "BiPAP", "dose": "建議跟二線討論後使用"},
+            {"drug": "抗生素", "dose": "WBC 高或有 septic signs 時才加"},
+          ],
+        },
+        {
+          "category": "D. Pneumonia/Aspiration",
+          "items": [
+            {"drug": "評估", "dose": "Stat CXR + VBG/ABG + Lactate + 近期培養結果"},
+            {"drug": "培養", "dose": "Influenza/COVID-19 + Urine Legionella/Pneumococcus Ag + Mycoplasma/Chlamydia"},
+            {"drug": "呼吸衰竭", "dose": "SpO2 拉不起來、意識改變 → Call 二線評估 BiPAP/HFNC/Intubation"},
+          ],
+        },
+      ],
+    },
+  },
+
+  {
+    "group": "🫁 胸腔與感染",
+    "id": "protocol_pneumonia",
+    "lastUpdate": "2025/10/15",
+    "title": "肺炎 (Pneumonia)",
+    "subtitle": "FEMH R4: 住院病人肺炎處理與抗生素選擇",
+    "content": {
+      "intro":
+          "### 評估要點\n1. **住院病人 vs 社區感染**：致病菌不同，抗生素策略不同。\n2. **三天以上未改善**：考慮重新留培養。\n3. **呼吸衰竭**：血氧很差、意識改變 → Call 二線評估插管。",
+      "diagnosis": [
+        "[典型症狀] 發燒、咳嗽、痰多、胸痛、呼吸困難",
+        "[Classic pathogens] S. pneumoniae, H. influenzae, M. pneumoniae, Legionella",
+        "[住院病人] 常見 GNB、MSSA、MRSA、 Pseudomonas",
+        "[評估] CXR + VBG/ABG + Lactate + Blood culture × 2套 + Sputum C/S",
+      ],
+      "treatment": [
+        {
+          "category": "A. 社區感染 (Community-onset)",
+          "items": [
+            {"drug": "門診治療", "dose": "Augmentin 或 2nd/3rd GEN Cephalosporin ± Macrolide"},
+            {"drug": "或", "dose": "單用 Moxifloxacin"},
+            {"drug": "住院治療", "dose": "2nd/3rd GEN Cephalosporin + Macrolide 或 Fluoroquinolone 單獨使用"},
+          ],
+        },
+        {
+          "category": "B. 住院病人 (Hospital-acquired)",
+          "items": [
+            {"drug": "廣效覆蓋", "dose": "Tazocin 或 Cefepime 或 Anti-PSA Carbapenem + Vancomycin（若有低血壓/靜脈管路）"},
+            {"drug": "嗜中性球↓", "dose": "Tazocin 或 Cefepime 或 Anti-PSA Carbapenem + Vancomycin"},
+          ],
+        },
+        {
+          "category": "C. 抗藥菌參考",
+          "items": [
+            {"drug": "Pseudomonas aeruginosa", "dose": "Tazocin 或 Brosym 或 Ceftazidime 或 Cefepime 或 Carbapenems"},
+            {"drug": "MRSA", "dose": "Vancomycin 或 Linezolid"},
+          ],
+        },
+      ],
+    },
+  },
+
+  {
+    "group": "🫁 胸腔與感染",
+    "id": "protocol_septic_shock",
+    "lastUpdate": "2025/10/15",
+    "title": "敗血性休克 (Septic Shock)",
+    "subtitle": "FEMH R4: 值班基本觀念與初步處理",
+    "content": {
+      "intro":
+          "### 基本觀念（值班必背）\n1. 記得留**至少兩套 blood cultures**（其他：S/C, U/C, pus/C）\n2. **廣效抗生素**：Tazocin, Cefepime, Fluoroquinolone\n3. **Crystalloid hydration**：Normal saline, Lactate Ringer\n4. **Vasopressors 首選 Norepinephrine** → 二線 Vasopressin → Keep MAP > 65\n5. **一定要架 monitor!!**\n\n### 錯誤 vs 正確\n❌ 只有掐水，卻沒有做 survey\n❌ 還沒掐夠水就直接上升壓藥物\n✅ 掐水一定要給夠（有時一兩千 cc都有可能）",
+      "diagnosis": [
+        "[菌血症] 中心靜脈導管（CVC, DLC, Port-A, Perm-cath）→ 同時抽周邊 + central line B/C，考慮更換管路",
+        "[泌尿道感染] 下泌尿道症狀 + Flank pain + Septic signs → U/A + 換尿管 + Abdominal echo",
+        "[軟組織感染] 標記範圍 + 做 PE 確認有無 crepitus → 範圍快速擴大或有 Compartment syndrome → Limb CT/CTA + 整外",
+        "[腹內感染] 肚子變脹 + 腹痛 + Peritoneal signs → KUB + 考慮 Abdominal CT/CTA",
+      ],
+      "treatment": [
+        {
+          "category": "A. 抗生素原則",
+          "items": [
+            {"drug": "廣效抗生素", "dose": "Tazocin 或 Cefepime 或 Fluoroquinolone"},
+            {"drug": "MRSA 覆蓋", "dose": "Vancomycin（若有低血壓、靜脈管路感染）"},
+            {"drug": "調整", "dose": "培養出來後降階抗生素"},
+          ],
+        },
+        {
+          "category": "B. 輸液與血行動力",
+          "items": [
+            {"drug": "NS 或 LR", "dose": "Crystalloid hydration（給夠，有時 1000-2000 cc）"},
+            {"drug": "Norepinephrine", "dose": "首選升壓劑 → 維持 MAP > 65"},
+            {"drug": "Vasopressin", "dose": "二線（通常病房不常規開）"},
+            {"drug": "Albumin/Hydrocortisone", "dose": "其他支持性治療"},
+          ],
+        },
+      ],
+    },
+  },
+
+  {
+    "group": "🫁 胸腔與感染",
+    "id": "protocol_fever",
+    "lastUpdate": "2022/01/01",
+    "title": "發燒 (Fever)",
+    "subtitle": "PGY: 發燒鑑別與處置（含術後 5W）",
+    "content": {
+      "intro":
+          "### 定義\n中心體溫（耳溫/肛溫）≥ 38℃。額溫/口溫低約 0.5℃，腋溫低 0.8℃。\n\n### 病因\n**感染占絕大多數**：呼吸道、消化道、泌尿道、傷口/軟組織、管路。\n其他：腹內感染、生殖系統、腦膜炎/腦炎、骨髓炎、感染性心內膜炎。",
+      "diagnosis": [
+        "[感染源] 常見：呼吸道、消化道、泌尿道、傷口/軟組織、管路",
+        "[非感染] 藥物（抗精神病藥、止吐藥）、輸血反應、惡性高熱、靜脈血栓",
+        "[術後發燒 5W] Wind (肺）、Water (尿）、Wound (傷口）、Walk (血栓）、Drug (藥物）",
+        "[Neurologic malignant syndrome] 抗精神病藥、意識改變、肌肉僵硬、高熱",
+        "[Serotonin syndrome] L-tryptophan、MAOI、SSRI/SNRI/TCA → 意識改變、肌肉陣攣、眼球震顫",
+      ],
+      "treatment": [
+        {
+          "category": "A. 基本處置",
+          "items": [
+            {"drug": "確認發燒", "dose": "排除測量誤差（保暖衣物/環境溫度）"},
+            {"drug": "移除管路", "dose": "懷疑管路感染時移除並重置（導尿管、靜脈導管）"},
+            {"drug": "抗生素原則", "dose": "使用 2-3 天仍發燒需考慮調整；當天剛用則不一定要換"},
+          ],
+        },
+        {
+          "category": "B. 敗血性休克相關發燒",
+          "items": [
+            {"drug": "廣效抗生素", "dose": "Tazocin 或 Cefepime 或 Fluoroquinolone + Vancomycin（如有低血壓/管路感染）"},
+          ],
+        },
+        {
+          "category": "C. 特殊情況",
+          "items": [
+            {"drug": "輸血反應", "dose": "停止輸血 + 抗組織胺 + 類固醇（嚴重者）"},
+            {"drug": "惡性高熱", "dose": "Dantrolene + 積極降溫 + ICU"},
+            {"drug": "DVT/PE", "dose": "抗凝血劑 + 超音波確診"},
+          ],
+        },
+      ],
+    },
+  },
+
+  {
+    "group": "🫁 胸腔與感染",
+    "id": "protocol_antimicrobial",
+    "lastUpdate": "2022/01/01",
+    "title": "抗菌原則 (Antimicrobial Principles)",
+    "subtitle": "PGY: 抗生素選擇與抗藥菌覆蓋",
+    "content": {
+      "intro":
+          "### 原則\n1. **Broad-spectrum → 窄效**：培養結果出來後降階。\n2. **IDSA 原則**：起始廣效覆蓋可能的致病菌。\n3. **TDM**：Vancomycin, Aminoglycoside, Teicoplanin 需要監測血中濃度。\n4. **Source control**：引流膿液、移除感染管路。",
+      "diagnosis": [
+        "[常見抗藥菌] MRSA, VRE, ESBL, CRE, Pseudomonas, Acinetobacter",
+        "[MRSA 風險] 住院久、ICU、透析、先前 MRSA、感染史",
+        "[ESBL 風險] 先前使用 Cephalosporin/Quinolone、住院久、免疫抑制",
+        "[CRE 風險] 先前 Carbapenem 使用、住院久、免疫抑制、移植",
+      ],
+      "treatment": [
+        {
+          "category": "A. 常見病原抗生素選擇",
+          "items": [
+            {"drug": "S. pneumoniae", "dose": "Penicillin-susceptible → Ampicillin/Sulbactam；PRSP → Vancomycin + Ceftriaxone"},
+            {"drug": "H. influenzae", "dose": "Ampicillin-sulbactam 或 2nd/3rd GEN Cephalosporin"},
+            {"drug": "M. pneumoniae", "dose": "Macrolide 或 Doxycycline 或 Fluoroquinolone"},
+            {"drug": "Legionella", "dose": "Azithromycin 或 Fluoroquinolone"},
+          ],
+        },
+        {
+          "category": "B. 抗藥菌抗生素",
+          "items": [
+            {"drug": "MRSA", "dose": "Vancomycin 或 Linezolid 或 Daptomycin"},
+            {"drug": "VRE", "dose": "Linezolid 或 Daptomycin 或 Teicoplanin"},
+            {"drug": "ESBL", "dose": "Carbapenem（一線）或 Cefepime/Tazocin（部分狀況）"},
+            {"drug": "CRE", "dose": "Ceftazidime-avibactam 或 Meropenem 或 Colistin（最後一線）"},
+            {"drug": "Pseudomonas", "dose": "Tazocin, Cefepime, Ceftazidime, Carbapenems, Aminoglycoside"},
+          ],
+        },
+      ],
+    },
+  },
+
+  {
+    "group": "🫁 胸腔與感染",
+    "id": "protocol_pleural_effusion",
+    "lastUpdate": "2022/01/01",
+    "title": "肋膜積液與氣胸 (Pleural Effusion/Pneumothorax)",
+    "subtitle": "PGY: 肋膜積液分類與處理原則",
+    "content": {
+      "intro":
+          "### 肋膜積液\nTransudate vs Exudate 區分（Light's criteria）：\n積液蛋白/血清蛋白 > 0.5 或 積液 LDH/血清 LDH > 0.6 或 積液 LDH > 血清 LDH 上限的 2/3。\n\n### 氣胸\n突發性尖銳性/肋膜性胸痛 + 喘。",
+      "diagnosis": [
+        "[Transudate] 心衰竭、肝硬化、腎病症候群、腎衰竭、腹膜透析",
+        "[Exudate] 感染（肺炎、結核）、惡性腫瘤、胰臟炎、膽囊炎、肺栓塞",
+        "[超音波] 兩側肺臟都可看到，明顯積液可以看到無回音暗區",
+        "[張力性氣胸] 突發低血壓+氣管偏移+單側呼吸音消失 → 立即細針減壓",
+      ],
+      "treatment": [
+        {
+          "category": "A. 肋膜積液",
+          "items": [
+            {"drug": "穿刺引流適應症", "dose": "懷疑感染/惡性 + 大量積液（厚度 > 2cm）+ 慢性或復發性積液"},
+            {"drug": "化膿性積液", "dose": "立即引流 + 抗生素 + 考慮手術"},
+            {"drug": "心衰竭併積液", "dose": "限水 + 利尿劑 + 治療心衰竭"},
+          ],
+        },
+        {
+          "category": "B. 氣胸",
+          "items": [
+            {"drug": "小型穩定", "dose": "Simple mask 8-10L → 6hr 後追蹤 CXR"},
+            {"drug": "大型或不穩定", "dose": "Pigtail 或 Chest tube 放置"},
+            {"drug": "張力性氣胸", "dose": "立即細針減壓（鎖骨中線第2肋間）→ Chest tube"},
+          ],
+        },
+      ],
+    },
+  },
 ];
 // ==========================================
 // 更新日誌資料 (請把這段貼在 data.dart 最下面)
 // ==========================================
 final List<Map<String, String>> updateLog = [
+  {
+    "version": "v1.3.0",
+    "date": "2026/07/20",
+    "content":
+        "1. 新增 Batch 2: 胸腔與感染（呼吸困難、肺炎、敗血性休克、發燒、抗菌原則、肋膜積液）\n2. 來源：PGY臨床工作入門指南 2022 + FEMH值班疑難雜症 2025\n3. 建議群組色彩：Colors.teal",
+  },
   {
     "version": "v1.2.0",
     "date": "2026/07/20",
