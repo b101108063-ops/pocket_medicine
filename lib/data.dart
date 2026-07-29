@@ -3069,7 +3069,7 @@ final List<Map<String, dynamic>> pocketMedicineData = [
   // Group: 🏥 一般醫學科 (General Medicine)
   // ====================================================================
   {
-    "group": "🏥 一般醫學科",
+    "group": "🏥 一般醫學",
     "id": "chap_gen_01",
     "title": "酒精戒斷 (Alcohol Withdrawal)",
     "subtitle": "CIWA Protocol & DTs",
@@ -3106,7 +3106,7 @@ final List<Map<String, dynamic>> pocketMedicineData = [
     },
   },
   {
-    "group": "🏥 一般醫學科",
+    "group": "🏥 一般醫學",
     "id": "protocol_pain_01",
     "title": "疼痛控制 (Pain & Opioids)",
     "subtitle": "On Call: Morphine, Fentanyl & Rescue",
@@ -3200,7 +3200,7 @@ final List<Map<String, dynamic>> pocketMedicineData = [
     },
   },
   {
-    "group": "🏥 一般醫學科",
+    "group": "🏥 一般醫學",
     "id": "protocol_transfusion_01",
     "title": "輸血指引 (Transfusion)",
     "subtitle": "On Call: 血品選擇、劑量計算 & 輸血反應",
@@ -3280,7 +3280,7 @@ final List<Map<String, dynamic>> pocketMedicineData = [
     },
   },
   {
-    "group": "🏥 一般醫學科",
+    "group": "🏥 一般醫學",
     "id": "protocol_common_meds",
     "title": "值班常用藥物速查",
     "subtitle": "症狀治療、皮膚藥膏、泌尿處置 & 類固醇分級",
@@ -3404,7 +3404,7 @@ final List<Map<String, dynamic>> pocketMedicineData = [
     },
   },
   {
-    "group": "🏥 一般醫學科",
+    "group": "🏥 一般醫學",
     "id": "protocol_lines_tubes",
     "title": "管路照護 (Lines & Tubes)",
     "subtitle": "CVC, Chest Tube, Foley & Drains",
@@ -3529,7 +3529,7 @@ final List<Map<String, dynamic>> pocketMedicineData = [
   // ====================================================================
 
   {
-    "group": "🧠 神經與精神",
+    "group": "🧠 神經內科",
     "id": "protocol_mental_status",
     "lastUpdate": "2022/01/01",
     "title": "意識改變 (Altered Mental Status)",
@@ -3592,7 +3592,7 @@ final List<Map<String, dynamic>> pocketMedicineData = [
   },
 
   {
-    "group": "🧠 神經與精神",
+    "group": "🧠 神經內科",
     "id": "protocol_agitation",
     "lastUpdate": "2022/01/01",
     "title": "躁動、攻擊性 (Agitation)",
@@ -3640,7 +3640,7 @@ final List<Map<String, dynamic>> pocketMedicineData = [
   },
 
   {
-    "group": "🧠 神經與精神",
+    "group": "🧠 神經內科",
     "id": "protocol_seizure",
     "lastUpdate": "2022/01/01",
     "title": "癲癇 (Seizures)",
@@ -3693,7 +3693,7 @@ final List<Map<String, dynamic>> pocketMedicineData = [
   },
 
   {
-    "group": "🧠 神經與精神",
+    "group": "🧠 神經內科",
     "id": "protocol_headache",
     "lastUpdate": "2022/01/01",
     "title": "頭痛 (Headache)",
@@ -3745,7 +3745,7 @@ final List<Map<String, dynamic>> pocketMedicineData = [
   },
 
   {
-    "group": "🧠 神經與精神",
+    "group": "🧠 神經內科",
     "id": "protocol_dizziness",
     "lastUpdate": "2022/01/01",
     "title": "頭暈、昏厥 (Dizziness/Syncope)",
@@ -3789,7 +3789,7 @@ final List<Map<String, dynamic>> pocketMedicineData = [
   // ====================================================================
 
   {
-    "group": "🫁 胸腔與感染",
+    "group": "🫁 胸腔內科",
     "id": "protocol_dyspnea",
     "lastUpdate": "2025/10/15",
     "title": "呼吸困難與低血氧 (Dyspnea/Desaturation)",
@@ -3841,7 +3841,7 @@ final List<Map<String, dynamic>> pocketMedicineData = [
   },
 
   {
-    "group": "🫁 胸腔與感染",
+    "group": "🫁 胸腔內科",
     "id": "protocol_pneumonia",
     "lastUpdate": "2025/10/15",
     "title": "肺炎 (Pneumonia)",
@@ -3883,7 +3883,7 @@ final List<Map<String, dynamic>> pocketMedicineData = [
   },
 
   {
-    "group": "🫁 胸腔與感染",
+    "group": "🫁 胸腔內科",
     "id": "protocol_septic_shock",
     "lastUpdate": "2025/10/15",
     "title": "敗血性休克 (Septic Shock)",
@@ -3920,7 +3920,7 @@ final List<Map<String, dynamic>> pocketMedicineData = [
   },
 
   {
-    "group": "🫁 胸腔與感染",
+    "group": "🫁 胸腔內科",
     "id": "protocol_fever",
     "lastUpdate": "2022/01/01",
     "title": "發燒 (Fever)",
@@ -3963,7 +3963,7 @@ final List<Map<String, dynamic>> pocketMedicineData = [
   },
 
   {
-    "group": "🫁 胸腔與感染",
+    "group": "🫁 胸腔內科",
     "id": "protocol_antimicrobial",
     "lastUpdate": "2022/01/01",
     "title": "抗菌原則 (Antimicrobial Principles)",
@@ -4002,7 +4002,7 @@ final List<Map<String, dynamic>> pocketMedicineData = [
   },
 
   {
-    "group": "🫁 胸腔與感染",
+    "group": "🫁 胸腔內科",
     "id": "protocol_pleural_effusion",
     "lastUpdate": "2022/01/01",
     "title": "肋膜積液與氣胸 (Pleural Effusion/Pneumothorax)",
@@ -4042,7 +4042,7 @@ final List<Map<String, dynamic>> pocketMedicineData = [
   // ====================================================================
 
   {
-    "group": "🥨 胃腸與營養",
+    "group": "🥨 胃腸肝膽科",
     "id": "protocol_abdominal_pain",
     "lastUpdate": "2022/01/01",
     "title": "腹痛 (Abdominal Pain)",
@@ -4105,7 +4105,7 @@ final List<Map<String, dynamic>> pocketMedicineData = [
   },
 
   {
-    "group": "🥨 胃腸與營養",
+    "group": "🥨 胃腸肝膽科",
     "id": "protocol_gi_bleeding",
     "lastUpdate": "2022/01/01",
     "title": "消化道出血 (GI Bleeding)",
@@ -4149,7 +4149,7 @@ final List<Map<String, dynamic>> pocketMedicineData = [
   },
 
   {
-    "group": "🥨 胃腸與營養",
+    "group": "🥨 胃腸肝膽科",
     "id": "protocol_nausea_vomiting",
     "lastUpdate": "2022/01/01",
     "title": "嘔吐、噁心、腹瀉 (Nausea/Vomiting/Diarrhea)",
@@ -4197,7 +4197,7 @@ final List<Map<String, dynamic>> pocketMedicineData = [
   },
 
   {
-    "group": "🥨 胃腸與營養",
+    "group": "🥨 胃腸肝膽科",
     "id": "protocol_iv_fluids",
     "lastUpdate": "2022/01/01",
     "title": "輸液 (IV Fluids)",
@@ -4241,7 +4241,7 @@ final List<Map<String, dynamic>> pocketMedicineData = [
   },
 
   {
-    "group": "🥨 胃腸與營養",
+    "group": "🥨 胃腸肝膽科",
     "id": "protocol_upper_gi",
     "lastUpdate": "2022/01/01",
     "title": "上腸胃道症狀 (Upper GI Symptoms)",
@@ -4290,7 +4290,7 @@ final List<Map<String, dynamic>> pocketMedicineData = [
   // ====================================================================
 
   {
-    "group": "🫘 腎臟與水電",
+    "group": "🫘 腎臟內科",
     "id": "protocol_aki",
     "lastUpdate": "2022/01/01",
     "title": "尿量減少/急性腎損傷 (AKI)",
@@ -4335,7 +4335,7 @@ final List<Map<String, dynamic>> pocketMedicineData = [
   },
 
   {
-    "group": "🫘 腎臟與水電",
+    "group": "🫘 腎臟內科",
     "id": "protocol_electrolytes",
     "lastUpdate": "2022/01/01",
     "title": "電解質異常 (Electrolyte Disturbances)",
@@ -4406,7 +4406,7 @@ final List<Map<String, dynamic>> pocketMedicineData = [
   },
 
   {
-    "group": "🫘 腎臟與水電",
+    "group": "🫘 腎臟內科",
     "id": "protocol_ckd",
     "lastUpdate": "2022/01/01",
     "title": "慢性腎病與透析 (CKD/Dialysis)",
@@ -4447,7 +4447,7 @@ final List<Map<String, dynamic>> pocketMedicineData = [
   // ====================================================================
 
   {
-    "group": "🍬 內分泌與代謝",
+    "group": "🍬 內分泌科",
     "id": "protocol_thyroid_storm",
     "lastUpdate": "2026/07/20",
     "title": "甲狀腺風暴 (Thyroid Storm)",
@@ -4492,7 +4492,7 @@ final List<Map<String, dynamic>> pocketMedicineData = [
   },
 
   {
-    "group": "🍬 內分泌與代謝",
+    "group": "🍬 內分泌科",
     "id": "protocol_adrenal_crisis",
     "lastUpdate": "2026/07/20",
     "title": "腎上腺危機 (Adrenal Crisis)",
@@ -4535,7 +4535,7 @@ final List<Map<String, dynamic>> pocketMedicineData = [
   },
 
   {
-    "group": "🍬 內分泌與代謝",
+    "group": "🍬 內分泌科",
     "id": "protocol_steroid_use",
     "lastUpdate": "2026/07/20",
     "title": "類固醇使用與術後覆蓋 (Steroid Coverage)",
@@ -4581,7 +4581,7 @@ final List<Map<String, dynamic>> pocketMedicineData = [
   // ====================================================================
 
   {
-    "group": "🩸 血液與皮膚",
+    "group": "🩸 血液腫瘤科",
     "id": "protocol_anaphylaxis",
     "lastUpdate": "2022/01/01",
     "title": "過敏反應與血管性水腫 (Allergic Reactions)",
@@ -4624,7 +4624,7 @@ final List<Map<String, dynamic>> pocketMedicineData = [
   },
 
   {
-    "group": "🩸 血液與皮膚",
+    "group": "🩸 血液腫瘤科",
     "id": "protocol_transfusion_reactions",
     "lastUpdate": "2022/01/01",
     "title": "輸血反應 (Transfusion Reactions)",
